@@ -1,0 +1,4246 @@
+{
+  "updated": "2026-03-18 18:42",
+  "source": "OpenAlex",
+  "count": 200,
+  "papers": [
+    {
+      "id": "https://openalex.org/W7128875661",
+      "title": "Grasping by interconnection : can robust and adaptive grasping emerge from minimal object information?",
+      "authors": [
+        "Julien Vanderheyden",
+        "Guillaume Drion",
+        "Pierre Sacr\u00e9",
+        "Fulvio Forni"
+      ],
+      "date": "2026-09-27",
+      "journal": "ORBi (University of Li\u00e8ge)",
+      "abstract_snippet": "This paper investigates whether robust and adaptive dexterous grasping can emerge from minimal object information by modeling grasping as a dynamic interconnection between the robot and a simplified object representation. Instead of relying on precise object models or large-scale data-driven...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Motor Control and Adaptation",
+        "Teleoperation and Haptic Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7131572169",
+      "title": "Implications of the climate transition on employment, skills, and training in Belgium",
+      "authors": [
+        "Vadim Lacroix",
+        "Quentin Jossen",
+        "Sophie Bourdieu",
+        "Pascal Vermeulen",
+        "Kris Bachus"
+      ],
+      "date": "2026-06-30",
+      "journal": "Lirias (KU Leuven)",
+      "abstract_snippet": "status: Published",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Sustainable Development and Policies",
+        "Ukraine: War, Education, Health",
+        "Diverse Global Economic and Educational Challenges"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7128888790",
+      "title": "Deep Learning-Based Data Hiding Technique for Medical Images",
+      "authors": [
+        "Hadjer SAIDI"
+      ],
+      "date": "2026-06-26",
+      "journal": "University of Biskra Theses Repository (University of Biskra)",
+      "abstract_snippet": "This thesis introduces novel deep learning-based frameworks for secure medical image steganography, addressing the critical challenge of protecting sensitive patient information while preserving diagnostic quality. Medical images present unique security requirements due to their dual nature:...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7128667782",
+      "title": "OmniNAV: Omniscient Navigation via Unified LiDAR\u2013Camera BEV Fusion for End-to-End Autonomous Driving",
+      "authors": [
+        "Firas Jendoubi",
+        "Achref Djaber",
+        "Redouane Khemmar",
+        "Romain Rossi",
+        "Madjid Haddad"
+      ],
+      "date": "2026-06-22",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "Accepted at IEEE IV 2026",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Autonomous Vehicle Technology and Safety",
+        "Robotics and Sensor-Based Localization",
+        "Advanced Neural Network Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134220679",
+      "title": "Learning-Based Fusion for Robust Multi-Spectral Visual Servoing",
+      "authors": [
+        "Enrico Fiasch\u00e9",
+        "Siddharth Singh Savner",
+        "Ezio Malis",
+        "Philippe Martinet"
+      ],
+      "date": "2026-06-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Vision and Imaging",
+        "Image Enhancement Techniques",
+        "Advanced Image Processing Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7128283512",
+      "title": "T-CoLoc: Leveraging Tethers for Reliable Co-Localization within an Underwater ROV Chain",
+      "authors": [
+        "Juliette Drupt",
+        "Claire Dune",
+        "Andrew I. Comport",
+        "Vincent Hugel"
+      ],
+      "date": "2026-06-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Underwater Vehicles and Communication Systems",
+        "Distributed Control Multi-Agent Systems",
+        "Modular Robots and Swarm Intelligence"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7127551634",
+      "title": "Automatic Physically-Based Sim2Real for Tactile Images through Differentiable Path-Tracing Rendering",
+      "authors": [
+        "Guillaume Duret",
+        "Anna Samsonenko",
+        "Florence Zara",
+        "Jan Peters",
+        "Liming Chen"
+      ],
+      "date": "2026-06-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Tactile and Sensory Interactions",
+        "Interactive and Immersive Displays",
+        "3D Shape Modeling and Analysis"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7133575981",
+      "title": "Sur la compl\u00e9mentarit\u00e9 conique des contacts planaires",
+      "authors": [
+        "Yann de Mont-Marin",
+        "Louis Montaut",
+        "Jean Ponce",
+        "Martial Hebert",
+        "Justin Carpentier"
+      ],
+      "date": "2026-06-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Cultural Insights and Digital Impacts",
+        "Adhesion, Friction, and Surface Interactions",
+        "Structural Analysis and Optimization"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135943822",
+      "title": "Simplified 3D control of magnetic objects by a triple-coil static unit on a robotic arm",
+      "authors": [
+        "Luca Cinus",
+        "Jess\u00e9 Alves",
+        "Tamerlan Srymbetov",
+        "Marco Ferro",
+        "Claudio Pacchierotti"
+      ],
+      "date": "2026-06-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Characterization and Applications of Magnetic Nanoparticles",
+        "Soft Robotics and Applications",
+        "Power Line Inspection Robots"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134227122",
+      "title": "Evaluating Hierarchical Pathfinding A* (HPA*) for Multi\u2011Order Routing in a Small Warehouse Layout",
+      "authors": [
+        "Ig. Prasetya Dwi Wibawa",
+        "Meta Kallista",
+        "Ramdhan Nugraha",
+        "Heni Widayani",
+        "Harish Chandra Bhandari"
+      ],
+      "date": "2026-05-30",
+      "journal": "CAUCHY - Journal of Pure Mathematics and Applications (Universitas Islam Negeri Maulana Malik Ibrahim)",
+      "abstract_snippet": "Hierarchical Pathfinding A* (HPA*) is a hierarchical search framework that partitions grid\u2011based environments into clusters to reduce computational time while preserving a near-optimal path. The warehouse layout features cross-aisle connectivity, and multi-order optimization is performed using the...",
+      "doi_url": "https://doi.org/10.18860/cauchy.v11i1.39659",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7133272143",
+      "title": "Shared control for assistive and collaborative robotics",
+      "authors": [
+        "Claudio Pacchierotti",
+        "Divyaksh Subhash Chander",
+        "Louise Devigne",
+        "Marie Babel",
+        "Charles Pontonnier"
+      ],
+      "date": "2026-05-01",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Social Robot Interaction and HRI",
+        "Assistive Technology in Communication and Mobility",
+        "Prosthetics and Rehabilitation Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7128660506",
+      "title": "Adversarial Heterogeneous Agent Learning for Robotic Systems: A Framework for Coordinated Competitive Behaviors",
+      "authors": [
+        "Christopher Allred"
+      ],
+      "date": "2026-05-01",
+      "journal": "Digital Commons - USU (Utah State University)",
+      "abstract_snippet": "Autonomous robot teams must move reliably, explain their actions, and work together\u2014even in changing or adversarial settings. We present a structured, three-stage pathway that builds coordinated team behavior from strong single-robot skills. First, we develop robust legged-robot locomotion and...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Reinforcement Learning in Robotics",
+        "Adversarial Robustness in Machine Learning",
+        "Robot Manipulation and Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136067280",
+      "title": "NeuroSnitch: Exploiting Inter-Spike Interval Statistics for Timing Side-Channel Attacks on Noisy Neuromorphic Systems",
+      "authors": [
+        "Mahreen Khan",
+        "Maria Mushtaq",
+        "Ludovic Apvrille"
+      ],
+      "date": "2026-04-23",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/yyyyyyy.yyyyyyy",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Cryptographic Implementations and Security",
+        "Physical Unclonable Functions (PUFs) and Hardware Security",
+        "Security and Verification in Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7125086513",
+      "title": "Multi-Partner project: dAIEDGE - A network of excellence for distributed, trustworthy, efficient and scalable AI at the edge",
+      "authors": [
+        "A. Pagani",
+        "Jos\u00e9 Miguel Garc\u00eda Cano",
+        "Haralampos\u2010G. Stratigopoulos",
+        "Aysajan Abidin",
+        "Mhd Rashed Al Koutayni"
+      ],
+      "date": "2026-04-20",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Scientific Computing and Data Management",
+        "Distributed and Parallel Computing Systems",
+        "Advanced Graph Neural Networks"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7127766998",
+      "title": "Beyond Silicon Area: Co-Product Allocation for a Binning-Aware Carbon Footprint of Processors",
+      "authors": [
+        "Olivier Weppe",
+        "Thibaut Marty",
+        "Jean-Christophe Pr\u00e9votet",
+        "Maxime Pelcat"
+      ],
+      "date": "2026-04-19",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Green IT and Sustainability",
+        "3D IC and TSV technologies",
+        "Parallel Computing and Optimization Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7133085558",
+      "title": "The RepairBot Framework: Human-Touch-Aware Conversational Agent for Hands-on Clothes-Repair",
+      "authors": [
+        "Yifu Liu",
+        "tao Bi",
+        "Chuang Yu",
+        "Lucie Hernandez",
+        "minna Nygren"
+      ],
+      "date": "2026-04-17",
+      "journal": "UCL Discovery (University College London)",
+      "abstract_snippet": "Learning clothes repair is challenging for novices, who face interconnected procedural and embodied challenges, especially when learning alone. Existing tools fail to provide holistic support as interactive tutors and lack awareness of the embodied interactions of working with textiles. This paper...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7128887528",
+      "title": "Craft-Based Data Physicalization: Opportunities and Challenges",
+      "authors": [
+        "Bahare Bakhtiari",
+        "Foroozan Daneshzand",
+        "Kim Sauv\u00e9",
+        "Nathalie Bressa",
+        "Samuel Huron"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Research Data Management Practices",
+        "User Authentication and Security Systems",
+        "Data Quality and Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134040291",
+      "title": "''I don't want to break it'': An Exploration of Perceived Fragility in Shape-Changing Interfaces",
+      "authors": [
+        "Eva Mackamul",
+        "Tom Maillard",
+        "No\u00e9 Marceaul",
+        "Yelli Coulibaly",
+        "Julien Pansiot"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/3772318.3793422",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "Embodied and Extended Cognition",
+        "Chaos, Complexity, and Education",
+        "Whitehead's Philosophy and Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7131887451",
+      "title": "Swarm UIs: Impact of Assistance on Users' Sense of Agency",
+      "authors": [
+        "Oph\u00e9lie Jobert",
+        "Amina Korghlou",
+        "Yelli Coulibaly",
+        "Thibaut Leone",
+        "Alix Goguey"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/3772318.3790663",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Innovative Human-Technology Interaction",
+        "Persona Design and Applications",
+        "Media Influence and Health"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134857645",
+      "title": "Visualization of Tracking Uncertainty in AR-based Surgical Guidance",
+      "authors": [
+        "Chaymae Acherki",
+        "Laurence Nigay",
+        "Quentin Roy",
+        "Thibault Salque"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/3772318.3791213",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Surgical Simulation and Training",
+        "Augmented Reality Applications",
+        "Patient Safety and Medication Errors"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7128951696",
+      "title": "How Do Future Visions Shape the Field of Human-Computer Interaction?",
+      "authors": [
+        "Jens Emil; id_orcid 0000-0002-9566-7195 Gr\u00f8nb\u00e6k",
+        "Clemens Nylandsted Klokmose",
+        "Kasper Anders S\u00f8ren Hornb\u00e6k"
+      ],
+      "date": "2026-04-13",
+      "journal": "",
+      "abstract_snippet": "Visions for the future of computing, such as those on Ubiquitous Computing or Tangible Interfaces, are highly cited and frequently used in teaching. Yet, we know little about the practical value of these visions for research on Human-Computer Interaction (HCI) or how HCI researchers engage with...",
+      "doi_url": "https://doi.org/10.1145/3772318.3791038",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Innovative Human-Technology Interaction",
+        "Usability and User Interface Design",
+        "Interactive and Immersive Displays"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7128798896",
+      "title": "Scaffolded Vulnerability: Chatbot-Mediated Reciprocal Self-Disclosure and Need-Supportive Interaction in Couples",
+      "authors": [
+        "Zhuoqun Jiang",
+        "ShunYi Yeo",
+        "Dorien Herremans",
+        "Simon T. Perrault"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/3772318.3791370",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "AI in Service Interactions",
+        "Digital Mental Health Interventions",
+        "Artificial Intelligence in Healthcare and Education"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134077144",
+      "title": "Haptixel: Encoding Data through Cutaneous Force-based Encountered-Type Fingertip Haptics",
+      "authors": [
+        "Elodie Bouzbib",
+        "Louis Badr",
+        "claudio pacchierotti",
+        "Anatole L\u00e9cuyer",
+        "Arnaud Prouzeau"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "https://doi.org/10.1145/3772318.3791027",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Tactile and Sensory Interactions",
+        "Teleoperation and Haptic Systems",
+        "Hand Gesture Recognition Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135582702",
+      "title": "Acceptabilit\u00e9 social du toucher : un agent virtuel peut-il toucher un humain ?",
+      "authors": [
+        "Gr\u00e9goire Richard",
+        "Catherine Pelachaud",
+        "Indira Thouvenin"
+      ],
+      "date": "2026-04-13",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Virtual Reality Applications and Impacts",
+        "Social Robot Interaction and HRI",
+        "Psychology of Social Influence"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7127558931",
+      "title": "Real-Time Simulation of Deformable Tactile Sensors and Objects in Robotic Grasping using Graph Neural Networks with Inductive Biases",
+      "authors": [
+        "Guillaume Duret",
+        "Frederik A. Heller",
+        "Danylo Mazurak",
+        "Alap Kshirsagar",
+        "Tim Schneider"
+      ],
+      "date": "2026-04-07",
+      "journal": "SPIRE - Sciences Po Institutional REpository",
+      "abstract_snippet": "International audience",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Advanced Sensor and Energy Harvesting Materials",
+        "Motor Control and Adaptation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7114942111",
+      "title": "Structural Causal World Models for Safety Assurance of AI-based Autonomy",
+      "authors": [
+        "Zou, Jie",
+        "STEFANAKOS, IOANNIS",
+        "Shahbeigi Roudposhti, Sepeedeh",
+        "Burton, SIMON",
+        "Calinescu, RADU CONSTANTIN"
+      ],
+      "date": "2026-03-27",
+      "journal": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+      "abstract_snippet": "We propose a formal world model, grounded in structural causal models, which we call Structural Causal World Models (SCWMs): interpretable, structured, and machine-verifiable representations of environmental, contextual, and system-internal conditions that define the circumstances under which a...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7128654860",
+      "title": "Iterated invariant Kalman filtering for articulated rigid-body systems: from theoretical foundations to inertial motion estimation for robotics",
+      "authors": [
+        "Sven Goffin"
+      ],
+      "date": "2026-03-23",
+      "journal": "Open Repository and Bibliography (University of Li\u00e8ge)",
+      "abstract_snippet": "The invariant extended Kalman filter (IEKF) is known for its strong convergence and consistency properties. Using an invariant definition of the estimation error, it yields propagation and update Jacobians that are independent of the current state for systems with group-affine dynamics and...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Inertial Sensor and Navigation",
+        "Target Tracking and Data Fusion in Sensor Networks",
+        "Space Satellite Systems and Control"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138148909",
+      "title": "PROMETHEUS: Predictive Robotic Opponent Modeling for Elite Training in Combative Blade Sports",
+      "authors": [
+        "Plerng Homhual"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Elite fencing demands a convergence of sub-second physical execution, probabilistic tactical reasoning, and the psychological manipulation of an opponent\u2019s mental state\u2014a tripartite challenge that no existing training technology adequately addresses. Current automated training systems in blade...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19071906",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Robot Manipulation and Learning",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137852976",
+      "title": "Multidisciplinary perspectives on Non-Fungible Tokens (NFTs): a comprehensive meta-analysis",
+      "authors": [
+        "Rangin Lahiri",
+        "Saikat Chakrabarti",
+        "Subrata Saha"
+      ],
+      "date": "2026-03-17",
+      "journal": "Digital Economy and Sustainable Development",
+      "abstract_snippet": "Abstract Non-Fungible Tokens (NFTs) are blockchain-based digital assets that provide verifiable proof of ownership and authenticity. Despite their rapid proliferation, NFT markets face ongoing challenges related to user trust, legal ambiguity, and sustainable technological integration. We offer a...",
+      "doi_url": "https://doi.org/10.1007/s44265-026-00078-9",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Blockchain Technology Applications and Security",
+        "Smart Grid Security and Resilience",
+        "Cloud Data Security Solutions"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138067687",
+      "title": "Towards a Unified Framework for Cross Domain AI: Comparative Insights from Healthcare, Robotics, and Knowledge Systems",
+      "authors": [
+        "Bhingare Madhuri Balasaheb",
+        "Shashank Swami"
+      ],
+      "date": "2026-03-17",
+      "journal": "",
+      "abstract_snippet": "Artificial intelligence (AI) has progressed rapidly in healthcare, robotics, and knowledge-based reasoning; however, these domains have developed largely in isolation, limiting cross-domain knowledge transfer and integrative cognitive capabilities. While each field employs distinct methodologies,...",
+      "doi_url": "https://doi.org/10.47760/oajmr.2026.v02i03.001",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "AI-based Problem Solving and Planning",
+        "Explainable Artificial Intelligence (XAI)",
+        "Artificial Intelligence in Healthcare and Education"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138258895",
+      "title": "Haraway\u2019s cyborg manifesto in education: after AI",
+      "authors": [
+        "Sian Bayne"
+      ],
+      "date": "2026-03-17",
+      "journal": "AI & Society",
+      "abstract_snippet": "Abstract This paper critically assesses the impact of Haraway\u2019s \u2018A Cyborg Manifesto\u2019 on education, 40 years since it was published and after AI. It provides a significant re-evaluation of the manifesto\u2019s prescience in mapping the future of education, an aspect of the essay which has been...",
+      "doi_url": "https://doi.org/10.1007/s00146-026-02972-4",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Digital Education and Society",
+        "Posthumanist Ethics and Activism",
+        "African cultural and philosophical studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137806559",
+      "title": "Fuzzy-Based Quantitative Security Risk Assessment Under Uncertainty for Critical Sectors",
+      "authors": [
+        "Sandeep Pirbhulal",
+        "Ankur Shukla",
+        "Basel Katt",
+        "Habtamu Abie"
+      ],
+      "date": "2026-03-17",
+      "journal": "",
+      "abstract_snippet": "<title>Abstract</title> The recent digital transformation has significantly impacted telecommunication and electronics sectors, as well as Information Technology (IT) and Operational Technology (OT), across various stages including design, deployment, and operation. These advancements have been...",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9033964/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Information and Cyber Security",
+        "Smart Grid Security and Resilience",
+        "Infrastructure Resilience and Vulnerability Analysis"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138233415",
+      "title": "INTELLECTUM: A Hybrid AR-VR Metaverse Framework for Smart Cities",
+      "authors": [
+        "Andrey Nechesov",
+        "Janne Ruponen"
+      ],
+      "date": "2026-03-17",
+      "journal": "Applied System Innovation",
+      "abstract_snippet": "This work presents INTELLECTUM as a reference architecture and design-time evaluation framework for multi-entity XR\u2013AI\u2013digital twin systems. Rather than optimizing a specific implementation, the paper formalizes architectural invariants, event semantics, and coordination mechanisms that precede and...",
+      "doi_url": "https://doi.org/10.3390/asi9030061",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Smart Cities and Technologies",
+        "3D Modeling in Geospatial Applications",
+        "Digital Transformation in Industry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137947317",
+      "title": "PROMETHEUS: Predictive Robotic Opponent Modeling for Elite Training in Combative Blade Sports",
+      "authors": [
+        "Plerng Homhual"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Elite fencing demands a convergence of sub-second physical execution, probabilistic tactical reasoning, and the psychological manipulation of an opponent\u2019s mental state\u2014a tripartite challenge that no existing training technology adequately addresses. Current automated training systems in blade...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19071907",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Robot Manipulation and Learning",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138363785",
+      "title": "Compact Dual-Quaternion-Based Visual Servoing for Perpendicular Alignment with Surface Normal Constraints",
+      "authors": [
+        "Sheng Li",
+        "Chao Ye",
+        "Chenlu Liu",
+        "Weiyang Lin"
+      ],
+      "date": "2026-03-17",
+      "journal": "Sensors",
+      "abstract_snippet": "The ability to reliably press physical buttons is a common requirement in robotics. Conventional vision-based methods often suffer from positional errors during execution if the end-effector\u2019s approach is not perpendicular to the target surface. This paper proposes a novel dual-quaternion-based...",
+      "doi_url": "https://doi.org/10.3390/s26061889",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Vision and Imaging",
+        "Soft Robotics and Applications",
+        "Optical measurement and interference techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138158865",
+      "title": "Silicon-Compatible Semiconductor Gas Sensors",
+      "authors": [
+        "Yanting Tang",
+        "Xinyi Chen",
+        "Huanhuan Zhang",
+        "Lanpeng Guo",
+        "Hua\u2010Yao Li"
+      ],
+      "date": "2026-03-17",
+      "journal": "Chemosensors",
+      "abstract_snippet": "The growing demand for intelligent environmental monitoring is driving the advancement of high-performance, low-cost, and highly integrated gas sensors. Silicon-compatible semiconductor gas sensors provide a promising platform to achieve this goal by leveraging their compatibility with...",
+      "doi_url": "https://doi.org/10.3390/chemosensors14030070",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Gas Sensing Nanomaterials and Sensors",
+        "Advanced Chemical Sensor Technologies",
+        "Analytical Chemistry and Sensors"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138211177",
+      "title": "Monolithic Amplitude\u2010Phase Modulator for Scalable Optical Convolution",
+      "authors": [
+        "Wentao Huang",
+        "Yujun Zhong",
+        "Huanan Pu",
+        "Junyan Che",
+        "Jinxian Li"
+      ],
+      "date": "2026-03-17",
+      "journal": "Advanced Functional Materials",
+      "abstract_snippet": "ABSTRACT Photonic neural networks (PNNs) are promising for next\u2010generation AI accelerators due to their inherent parallelism and ultra\u2010fast optical matrix\u2010vector multiplication capabilities. However, scaling these systems is fundamentally limited by the quadratic ( N 2 ) growth in modulator count...",
+      "doi_url": "https://doi.org/10.1002/adfm.202530161",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "semi",
+      "topics": [
+        "Neural Networks and Reservoir Computing",
+        "Photonic and Optical Devices",
+        "Optical Network Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138390715",
+      "title": "AI-Based Model for Maintaining Good Healthcare Quality Against Cybersecurity Risks",
+      "authors": [
+        "Abdullah M. Algarni",
+        "Vijey Thayananthan"
+      ],
+      "date": "2026-03-17",
+      "journal": "Systems",
+      "abstract_snippet": "Artificial Intelligence (AI) has strong potential in health monitoring systems to support high-quality healthcare while mitigating cybersecurity risks. AI-based solutions for health and wellness applications, particularly for cardiovascular disease monitoring, are being explored to address complex...",
+      "doi_url": "https://doi.org/10.3390/systems14030315",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Artificial Intelligence in Healthcare",
+        "Wireless Body Area Networks",
+        "IoT and Edge/Fog Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137828156",
+      "title": "Between No-Self and the Algorithm: Buddhist Mind-Nature as Ethical Architecture for AI and Human Self-Realization",
+      "authors": [
+        "Jia Liu"
+      ],
+      "date": "2026-03-17",
+      "journal": "Religions",
+      "abstract_snippet": "This article explores how Buddhist theories of mind-nature can inform ethical design in artificial intelligence (AI), focusing on AI as a supportive condition for human awakening and self-realization. Drawing on the doctrine of no-self, it argues that AI should not be treated as an autonomous moral...",
+      "doi_url": "https://doi.org/10.3390/rel17030378",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Ethics and Social Impacts of AI",
+        "Media, Religion, Digital Communication",
+        "Indian and Buddhist Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138441880",
+      "title": "HOIMamba: Bidirectional State-Space Modeling for Monocular 3D Human\u2013Object Interaction Reconstruction",
+      "authors": [
+        "Jinsong Zhang",
+        "Yuqin Lin"
+      ],
+      "date": "2026-03-17",
+      "journal": "Biomimetics",
+      "abstract_snippet": "Monocular 3D human\u2013object interaction (HOI) reconstruction requires jointly recovering articulated human geometry, object pose, and physically plausible contact from a single RGB image. While recent token-based methods commonly employ dense self-attention to capture global dependencies, isotropic...",
+      "doi_url": "https://doi.org/10.3390/biomimetics11030214",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Multimodal Machine Learning Applications",
+        "Human Motion and Animation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138436745",
+      "title": "A Multi-Criteria Decision-Making Approach for Sustainable Product Texture Design in Smart Manufacturing",
+      "authors": [
+        "Zhizhong Ding",
+        "Yitong Rong",
+        "Weili Xu",
+        "Wenbin Gu"
+      ],
+      "date": "2026-03-17",
+      "journal": "Sustainability",
+      "abstract_snippet": "In the context of advancing manufacturing, production systems are shifting toward human-centric and personalized production. However, accurately quantifying subjective user needs into precise product specifications remains a challenge. Taking child companion robots as an example, this paper...",
+      "doi_url": "https://doi.org/10.3390/su18062917",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Color perception and design",
+        "Design Education and Practice",
+        "Material Selection and Properties"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137956205",
+      "title": "Large Language Model-Based Virtual Patients for Simulated Clinical Learning: A Scoping Review",
+      "authors": [
+        "B. Gandhi",
+        "Leo Morjaria",
+        "Imeth Illamperuma",
+        "Praveen Nadesan",
+        "Aidan Arora"
+      ],
+      "date": "2026-03-17",
+      "journal": "AI in Medicine",
+      "abstract_snippet": "Large language model-based virtual patients (LLM-VPs) are an emerging simulation tool for health professions education, but their design and integration into curricula are not well characterized. This scoping review mapped how LLM-VPs are being used for simulated clinical learning across health...",
+      "doi_url": "https://doi.org/10.3390/aimed1010007",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Simulation-Based Education in Healthcare",
+        "Artificial Intelligence in Healthcare and Education",
+        "Cultural Competency in Health Care"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138273396",
+      "title": "From Traffic to Quality: A Study on the Dual-Path Driving Effects of Streamer Traits on Consumer Trust and Identification",
+      "authors": [
+        "Ru Wang",
+        "Shuyi Li",
+        "L. Zhang"
+      ],
+      "date": "2026-03-17",
+      "journal": "Journal of theoretical and applied electronic commerce research",
+      "abstract_snippet": "This study is based on the practical context of the livestream e-commerce industry\u2019s shift from \u201ctraffic competition\u201d to \u201cquality competition\u201d. Addressing the limitations of existing research that predominantly focuses on streamers\u2019 external traits while overlooking intrinsic qualities and...",
+      "doi_url": "https://doi.org/10.3390/jtaer21030091",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Customer Service Quality and Loyalty",
+        "Technology Adoption and User Behaviour",
+        "Consumer Retail Behavior Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137959038",
+      "title": "Building Collaborative Intelligence: The Translational Journey of the Smart Amplified Group Environment Across Research, Education, and Practice",
+      "authors": [
+        "Jason Leigh",
+        "Luc Renambot",
+        "Ryan Theriot",
+        "Lance Long",
+        "Christopher J Lee"
+      ],
+      "date": "2026-03-17",
+      "journal": "SN Computer Science",
+      "abstract_snippet": "The SAGE Suite\u2013SAGE1, SAGE2, and SAGE3\u2013translates advances in visualization, cyberinfrastructure, and human-computer interaction into an open, scalable platform that aligns with embodied cognition to support collaborative, spatial reasoning on large displays and personal devices. Over two decades...",
+      "doi_url": "https://doi.org/10.1007/s42979-026-04861-5",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Data Visualization and Analytics",
+        "Spatial Cognition and Navigation",
+        "Scientific Computing and Data Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138285197",
+      "title": "Agentic AI in services: orchestrating human\u2013machine synergy for service excellence",
+      "authors": [
+        "Ankur Srivastava",
+        "Sanjay Fuloria"
+      ],
+      "date": "2026-03-17",
+      "journal": "International Journal of Quality and Service Sciences",
+      "abstract_snippet": "Agentic artificial intelligence (AI) refers to systems capable of perceiving their environment, making contextually relevant decisions and acting autonomously to pursue defined or evolving objectives. While the notion of AI as an assemblage of rational agents is well established, as reflected in...",
+      "doi_url": "https://doi.org/10.1108/ijqss-03-2026-303",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "ai",
+      "topics": [
+        "Service and Product Innovation",
+        "AI in Service Interactions",
+        "Digital Economy and Work Transformation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138339812",
+      "title": "Real-Time Disaster Response and Recovery by using Neuromorphic Computing-Enabled Autonomous Agents",
+      "authors": [
+        "G Gokilavani",
+        "Abirami Shankari S",
+        "CT Vidhya"
+      ],
+      "date": "2026-03-17",
+      "journal": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+      "abstract_snippet": "Abstract - This paper presents a practical approach to disaster response and recovery through the integration of neuromorphic computing, autonomous agents, and energy-efficient processing systems. Neuromorphic computing, inspired by the human brain's architecture, enables ultralow power consumption...",
+      "doi_url": "https://doi.org/10.55041/ijsrem57837",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138401787",
+      "title": "Blockchain meets AI in healthcare: a review of convergent technologies for digital health transformation",
+      "authors": [
+        "Jialin Liu",
+        "Xiaowen Hu"
+      ],
+      "date": "2026-03-17",
+      "journal": "Frontiers in Blockchain",
+      "abstract_snippet": "Introduction Blockchain and AI (Artificial Intelligence) are shaping a new medical ecosystem as two key technologies for the digital transformation of healthcare. Methods This paper provides systematic review and theoretical framework for understanding the evolutionary logic, key themes and future...",
+      "doi_url": "https://doi.org/10.3389/fbloc.2026.1766092",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Blockchain Technology Applications and Security",
+        "Advanced Technologies in Various Fields"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138319018",
+      "title": "FinTech and digital platforms for financial inclusion in Jordan: logistics and operations aspects of sustainability",
+      "authors": [
+        "Hamza Mashaqbeh",
+        "Hassan Al-Ababneh",
+        "Saleh Freijat",
+        "Ganna Myroshnychenko",
+        "Nataliya Dalevska"
+      ],
+      "date": "2026-03-17",
+      "journal": "Acta Logistica",
+      "abstract_snippet": "The study aims to analyze the role of financial technologies (FinTech) and digital platforms in expanding access to financial services in Jordan, taking into account the logistical and operational aspects of sustainable development. The goal of the work is to determine how innovative tools of...",
+      "doi_url": "https://doi.org/10.22306/al.v13i1.743",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "FinTech, Crowdfunding, Digital Finance",
+        "Organizational and Employee Performance",
+        "Business and Economic Development"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138063471",
+      "title": "Artificial Intelligence-Driven Development and Characterization of Nanomedicine",
+      "authors": [
+        "Nnamdi Ikemefuna Okafor",
+        "Nkeiruka N. Igbokwe",
+        "Hope Onohuean",
+        "Mbuso Faya",
+        "Yahya E. Choonara"
+      ],
+      "date": "2026-03-17",
+      "journal": "BioNanoScience",
+      "abstract_snippet": "Nanomedicine has enabled major advances in targeted therapeutics by improving drug bioavailability, precision delivery, and safety profiles. However, the rational design and reproducible synthesis of nanoparticles with tightly controlled physicochemical attributes such as size, morphology, and...",
+      "doi_url": "https://doi.org/10.1007/s12668-026-02476-x",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Machine Learning in Materials Science",
+        "Computational Drug Discovery Methods",
+        "Nanoparticle-Based Drug Delivery"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138217123",
+      "title": "Operationalizing the Industrial Metaverse: Strategies, Challenges, and Opportunities for the Sustainable Factory of the Future",
+      "authors": [
+        "Brian\u00a0Vejrum Waehrens",
+        "Ulrich Berger",
+        "Bjoern Christian Dueholm",
+        "Astrid Heidemann Lassen",
+        "Ole Lehrmann Madsen"
+      ],
+      "date": "2026-03-17",
+      "journal": "Sustainability",
+      "abstract_snippet": "The Industrial Metaverse (IM) integrates digital twins, IoT, AI, and immersive technologies to create interconnected, data-driven production environments. While its potential for enhancing efficiency and collaboration is widely acknowledged, its operationalization, particularly in alignment with...",
+      "doi_url": "https://doi.org/10.3390/su18062941",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Digital Transformation in Industry",
+        "Virtual Reality Applications and Impacts",
+        "Flexible and Reconfigurable Manufacturing Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138209802",
+      "title": "Conceptualizing Process Innovation with Analytics: A Framework and Research Agenda",
+      "authors": [
+        "Casper Solheim Boyer",
+        "Charles M\u00f8ller"
+      ],
+      "date": "2026-03-17",
+      "journal": "Preprints.org",
+      "abstract_snippet": "Organizations are increasingly investing in Process Innovation with Analytics, i.e., the usage of analytics to innovate operational processes. Process innovation with analytics is a challenging and complex endeavor encompassing 1) redesign of processes, 2) development of digital infrastructure, and...",
+      "doi_url": "https://doi.org/10.20944/preprints202603.1272.v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Big Data and Business Intelligence",
+        "Information Systems Theories and Implementation",
+        "Spreadsheets and End-User Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138459978",
+      "title": "Comparative Optimization of Microwave and Ultrasound-Assisted Extraction of Bioactive Compounds and Proteins from Craterellus cornucopioides",
+      "authors": [
+        "Mojca \u010caki\u0107 Semen\u010di\u0107",
+        "Filip \u0160upljika",
+        "Anet Re\u017eek Jambrak",
+        "Monika Kova\u010devi\u0107",
+        "Nina \u010culjak"
+      ],
+      "date": "2026-03-17",
+      "journal": "Journal of Fungi",
+      "abstract_snippet": "This study investigates the optimization of extraction processes for bioactive compounds and proteins from the mushroom Craterellus cornucopioides by comparing Microwave-Assisted Extraction and Ultrasound-Assisted Extraction. Using Response Surface Methodology, the effects of temperature or...",
+      "doi_url": "https://doi.org/10.3390/jof12030215",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Fungal Biology and Applications",
+        "Polysaccharides and Plant Cell Walls",
+        "Food Drying and Modeling"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137938609",
+      "title": "Mapping Technological Sovereignty: A Geopolitical Network Approach to Domestic Capabilities and External Dependencies in Key Technologies",
+      "authors": [
+        "Maike Pascale Conijn",
+        "Koen Frenken",
+        "Amber Geurts",
+        "Janpieter Pol"
+      ],
+      "date": "2026-03-17",
+      "journal": "",
+      "abstract_snippet": "<title>Abstract</title> Technological sovereignty refers to the ability of a state to act autonomously in safeguarding its security and prosperity through access to critical technologies. This concept has gained increasing attention amid rising global trade tensions and geopolitical uncertainties....",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-8765283/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Economic and Technological Innovation",
+        "University-Industry-Government Innovation Models",
+        "Intellectual Property and Patents"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138002562",
+      "title": "Strategic Reconfiguration of Digital Capabilities and Its Influence on Export Performance in India's Semiconductor Supply Chain",
+      "authors": [
+        "Dr.Anilkumar.R"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "India\u2019s semiconductor ambition depends not only on factories and incentives, but also on the digital capabilities that coordinate design, procurement, quality assurance, logistics, and export compliance across fragmented supply networks (Teece, 2007). This study tests whether digital capability...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19069338",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Economic and Technological Innovation",
+        "Supply Chain Resilience and Risk Management",
+        "Global trade and economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137810748",
+      "title": "Towards a sustainable automotive supply chain: a critical and systematic literature review of supplier selection criteria",
+      "authors": [
+        "Ismail Ouahabi",
+        "Oulaid Kamach",
+        "Widad Fethallah"
+      ],
+      "date": "2026-03-17",
+      "journal": "Acta Logistica",
+      "abstract_snippet": "The automotive supply chain faces increasing pressure to align supplier selection processes with sustainability and resilience goals while adhering to rigorous industry standards. However, many companies still rely on the traditional approach by considering mainly the piece price as criteria for...",
+      "doi_url": "https://doi.org/10.22306/al.v13i1.750",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Sustainable Supply Chain Management",
+        "Supply Chain Resilience and Risk Management",
+        "Quality and Supply Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138272051",
+      "title": "Graph Neural Networks for Modeling Complex Dependencies in Global Supply Chain Networks",
+      "authors": [
+        "Jingyi Liu",
+        "Pan Li",
+        "Ying Wang"
+      ],
+      "date": "2026-03-17",
+      "journal": "Journal of Computing and Electronic Information Management",
+      "abstract_snippet": "Global supply chain networks exhibit intricate dependencies characterized by multi-tier supplier relationships, dynamic demand propagation, cascading disruption effects, and complex material flows across geographically distributed entities. Traditional analytical approaches struggle to capture...",
+      "doi_url": "https://doi.org/10.54097/6fcw2b19",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Advanced Graph Neural Networks",
+        "Supply Chain Resilience and Risk Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138439661",
+      "title": "Data analytics for supply chain resilience: a multiple case study analysis",
+      "authors": [
+        "Khuram Shahzad",
+        "An Hong",
+        "Tahir Ali",
+        "Binod Timilsina"
+      ],
+      "date": "2026-03-17",
+      "journal": "Acta Logistica",
+      "abstract_snippet": "Developing supply chain (SC) resilience through data analytics has emerged as an important area of research recently. However, the current literature offers a limited common understanding of the impact of data analytics enabling SC resilience across several phases of resilience development. Thus,...",
+      "doi_url": "https://doi.org/10.22306/al.v13i1.729",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Supply Chain Resilience and Risk Management",
+        "Big Data and Business Intelligence",
+        "Supply Chain and Inventory Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138474684",
+      "title": "Strategic Reconfiguration of Digital Capabilities and Its Influence on Export Performance in India's Semiconductor Supply Chain",
+      "authors": [
+        "Dr.Anilkumar.R"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "India\u2019s semiconductor ambition depends not only on factories and incentives, but also on the digital capabilities that coordinate design, procurement, quality assurance, logistics, and export compliance across fragmented supply networks (Teece, 2007). This study tests whether digital capability...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19069337",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Economic and Technological Innovation",
+        "Supply Chain Resilience and Risk Management",
+        "Global trade and economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137836087",
+      "title": "Improved Point Cloud Representation via a Learnable Sort\u2013Mix\u2013Attend Mechanism",
+      "authors": [
+        "Yuyan Zhang",
+        "Xi Wang",
+        "Zhang Yi",
+        "Lei Xu"
+      ],
+      "date": "2026-03-17",
+      "journal": "Sensors",
+      "abstract_snippet": "Recent years have seen remarkable progress in deep learning on 3D point clouds, with hierarchical architectures becoming standard. Most work has focused on developing increasingly complex operators, such as self-attention, while enhancing the representational capacity of efficient point-wise...",
+      "doi_url": "https://doi.org/10.3390/s26061888",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "3D Shape Modeling and Analysis",
+        "Robotics and Sensor-Based Localization",
+        "Advanced Neural Network Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137802116",
+      "title": "Beyond Labels: The Rise of Vision-Language Models",
+      "authors": [
+        "Daniel Rosehill",
+        "Gemini 3.1 (Flash)",
+        "Chatterbox TTS"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Episode summary: For decades, computer vision was limited to simple pattern matching and basic classification. Today, we are witnessing a fundamental shift as AI moves from merely seeing pixels to perceiving intent and navigating the messy reality of the physical world. This episode dives into the...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19065226",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7137944880",
+      "title": "Beyond Labels: The Rise of Vision-Language Models",
+      "authors": [
+        "Daniel Rosehill",
+        "Gemini 3.1 (Flash)",
+        "Chatterbox TTS"
+      ],
+      "date": "2026-03-17",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Episode summary: For decades, computer vision was limited to simple pattern matching and basic classification. Today, we are witnessing a fundamental shift as AI moves from merely seeing pixels to perceiving intent and navigating the messy reality of the physical world. This episode dives into the...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19065224",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7138407399",
+      "title": "FERMam: a lightweight dual-source and multi-scale fusion framework for facial expression recognition",
+      "authors": [
+        "Chaobang Gao",
+        "Xiang Ji",
+        "Q Zhang",
+        "Chaofan Tu",
+        "Hao He"
+      ],
+      "date": "2026-03-17",
+      "journal": "Scientific Reports",
+      "abstract_snippet": "Facial Expression Recognition (FER) demonstrates significant value in practical scenarios such as intelligent human\u2013computer interaction. However, conventional FER methods often struggle to balance performance and efficiency in resource-constrained environments. Specifically, CNN-based methods...",
+      "doi_url": "https://doi.org/10.1038/s41598-026-44396-6",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Emotion and Mood Recognition",
+        "EEG and Brain-Computer Interfaces",
+        "Face recognition and analysis"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138176790",
+      "title": "Traceable Suppression of Vehicle-Induced Dust in Industrial Sheds Through Dynamic\u2013Static Feature Enhancement",
+      "authors": [
+        "Kun Chen",
+        "Xujie Zhang",
+        "Yan Shao",
+        "Hang Xiao",
+        "Di Zheng"
+      ],
+      "date": "2026-03-17",
+      "journal": "Processes",
+      "abstract_snippet": "Existing intelligent monitoring methods are limited by insufficient training samples and target-feature degradation in complex environments. To address these issues, an industrial visual inspection scheme with dual verification is proposed for material sheds. The scheme integrates sample...",
+      "doi_url": "https://doi.org/10.3390/pr14060952",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Infrastructure Maintenance and Monitoring",
+        "Fire Detection and Safety Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138699005",
+      "title": "Digital Twin System for Multi-Scale Motion Prediction of Unmanned Underwater Vehicles",
+      "authors": [
+        "Yingliang Chen",
+        "Yijia Luo",
+        "Can Li",
+        "Jun Zhu",
+        "Yong Zou"
+      ],
+      "date": "2026-03-17",
+      "journal": "Journal of Marine Science and Engineering",
+      "abstract_snippet": "Unmanned underwater vehicles (UUVs) play a pivotal role in marine applications such as resource exploration, maritime search and rescue. However, communication signal loss remains a critical bottleneck, constraining UUV autonomous operation and mission reliability across four dimensions:...",
+      "doi_url": "https://doi.org/10.3390/jmse14060557",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Underwater Vehicles and Communication Systems",
+        "Maritime Navigation and Safety",
+        "UAV Applications and Optimization"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138069218",
+      "title": "NMLoNet: An End-to-End Intelligent Vehicle Localization Network Using Navigation Maps",
+      "authors": [
+        "Qingtong Yuan",
+        "Yicheng Li"
+      ],
+      "date": "2026-03-17",
+      "journal": "World Electric Vehicle Journal",
+      "abstract_snippet": "Accurate and reliable localization is crucial for advanced autonomous driving systems. Traditional high-precision localization approaches rely on meticulously annotated high-definition (HD) maps and employ visual-geometric methods to derive accurate pose information. However, the construction,...",
+      "doi_url": "https://doi.org/10.3390/wevj17030150",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotics and Sensor-Based Localization",
+        "Advanced Neural Network Applications",
+        "Autonomous Vehicle Technology and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138228966",
+      "title": "Performance Measurement and Analysis of Certifiable Defenses against Adversarial Patch Attacks",
+      "authors": [
+        "Zeyu Gao",
+        "Amin Saremi",
+        "Zonghua Gu"
+      ],
+      "date": "2026-03-17",
+      "journal": "Journal of Signal Processing Systems",
+      "abstract_snippet": "We consider deep learning-based perception in real-time, safety-critical cyber-physical systems (CPS), such as autonomous driving and robotics, where embedded computing platforms typically operate under limited hardware resources due to SWaP-C (Size, Weight, Power, and Cost) constraints. In...",
+      "doi_url": "https://doi.org/10.1007/s11265-026-01989-8",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Adversarial Robustness in Machine Learning",
+        "Advanced Malware Detection Techniques",
+        "Physical Unclonable Functions (PUFs) and Hardware Security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136203614",
+      "title": "HRC Metrology: Assessment Criteria, Metrics and Methods for Human\u2013Robot Co-Manipulation Tasks",
+      "authors": [
+        "S. M. Mizanoor Rahman"
+      ],
+      "date": "2026-03-16",
+      "journal": "Machines",
+      "abstract_snippet": "We developed a human\u2013robot collaborative manipulation system (co-manipulation system) in the form of a power assist robotic system (PARS) where a human and a robot collaborated to perform the co-manipulation of an object with power assistance. We conducted an experiment (the first experiment),...",
+      "doi_url": "https://doi.org/10.3390/machines14030336",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Social Robot Interaction and HRI",
+        "Teleoperation and Haptic Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136170231",
+      "title": "Integrating Convolutional Neural Networks with Finite-State Machines for Fault Detection in Mobile Robots",
+      "authors": [
+        "Nilachakra Dash",
+        "Bandita Sahu",
+        "Kakita Murali Gopal",
+        "Indrajeet Kumar",
+        "Ramesh K. Sahoo"
+      ],
+      "date": "2026-03-16",
+      "journal": "Robotics",
+      "abstract_snippet": "This paper highlights a communal fault detection and isolation framework integrating a convolutional neural network (CNN) with a finite-state machine (FSM). The proposed concepts ensure state-based controlled discriminate pattern recognition and enable the diagnosis of different anomalies in the...",
+      "doi_url": "https://doi.org/10.3390/robotics15030061",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Fault Detection and Control Systems",
+        "Anomaly Detection Techniques and Applications",
+        "Time Series Analysis and Forecasting"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136111896",
+      "title": "Comprehensive Survey on Autonomous Disaster Reconnaissance: A Comparative Analysis of UAVs and UGVs",
+      "authors": [
+        "Harishik Dev Singh Jamwal",
+        "Saurabh Singh"
+      ],
+      "date": "2026-03-16",
+      "journal": "Telecom",
+      "abstract_snippet": "Autonomous platforms are critical for accelerating disaster response by delivering situational awareness and search-and-rescue support without exposing human operators to risk. However, practitioners face significant challenges in selecting and implementing robust software on vendor-constrained,...",
+      "doi_url": "https://doi.org/10.3390/telecom7020031",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "UAV Applications and Optimization",
+        "Robotics and Sensor-Based Localization",
+        "Human-Automation Interaction and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136123791",
+      "title": "Industrial Design Beyond the Physical: An Autoethnographic Investigation into Virtual Product Development Practices Using Unreal Engine",
+      "authors": [
+        "H\u00fcseyin \u00d6zkal \u00d6zsoy"
+      ],
+      "date": "2026-03-16",
+      "journal": "Osmaniye Korkut Ata \u00dcniversitesi Fen Bilimleri Enstit\u00fcs\u00fc Dergisi",
+      "abstract_snippet": "This research explores how virtual products, which are never physically manufactured, can be conceptualized, iteratively refined, and evaluated within a real-time 3D environment, using an autoethnographic methodology. Leveraging Unreal Engine\u2019s capabilities for high-fidelity visualization,...",
+      "doi_url": "https://doi.org/10.47495/okufbed.1723217",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Virtual Reality Applications and Impacts",
+        "Educational Games and Gamification",
+        "Design Education and Practice"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136136263",
+      "title": "Low-Power CMOS Integrated Circuit Design Technology: A Review from Process Optimization to Architectural Innovation",
+      "authors": [
+        "Yuqian Hu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Applied and Computational Engineering",
+      "abstract_snippet": "Moore's Law has spurred the continuous scaling of CMOS integrated circuits for decades, yet the ensuing power consumption bottleneck has severely restricted the development of mobile, IoT and portable electronics. This paper presents a systematic literature review of low-power CMOS design...",
+      "doi_url": "https://doi.org/10.54254/2755-2721/2026.bj32251",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Low-power high-performance VLSI design",
+        "Advancements in Semiconductor Devices and Circuit Design",
+        "VLSI and FPGA Design Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136238920",
+      "title": "Integrated Framework for Multi-Die Semiconductor Interconnect Systems: Hierarchical Signal Management Methodology and Coordinated Tessellation Architecture for Heterogeneous Chiplet Integration",
+      "authors": [
+        "Manan Limbad"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "VERSION 2 NOTE: Metadata correction only. Author contact email updated: [email protected]. Scientific content, data, and conclusions unchanged.The progressive scaling limitations of monolithic semiconductor dies have driven the semiconductor industry toward heterogeneous multi-die integration,...",
+      "doi_url": "https://doi.org/10.26434/chemrxiv.15000826/v2",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "VLSI and FPGA Design Techniques",
+        "3D IC and TSV technologies",
+        "Interconnection Networks and Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136169841",
+      "title": "Focus group-led refinement of an LLM-enabled companion robot for older people",
+      "authors": [
+        "Yuto Satake",
+        "Minna O. Nygren",
+        "Clare Chung-Wah Yu",
+        "Akira Tsuboi",
+        "Ippei Endo"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "<title>Abstract</title> Loneliness in later life is a public\u2011health concern, and large language model (LLM)-enabled conversational robots have potential to supplement social connection at scale by facilitating everyday conversations. However, evidence on the development and acceptability of such...",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9093776/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Social Robot Interaction and HRI",
+        "AI in Service Interactions",
+        "Technology Use by Older Adults"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136539210",
+      "title": "Activating Embodied Memory Through a Fusion of Clay and Augmented Reality",
+      "authors": [
+        "Svetlana Atlavina"
+      ],
+      "date": "2026-03-16",
+      "journal": "Arts",
+      "abstract_snippet": "The ACE-funded project Clay and Augmented Reality (CAR) explored how the combination of tactile and digital media might activate embodied memory, foster art expression, and stimulate new forms of creative learning. The project investigated memory recollection by integrating clay sculpting with...",
+      "doi_url": "https://doi.org/10.3390/arts15030055",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Art Therapy and Mental Health",
+        "Participatory Visual Research Methods",
+        "Innovative Human-Technology Interaction"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137013680",
+      "title": "An AI-Enabled Theoretical Framework for Reframing Sustainability Literacy as a Decision Capability in Circular and Socially Sustainable Construction Planning",
+      "authors": [
+        "Tianxi Lu",
+        "Siti Sarah Herman",
+        "Nor Atiah Binti Ismail"
+      ],
+      "date": "2026-03-16",
+      "journal": "Buildings",
+      "abstract_snippet": "Sustainability literacy is increasingly invoked in construction and planning research, yet it is most often framed as an educational construct concerned with awareness, knowledge, and attitudes. This framing provides limited explanatory power for understanding how sustainability values are...",
+      "doi_url": "https://doi.org/10.3390/buildings16061168",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Sustainable Building Design and Assessment",
+        "BIM and Construction Integration",
+        "Sustainability in Higher Education"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137063628",
+      "title": "Pedagogical Roles of Large Language Models in Computing Education: A Systematic Literature Review",
+      "authors": [
+        "Opetunde Ibitoye",
+        "Amir-reza Asadi",
+        "Joel Appiah",
+        "Taiwo Peter Akinremi",
+        "Popoola Saheed"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "<title>Abstract</title> Large Language Models (LLMs) are rapidly transforming educational practices, offering new possibilities for personalized, interactive, and adaptive learning. However, their specific pedagogical roles and impact on student learning processes in computing education remain...",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9107566/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Online Learning and Analytics",
+        "Teaching and Learning Programming"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136582368",
+      "title": "Light-programmable mechanical computing via polyaniline composite film",
+      "authors": [
+        "Xiunan Yan",
+        "Yixiang Li",
+        "Yichen Zhao",
+        "Chen Pan",
+        "S. Frank Yan"
+      ],
+      "date": "2026-03-16",
+      "journal": "Nature Communications",
+      "abstract_snippet": "Mechanical computing represents a highly promising paradigm for environment-adaptive information processing. However, existing implementations are generally constrained by limited architectural scalability, and their modes of application in practical scenarios remain insufficiently defined. Here,...",
+      "doi_url": "https://doi.org/10.1038/s41467-026-70425-z",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Advanced Sensor and Energy Harvesting Materials",
+        "Advanced Materials and Mechanics",
+        "Advanced Memory and Neural Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136128867",
+      "title": "The Translator Image in Film: A Case Study of C-3PO",
+      "authors": [
+        "Yuxi Wu",
+        "Bo Zhu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Literature Language and Cultural Studies",
+      "abstract_snippet": "Rapid advances in digital technology have profoundly transformed traditional modes of translation, with artificial intelligence increasingly emerging as a key agent in language services. Against this background, the image of the artificial intelligence translator in film and television has emerged...",
+      "doi_url": "https://doi.org/10.63313/llcs.9144",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Translation Studies and Practices",
+        "Subtitles and Audiovisual Media",
+        "Interpreting and Communication in Healthcare"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137276030",
+      "title": "Comparative analysis of strategic vs. computational thinking in management",
+      "authors": [
+        "Iryna Nyenno"
+      ],
+      "date": "2026-03-16",
+      "journal": "Frontiers in Artificial Intelligence",
+      "abstract_snippet": "The integration of artificial intelligence (AI) into organisational processes is transforming the decision-making dynamics of managerial work. This study examines how AI reshapes managerial roles at the micro level by analysing the interaction between strategic and computational thinking across...",
+      "doi_url": "https://doi.org/10.3389/frai.2026.1729797",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Ethics and Social Impacts of AI",
+        "Big Data and Business Intelligence",
+        "Management and Organizational Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137269372",
+      "title": "Sustainable Environmental Analysis of Soil, Water, and Machine Interactions: A Review",
+      "authors": [
+        "Mohamed Ghonimy",
+        "Ahmed M. Aggag",
+        "Ahmed Alzoheiry",
+        "Abdulaziz Alharbi"
+      ],
+      "date": "2026-03-16",
+      "journal": "Sustainability",
+      "abstract_snippet": "Sustainable agriculture in arid and semi-arid regions critically depends on the interactions between soil physical properties, water dynamics, and mechanized field operations. In this context, soil physical attributes, such as texture, bulk density, aggregate stability, and soil water potential,...",
+      "doi_url": "https://doi.org/10.3390/su18062900",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Soil Mechanics and Vehicle Dynamics",
+        "Soil and Unsaturated Flow",
+        "Polymer-Based Agricultural Enhancements"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136468318",
+      "title": "Heterogeneity: Meaning and Measurement, Causes and Consequences",
+      "authors": [
+        "Zhanshan Ma",
+        "Aaron Ellison"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "Heterogeneity\u2014the variation within and among collectives whose constituent entities interact and integrate into larger, functioning wholes, distinguished fundamentally from diversity as mere variation within non-interacting populations\u2014has emerged as a central organizing principle across ecology...",
+      "doi_url": "https://doi.org/10.32942/x2z66n",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Ecosystem dynamics and resilience",
+        "Sustainability and Ecological Systems Analysis",
+        "Ecology and Vegetation Dynamics Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W1524766321",
+      "title": "My journey. My story: shifting perspective to living, being, teaching authentically",
+      "authors": [
+        "Wendy Blaskovic",
+        "Rachel Moll"
+      ],
+      "date": "2026-03-16",
+      "journal": "VIUSpace (Vancouver Island University Library)",
+      "abstract_snippet": "The following project is an autobiographical, narrative account of my life and my investigation of the correlation between a person\u2019s authenticity and the quality of their teaching practice. Over the past year, I critically reflected on my personal journey towards authentic being, living and...",
+      "doi_url": "https://doi.org/10.25316/fvf1-qc46",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Student Assessment and Feedback",
+        "Reflective Practices in Education",
+        "Education Systems and Policy"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138316912",
+      "title": "Ego to World: Collaborative Spatial Reasoning in Embodied Systems via Reinforcement Learning",
+      "authors": [
+        "Heng Zhou",
+        "Li Kang",
+        "Yiran Qin",
+        "Xiufeng Song",
+        "Ao Yu"
+      ],
+      "date": "2026-03-16",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Understanding the world from distributed, partial viewpoints is a fundamental challenge for embodied multi-agent systems. Each agent perceives the environment through an ego-centric view that is often limited by occlusion and ambiguity. To study this problem, we introduce the Ego-to-World (E2W)...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.14811",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Multimodal Machine Learning Applications",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136171065",
+      "title": "Energy-efficient neuromorphic computing for ultra-low latency cognitive radio: a hardware-software co-design framework for 6\u00a0G spectrum intelligence",
+      "authors": [
+        "Serhiy O. Semerikov",
+        "Pavlo P. Nechypurenko",
+        "Tetiana A. Vakaliuk",
+        "Iryna S. Mintii",
+        "Andrii O. Kolhatin"
+      ],
+      "date": "2026-03-16",
+      "journal": "Discover Artificial Intelligence",
+      "abstract_snippet": "Sixth-generation (6 G) wireless networks demand cognitive radio systems that simultaneously achieve sub-millisecond latency and sustainable energy consumption \u2013 requirements conventional artificial intelligence approaches cannot meet. This paper presents a hardware-software co-design framework...",
+      "doi_url": "https://doi.org/10.1007/s44163-026-01093-7",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Ferroelectric and Negative Capacitance Devices",
+        "Advanced Memory and Neural Computing",
+        "Energy Harvesting in Wireless Networks"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137371702",
+      "title": "Neuromorphic sensing and computing in a versatile thermally grown Fe\u2013W\u2013O\u2013S nanocomposite memristor",
+      "authors": [
+        "Muhammad Ismail",
+        "Junhyuk Park",
+        "Maria Rasheed",
+        "Chandreswar Mahata",
+        "Hyunseok Kim"
+      ],
+      "date": "2026-03-16",
+      "journal": "Materials Science and Engineering R Reports",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1016/j.mser.2026.101206",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Transition Metal Oxide Nanomaterials"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136424522",
+      "title": "Research Progress of Wearable Flexible Sensors",
+      "authors": [
+        "Man Cheng"
+      ],
+      "date": "2026-03-16",
+      "journal": "Applied and Computational Engineering",
+      "abstract_snippet": "With the growth of health monitoring and human-computer interaction needs, wearable flexible sensors have achieved rapid development due to their flexibility, comfort and integrability. This paper systematically reviews the latest research progress in this field: firstly, the flexible sensors based...",
+      "doi_url": "https://doi.org/10.54254/2755-2721/2026.bj32219",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Sensor and Energy Harvesting Materials",
+        "Prosthetics and Rehabilitation Robotics",
+        "Context-Aware Activity Recognition Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136824322",
+      "title": "Selection of Innovative Technologies in Greenhouse Systems: A Multi-Criteria Approach Based on Patent Data",
+      "authors": [
+        "Ali K\u0131l\u0131\u00e7",
+        "Hakan Eren",
+        "U\u011fur G\u00f6\u00e7en"
+      ],
+      "date": "2026-03-16",
+      "journal": "Tekirda\u011f Ziraat Fak\u00fcltesi Dergisi",
+      "abstract_snippet": "The ever-increasing pace of technological development has led to shorter lifecycles for technological projects, making it crucial for researchers and technology companies to carefully consider when, where, and how much to invest. Moreover, the current trend of technological research and innovation...",
+      "doi_url": "https://doi.org/10.33462/jotaf.1704855",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Greenhouse Technology and Climate Control",
+        "Smart Agriculture and AI",
+        "Intellectual Property and Patents"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136464606",
+      "title": "Utilization of Artificial Intelligence Technologies in Enterprises Located in Poland",
+      "authors": [
+        "Ludmi\u0142a Filina-Dawidowicz",
+        "Adam Koli\u0144ski",
+        "Agnieszka Barczak",
+        "Davor Dujak"
+      ],
+      "date": "2026-03-16",
+      "journal": "Applied Sciences",
+      "abstract_snippet": "Artificial intelligence (AI) is increasingly shaping enterprise operations, yet evidence remains limited on how firms in Poland acquire AI capabilities, which AI technologies they adopt, and where they apply them functionally. This study examines (i) AI acquisition modes, (ii) types of AI...",
+      "doi_url": "https://doi.org/10.3390/app16062836",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "AI in Service Interactions",
+        "Big Data and Business Intelligence",
+        "Ethics and Social Impacts of AI"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138226076",
+      "title": "Privacy Usability Evaluation of IoT Smart Home Companion Application: A Pilot Study of the ABCDE Privacy Framework with an Industrial Multidisciplinary Team",
+      "authors": [
+        "Amparo Coiduras-Sanagust\u00edn",
+        "Eduardo Manchado P\u00e9rez",
+        "C\u00e9sar Alfonso Garc\u00eda-Hern\u00e1ndez"
+      ],
+      "date": "2026-03-16",
+      "journal": "Preprints.org",
+      "abstract_snippet": "(1) Background: Privacy usability in IoT smart home companion applications remains an underexplored domain despite mounting regulatory requirements and accelerating user adoption. Heuristic evaluation offers a scalable pathway to privacy usability assessment, yet validated frameworks for applying...",
+      "doi_url": "https://doi.org/10.20944/preprints202603.1128.v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Privacy, Security, and Data Protection",
+        "Innovative Human-Technology Interaction",
+        "Digital Mental Health Interventions"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137361318",
+      "title": "Lonely Work: Gig Work, Workplace Technology and Working-Class Loneliness",
+      "authors": [
+        "Chris Bousquet"
+      ],
+      "date": "2026-03-16",
+      "journal": "Journal of Business Ethics",
+      "abstract_snippet": "Abstract In this paper, I argue that changes in the structure of low-income work and developments in workplace technology have stripped away many of the essential social goods provided by such work. I identify the rise of platform gig work, adoption of automation tools, and use of employee...",
+      "doi_url": "https://doi.org/10.1007/s10551-026-06289-6",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Digital Economy and Work Transformation",
+        "Emotional Labor in Professions",
+        "Labor Movements and Unions"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136843404",
+      "title": "BIoT-Chain: a hyperledger blockchain cloud framework with SHA-3 keccak-enabled privacy for robust drone IoT network security",
+      "authors": [
+        "Abdullah Ayub Khan",
+        "Hamad Almansour",
+        "Ahod Alghuried",
+        "Jamil Abedalrahim Jamil Alsayaydeh",
+        "Mohamad Afendee Mohamed"
+      ],
+      "date": "2026-03-16",
+      "journal": "Journal of Cloud Computing Advances Systems and Applications",
+      "abstract_snippet": "The robust development in the technology of Drone-enabled Internet of Things (DIoT) infrastructure has revolutionized major fields of disaster management, real-time surveillance, agricultural activities, and smart city management. However, the inherent vulnerabilities in communication channels,...",
+      "doi_url": "https://doi.org/10.1186/s13677-026-00879-5",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "UAV Applications and Optimization",
+        "IoT and Edge/Fog Computing",
+        "Blockchain Technology Applications and Security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137266536",
+      "title": "Aligning organizational structures with digital transformation and industry 5.0 in construction: a Delphi study",
+      "authors": [
+        "Cristian Camilo Osorio G\u00f3mez",
+        "Rodrigo F Herrera",
+        "Vicente A Gonz\u00e1lez",
+        "Eugenio Pellicer"
+      ],
+      "date": "2026-03-16",
+      "journal": "Revista de la construccio\u0301n",
+      "abstract_snippet": "The digitalization of the AEC sector, while steadily progressing, has been largely driven by technological adoption rather than by a transformation of its organizational structures. Within construction 5.0, the AEC organizations have not been investigated in depth. For this reason, exploratory...",
+      "doi_url": "https://doi.org/10.7764/rdlc.25.1.149",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Digital Transformation in Industry",
+        "BIM and Construction Integration",
+        "Educational Leadership and Innovation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136632022",
+      "title": "Collaborative Intelligence in IoT Ecosystems",
+      "authors": [
+        "Vishal",
+        "Komal",
+        "Anjana Sharma",
+        "Mortuza Ahmmed"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "Collaborative intelligence describes how people or systems share ideas and information in order to produce intelligent results. It is frequently linked to distributed, multi-agent systems in computer science, where both robots and humans independently contribute to solve complicated problems. In...",
+      "doi_url": "https://doi.org/10.1201/9781003608653-10",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "IoT and Edge/Fog Computing",
+        "Green IT and Sustainability",
+        "Modular Robots and Swarm Intelligence"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137304786",
+      "title": "Employees\u2019 Trust in AI and Innovative Behavior: A JD-R Model Perspective",
+      "authors": [
+        "Changli Liu",
+        "Qichen Liao",
+        "Junting Lu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Behavioral Sciences",
+      "abstract_snippet": "With the rapid advancement of technology, whether to cultivate employees\u2019 trust in artificial intelligence (AI) has emerged as a practical issue that managers must address to drive innovation. In this study, we explore how employees\u2019 trust in AI affects their innovative behavior drawing on Job...",
+      "doi_url": "https://doi.org/10.3390/bs16030425",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Job Satisfaction and Organizational Behavior",
+        "AI and HR Technologies",
+        "Technostress in Professional Settings"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137969323",
+      "title": "What are data centres and how sustainable are they?",
+      "authors": [
+        "Alexander Williams",
+        "Simon Brawley"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "Data centres underpin most aspects of modern life, including economic activity, cloud services, and how we interact with one another. How many does the UK have, and how do they affect the environment?",
+      "doi_url": "https://doi.org/10.58248/pn762",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "supply",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7137199510",
+      "title": "Quantum Computing for Supply Chain Optimization: Algorithms, Hybrid Frameworks, and Industry Applications",
+      "authors": [
+        "Fay\u00e7al Fedouaki",
+        "Mouhsene Fri",
+        "Kaoutar Douaioui",
+        "Amellal Asmae"
+      ],
+      "date": "2026-03-16",
+      "journal": "Logistics",
+      "abstract_snippet": "Background: This paper investigates hybrid quantum\u2013classical optimization approaches for addressing core supply chain management (SCM) problems. A unified hybrid framework is implemented and evaluated across five representative domains: vehicle routing, scheduling, facility location, inventory...",
+      "doi_url": "https://doi.org/10.3390/logistics10030067",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Quantum Computing Algorithms and Architecture",
+        "Metaheuristic Optimization Algorithms Research",
+        "Quantum Information and Cryptography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136440380",
+      "title": "Hastane S\u00fcre\u00e7lerinde Yal\u0131n Y\u00f6netim Yakla\u015f\u0131m\u0131: T\u00fcrkiye Odakl\u0131 Literat\u00fcr \u0130ncelemesi",
+      "authors": [
+        "Selma Kaymaz",
+        "Sel\u00e7uk \u00d6zcan"
+      ],
+      "date": "2026-03-16",
+      "journal": "Osmaniye Korkut Ata \u00dcniversitesi Fen Bilimleri Enstit\u00fcs\u00fc Dergisi",
+      "abstract_snippet": "Bu \u00e7al\u0131\u015fma, yal\u0131n metodolojilerin hastanelerdeki uygulamalar\u0131n\u0131 kapsaml\u0131 bir \u015fekilde ele almakta ve sa\u011fl\u0131k hizmetlerinde s\u00fcre\u00e7 optimizasyonu, israf\u0131n azalt\u0131lmas\u0131, maliyet minimizasyonu ve hizmet kalitesinin art\u0131r\u0131lmas\u0131ndaki etkinli\u011fini de\u011ferlendirmeyi ama\u00e7lamaktad\u0131r. Yal\u0131n metodoloji, s\u00fcre\u00e7lerin...",
+      "doi_url": "https://doi.org/10.47495/okufbed.1710010",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Healthcare Operations and Scheduling Optimization",
+        "Healthcare and Environmental Waste Management",
+        "Facilities and Workplace Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136385696",
+      "title": "Proceedings of the XI International Scientific and Practical Conference",
+      "authors": [],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "generative image technologies (Lambert, 2014) -most studies focus primarily on the optical or symbolic mechanisms of anamorphosis.In contrast, this article proposes to interpret anamorphosis as a form of mental optics and a metaphor for the instability of perception.Just as an anamorphic image...",
+      "doi_url": "https://doi.org/10.46299/isg.2026.1.11",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7136813060",
+      "title": "DIGITALIZATION AND SUSTAINABLE DEVELOPMENT: FROM TECHNOLOGY TO SOCIETY",
+      "authors": [
+        "Denis Vladlenov"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "generative image technologies (Lambert, 2014) -most studies focus primarily on the optical or symbolic mechanisms of anamorphosis.In contrast, this article proposes to interpret anamorphosis as a form of mental optics and a metaphor for the instability of perception.Just as an anamorphic image...",
+      "doi_url": "https://doi.org/10.46299/isg.p.2026.1.11",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Digital Economy and Transformation",
+        "Socioeconomic and Demographic Analysis",
+        "Digitalization and Economic Development in Agriculture"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136644048",
+      "title": "Nanoparticles-based phototherapy systems: molecular mechanisms and clinical applications",
+      "authors": [
+        "Deepak S. Chauhan",
+        "Rajendra Prasad",
+        "Mukesh Dhanka",
+        "Navneet Kaur",
+        "Hitasha Vithalani"
+      ],
+      "date": "2026-03-16",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "abstract_snippet": "Nanoparticle-based phototherapy represents a paradigm shift in precision medicine, harnessing light-activated mechanisms to modulate cellular pathways across a spectrum of diseases. By integrating nanoparticles, phototherapeutic modalities achieve enhanced light absorption and improved targeting...",
+      "doi_url": "https://doi.org/10.1038/s41392-025-02536-w",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Nanoplatforms for cancer theranostics",
+        "Advanced Nanomaterials in Catalysis",
+        "Graphene and Nanomaterials Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136326202",
+      "title": "DesertFormer: Transformer-Based Semantic Segmentation for Off-Road Desert Terrain Classification in Autonomous Navigation Systems",
+      "authors": [
+        "Yasaswini Chebolu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Reliable terrain perception is a fundamental requirement for autonomous navigation in unstructured, off-road environments. We present DesertFormer, a semantic segmentation pipeline for off-road desert terrain analysis based on SegFormer B2 with a hierarchical Mix Transformer (MiT-B2) backbone. The...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19053084",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Robotics and Sensor-Based Localization",
+        "Autonomous Vehicle Technology and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137377590",
+      "title": "AIM-SEEM: Adapting SEEM for Open-Vocabulary Terrain Segmentation Across Arbitrary Imaging Modalities",
+      "authors": [
+        "Yuqian Wang",
+        "Xuefu Xiang",
+        "Yongcun Wu",
+        "Yong Zhang",
+        "Xinyue Li"
+      ],
+      "date": "2026-03-16",
+      "journal": "Sensors",
+      "abstract_snippet": "Terrain segmentation performance directly affects the reliability of robotic environmental perception and decision making, yet most existing methods are built upon the assumptions of fixed sensing configurations and closed label sets. As a result, they struggle to meet real world outdoor...",
+      "doi_url": "https://doi.org/10.3390/s26061869",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Robotics and Sensor-Based Localization",
+        "Domain Adaptation and Few-Shot Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136845818",
+      "title": "MGLF-Net: Underwater Image Enhancement Network Based on Multi-Scale Global and Local Feature Fusion",
+      "authors": [
+        "Yan Li",
+        "Jian Zhou",
+        "Lin Wang",
+        "Guizhen Liu",
+        "Zhongjun Ding"
+      ],
+      "date": "2026-03-16",
+      "journal": "Electronics",
+      "abstract_snippet": "Underwater imaging is generally subject to complex degradation issues such as color distortion, contrast degradation, and detail blurring due to the selective absorption and scattering of light wavelengths by water. Existing deep learning methods have limitations in the collaborative optimization...",
+      "doi_url": "https://doi.org/10.3390/electronics15061234",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Image Enhancement Techniques",
+        "Advanced Image Fusion Techniques",
+        "Generative Adversarial Networks and Image Synthesis"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137271834",
+      "title": "Financial Education in the Age of Artificial Intelligence: A Systematic Review with Text Mining and Natural Language Processing",
+      "authors": [
+        "Eveling Sussety Balcazar-Paiva",
+        "Alexander Fernando Haro-Sarango",
+        "Juan Amilcar Villanueva-Calder\u00f3n"
+      ],
+      "date": "2026-03-16",
+      "journal": "International Journal of Financial Studies",
+      "abstract_snippet": "This article develops a rigorous and reproducible systematic review of the integration of artificial intelligence (AI) in financial education during the period 2020\u20132025, structured in accordance with -5.3-PRISMA and explicitly oriented toward detecting narrative and perception. The search was...",
+      "doi_url": "https://doi.org/10.3390/ijfs14030076",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Financial Literacy, Pension, Retirement Analysis",
+        "FinTech, Crowdfunding, Digital Finance",
+        "Artificial Intelligence Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136050774",
+      "title": "ViT-HAR: Vision Transformer-Based Human Activity Recognition in Cluttered Environments",
+      "authors": [
+        "Arvind Mewada",
+        "Shahnawaz Ahmad",
+        "Mohd Aquib Ansari"
+      ],
+      "date": "2026-03-16",
+      "journal": "Sakarya University Journal of Computer and Information Sciences",
+      "abstract_snippet": "In the real world, Human Activity Recognition (HAR) remains challenging due to issues such as occlusion, dynamic backgrounds, and visual noise. Traditional models, such as CNNs, RNNs, and ST-GCNs, have constraints, including a small receptive field and the use of local features, which also reduce...",
+      "doi_url": "https://doi.org/10.35377/saucis...1745614",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Multimodal Machine Learning Applications",
+        "Context-Aware Activity Recognition Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137134488",
+      "title": "Bridging the latency gap with a continuous stream evaluation framework in event-driven perception",
+      "authors": [
+        "Jie Chu",
+        "Runze Zhang",
+        "Chu Yang",
+        "Zongyou Yu",
+        "Zongtao Bu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Nature Communications",
+      "abstract_snippet": "Neuromorphic vision systems process continuous event streams and offer transformative potential for real-time applications. However, their evaluation remains tethered to methodologies from RGB imaging. These approaches convert asynchronous event streams into synchronized frames and ignore...",
+      "doi_url": "https://doi.org/10.1038/s41467-026-70240-6",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Advanced Neural Network Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136396720",
+      "title": "A Reinforcement Learning Framework for Multimodal Recommendation Explanation Generation",
+      "authors": [
+        "Yifan Lin",
+        "Jiayi He"
+      ],
+      "date": "2026-03-16",
+      "journal": "",
+      "abstract_snippet": "Traditional recommender systems often suffer from a lack of interpretability, providing static, unimodal explanations disconnected from actual recommendation performance. To address these limitations, we propose MM-Rec-RL, a novel reinforcement learning framework for multimodal recommendation...",
+      "doi_url": "https://doi.org/10.22541/au.177368713.30806120/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Explainable Artificial Intelligence (XAI)",
+        "Multimodal Machine Learning Applications",
+        "Topic Modeling"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136223244",
+      "title": "DesertFormer: Transformer-Based Semantic Segmentation for Off-Road Desert Terrain Classification in Autonomous Navigation Systems",
+      "authors": [
+        "Yasaswini Chebolu"
+      ],
+      "date": "2026-03-16",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Reliable terrain perception is a fundamental requirement for autonomous navigation in unstructured, off-road environments. We present DesertFormer, a semantic segmentation pipeline for off-road desert terrain analysis based on SegFormer B2 with a hierarchical Mix Transformer (MiT-B2) backbone. The...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19053085",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Robotics and Sensor-Based Localization",
+        "Autonomous Vehicle Technology and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136924652",
+      "title": "Push-or-Avoid: Deep Reinforcement Learning of Obstacle-Aware Harvesting for Orchard Robots",
+      "authors": [
+        "Heng Fu",
+        "Tao Li",
+        "Qingchun Feng",
+        "Ling Chen"
+      ],
+      "date": "2026-03-16",
+      "journal": "Agriculture",
+      "abstract_snippet": "In structured orchard environments, harvesting robots operate where rigid bodies (e.g., trunks, poles, and wires) coexist with flexible foliage. Strict avoidance of all obstacles significantly compromises operational efficiency. To address this, this study proposes an end-to-end autonomous...",
+      "doi_url": "https://doi.org/10.3390/agriculture16060670",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Smart Agriculture and AI",
+        "Tree Root and Stability Studies",
+        "Soft Robotics and Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134051362",
+      "title": "SC-NeuroCore: Universal Stochastic Computing Framework for Neuromorphic Hardware",
+      "authors": [
+        "Sotek, Miroslav",
+        "Michal Reiprich"
+      ],
+      "date": "2026-03-15",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "A high-performance neuromorphic computing framework combining stochastic computing with spiking neural networks. Features a Rust SIMD engine with PyO3 Python bindings, hyper-dimensional computing (HDC/VSA), Petri net simulation, HDL generation for FPGA deployment, and SCPN integration for...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18881374",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7138113042",
+      "title": "Load-Aware Locomotion Control for Humanoid Robots in Industrial Transportation Tasks",
+      "authors": [
+        "Lequn Fu",
+        "Yijun Zhong",
+        "Xiao Tong Li",
+        "Yibin Liu",
+        "Zhiyuan Xu"
+      ],
+      "date": "2026-03-15",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Humanoid robots deployed in industrial environments are required to perform load-carrying transportation tasks that tightly couple locomotion and manipulation. However, achieving stable and robust locomotion under varying payloads and upper-body motions is challenging due to dynamic coupling and...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.14308",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Prosthetics and Rehabilitation Robotics",
+        "Social Robot Interaction and HRI"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136045435",
+      "title": "Sensory-motor control with large language models via iterative policy refinement",
+      "authors": [
+        "J\u00f4nata Tyska Carvalho",
+        "Stefano Nolfi"
+      ],
+      "date": "2026-03-15",
+      "journal": "Scientific Reports",
+      "abstract_snippet": "We propose a method that enables large language models (LLMs) to control embodied agents through the generation of control policies that directly map continuous observation vectors to continuous action vectors. At the outset, the LLMs generate a control strategy based on a textual description of...",
+      "doi_url": "https://doi.org/10.1038/s41598-026-42091-0",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Action Observation and Synchronization",
+        "Multimodal Machine Learning Applications",
+        "Human Motion and Animation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136046975",
+      "title": "Adaptive reinforcement learning for lithography optimization: a scalable AI-driven solution for next-generation semiconductor manufacturing",
+      "authors": [
+        "Umar Rashid",
+        "Fahad Shafique",
+        "Hamza Atif",
+        "Waleed Waheed",
+        "Rizwan Khan"
+      ],
+      "date": "2026-03-15",
+      "journal": "Scientific Reports",
+      "abstract_snippet": "Semiconductor lithography, a pivotal process in integrated circuit (IC) fabrication, accounts for approximately 30% of production costs and faces significant challenges as feature sizes shrink to sub-nanometer scales. Optical diffraction and process-induced distortions complicate precise...",
+      "doi_url": "https://doi.org/10.1038/s41598-026-43555-z",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advancements in Photolithography Techniques",
+        "VLSI and FPGA Design Techniques",
+        "Physical Unclonable Functions (PUFs) and Hardware Security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136750638",
+      "title": "AI Runtime Infrastructure: Establishing a Foundational Layer for Distributed AI Systems",
+      "authors": [
+        "Ashutosh Kumar Rishi Shanker"
+      ],
+      "date": "2026-03-15",
+      "journal": "International Journal of Computational and Experimental Science and Engineering",
+      "abstract_snippet": "Architecturally, the AI Runtime Infrastructure, or AIRI, is a foundational layer of distributed architecture designed to enable the execution of large-scale AI workloads. Most modern distributed architectures, heavily influenced by cloud-native design principles, are designed for stateless,...",
+      "doi_url": "https://doi.org/10.22399/ijcesen.5049",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Software System Performance and Reliability",
+        "Cloud Computing and Resource Management",
+        "Scientific Computing and Data Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136038254",
+      "title": "Enhanced ONOFIC-Controlled Nano-Domino Logic Using FinFET and CNTFET Devices for Ultra-Low Leakage with AI-Assisted Optimization in 32 nm VLSI System",
+      "authors": [
+        "Mr Ramavathu Ramesh Naik",
+        "Dr Ramakrishna Reddy Donapati",
+        "Krishnanaik Vankdoth"
+      ],
+      "date": "2026-03-15",
+      "journal": "Engineering Perspective",
+      "abstract_snippet": "This paper presents an enhanced ONOFIC (ON/OFF Isolation Control) nano-domino logic framework implemented using 32 nm FinFET and CNTFET technologies for ultra-low leakage VLSI systems. The proposed ONOFIC technique employs feedback-controlled transistors to dynamically isolate leakage paths in the...",
+      "doi_url": "https://doi.org/10.64808/engineeringperspective.1771169",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Low-power high-performance VLSI design",
+        "Advancements in Semiconductor Devices and Circuit Design",
+        "Quantum-Dot Cellular Automata"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137260132",
+      "title": "FPGA-Based Front-End Low-Light Enhancement for Deterministic Vision-Only Driving Perception",
+      "authors": [
+        "Fuwen Xie",
+        "Hanhui Jing",
+        "Zhiting Lu",
+        "Shaoxin Ju",
+        "Bochun Peng"
+      ],
+      "date": "2026-03-15",
+      "journal": "Electronics",
+      "abstract_snippet": "Vision-only driving perception systems are highly sensitive to illumination variations, particularly under low-light conditions where reduced contrast and structural degradation impair detection and segmentation accuracy. Rather than treating enhancement as a post-processing step, this work...",
+      "doi_url": "https://doi.org/10.3390/electronics15061224",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Image Enhancement Techniques",
+        "Advanced Neural Network Applications",
+        "Autonomous Vehicle Technology and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136040021",
+      "title": "SC-NeuroCore: Universal Stochastic Computing Framework for Neuromorphic Hardware",
+      "authors": [
+        "Sotek, Miroslav",
+        "Reiprich, Michal"
+      ],
+      "date": "2026-03-15",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "A high-performance neuromorphic computing framework combining stochastic computing with spiking neural networks. Features a Rust SIMD engine with PyO3 Python bindings, hyper-dimensional computing (HDC/VSA), Petri net simulation, HDL generation for FPGA deployment, and SCPN integration for...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19033661",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7136771168",
+      "title": "Deep Learning for Materials and Additive Manufacturing: Towards AI-Enabled Closed-Loop Systems",
+      "authors": [
+        "Elmer C. Peramo",
+        "Ida M Laureen",
+        "Ballesteros",
+        "Marianito Margarito",
+        "Alejandro H. Espera"
+      ],
+      "date": "2026-03-15",
+      "journal": "",
+      "abstract_snippet": "Artificial Intelligence (AI) is rapidly transforming both materials discovery and advanced manufacturing, yet these domains have traditionally evolved along largely independent research trajectories.Materials informatics has primarily focused on predicting material properties and discovering new...",
+      "doi_url": "https://doi.org/10.26434/chemrxiv.15000912/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Additive Manufacturing Materials and Processes",
+        "Machine Learning in Materials Science",
+        "Additive Manufacturing and 3D Printing Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137154856",
+      "title": "Deep Learning-Based Visual Analytics for Efficiency and Safety Optimization in Power Infrastructure",
+      "authors": [
+        "Olga Vladimirovna Afanaseva",
+        "Timur Faritovich Tulyakov",
+        "Artur Airatovich Shaimardanov"
+      ],
+      "date": "2026-03-15",
+      "journal": "Eng\u2014Advances in Engineering",
+      "abstract_snippet": "The paper presents a comprehensive deep learning-based framework for automated visual inspection of overhead power line infrastructure using unmanned aerial vehicles. Traditional manual and helicopter inspections are costly, time-consuming, and hazardous for maintenance personnel. The proposed...",
+      "doi_url": "https://doi.org/10.3390/eng7030135",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Power Line Inspection Robots",
+        "Infrastructure Maintenance and Monitoring",
+        "Advanced Neural Network Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136812706",
+      "title": "A Review of Applications and Research Advances of Large Models in OCR Technology",
+      "authors": [
+        "Haoye Liu"
+      ],
+      "date": "2026-03-15",
+      "journal": "Mathematical Modeling and Algorithm Application",
+      "abstract_snippet": "Optical Character Recognition (OCR) is a key technology for document digitization and textual information extraction. However, traditional methods are often limited by practical challenges such as font diversity, complex layouts, and image degradation. In response, this paper provides a systematic...",
+      "doi_url": "https://doi.org/10.54097/tg9jdp05",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Handwritten Text Recognition Techniques",
+        "Advanced Neural Network Applications",
+        "Multimodal Machine Learning Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7137948357",
+      "title": "Towards Adaptive Humanoid Control via Multi-Behavior Distillation and Reinforced Fine-Tuning",
+      "authors": [
+        "Yingnan Zhao",
+        "Xinmiao Wang",
+        "Dewei Wang",
+        "Xinzhe Liu",
+        "Dan Lu"
+      ],
+      "date": "2026-03-14",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "abstract_snippet": "Humanoid robots are promising to learn a diverse set of human-like locomotion behaviors, including standing up, walking, running, and jumping. However, existing methods predominantly require training independent policies for each skill, yielding behavior-specific controllers that exhibit limited...",
+      "doi_url": "https://doi.org/10.1609/aaai.v40i22.38951",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Reinforcement Learning in Robotics",
+        "Social Robot Interaction and HRI"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136192964",
+      "title": "Human\u2013Robot Interaction in Indoor Mobile Robotics: Current State, Interaction Modalities, Applications, and Future Challenges",
+      "authors": [
+        "Arman Ahmed Khan",
+        "Kerstin Thurow"
+      ],
+      "date": "2026-03-14",
+      "journal": "Sensors",
+      "abstract_snippet": "This paper provides a comprehensive survey of Human\u2013Robot Interaction (HRI) for indoor mobile robots operating in human-centered environments such as hospitals, laboratories, offices, and homes. We review interaction modalities\u2014including speech, gesture, touch, visual, and multimodal interfaces\u2014and...",
+      "doi_url": "https://doi.org/10.3390/s26061840",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Social Robot Interaction and HRI",
+        "Human-Automation Interaction and Safety",
+        "Gaze Tracking and Assistive Technology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138641717",
+      "title": "Keep On Going: Learning Robust Humanoid Motion Skills via Selective Adversarial Training",
+      "authors": [
+        "Yang Zhang",
+        "Zhanxiang Cao",
+        "Buqing Nie",
+        "Haoyang Li",
+        "Zhong Jiangwei"
+      ],
+      "date": "2026-03-14",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "abstract_snippet": "Humanoid robots are expected to operate reliably over long horizons while executing versatile whole-body skills. Yet Reinforcement Learning (RL) motion policies typically lose stability under prolonged operation, sensor/actuator noise, and real world disturbances. In this work, we propose a...",
+      "doi_url": "https://doi.org/10.1609/aaai.v40i22.38949",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Adversarial Robustness in Machine Learning",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136674126",
+      "title": "An Energy- and Endurance-Aware Hybrid CMOS\u2013SDC Memristor Convolutional Spiking Neural Network for Edge Intelligence",
+      "authors": [
+        "Jun Sung Go",
+        "Jong Tae Kim"
+      ],
+      "date": "2026-03-14",
+      "journal": "Electronics",
+      "abstract_snippet": "The inherent bottleneck of the von Neumann architecture and the limited power budget of edge devices necessitate energy-efficient hardware solutions for artificial intelligence. Memristor-based In-Memory Computing (IMC) has emerged as a promising candidate; however, the high-power consumption of...",
+      "doi_url": "https://doi.org/10.3390/electronics15061217",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138050433",
+      "title": "DS-ATGO: Dual-Stage Synergistic Learning via Forward Adaptive Threshold and Backward Gradient Optimization for Spiking Neural Networks",
+      "authors": [
+        "Jiaqiang Jiang",
+        "W. Z. Xu",
+        "Jing Fan",
+        "Rui Yan"
+      ],
+      "date": "2026-03-14",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "abstract_snippet": "Brain-inspired spiking neural networks (SNNs) are recognized as a promising avenue for achieving efficient, low-energy neuromorphic computing. Direct training of SNNs typically relies on surrogate gradient (SG) learning to estimate derivatives of non-differentiable spiking activity. However, during...",
+      "doi_url": "https://doi.org/10.1609/aaai.v40i3.37165",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Neural Networks and Reservoir Computing",
+        "Ferroelectric and Negative Capacitance Devices"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135404561",
+      "title": "Si@BP based bionic synaptic device for cross-modal perception of light-olfactory co-sensation",
+      "authors": [
+        "Shao Fei Lei",
+        "Li Ping Ding",
+        "Jianxun Zou",
+        "Dan Wang",
+        "Shuai Yuan"
+      ],
+      "date": "2026-03-14",
+      "journal": "Applied Materials Today",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1016/j.apmt.2026.103190",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "semi",
+      "topics": [
+        "Olfactory and Sensory Function Studies",
+        "Insect Pheromone Research and Control",
+        "Multisensory perception and integration"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136245664",
+      "title": "eXCube2: Explainable Brain-Inspired Spiking Neural Network Framework for Emotion Recognition from Audio, Visual and Multimodal Audio\u2013Visual Data",
+      "authors": [
+        "N. K. Kasabov",
+        "Alexander Hui Xiang Yang",
+        "Z. Wang",
+        "Iman AbouHassan",
+        "A. Kassabova"
+      ],
+      "date": "2026-03-14",
+      "journal": "Biomimetics",
+      "abstract_snippet": "This paper introduces a biomimetic framework and novel brain-inspired AI (BIAI) models based on spiking neural networks (SNNs) for emotional state recognition from audio (speech), visual (face), and integrated multimodal audio\u2013visual data. The developed framework, named eXCube2, uses a...",
+      "doi_url": "https://doi.org/10.3390/biomimetics11030208",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Emotion and Mood Recognition",
+        "Neuroscience and Music Perception",
+        "EEG and Brain-Computer Interfaces"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138117169",
+      "title": "I2E: Real-Time Image-to-Event Conversion for High-Performance Spiking Neural Networks",
+      "authors": [
+        "Ruichen Ma",
+        "Liwei Meng",
+        "Guanchao Qiao",
+        "Ning Ning",
+        "Yang Liu"
+      ],
+      "date": "2026-03-14",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "abstract_snippet": "Spiking neural networks (SNNs) promise highly energy-efficient computing, but their adoption is hindered by a critical scarcity of event-stream data. This work introduces I2E, an algorithmic framework that resolves this bottleneck by converting static images into high-fidelity event streams. By...",
+      "doi_url": "https://doi.org/10.1609/aaai.v40i3.37179",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural dynamics and brain function"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136222408",
+      "title": "Neural Encoding Strategies for Neuromorphic Computing",
+      "authors": [
+        "M Liu",
+        "Honghao Zheng",
+        "Yang Yi"
+      ],
+      "date": "2026-03-14",
+      "journal": "Electronics",
+      "abstract_snippet": "Neuromorphic computing seeks to mimic structure and function of biological neural systems to enable energy-efficient, adaptive information processing. A critical component of this paradigm is neural encoding\u2014the translation of analog or digital input data into spike-based representations suitable...",
+      "doi_url": "https://doi.org/10.3390/electronics15061221",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Neural Networks and Reservoir Computing",
+        "Ferroelectric and Negative Capacitance Devices"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135376907",
+      "title": "Ferroelectricity-modulated asymmetric van der Waals heterostructure for ultralow-power neuromorphic synapse and logic-in-memory operations",
+      "authors": [
+        "Jiake Zhi",
+        "Yao Wen",
+        "Jiajie Chen",
+        "Chuanyang Cai",
+        "Shoufeng Yang"
+      ],
+      "date": "2026-03-14",
+      "journal": "Nature Communications",
+      "abstract_snippet": "Vertical integration of two-dimensional materials holds tremendous potential for integrated sensing, memory, and computing applications, yet it still confronts challenges such as single device functionality, limited in-memory logic capability, and high power consumption. To address these issues, we...",
+      "doi_url": "https://doi.org/10.1038/s41467-026-70668-w",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "2D Materials and Applications",
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135403737",
+      "title": "Dynamic shifts in brain criticality support cognitive processing",
+      "authors": [
+        "H Chang",
+        "Weiwei Chen",
+        "Lindsay A. Karaba",
+        "Xiyu Mei",
+        "Ryan E. Harvey"
+      ],
+      "date": "2026-03-14",
+      "journal": "",
+      "abstract_snippet": "Abstract Systems operating near their critical point, or close to a transition between order and disorder, have computational advantages. In the case of neural networks, proximity to criticality is proposed to support optimal brain function. However, different cognitive processes rely on disparate...",
+      "doi_url": "https://doi.org/10.64898/2026.03.12.711394",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Neural dynamics and brain function",
+        "Memory and Neural Mechanisms",
+        "Neuroscience and Neuropharmacology Research"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135229698",
+      "title": "China-US Trade War and the Challenges for Developing Countries",
+      "authors": [
+        "Ahmad Anwar"
+      ],
+      "date": "2026-03-14",
+      "journal": "Security Intelligence Terrorism Journal",
+      "abstract_snippet": "The US-China trade war signifies a fundamental shift in global economic governance, which has moved beyond a mere tariff dispute to redefine the nature of the strategic environment, particularly for developing countries. This research seeks to explore the vulnerabilities that the US-China trade war...",
+      "doi_url": "https://doi.org/10.70710/sitj.v3i1.92",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "COVID-19, Geopolitics, Technology, Migration",
+        "Global trade and economics",
+        "Global Security and Public Health"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135384562",
+      "title": "Trump's Tariff Offensive and the Rise of Strategic Regionalism: Toward Decentralized Globalization",
+      "authors": [
+        "Jieli Li"
+      ],
+      "date": "2026-03-14",
+      "journal": "Fudan Journal of the Humanities and Social Sciences",
+      "abstract_snippet": "Abstract This paper analyzes President Donald J. Trump's tariff policies during his first term (2017-2021) and second term (2025- ) as catalysts accelerating a deeper structural transformation in the global political economy. Trump's unilateral protectionism marked a sharp departure from neoliberal...",
+      "doi_url": "https://doi.org/10.1007/s40647-026-00463-w",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Global Political and Economic Relations",
+        "COVID-19, Geopolitics, Technology, Migration",
+        "Economic and Business Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135237739",
+      "title": "Main path and cluster analysis-based review of scheduling in the supply chain",
+      "authors": [
+        "Kuo-Ching Ying",
+        "Pourya Pourhejazy",
+        "Yan-Xiang Xiao"
+      ],
+      "date": "2026-03-14",
+      "journal": "Annals of Operations Research",
+      "abstract_snippet": "The need for establishing supply chain resilience in critical industries, such as semiconductors, automobiles, and consumer electronics, calls for holistic operations planning and scheduling. Supply chain scheduling (SCS) refers to the coordinated planning of production and logistics operations to...",
+      "doi_url": "https://doi.org/10.1007/s10479-026-07132-x",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Scheduling and Optimization Algorithms",
+        "Process Optimization and Integration",
+        "Resource-Constrained Project Scheduling"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135203716",
+      "title": "Statistical Reward Shaping for Reinforcement Learning in Bipedal Locomotion",
+      "authors": [
+        "Shuhan Yan",
+        "Chuan Chen",
+        "Xinliang Zhou",
+        "Jiaping Xiao"
+      ],
+      "date": "2026-03-13",
+      "journal": "Electronics",
+      "abstract_snippet": "Achieving stable bipedal locomotion for humanoid robots remains a central challenge in reinforcement learning (RL), in which the design of reward functions is pivotal but non-trivial. This paper proposes a three-tier statistical reward shaping framework to optimize bipedal gait learning. First,...",
+      "doi_url": "https://doi.org/10.3390/electronics15061203",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Human Motion and Animation",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135228760",
+      "title": "The Impact of Geometric Continuities (C1, C2, and C3) on the Trajectories of Industrial Robots",
+      "authors": [
+        "Cozmin Cristoiu",
+        "Marius-Valentin Dr\u0103goi",
+        "Roxana-Mariana Nechita",
+        "Bogdan Nicolae Stoian",
+        "Cristina Luciana Dudici"
+      ],
+      "date": "2026-03-13",
+      "journal": "Technologies",
+      "abstract_snippet": "This article presents a mathematical analysis of the geometric continuity of industrial robot trajectories, highlighting the influence of continuity conditions on velocity, acceleration, and vibration profiles. This study proposes an original approach: isolating geometric continuity as an...",
+      "doi_url": "https://doi.org/10.3390/technologies14030176",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Mechanisms and Dynamics",
+        "Dynamics and Control of Mechanical Systems",
+        "Robot Manipulation and Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138824155",
+      "title": "SmoothTurn: Learning to Turn Smoothly for Agile Navigation with Quadrupedal Robots",
+      "authors": [
+        "Zunzhi You",
+        "Haolan Guo",
+        "Yunke Wang",
+        "Chang Xu"
+      ],
+      "date": "2026-03-13",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Quadrupedal robots show great potential for valuable real-world applications such as fire rescue and industrial inspection. Such applications often require urgency and the ability to navigate agilely, which in turn demands the capability to change directions smoothly while running in high speed....",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Path Planning Algorithms",
+        "Reinforcement Learning in Robotics",
+        "Robotic Locomotion and Control"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135201281",
+      "title": "Energy-efficient reconfigurable FPGA accelerator for marine convolutional neural network-long short-term memory applications",
+      "authors": [
+        "Qiuyu Wang",
+        "Qi Wen",
+        "Zhiqiang Wei",
+        "Hui Mao",
+        "Ruitao Tao"
+      ],
+      "date": "2026-03-13",
+      "journal": "Intelligent Marine Technology and Systems",
+      "abstract_snippet": "Abstract Deep learning models that combine convolutional neural networks (CNNs) and long short-term memory (LSTM) networks have demonstrated strong capabilities in spatiotemporal feature extraction, proving effective for applications such as ocean environment monitoring and forecasting. Specialized...",
+      "doi_url": "https://doi.org/10.1007/s44295-026-00098-3",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Big Data and Digital Economy",
+        "Image Enhancement Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135135453",
+      "title": "Electrically non-volatile/volatile programmable optical matrix",
+      "authors": [
+        "Tao Shu",
+        "Chenlei Li",
+        "Yueyang Zhang",
+        "Hongyan Yu",
+        "Haojie Zhu"
+      ],
+      "date": "2026-03-13",
+      "journal": "PhotoniX",
+      "abstract_snippet": "Abstract High-speed and energy-efficient scalable photonic switches are essential for next-generation optical interconnects and computing. However, existing techniques suffer from random fabrication variations, complicated calibration mechanisms, and limited switching speeds, which collectively...",
+      "doi_url": "https://doi.org/10.1186/s43074-026-00236-4",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Photonic and Optical Devices",
+        "Neural Networks and Reservoir Computing",
+        "Photonic Crystals and Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135200162",
+      "title": "Role of AI in drug development: Current status, challenges, opportunities, and future promise",
+      "authors": [
+        "Sheikh Usman Iqbal",
+        "Dmitriy Podolskiy",
+        "Mona G. Flores",
+        "Victoria L. Chiou",
+        "Jennifer Sheng"
+      ],
+      "date": "2026-03-13",
+      "journal": "Artificial Intelligence in Health",
+      "abstract_snippet": "Artificial intelligence (AI) heralds a transformative shift in drug development, with speed, precision, and predictive power as its core features. Advances in systems-level biology platforms, coupled with substantial investments in generative AI-centric pharma integration, have fostered healthy...",
+      "doi_url": "https://doi.org/10.36922/aih025470103",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Computational Drug Discovery Methods",
+        "Law, AI, and Intellectual Property",
+        "Artificial Intelligence in Healthcare and Education"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135110415",
+      "title": "Serverless computing frameworks for real-time AI model deployment",
+      "authors": [
+        "Manoj Bhoyar"
+      ],
+      "date": "2026-03-13",
+      "journal": "World Journal of Advanced Engineering Technology and Sciences",
+      "abstract_snippet": "This research paper examines the evolution and current state of serverless computing frameworks for deploying artificial intelligence (AI) models in real-time applications. As AI adoption accelerates across industries, the need for efficient, scalable, and cost-effective deployment solutions has...",
+      "doi_url": "https://doi.org/10.30574/wjaets.2026.18.3.0113",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "IoT and Edge/Fog Computing",
+        "Cloud Computing and Resource Management",
+        "Distributed and Parallel Computing Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138824375",
+      "title": "SRAM-Based Compute-in-Memory Accelerator for Linear-decay Spiking Neural Networks",
+      "authors": [
+        "Hongyang Shang",
+        "Shuai Dong",
+        "Yahan Yang",
+        "Junyi Yang",
+        "Peng Zhou"
+      ],
+      "date": "2026-03-13",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Spiking Neural Networks (SNNs) have emerged as a biologically inspired alternative to conventional deep networks, offering event-driven and energy-efficient computation. However, their throughput remains constrained by the serial update of neuron membrane states. While many hardware accelerators...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135215492",
+      "title": "Adaptive and lightweight surrogate gradients: enhancing training efficiency of spiking neural networks",
+      "authors": [
+        "Kungjui Hou",
+        "Kang Wu",
+        "Yongcheng Zhou"
+      ],
+      "date": "2026-03-13",
+      "journal": "Frontiers in Neuroscience",
+      "abstract_snippet": "Background Spiking Neural Networks (SNNs) have emerged as a promising paradigm in artificial intelligence due to their energy efficiency. However, training SNNs remains a formidable challenge because the nondifferentiable nature of spike activation functions prevents the direct application of...",
+      "doi_url": "https://doi.org/10.3389/fnins.2026.1795946",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Neural Networks and Reservoir Computing",
+        "Neural dynamics and brain function"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7136264702",
+      "title": "SRAM-Based Compute-in-Memory Accelerator for Linear-decay Spiking Neural Networks",
+      "authors": [
+        "Hongyang Shang",
+        "Shuai Dong",
+        "Yahan Yang",
+        "Junyi Yang",
+        "Peng Zhou"
+      ],
+      "date": "2026-03-13",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Spiking Neural Networks (SNNs) have emerged as a biologically inspired alternative to conventional deep networks, offering event-driven and energy-efficient computation. However, their throughput remains constrained by the serial update of neuron membrane states. While many hardware accelerators...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.12739",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135193379",
+      "title": "Economic Security and the Transformation of European Union Economic Governance: Industrial Policy, Competitiveness, and Strategic Resilience",
+      "authors": [
+        "Radoslav Ivan\u010d\u00edk",
+        "Ji\u0159\u00ed Du\u0161ek"
+      ],
+      "date": "2026-03-13",
+      "journal": "Economies",
+      "abstract_snippet": "This article analyses the rise of economic security as a new organising principle of European Union economic governance and examines the extent to which this concept is transforming the traditional model of European industrial and market policy. In the context of escalating geopolitical rivalry,...",
+      "doi_url": "https://doi.org/10.3390/economies14030093",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Supply Chain Resilience and Risk Management",
+        "Regional resilience and development",
+        "Global Energy Security and Policy"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135171391",
+      "title": "Four-pillar policy recommendation to increase the European Union\u2019s critical raw material resilience",
+      "authors": [
+        "Ludwig Hermann",
+        "Minja Marijanski"
+      ],
+      "date": "2026-03-13",
+      "journal": "",
+      "abstract_snippet": "The European Union\u2019s transition to a green, digital, and secure economy depends on reliable access to critical raw materials (CRMs), which are essential for technologies such as batteries, semiconductors, renewable energy systems, and defence equipment. Despite their strategic importance, the EU...",
+      "doi_url": "https://doi.org/10.5194/egusphere-egu26-2615",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Extraction and Separation Processes",
+        "Recycling and Waste Management Techniques",
+        "Sustainable Industrial Ecology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135214358",
+      "title": "In Situ Enclosure Experiments Evaluating Clay\u2013Bacillus Ba3 Broth for Dinoflagellate Control in Coastal Aquaculture Waters",
+      "authors": [
+        "Balaji Prasath Barathan",
+        "Yuping Su",
+        "Ying Wang"
+      ],
+      "date": "2026-03-13",
+      "journal": "Fermentation",
+      "abstract_snippet": "We evaluated the algicidal properties of Bacillus Ba3 fermentation broth combined with clay for harmful algae bloom (HAB) control through in situ enclosure experiments in Suao Bay, China. It was indicated by the results that the combination significantly reduced HAB abundance, turbidity and...",
+      "doi_url": "https://doi.org/10.3390/fermentation12030149",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Marine and coastal ecosystems",
+        "Marine Toxins and Detection Methods",
+        "Aquatic Ecosystems and Phytoplankton Dynamics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135192039",
+      "title": "Willingness to Implement Logistics and Supply Chain Resilience Strategies Amid COVID-19: Insights from Japanese Manufacturing Firms",
+      "authors": [
+        "Rajali Maharjan",
+        "H. Kato",
+        "Sunkyung Choi"
+      ],
+      "date": "2026-03-13",
+      "journal": "Logistics",
+      "abstract_snippet": "Background: The COVID-19 pandemic has underscored the critical importance of supply chain resilience. However, little is known about firms\u2019 willingness to implement logistics and supply chain resilience strategies (SCRESTs), and how this willingness varies across contexts. This study investigates...",
+      "doi_url": "https://doi.org/10.3390/logistics10030065",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Supply Chain Resilience and Risk Management",
+        "COVID-19 Pandemic Impacts",
+        "Quality and Supply Management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135227391",
+      "title": "Geopolitics and Industrial Policy: The Revival of Japan\u2019s Semiconductor Industry",
+      "authors": [
+        "Qi Jin"
+      ],
+      "date": "2026-03-13",
+      "journal": "Journal of innovation and development",
+      "abstract_snippet": "This study examines the revival of Japan\u2019s semiconductor industry through a dual analytical framework: domestic supply-side policies and geopolitical strategy informed by game theory. Our study finds that Japan has successfully leveraged substantial subsidies\u2014totaling approximately \u00a54 trillion as...",
+      "doi_url": "https://doi.org/10.54097/23vz1n19",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Asian Industrial and Economic Development",
+        "Innovation Diffusion and Forecasting",
+        "Economic Growth and Productivity"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428553",
+      "title": "Last-iterate Convergence of ADMM on Multi-affine Quadratic Equality Constrained Problem",
+      "authors": [
+        "Yutong Chao",
+        "Michal Ciebielski",
+        "Jalal Etesami",
+        "Majid Khadiv"
+      ],
+      "date": "2026-03-12",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "In this paper, we study a class of non-convex optimization problems known as multi-affine quadratic equality constrained problems, which appear in various applications--from generating feasible force trajectories in robotic locomotion and manipulation to training neural networks. Although these...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Distributed Control Multi-Agent Systems",
+        "Robotic Mechanisms and Dynamics",
+        "Robot Manipulation and Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428630",
+      "title": "ComFree-Sim: A GPU-Parallelized Analytical Contact Physics Engine for Scalable Contact-Rich Robotics Simulation and Control",
+      "authors": [
+        "Chetan Borse",
+        "Zhixian Xie",
+        "Wei-Cheng Huang",
+        "Wanxin Jin"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Physics simulation for contact-rich robotics is often bottlenecked by contact resolution: mainstream engines enforce non-penetration and Coulomb friction via complementarity constraints or constrained optimization, requiring per-step iterative solves whose cost grows superlinearly with contact...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Dynamics and Control of Mechanical Systems",
+        "Robot Manipulation and Learning",
+        "Human Motion and Animation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428755",
+      "title": "MiNI-Q: A Miniature, Wire-Free Quadruped with Unbounded, Independently Actuated Leg Joints",
+      "authors": [
+        "Daniel Koh",
+        "Suraj Shah",
+        "Yufeng Wu",
+        "Dennis Hong"
+      ],
+      "date": "2026-03-12",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Physical joint limits are common in legged robots and can restrict workspace, constrain gait design, and increase the risk of hardware damage. This paper introduces MiNI-Q^2, a miniature, wire-free quadruped robot with independently actuated, mechanically unbounded 2-DOF leg joints. We present the...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Modular Robots and Swarm Intelligence",
+        "Soft Robotics and Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428563",
+      "title": "SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots with Kinodynamic Trajectory Optimization",
+      "authors": [
+        "Hanwen Wang",
+        "Qiayuan Liao",
+        "Bike Zhang",
+        "Kunzhao Ren",
+        "Koushil Sreenath"
+      ],
+      "date": "2026-03-12",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Human motion provides rich priors for training general-purpose humanoid control policies, but raw demonstrations are often incompatible with a robot's kinematics and dynamics, limiting their direct use. We present a two-stage pipeline for generating natural and dynamically feasible motion...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Motion and Animation",
+        "Robotic Locomotion and Control",
+        "Robot Manipulation and Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428519",
+      "title": "HumDex: Humanoid Dexterous Manipulation Made Easy",
+      "authors": [
+        "Liang Heng",
+        "Yihe Tang",
+        "Jiajun Xu",
+        "Henghui Bao",
+        "Di Huang"
+      ],
+      "date": "2026-03-12",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "This paper investigates humanoid whole-body dexterous manipulation, where the efficient collection of high-quality demonstration data remains a central bottleneck. Existing teleoperation systems often suffer from limited portability, occlusion, or insufficient precision, which hinders their...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Human Motion and Animation",
+        "Human Pose and Action Recognition"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135049067",
+      "title": "Machine learning\u2013driven design of engineered cilia enables hybrid operations in acoustic microrobots",
+      "authors": [
+        "Yun Ling",
+        "Yujing Lu",
+        "Joseph Rich",
+        "Mingyuan Liu",
+        "Xianchen Xu"
+      ],
+      "date": "2026-03-12",
+      "journal": "Nature Communications",
+      "abstract_snippet": "Microrobotic systems offer significant potential for precision medicine by enabling minimally invasive interventions in complex fluidic environments. However, effective operation in these settings requires actuators capable of more than simple linear or rotational motion, often necessitating...",
+      "doi_url": "https://doi.org/10.1038/s41467-026-70048-4",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Micro and Nano Robotics",
+        "Microfluidic and Bio-sensing Technologies",
+        "Biomimetic flight and propulsion mechanisms"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135429535",
+      "title": "SNAP-V: A RISC-V SoC with Configurable Neuromorphic Acceleration for Small-Scale Spiking Neural Networks",
+      "authors": [
+        "K. Gunawardana",
+        "Sanka Peeris",
+        "Kavishka Rambukwella",
+        "Thamish Wanduragala",
+        "Saadia Jameel"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Spiking Neural Networks (SNNs) have gained significant attention in edge computing due to their low power consumption and computational efficiency. However, existing implementations either use conventional System on Chip (SoC) architectures that suffer from memory-processor bottlenecks, or...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Advanced Neural Network Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7138824621",
+      "title": "Ising-ReRAM: A Low Power Ising Machine ReRAM Crossbar for NP Problems",
+      "authors": [
+        "Everest Bloomer",
+        "Irem Didin",
+        "Ching-Yi Lin;Zheng-Yu Tsai;I-Chi Cheng;Shyh-Hsiang Lin",
+        "Sahil Shah"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Computational workloads are growing exponentially, driving power consumption to unsustainable levels. Efficiently distributing large-scale networks is an NP-Complete problem equivalent to Boolean satisfiability (SAT), making it one of the core challenges in modern computation. To address this,...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Quantum Computing Algorithms and Architecture",
+        "Graph Theory and Algorithms",
+        "VLSI and FPGA Design Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135058772",
+      "title": "Neuromorphic Computing for Long-Term Cardiac Health: A Review of Spiking Neural Networks in Low-Power Wearable Electronics",
+      "authors": [
+        "Sadiq Alinsaif"
+      ],
+      "date": "2026-03-12",
+      "journal": "Electronics",
+      "abstract_snippet": "The integration of Artificial Intelligence (AI) into Internet of Things (IoT) medical devices has revolutionized arrhythmia monitoring. However, the high computational and power demands of traditional Deep Learning (DL) models pose significant challenges for long-term, battery-operated smart...",
+      "doi_url": "https://doi.org/10.3390/electronics15061179",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135429378",
+      "title": "PicoSAM3: Real-Time In-Sensor Region-of-Interest Segmentation",
+      "authors": [
+        "Pietro Bonazzi",
+        "Nicola Farronato",
+        "Stefan Zihlmann",
+        "Haotong Qin",
+        "Michele Magno"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Real-time, on-device segmentation is critical for latency-sensitive and privacy-aware applications such as smart glasses and Internet-of-Things devices. We introduce PicoSAM3, a lightweight promptable visual segmentation model optimized for edge and in-sensor execution, including deployment on the...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "IoT and Edge/Fog Computing",
+        "Age of Information Optimization"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135429359",
+      "title": "Cascade: Composing Software-Hardware Attack Gadgets for Adversarial Threat Amplification in Compound AI Systems",
+      "authors": [
+        "Sarbartha Banerjee",
+        "Prateek Sahu",
+        "Anjo Vahldiek-Oberwagner",
+        "Jose Sanchez Vicarte",
+        "Mohit Tiwari"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Rapid progress in generative AI has given rise to Compound AI systems - pipelines comprised of multiple large language models (LLM), software tools and database systems. Compound AI systems are constructed on a layered traditional software stack running on a distributed hardware infrastructure....",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Adversarial Robustness in Machine Learning",
+        "Security and Verification in Computing",
+        "Advanced Malware Detection Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135090428",
+      "title": "BrainShield: A Neuromorphic Intrusion Detection System Inspired by the Drosophila melanogaster Whole-Brain Connectome",
+      "authors": [
+        "Mohammed Saddam Ruwayd"
+      ],
+      "date": "2026-03-12",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Abstract\u2014This paper presents BrainShield, an Intrusion De- tection System whose architecture is derived from the whole- brain connectome of Drosophila melanogaster. The system models 9,987 Izhikevich spiking neurons across 64 populations in 12 neuropil regions. We propose Top-4 Attentive...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18986956",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Neurobiology and Insect Physiology Research",
+        "Ferroelectric and Negative Capacitance Devices"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135098627",
+      "title": "Bio-Inspired Swarm Intelligence for Post-Quantum Autonomous Defense: A Neuromorphic Cyber-Twin Framework for Securing Edge-AI Ecosystems",
+      "authors": [
+        "SARTHAK YADAV",
+        "Praveen Lalwani",
+        "Dr. Adarsh Patel",
+        "Dr. Saravanan D"
+      ],
+      "date": "2026-03-12",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "This work presents a novel cybersecurity framework designed to address emerging threats posed by quantum computing in decentralized Edge Artificial Intelligence (Edge-AI) environments. As the development of cryptographically relevant quantum computers (CRQCs) accelerates, widely deployed public-key...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18987619",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "IoT and Edge/Fog Computing",
+        "Neural Networks and Reservoir Computing",
+        "Advanced Memory and Neural Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135021650",
+      "title": "From simulating to duplicating the brain",
+      "authors": [
+        "Johannes Brinz"
+      ],
+      "date": "2026-03-12",
+      "journal": "Synthese",
+      "abstract_snippet": "The philosophy of AI has a long-standing tradition of discussing brain duplicates and brain simulations as well as a tendency to blur the lines between the two. The distinction between simulating and duplicating the brain has become increasingly important with the emergence of \u201c\u0149euromorphic...",
+      "doi_url": "https://doi.org/10.1007/s11229-026-05505-0",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135071061",
+      "title": "Neuromorphic Computing: Spiking Neural Networks For Edge AI",
+      "authors": [
+        "Mini T. V"
+      ],
+      "date": "2026-03-12",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "Neuromorphic computing represents a paradigm shift in artificial intelligence by mimicking biological neural networks through spiking neural networks (SNNs). This paper explores neuromorphic computing architectures for energy-efficient AI inference at the edge. We analyze key neuromorphic hardware...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18977649",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135067692",
+      "title": "Microfoundations of entrepreneurial ecosystems: a critical commentary on future Research directions",
+      "authors": [
+        "Angelo Farias Cavallo",
+        "Massimo Gaetano Colombo",
+        "Nicolai J. Foss"
+      ],
+      "date": "2026-03-12",
+      "journal": "Small Business Economics",
+      "abstract_snippet": "Abstract Research on entrepreneurial ecosystems has expanded rapidly over the past two decades, generating substantial insights into their constituent elements and associated outcomes. However, the microfoundational mechanisms through which these elements and outcomes interact across levels of...",
+      "doi_url": "https://doi.org/10.1007/s11187-026-01202-x",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Entrepreneurship Studies and Influences",
+        "Private Equity and Venture Capital",
+        "University-Industry-Government Innovation Models"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135087885",
+      "title": "Multidimensional market connectedness amid escalating trade tensions: largest US and Chinese Tech equities, DeFi, and ESG",
+      "authors": [
+        "Remy Jonkam Oben",
+        "Shikha Daga",
+        "Aliya Zhakanova"
+      ],
+      "date": "2026-03-12",
+      "journal": "Future Business Journal",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1186/s43093-026-00784-y",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Market Dynamics and Volatility",
+        "COVID-19 Pandemic Impacts",
+        "Advanced Technologies in Various Fields"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135073879",
+      "title": "CBAM-enhanced lightweight CNN for wafer map defect classification",
+      "authors": [
+        "M. R. Khatun",
+        "Fahmid Al Farid",
+        "Sharith Dhar",
+        "Md. Saiful Islam",
+        "Jia Uddin"
+      ],
+      "date": "2026-03-12",
+      "journal": "Frontiers in Electronics",
+      "abstract_snippet": "Automated interpretation of wafer maps is central to manufacturing quality monitoring. Identifying rare defects with less detailed wafer maps is a challenging task. Moreover, class imbalance, heavyweight backbones, and limited model transparency are constraints for the real-world deployment of...",
+      "doi_url": "https://doi.org/10.3389/felec.2026.1750707",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Industrial Vision Systems and Defect Detection",
+        "Advanced Neural Network Applications",
+        "Physical Unclonable Functions (PUFs) and Hardware Security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135042048",
+      "title": "MicroLED Integration via Fluidic Self-Assembly: Chemistry Meets Design",
+      "authors": [
+        "Heiko O. Jacobs",
+        "Alper K. Soydan",
+        "Nishchay A. Isaac",
+        "Guru Kambala",
+        "Christoph Baumer"
+      ],
+      "date": "2026-03-12",
+      "journal": "",
+      "abstract_snippet": "<title>Abstract</title> Next-generation semiconductor technologies increasingly demand massively parallel assembly methods that can integrate discrete microscopic chiplets with high throughput, precision, and scalability <sup>1,2</sup> . Fluidic self-assembly (FSA) <sup>3</sup> has emerged as a...",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-8990492/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Modular Robots and Swarm Intelligence",
+        "Innovative Microfluidic and Catalytic Techniques Innovation",
+        "Electrowetting and Microfluidic Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135428941",
+      "title": "Link Quality Aware Pathfinding for Chiplet Interconnects",
+      "authors": [
+        "Aaron Yen",
+        "Jooyeon Jeong",
+        "Puneet Gupta"
+      ],
+      "date": "2026-03-12",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "As chiplet-based integration advances, designers must select among short-reach die-to-die interconnect technologies with widely varying shoreline and areal bandwidth density, energy per bit, reach, and raw bit error rate (BER). Meeting stringent delivered BER targets in chiplet systems requires...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Interconnection Networks and Systems",
+        "Low-power high-performance VLSI design",
+        "VLSI and FPGA Design Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134962326",
+      "title": "Accountants vs. AI: Collaboration or Competition?",
+      "authors": [
+        "Widanti Retno Palupi",
+        "Rina TjandraKirana DP"
+      ],
+      "date": "2026-03-11",
+      "journal": "Escalate Economics and Business Journal",
+      "abstract_snippet": "Background: The development of Artificial Intelligence (AI) in the Industrial Revolution 4.0 and Society 5.0 is transforming the accounting profession through the automation of routine tasks via Robotic Process Automation, sparking debates on whether AI replaces or collaborates with accountants....",
+      "doi_url": "https://doi.org/10.61536/escalate.v1i03.455",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "Robotic Process Automation Applications",
+        "Financial Reporting and XBRL",
+        "Scientific Research and Technology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134899434",
+      "title": "Artificial Intelligence and Supply Chain Resilience Under Persistent Disruption: Evidence from the Semiconductor Industry",
+      "authors": [
+        "Rui Du"
+      ],
+      "date": "2026-03-11",
+      "journal": "Figshare",
+      "abstract_snippet": "The data used in this study are drawn from the article \"<i>Artificial Intelligence and Supply Chain Resilience Under Persistent Disruption: Evidence from the Semiconductor Industry</i>.\" The empirical analysis is based on panel data of Chinese A-share listed companies in the semiconductor industry...",
+      "doi_url": "https://doi.org/10.6084/m9.figshare.31650988",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7134940173",
+      "title": "Artificial Intelligence and Supply Chain Resilience Under Persistent Disruption: Evidence from the Semiconductor Industry",
+      "authors": [
+        "Rui Du"
+      ],
+      "date": "2026-03-11",
+      "journal": "Figshare",
+      "abstract_snippet": "The data used in this study are drawn from the article \"<i>Artificial Intelligence and Supply Chain Resilience Under Persistent Disruption: Evidence from the Semiconductor Industry</i>.\" The empirical analysis is based on panel data of Chinese A-share listed companies in the semiconductor industry...",
+      "doi_url": "https://doi.org/10.6084/m9.figshare.31650988.v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7134957673",
+      "title": "Unified Architecture for Scalable Quantum Computing: A Modular Superconducting Platform with Digital Twin Integration",
+      "authors": [
+        "Bernecer Martinez Reyes"
+      ],
+      "date": "2026-03-11",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "This work presents a conceptual architecture and technological roadmap for a scalable superconducting quantum computing platform based on modular design principles. Rather than introducing a new qubit technology, the proposal focuses on addressing critical engineering bottlenecks that currently...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18948025",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Quantum Computing Algorithms and Architecture",
+        "Quantum-Dot Cellular Automata",
+        "Quantum and electron transport phenomena"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134989081",
+      "title": "Unified Architecture for Scalable Quantum Computing: A Modular Superconducting Platform with Digital Twin Integration",
+      "authors": [
+        "Bernecer Martinez Reyes"
+      ],
+      "date": "2026-03-11",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "This work presents a conceptual architecture and technological roadmap for a scalable superconducting quantum computing platform based on modular design principles. Rather than introducing a new qubit technology, the proposal focuses on addressing critical engineering bottlenecks that currently...",
+      "doi_url": "https://doi.org/10.5281/zenodo.18948026",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Quantum Computing Algorithms and Architecture",
+        "Quantum-Dot Cellular Automata",
+        "Quantum and electron transport phenomena"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135080779",
+      "title": "RL-Augmented MPC for Non-Gaited Legged and Hybrid Locomotion",
+      "authors": [
+        "Andrea Patrizi",
+        "Carlo Rizzardo",
+        "Arturo Laurenzi",
+        "Francesco Ruscelli",
+        "Luca Rossini"
+      ],
+      "date": "2026-03-11",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "We propose a contact-explicit hierarchical architecture coupling Reinforcement Learning (RL) and Model Predictive Control (MPC), where a high-level RL agent provides gait and navigation commands to a low-level locomotion MPC. This offloads the combinatorial burden of contact timing from the MPC by...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.10878",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Prosthetics and Rehabilitation Robotics",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135156156",
+      "title": "RL-Augmented MPC for Non-Gaited Legged and Hybrid Locomotion",
+      "authors": [
+        "Andrea Patrizi",
+        "Carlo Rizzardo",
+        "Arturo Laurenzi",
+        "Francesco Ruscelli",
+        "Luca Rossini"
+      ],
+      "date": "2026-03-11",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "We propose a contact-explicit hierarchical architecture coupling Reinforcement Learning (RL) and Model Predictive Control (MPC), where a high-level RL agent provides gait and navigation commands to a low-level locomotion MPC. This offloads the combinatorial burden of contact timing from the MPC by...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Prosthetics and Rehabilitation Robotics",
+        "Reinforcement Learning in Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135099786",
+      "title": "SNN-IDS: Deploying SNN-Equivalent Intrusion Detection on a Commodity MCU NPU",
+      "authors": [
+        "Hsiu-Chi Tsai"
+      ],
+      "date": "2026-03-11",
+      "journal": "Preprints.org",
+      "abstract_snippet": "We deploy a spiking neural network (SNN)-equivalent intrusion detection system (IDS) on the STM32N6570-DK, a commodity ARM Cortex-M55 MCU with the Neural-ART NPU. Exploiting the approximate equivalence between single-timestep (T=1) SNN inference and INT8 quantized ANN inference, we compile a...",
+      "doi_url": "https://doi.org/10.20944/preprints202603.0817.v2",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Security and Verification in Computing",
+        "Physical Unclonable Functions (PUFs) and Hardware Security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135156128",
+      "title": "In-Memory ADC-Based Nonlinear Activation Quantization for Efficient In-Memory Computing",
+      "authors": [
+        "Shuai Dong",
+        "Junyi Yang",
+        "Biyan Zhou",
+        "Hongyang Shang",
+        "Gourav Datta"
+      ],
+      "date": "2026-03-11",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "In deep networks, operations such as ReLU and hardware-driven clamping often cause activations to accumulate near the edges of the distribution, leading to biased clustering and suboptimal quantization in existing nonlinear (NL) quantization methods. This paper introduces Boundary Suppressed...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Ferroelectric and Negative Capacitance Devices",
+        "Advanced Memory and Neural Computing",
+        "Parallel Computing and Optimization Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135056198",
+      "title": "Scenario-based forecasting of the global energy demand and carbon footprint of artificial intelligence",
+      "authors": [
+        "Berke M. Turkay",
+        "Ipek Pehlivan",
+        "Nuri C. Onat",
+        "Murat K\u00fc\u00e7\u00fckvar",
+        "Metin T\u00fcrkay"
+      ],
+      "date": "2026-03-11",
+      "journal": "PLoS ONE",
+      "abstract_snippet": "Artificial intelligence (AI) is advancing rapidly and is emerging as a significant driver of global electricity consumption, yet its long-term energy and emissions implications remain poorly quantified. This study develops a scenario-based, simulation-driven modeling framework that links...",
+      "doi_url": "https://doi.org/10.1371/journal.pone.0343056",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Integrated Energy Systems Optimization",
+        "Energy Load and Power Forecasting",
+        "Environmental Impact and Sustainability"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135156868",
+      "title": "Report for NSF Workshop on Algorithm-Hardware Co-design for Medical Applications",
+      "authors": [
+        "Peipei Zhou",
+        "Zheng Dong",
+        "Insup Lee",
+        "Aidong Zhang",
+        "Robert Dick"
+      ],
+      "date": "2026-03-11",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "This report summarizes the discussions and recommendations from the NSF Workshop on Algorithm-Hardware Co-design for Medical Applications, held on September 26-27, 2024, in Pittsburgh, PA. The workshop assembled an interdisciplinary cohort of researchers, clinicians, and industry leaders to examine...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Healthcare Technology and Patient Monitoring",
+        "Biomedical and Engineering Education",
+        "Artificial Intelligence in Healthcare and Education"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134896541",
+      "title": "Learned adaptive properties for mitigation of weight perturbations in embedded spiking networks",
+      "authors": [
+        "Sarah Luca",
+        "T. Patrick Xiao",
+        "Frances S. Chance",
+        "S. Agarwal",
+        "Corinne Teeter"
+      ],
+      "date": "2026-03-11",
+      "journal": "Frontiers in Neuroscience",
+      "abstract_snippet": "Recent years have seen an increased importance of neural network inference in edge-based scenarios, which impose size and power constraints requiring novel computing devices. These same edge scenarios may require operating over long periods of time, or exposure to extreme environments, resulting in...",
+      "doi_url": "https://doi.org/10.3389/fnins.2026.1766765",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Neural Networks and Reservoir Computing",
+        "Neural dynamics and brain function"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134965845",
+      "title": "Neuromorphic Computing Architectures Using Memristive Devices for Energy-Efficient Artificial Intelligence",
+      "authors": [
+        "J. Rajvel"
+      ],
+      "date": "2026-03-11",
+      "journal": "International Academic Journal of Innovative Research",
+      "abstract_snippet": "Neuromorphic computing is a revolutionary method of addressing the rising energy needs of artificial intelligence (AI) systems. The paper explores the application of memristive devices in neuromorphic architectures to improve energy and computing efficiency. The use of memristors, their...",
+      "doi_url": "https://doi.org/10.71086/iajir/v13i1/iajir1303",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134885874",
+      "title": "LightIN: a versatile silicon-integrated photonic field programmable gate array with an intelligent configuration framework for next-generation AI clusters",
+      "authors": [
+        "Ying Zhu",
+        "Yifan Liu",
+        "Xinyu Yang",
+        "Kailai Liu",
+        "Xin Hua"
+      ],
+      "date": "2026-03-11",
+      "journal": "Light Science & Applications",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1038/s41377-026-02209-5",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Neural Networks and Reservoir Computing",
+        "Photonic and Optical Devices",
+        "Optical Network Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134921638",
+      "title": "Polymer\u2013Ceramic Hybrid Composites for Lightweight Solar Thermal Collector Absorbers: Thermal Transport, Optical Selectivity, and Durability",
+      "authors": [
+        "Sachin Sharma",
+        "Reshab Pradhan",
+        "Lokesh Kumar Sharma",
+        "Yogesh Sharma",
+        "Mohit Sharma"
+      ],
+      "date": "2026-03-11",
+      "journal": "Polymers",
+      "abstract_snippet": "Polymer\u2013ceramic hybrid composites are emerging as attractive candidates for lightweight, corrosion-resistant absorber components in solar thermal collectors; however, their adoption is constrained by the intrinsically low thermal conductivity of polymers, processing-induced anisotropic heat...",
+      "doi_url": "https://doi.org/10.3390/polym18060678",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Solar Thermal and Photovoltaic Systems",
+        "Thermal properties of materials",
+        "Thermal Radiation and Cooling Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7135024887",
+      "title": "Integrated Framework for Multi-Die Semiconductor Interconnect Systems: Hierarchical Signal Management Methodology and Coordinated Tessellation Architecture for Heterogeneous Chiplet Integration",
+      "authors": [
+        "Manan Limbad"
+      ],
+      "date": "2026-03-11",
+      "journal": "",
+      "abstract_snippet": "The progressive scaling limitations of monolithic semiconductor dies have driven the semiconductor industry toward heterogeneous multi-die integration, wherein multiple specialised chiplets are co-packaged on a shared substrate.[1,2] This work presents two complementary theoretical frameworks...",
+      "doi_url": "https://doi.org/10.26434/chemrxiv.15000826/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "3D IC and TSV technologies",
+        "VLSI and FPGA Design Techniques",
+        "Low-power high-performance VLSI design"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134852104",
+      "title": "Artificial Intelligence and Knowledge-Based Engineering for the Design of Environmental Nanomaterials: A Review",
+      "authors": [
+        "Konda Reddy Gondi",
+        "Sreenivasulu Surisetty",
+        "Damodhar Reddy",
+        "L.V.K.S. Bhaskar",
+        "Sneha P"
+      ],
+      "date": "2026-03-10",
+      "journal": "Journal of Applied Science and Technology Trends",
+      "abstract_snippet": "AI and KBE have been commonly applied into designing environmental nanomaterials to enhance performance, sustainability, and innovation. This review focused on how applying AI\u2019s tools such as machine learning, expert systems, predictive modeling techniques and KBE frameworks accelerates material...",
+      "doi_url": "https://doi.org/10.38094/jastt71627",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Machine Learning in Materials Science",
+        "Nanoparticles: synthesis and applications",
+        "Solar-Powered Water Purification Methods"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7131829338",
+      "title": "Interface-Aware Trajectory Reconstruction of Limited Demonstrations for Robot Learning",
+      "authors": [
+        "Demiana R. Barsoum",
+        "Mahdieh Nejati Javaremi",
+        "Larisa Y.C. Loke",
+        "Brenna Argall"
+      ],
+      "date": "2026-03-10",
+      "journal": "",
+      "abstract_snippet": "Assistive robots offer agency to humans with severe motor impairments. Often, these users control high-DoF robots through low-dimensional interfaces\u2014such as using a 1-D sip/puff interface to operate a 6-DoF robotic arm. This mismatch results in having access to only a subset of control dimensions...",
+      "doi_url": "https://doi.org/10.1145/3757279.3788671",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "Motor Control and Adaptation",
+        "Prosthetics and Rehabilitation Robotics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134996844",
+      "title": "From Closed- to Open-World Panoptic Segmentation",
+      "authors": [
+        "Matteo Sodano"
+      ],
+      "date": "2026-03-10",
+      "journal": "bonndoc (University of Bonn)",
+      "abstract_snippet": "Autonomous robotic technologies are increasingly transforming industries by enabling intelligent machines to perform complex tasks with minimal human intervention, increasing efficiency, safety, and scalability. Robots can take over tasks that are dangerous, repetitive, or simply impractical for...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Visual Attention and Saliency Detection",
+        "Advanced Image and Video Retrieval Techniques"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134993123",
+      "title": "Cutting the Cord: System Architecture for Low-Cost, GPU-Accelerated Bimanual Mobile Manipulation",
+      "authors": [
+        "Artemis Shaw",
+        "Chen Liu",
+        "Justin Costa",
+        "Rane Gray",
+        "Alina Skowronek"
+      ],
+      "date": "2026-03-10",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "We present a bimanual mobile manipulator built on the open-source XLeRobot with integrated onboard compute for less than \\$1300. Key contributions include: (1) optimized mechanical design maximizing stiffness-to-weight ratio, (2) a Tri-Bus power topology isolating compute from motor-induced voltage...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Modular Robots and Swarm Intelligence",
+        "Robot Manipulation and Learning",
+        "Robotic Mechanisms and Dynamics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134946137",
+      "title": "Cutting the Cord: System Architecture for Low-Cost, GPU-Accelerated Bimanual Mobile Manipulation",
+      "authors": [
+        "Artemis Shaw",
+        "Chen Liu",
+        "Justin Costa",
+        "Rane Gray",
+        "Alina Skowronek"
+      ],
+      "date": "2026-03-10",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "We present a bimanual mobile manipulator built on the open-source XLeRobot with integrated onboard compute for less than \\$1300. Key contributions include: (1) optimized mechanical design maximizing stiffness-to-weight ratio, (2) a Tri-Bus power topology isolating compute from motor-induced voltage...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.09051",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Modular Robots and Swarm Intelligence",
+        "Robot Manipulation and Learning",
+        "Robotic Mechanisms and Dynamics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134810213",
+      "title": "Gene Regulatory Networks for Enhanced Vision-Based Robot Control: A Bio-Inspired Approach",
+      "authors": [
+        "Chourouk Guettas",
+        "Foudil Cherif",
+        "Ammar Muthanna",
+        "Mohammad Hammoudeh",
+        "Abdelkader Laouid"
+      ],
+      "date": "2026-03-10",
+      "journal": "Sensors",
+      "abstract_snippet": "Vision-based robot control remains a significant challenge due to the sample inefficiency and prolonged training times associated with traditional deep reinforcement learning methods. We propose a novel approach inspired by biological gene regulation, leveraging Gene Regulatory Networks (GRNs) for...",
+      "doi_url": "https://doi.org/10.3390/s26061742",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Reinforcement Learning in Robotics",
+        "Evolutionary Algorithms and Applications",
+        "Adaptive Dynamic Programming Control"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134830649",
+      "title": "A softgrowing robotic system for odor detection and classification",
+      "authors": [
+        "Ayodele James Oyejide",
+        "Ahmet Astar",
+        "G\u00fclnur Kaya",
+        "Ustaz Abdulfattah Yaqub",
+        "Eray A. Baran"
+      ],
+      "date": "2026-03-10",
+      "journal": "Robotica",
+      "abstract_snippet": "Abstract Odor classification is essential in environmental monitoring, gas leak detection, and industrial safety. Although conventional mobile robotic platforms equipped with electronic noses offer advanced gas-sensing capabilities, their performance in confined or cluttered environments is often...",
+      "doi_url": "https://doi.org/10.1017/s0263574726103257",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Soft Robotics and Applications",
+        "Insect Pheromone Research and Control",
+        "Biomimetic flight and propulsion mechanisms"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7125978582",
+      "title": "Reimagining Social Robots as Recommender Systems: Foundations, Framework, and Applications",
+      "authors": [
+        "Jin Huang",
+        "Fethiye Irmak Do\u011fan",
+        "Hatice G\u00fcne\u015f"
+      ],
+      "date": "2026-03-10",
+      "journal": "",
+      "abstract_snippet": "Personalization in social robots refers to the ability of the robot to meet the needs and/or preferences of an individual user. Existing approaches typically rely on large language models (LLMs) to generate context-aware responses based on user metadata and historical interactions or on adaptive...",
+      "doi_url": "https://doi.org/10.1145/3757279.3785610",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Social Robot Interaction and HRI",
+        "AI in Service Interactions",
+        "Multimodal Machine Learning Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134957011",
+      "title": "Ethical Frameworks in the Qur'an and their Application to Artificial Intelligence Development",
+      "authors": [
+        "Ashraf Hassan Mohamed Hassan",
+        "Mohamed Hamed Mohamed Said",
+        "Amir Adel Mabrouk Eldeib",
+        "Fariza Hanan Binti Muhamad"
+      ],
+      "date": "2026-03-10",
+      "journal": "International Journal of Academic Research in Business and Social Sciences",
+      "abstract_snippet": "HRMARS - The rapid advancement of artificial intelligence (AI) has introduced profound ethical challenges, including privacy violations, algorithmic bias, accountability gaps, and threats to human dignity. This study explores Qur'anic ethical frameworks as a timeless moral foundation for guiding AI...",
+      "doi_url": "https://doi.org/10.6007/ijarbss/v16-i3/27831",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Education and Islamic Studies",
+        "Mental Health and Well-being",
+        "Ethics and Social Impacts of AI"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134828559",
+      "title": "Teaching the Teacher: Live Foundation Model and Augmented Reality Feedback for Human-to-Robot Skill Transfer",
+      "authors": [
+        "Nina Moorman",
+        "Matthew Luebbers",
+        "Zhang Xi-Jia",
+        "Yee Ching (Marcus) Lau",
+        "Yixing Yao"
+      ],
+      "date": "2026-03-10",
+      "journal": "",
+      "abstract_snippet": "Deploying robots in dynamic, human-populated environments will require techniques for adaptable robot skill acquisition that extend beyond pre-programmed functionality. Learning from demonstration (LfD) methods enable robots to learn skills from human-provided trajectories demonstrated in situ....",
+      "doi_url": "https://doi.org/10.1145/3757279.3788667",
+      "citation_count": 0,
+      "open_access": false,
+      "category": "robo",
+      "topics": [
+        "Social Robot Interaction and HRI",
+        "Virtual Reality Applications and Impacts",
+        "Augmented Reality Applications"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134852297",
+      "title": "On the Convergence of Internet of Things and Decentralized Finance: Security Challenges and Future Directions",
+      "authors": [
+        "Prasannakumaran Sarasijanayanan",
+        "Nithya Nedungadi",
+        "Sriram Sankaran"
+      ],
+      "date": "2026-03-10",
+      "journal": "Sensors",
+      "abstract_snippet": "The rapid convergence of the Internet of Things (IoT) and decentralized finance (DeFi) is reshaping the digital economy by enabling autonomous, trustless, and value-driven interactions among connected devices. This paper provides a comprehensive survey of the emerging paradigm that combines IoT\u2019s...",
+      "doi_url": "https://doi.org/10.3390/s26061740",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Blockchain Technology Applications and Security",
+        "IoT and Edge/Fog Computing",
+        "FinTech, Crowdfunding, Digital Finance"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134909062",
+      "title": "SCDP: Learning Humanoid Locomotion from Partial Observations via Mixed-Observation Distillation",
+      "authors": [
+        "Milo Carroll",
+        "Tianhu Peng",
+        "Lingfan Bao",
+        "Chengxu Zhou",
+        "Zhibin Li"
+      ],
+      "date": "2026-03-10",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Distilling humanoid locomotion control from offline datasets into deployable policies remains a challenge, as existing methods rely on privileged full-body states that require complex and often unreliable state estimation. We present Sensor-Conditioned Diffusion Policies (SCDP) that enables...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.09574",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Human Pose and Action Recognition",
+        "Human Motion and Animation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134992979",
+      "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video",
+      "authors": [
+        "Haoran Yang",
+        "Jiacheng Bao",
+        "Yucheng Xin",
+        "Haoming Song",
+        "Yuyang Tian"
+      ],
+      "date": "2026-03-10",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Achieving versatile and naturalistic whole-body control for humanoid robot scene-interaction remains a significant challenge. While some recent works have demonstrated autonomous humanoid interactive control, they are constrained to rigid locomotion patterns and expensive teleoperation data...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Human Motion and Animation",
+        "Robot Manipulation and Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134992053",
+      "title": "SCDP: Learning Humanoid Locomotion from Partial Observations via Mixed-Observation Distillation",
+      "authors": [
+        "Milo Carroll",
+        "Tianhu Peng",
+        "Lingfan Bao",
+        "Chengxu Zhou",
+        "Zhibin Li"
+      ],
+      "date": "2026-03-10",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Distilling humanoid locomotion control from offline datasets into deployable policies remains a challenge, as existing methods rely on privileged full-body states that require complex and often unreliable state estimation. We present Sensor-Conditioned Diffusion Policies (SCDP) that enables...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robotic Locomotion and Control",
+        "Human Pose and Action Recognition",
+        "Human Motion and Animation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7134973871",
+      "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video",
+      "authors": [
+        "Haoran Yang",
+        "Jiacheng Bao",
+        "Yucheng Xin",
+        "Haoming Song",
+        "Yuyang Tian"
+      ],
+      "date": "2026-03-10",
+      "journal": "arXiv (Cornell University)",
+      "abstract_snippet": "Achieving versatile and naturalistic whole-body control for humanoid robot scene-interaction remains a significant challenge. While some recent works have demonstrated autonomous humanoid interactive control, they are constrained to rigid locomotion patterns and expensive teleoperation data...",
+      "doi_url": "https://doi.org/10.48550/arxiv.2603.09170",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Human Motion and Animation",
+        "Robot Manipulation and Learning"
+      ]
+    }
+  ]
+}

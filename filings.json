@@ -1,0 +1,169 @@
+{
+  "updated": "2026-03-12 17:25",
+  "source": "SEC EDGAR",
+  "count": 18,
+  "filings": [
+    {
+      "id": "9249cda8cac2",
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "form_type": "10-Q",
+      "date": "2026-03-11",
+      "description": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/"
+    },
+    {
+      "id": "6c257ad2c6c8",
+      "ticker": "ASML",
+      "company": "ASML",
+      "form_type": "6-K",
+      "date": "2026-03-11",
+      "description": "6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026016671/"
+    },
+    {
+      "id": "8bfd5493c43c",
+      "ticker": "MRVL",
+      "company": "Marvell Technology",
+      "form_type": "10-K",
+      "date": "2026-03-11",
+      "description": "FORM 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000011/"
+    },
+    {
+      "id": "c0393957e467",
+      "ticker": "TSM",
+      "company": "TSMC",
+      "form_type": "6-K",
+      "date": "2026-03-10",
+      "description": "6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000031/"
+    },
+    {
+      "id": "01656e59a474",
+      "ticker": "SYM",
+      "company": "Symbotic",
+      "form_type": "8-K",
+      "date": "2026-03-09",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1837240/000183724026000015/"
+    },
+    {
+      "id": "7ddba7f24646",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "form_type": "8-K",
+      "date": "2026-03-06",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/"
+    },
+    {
+      "id": "8cbee4d7741e",
+      "ticker": "INTC",
+      "company": "Intel",
+      "form_type": "8-K",
+      "date": "2026-03-03",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000044/"
+    },
+    {
+      "id": "9a71cdd2a218",
+      "ticker": "ISRG",
+      "company": "Intuitive Surgical",
+      "form_type": "8-K",
+      "date": "2026-03-02",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000012/"
+    },
+    {
+      "id": "966c1261da1e",
+      "ticker": "AMD",
+      "company": "AMD",
+      "form_type": "8-K",
+      "date": "2026-02-24",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/"
+    },
+    {
+      "id": "64658fb23cbe",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "form_type": "10-Q",
+      "date": "2026-02-19",
+      "description": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026009694/"
+    },
+    {
+      "id": "948b681bdca2",
+      "ticker": "TER",
+      "company": "Teradyne",
+      "form_type": "10-K",
+      "date": "2026-02-19",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/"
+    },
+    {
+      "id": "371e9bb825bf",
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "form_type": "8-K",
+      "date": "2026-02-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1024478/000119312526054744/"
+    },
+    {
+      "id": "fe9de92124c3",
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "form_type": "8-K",
+      "date": "2026-02-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000018/"
+    },
+    {
+      "id": "b1b8acb1b3a9",
+      "ticker": "TXN",
+      "company": "Texas Instruments",
+      "form_type": "10-K",
+      "date": "2026-02-06",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000059/"
+    },
+    {
+      "id": "750a9ab5d1ba",
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "form_type": "10-Q",
+      "date": "2026-02-04",
+      "description": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000017/"
+    },
+    {
+      "id": "3cff1fd6603a",
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "form_type": "6-K",
+      "date": "2026-02-04",
+      "description": "6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000006/"
+    },
+    {
+      "id": "c8e0c0f54fb5",
+      "ticker": "LRCX",
+      "company": "Lam Research",
+      "form_type": "8-K",
+      "date": "2026-02-03",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000012/"
+    },
+    {
+      "id": "5848a6a3b52a",
+      "ticker": "MU",
+      "company": "Micron",
+      "form_type": "8-K",
+      "date": "2026-01-21",
+      "description": "FORM 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926005366/"
+    }
+  ]
+}
