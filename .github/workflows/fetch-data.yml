@@ -1,0 +1,104 @@
+name: Robotnik Data Pipeline
+
+on:
+  schedule:
+    - cron: '0 6 * * 1-5'  # Weekdays at 06:00 UTC (prices daily)
+  workflow_dispatch:
+    inputs:
+      run_intel:
+        description: 'Also run intel fetchers (news/research/filings/reports)?'
+        type: boolean
+        default: false
+
+jobs:
+  fetch-prices:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch prices (EODHD + CoinGecko)
+        env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: python scripts/fetch_prices.py
+
+      - name: Commit price data
+        run: |
+          git config user.name "Robotnik Pipeline"
+          git config user.email "data@robotniks.com"
+          git add data/prices/
+          if git diff --cached --quiet; then
+            echo "No price changes — skipping commit"
+          else
+            git commit -m "data: daily price update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+  fetch-intel:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: >
+      (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 1-5')
+      || (github.event_name == 'workflow_dispatch' && inputs.run_intel == true)
+    needs: fetch-prices
+
+    steps:
+      - name: Check if Monday
+        if: github.event_name == 'schedule'
+        run: |
+          DAY=$(date -u +%u)
+          if [ "$DAY" != "1" ]; then
+            echo "Not Monday (day=$DAY) — skipping intel fetch"
+            exit 0
+          fi
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch research papers (OpenAlex)
+        run: python scripts/fetch_research.py
+
+      - name: Fetch news (RSS feeds)
+        run: python scripts/fetch_news.py
+
+      - name: Fetch SEC filings (EDGAR)
+        run: python scripts/fetch_filings.py
+
+      - name: Fetch industry reports (IFR/SEMI/SIA)
+        run: python scripts/fetch_reports.py
+        continue-on-error: true
+
+      - name: Commit intel data
+        run: |
+          git config user.name "Robotnik Pipeline"
+          git config user.email "data@robotniks.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No intel changes — skipping commit"
+          else
+            git commit -m "data: weekly intel update $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,23 @@
+# Environment variables (API keys)
+.env
+
+# OS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Archive files (internal co-pilot training data)
+archive/
+
+# Price error logs
+data/prices/errors.log
+
+# Claude
+.claude/
