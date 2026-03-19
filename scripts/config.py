@@ -22,9 +22,14 @@ load_env()
 
 ALPHA_VANTAGE_API_KEY = os.environ.get("ALPHA_VANTAGE_API_KEY", "")
 OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "")
+EODHD_API_KEY = os.environ.get("EODHD_API_KEY", "")
+COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY", "")
 
 # Output paths — live data (served by GitHub Pages)
 PRICES_JSON = BASE_DIR / "data" / "prices.json"
+EQUITIES_JSON = BASE_DIR / "data" / "prices" / "equities.json"
+TOKENS_JSON = BASE_DIR / "data" / "prices" / "tokens.json"
+ALL_PRICES_JSON = BASE_DIR / "data" / "prices" / "all_prices.json"
 NEWS_JSON = BASE_DIR / "data" / "news.json"
 RESEARCH_JSON = BASE_DIR / "data" / "research.json"
 FILINGS_JSON = BASE_DIR / "data" / "filings.json"
