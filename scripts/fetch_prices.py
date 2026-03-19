@@ -297,17 +297,32 @@ def ticker_to_eodhd(ticker, country):
         "6920": "LSRCY", "8035": "TOELY", "6503": "MIELY",
         "6273": "SMCAY", "6841": "YOKEY", "6762": "TTDKY",
         "6971": "KYOCY",
-        # No US OTC found: 6845 Azbil, 6622 Daihen, 6141 DMG Mori,
-        # 6134 Fuji Corp, 6258 Hirata, 6914 Optex, 6104 Shibaura,
-        # 6324 Harmonic Drive
+        # No US OTC: use Frankfurt (.F) as fallback via JP_FRANKFURT
     }
 
-    # Hardcoded overrides for ambiguous bare tickers
+    # Japan tickers without US OTC — use Frankfurt exchange
+    JP_FRANKFURT = {
+        "6845": "YMK",    # Azbil Corp
+        "6622": "6NV",    # Daihen Corp
+        "6141": "GIL",    # DMG Mori (listed as German on EODHD)
+        "6134": "F5M",    # Fuji Corporation
+        "6258": "1ZM",    # Hirata Corp
+        "6104": "TOA",    # Shibaura Machine
+        "6324": "HSYDF",  # Harmonic Drive Systems (US OTC, not Frankfurt)
+    }
+
+    # Hardcoded overrides for ambiguous or special tickers
     bare_overrides = {
-        "9868": "9868.HK",   # XPeng HK listing
+        "9868": "9868.HK",     # XPeng HK listing
+        "HEXAB SS": "HEXA-B.ST",  # Hexagon AB class B (Sweden)
+        "MELE": "MELE.BR",        # Melexis NV (Euronext Brussels)
+        "STMPA": "STMPA.PA",      # STMicroelectronics (Paris)
     }
     if t in bare_overrides:
         return bare_overrides[t]
+
+    # Korean tickers on KOSDAQ (not KOSPI) — use .KQ instead of .KO
+    KOSDAQ_TICKERS = {"455900", "098460", "090360"}
 
     suffix_map = {
         "KS": "KO", "TT": "TW", "HK": "HK",
@@ -319,12 +334,22 @@ def ticker_to_eodhd(ticker, country):
     parts = t.split()
     if len(parts) == 2:
         symbol, suffix = parts
-        # Japan: use US OTC mapping
+        # Japan: use US OTC mapping, then Frankfurt fallback
         if suffix == "JP":
             otc = JP_TO_US_OTC.get(symbol)
             if otc:
                 return "{}.US".format(otc)
+            ffm = JP_FRANKFURT.get(symbol)
+            if ffm:
+                if ffm == "HSYDF":
+                    return "HSYDF.US"  # US OTC, not Frankfurt
+                if ffm == "GIL":
+                    return "GIL.XETRA"  # DMG Mori primary listing
+                return "{}.F".format(ffm)
             return "{}.US".format(symbol)  # Will fail, logged as error
+        # Korean KOSDAQ override
+        if suffix == "KS" and symbol in KOSDAQ_TICKERS:
+            return "{}.KQ".format(symbol)
         exchange = suffix_map.get(suffix)
         if exchange:
             return "{}.{}".format(symbol, exchange)
@@ -336,6 +361,13 @@ def ticker_to_eodhd(ticker, country):
             otc = JP_TO_US_OTC.get(t)
             if otc:
                 return "{}.US".format(otc)
+            ffm = JP_FRANKFURT.get(t)
+            if ffm:
+                if ffm == "HSYDF":
+                    return "HSYDF.US"
+                if ffm == "GIL":
+                    return "GIL.XETRA"
+                return "{}.F".format(ffm)
             return "{}.US".format(t)  # Will fail, logged as error
         # Taiwan 4-digit
         if len(t) == 4 and country in ("Taiwan",):
@@ -358,8 +390,9 @@ def guess_currency(eodhd_ticker):
     """Guess currency from exchange suffix."""
     exchange = eodhd_ticker.split(".")[-1] if "." in eodhd_ticker else "US"
     currency_map = {
-        "US": "USD", "TSE": "JPY", "KO": "KRW", "TW": "TWD",
-        "HK": "HKD", "SHG": "CNY", "SHE": "CNY", "XETRA": "EUR",
+        "US": "USD", "TSE": "JPY", "KO": "KRW", "KQ": "KRW",
+        "TW": "TWD", "HK": "HKD", "SHG": "CNY", "SHE": "CNY",
+        "XETRA": "EUR", "F": "EUR", "BR": "EUR",
         "LSE": "GBp", "SW": "CHF", "PA": "EUR", "HE": "EUR",
         "ST": "SEK", "OL": "NOK", "VI": "EUR", "TO": "CAD",
     }
@@ -371,15 +404,15 @@ def guess_currency(eodhd_ticker):
 # ticker -> (coingecko_id, display_name)
 # ---------------------------------------------------------------------------
 TOKENS = {
-    "ANIMUS": ("animus-ai", "Animus"),
+    "ANIMUS": ("animus", "Animus"),
     "AUKI": ("auki-labs", "Auki"),
     "ATNM": ("autonoma-network", "Autonoma Network"),
-    "EVAL": ("chromia-eval-by-virtuals", "Chromia EVAL"),
+    "EVAL": ("chromia-eval-by-virtuals", "Chromia EVAL"),  # Not on CoinGecko yet
     "CODEC": ("codec-flow", "Codec Flow"),
     "DPTX": ("deeptics", "DEEPTICS"),
-    "EDGE": ("edge-token", "Edge"),
+    "EDGE": ("edge-token", "Edge"),  # Not on CoinGecko yet
     "$CPT": ("empulser-enterprises", "Empulser Enterprises"),
-    "ROBO": ("fabric-protocol", "Fabric Protocol"),
+    "ROBO": ("robo-token-2", "Fabric Protocol"),
     "FORMA": ("forma-robotics", "Forma Robotics"),
     "GEOD": ("geodnet", "Geodnet"),
     "BREW": ("homebrew-robotics-club", "Homebrew Robotics Club"),
@@ -389,11 +422,11 @@ TOKENS = {
     "MECHA": ("mechaos", "MechaOs"),
     "EMDR": ("modulr", "Modulr"),
     "NATIX": ("natix-network", "NATIX Network"),
-    "NRN": ("neuron-ai", "Neuron"),
+    "NRN": ("neuron-ai", "Neuron"),  # Not on CoinGecko yet
     "OP": ("one-path", "One Path"),
-    "ONO": ("onocoy", "Onocoy Token"),
+    "ONO": ("onocoy-token", "Onocoy Token"),
     "OPAN": ("opanarchy", "Opanarchy"),
-    "OPUS": ("opus-genesis", "Opus Genesis"),
+    "OPUS": ("opus-2", "Opus Genesis"),
     "OVR": ("ovr", "Ovr"),
     "QACE": ("qace-dynamics", "Qace Dynamics"),
     "ROBA": ("roba", "ROBA"),
@@ -408,9 +441,9 @@ TOKENS = {
     "SLC": ("silencio", "Silencio"),
     "SMPL": ("simple-ai", "Simple AI"),
     "SPAWN": ("spawn", "Spawn"),
-    "TSMON": ("ondo-tsm", "TSMC Ondo Tokenized"),
-    "VADER": ("vader", "Vader"),
-    "VIRTUAL": ("virtuals-protocol", "Virtuals Protocol"),
+    "TSMON": ("ondo-tsm", "TSMC Ondo Tokenized"),  # Not on CoinGecko yet
+    "VADER": ("vaderai-by-virtuals", "Vader"),
+    "VIRTUAL": ("virtual-protocol", "Virtuals Protocol"),
     "SHOW": ("vitanova", "VitaNova"),
     "DEUS": ("xmaquina", "XMAQUINA"),
     "PEAQ": ("peaq-2", "peaq"),
