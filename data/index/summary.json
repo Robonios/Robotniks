@@ -1,0 +1,105 @@
+{
+  "calculated_at": "2026-03-20T09:46:54.883372+00:00Z",
+  "composite": {
+    "name": "Robotnik Composite Index",
+    "value": 1000.0,
+    "daily_change_pct": 0.0,
+    "base_date": "2026-03-20",
+    "base_value": 1000.0,
+    "entities": 244
+  },
+  "sub_indices": {
+    "semiconductor": {
+      "name": "Robotnik Semiconductor Index",
+      "value": 1000.0,
+      "entities": 44
+    },
+    "robotics": {
+      "name": "Robotnik Robotics Index",
+      "value": 1000.0,
+      "entities": 142
+    },
+    "cross_stack": {
+      "name": "Robotnik Cross-stack Index",
+      "value": 1000.0,
+      "entities": 21
+    },
+    "token": {
+      "name": "Robotnik Token Index",
+      "value": 1000.0,
+      "entities": 37
+    }
+  },
+  "top_10_weights": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "sector": "Cross-stack",
+      "market_cap_usd": 4339900874752,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet",
+      "sector": "Robotics",
+      "market_cap_usd": 3698416156672,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Robotics",
+      "market_cap_usd": 2241021870080,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC ADR",
+      "sector": "Cross-stack",
+      "market_cap_usd": 1757136027648,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Cross-stack",
+      "market_cap_usd": 1516448907264,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "sector": "Robotics",
+      "market_cap_usd": 1427049807872,
+      "weight_pct": 5.0
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding ADR",
+      "sector": "Cross-stack",
+      "market_cap_usd": 536524914688,
+      "weight_pct": 4.9266
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "Semiconductor",
+      "market_cap_usd": 500029980672,
+      "weight_pct": 4.5915
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 372336033792,
+      "weight_pct": 3.4189
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Cross-stack",
+      "market_cap_usd": 334674460672,
+      "weight_pct": 3.0731
+    }
+  ]
+}

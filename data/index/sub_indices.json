@@ -1,0 +1,154 @@
+{
+  "semiconductor": {
+    "name": "Robotnik Semiconductor Index",
+    "current_value": 1000.0,
+    "entity_count": 44,
+    "top_5": [
+      {
+        "ticker": "MU",
+        "name": "Micron Technology",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "INTC",
+        "name": "Intel",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "ARM",
+        "name": "ARM Holdings ADR",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "MRVL",
+        "name": "Marvell Technology",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "MPWR",
+        "name": "Monolithic Power Systems",
+        "weight_pct": 5.0
+      }
+    ],
+    "series": [
+      {
+        "date": "2026-03-20",
+        "value": 1000.0
+      }
+    ]
+  },
+  "robotics": {
+    "name": "Robotnik Robotics Index",
+    "current_value": 1000.0,
+    "entity_count": 142,
+    "top_5": [
+      {
+        "ticker": "GOOG",
+        "name": "Alphabet",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "TSLA",
+        "name": "Tesla",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "PLTR",
+        "name": "Palantir Technologies",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "CAT",
+        "name": "Caterpillar",
+        "weight_pct": 5.0
+      }
+    ],
+    "series": [
+      {
+        "date": "2026-03-20",
+        "value": 1000.0
+      }
+    ]
+  },
+  "cross_stack": {
+    "name": "Robotnik Cross-stack Index",
+    "current_value": 1000.0,
+    "entity_count": 21,
+    "top_5": [
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "TSM",
+        "name": "TSMC ADR",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML Holding ADR",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "AMD",
+        "name": "Advanced Micro Devices",
+        "weight_pct": 5.0
+      }
+    ],
+    "series": [
+      {
+        "date": "2026-03-20",
+        "value": 1000.0
+      }
+    ]
+  },
+  "token": {
+    "name": "Robotnik Token Index",
+    "current_value": 1000.0,
+    "entity_count": 37,
+    "top_5": [
+      {
+        "ticker": "VIRTUAL",
+        "name": "Virtuals Protocol",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "GEOD",
+        "name": "Geodnet",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "ROBO",
+        "name": "Fabric Protocol",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "IOTX",
+        "name": "IoTeX",
+        "weight_pct": 5.0
+      },
+      {
+        "ticker": "AUKI",
+        "name": "Auki",
+        "weight_pct": 5.0
+      }
+    ],
+    "series": [
+      {
+        "date": "2026-03-20",
+        "value": 1000.0
+      }
+    ]
+  }
+}
