@@ -2316,86 +2316,103 @@ function filterByRange(series) {
   return series.filter(s => s.time >= cutoffStr);
 }
 
-// Ensure chart is created (called once, reused for all renders)
-function ensureChart() {
-  if (activeChart) return;
-  const container = document.getElementById('chart-container');
-  container.innerHTML = '';
-  const chart = LightweightCharts.createChart(container, {
-    width: container.clientWidth || 800,
-    height: 480,
-    layout: {
-      background: { type: 'solid', color: '#1a1e27' },
-      textColor: '#8b92a5',
-      fontFamily: "'Roboto Mono', monospace",
-      fontSize: 11,
-    },
-    grid: {
-      vertLines: { color: '#252a3622' },
-      horzLines: { color: '#252a3644' },
-    },
-    rightPriceScale: {
-      borderColor: '#252a36',
-      scaleMargins: { top: 0.1, bottom: 0.1 },
-    },
-    timeScale: {
-      borderColor: '#252a36',
-      timeVisible: false,
-    },
-  });
-  activeChart = chart;
-  // Create index series (always present)
-  activeIdxSeries = chart.addAreaSeries({
-    lineColor: '#F5D921', lineWidth: 2,
-    topColor: 'rgba(245,217,33,0.25)',
-    bottomColor: 'rgba(245,217,33,0.02)',
-    lastValueVisible: true, priceLineVisible: false,
-  });
-}
+// Chart render — collects data, then builds chart synchronously in rAF
+let _chartRenderId = 0;
 
-// Main chart render — persistent chart, dynamic compare series
-async function renderChart() {
-  ensureChart();
+function renderChart() {
+  const myId = ++_chartRenderId;
 
-  // Load data
-  const rawIndex = await loadIndexSeries();
-  let idxSeries = rawIndex.map(s => ({ time: s.date, value: s.value }));
-  idxSeries = filterByRange(idxSeries);
+  // Collect data (may be async on first call, sync from cache after)
+  Promise.all([
+    loadIndexSeries(),
+    compareAsset ? loadHistory(compareAsset) : Promise.resolve([]),
+  ]).then(function([rawIndex, rawCompare]) {
+    // Stale check — a newer render was requested
+    if (myId !== _chartRenderId) return;
 
-  let compareSeries = [];
-  let compareColor = '#3b82f6';
-  if (compareAsset) {
-    const c = uniqueCompanies.find(x => x.ticker === compareAsset);
-    compareColor = c ? (c.color || tickerColor(c.ticker)) : '#3b82f6';
-    const rawCompare = await loadHistory(compareAsset);
-    compareSeries = rawCompare.map(s => ({ time: s.date, value: s.close ?? s.price ?? 0 }));
+    let idxSeries = rawIndex.map(function(s) { return { time: s.date, value: s.value }; });
+    idxSeries = filterByRange(idxSeries);
+
+    let compareSeries = rawCompare.map(function(s) { return { time: s.date, value: s.close || s.price || 0 }; });
     compareSeries = filterByRange(compareSeries);
-  }
 
-  if (chartMode === 'pct') {
-    idxSeries = toPctChange(idxSeries);
-    compareSeries = toPctChange(compareSeries);
-  }
+    let compareColor = '#3b82f6';
+    if (compareAsset) {
+      const c = uniqueCompanies.find(function(x) { return x.ticker === compareAsset; });
+      compareColor = c ? (c.color || tickerColor(c.ticker)) : '#3b82f6';
+    }
 
-  // Update index series
-  activeIdxSeries.setData(idxSeries.length > 0 ? idxSeries : []);
+    if (chartMode === 'pct') {
+      idxSeries = toPctChange(idxSeries);
+      compareSeries = toPctChange(compareSeries);
+    }
 
-  // Remove old compare series if it exists
-  if (activeCompSeries) {
-    try { activeChart.removeSeries(activeCompSeries); } catch(e) {}
-    activeCompSeries = null;
-  }
+    // Schedule DOM work in a clean animation frame
+    requestAnimationFrame(function() {
+      // Stale check again after rAF
+      if (myId !== _chartRenderId) return;
 
-  // Create fresh compare series with data (only when we have data)
-  if (compareSeries.length > 0) {
-    activeCompSeries = activeChart.addLineSeries({
-      color: compareColor, lineWidth: 2,
-      lastValueVisible: true, priceLineVisible: false,
+      var container = document.getElementById('chart-container');
+
+      // Destroy previous chart completely
+      if (activeChart) { try { activeChart.remove(); } catch(e) {} activeChart = null; }
+      activeIdxSeries = null;
+      activeCompSeries = null;
+      container.innerHTML = '';
+
+      if (idxSeries.length === 0 && compareSeries.length === 0) {
+        container.innerHTML = '<div class="chart-no-data">Index data not yet available.</div>';
+        return;
+      }
+
+      // Create fresh chart + all series in one synchronous block
+      var chart = LightweightCharts.createChart(container, {
+        width: container.clientWidth || 800,
+        height: 480,
+        layout: {
+          background: { type: 'solid', color: '#1a1e27' },
+          textColor: '#8b92a5',
+          fontFamily: "'Roboto Mono', monospace",
+          fontSize: 11,
+        },
+        grid: {
+          vertLines: { color: '#252a3622' },
+          horzLines: { color: '#252a3644' },
+        },
+        rightPriceScale: {
+          borderColor: '#252a36',
+          scaleMargins: { top: 0.1, bottom: 0.1 },
+        },
+        timeScale: {
+          borderColor: '#252a36',
+          timeVisible: false,
+        },
+      });
+
+      // Add index area series
+      if (idxSeries.length > 0) {
+        activeIdxSeries = chart.addAreaSeries({
+          lineColor: '#F5D921', lineWidth: 2,
+          topColor: 'rgba(245,217,33,0.25)',
+          bottomColor: 'rgba(245,217,33,0.02)',
+          lastValueVisible: true, priceLineVisible: false,
+        });
+        activeIdxSeries.setData(idxSeries);
+      }
+
+      // Add compare line series
+      if (compareSeries.length > 0) {
+        activeCompSeries = chart.addLineSeries({
+          color: compareColor, lineWidth: 2,
+          lastValueVisible: true, priceLineVisible: false,
+        });
+        activeCompSeries.setData(compareSeries);
+      }
+
+      chart.timeScale().fitContent();
+      activeChart = chart;
     });
-    activeCompSeries.setData(compareSeries);
-  }
-
-  activeChart.timeScale().fitContent();
+  });
 }
 
 // ===== FUNDRAISING RENDERING =====
