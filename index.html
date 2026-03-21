@@ -2360,51 +2360,15 @@ function _drawCompareOverlay() {
   const series = _compareData.series;
   const color = _compareData.color;
 
-  // Get visible time range to filter points
-  const visRange = ts.getVisibleRange();
-  if (!visRange) return;
-
-  // Get all index data to compute combined Y scale
-  const idxData = activeIdxSeries.data();
-  let allVals = [];
-  for (let i = 0; i < idxData.length; i++) {
-    if (idxData[i].time >= visRange.from && idxData[i].time <= visRange.to) {
-      allVals.push(idxData[i].value);
-    }
-  }
-  for (let i = 0; i < series.length; i++) {
-    if (series[i].time >= visRange.from && series[i].time <= visRange.to) {
-      allVals.push(series[i].value);
-    }
-  }
-  if (allVals.length === 0) return;
-
-  const yMin = Math.min.apply(null, allVals);
-  const yMax = Math.max.apply(null, allVals);
-  const yPad = (yMax - yMin) * 0.1 || 1;
-
-  // Chart area dimensions (exclude axes) — use the first index point as reference
-  const refX0 = ts.timeToCoordinate(visRange.from);
-  const refX1 = ts.timeToCoordinate(visRange.to);
-  const refY0 = activeIdxSeries.priceToCoordinate(yMax + yPad);
-  const refY1 = activeIdxSeries.priceToCoordinate(yMin - yPad);
-  if (refY0 === null || refY1 === null) return;
-  const plotTop = Math.min(refY0, refY1);
-  const plotBottom = Math.max(refY0, refY1);
-  const plotH = plotBottom - plotTop;
-
-  // Map value to Y pixel using our own scale (matching chart's visible range)
-  function valToY(v) {
-    return plotBottom - ((v - (yMin - yPad)) / ((yMax + yPad) - (yMin - yPad))) * plotH;
-  }
-
-  // Map data to pixel coordinates
+  // Map data to pixel coordinates using chart's coordinate system
+  // (autoscaleInfoProvider ensures the price scale covers both datasets)
   const points = [];
   for (let i = 0; i < series.length; i++) {
     const x = ts.timeToCoordinate(series[i].time);
-    if (x === null || !isFinite(x)) continue;
-    const y = valToY(series[i].value);
-    if (isFinite(y)) points.push({ x, y });
+    const y = activeIdxSeries.priceToCoordinate(series[i].value);
+    if (x !== null && y !== null && isFinite(x) && isFinite(y)) {
+      points.push({ x, y });
+    }
   }
 
   if (points.length < 2) return;
@@ -2509,6 +2473,25 @@ async function renderChart() {
   // ---- Subsequent renders ----
   activeIdxSeries.setData(idxSeries.length > 0 ? idxSeries : [{ time: '2000-01-01', value: 0 }]);
   activeChart.timeScale().fitContent();
+
+  // Set autoscaleInfoProvider to include compare data range in Y-axis
+  if (hasCompare) {
+    const compMin = Math.min(...compareSeries.map(d => d.value));
+    const compMax = Math.max(...compareSeries.map(d => d.value));
+    const idxMin = Math.min(...idxSeries.map(d => d.value));
+    const idxMax = Math.max(...idxSeries.map(d => d.value));
+    const overallMin = Math.min(compMin, idxMin);
+    const overallMax = Math.max(compMax, idxMax);
+    activeIdxSeries.applyOptions({
+      autoscaleInfoProvider: () => ({
+        priceRange: { minValue: overallMin, maxValue: overallMax },
+      }),
+    });
+  } else {
+    activeIdxSeries.applyOptions({
+      autoscaleInfoProvider: undefined,
+    });
+  }
 
   // Store compare data and draw overlay
   if (hasCompare) {
