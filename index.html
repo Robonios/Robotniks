@@ -1553,6 +1553,7 @@
           <div class="chart-container" id="chart-container"></div>
           <!-- legend removed -->
         </div>
+        <div class="data-note" id="chart-composition-note" style="margin-top:4px;font-size:10px;opacity:0.5;"></div>
       </div>
     </div>
 
@@ -2286,24 +2287,36 @@ async function loadHistory(ticker) {
   return [];
 }
 
-// Load Robotnik Index series
+// Load Robotnik Index series (full basket + equities-only for longer ranges)
+let _indexData = null; // cached raw index JSON
 async function loadIndexSeries() {
-  if (indexSeries) return indexSeries;
+  if (indexSeries && _indexData) return indexSeries;
   try {
     const resp = await fetch('data/index/robotnik_index.json?v=' + Date.now());
     if (resp.ok) {
-      const data = await resp.json();
-      indexSeries = data.series || [];
-      // Update the Robotnik Index display value from actual data
-      if (data.current_value) {
-        window.robotnikIndexValue = data.current_value;
-        window.robotnikBaseDate = data.base_date;
+      _indexData = await resp.json();
+      indexSeries = _indexData.series || [];
+      if (_indexData.current_value) {
+        window.robotnikIndexValue = _indexData.current_value;
+        window.robotnikBaseDate = _indexData.base_date;
       }
       return indexSeries;
     }
   } catch (e) { /* continue */ }
   indexSeries = [];
   return indexSeries;
+}
+
+// Pick the right index series based on range:
+// - Ranges > 365 days use equities-only series (5Y of data)
+// - Ranges <= 365 days use full basket (equities + tokens)
+function getIndexSeriesForRange(rangeDays) {
+  if (!_indexData) return indexSeries || [];
+  const useEquitiesOnly = (rangeDays !== 'ytd' && rangeDays > 365);
+  if (useEquitiesOnly && _indexData.equities_only && _indexData.equities_only.series) {
+    return _indexData.equities_only.series;
+  }
+  return _indexData.series || [];
 }
 
 // Convert price series to % change series
@@ -2396,7 +2409,10 @@ function _drawCompareOverlay() {
 
 async function renderChart() {
   // ---- Load all data (async) ----
-  const rawIndex = await loadIndexSeries();
+  await loadIndexSeries(); // ensure _indexData is populated
+  // Pick the right index series based on selected range
+  // (equities-only for 3Y/5Y, full basket for <= 1Y)
+  const rawIndex = getIndexSeriesForRange(chartRange);
   let idxSeries = rawIndex.map(s => ({ time: s.date, value: s.value }));
 
   let compareSeries = [];
@@ -2411,14 +2427,19 @@ async function renderChart() {
   }
 
   // ---- Update range button availability based on data ----
-  // Use the longest available data range (index or compare) for button state
+  // Check ALL available index data (full basket + equities-only) for max range
   const idxDays = idxSeries.length > 1
     ? Math.round((new Date(idxSeries[idxSeries.length-1].time) - new Date(idxSeries[0].time)) / 86400000)
+    : 0;
+  // Also check equities-only series (available for longer ranges)
+  const eqSeries = _indexData?.equities_only?.series || [];
+  const eqDays = eqSeries.length > 1
+    ? Math.round((new Date(eqSeries[eqSeries.length-1].date) - new Date(eqSeries[0].date)) / 86400000)
     : 0;
   const compDays = compareSeries.length > 1
     ? Math.round((new Date(compareSeries[compareSeries.length-1].time) - new Date(compareSeries[0].time)) / 86400000)
     : 0;
-  const availDays = Math.max(idxDays, compDays);
+  const availDays = Math.max(idxDays, eqDays, compDays);
   // Enable/disable range buttons based on available data
   document.querySelectorAll('#chart-range-btns button[data-range]').forEach(btn => {
     const r = btn.dataset.range;
@@ -2506,6 +2527,12 @@ async function renderChart() {
 
     // Redraw overlay when chart scrolls/zooms
     chart.timeScale().subscribeVisibleLogicalRangeChange(_drawCompareOverlay);
+
+    // Set initial composition note
+    const compNote0 = document.getElementById('chart-composition-note');
+    if (compNote0 && _indexData) {
+      compNote0.textContent = `Index: ${_indexData.entity_count} entities (equities + tokens)`;
+    }
     return;
   }
 
@@ -2540,6 +2567,20 @@ async function renderChart() {
   }
   // Delay overlay draw to let chart finish its layout update
   setTimeout(_drawCompareOverlay, 50);
+
+  // Update composition note
+  const compNote = document.getElementById('chart-composition-note');
+  if (compNote) {
+    const useEqOnly = (chartRange !== 'ytd' && chartRange > 365);
+    const eqData = _indexData?.equities_only;
+    if (useEqOnly && eqData) {
+      compNote.textContent = `Index: ${eqData.entity_count} equities only (tokens excluded for ${chartRange > 1095 ? '5' : '3'}Y view \u2014 insufficient token history)`;
+    } else if (_indexData) {
+      compNote.textContent = `Index: ${_indexData.entity_count} entities (equities + tokens)`;
+    } else {
+      compNote.textContent = '';
+    }
+  }
 }
 
 // ===== FUNDRAISING RENDERING =====

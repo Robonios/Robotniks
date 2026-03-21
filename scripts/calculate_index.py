@@ -265,19 +265,71 @@ def main():
     }
     save_json(WEIGHTS_PATH, weights_output)
 
-    # ── backfill composite index ─────────────────────────────────────
+    # ── DYNAMIC COMPOSITION: two index series ────────────────────────
+    # 1. Full basket (equities + tokens): ~1Y of data
+    # 2. Equities only: ~5Y of data (tokens excluded — no long history)
+    # The frontend picks the appropriate series based on selected range.
+
+    from datetime import timedelta
+
+    # Split eligible entities into equities and tokens
+    equities_only = [e for e in eligible if e["sector"] != "Token"]
+    equities_weights = compute_capped_weights(equities_only)
+
+    print(f"  Full basket: {len(eligible)} entities (equities + tokens)")
+    print(f"  Equities only: {len(equities_only)} entities")
+
+    # --- Full basket (1Y) base date ---
+    full_base_str = all_dates[0] if all_dates else today_str
+    if all_dates:
+        target_1y = (datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=365)).strftime("%Y-%m-%d")
+        min_coverage_full = len(eligible) * 0.3
+        for d in all_dates:
+            if d >= target_1y:
+                day_cov = sum(1 for t in weights if t in price_matrix.get(d, {}))
+                if day_cov >= min_coverage_full:
+                    full_base_str = d
+                    break
+
+    # --- Equities-only (5Y) base date ---
+    eq_base_str = all_dates[0] if all_dates else today_str
+    if all_dates:
+        target_5y = (datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=1825)).strftime("%Y-%m-%d")
+        min_coverage_eq = len(equities_only) * 0.3
+        for d in all_dates:
+            if d >= target_5y:
+                day_cov = sum(1 for t in equities_weights if t in price_matrix.get(d, {}))
+                if day_cov >= min_coverage_eq:
+                    eq_base_str = d
+                    break
+
+    print(f"  Full basket base date: {full_base_str}")
+    print(f"  Equities-only base date: {eq_base_str}")
+
+    # --- Backfill both series ---
     if all_dates and price_matrix:
+        # Full basket series (~1Y)
         composite_series, actual_base_date, base_prices = backfill_index(
-            eligible, weights, price_matrix, all_dates, base_date_str
+            eligible, weights, price_matrix, all_dates, full_base_str
         )
         composite_value = composite_series[-1]["value"] if composite_series else BASE_VALUE
-        print(f"  Composite series: {len(composite_series)} data points")
+        print(f"  Full basket series: {len(composite_series)} data points")
+
+        # Equities-only series (~5Y)
+        eq_series, eq_actual_base, eq_base_prices = backfill_index(
+            equities_only, equities_weights, price_matrix, all_dates, eq_base_str
+        )
+        eq_value = eq_series[-1]["value"] if eq_series else BASE_VALUE
+        print(f"  Equities-only series: {len(eq_series)} data points")
     else:
-        # Fallback: no history, just use today
         composite_series = [{"date": today_str, "value": BASE_VALUE}]
         composite_value = BASE_VALUE
         actual_base_date = today_str
         base_prices = prices_by_ticker
+        eq_series = [{"date": today_str, "value": BASE_VALUE}]
+        eq_value = BASE_VALUE
+        eq_actual_base = today_str
+        eq_base_prices = prices_by_ticker
 
     # ── base_date.json ───────────────────────────────────────────────
     base_data = {
@@ -286,6 +338,8 @@ def main():
         "base_prices": base_prices,
         "base_weights": weights,
         "entity_count": len(eligible),
+        "equities_only_base_date": eq_actual_base,
+        "equities_only_entity_count": len(equities_only),
     }
     save_json(BASE_DATE_PATH, base_data)
 
@@ -298,6 +352,14 @@ def main():
         "current_date": today_str,
         "entity_count": len(eligible),
         "series": composite_series,
+        # Dynamic composition: equities-only series for longer time ranges
+        "equities_only": {
+            "base_date": eq_actual_base,
+            "base_value": BASE_VALUE,
+            "current_value": eq_value,
+            "entity_count": len(equities_only),
+            "series": eq_series,
+        },
     }
     save_json(INDEX_PATH, index_output)
 
@@ -356,6 +418,13 @@ def main():
             "base_value": BASE_VALUE,
             "entities": len(eligible),
         },
+        "equities_only": {
+            "name": "Robotnik Composite Index (Equities Only)",
+            "value": eq_value,
+            "base_date": eq_actual_base,
+            "base_value": BASE_VALUE,
+            "entities": len(equities_only),
+        },
         "sub_indices": {
             k: {"name": v["name"], "value": v["current_value"],
                 "entities": v["entity_count"]}
@@ -367,11 +436,10 @@ def main():
 
     # ── print summary ────────────────────────────────────────────────
     print()
-    print(f"  ROBOTNIK COMPOSITE INDEX: {composite_value:,.2f}")
-    print(f"  Daily change: {daily_change_pct:+.2f}%")
-    print(f"  Base date: {actual_base_date} (value: {BASE_VALUE})")
-    print(f"  Series: {len(composite_series)} data points")
-    print(f"  Entities: {len(eligible)}")
+    print(f"  ROBOTNIK COMPOSITE INDEX")
+    print(f"    Full basket:    {composite_value:,.2f}  ({len(eligible)} entities, {len(composite_series)} pts, base: {actual_base_date})")
+    print(f"    Equities only:  {eq_value:,.2f}  ({len(equities_only)} entities, {len(eq_series)} pts, base: {eq_actual_base})")
+    print(f"    Daily change: {daily_change_pct:+.2f}%")
     print()
     for k, v in sub_indices.items():
         print(f"  {v['name']}: {v['current_value']:,.2f} ({v['entity_count']} entities, {len(v['series'])} pts)")
