@@ -1148,7 +1148,6 @@
     nav { padding: 0 1rem; }
     .nav-links .hm { display: none; }
     .main-section { padding: 2.5rem 1rem; }
-    .robot-bg { display: none; }
     .cta-form { flex-direction: column; }
     .fund-stats { grid-template-columns: repeat(2, 1fr); }
     .news-grid { grid-template-columns: 1fr; }
@@ -1409,9 +1408,6 @@
 </style>
 </head>
 <body>
-
-<!-- Robot background — replace src with your hosted image URL -->
-<div class="robot-bg" id="robot-bg"></div>
 
 <!-- NAV -->
 <nav>
@@ -1907,10 +1903,6 @@
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
-// ===== IMAGE HANDLING =====
-// The robot image needs to be hosted. For local preview, we use a data approach.
-// When deploying, replace 'robot-bg.png' with your actual image URL everywhere.
-
 // ===== MARKET DATA (real prices, close Mar 4 2026) =====
 // ===== DYNAMIC PRICE DATA =====
 let allCompanies = [];
