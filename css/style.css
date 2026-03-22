@@ -1387,7 +1387,126 @@
     color: var(--text-muted);
   }
 
-  /* ===== THESIS ===== */
+  /* ===== DOSSIER / THESIS PAGE ===== */
+  .dossier {
+    max-width: 800px;
+    padding: 1.5rem 2rem 3rem;
+  }
+
+  .dossier-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .dossier-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--yellow);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .dossier-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .dossier-subhead {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+  }
+
+  .dossier-body {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.85;
+  }
+
+  .dossier-body p {
+    margin-bottom: 1rem;
+  }
+
+  .dossier-body p:last-child { margin-bottom: 0; }
+
+  .dossier-divider {
+    border: none;
+    border-top: 1px solid #1E2330;
+    margin: 2rem 0;
+  }
+
+  .dossier-footer {
+    padding: 2rem 0;
+    border-top: 1px solid #1E2330;
+    margin-top: 2rem;
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .dossier-footer a {
+    color: var(--text-dim);
+    text-decoration: none;
+  }
+  .dossier-footer a:hover { color: var(--yellow); }
+
+  /* Roadmap v2 */
+  .roadmap-v2 { padding-left: 1.5rem; }
+
+  .rm-item {
+    position: relative;
+    padding: 0 0 1.5rem 1.5rem;
+    border-left: 1px solid #1E2330;
+  }
+  .rm-item:last-child { border-left-color: transparent; padding-bottom: 0; }
+
+  .rm-dot {
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: #3a3f4b;
+    border: 2px solid #0D1117;
+  }
+
+  .rm-item.complete .rm-dot { background: var(--green); }
+  .rm-item.current .rm-dot { background: var(--yellow); box-shadow: 0 0 6px rgba(245,217,33,0.4); }
+  .rm-item.future .rm-dot { background: #3a3f4b; }
+
+  .rm-label {
+    font-size: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.15rem;
+  }
+
+  .rm-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+  }
+
+  .rm-item.complete .rm-title { color: var(--green); }
+  .rm-item.current .rm-title { color: var(--yellow); }
+  .rm-item.future .rm-title { color: var(--text-muted); }
+
+  .rm-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .rm-status {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 0.15rem;
+  }
+
+  /* ===== THESIS (legacy) ===== */
   .thesis-quote {
     border-left: 2px solid var(--yellow);
     padding: 1rem 1.25rem;
