@@ -701,7 +701,7 @@ function exportCSV() {
   const blob = new Blob([csv], { type: 'text/csv' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'robotniks_fundraising.csv';
+  a.download = 'robotnik_fundraising.csv';
   a.click();
 }
 
