@@ -875,10 +875,143 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// ===== INDEX CHART =====
+let indexChart = null;
+let indexLineSeries = null;
+let indexAreaSeries = null;
+let indexChartData = {};
+let currentIndexSeries = 'composite';
+let currentIndexRange = 30;
+
+function initIndexChart() {
+  const container = document.getElementById('index-chart-container');
+  const placeholder = document.getElementById('chart-placeholder');
+  if (!container || typeof LightweightCharts === 'undefined') return;
+
+  // Try loading composite index data
+  fetch('data/index/robotnik_index.json')
+    .then(r => { if (!r.ok) throw new Error('No data'); return r.json(); })
+    .then(data => {
+      if (!data || !data.length) throw new Error('Empty');
+      indexChartData.composite = data;
+      placeholder.style.display = 'none';
+      createIndexChart(container, data);
+      // Try loading sub-indices
+      fetch('data/index/sub_indices.json')
+        .then(r => r.ok ? r.json() : {})
+        .then(sub => {
+          if (sub.semi) indexChartData.semi = sub.semi;
+          if (sub.robotics) indexChartData.robotics = sub.robotics;
+          if (sub.space) indexChartData.space = sub.space;
+          if (sub.token) indexChartData.token = sub.token;
+        })
+        .catch(() => {});
+    })
+    .catch(() => {
+      // Data not available — show placeholder
+      placeholder.style.display = 'flex';
+    });
+}
+
+function createIndexChart(container, data) {
+  indexChart = LightweightCharts.createChart(container, {
+    width: container.clientWidth,
+    height: 280,
+    layout: {
+      background: { type: 'solid', color: 'transparent' },
+      textColor: '#8B92A5',
+      fontFamily: "'Roboto Mono', monospace",
+      fontSize: 10,
+    },
+    grid: {
+      vertLines: { color: '#1E2330' },
+      horzLines: { color: '#1E2330' },
+    },
+    crosshair: {
+      vertLine: { color: '#F5D921', width: 1, style: 2 },
+      horzLine: { color: '#F5D921', width: 1, style: 2 },
+    },
+    timeScale: {
+      borderColor: '#1E2330',
+      timeVisible: false,
+    },
+    rightPriceScale: {
+      borderColor: '#1E2330',
+    },
+  });
+
+  indexAreaSeries = indexChart.addAreaSeries({
+    lineColor: '#F5D921',
+    topColor: 'rgba(245, 217, 33, 0.10)',
+    bottomColor: 'rgba(245, 217, 33, 0.02)',
+    lineWidth: 2,
+  });
+
+  applyIndexData(data);
+
+  // Resize observer
+  const ro = new ResizeObserver(() => {
+    indexChart.applyOptions({ width: container.clientWidth });
+  });
+  ro.observe(container);
+}
+
+function applyIndexData(data) {
+  if (!indexAreaSeries || !data || !data.length) return;
+  let filtered = data;
+  if (currentIndexRange > 0) {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - currentIndexRange);
+    const cutoffStr = cutoff.toISOString().slice(0, 10);
+    filtered = data.filter(d => d.time >= cutoffStr);
+  }
+  if (filtered.length === 0) filtered = data;
+  indexAreaSeries.setData(filtered.map(d => ({ time: d.time || d.date, value: d.value || d.close })));
+  indexChart.timeScale().fitContent();
+
+  // Update header values
+  const last = filtered[filtered.length - 1];
+  const first = filtered[0];
+  if (last && first) {
+    const val = last.value || last.close || 0;
+    const startVal = first.value || first.close || 0;
+    const chg = startVal ? ((val - startVal) / startVal * 100) : 0;
+    const valEl = document.getElementById('chart-index-val');
+    const chgEl = document.getElementById('chart-index-chg');
+    if (valEl) valEl.textContent = val.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    if (chgEl) {
+      chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%';
+      chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red');
+    }
+  }
+}
+
+function setIndexRange(btn) {
+  document.querySelectorAll('.chart-range-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentIndexRange = parseInt(btn.dataset.range) || 0;
+  const data = indexChartData[currentIndexSeries];
+  if (data) applyIndexData(data);
+}
+
+function setIndexSeries(btn) {
+  document.querySelectorAll('.chart-index-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentIndexSeries = btn.dataset.idx;
+  const data = indexChartData[currentIndexSeries];
+  if (data) {
+    applyIndexData(data);
+  } else {
+    // No data for this sub-index
+    if (indexAreaSeries) indexAreaSeries.setData([]);
+  }
+}
+
 // Page-gated initialization
 const _page = document.body.dataset.page;
 if (_page === 'home') {
   loadPriceData();
+  initIndexChart();
 }
 if (_page === 'intelligence') {
   loadIntelligenceData();

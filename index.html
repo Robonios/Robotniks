@@ -68,6 +68,35 @@
       </div>
     </div>
 
+    <!-- B2. Index Chart -->
+    <div class="dash-widget">
+      <div class="chart-widget-header">
+        <span class="chart-widget-title">Robotnik Index</span>
+        <span class="chart-widget-val" id="chart-index-val">1,000.00</span>
+        <span class="chart-widget-chg v-green" id="chart-index-chg">+0.00%</span>
+      </div>
+      <div class="chart-controls">
+        <div class="chart-range-group">
+          <button class="chart-range-btn" data-range="7" onclick="setIndexRange(this)">1W</button>
+          <button class="chart-range-btn active" data-range="30" onclick="setIndexRange(this)">1M</button>
+          <button class="chart-range-btn" data-range="90" onclick="setIndexRange(this)">3M</button>
+          <button class="chart-range-btn" data-range="180" onclick="setIndexRange(this)">6M</button>
+          <button class="chart-range-btn" data-range="365" onclick="setIndexRange(this)">1Y</button>
+          <button class="chart-range-btn" data-range="0" onclick="setIndexRange(this)">ALL</button>
+        </div>
+        <div class="chart-index-group">
+          <button class="chart-index-btn active" data-idx="composite" onclick="setIndexSeries(this)">Composite</button>
+          <button class="chart-index-btn" data-idx="semi" onclick="setIndexSeries(this)">Semi</button>
+          <button class="chart-index-btn" data-idx="robotics" onclick="setIndexSeries(this)">Robotics</button>
+          <button class="chart-index-btn" data-idx="space" onclick="setIndexSeries(this)">Space</button>
+          <button class="chart-index-btn" data-idx="token" onclick="setIndexSeries(this)">Token</button>
+        </div>
+      </div>
+      <div id="index-chart-container">
+        <div class="chart-placeholder" id="chart-placeholder">INDEX CHART: AWAITING DATA. Price pipeline calibrating, tovarishch.</div>
+      </div>
+    </div>
+
     <!-- C. Market Table -->
     <div class="dash-widget" style="padding:0.5rem 0;">
       <div style="padding:0 1rem;">
@@ -205,7 +234,7 @@
 </div>
 </div><!-- .main-content -->
 
-<!-- TODO: Re-add lightweight-charts when live price data is connected -->
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/main.js"></script>
 </body>
