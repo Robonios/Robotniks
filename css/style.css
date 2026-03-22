@@ -496,7 +496,7 @@
     display: none !important;
   }
 
-  #index-chart-container:has(.chart-placeholder) {
+  #index-chart-container:has(.chart-placeholder[style*="flex"]) {
     height: 160px;
   }
 

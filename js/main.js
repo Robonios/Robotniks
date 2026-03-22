@@ -108,7 +108,8 @@ async function loadPriceData() {
 
   // Fallback if fetch failed — use empty array
   if (uniqueCompanies.length === 0) {
-    document.getElementById('market-note').textContent = 'Price data unavailable — check data/prices/all_prices.json';
+    const noteEl = document.getElementById('market-note');
+    if (noteEl) noteEl.textContent = 'Price data unavailable — check data/prices/all_prices.json';
   }
 
   renderAssetList();
@@ -144,7 +145,7 @@ raises.sort((a,b) => b.amount - a.amount);
 // ===== RENDER TICKER =====
 function renderTicker() {
   const el = document.getElementById('ticker');
-  if (!uniqueCompanies.length) return;
+  if (!el || !uniqueCompanies.length) return;
   // Show top 30 by market cap in the scrolling ticker
   const top = uniqueCompanies.slice(0, 30);
   const items = top.map(c => {
@@ -189,7 +190,9 @@ function setFilter(btn) {
 
 function renderAssetList() {
   const scroll = document.getElementById('asset-list-scroll');
-  const s = (document.getElementById('market-search').value || '').toLowerCase();
+  if (!scroll) return; // Element not present in current page layout
+  const searchEl = document.getElementById('market-search');
+  const s = (searchEl ? searchEl.value : '').toLowerCase();
   let data = mFilter === 'all' ? uniqueCompanies : uniqueCompanies.filter(c => c.sector === mFilter);
   if (s) data = data.filter(c => c.name.toLowerCase().includes(s) || c.ticker.toLowerCase().includes(s) || c.sub.toLowerCase().includes(s));
 
@@ -282,6 +285,7 @@ function selectAsset(ticker) {
 // Compare pills bar
 function renderComparePills() {
   const bar = document.getElementById('chart-compare-bar');
+  if (!bar) return;
   let html = '';
 
   // Robotnik Index always shown
@@ -529,6 +533,7 @@ async function renderChart() {
 
   // ---- Create chart once (first call, during page init) ----
   const container = document.getElementById('chart-container');
+  if (!container) return; // Element not present in current page layout
   if (!_chartReady) {
     _chartReady = true;
     container.innerHTML = '';
