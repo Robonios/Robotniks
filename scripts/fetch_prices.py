@@ -2,7 +2,7 @@
 """
 Robotnik Price Fetcher
 ======================
-Daily fetcher for 219 equities (EODHD) + 43 crypto tokens (CoinGecko).
+Daily fetcher for 260 equities (EODHD) + 43 crypto tokens (CoinGecko).
 Outputs: data/prices/equities.json, data/prices/tokens.json, data/prices/all_prices.json
 Errors:  data/prices/errors.log
 
@@ -220,7 +220,7 @@ EQUITIES = [
     ("EMR", "Emerson Electric", "Robotics", "United States"),
     ("GMED", "Globus Medical", "Robotics", "United States"),
     ("HSAI", "Hesai Group", "Robotics", "China"),
-    ("LUNR", "Intuitive Machines", "Robotics", "United States"),
+    ("LUNR", "Intuitive Machines", "Space", "United States"),
     ("ISRG", "Intuitive Surgical", "Robotics", "United States"),
     ("IPGP", "IPG Photonics", "Robotics", "United States"),
     ("IRDM", "Iridium Communications", "Robotics", "United States"),
@@ -276,6 +276,48 @@ EQUITIES = [
     ("9868", "XPeng Inc Class A", "Robotics", "TBD"),
     ("002050", "Zhejiang Sanhua Intelligent", "Robotics", "TBD"),
     ("002472", "Zhejiang Shuanghuan Driveline", "Robotics", "TBD"),
+    # Space
+    ("ASTS", "AST SpaceMobile", "Space", "United States"),
+    ("186A JP", "Astroscale Holdings", "Space", "Japan"),
+    ("AVIO IM", "Avio SpA", "Space", "Italy"),
+    ("BKSY", "BlackSky Technology", "Space", "United States"),
+    ("DCO", "Ducommun", "Space", "United States"),
+    ("ESE", "ESCO Technologies", "Space", "United States"),
+    ("SATS", "EchoStar Corp", "Space", "United States"),
+    ("ETL FP", "Eutelsat Communications", "Space", "France"),
+    ("FLY", "Firefly Aerospace", "Space", "United States"),
+    ("GILT", "Gilat Satellite Networks", "Space", "Israel"),
+    ("GSAT", "Globalstar", "Space", "United States"),
+    ("GOGO", "Gogo Inc", "Space", "United States"),
+    ("GOMX SS", "GomSpace", "Space", "Sweden"),
+    ("HEI", "HEICO Corp", "Space", "United States"),
+    ("012450 KS", "Hanwha Aerospace", "Space", "South Korea"),
+    ("HXL", "Hexcel Corp", "Space", "United States"),
+    ("189300 KS", "Intellian Technologies", "Space", "South Korea"),
+    ("KRMN", "Karman Holdings", "Space", "United States"),
+    ("474170 KS", "Lumir Inc", "Space", "South Korea"),
+    ("MDA CN", "MDA Space", "Space", "Canada"),
+    ("MNTS", "Momentus", "Space", "United States"),
+    ("MOG.A", "Moog Inc", "Space", "United States"),
+    ("NN", "NextNav", "Space", "United States"),
+    ("OVZON SS", "Ovzon AB", "Space", "Sweden"),
+    ("PSN", "Parsons Corp", "Space", "United States"),
+    ("PL", "Planet Labs", "Space", "United States"),
+    ("464A JP", "QPS Holdings", "Space", "Japan"),
+    ("RDW", "Redwire Corp", "Space", "United States"),
+    ("RKLB", "Rocket Lab", "Space", "United States"),
+    ("SESG FP", "SES SA", "Space", "Luxembourg"),
+    ("SATL", "Satellogic", "Space", "United States"),
+    ("SIDU", "Sidus Space", "Space", "United States"),
+    ("SCC IT", "Space Communication", "Space", "Israel"),
+    ("SPIR", "Spire Global", "Space", "United States"),
+    ("290A JP", "Synspective", "Space", "Japan"),
+    ("TTMI", "TTM Technologies", "Space", "United States"),
+    ("TSAT", "Telesat Corp", "Space", "United States"),
+    ("VSAT", "Viasat Inc", "Space", "United States"),
+    ("SPCE", "Virgin Galactic", "Space", "United States"),
+    ("VOYG", "Voyager Technologies", "Space", "United States"),
+    ("9348 JP", "ispace Inc", "Space", "Japan"),
 ]
 
 
@@ -329,6 +371,7 @@ def ticker_to_eodhd(ticker, country):
         "C1": "SHG", "C2": "SHE", "GR": "XETRA", "LN": "LSE",
         "SW": "SW", "FP": "PA", "FH": "HE", "SS": "ST",
         "NO": "OL", "AV": "VI", "CN": "TO",
+        "IM": "MI", "IT": "TA",
     }
 
     parts = t.split()

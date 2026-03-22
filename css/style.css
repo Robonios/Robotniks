@@ -491,8 +491,12 @@
     position: relative;
   }
 
+  #index-chart-container:has(.chart-placeholder) {
+    height: 160px;
+  }
+
   .chart-placeholder {
-    height: 280px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;

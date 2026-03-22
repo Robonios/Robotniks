@@ -5,7 +5,7 @@ Robotnik Composite Index Calculator
 Produces a market-cap weighted index with:
 - 5% single-entity cap with iterative redistribution
 - Base value 1000.00 (set to earliest available history date)
-- 4 sub-indices: Semiconductor, Robotics, Cross-stack, Token
+- 5 sub-indices: Semiconductor, Robotics, Space, Cross-stack, Token
 - Historical backfill using price history files
 - Outputs: weights.json, robotnik_index.json, sub_indices.json,
            base_date.json, summary.json
@@ -42,6 +42,7 @@ SECTOR_MAP = {
     "Semis":         "Semiconductor",
     "Robotics":      "Robotics",
     "Cross-stack":   "Cross-stack",
+    "Space":         "Space",
     "Token":         "Token",
 }
 

@@ -2,7 +2,8 @@ name: Robotnik Data Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * 1-5'  # Weekdays at 06:00 UTC (prices daily)
+    - cron: '0 6 * * 1-5'  # Weekdays at 06:00 UTC (prices + index)
+    - cron: '0 5 * * 0'    # Sunday at 05:00 UTC (market caps refresh)
   workflow_dispatch:
     inputs:
       run_intel:
@@ -34,8 +35,9 @@ jobs:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: python scripts/fetch_prices.py
 
-      - name: Fetch market caps (Yahoo Finance + CoinGecko)
+      - name: Fetch market caps (EODHD + CoinGecko)
         env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: python scripts/fetch_market_caps.py
 
@@ -61,6 +63,7 @@ jobs:
     if: >
       (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 1-5')
       || (github.event_name == 'workflow_dispatch' && inputs.run_intel == true)
+      && github.event.schedule != '0 5 * * 0'
     needs: fetch-prices
 
     steps:
