@@ -892,18 +892,48 @@ function initIndexChart() {
   fetch('data/index/robotnik_index.json')
     .then(r => { if (!r.ok) throw new Error('No data'); return r.json(); })
     .then(data => {
-      if (!data || !data.length) throw new Error('Empty');
-      indexChartData.composite = data;
+      // Handle both formats: plain array or object with .series
+      var series = Array.isArray(data) ? data : (data.series || []);
+      if (!series.length) throw new Error('Empty');
+      indexChartData.composite = series;
       placeholder.style.display = 'none';
-      createIndexChart(container, data);
+      createIndexChart(container, series);
+
+      // Update index widget with actual values if available
+      if (data.current_value) {
+        var valEl = document.querySelector('.index-value');
+        if (valEl) valEl.textContent = Number(data.current_value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
+        var chgEl = document.querySelector('.index-change');
+        if (chgEl && series.length > 1) {
+          var first = series[0].value, last = series[series.length-1].value;
+          var pct = ((last - first) / first * 100).toFixed(2);
+          chgEl.textContent = (pct >= 0 ? '+' : '') + pct + '%';
+          chgEl.className = 'index-change ' + (pct >= 0 ? 'v-green' : 'v-red');
+        }
+      }
+
       // Try loading sub-indices
       fetch('data/index/sub_indices.json')
         .then(r => r.ok ? r.json() : {})
         .then(sub => {
-          if (sub.semi) indexChartData.semi = sub.semi;
-          if (sub.robotics) indexChartData.robotics = sub.robotics;
-          if (sub.space) indexChartData.space = sub.space;
-          if (sub.token) indexChartData.token = sub.token;
+          // Map JSON keys to chart keys (handle both naming conventions)
+          var keyMap = {
+            semi: ['semi', 'semiconductor'],
+            robotics: ['robotics'],
+            space: ['space'],
+            token: ['token'],
+            cross_stack: ['cross_stack', 'cross-stack']
+          };
+          for (var chartKey in keyMap) {
+            for (var i = 0; i < keyMap[chartKey].length; i++) {
+              var jsonKey = keyMap[chartKey][i];
+              if (sub[jsonKey]) {
+                var s = Array.isArray(sub[jsonKey]) ? sub[jsonKey] : (sub[jsonKey].series || []);
+                indexChartData[chartKey] = s;
+                break;
+              }
+            }
+          }
         })
         .catch(() => {});
     })
