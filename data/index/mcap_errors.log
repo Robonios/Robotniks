@@ -1,4 +1,4 @@
-Market Cap Fetch Errors - 2026-03-20T08:53:48.269500
+Market Cap Fetch Errors - 2026-03-23T09:05:15.731487
 ============================================================
 AGPXX: No market cap for AGPXX (yf: AGPXX)
 455900 KS: No market cap for 455900 KS (yf: 455900.KS)
@@ -9,6 +9,11 @@ AGPXX: No market cap for AGPXX (yf: AGPXX)
 388720 KS: No market cap for 388720 KS (yf: 388720.KS)
 SHA: No market cap for SHA (yf: SHA)
 9868: No market cap for 9868 (yf: 9868.T)
+AVIO IM: yfinance error for AVIO IM: 'AVIO IM'
+189300 KS: No market cap for 189300 KS (yf: 189300.KS)
+474170 KS: No market cap for 474170 KS (yf: 474170.KS)
+MOG.A: No market cap for MOG.A (yf: MOG.A)
+SCC IT: yfinance error for SCC IT: 'SCC IT'
 EVAL: No market cap from CoinGecko for chromia-eval-by-virtuals
 EDGE: No market cap from CoinGecko for edge-token
 NRN: No market cap from CoinGecko for neuron-ai
@@ -16,4 +21,4 @@ ROBCO: No market cap from CoinGecko for robco-network
 TSMON: No market cap from CoinGecko for ondo-tsm
 DEUS: No market cap from CoinGecko for xmaquina
 
-Total errors: 15
+Total errors: 20
