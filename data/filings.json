@@ -1,8 +1,188 @@
 {
-  "updated": "2026-03-12 17:25",
+  "updated": "2026-03-23 09:07",
   "source": "SEC EDGAR",
-  "count": 18,
+  "count": 45,
   "filings": [
+    {
+      "id": "351eb52772ed",
+      "ticker": "FLY",
+      "company": "Firefly Aerospace",
+      "form_type": "10-K",
+      "date": "2026-03-20",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1860160/000119312526116309/"
+    },
+    {
+      "id": "cd22f897cfc2",
+      "ticker": "MU",
+      "company": "Micron",
+      "form_type": "10-Q",
+      "date": "2026-03-19",
+      "description": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/"
+    },
+    {
+      "id": "6ec5cf838d71",
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "form_type": "8-K",
+      "date": "2026-03-19",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000041/"
+    },
+    {
+      "id": "f1dbc249e489",
+      "ticker": "MRVL",
+      "company": "Marvell Technology",
+      "form_type": "8-K",
+      "date": "2026-03-19",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026019851/"
+    },
+    {
+      "id": "6d6398650d86",
+      "ticker": "PL",
+      "company": "Planet Labs",
+      "form_type": "8-K",
+      "date": "2026-03-19",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526115951/"
+    },
+    {
+      "id": "fdaf1eb80010",
+      "ticker": "LUNR",
+      "company": "Intuitive Machines",
+      "form_type": "10-K",
+      "date": "2026-03-19",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026019865/"
+    },
+    {
+      "id": "8a73f6fbc795",
+      "ticker": "SPIR",
+      "company": "Spire Global",
+      "form_type": "10-K",
+      "date": "2026-03-19",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1816017/000119312526116169/"
+    },
+    {
+      "id": "3639c97f6f9e",
+      "ticker": "SATS",
+      "company": "EchoStar",
+      "form_type": "8-K",
+      "date": "2026-03-19",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1415404/000141540426000006/"
+    },
+    {
+      "id": "803755d7ac58",
+      "ticker": "SATL",
+      "company": "Satellogic",
+      "form_type": "10-K",
+      "date": "2026-03-19",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1874315/000187431526000013/"
+    },
+    {
+      "id": "1cba71b285bd",
+      "ticker": "TSM",
+      "company": "TSMC",
+      "form_type": "6-K",
+      "date": "2026-03-17",
+      "description": "6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000076/"
+    },
+    {
+      "id": "07a02b111d24",
+      "ticker": "RKLB",
+      "company": "Rocket Lab",
+      "form_type": "8-K",
+      "date": "2026-03-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000162828026018789/"
+    },
+    {
+      "id": "df3871bfcc2b",
+      "ticker": "RDW",
+      "company": "Redwire",
+      "form_type": "8-K",
+      "date": "2026-03-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000038/"
+    },
+    {
+      "id": "8190e6bd4153",
+      "ticker": "BKSY",
+      "company": "BlackSky Technology",
+      "form_type": "10-K",
+      "date": "2026-03-17",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000032/"
+    },
+    {
+      "id": "ebfbfa11159a",
+      "ticker": "HEI",
+      "company": "HEICO",
+      "form_type": "8-K",
+      "date": "2026-03-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000004661926000007/"
+    },
+    {
+      "id": "4bf99c9ddaa8",
+      "ticker": "NN",
+      "company": "NextNav",
+      "form_type": "10-K",
+      "date": "2026-03-17",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1865631/000155485526000328/"
+    },
+    {
+      "id": "70df87620d8b",
+      "ticker": "PSN",
+      "company": "Parsons",
+      "form_type": "8-K",
+      "date": "2026-03-17",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/275880/000119312526110775/"
+    },
+    {
+      "id": "808353d5b1c2",
+      "ticker": "TSAT",
+      "company": "Telesat",
+      "form_type": "20-F",
+      "date": "2026-03-17",
+      "description": "ANNUAL REPORT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1845840/000121390026028638/"
+    },
+    {
+      "id": "e145caa8f5eb",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "form_type": "8-K",
+      "date": "2026-03-13",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000119312526106339/"
+    },
+    {
+      "id": "2f5c679c61fe",
+      "ticker": "KRMN",
+      "company": "Karman Holdings",
+      "form_type": "8-K",
+      "date": "2026-03-13",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2040127/000119312526105004/"
+    },
+    {
+      "id": "a40fb284400e",
+      "ticker": "HXL",
+      "company": "Hexcel",
+      "form_type": "8-K",
+      "date": "2026-03-13",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/717605/000093041326000764/"
+    },
     {
       "id": "9249cda8cac2",
       "ticker": "AVGO",
@@ -22,22 +202,13 @@
       "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026016671/"
     },
     {
-      "id": "8bfd5493c43c",
-      "ticker": "MRVL",
-      "company": "Marvell Technology",
+      "id": "398bdd660570",
+      "ticker": "VOYG",
+      "company": "Voyager Technologies",
       "form_type": "10-K",
-      "date": "2026-03-11",
-      "description": "FORM 10-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000011/"
-    },
-    {
-      "id": "c0393957e467",
-      "ticker": "TSM",
-      "company": "TSMC",
-      "form_type": "6-K",
       "date": "2026-03-10",
-      "description": "6-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000031/"
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1788060/000162828026016543/"
     },
     {
       "id": "01656e59a474",
@@ -58,6 +229,15 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/"
     },
     {
+      "id": "c8d41207289b",
+      "ticker": "IRDM",
+      "company": "Iridium Communications",
+      "form_type": "8-K",
+      "date": "2026-03-05",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1418819/000141881926000016/"
+    },
+    {
       "id": "8cbee4d7741e",
       "ticker": "INTC",
       "company": "Intel",
@@ -76,6 +256,51 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000012/"
     },
     {
+      "id": "92bbf9ba1542",
+      "ticker": "ASTS",
+      "company": "AST SpaceMobile",
+      "form_type": "10-K",
+      "date": "2026-03-02",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1780312/000178031226000006/"
+    },
+    {
+      "id": "cbe994361286",
+      "ticker": "GSAT",
+      "company": "Globalstar",
+      "form_type": "10-K",
+      "date": "2026-02-27",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1366868/000136686826000012/"
+    },
+    {
+      "id": "2da8214fe9ef",
+      "ticker": "GOGO",
+      "company": "Gogo",
+      "form_type": "10-K",
+      "date": "2026-02-27",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1537054/000119312526082487/"
+    },
+    {
+      "id": "390d64581f0d",
+      "ticker": "SIDU",
+      "company": "Sidus Space",
+      "form_type": "8-K",
+      "date": "2026-02-26",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1879726/000149315226008180/"
+    },
+    {
+      "id": "89712849d8b2",
+      "ticker": "DCO",
+      "company": "Ducommun",
+      "form_type": "10-K",
+      "date": "2026-02-26",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/30305/000162828026011952/"
+    },
+    {
       "id": "966c1261da1e",
       "ticker": "AMD",
       "company": "AMD",
@@ -85,13 +310,13 @@
       "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/"
     },
     {
-      "id": "64658fb23cbe",
-      "ticker": "AMAT",
-      "company": "Applied Materials",
-      "form_type": "10-Q",
-      "date": "2026-02-19",
-      "description": "10-Q",
-      "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026009694/"
+      "id": "92d3058acdd7",
+      "ticker": "MNTS",
+      "company": "Momentus",
+      "form_type": "8-K",
+      "date": "2026-02-20",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1781162/000114036126006335/"
     },
     {
       "id": "948b681bdca2",
@@ -121,6 +346,24 @@
       "url": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000018/"
     },
     {
+      "id": "ab9486507f2a",
+      "ticker": "TTMI",
+      "company": "TTM Technologies",
+      "form_type": "10-K",
+      "date": "2026-02-17",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1116942/000119312526051976/"
+    },
+    {
+      "id": "1f9f2e596c4f",
+      "ticker": "ESE",
+      "company": "ESCO Technologies",
+      "form_type": "10-Q",
+      "date": "2026-02-09",
+      "description": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/866706/000110465926011932/"
+    },
+    {
       "id": "b1b8acb1b3a9",
       "ticker": "TXN",
       "company": "Texas Instruments",
@@ -130,13 +373,13 @@
       "url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000059/"
     },
     {
-      "id": "750a9ab5d1ba",
-      "ticker": "QCOM",
-      "company": "Qualcomm",
+      "id": "f28ce29120a3",
+      "ticker": "VSAT",
+      "company": "Viasat",
       "form_type": "10-Q",
-      "date": "2026-02-04",
+      "date": "2026-02-06",
       "description": "10-Q",
-      "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000017/"
+      "url": "https://www.sec.gov/Archives/edgar/data/797721/000119312526041421/"
     },
     {
       "id": "3cff1fd6603a",
@@ -157,13 +400,13 @@
       "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000012/"
     },
     {
-      "id": "5848a6a3b52a",
-      "ticker": "MU",
-      "company": "Micron",
+      "id": "6033581c4fa7",
+      "ticker": "SPCE",
+      "company": "Virgin Galactic",
       "form_type": "8-K",
-      "date": "2026-01-21",
-      "description": "FORM 8-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926005366/"
+      "date": "2025-12-18",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1706946/000119312525325124/"
     }
   ]
 }
