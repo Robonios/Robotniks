@@ -531,13 +531,18 @@
 
   .compare-results {
     position: absolute;
+    top: 100%;
+    left: 0;
     background: var(--bg-card);
-    border: 1px solid var(--border-light);
+    border: none;
     border-radius: 3px;
     z-index: 10;
     max-height: 150px;
     overflow-y: auto;
     width: 250px;
+  }
+  .compare-results:not(:empty) {
+    border: 1px solid var(--border-light);
   }
   .compare-result-item {
     padding: 0.3rem 0.5rem;
@@ -563,6 +568,8 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    z-index: 5;
+    background: var(--bg-card);
   }
 
   #index-chart-container {
