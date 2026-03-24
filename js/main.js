@@ -971,8 +971,17 @@ function initIndexChart() {
         if (chgEl && series.length > 1) {
           var first = series[0].value, last = series[series.length-1].value;
           var pct = ((last - first) / first * 100).toFixed(2);
-          chgEl.textContent = (pct >= 0 ? '+' : '') + pct + '%';
+          chgEl.textContent = (pct >= 0 ? '+' : '') + pct + '% (1M)';
           chgEl.className = 'index-change ' + (pct >= 0 ? 'v-green' : 'v-red');
+        }
+        // Add base date label
+        var heroEl = document.querySelector('.index-hero');
+        if (heroEl && data.base_date && !document.getElementById('index-base-label')) {
+          var baseLabel = document.createElement('div');
+          baseLabel.id = 'index-base-label';
+          baseLabel.style.cssText = 'font-size:9px;color:var(--text-muted);margin-top:0.25rem;';
+          baseLabel.textContent = 'Base: 1,000.00 on ' + data.base_date;
+          heroEl.appendChild(baseLabel);
         }
       }
 
@@ -994,7 +1003,7 @@ function initIndexChart() {
                 var s = Array.isArray(sub[jsonKey]) ? sub[jsonKey] : (sub[jsonKey].series || []);
                 indexChartData[chartKey] = s;
                 indexSubMeta[chartKey] = { current_value: sub[jsonKey].current_value, entity_count: sub[jsonKey].entity_count };
-                // Update dashboard card
+                // Update dashboard card with 24h change
                 var card = document.querySelector('[data-sub="' + jsonKey + '"]');
                 if (card && sub[jsonKey].current_value) {
                   var cv = sub[jsonKey].current_value;
@@ -1002,10 +1011,12 @@ function initIndexChart() {
                   if (vel) vel.textContent = cv.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
                   var seriesArr = sub[jsonKey].series || [];
                   if (seriesArr.length > 1) {
-                    var fv = seriesArr[0].value, lv = seriesArr[seriesArr.length-1].value;
-                    var pc = fv ? ((lv - fv) / fv * 100) : 0;
+                    // Use last 2 data points for 24h change
+                    var prevV = seriesArr[seriesArr.length - 2].value;
+                    var lastV = seriesArr[seriesArr.length - 1].value;
+                    var pc24 = prevV ? ((lastV - prevV) / prevV * 100) : 0;
                     var ce = card.querySelector('.sub-index-chg');
-                    if (ce) { ce.textContent = (pc >= 0 ? '+' : '') + pc.toFixed(2) + '%'; ce.className = 'sub-index-chg ' + (pc >= 0 ? 'v-green' : 'v-red'); }
+                    if (ce) { ce.textContent = (pc24 >= 0 ? '+' : '') + pc24.toFixed(2) + '% (24h)'; ce.className = 'sub-index-chg ' + (pc24 >= 0 ? 'v-green' : 'v-red'); }
                   }
                 }
                 break;
@@ -1050,12 +1061,18 @@ function getFilteredData(data) {
   return filtered.length > 0 ? filtered : data;
 }
 
+function getRangeLabel() {
+  if (currentIndexRange === 'ytd') return 'YTD';
+  var labels = {1:'1D',7:'1W',30:'1M',90:'3M',365:'1Y',1095:'3Y',1825:'5Y',0:'ALL'};
+  return labels[currentIndexRange] || currentIndexRange + 'D';
+}
+
 function applyIndexData(data) {
   if (!indexAreaSeries || !data || !data.length) return;
   var filtered = getFilteredData(data);
   indexAreaSeries.setData(filtered.map(d => ({ time: d.time || d.date, value: d.value || d.close })));
   indexChart.timeScale().fitContent();
-  // Update chart header
+  // Update chart header with time-referenced percentage
   var last = filtered[filtered.length - 1];
   var first = filtered[0];
   if (last && first) {
@@ -1065,10 +1082,54 @@ function applyIndexData(data) {
     var valEl = document.getElementById('chart-index-val');
     var chgEl = document.getElementById('chart-index-chg');
     if (valEl) valEl.textContent = val.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
-    if (chgEl) { chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%'; chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red'); }
+    if (chgEl) {
+      chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '% (' + getRangeLabel() + ')';
+      chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red');
+    }
   }
+  // Also update the main index hero value + % to match selected period
+  var heroVal = document.querySelector('.index-value');
+  var heroChg = document.querySelector('.index-change');
+  if (heroVal && last) heroVal.textContent = (last.value || last.close || 0).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
+  if (heroChg && last && first) {
+    var hv = last.value || last.close || 0, hs = first.value || first.close || 0;
+    var hc = hs ? ((hv - hs) / hs * 100) : 0;
+    heroChg.textContent = (hc >= 0 ? '+' : '') + hc.toFixed(2) + '% (' + getRangeLabel() + ')';
+    heroChg.className = 'index-change ' + (hc >= 0 ? 'v-green' : 'v-red');
+  }
+  // Update range button availability
+  updateRangeAvailability(data);
   // Update compare lines
   refreshCompareLines();
+}
+
+function updateRangeAvailability(data) {
+  if (!data || !data.length) return;
+  var firstDate = data[0].time || data[0].date;
+  var lastDate = data[data.length - 1].time || data[data.length - 1].date;
+  var availDays = Math.round((new Date(lastDate) - new Date(firstDate)) / 86400000);
+  // For composite, also consider equities-only data
+  if (currentIndexSeries === 'composite' && indexChartData.composite_eq && indexChartData.composite_eq.length) {
+    var eqFirst = indexChartData.composite_eq[0].time || indexChartData.composite_eq[0].date;
+    var eqLast = indexChartData.composite_eq[indexChartData.composite_eq.length - 1].time || indexChartData.composite_eq[indexChartData.composite_eq.length - 1].date;
+    availDays = Math.max(availDays, Math.round((new Date(eqLast) - new Date(eqFirst)) / 86400000));
+    firstDate = eqFirst < firstDate ? eqFirst : firstDate;
+  }
+  document.querySelectorAll('.chart-range-btn[data-range]').forEach(function(btn) {
+    var r = btn.dataset.range;
+    if (r === '0.5' || r === '1') return; // 12H and 1D stay disabled (no intraday data)
+    if (r === 'ytd' || r === '0') { btn.classList.remove('disabled'); btn.removeAttribute('title'); return; }
+    var days = parseInt(r);
+    if (days > availDays + 30) {
+      btn.classList.add('disabled');
+      btn.title = 'Data available from ' + firstDate;
+      btn.onclick = null;
+    } else {
+      btn.classList.remove('disabled');
+      btn.removeAttribute('title');
+      btn.onclick = function() { setIndexRange(this); };
+    }
+  });
 }
 
 function setIndexRange(btn) {
@@ -1105,6 +1166,8 @@ function setIndexSeries(btn) {
 }
 
 // ===== ASSET COMPARISON =====
+// TODO: Restrict to 1 comparison for free users, 3 for premium
+// Gate behind auth when premium tier is implemented
 function toggleCompareInput() {
   var row = document.getElementById('compare-input-row');
   if (!row) return;

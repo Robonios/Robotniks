@@ -512,7 +512,7 @@
   .chart-compare-btn:hover { color: var(--text); border-color: var(--text-muted); }
 
   .compare-search-input {
-    background: var(--bg-card);
+    background: #161B22;
     border: 1px solid var(--border-light);
     color: var(--text);
     font-family: var(--font);
@@ -521,8 +521,13 @@
     border-radius: 3px;
     width: 200px;
     outline: none;
+    text-decoration: none;
+    background-image: none;
+    box-shadow: none;
+    -webkit-appearance: none;
   }
-  .compare-search-input:focus { border-color: var(--yellow-dim); }
+  .compare-search-input::placeholder { color: #5A6178; }
+  .compare-search-input:focus { border-color: #F5D921; background: #161B22; }
 
   .compare-results {
     position: absolute;
