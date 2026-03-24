@@ -1,8 +1,17 @@
 {
-  "updated": "2026-03-23 09:07",
+  "updated": "2026-03-24 07:03",
   "source": "SEC EDGAR",
   "count": 45,
   "filings": [
+    {
+      "id": "beb7fabf58c5",
+      "ticker": "PL",
+      "company": "Planet Labs",
+      "form_type": "10-K",
+      "date": "2026-03-23",
+      "description": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/"
+    },
     {
       "id": "351eb52772ed",
       "ticker": "FLY",
@@ -38,15 +47,6 @@
       "date": "2026-03-19",
       "description": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026019851/"
-    },
-    {
-      "id": "6d6398650d86",
-      "ticker": "PL",
-      "company": "Planet Labs",
-      "form_type": "8-K",
-      "date": "2026-03-19",
-      "description": "8-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526115951/"
     },
     {
       "id": "fdaf1eb80010",
