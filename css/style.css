@@ -491,6 +491,75 @@
     color: var(--yellow);
   }
 
+  .chart-range-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .chart-compare-btn {
+    background: transparent;
+    border: 1px dashed var(--border-light);
+    color: var(--text-muted);
+    font-family: var(--font);
+    font-size: 10px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-left: 4px;
+  }
+  .chart-compare-btn:hover { color: var(--text); border-color: var(--text-muted); }
+
+  .compare-search-input {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 11px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+  }
+  .compare-search-input:focus { border-color: var(--yellow-dim); }
+
+  .compare-results {
+    position: absolute;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 250px;
+  }
+  .compare-result-item {
+    padding: 0.3rem 0.5rem;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: var(--font);
+  }
+  .compare-result-item:hover { background: rgba(245,217,33,0.08); }
+
+  .compare-pills { display: flex; gap: 6px; padding: 0 0 0.25rem; flex-wrap: wrap; }
+  .compare-pill-chip {
+    font-family: var(--font);
+    font-size: 10px;
+    padding: 2px 8px;
+    border: 1px solid;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #compare-input-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   #index-chart-container {
     height: 240px;
     width: 100%;

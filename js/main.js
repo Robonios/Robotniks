@@ -936,29 +936,34 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // ===== INDEX CHART =====
 let indexChart = null;
-let indexLineSeries = null;
 let indexAreaSeries = null;
 let indexChartData = {};
+let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
 let currentIndexSeries = 'composite';
-let currentIndexRange = 30;
+let currentIndexRange = 30;  // days, or 'ytd'
+let compareLines = [];       // [{ticker, series, color}]
+const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B'];
 
 function initIndexChart() {
   const container = document.getElementById('index-chart-container');
   const placeholder = document.getElementById('chart-placeholder');
   if (!container || typeof LightweightCharts === 'undefined') return;
 
-  // Try loading composite index data
   fetch('data/index/robotnik_index.json')
     .then(r => { if (!r.ok) throw new Error('No data'); return r.json(); })
     .then(data => {
-      // Handle both formats: plain array or object with .series
       var series = Array.isArray(data) ? data : (data.series || []);
       if (!series.length) throw new Error('Empty');
       indexChartData.composite = series;
+      indexSubMeta.composite = { current_value: data.current_value, entity_count: data.entity_count };
+      // Also store equities-only for longer ranges
+      if (data.equities_only && data.equities_only.series) {
+        indexChartData.composite_eq = data.equities_only.series;
+      }
       placeholder.style.display = 'none';
       createIndexChart(container, series);
 
-      // Update index widget with actual values if available
+      // Update index widget
       if (data.current_value) {
         var valEl = document.querySelector('.index-value');
         if (valEl) valEl.textContent = Number(data.current_value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
@@ -971,11 +976,10 @@ function initIndexChart() {
         }
       }
 
-      // Try loading sub-indices
+      // Load sub-indices
       fetch('data/index/sub_indices.json')
         .then(r => r.ok ? r.json() : {})
         .then(sub => {
-          // Map JSON keys to chart keys (handle both naming conventions)
           var keyMap = {
             semi: ['semi', 'semiconductor'],
             robotics: ['robotics'],
@@ -989,115 +993,94 @@ function initIndexChart() {
               if (sub[jsonKey]) {
                 var s = Array.isArray(sub[jsonKey]) ? sub[jsonKey] : (sub[jsonKey].series || []);
                 indexChartData[chartKey] = s;
-                // Update sub-index card in the dashboard
+                indexSubMeta[chartKey] = { current_value: sub[jsonKey].current_value, entity_count: sub[jsonKey].entity_count };
+                // Update dashboard card
                 var card = document.querySelector('[data-sub="' + jsonKey + '"]');
                 if (card && sub[jsonKey].current_value) {
                   var cv = sub[jsonKey].current_value;
-                  var valEl = card.querySelector('.sub-index-val');
-                  if (valEl) valEl.textContent = cv.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
-                  // Calculate % change from series
+                  var vel = card.querySelector('.sub-index-val');
+                  if (vel) vel.textContent = cv.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
                   var seriesArr = sub[jsonKey].series || [];
                   if (seriesArr.length > 1) {
-                    var firstV = seriesArr[0].value, lastV = seriesArr[seriesArr.length - 1].value;
-                    var pctChg = firstV ? ((lastV - firstV) / firstV * 100) : 0;
-                    var chgCardEl = card.querySelector('.sub-index-chg');
-                    if (chgCardEl) {
-                      chgCardEl.textContent = (pctChg >= 0 ? '+' : '') + pctChg.toFixed(2) + '%';
-                      chgCardEl.className = 'sub-index-chg ' + (pctChg >= 0 ? 'v-green' : 'v-red');
-                    }
+                    var fv = seriesArr[0].value, lv = seriesArr[seriesArr.length-1].value;
+                    var pc = fv ? ((lv - fv) / fv * 100) : 0;
+                    var ce = card.querySelector('.sub-index-chg');
+                    if (ce) { ce.textContent = (pc >= 0 ? '+' : '') + pc.toFixed(2) + '%'; ce.className = 'sub-index-chg ' + (pc >= 0 ? 'v-green' : 'v-red'); }
                   }
                 }
                 break;
               }
             }
           }
-        })
-        .catch(() => {});
+        }).catch(() => {});
     })
-    .catch(() => {
-      // Data not available — show placeholder
-      placeholder.style.display = 'flex';
-    });
+    .catch(() => { placeholder.style.display = 'flex'; });
 }
 
 function createIndexChart(container, data) {
   indexChart = LightweightCharts.createChart(container, {
-    width: container.clientWidth,
-    height: 240,
-    layout: {
-      background: { type: 'solid', color: 'transparent' },
-      textColor: '#8B92A5',
-      fontFamily: "'Roboto Mono', monospace",
-      fontSize: 10,
-    },
-    grid: {
-      vertLines: { color: '#1E2330' },
-      horzLines: { color: '#1E2330' },
-    },
-    crosshair: {
-      vertLine: { color: '#F5D921', width: 1, style: 2 },
-      horzLine: { color: '#F5D921', width: 1, style: 2 },
-    },
-    timeScale: {
-      borderColor: '#1E2330',
-      timeVisible: false,
-    },
-    rightPriceScale: {
-      borderColor: '#1E2330',
-    },
+    width: container.clientWidth, height: 240,
+    layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#8B92A5', fontFamily: "'Roboto Mono', monospace", fontSize: 10 },
+    grid: { vertLines: { color: '#1E2330' }, horzLines: { color: '#1E2330' } },
+    crosshair: { vertLine: { color: '#F5D921', width: 1, style: 2 }, horzLine: { color: '#F5D921', width: 1, style: 2 } },
+    timeScale: { borderColor: '#1E2330', timeVisible: false },
+    rightPriceScale: { borderColor: '#1E2330' },
   });
-
   indexAreaSeries = indexChart.addAreaSeries({
-    lineColor: '#F5D921',
-    topColor: 'rgba(245, 217, 33, 0.10)',
-    bottomColor: 'rgba(245, 217, 33, 0.02)',
-    lineWidth: 2,
+    lineColor: '#F5D921', topColor: 'rgba(245,217,33,0.10)', bottomColor: 'rgba(245,217,33,0.02)', lineWidth: 2,
   });
-
   applyIndexData(data);
-
-  // Resize observer
-  const ro = new ResizeObserver(() => {
-    indexChart.applyOptions({ width: container.clientWidth });
-  });
+  const ro = new ResizeObserver(() => { indexChart.applyOptions({ width: container.clientWidth }); });
   ro.observe(container);
+}
+
+function getFilteredData(data) {
+  if (!data || !data.length) return [];
+  let filtered = data;
+  if (currentIndexRange === 'ytd') {
+    var year = new Date().getFullYear();
+    var cutoffStr = year + '-01-01';
+    filtered = data.filter(d => (d.time || d.date) >= cutoffStr);
+  } else if (currentIndexRange > 0) {
+    var cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - currentIndexRange);
+    var cutoffStr2 = cutoff.toISOString().slice(0, 10);
+    filtered = data.filter(d => (d.time || d.date) >= cutoffStr2);
+  }
+  return filtered.length > 0 ? filtered : data;
 }
 
 function applyIndexData(data) {
   if (!indexAreaSeries || !data || !data.length) return;
-  let filtered = data;
-  if (currentIndexRange > 0) {
-    const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - currentIndexRange);
-    const cutoffStr = cutoff.toISOString().slice(0, 10);
-    filtered = data.filter(d => d.time >= cutoffStr);
-  }
-  if (filtered.length === 0) filtered = data;
+  var filtered = getFilteredData(data);
   indexAreaSeries.setData(filtered.map(d => ({ time: d.time || d.date, value: d.value || d.close })));
   indexChart.timeScale().fitContent();
-
-  // Update header values
-  const last = filtered[filtered.length - 1];
-  const first = filtered[0];
+  // Update chart header
+  var last = filtered[filtered.length - 1];
+  var first = filtered[0];
   if (last && first) {
-    const val = last.value || last.close || 0;
-    const startVal = first.value || first.close || 0;
-    const chg = startVal ? ((val - startVal) / startVal * 100) : 0;
-    const valEl = document.getElementById('chart-index-val');
-    const chgEl = document.getElementById('chart-index-chg');
-    if (valEl) valEl.textContent = val.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    if (chgEl) {
-      chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%';
-      chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red');
-    }
+    var val = last.value || last.close || 0;
+    var startVal = first.value || first.close || 0;
+    var chg = startVal ? ((val - startVal) / startVal * 100) : 0;
+    var valEl = document.getElementById('chart-index-val');
+    var chgEl = document.getElementById('chart-index-chg');
+    if (valEl) valEl.textContent = val.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+    if (chgEl) { chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%'; chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red'); }
   }
+  // Update compare lines
+  refreshCompareLines();
 }
 
 function setIndexRange(btn) {
   document.querySelectorAll('.chart-range-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  currentIndexRange = parseInt(btn.dataset.range) || 0;
-  const data = indexChartData[currentIndexSeries];
+  var rv = btn.dataset.range;
+  currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseInt(rv) || 0);
+  var data = indexChartData[currentIndexSeries];
+  // For composite with long ranges, use equities-only if available
+  if (currentIndexSeries === 'composite' && currentIndexRange !== 'ytd' && currentIndexRange > 365 && indexChartData.composite_eq) {
+    data = indexChartData.composite_eq;
+  }
   if (data) applyIndexData(data);
 }
 
@@ -1105,13 +1088,105 @@ function setIndexSeries(btn) {
   document.querySelectorAll('.chart-index-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   currentIndexSeries = btn.dataset.idx;
-  const data = indexChartData[currentIndexSeries];
+  var data = indexChartData[currentIndexSeries];
+  // Update title
+  var titleEl = document.getElementById('chart-title');
+  var labels = { composite:'Robotnik Index', semi:'Semi Index', robotics:'Robotics Index', space:'Space Index', token:'Token Index', cross_stack:'Cross-stack Index' };
+  if (titleEl) titleEl.textContent = labels[currentIndexSeries] || 'Robotnik Index';
   if (data) {
     applyIndexData(data);
   } else {
-    // No data for this sub-index
     if (indexAreaSeries) indexAreaSeries.setData([]);
+    var valEl = document.getElementById('chart-index-val');
+    var chgEl = document.getElementById('chart-index-chg');
+    if (valEl) valEl.textContent = '--';
+    if (chgEl) { chgEl.textContent = ''; chgEl.className = 'chart-widget-chg'; }
   }
+}
+
+// ===== ASSET COMPARISON =====
+function toggleCompareInput() {
+  var row = document.getElementById('compare-input-row');
+  if (!row) return;
+  row.style.display = row.style.display === 'none' ? 'flex' : 'none';
+  if (row.style.display !== 'none') document.getElementById('compare-search').focus();
+}
+
+function filterCompareResults() {
+  var q = (document.getElementById('compare-search').value || '').toUpperCase().trim();
+  var box = document.getElementById('compare-results');
+  if (!box || q.length < 1) { if (box) box.innerHTML = ''; return; }
+  var matches = uniqueCompanies.filter(c => c.ticker.toUpperCase().includes(q) || c.name.toUpperCase().includes(q)).slice(0, 6);
+  box.innerHTML = matches.map(c => '<div class="compare-result-item" onclick="addCompare(\'' + c.ticker + '\')">' + c.ticker + ' <span style="color:var(--text-muted)">' + c.name + '</span></div>').join('');
+}
+
+function addCompare(ticker) {
+  if (compareLines.length >= 3) return;
+  if (compareLines.find(c => c.ticker === ticker)) return;
+  var color = COMPARE_COLORS[compareLines.length];
+  // Load history
+  fetch('data/prices/history/' + ticker + '.json')
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (!data || !data.series || !data.series.length) {
+        // Try with exchange suffix
+        return fetch('data/prices/history/' + ticker + '.US.json').then(r => r.ok ? r.json() : null);
+      }
+      return data;
+    })
+    .then(data => {
+      if (!data || !data.series) return;
+      var lineSeries = indexChart.addLineSeries({ color: color, lineWidth: 2, lastValueVisible: true, priceLineVisible: false });
+      compareLines.push({ ticker: ticker, series: data.series, color: color, lwcSeries: lineSeries });
+      refreshCompareLines();
+      renderComparePillsChart();
+      // Hide search
+      document.getElementById('compare-input-row').style.display = 'none';
+      document.getElementById('compare-search').value = '';
+      document.getElementById('compare-results').innerHTML = '';
+    });
+}
+
+function removeCompare(ticker) {
+  var idx = compareLines.findIndex(c => c.ticker === ticker);
+  if (idx === -1) return;
+  if (indexChart && compareLines[idx].lwcSeries) indexChart.removeSeries(compareLines[idx].lwcSeries);
+  compareLines.splice(idx, 1);
+  renderComparePillsChart();
+}
+
+function refreshCompareLines() {
+  if (!indexChart) return;
+  // Get current index data to normalise % change from same start date
+  var idxData = indexChartData[currentIndexSeries] || [];
+  var filtered = getFilteredData(idxData);
+  var startDate = filtered.length ? (filtered[0].time || filtered[0].date) : null;
+
+  for (var i = 0; i < compareLines.length; i++) {
+    var cl = compareLines[i];
+    var compFiltered = getFilteredData(cl.series.map(d => ({ time: d.date, value: d.close || d.price || d.value })));
+    // Normalise to % change matching index base value
+    if (compFiltered.length > 0 && filtered.length > 0) {
+      var idxBase = filtered[0].value || filtered[0].close || 1;
+      var compBase = compFiltered[0].value || 1;
+      var normalised = compFiltered.map(d => ({
+        time: d.time,
+        value: idxBase * (d.value / compBase)
+      }));
+      cl.lwcSeries.setData(normalised);
+    }
+  }
+}
+
+function renderComparePillsChart() {
+  var box = document.getElementById('compare-pills');
+  if (!box) return;
+  if (!compareLines.length) { box.innerHTML = ''; return; }
+  box.innerHTML = compareLines.map(c =>
+    '<span class="compare-pill-chip" style="border-color:' + c.color + ';color:' + c.color + '">' +
+    '<span style="background:' + c.color + ';width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:4px;"></span>' +
+    c.ticker + ' <span onclick="removeCompare(\'' + c.ticker + '\')" style="cursor:pointer;margin-left:4px;opacity:0.6;">&times;</span></span>'
+  ).join(' ');
 }
 
 // Page-gated initialization
