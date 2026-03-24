@@ -117,6 +117,7 @@ async function loadPriceData() {
   renderChart();
   renderTicker();
   updateMarketOverview();
+  renderMarketTable();
 }
 
 // Populate Market Overview panel from live price data
@@ -940,7 +941,7 @@ let indexAreaSeries = null;
 let indexChartData = {};
 let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
 let currentIndexSeries = 'composite';
-let currentIndexRange = 30;  // days, or 'ytd'
+let currentIndexRange = 365;  // days, or 'ytd' — default 1Y
 let compareLines = [];       // [{ticker, series, color}]
 const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B'];
 
@@ -963,26 +964,13 @@ function initIndexChart() {
       placeholder.style.display = 'none';
       createIndexChart(container, series);
 
-      // Update index widget
-      if (data.current_value) {
-        var valEl = document.querySelector('.index-value');
-        if (valEl) valEl.textContent = Number(data.current_value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
-        var chgEl = document.querySelector('.index-change');
-        if (chgEl && series.length > 1) {
-          var first = series[0].value, last = series[series.length-1].value;
-          var pct = ((last - first) / first * 100).toFixed(2);
-          chgEl.textContent = (pct >= 0 ? '+' : '') + pct + '% (1M)';
-          chgEl.className = 'index-change ' + (pct >= 0 ? 'v-green' : 'v-red');
-        }
-        // Add base date label
-        var heroEl = document.querySelector('.index-hero');
-        if (heroEl && data.base_date && !document.getElementById('index-base-label')) {
-          var baseLabel = document.createElement('div');
-          baseLabel.id = 'index-base-label';
-          baseLabel.style.cssText = 'font-size:9px;color:var(--text-muted);margin-top:0.25rem;';
-          baseLabel.textContent = 'Base: 1,000.00 on ' + data.base_date;
-          heroEl.appendChild(baseLabel);
-        }
+      // Update index widget (applyIndexData will set value+% for 1Y default)
+      // Set base date labels
+      if (data.base_date) {
+        var chartBase = document.getElementById('chart-base-label');
+        if (chartBase) chartBase.textContent = 'Base: 1,000.00 on ' + data.base_date;
+        var explainerBase = document.getElementById('explainer-base');
+        if (explainerBase) explainerBase.textContent = 'Base: 1,000.00 on ' + data.base_date;
       }
 
       // Load sub-indices
@@ -1030,7 +1018,7 @@ function initIndexChart() {
 
 function createIndexChart(container, data) {
   indexChart = LightweightCharts.createChart(container, {
-    width: container.clientWidth, height: 240,
+    width: container.clientWidth, height: 270,
     layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#8B92A5', fontFamily: "'Roboto Mono', monospace", fontSize: 10 },
     grid: { vertLines: { color: '#1E2330' }, horzLines: { color: '#1E2330' } },
     crosshair: { vertLine: { color: '#F5D921', width: 1, style: 2 }, horzLine: { color: '#F5D921', width: 1, style: 2 } },
@@ -1043,6 +1031,11 @@ function createIndexChart(container, data) {
   applyIndexData(data);
   const ro = new ResizeObserver(() => { indexChart.applyOptions({ width: container.clientWidth }); });
   ro.observe(container);
+  // Add base label inside chart area (bottom-left)
+  var baseLabel = document.createElement('div');
+  baseLabel.id = 'chart-base-label';
+  baseLabel.style.cssText = 'position:absolute;bottom:24px;left:8px;font-size:9px;color:#5A6178;font-family:var(--font);z-index:2;pointer-events:none;';
+  container.appendChild(baseLabel);
 }
 
 function getFilteredData(data) {
@@ -1072,22 +1065,9 @@ function applyIndexData(data) {
   var filtered = getFilteredData(data);
   indexAreaSeries.setData(filtered.map(d => ({ time: d.time || d.date, value: d.value || d.close })));
   indexChart.timeScale().fitContent();
-  // Update chart header with time-referenced percentage
+  // Update the main index hero value + % to match selected period
   var last = filtered[filtered.length - 1];
   var first = filtered[0];
-  if (last && first) {
-    var val = last.value || last.close || 0;
-    var startVal = first.value || first.close || 0;
-    var chg = startVal ? ((val - startVal) / startVal * 100) : 0;
-    var valEl = document.getElementById('chart-index-val');
-    var chgEl = document.getElementById('chart-index-chg');
-    if (valEl) valEl.textContent = val.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
-    if (chgEl) {
-      chgEl.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '% (' + getRangeLabel() + ')';
-      chgEl.className = 'chart-widget-chg ' + (chg >= 0 ? 'v-green' : 'v-red');
-    }
-  }
-  // Also update the main index hero value + % to match selected period
   var heroVal = document.querySelector('.index-value');
   var heroChg = document.querySelector('.index-change');
   if (heroVal && last) heroVal.textContent = (last.value || last.close || 0).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
@@ -1252,11 +1232,115 @@ function renderComparePillsChart() {
   ).join(' ');
 }
 
+// ===== MARKET TABLE (dynamic rendering) =====
+var mktSector = 'all';
+var mktSort = 'mcap';
+var mktSortDir = -1; // -1 = desc, 1 = asc
+var SECTOR_LABELS = {semi:'Semi', robo:'Robo', space:'Space', cross:'Cross', token:'Token'};
+var SECTOR_CSS = {semi:'sector-semi', robo:'sector-robo', space:'sector-space', cross:'sector-cross', token:'sector-token'};
+
+function filterMarketTable(btn) {
+  document.querySelectorAll('.market-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  mktSector = btn.dataset.sector;
+  renderMarketTable();
+}
+
+function sortMarketTable(col) {
+  if (mktSort === col) { mktSortDir *= -1; } else { mktSort = col; mktSortDir = -1; }
+  renderMarketTable();
+}
+
+function renderMarketTable() {
+  var tbody = document.getElementById('mkt-tbody');
+  if (!tbody || !uniqueCompanies.length) return;
+  var search = (document.getElementById('mkt-search')?.value || '').toLowerCase();
+  var data = mktSector === 'all' ? uniqueCompanies : uniqueCompanies.filter(c => c.sector === mktSector);
+  if (search) data = data.filter(c => c.ticker.toLowerCase().includes(search) || c.name.toLowerCase().includes(search));
+
+  // Sort
+  var sorted = data.slice().sort(function(a, b) {
+    var va, vb;
+    if (mktSort === 'ticker') { va = a.ticker; vb = b.ticker; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
+    if (mktSort === 'company') { va = a.name; vb = b.name; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
+    if (mktSort === 'sector') { va = a.sector; vb = b.sector; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
+    if (mktSort === 'price') { return (a.price - b.price) * mktSortDir; }
+    if (mktSort === 'change') { return (a.change - b.change) * mktSortDir; }
+    return ((a.mcap || 0) - (b.mcap || 0)) * mktSortDir; // default: mcap
+  });
+
+  var top10 = search ? sorted : sorted.slice(0, 10);
+  var rows = top10.map(function(c, i) {
+    var chgCls = c.change >= 0 ? 'v-green' : 'v-red';
+    var chgSign = c.change >= 0 ? '+' : '';
+    var secCss = SECTOR_CSS[c.sector] || 'sector-semi';
+    var secLabel = SECTOR_LABELS[c.sector] || c.sector;
+    return '<tr><td>' + (i+1) + '</td><td class="ticker">' + c.ticker + '</td><td class="company-name">' + c.name +
+      '</td><td><span class="sector-tag ' + secCss + '">' + secLabel + '</span></td><td class="r">' + fmtPrice(c.price, c.currency) +
+      '</td><td class="r ' + chgCls + '">' + chgSign + c.change.toFixed(2) + '%</td><td class="r">' + c.mcapFmt + '</td></tr>';
+  }).join('');
+  tbody.innerHTML = rows;
+
+  // Update sort arrows
+  ['#','ticker','company','sector','price','change','mcap'].forEach(function(col) {
+    var el = document.getElementById('sort-arrow-' + col);
+    if (el) el.textContent = mktSort === col ? (mktSortDir === -1 ? '▼' : '▲') : '';
+  });
+
+  // Update tab counts
+  var tabs = document.querySelectorAll('.market-tab');
+  var counts = {all: uniqueCompanies.length, semi:0, robo:0, space:0, cross:0, token:0};
+  uniqueCompanies.forEach(function(c) { if (counts[c.sector] !== undefined) counts[c.sector]++; });
+  tabs.forEach(function(t) {
+    var s = t.dataset.sector;
+    var label = s === 'all' ? 'All' : s === 'semi' ? 'Semi' : s === 'robo' ? 'Robotics' : s === 'space' ? 'Space' : s === 'cross' ? 'Cross-stack' : 'Tokens';
+    t.textContent = label + ' (' + (counts[s] || 0) + ')';
+  });
+
+  // Update view all link
+  var viewAll = document.getElementById('mkt-view-all');
+  if (viewAll) viewAll.textContent = 'View all ' + data.length + ' assets →';
+}
+
+// ===== EXPORT MODAL =====
+function showExportModal() { document.getElementById('export-modal').style.display = 'flex'; }
+function closeExportModal() { document.getElementById('export-modal').style.display = 'none'; }
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeExportModal(); });
+
+// ===== NEWS FEED (try live data) =====
+function loadNewsFeed() {
+  // Try loading from data/news.json (RSS pipeline output)
+  fetch('data/news.json?v=' + Date.now())
+    .then(function(r) { if (!r.ok) throw new Error('no data'); return r.json(); })
+    .then(function(data) {
+      var items = (data.items || data).slice(0, 5);
+      if (!items.length) throw new Error('empty');
+      var container = document.getElementById('news-feed-container');
+      if (!container) return;
+      container.innerHTML = items.map(function(item) {
+        var title = item.title || item.headline || '';
+        var url = item.url || item.link || '#';
+        var source = item.source || item.feed_name || '';
+        var timeAgo = '';
+        if (item.published || item.date) {
+          var diff = Date.now() - new Date(item.published || item.date).getTime();
+          var hrs = Math.floor(diff / 3600000);
+          timeAgo = hrs < 1 ? 'Just now' : hrs < 24 ? hrs + 'h ago' : Math.floor(hrs/24) + 'd ago';
+        }
+        return '<div class="news-item"><a href="' + url + '" target="_blank" rel="noopener" class="news-headline">' + title + '</a><div class="news-meta">' + timeAgo + (source ? ' · ' + source : '') + '</div></div>';
+      }).join('');
+    })
+    .catch(function() {
+      // Keep placeholder headlines, note already in HTML
+    });
+}
+
 // Page-gated initialization
 const _page = document.body.dataset.page;
 if (_page === 'home') {
   loadPriceData();
   initIndexChart();
+  loadNewsFeed();
 }
 if (_page === 'intelligence') {
   loadIntelligenceData();

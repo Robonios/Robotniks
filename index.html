@@ -65,18 +65,16 @@
     <div class="dash-widget">
       <div class="chart-widget-header">
         <span class="chart-widget-title" id="chart-title">Robotnik Index</span>
-        <span class="chart-widget-val" id="chart-index-val"></span>
-        <span class="chart-widget-chg" id="chart-index-chg"></span>
       </div>
       <div class="chart-controls">
         <div class="chart-range-group">
           <button class="chart-range-btn disabled" data-range="0.5" title="Intraday data not yet available">12H</button>
           <button class="chart-range-btn disabled" data-range="1" title="Intraday data not yet available">1D</button>
           <button class="chart-range-btn" data-range="7" onclick="setIndexRange(this)">1W</button>
-          <button class="chart-range-btn active" data-range="30" onclick="setIndexRange(this)">1M</button>
+          <button class="chart-range-btn" data-range="30" onclick="setIndexRange(this)">1M</button>
           <button class="chart-range-btn" data-range="90" onclick="setIndexRange(this)">3M</button>
           <button class="chart-range-btn" data-range="ytd" onclick="setIndexRange(this)">YTD</button>
-          <button class="chart-range-btn" data-range="365" onclick="setIndexRange(this)">1Y</button>
+          <button class="chart-range-btn active" data-range="365" onclick="setIndexRange(this)">1Y</button>
           <button class="chart-range-btn" data-range="1095" onclick="setIndexRange(this)">3Y</button>
           <button class="chart-range-btn" data-range="1825" onclick="setIndexRange(this)">5Y</button>
         </div>
@@ -101,70 +99,38 @@
 
     <!-- C. Market Table -->
     <div class="dash-widget" style="padding:0.5rem 0;">
-      <div style="padding:0 1rem;">
-        <div class="market-tabs">
-          <button class="market-tab active">All (303)</button>
-          <button class="market-tab">Semi (45)</button>
-          <button class="market-tab">Robotics (152)</button>
-          <button class="market-tab">Space (41)</button>
-          <button class="market-tab">Cross-stack (22)</button>
-          <button class="market-tab">Tokens (43)</button>
+      <div style="padding:0 1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+        <div class="market-tabs" id="market-tabs">
+          <button class="market-tab active" data-sector="all" onclick="filterMarketTable(this)">All</button>
+          <button class="market-tab" data-sector="semi" onclick="filterMarketTable(this)">Semi</button>
+          <button class="market-tab" data-sector="robo" onclick="filterMarketTable(this)">Robotics</button>
+          <button class="market-tab" data-sector="space" onclick="filterMarketTable(this)">Space</button>
+          <button class="market-tab" data-sector="cross" onclick="filterMarketTable(this)">Cross-stack</button>
+          <button class="market-tab" data-sector="token" onclick="filterMarketTable(this)">Tokens</button>
         </div>
-        <div class="market-search-row">
-          <input type="text" class="market-search-input" placeholder="Search tickers, companies..." />
+        <div style="display:flex;gap:0.5rem;align-items:center;">
+          <input type="text" class="market-search-input" id="mkt-search" placeholder="Search tickers, companies..." oninput="renderMarketTable()" />
+          <!-- TODO: When enterprise auth is implemented, check user.plan
+               If enterprise: trigger CSV download of current table view
+               If free: show clearance required modal -->
+          <button class="export-btn" onclick="showExportModal()">Export ↓</button>
         </div>
       </div>
-      <table class="market-table">
+      <table class="market-table" id="market-table">
         <thead>
           <tr>
-            <th style="width:30px">#</th>
-            <th>Ticker</th>
-            <th>Company</th>
-            <th>Sector</th>
-            <th class="r">Price</th>
-            <th class="r">24h %</th>
-            <th class="r">Mkt Cap</th>
+            <th style="width:30px;cursor:pointer" onclick="sortMarketTable('#')"># <span id="sort-arrow-#"></span></th>
+            <th style="cursor:pointer" onclick="sortMarketTable('ticker')">Ticker <span id="sort-arrow-ticker"></span></th>
+            <th style="cursor:pointer" onclick="sortMarketTable('company')">Company <span id="sort-arrow-company"></span></th>
+            <th style="cursor:pointer" onclick="sortMarketTable('sector')">Sector <span id="sort-arrow-sector"></span></th>
+            <th class="r" style="cursor:pointer" onclick="sortMarketTable('price')">Price <span id="sort-arrow-price"></span></th>
+            <th class="r" style="cursor:pointer" onclick="sortMarketTable('change')">24h % <span id="sort-arrow-change"></span></th>
+            <th class="r" style="cursor:pointer" onclick="sortMarketTable('mcap')">Mkt Cap ▼ <span id="sort-arrow-mcap"></span></th>
           </tr>
         </thead>
-        <tbody>
-          <tr><td>1</td><td class="ticker">NVDA</td><td class="company-name">NVIDIA Corp</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$131.28</td><td class="r v-green">+2.87%</td><td class="r">$3.21T</td></tr>
-          <tr><td>2</td><td class="ticker">TSM</td><td class="company-name">Taiwan Semiconductor</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$186.54</td><td class="r v-green">+1.12%</td><td class="r">$966B</td></tr>
-          <tr><td>3</td><td class="ticker">AVGO</td><td class="company-name">Broadcom Inc</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$224.87</td><td class="r v-red">-0.45%</td><td class="r">$1.05T</td></tr>
-          <tr><td>4</td><td class="ticker">AMD</td><td class="company-name">Advanced Micro Devices</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$119.42</td><td class="r v-green">+1.83%</td><td class="r">$193B</td></tr>
-          <tr><td>5</td><td class="ticker">INTC</td><td class="company-name">Intel Corp</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$23.15</td><td class="r v-red">-2.11%</td><td class="r">$99B</td></tr>
-          <tr><td>6</td><td class="ticker">ARM</td><td class="company-name">ARM Holdings</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$164.30</td><td class="r v-green">+0.92%</td><td class="r">$172B</td></tr>
-          <tr><td>7</td><td class="ticker">ISRG</td><td class="company-name">Intuitive Surgical</td><td><span class="sector-tag sector-robo">Robo</span></td><td class="r">$542.10</td><td class="r v-green">+0.67%</td><td class="r">$191B</td></tr>
-          <tr><td>8</td><td class="ticker">ROK</td><td class="company-name">Rockwell Automation</td><td><span class="sector-tag sector-robo">Robo</span></td><td class="r">$268.45</td><td class="r v-red">-0.38%</td><td class="r">$30B</td></tr>
-          <tr><td>9</td><td class="ticker">RKLB</td><td class="company-name">Rocket Lab USA</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$24.87</td><td class="r v-green">+4.23%</td><td class="r">$11.8B</td></tr>
-          <tr><td>10</td><td class="ticker">ASTS</td><td class="company-name">AST SpaceMobile</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$28.15</td><td class="r v-green">+3.41%</td><td class="r">$9.2B</td></tr>
-          <tr><td>11</td><td class="ticker">MRVL</td><td class="company-name">Marvell Technology</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$88.72</td><td class="r v-green">+1.15%</td><td class="r">$76B</td></tr>
-          <tr><td>12</td><td class="ticker">FANUY</td><td class="company-name">FANUC Corp</td><td><span class="sector-tag sector-robo">Robo</span></td><td class="r">$14.85</td><td class="r v-red">-0.62%</td><td class="r">$28B</td></tr>
-          <tr><td>13</td><td class="ticker">ABB</td><td class="company-name">ABB Ltd</td><td><span class="sector-tag sector-robo">Robo</span></td><td class="r">$52.30</td><td class="r v-green">+0.44%</td><td class="r">$98B</td></tr>
-          <tr><td>14</td><td class="ticker">ON</td><td class="company-name">ON Semiconductor</td><td><span class="sector-tag sector-cross">Cross</span></td><td class="r">$48.92</td><td class="r v-red">-1.23%</td><td class="r">$21B</td></tr>
-          <tr><td>15</td><td class="ticker">ASML</td><td class="company-name">ASML Holding</td><td><span class="sector-tag sector-semi">Semi</span></td><td class="r">$714.50</td><td class="r v-green">+0.88%</td><td class="r">$281B</td></tr>
-          <tr><td>16</td><td class="ticker">TER</td><td class="company-name">Teradyne Inc</td><td><span class="sector-tag sector-cross">Cross</span></td><td class="r">$98.14</td><td class="r v-green">+1.56%</td><td class="r">$15B</td></tr>
-          <tr><td>17</td><td class="ticker">IRDM</td><td class="company-name">Iridium Communications</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$27.40</td><td class="r v-red">-0.71%</td><td class="r">$3.3B</td></tr>
-          <tr><td>18</td><td class="ticker">PATH</td><td class="company-name">UiPath Inc</td><td><span class="sector-tag sector-robo">Robo</span></td><td class="r">$13.25</td><td class="r v-green">+2.14%</td><td class="r">$7.5B</td></tr>
-          <tr><td>19</td><td class="ticker">RENDER</td><td class="company-name">Render Token</td><td><span class="sector-tag sector-token">Token</span></td><td class="r">$7.42</td><td class="r v-green">+5.81%</td><td class="r">$3.8B</td></tr>
-          <tr><td>20</td><td class="ticker">FET</td><td class="company-name">Fetch.ai</td><td><span class="sector-tag sector-token">Token</span></td><td class="r">$2.18</td><td class="r v-red">-2.35%</td><td class="r">$5.4B</td></tr>
-          <tr><td>21</td><td class="ticker">HEI</td><td class="company-name">HEICO Corp</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$248.60</td><td class="r v-green">+0.55%</td><td class="r">$34.1B</td></tr>
-          <tr><td>22</td><td class="ticker">VSAT</td><td class="company-name">Viasat Inc</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$11.24</td><td class="r v-red">-1.82%</td><td class="r">$1.4B</td></tr>
-          <tr><td>23</td><td class="ticker">PL</td><td class="company-name">Planet Labs</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$3.87</td><td class="r v-green">+2.94%</td><td class="r">$1.1B</td></tr>
-          <tr><td>24</td><td class="ticker">LUNR</td><td class="company-name">Intuitive Machines</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$18.42</td><td class="r v-green">+6.15%</td><td class="r">$3.0B</td></tr>
-          <tr><td>25</td><td class="ticker">RDW</td><td class="company-name">Redwire Corp</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$14.30</td><td class="r v-green">+1.87%</td><td class="r">$1.0B</td></tr>
-          <tr><td>26</td><td class="ticker">SPIR</td><td class="company-name">Spire Global</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$18.95</td><td class="r v-red">-0.94%</td><td class="r">$520M</td></tr>
-          <tr><td>27</td><td class="ticker">BKSY</td><td class="company-name">BlackSky Technology</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$6.18</td><td class="r v-green">+3.52%</td><td class="r">$780M</td></tr>
-          <tr><td>28</td><td class="ticker">MDA CN</td><td class="company-name">MDA Space</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$22.45</td><td class="r v-green">+1.34%</td><td class="r">$2.7B</td></tr>
-          <tr><td>29</td><td class="ticker">GSAT</td><td class="company-name">Globalstar</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$2.14</td><td class="r v-green">+4.88%</td><td class="r">$3.9B</td></tr>
-          <tr><td>30</td><td class="ticker">SESG FP</td><td class="company-name">SES SA</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$5.62</td><td class="r v-red">-0.53%</td><td class="r">$2.4B</td></tr>
-          <tr><td>31</td><td class="ticker">186A JP</td><td class="company-name">Astroscale Holdings</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">¥1,245</td><td class="r v-green">+2.30%</td><td class="r">¥85B</td></tr>
-          <tr><td>32</td><td class="ticker">AVIO IM</td><td class="company-name">Avio SpA</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">€12.80</td><td class="r v-red">-1.40%</td><td class="r">€340M</td></tr>
-          <tr><td>33</td><td class="ticker">9348 JP</td><td class="company-name">ispace Inc</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">¥982</td><td class="r v-green">+1.74%</td><td class="r">¥92B</td></tr>
-          <tr><td>34</td><td class="ticker">TSAT</td><td class="company-name">Telesat Corp</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$8.75</td><td class="r v-red">-2.10%</td><td class="r">$420M</td></tr>
-          <tr><td>35</td><td class="ticker">SATS</td><td class="company-name">EchoStar Corp</td><td><span class="sector-tag sector-space">Space</span></td><td class="r">$29.80</td><td class="r v-green">+0.81%</td><td class="r">$7.8B</td></tr>
-        </tbody>
+        <tbody id="mkt-tbody"></tbody>
       </table>
-      <a href="signals.html" class="view-all-link">View all 303 assets →</a>
+      <a href="signals.html" class="view-all-link" id="mkt-view-all">View all assets →</a>
     </div>
 
   </div>
@@ -184,7 +150,11 @@
         <span class="overview-val" id="ov-24h">--</span>
       </div>
       <div class="overview-row">
-        <span class="overview-label">Tracked Assets</span>
+        <span class="overview-label">Universe</span>
+        <span class="overview-val" id="ov-universe">303</span>
+      </div>
+      <div class="overview-row">
+        <span class="overview-label">Live Data</span>
         <span class="overview-val" id="ov-count">--</span>
       </div>
       <div class="overview-row">
@@ -201,6 +171,17 @@
       </div>
     </div>
 
+    <!-- D2. Robotnik Index Explainer -->
+    <div class="dash-widget">
+      <div class="dash-widget-title">Robotnik Index</div>
+      <div style="font-size:11px;color:#8B92A5;line-height:1.6;">
+        The Robotnik Composite Index tracks 303 frontier technology assets across semiconductors, robotics, and space technology. Market-cap weighted with a 5% single-entity cap.
+        <div style="margin-top:0.5rem;">Sub-indices: Semi &middot; Robotics &middot; Space &middot; Cross-stack &middot; Tokens</div>
+        <div style="margin-top:0.3rem;">Sourced from EODHD + CoinGecko.</div>
+        <div style="margin-top:0.3rem;" id="explainer-base">Base: 1,000.00</div>
+      </div>
+    </div>
+
     <!-- E. News Feed -->
     <div class="dash-widget">
       <div class="dash-widget-title">Latest Intelligence</div>
@@ -208,25 +189,13 @@
         <button class="news-toggle-btn active">Limited</button>
         <button class="news-toggle-btn disabled" title="Priority clearance required">All</button>
       </div>
-      <div class="news-item">
-        <div class="news-headline">TSMC CoWoS expansion signals capacity shift for AI chip packaging</div>
-        <div class="news-meta">2h ago · Reuters</div>
-      </div>
-      <div class="news-item">
-        <div class="news-headline">Rocket Lab secures Neutron launch contract with major defense partner</div>
-        <div class="news-meta">5h ago · SpaceNews</div>
-      </div>
-      <div class="news-item">
-        <div class="news-headline">Humanoid robotics funding crosses $5B mark in trailing twelve months</div>
-        <div class="news-meta">8h ago · TechCrunch</div>
-      </div>
-      <div class="news-item">
-        <div class="news-headline">NVIDIA Jetson Thor enters mass production for autonomous systems</div>
-        <div class="news-meta">12h ago · IEEE Spectrum</div>
-      </div>
-      <div class="news-item">
-        <div class="news-headline">AST SpaceMobile begins commercial direct-to-cell service</div>
-        <div class="news-meta">1d ago · Payload</div>
+      <div id="news-feed-container">
+        <div class="news-item"><div class="news-headline">TSMC CoWoS expansion signals capacity shift for AI chip packaging</div><div class="news-meta">2h ago · Reuters</div></div>
+        <div class="news-item"><div class="news-headline">Rocket Lab secures Neutron launch contract with major defense partner</div><div class="news-meta">5h ago · SpaceNews</div></div>
+        <div class="news-item"><div class="news-headline">Humanoid robotics funding crosses $5B mark in trailing twelve months</div><div class="news-meta">8h ago · TechCrunch</div></div>
+        <div class="news-item"><div class="news-headline">NVIDIA Jetson Thor enters mass production for autonomous systems</div><div class="news-meta">12h ago · IEEE Spectrum</div></div>
+        <div class="news-item"><div class="news-headline">AST SpaceMobile begins commercial direct-to-cell service</div><div class="news-meta">1d ago · Payload</div></div>
+        <div class="news-sample-note" style="font-size:9px;color:#5A6178;margin-top:0.5rem;">(Sample data — live feed calibrating)</div>
       </div>
       <a href="intelligence.html" class="view-all-link">View all intelligence →</a>
     </div>
@@ -235,6 +204,15 @@
 
 </div>
 </div><!-- .main-content -->
+
+<!-- Export Modal -->
+<div id="export-modal" class="export-modal-overlay" style="display:none" onclick="if(event.target===this)closeExportModal()">
+  <div class="export-modal">
+    <div style="color:#F5D921;font-weight:700;font-size:13px;margin-bottom:0.75rem;letter-spacing:0.06em;">CLEARANCE REQUIRED</div>
+    <div style="color:#8B92A5;font-size:11px;line-height:1.6;margin-bottom:1rem;">Data export is available to mission operatives with enterprise clearance.</div>
+    <a href="thesis.html#signup" class="btn-y" style="font-size:11px;">Request clearance →</a>
+  </div>
+</div>
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="js/nav.js"></script>
