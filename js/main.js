@@ -10,6 +10,7 @@ function mapSector(s) {
   const sl = s.toLowerCase();
   if (sl.includes('semiconductor')) return 'semi';
   if (sl.includes('robotics')) return 'robo';
+  if (sl.includes('space')) return 'space';
   if (sl.includes('cross')) return 'cross';
   if (sl.includes('token')) return 'token';
   return 'semi';

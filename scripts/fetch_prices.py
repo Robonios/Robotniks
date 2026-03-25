@@ -294,6 +294,36 @@ EQUITIES = [
     ("NOC", "Northrop Grumman", "Space", "United States"),
     ("GD", "General Dynamics", "Space", "United States"),
     ("SPCE", "Virgin Galactic", "Space", "United States"),
+    # --- Space companies added from Universe v4 ---
+    ("186A JP", "Astroscale Holdings", "Space", "Japan"),
+    ("AVIO IM", "Avio SpA", "Space", "Italy"),
+    ("DCO", "Ducommun", "Space", "United States"),
+    ("ESE", "ESCO Technologies", "Space", "United States"),
+    ("ETL FP", "Eutelsat Communications", "Space", "France"),
+    ("FLY", "Firefly Aerospace", "Space", "United States"),
+    ("GILT", "Gilat Satellite Networks", "Space", "Israel"),
+    ("GOGO", "Gogo Inc", "Space", "United States"),
+    ("GOMX SS", "GomSpace", "Space", "Denmark"),
+    ("012450 KS", "Hanwha Aerospace", "Space", "South Korea"),
+    ("HXL", "Hexcel Corp", "Space", "United States"),
+    ("189300 KS", "Intellian Technologies", "Space", "South Korea"),
+    ("KRMN", "Karman Holdings", "Space", "United States"),
+    ("474170 KS", "Lumir Inc", "Space", "South Korea"),
+    ("MDA CN", "MDA Space", "Space", "Canada"),
+    ("MNTS", "Momentus", "Space", "United States"),
+    ("MOG.A", "Moog Inc", "Space", "United States"),
+    ("NN", "NextNav", "Space", "United States"),
+    ("OVZON SS", "Ovzon AB", "Space", "Sweden"),
+    ("PSN", "Parsons Corp", "Space", "United States"),
+    ("464A JP", "QPS Holdings", "Space", "Japan"),
+    ("SESG FP", "SES SA", "Space", "Luxembourg"),
+    ("SATL", "Satellogic", "Space", "Argentina"),
+    ("SIDU", "Sidus Space", "Space", "United States"),
+    ("SCC IT", "Space Communication", "Space", "Israel"),
+    ("290A JP", "Synspective", "Space", "Japan"),
+    ("TTMI", "TTM Technologies", "Space", "United States"),
+    ("VOYG", "Voyager Technologies", "Space", "United States"),
+    ("9348 JP", "ispace Inc", "Space", "Japan"),
 ]
 
 
@@ -497,13 +527,40 @@ def fetch_eodhd_price(eodhd_ticker):
         return None
 
 
+def load_eodhd_mapping():
+    """Load explicit ticker mapping from data/mappings/eodhd_tickers.json if available."""
+    mapping_path = ROOT / "data" / "mappings" / "eodhd_tickers.json"
+    if mapping_path.exists():
+        with open(mapping_path) as f:
+            return json.load(f)
+    return None
+
+_EODHD_MAP = None
+
 def fetch_all_equities():
+    global _EODHD_MAP
+    if _EODHD_MAP is None:
+        _EODHD_MAP = load_eodhd_mapping()
+    if _EODHD_MAP:
+        print("  Using explicit EODHD ticker mapping ({} entries)".format(len(_EODHD_MAP)))
+
     results = []
     errors = []
     total = len(EQUITIES)
 
     for i, (ticker, company, sector, country) in enumerate(EQUITIES):
-        eodhd_sym = ticker_to_eodhd(ticker, country)
+        # Use explicit mapping if available, fall back to rule-based
+        if _EODHD_MAP and ticker in _EODHD_MAP:
+            eodhd_sym = _EODHD_MAP[ticker]
+        else:
+            eodhd_sym = ticker_to_eodhd(ticker, country)
+
+        # Skip unavailable tickers
+        if eodhd_sym == "UNAVAILABLE":
+            errors.append("{} ({}) — Not available on EODHD (expected)".format(ticker, company))
+            print("[{}/{}] {} -> UNAVAILABLE (skipped)".format(i + 1, total, ticker))
+            continue
+
         print("[{}/{}] {} -> {} ...".format(i + 1, total, ticker, eodhd_sym), end=" ")
 
         data = fetch_eodhd_price(eodhd_sym)
@@ -533,15 +590,37 @@ def fetch_all_equities():
 # ---------------------------------------------------------------------------
 # CoinGecko fetcher
 # ---------------------------------------------------------------------------
+def load_coingecko_mapping():
+    """Load explicit CoinGecko ID mapping from data/mappings/coingecko_ids.json if available."""
+    mapping_path = ROOT / "data" / "mappings" / "coingecko_ids.json"
+    if mapping_path.exists():
+        with open(mapping_path) as f:
+            return json.load(f)
+    return None
+
 def fetch_coingecko_prices():
     results = []
     errors = []
 
+    cg_mapping = load_coingecko_mapping()
+
     cg_ids = []
     id_to_ticker = {}
-    for ticker, (cg_id, name) in TOKENS.items():
+    for ticker, (cg_id_default, name) in TOKENS.items():
+        # Use explicit mapping if available
+        if cg_mapping and ticker in cg_mapping:
+            cg_id = cg_mapping[ticker]
+            if cg_id == "not_found":
+                errors.append("{} ({}) — CoinGecko: not_found (expected)".format(ticker, name))
+                print("[Token] {} -> SKIPPED (not on CoinGecko)".format(ticker))
+                continue
+        else:
+            cg_id = cg_id_default
         cg_ids.append(cg_id)
         id_to_ticker[cg_id] = (ticker, name)
+
+    if cg_mapping:
+        print("  Using explicit CoinGecko ID mapping")
 
     ids_str = ",".join(cg_ids)
     url = "https://api.coingecko.com/api/v3/simple/price?ids={}&vs_currencies=usd&include_24hr_change=true".format(

@@ -1,7 +1,7 @@
 {
-  "calculated_at": "2026-03-25T06:58:18.325436+00:00Z",
+  "calculated_at": "2026-03-25T13:03:58.778969+00:00Z",
   "cap_limit_pct": 5.0,
-  "entity_count": 261,
+  "entity_count": 260,
   "weights": [
     {
       "ticker": "NVDA",
@@ -57,7 +57,7 @@
       "name": "Micron Technology",
       "sector": "Semiconductor",
       "market_cap_usd": 446052630528,
-      "weight_pct": 3.6603
+      "weight_pct": 3.6602
     },
     {
       "ticker": "PLTR",
@@ -78,7 +78,7 @@
       "name": "Advanced Micro Devices",
       "sector": "Cross-stack",
       "market_cap_usd": 334837481472,
-      "weight_pct": 2.7477
+      "weight_pct": 2.7476
     },
     {
       "ticker": "LRCX",
@@ -92,7 +92,7 @@
       "name": "Applied Materials",
       "sector": "Cross-stack",
       "market_cap_usd": 296802156544,
-      "weight_pct": 2.4356
+      "weight_pct": 2.4355
     },
     {
       "ticker": "RTX",
@@ -113,7 +113,7 @@
       "name": "KLA Corp",
       "sector": "Cross-stack",
       "market_cap_usd": 205785350144,
-      "weight_pct": 1.6887
+      "weight_pct": 1.6886
     },
     {
       "ticker": "SIE GR",
@@ -141,7 +141,7 @@
       "name": "Schneider Electric",
       "sector": "Robotics",
       "market_cap_usd": 157672453361,
-      "weight_pct": 1.2939
+      "weight_pct": 1.2938
     },
     {
       "ticker": "APH",
@@ -218,7 +218,7 @@
       "name": "Advantest Corp",
       "sector": "Robotics",
       "market_cap_usd": 106977709842,
-      "weight_pct": 0.8779
+      "weight_pct": 0.8778
     },
     {
       "ticker": "NOC",
@@ -253,7 +253,7 @@
       "name": "Marvell Technology",
       "sector": "Semiconductor",
       "market_cap_usd": 80764960768,
-      "weight_pct": 0.6628
+      "weight_pct": 0.6627
     },
     {
       "ticker": "SNPS",
@@ -267,7 +267,7 @@
       "name": "Cadence Design Systems",
       "sector": "Cross-stack",
       "market_cap_usd": 78436917248,
-      "weight_pct": 0.6437
+      "weight_pct": 0.6436
     },
     {
       "ticker": "EMR",
@@ -337,7 +337,7 @@
       "name": "NXP Semiconductors",
       "sector": "Cross-stack",
       "market_cap_usd": 49628872704,
-      "weight_pct": 0.4073
+      "weight_pct": 0.4072
     },
     {
       "ticker": "CCJ",
@@ -456,7 +456,7 @@
       "name": "Teledyne Technologies",
       "sector": "Robotics",
       "market_cap_usd": 28997398528,
-      "weight_pct": 0.238
+      "weight_pct": 0.2379
     },
     {
       "ticker": "STMPA",
@@ -498,7 +498,7 @@
       "name": "Zhejiang Sanhua Intelligent",
       "sector": "Robotics",
       "market_cap_usd": 26511400149,
-      "weight_pct": 0.2176
+      "weight_pct": 0.2175
     },
     {
       "ticker": "6273 JP",
@@ -519,7 +519,7 @@
       "name": "China Northern Rare Earth",
       "sector": "Robotics",
       "market_cap_usd": 24951555461,
-      "weight_pct": 0.2048
+      "weight_pct": 0.2047
     },
     {
       "ticker": "UMC",
@@ -547,7 +547,7 @@
       "name": "Tower Semiconductor",
       "sector": "Semiconductor",
       "market_cap_usd": 20332800000,
-      "weight_pct": 0.1669
+      "weight_pct": 0.1668
     },
     {
       "ticker": "6920 JP",
@@ -1439,6 +1439,13 @@
       "weight_pct": 0.0055
     },
     {
+      "ticker": "6914 JP",
+      "name": "Optex Group",
+      "sector": "Robotics",
+      "market_cap_usd": 622671485,
+      "weight_pct": 0.0051
+    },
+    {
       "ticker": "INDI",
       "name": "Indie Semiconductor",
       "sector": "Semiconductor",
@@ -1472,13 +1479,6 @@
       "sector": "Robotics",
       "market_cap_usd": 489508091,
       "weight_pct": 0.004
-    },
-    {
-      "ticker": "VIRTUAL",
-      "name": "Virtuals Protocol",
-      "sector": "Token",
-      "market_cap_usd": 477880102.7574562,
-      "weight_pct": 0.0039
     },
     {
       "ticker": "BSL GR",
@@ -1695,13 +1695,6 @@
       "name": "Homebrew Robotics Club",
       "sector": "Token",
       "market_cap_usd": 632888.2378873735,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "$CPT",
-      "name": "Empulser Enterprises",
-      "sector": "Token",
-      "market_cap_usd": 614209.7404055018,
       "weight_pct": 0.0
     },
     {

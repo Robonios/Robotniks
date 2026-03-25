@@ -1,19 +1,19 @@
 {
-  "calculated_at": "2026-03-25T06:58:18.533771+00:00Z",
+  "calculated_at": "2026-03-25T13:03:59.025710+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 1758.69,
-    "daily_change_pct": 1.76,
+    "value": 1765.82,
+    "daily_change_pct": 2.17,
     "base_date": "2025-03-25",
     "base_value": 1000.0,
-    "entities": 261
+    "entities": 260
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 3755.57,
+    "value": 3763.18,
     "base_date": "2021-03-26",
     "base_value": 1000.0,
-    "entities": 224
+    "entities": 225
   },
   "sub_indices": {
     "semiconductor": {
@@ -23,8 +23,8 @@
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1526.65,
-      "entities": 138
+      "value": 1540.26,
+      "entities": 139
     },
     "space": {
       "name": "Robotnik Space Index",
@@ -38,8 +38,8 @@
     },
     "token": {
       "name": "Robotnik Token Index",
-      "value": 358.28,
-      "entities": 37
+      "value": 3547223.45,
+      "entities": 35
     }
   },
   "top_10_weights": [
@@ -97,7 +97,7 @@
       "name": "Micron Technology",
       "sector": "Semiconductor",
       "market_cap_usd": 446052630528,
-      "weight_pct": 3.6603
+      "weight_pct": 3.6602
     },
     {
       "ticker": "PLTR",
