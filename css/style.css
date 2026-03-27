@@ -766,6 +766,13 @@
     line-height: 1.5;
     margin-bottom: 0.2rem;
   }
+  .news-headline-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .news-headline-link:hover .news-headline {
+    color: var(--yellow);
+  }
 
   .news-meta {
     font-size: 9px;
