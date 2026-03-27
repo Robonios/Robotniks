@@ -148,74 +148,138 @@ def save_history(ticker, name, sector, series, source):
     return safe_ticker
 
 
+def load_coingecko_mapping():
+    """Load explicit CoinGecko ID mapping from data/mappings/coingecko_ids.json if available."""
+    mapping_path = ROOT / "data" / "mappings" / "coingecko_ids.json"
+    if mapping_path.exists():
+        with open(mapping_path) as f:
+            return json.load(f)
+    return None
+
+
+def get_coingecko_id(ticker, default_id):
+    """Get the correct CoinGecko ID, preferring the mapping file over inline defaults."""
+    cg_mapping = load_coingecko_mapping()
+    if cg_mapping and ticker in cg_mapping:
+        mapped = cg_mapping[ticker]
+        if mapped != "not_found":
+            return mapped
+        return None  # explicitly marked as not found
+    return default_id
+
+
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Robotnik Price History Fetcher")
+    parser.add_argument("--sector", type=str, default=None,
+                        help="Only fetch tickers in this sector (e.g., Materials, Token, Semiconductor)")
+    parser.add_argument("--backfill", action="store_true",
+                        help="Only fetch tickers that don't already have history files")
+    args = parser.parse_args()
+
+    sector_filter = args.sector
+    backfill_only = args.backfill
+
     print("Robotnik Price History Fetcher")
+    if sector_filter:
+        print(f"  Sector filter: {sector_filter}")
+    if backfill_only:
+        print(f"  Backfill mode: only missing tickers")
     print("=" * 40)
 
     index = {}
     errors = []
 
+    def needs_fetch(ticker):
+        """Check if ticker already has a history file (for backfill mode)."""
+        if not backfill_only:
+            return True
+        safe = ticker.replace("/", "_").replace(" ", "_")
+        return not (HISTORY_DIR / f"{safe}.json").exists()
+
     # ── equities (EODHD) ─────────────────────────────────────────────
-    print(f"\nFetching {len(EQUITIES)} equities from EODHD...")
-    for i, (ticker, name, sector, country) in enumerate(EQUITIES):
-        series = fetch_equity_history(ticker, country)
-        if series and len(series) > 0:
-            safe = save_history(ticker, name, sector, series, "EODHD")
-            index[ticker] = {
-                "name": name, "sector": sector, "file": f"{safe}.json",
-                "days": len(series),
-            }
-            status = f"OK ({len(series)} days)"
-        else:
-            errors.append(ticker)
-            status = "FAIL"
+    equities = EQUITIES
+    if sector_filter:
+        equities = [(t, n, s, c) for t, n, s, c in EQUITIES if s == sector_filter]
 
-        if (i + 1) % 25 == 0 or status == "FAIL":
-            print(f"  [{i+1}/{len(EQUITIES)}] {ticker:12s} {status}")
+    if equities:
+        to_fetch = [(t, n, s, c) for t, n, s, c in equities if needs_fetch(t)]
+        print(f"\nEquities: {len(to_fetch)} to fetch (of {len(equities)} in scope)")
+        for i, (ticker, name, sector, country) in enumerate(to_fetch):
+            series = fetch_equity_history(ticker, country)
+            if series and len(series) > 0:
+                safe = save_history(ticker, name, sector, series, "EODHD")
+                index[ticker] = {
+                    "name": name, "sector": sector, "file": f"{safe}.json",
+                    "days": len(series),
+                }
+                status = f"OK ({len(series)} days)"
+            else:
+                errors.append(ticker)
+                status = "FAIL"
 
-        # Rate limit: EODHD allows ~1000/day, be gentle
-        time.sleep(0.15)
+            if (i + 1) % 25 == 0 or status == "FAIL" or len(to_fetch) <= 50:
+                print(f"  [{i+1}/{len(to_fetch)}] {ticker:12s} {status}")
 
-    print(f"  Equities: {len(index)} OK, {len(errors)} errors")
+            time.sleep(0.15)
+
+        print(f"  Equities: {len(index)} OK, {len(errors)} errors")
 
     # ── tokens (CoinGecko) ───────────────────────────────────────────
-    token_count = 0
-    token_errors = 0
-    print(f"\nFetching {len(TOKENS)} tokens from CoinGecko...")
-    for i, (ticker, (cg_id, name)) in enumerate(TOKENS.items()):
-        series = fetch_token_history(cg_id)
-        if series and len(series) > 0:
-            safe = save_history(ticker, name, "Token", series, "CoinGecko")
-            index[ticker] = {
-                "name": name, "sector": "Token", "file": f"{safe}.json",
-                "days": len(series),
-            }
-            token_count += 1
-            status = f"OK ({len(series)} days)"
-        else:
-            errors.append(ticker)
-            token_errors += 1
-            status = "FAIL"
+    if sector_filter is None or sector_filter == "Token":
+        tokens_to_fetch = {}
+        for ticker, (cg_id_default, name) in TOKENS.items():
+            if not needs_fetch(ticker):
+                continue
+            cg_id = get_coingecko_id(ticker, cg_id_default)
+            if cg_id:
+                tokens_to_fetch[ticker] = (cg_id, name)
 
-        if (i + 1) % 10 == 0 or status == "FAIL":
-            print(f"  [{i+1}/{len(TOKENS)}] {ticker:12s} {status}")
+        token_count = 0
+        token_errors = 0
+        print(f"\nTokens: {len(tokens_to_fetch)} to fetch")
+        for i, (ticker, (cg_id, name)) in enumerate(tokens_to_fetch.items()):
+            series = fetch_token_history(cg_id)
+            if series and len(series) > 0:
+                safe = save_history(ticker, name, "Token", series, "CoinGecko")
+                index[ticker] = {
+                    "name": name, "sector": "Token", "file": f"{safe}.json",
+                    "days": len(series),
+                }
+                token_count += 1
+                status = f"OK ({len(series)} days)"
+            else:
+                errors.append(ticker)
+                token_errors += 1
+                status = "FAIL"
 
-        # CoinGecko rate limit: 10-30 req/min on demo plan
-        time.sleep(2.5)
+            if (i + 1) % 10 == 0 or status == "FAIL" or len(tokens_to_fetch) <= 50:
+                print(f"  [{i+1}/{len(tokens_to_fetch)}] {ticker:12s} {status}")
 
-    print(f"  Tokens: {token_count} OK, {token_errors} errors")
+            time.sleep(2.5)
 
-    # ── save index ───────────────────────────────────────────────────
+        print(f"  Tokens: {token_count} OK, {token_errors} errors")
+
+    # ── save/update index ───────────────────────────────────────────
+    # In backfill/sector mode, merge with existing index
+    existing_index = {}
+    if INDEX_FILE.exists():
+        with open(INDEX_FILE) as f:
+            existing_data = json.load(f)
+            existing_index = existing_data.get("entities", {})
+
+    existing_index.update(index)
+
     index_data = {
         "fetched_at": datetime.now(timezone.utc).isoformat() + "Z",
-        "count": len(index),
+        "count": len(existing_index),
         "equity_days_back": EQUITY_DAYS_BACK,
         "token_days_back": TOKEN_DAYS_BACK,
-        "entities": index,
+        "entities": existing_index,
     }
     with open(INDEX_FILE, "w") as f:
         json.dump(index_data, f, indent=2)
-    print(f"\n  -> history_index.json ({len(index)} entities)")
+    print(f"\n  -> history_index.json ({len(existing_index)} entities)")
 
     if errors:
         print(f"\n  Errors ({len(errors)}): {', '.join(errors[:15])}")

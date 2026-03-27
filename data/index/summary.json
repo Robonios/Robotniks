@@ -1,19 +1,19 @@
 {
-  "calculated_at": "2026-03-27T07:05:36.213450+00:00Z",
+  "calculated_at": "2026-03-27T11:33:47.044958+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 1748.28,
-    "daily_change_pct": -1.8,
+    "value": 1746.93,
+    "daily_change_pct": -1.88,
     "base_date": "2025-03-27",
     "base_value": 1000.0,
-    "entities": 302
+    "entities": 269
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
     "value": 3673.1,
     "base_date": "2021-03-29",
     "base_value": 1000.0,
-    "entities": 265
+    "entities": 263
   },
   "sub_indices": {
     "semiconductor": {
@@ -24,12 +24,12 @@
     "robotics": {
       "name": "Robotnik Robotics Index",
       "value": 1535.89,
-      "entities": 138
+      "entities": 137
     },
     "space": {
       "name": "Robotnik Space Index",
       "value": 1968.36,
-      "entities": 41
+      "entities": 40
     },
     "cross_stack": {
       "name": "Robotnik Cross-stack Index",
@@ -43,8 +43,8 @@
     },
     "token": {
       "name": "Robotnik Token Index",
-      "value": 1660850.39,
-      "entities": 37
+      "value": 539.41,
+      "entities": 6
     }
   },
   "top_10_weights": [
@@ -116,7 +116,7 @@
       "name": "Advanced Micro Devices",
       "sector": "Cross-stack",
       "market_cap_usd": 332228820992,
-      "weight_pct": 2.5613
+      "weight_pct": 2.5614
     }
   ]
 }

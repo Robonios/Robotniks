@@ -1388,18 +1388,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "BREW",
-      "coingecko_id": "camelot-token",
-      "name": "Homebrew Robotics Club",
-      "sector": "Token",
-      "price": 83.9,
-      "currency": "USD",
-      "change_pct": 10.38,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
       "ticker": "BSL GR",
       "eodhd_symbol": "BSL.XETRA",
       "name": "Basler AG",
@@ -1614,18 +1602,6 @@
       "volume": 190204,
       "date": "2026-03-26",
       "source": "EODHD"
-    },
-    {
-      "ticker": "DEUS",
-      "coingecko_id": "deus-finance-2",
-      "name": "XMAQUINA",
-      "sector": "Token",
-      "price": 2.84,
-      "currency": "USD",
-      "change_pct": -0.71,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
     },
     {
       "ticker": "DIOD",
@@ -2178,18 +2154,6 @@
       "volume": 309905,
       "date": "2026-03-26",
       "source": "EODHD"
-    },
-    {
-      "ticker": "JOJO",
-      "coingecko_id": "jojo",
-      "name": "JojoWorld",
-      "sector": "Token",
-      "price": 4.42888e-07,
-      "currency": "USD",
-      "change_pct": null,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
     },
     {
       "ticker": "KAGE",
@@ -2888,18 +2852,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "OP",
-      "coingecko_id": "optimism",
-      "name": "One Path",
-      "sector": "Token",
-      "price": 0.109016,
-      "currency": "USD",
-      "change_pct": -1.18,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
       "ticker": "OPAN",
       "coingecko_id": "opanarchy",
       "name": "Opanarchy",
@@ -3219,18 +3171,6 @@
       "price": 0.02657259,
       "currency": "USD",
       "change_pct": 13.85,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
-      "ticker": "ROBOT",
-      "coingecko_id": "robot-2",
-      "name": "RoboStack",
-      "sector": "Token",
-      "price": 9.67e-06,
-      "currency": "USD",
-      "change_pct": -8.96,
       "volume": null,
       "date": "2026-03-27",
       "source": "CoinGecko"
@@ -3812,18 +3752,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "TSMON",
-      "coingecko_id": "taiwan-semiconductor-manufacturing-ondo-tokenized-stock",
-      "name": "TSMC Ondo Tokenized",
-      "sector": "Token",
-      "price": 331.6,
-      "currency": "USD",
-      "change_pct": -3.94,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
       "ticker": "TTMI",
       "eodhd_symbol": "TTMI.US",
       "name": "TTM Technologies",
@@ -3858,18 +3786,6 @@
       "volume": 8801272,
       "date": "2026-03-26",
       "source": "EODHD"
-    },
-    {
-      "ticker": "VADER",
-      "coingecko_id": "vader-protocol",
-      "name": "Vader",
-      "sector": "Token",
-      "price": 3.94e-06,
-      "currency": "USD",
-      "change_pct": null,
-      "volume": null,
-      "date": "2026-03-27",
-      "source": "CoinGecko"
     },
     {
       "ticker": "VIRTUAL",

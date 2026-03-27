@@ -1,7 +1,7 @@
 {
-  "calculated_at": "2026-03-27T07:05:35.930184+00:00Z",
+  "calculated_at": "2026-03-27T11:33:46.835458+00:00Z",
   "cap_limit_pct": 5.0,
-  "entity_count": 302,
+  "entity_count": 269,
   "weights": [
     {
       "ticker": "NVDA",
@@ -71,7 +71,7 @@
       "name": "Advanced Micro Devices",
       "sector": "Cross-stack",
       "market_cap_usd": 332228820992,
-      "weight_pct": 2.5613
+      "weight_pct": 2.5614
     },
     {
       "ticker": "CAT",
@@ -253,7 +253,7 @@
       "name": "Hon Hai Precision (Foxconn)",
       "sector": "Robotics",
       "market_cap_usd": 87209737945,
-      "weight_pct": 0.6723
+      "weight_pct": 0.6724
     },
     {
       "ticker": "6861 JP",
@@ -323,7 +323,7 @@
       "name": "TE Connectivity",
       "sector": "Robotics",
       "market_cap_usd": 59646410752,
-      "weight_pct": 0.4598
+      "weight_pct": 0.4599
     },
     {
       "ticker": "IFX GR",
@@ -1885,237 +1885,6 @@
       "sector": "Token",
       "market_cap_usd": 32348618.583963398,
       "weight_pct": 0.0002
-    },
-    {
-      "ticker": "RPI LN",
-      "name": "Raspberry Pi Holdings",
-      "sector": "Robotics",
-      "market_cap_usd": 7883517,
-      "weight_pct": 0.0001
-    },
-    {
-      "ticker": "MNTS",
-      "name": "Momentus",
-      "sector": "Space",
-      "market_cap_usd": 6728339,
-      "weight_pct": 0.0001
-    },
-    {
-      "ticker": "NATIX",
-      "name": "NATIX Network",
-      "sector": "Token",
-      "market_cap_usd": 3542376.824888304,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "OVR",
-      "name": "Ovr",
-      "sector": "Token",
-      "market_cap_usd": 3518091.977205984,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "OPUS",
-      "name": "Opus Genesis",
-      "sector": "Token",
-      "market_cap_usd": 2226284.922105585,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ONO",
-      "name": "Onocoy Token",
-      "sector": "Token",
-      "market_cap_usd": 1886654.7112891339,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "CODEC",
-      "name": "Codec Flow",
-      "sector": "Token",
-      "market_cap_usd": 1882362.7338666813,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "EMDR",
-      "name": "Modulr",
-      "sector": "Token",
-      "market_cap_usd": 1809765.1145524718,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "VADER",
-      "name": "Vader",
-      "sector": "Token",
-      "market_cap_usd": 1384969.910559072,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "SLC",
-      "name": "Silencio",
-      "sector": "Token",
-      "market_cap_usd": 1199218.1221579015,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "RICE",
-      "name": "Rice AI",
-      "sector": "Token",
-      "market_cap_usd": 1056857.096164645,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ROKO",
-      "name": "Roko Network",
-      "sector": "Token",
-      "market_cap_usd": 889200.5701914789,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ROVR",
-      "name": "ROVR Network",
-      "sector": "Token",
-      "market_cap_usd": 636645.2302864871,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "BREW",
-      "name": "Homebrew Robotics Club",
-      "sector": "Token",
-      "market_cap_usd": 569910.292773486,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "$CPT",
-      "name": "Empulser Enterprises",
-      "sector": "Token",
-      "market_cap_usd": 537262.2779524018,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "JOJO",
-      "name": "JojoWorld",
-      "sector": "Token",
-      "market_cap_usd": 461934.9076377443,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ROBOT",
-      "name": "RoboStack",
-      "sector": "Token",
-      "market_cap_usd": 158726.44077411765,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ROBA",
-      "name": "ROBA",
-      "sector": "Token",
-      "market_cap_usd": 148229.1292805278,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "SHOW",
-      "name": "VitaNova",
-      "sector": "Token",
-      "market_cap_usd": 139955.4360848957,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "XRT",
-      "name": "Robonomics Network",
-      "sector": "Token",
-      "market_cap_usd": 95111.02956548787,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "RBR",
-      "name": "Robora",
-      "sector": "Token",
-      "market_cap_usd": 80617.96222876036,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "SMPL",
-      "name": "Simple AI",
-      "sector": "Token",
-      "market_cap_usd": 60798.95845529875,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "OP",
-      "name": "One Path",
-      "sector": "Token",
-      "market_cap_usd": 45479.59075654853,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ROX",
-      "name": "Robotexon",
-      "sector": "Token",
-      "market_cap_usd": 30119.445494423824,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "FORMA",
-      "name": "Forma Robotics",
-      "sector": "Token",
-      "market_cap_usd": 29920.033872239812,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "KAGE",
-      "name": "KAGE Network",
-      "sector": "Token",
-      "market_cap_usd": 29700.34992532896,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "SPAWN",
-      "name": "Spawn",
-      "sector": "Token",
-      "market_cap_usd": 24286.530859188337,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "QACE",
-      "name": "Qace Dynamics",
-      "sector": "Token",
-      "market_cap_usd": 14036.12402633788,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ANIMUS",
-      "name": "Animus",
-      "sector": "Token",
-      "market_cap_usd": 11821.83516595132,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "MECHA",
-      "name": "MechaOs",
-      "sector": "Token",
-      "market_cap_usd": 6304.115268643613,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "DPTX",
-      "name": "DEEPTICS",
-      "sector": "Token",
-      "market_cap_usd": 4866.743177115564,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "OPAN",
-      "name": "Opanarchy",
-      "sector": "Token",
-      "market_cap_usd": 4716.893995098608,
-      "weight_pct": 0.0
-    },
-    {
-      "ticker": "ATNM",
-      "name": "Autonoma Network",
-      "sector": "Token",
-      "market_cap_usd": 4544.593560994389,
-      "weight_pct": 0.0
     }
   ]
 }

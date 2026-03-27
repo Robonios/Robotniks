@@ -41,6 +41,12 @@ jobs:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: python scripts/fetch_market_caps.py
 
+      - name: Backfill missing price history
+        env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: python scripts/fetch_price_history.py --backfill
+
       - name: Calculate Robotnik Index
         run: python scripts/calculate_index.py
 

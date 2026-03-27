@@ -1,6 +1,6 @@
 {
   "fetched_at": "2026-03-27T07:05:35.369285Z",
-  "count": 322,
+  "count": 317,
   "market_caps": [
     {
       "ticker": "NVDA",
@@ -2379,14 +2379,6 @@
       "source": "CoinGecko"
     },
     {
-      "ticker": "VADER",
-      "name": "Vader",
-      "sector": "Token",
-      "market_cap_usd": 1384969.910559072,
-      "date_fetched": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
       "ticker": "SLC",
       "name": "Silencio",
       "sector": "Token",
@@ -2419,34 +2411,10 @@
       "source": "CoinGecko"
     },
     {
-      "ticker": "BREW",
-      "name": "Homebrew Robotics Club",
-      "sector": "Token",
-      "market_cap_usd": 569910.292773486,
-      "date_fetched": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
       "ticker": "$CPT",
       "name": "Empulser Enterprises",
       "sector": "Token",
       "market_cap_usd": 537262.2779524018,
-      "date_fetched": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
-      "ticker": "JOJO",
-      "name": "JojoWorld",
-      "sector": "Token",
-      "market_cap_usd": 461934.9076377443,
-      "date_fetched": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
-      "ticker": "ROBOT",
-      "name": "RoboStack",
-      "sector": "Token",
-      "market_cap_usd": 158726.44077411765,
       "date_fetched": "2026-03-27",
       "source": "CoinGecko"
     },
@@ -2487,14 +2455,6 @@
       "name": "Simple AI",
       "sector": "Token",
       "market_cap_usd": 60798.95845529875,
-      "date_fetched": "2026-03-27",
-      "source": "CoinGecko"
-    },
-    {
-      "ticker": "OP",
-      "name": "One Path",
-      "sector": "Token",
-      "market_cap_usd": 45479.59075654853,
       "date_fetched": "2026-03-27",
       "source": "CoinGecko"
     },

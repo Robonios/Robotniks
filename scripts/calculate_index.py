@@ -35,6 +35,7 @@ SUMMARY_PATH   = os.path.join(INDEX_DIR, "summary.json")
 
 BASE_VALUE = 1000.0
 CAP_LIMIT  = 0.05  # 5% max weight per entity
+MIN_MARKET_CAP = 10_000_000  # $10M minimum for index inclusion
 
 # sector mapping for sub-indices
 SECTOR_MAP = {
@@ -211,11 +212,18 @@ def main():
     for e in entities:
         e["sector"] = SECTOR_MAP.get(e.get("sector", ""), e.get("sector", "Other"))
 
-    # filter to entities that have both mcap > 0 and a current price
+    # filter to entities that have mcap >= minimum threshold and a current price
     eligible = [e for e in entities
-                if e["market_cap_usd"] > 0 and e["ticker"] in prices_by_ticker]
+                if e["market_cap_usd"] >= MIN_MARKET_CAP and e["ticker"] in prices_by_ticker]
 
-    print(f"  Eligible entities: {len(eligible)} / {len(entities)}")
+    excluded_micro = [e for e in entities
+                      if 0 < e["market_cap_usd"] < MIN_MARKET_CAP and e["ticker"] in prices_by_ticker]
+
+    print(f"  Eligible entities: {len(eligible)} / {len(entities)} (min mcap: ${MIN_MARKET_CAP:,.0f})")
+    if excluded_micro:
+        print(f"  Excluded (below min mcap): {len(excluded_micro)} entities")
+        for e in sorted(excluded_micro, key=lambda x: x['market_cap_usd'], reverse=True)[:5]:
+            print(f"    {e['ticker']:12s} ${e['market_cap_usd']:>12,.0f}  {e['name']}")
 
     # ── compute capped weights ───────────────────────────────────────
     weights = compute_capped_weights(eligible)
