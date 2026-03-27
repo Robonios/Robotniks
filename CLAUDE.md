@@ -4,7 +4,7 @@ Structured intelligence platform for robotics and semiconductors — like Messar
 
 ## Architecture
 
-- **Single-file app**: Everything lives in `index.html` — HTML, CSS, and JS are all inline
+- **Multi-page static site**: Separate HTML pages, shared CSS and JS
 - **No build tools**: No package.json, no bundler, no framework. Pure static site
 - **Data pipeline**: Python fetcher scripts → JSON files → frontend reads via `fetch()`
 - **Hosting**: GitHub Pages
@@ -14,30 +14,55 @@ Structured intelligence platform for robotics and semiconductors — like Messar
 ## Project Structure
 
 ```
-Robotniks/
-├── index.html              # Main site (single-file app)
-├── tetris.html             # Landing/teaser page with Tetris game
-├── cosmonaut-bg.png        # Background image for tetris.html
+Robotnik/
+├── index.html              # Dashboard homepage (Robotnik Index, price chart, market table)
+├── intelligence.html       # News/research feed with filters
+├── signals.html            # Placeholder (greyed out)
+├── commodities.html        # Placeholder (greyed out)
+├── funding.html            # Placeholder (greyed out)
+├── thesis.html             # Mission directive + roadmap
+├── recreation.html         # Tetris game
+├── tetris.html             # Legacy landing/teaser page
+├── cosmonaut-bg.png        # Background image
+├── css/
+│   └── style.css           # All styles
+├── js/
+│   ├── main.js             # Main JavaScript
+│   └── nav.js              # Left sidebar navigation (injected on all pages)
 ├── requirements.txt        # Python dependencies
 ├── .env                    # API keys (gitignored)
 ├── .gitignore
 ├── CLAUDE.md
 ├── .github/workflows/
 │   └── fetch-data.yml      # GitHub Actions: daily prices + weekly intel
-├── scripts/                # All Python fetcher scripts
+├── scripts/
 │   ├── config.py           # Shared config (paths, API keys)
 │   ├── archive_utils.py    # Shared archive-and-filter logic
-│   ├── fetch_prices.py     # EODHD + CoinGecko (219 equities + 43 tokens)
+│   ├── fetch_prices.py     # EODHD + CoinGecko (equities + tokens)
+│   ├── fetch_market_caps.py # Market cap data
+│   ├── fetch_price_history.py # Historical price data
+│   ├── calculate_index.py  # Robotnik Composite Index + 6 sub-indices
 │   ├── fetch_prices_alphavantage.py  # Legacy Alpha Vantage fetcher
 │   ├── fetch_news.py       # ~30 RSS feeds
 │   ├── fetch_research.py   # OpenAlex API
 │   ├── fetch_filings.py    # SEC EDGAR
 │   └── fetch_reports.py    # IFR/SEMI/SIA websites
-├── data/                   # Live JSON data (served by GitHub Pages)
-│   ├── prices/             # Price data from fetch_prices.py
+├── data/
+│   ├── prices/             # Price data
 │   │   ├── equities.json
 │   │   ├── tokens.json
-│   │   └── all_prices.json
+│   │   ├── all_prices.json
+│   │   └── history/        # Historical price data
+│   ├── index/              # Index calculations
+│   │   ├── robotnik_index.json
+│   │   ├── sub_indices.json
+│   │   ├── market_caps.json
+│   │   ├── weights.json
+│   │   └── summary.json
+│   ├── mappings/           # Ticker/ID mappings
+│   │   ├── eodhd_tickers.json
+│   │   ├── coingecko_ids.json
+│   │   └── pending_tickers.json
 │   ├── news.json
 │   ├── research.json
 │   ├── filings.json
@@ -55,27 +80,24 @@ Robotniks/
 - **Font**: Roboto Mono (monospace) — ONLY font allowed, never use any other font
 - **Background**: `#111318` (dark theme)
 - **Yellow accent**: `#F5D921` (primary brand color)
-- **CSS variables are defined in `:root` at the top of index.html**
+- **CSS variables are defined in `:root` in `css/style.css`**
 
-## Key Sections
+## Site Pages
 
-1. **Market Tracker** — table of ~20 public robotics/semi companies with real prices, filterable by sector (Semis, Robotics, Infra)
-2. **Fundraising Dashboard** — startup raises with stage, amount, valuation, investors. Has CSV export
-3. **Intelligence Feed** — aggregated news, research papers, SEC filings, and industry reports. Filterable by type and category. Has two subtabs:
-   - **Feed** — all aggregated content with search, type filters (News/Research/Filings/Reports), and category filters (Robotics/Semis/AI-ML/Supply Chain)
-   - **Robotniks Insights** — placeholder for original analysis (coming soon)
-4. **Thesis** — founding thesis ("One Strategic Stack")
-5. **Business Model** — free vs paid tiers
-6. **Roadmap** — 10-milestone product roadmap
-7. **Products** — three product cards (Market Tracker, Fundraising Dashboard, Innovation Map)
-8. **Waitlist CTA** — email signup form (connected to Mailchimp)
+1. **Dashboard** (`index.html`) — Robotnik Composite Index, price chart, market table with all 347 entities
+2. **Intelligence** (`intelligence.html`) — News/research feed with type and category filters
+3. **Signals** (`signals.html`) — Placeholder, greyed out in nav
+4. **Commodities** (`commodities.html`) — Placeholder, greyed out in nav
+5. **Funding** (`funding.html`) — Placeholder, greyed out in nav
+6. **Thesis** (`thesis.html`) — Mission directive and roadmap
+7. **Recreation** (`recreation.html`) — Tetris game (Recreation Bay)
 
 ## Data
 
-- Market data is hardcoded in the `companies` JS array (prices as of Mar 4, 2026)
-- Fundraising data is hardcoded in the `raises` JS array
+- **Universe**: 347 entities (Robotnik_Universe_v5.xlsx) — Semi (45), Cross-stack (22), Robotics (152), Space (41), Materials (44), Tokens (43)
+- **Live data**: 331/347 entities with price feeds
+- **Robotnik Composite Index**: Market-cap weighted + 6 sub-indices
 - API keys stored in `.env` (not committed), loaded by `scripts/config.py`
-- Price universe: 262 entities (219 equities + 43 crypto tokens) defined in `scripts/fetch_prices.py`
 
 ## Data Fetcher Scripts
 
@@ -84,6 +106,9 @@ All scripts live in `scripts/` and output to `data/`.
 | Script | Source | Output | Dependencies |
 |--------|--------|--------|-------------|
 | `scripts/fetch_prices.py` | EODHD + CoinGecko | `data/prices/*.json` | stdlib only |
+| `scripts/fetch_market_caps.py` | EODHD + CoinGecko | `data/index/market_caps.json` | stdlib only |
+| `scripts/fetch_price_history.py` | EODHD + CoinGecko | `data/prices/history/` | stdlib only |
+| `scripts/calculate_index.py` | Local data | `data/index/*.json` | stdlib only |
 | `scripts/fetch_news.py` | ~30 RSS feeds | `data/news.json` | `feedparser` |
 | `scripts/fetch_research.py` | OpenAlex API | `data/research.json` | stdlib only |
 | `scripts/fetch_filings.py` | SEC EDGAR | `data/filings.json` | stdlib only |
@@ -131,11 +156,14 @@ COINGECKO_API_KEY=<your-key>
 ### Running fetchers
 
 ```bash
-python3 scripts/fetch_prices.py     # EODHD + CoinGecko → data/prices/ (262 entities)
-python3 scripts/fetch_news.py       # ~30 RSS feeds → data/news.json (150 items, 12-month window)
-python3 scripts/fetch_research.py   # OpenAlex → data/research.json (200 papers, Jan 2023+)
-python3 scripts/fetch_filings.py    # SEC EDGAR → data/filings.json (1 per company, ~18 entries)
-python3 scripts/fetch_reports.py    # IFR/SEMI/SIA → data/reports.json (with article summaries)
+python3 scripts/fetch_prices.py          # EODHD + CoinGecko → data/prices/
+python3 scripts/fetch_market_caps.py     # Market caps → data/index/market_caps.json
+python3 scripts/fetch_price_history.py   # Historical prices → data/prices/history/
+python3 scripts/calculate_index.py       # Index calculation → data/index/
+python3 scripts/fetch_news.py            # ~30 RSS feeds → data/news.json
+python3 scripts/fetch_research.py        # OpenAlex → data/research.json
+python3 scripts/fetch_filings.py         # SEC EDGAR → data/filings.json
+python3 scripts/fetch_reports.py         # IFR/SEMI/SIA → data/reports.json
 ```
 
 ## Dev Server
