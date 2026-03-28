@@ -189,6 +189,13 @@
       </div>
     </div>
 
+    <!-- D3. Funding Ops Widget -->
+    <div class="dash-widget">
+      <div class="dash-widget-title">Funding Ops</div>
+      <div id="funding-widget" style="font-size:10px;color:#5A6178;">Loading<span class="animated-dots"></span></div>
+      <a href="funding.html" class="view-all-link">View funding overview &rarr;</a>
+    </div>
+
     <!-- E. News Feed -->
     <div class="dash-widget">
       <div class="dash-widget-title">Latest News</div>
@@ -253,6 +260,27 @@
   } catch(e) {
     document.getElementById('news-feed-container').innerHTML =
       '<div style="font-size:10px;color:#5A6178;">Newsfeed connecting<span class="animated-dots"></span></div>';
+  }
+})();
+// Load funding summary for widget
+(async function() {
+  try {
+    var resp = await fetch('data/funding/summary.json?v=' + Date.now());
+    var data = await resp.json();
+    var q1 = data.periods.Q1_2026;
+    var capB = (q1.total_capital_m / 1000).toFixed(1);
+    var largest = q1.largest_round;
+    var sectorPills = {'Semiconductors':'sp-semi','Robotics':'sp-robo','Space':'sp-space','Cross-Stack':'sp-cross','Materials':'sp-mat'};
+    var pill = largest ? '<span style="display:inline-block;font-size:8px;padding:1px 5px;border-radius:2px;font-weight:600;background:rgba(59,130,246,0.2);color:#3B82F6;margin-left:4px">' + largest.sector + '</span>' : '';
+    document.getElementById('funding-widget').innerHTML =
+      '<div style="color:#F5D921;font-size:9px;font-weight:700;letter-spacing:0.06em;margin-bottom:0.5rem;">Q1 2026</div>' +
+      '<div style="color:#8B92A5;line-height:1.8;">' +
+        'Capital deployed: <span style="color:#e6e8ed;font-weight:600;">$' + capB + 'B</span> across <span style="color:#e6e8ed;">' + q1.num_rounds + ' rounds</span><br>' +
+        'Most active: <span style="color:#e6e8ed;">' + q1.most_active_sector + '</span> (' + q1.sector_breakdown[q1.most_active_sector].rounds + ' rounds)<br>' +
+        (largest ? 'Largest: <span style="color:#e6e8ed;font-weight:600;">' + largest.company + '</span> $' + (largest.amount_m >= 1000 ? (largest.amount_m/1000).toFixed(0) + 'B' : largest.amount_m + 'M') + pill : '') +
+      '</div>';
+  } catch(e) {
+    document.getElementById('funding-widget').innerHTML = '<div style="font-size:10px;color:#5A6178;">Funding data connecting<span class="animated-dots"></span></div>';
   }
 })();
 </script>

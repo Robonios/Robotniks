@@ -4,43 +4,179 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Robotnik — Funding Ops</title>
-<meta name="description" content="Robotnik Funding Operations — Startup fundraising intelligence across the frontier technology stack. Coming soon.">
+<meta name="description" content="Robotnik Funding Operations — Tracking private capital flows across the frontier technology stack.">
 <meta property="og:title" content="Robotnik — Funding Ops">
-<meta property="og:description" content="Mapping startup fundraising across semiconductors, robotics, and space. Stand by.">
+<meta property="og:description" content="138 rounds tracked across semiconductors, robotics, space, and materials.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://robonios.github.io/Robotniks/funding.html">
 <meta property="og:image" content="https://robonios.github.io/Robotniks/robotlogo.png">
 <link rel="icon" type="image/png" href="robotlogo.png">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+.fund-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem}
+.fund-title{font-size:15px;font-weight:700;color:#F5D921;letter-spacing:0.1em;text-transform:uppercase}
+.fund-subtitle{font-size:11px;color:#8B92A5;margin-top:0.25rem}
+.time-toggle{display:flex;gap:0;border:1px solid #252A36;border-radius:4px;overflow:hidden}
+.time-btn{background:#161B22;border:none;color:#8B92A5;font-family:var(--font);font-size:10px;padding:0.35rem 0.75rem;cursor:pointer;transition:all 0.2s}
+.time-btn:hover{color:#e6e8ed}
+.time-btn.active{background:#F5D921;color:#111318;font-weight:700}
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1.25rem}
+.metric-card{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:0.75rem 1rem}
+.metric-label{font-size:9px;color:#5A6178;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.3rem}
+.metric-value{font-size:1.2rem;font-weight:700;color:#e6e8ed}
+.metric-sub{font-size:9px;color:#5A6178;margin-top:0.2rem}
+.metric-change{font-size:9px;margin-left:0.3rem}
+.v-green{color:#22c55e}.v-red{color:#ef4444}
+.fund-layout{display:grid;grid-template-columns:1fr 340px;gap:1.25rem;align-items:start}
+.fund-tabs{display:flex;gap:0;border-bottom:1px solid #252A36;margin-bottom:1.25rem}
+.fund-tab{background:none;border:none;color:#8B92A5;font-family:var(--font);font-size:11px;padding:0.6rem 1rem;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s}
+.fund-tab:hover{color:#e6e8ed}
+.fund-tab.active{color:#F5D921;border-bottom-color:#F5D921}
+.fund-tab .lock{font-size:9px;margin-left:4px}
+.chart-box{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:1rem;margin-bottom:1rem}
+.chart-box-title{font-size:11px;font-weight:700;color:#F5D921;letter-spacing:0.06em;margin-bottom:0.75rem}
+.top-table{width:100%;border-collapse:collapse;font-size:10px}
+.top-table th{text-align:left;color:#5A6178;font-weight:500;padding:0.4rem 0.5rem;border-bottom:1px solid #252A36;font-size:9px;letter-spacing:0.05em;text-transform:uppercase}
+.top-table td{padding:0.5rem;border-bottom:1px solid #1E2330;color:#e6e8ed;vertical-align:middle}
+.top-table td.r{text-align:right}
+.top-table tr:hover{background:rgba(245,217,33,0.03)}
+.sector-pill{display:inline-block;font-size:8px;padding:1px 5px;border-radius:2px;font-weight:600;letter-spacing:0.03em}
+.sp-semi{background:rgba(245,217,33,0.2);color:#F5D921}
+.sp-robo{background:rgba(59,130,246,0.2);color:#3B82F6}
+.sp-space{background:rgba(148,163,184,0.2);color:#94A3B8}
+.sp-cross{background:rgba(34,197,94,0.2);color:#22C55E}
+.sp-mat{background:rgba(251,146,60,0.2);color:#FB923C}
+.notable-card{background:#161B22;border-left:3px solid #F5D921;border-radius:0 6px 6px 0;padding:1rem 1.25rem;margin-bottom:1rem;font-size:11px;color:#8B92A5;line-height:1.7}
+.gate-overlay{position:relative;overflow:hidden;border-radius:6px}
+.gate-blur{filter:blur(4px);user-select:none;pointer-events:none;opacity:0.5}
+.gate-front{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(17,19,24,0.75);z-index:2;border-radius:6px}
+.gate-front .gate-title{color:#F5D921;font-weight:700;font-size:12px;letter-spacing:0.08em;margin-bottom:0.5rem}
+.gate-front .gate-text{color:#8B92A5;font-size:11px;line-height:1.6;text-align:center;max-width:400px;margin-bottom:0.75rem}
+.inv-bar{display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;font-size:10px}
+.inv-name{width:140px;color:#8B92A5;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.inv-fill{height:14px;background:#F5D921;border-radius:2px;min-width:4px}
+.inv-count{color:#5A6178;font-size:9px;min-width:20px}
+.stage-row{display:flex;align-items:center;gap:0.5rem;margin-bottom:0.35rem;font-size:10px}
+.stage-label{width:70px;color:#8B92A5;font-size:9px}
+.stage-bar{height:12px;border-radius:2px;min-width:3px}
+.stage-val{color:#5A6178;font-size:9px}
+@media(max-width:1024px){.fund-layout{grid-template-columns:1fr}.metrics-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.metrics-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body data-page="funding">
-
 <div class="bg-layer"></div>
 <div id="nav-container"></div>
+<div class="main-content" style="padding:1rem;max-width:1400px;">
 
-<div class="main-content">
-<section class="main-section" style="min-height:70vh;display:flex;align-items:center;justify-content:center;">
-  <div style="text-align:center;max-width:560px;">
-    <div class="section-tag">Funding Operations</div>
-    <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:1rem;margin-top:0.75rem;">
-      FUNDING OPERATIONS: <span>CALIBRATING</span><span class="animated-dots" style="display:inline-block;width:24px;text-align:left"></span>
-    </h2>
-    <p style="color:var(--text-dim);font-size:var(--fs-body);line-height:1.8;margin-top:1.5rem;">
-      Robotnik is mapping startup fundraising and M&amp;A activity across the frontier technology stack. This module will track funding rounds, investors, valuations, and strategic investments across semiconductors, robotics, space technology, and critical materials.
-    </p>
-    <div style="margin-top:2.5rem;font-size:var(--fs-label);color:var(--text-muted);text-transform:uppercase;letter-spacing:0.15em;">
-      Expected online: Q3 2026
-    </div>
-    <p style="color:#F5D921;font-size:12px;margin-top:1.5rem;">Stand by, tovarishch.</p>
+<!-- Header -->
+<div class="fund-header">
+  <div>
+    <div class="fund-title">Funding Operations</div>
+    <div class="fund-subtitle">Tracking private capital flows across the frontier technology stack</div>
   </div>
-</section>
+  <div class="time-toggle">
+    <button class="time-btn active" data-period="Q1_2026" onclick="setPeriod(this)">Q1 2026</button>
+    <button class="time-btn" data-period="Q4_2025" onclick="setPeriod(this)">Q4 2025</button>
+    <button class="time-btn" data-period="6M" onclick="setPeriod(this)">6M</button>
+  </div>
+</div>
 
-<footer>
-  <p>&copy; 2026 Robotnik. Mapping the frontier technology stack since re-entry.</p>
-</footer>
+<!-- Metrics -->
+<div class="metrics-grid" id="metrics-grid"></div>
+
+<!-- Tabs -->
+<div class="fund-tabs">
+  <button class="fund-tab active" onclick="setTab('overview',this)">Overview</button>
+  <button class="fund-tab" onclick="setTab('rounds',this)">Rounds <span class="lock">&#x1F512;</span></button>
+  <button class="fund-tab" onclick="setTab('investors',this)">Investors <span class="lock">&#x1F512;</span></button>
+  <button class="fund-tab" onclick="setTab('funds',this)">Frontier Funds <span class="lock">&#x1F512;</span></button>
+</div>
+
+<!-- TAB: Overview -->
+<div id="tab-overview">
+<div class="fund-layout">
+<div>
+  <!-- Funding Trends Chart -->
+  <div class="chart-box">
+    <div class="chart-box-title">FUNDING TRENDS</div>
+    <canvas id="trends-chart" height="220"></canvas>
+  </div>
+
+  <!-- Top 10 Rounds -->
+  <div class="chart-box">
+    <div class="chart-box-title">TOP 10 ROUNDS</div>
+    <table class="top-table" id="top-rounds-table">
+      <thead><tr><th>#</th><th>Company</th><th>Sector</th><th>Round</th><th class="r">Amount ($M)</th><th>Date</th></tr></thead>
+      <tbody id="top-rounds-body"></tbody>
+    </table>
+    <a href="#" class="view-all-link" onclick="setTab('rounds',document.querySelector('.fund-tab:nth-child(2)'));return false" style="margin-top:0.5rem;display:block;">View all 138 rounds &rarr;</a>
+  </div>
+
+  <!-- Notable -->
+  <div class="notable-card" id="notable-card"></div>
+</div>
+
+<div>
+  <!-- Sector Breakdown Donut -->
+  <div class="chart-box">
+    <div class="chart-box-title">SECTOR BREAKDOWN</div>
+    <canvas id="sector-chart" height="220"></canvas>
+  </div>
+
+  <!-- Top Investors -->
+  <div class="chart-box">
+    <div class="chart-box-title">TOP 10 INVESTORS</div>
+    <div id="top-investors"></div>
+  </div>
+
+  <!-- Stage Distribution -->
+  <div class="chart-box">
+    <div class="chart-box-title">STAGE DISTRIBUTION</div>
+    <div id="stage-dist"></div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- TAB: Rounds (gated) -->
+<div id="tab-rounds" style="display:none">
+<div class="gate-overlay">
+  <div class="gate-blur" id="rounds-blur-table"></div>
+  <div class="gate-front">
+    <div class="gate-title">CLEARANCE REQUIRED</div>
+    <div class="gate-text">Full rounds database requires enterprise clearance. Top 10 rounds visible in the overview.</div>
+    <a href="thesis.html#signup" class="btn-y" style="font-size:11px;">Request clearance &rarr;</a>
+  </div>
+</div>
+</div>
+
+<!-- TAB: Investors (gated) -->
+<div id="tab-investors" style="display:none">
+<div class="gate-overlay">
+  <div class="gate-blur" id="investors-blur-table"></div>
+  <div class="gate-front">
+    <div class="gate-title">CLEARANCE REQUIRED</div>
+    <div class="gate-text">Aggregated investor database requires enterprise clearance.</div>
+    <a href="thesis.html#signup" class="btn-y" style="font-size:11px;">Request clearance &rarr;</a>
+  </div>
+</div>
+</div>
+
+<!-- TAB: Frontier Funds (placeholder) -->
+<div id="tab-funds" style="display:none">
+<div style="text-align:center;padding:4rem 2rem;">
+  <div style="color:#F5D921;font-weight:700;font-size:12px;letter-spacing:0.1em;margin-bottom:1rem;">FRONTIER FUNDS: CALIBRATING<span class="animated-dots"></span></div>
+  <div style="color:#8B92A5;font-size:11px;line-height:1.7;max-width:500px;margin:0 auto;">Robotnik is mapping frontier technology venture funds &mdash; their strategies, portfolio concentrations, and deployment pace across the physical AI stack.</div>
+  <div style="margin-top:2rem;font-size:9px;color:#5A6178;letter-spacing:0.1em;text-transform:uppercase;">Expected online: Q3 2026</div>
+</div>
+</div>
+
 </div><!-- .main-content -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/funding.js"></script>
 </body>
 </html>
