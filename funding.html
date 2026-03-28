@@ -49,9 +49,9 @@
 .sp-mat{background:rgba(251,146,60,0.2);color:#FB923C}
 .notable-card{background:#161B22;border-left:3px solid #F5D921;border-radius:0 6px 6px 0;padding:1rem 1.25rem;margin-bottom:1rem;font-size:11px;color:#8B92A5;line-height:1.7}
 .gate-overlay{position:relative;overflow:hidden;border-radius:6px}
-.gate-blur{filter:blur(4px);user-select:none;pointer-events:none;opacity:0.5}
-.gate-front{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(17,19,24,0.75);z-index:2;border-radius:6px}
-.gate-front .gate-title{color:#F5D921;font-weight:700;font-size:12px;letter-spacing:0.08em;margin-bottom:0.5rem}
+.gate-blur{filter:blur(3px);user-select:none;pointer-events:none;opacity:0.7}
+.gate-front{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(17,19,24,0.85);z-index:2;border-radius:6px;border:1px solid #252A36}
+.gate-front .gate-title{color:#F5D921;font-weight:700;font-size:14px;letter-spacing:0.1em;margin-bottom:0.75rem;text-shadow:0 0 20px rgba(245,217,33,0.3)}
 .gate-front .gate-text{color:#8B92A5;font-size:11px;line-height:1.6;text-align:center;max-width:400px;margin-bottom:0.75rem}
 .inv-bar{display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;font-size:10px}
 .inv-name{width:140px;color:#8B92A5;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
@@ -62,13 +62,14 @@
 .stage-bar{height:12px;border-radius:2px;min-width:3px}
 .stage-val{color:#5A6178;font-size:9px}
 @media(max-width:1024px){.fund-layout{grid-template-columns:1fr}.metrics-grid{grid-template-columns:repeat(2,1fr)}}
+.top-table th[style*="cursor"]:hover{color:#e6e8ed}
 @media(max-width:600px){.metrics-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-page="funding">
 <div class="bg-layer"></div>
 <div id="nav-container"></div>
-<div class="main-content" style="padding:1rem;max-width:1400px;">
+<div class="main-content" style="padding:1rem;padding-top:60px;max-width:1400px;">
 
 <!-- Header -->
 <div class="fund-header">
@@ -77,9 +78,9 @@
     <div class="fund-subtitle">Tracking private capital flows across the frontier technology stack</div>
   </div>
   <div class="time-toggle">
-    <button class="time-btn active" data-period="Q1_2026" onclick="setPeriod(this)">Q1 2026</button>
-    <button class="time-btn" data-period="Q4_2025" onclick="setPeriod(this)">Q4 2025</button>
+    <button class="time-btn active" data-period="3M" onclick="setPeriod(this)">3M</button>
     <button class="time-btn" data-period="6M" onclick="setPeriod(this)">6M</button>
+    <button class="time-btn" data-period="1Y" onclick="setPeriod(this)">1Y</button>
   </div>
 </div>
 
@@ -101,21 +102,26 @@
   <!-- Funding Trends Chart -->
   <div class="chart-box">
     <div class="chart-box-title">FUNDING TRENDS</div>
-    <canvas id="trends-chart" height="220"></canvas>
+    <div style="position:relative;height:320px;"><canvas id="trends-chart"></canvas></div>
   </div>
 
   <!-- Top 10 Rounds -->
   <div class="chart-box">
     <div class="chart-box-title">TOP 10 ROUNDS</div>
     <table class="top-table" id="top-rounds-table">
-      <thead><tr><th>#</th><th>Company</th><th>Sector</th><th>Round</th><th class="r">Amount ($M)</th><th>Date</th></tr></thead>
+      <thead><tr>
+        <th>#</th>
+        <th style="cursor:pointer" onclick="sortTopRounds('company')">Company <span id="sort-company"></span></th>
+        <th style="cursor:pointer" onclick="sortTopRounds('sector')">Sector <span id="sort-sector"></span></th>
+        <th style="cursor:pointer" onclick="sortTopRounds('round')">Round <span id="sort-round"></span></th>
+        <th class="r" style="cursor:pointer" onclick="sortTopRounds('amount')">Amount ($M) <span id="sort-amount"></span></th>
+        <th style="cursor:pointer" onclick="sortTopRounds('date')">Date <span id="sort-date"></span></th>
+      </tr></thead>
       <tbody id="top-rounds-body"></tbody>
     </table>
     <a href="#" class="view-all-link" onclick="setTab('rounds',document.querySelector('.fund-tab:nth-child(2)'));return false" style="margin-top:0.5rem;display:block;">View all 138 rounds &rarr;</a>
   </div>
 
-  <!-- Notable -->
-  <div class="notable-card" id="notable-card"></div>
 </div>
 
 <div>
@@ -136,6 +142,9 @@
     <div class="chart-box-title">STAGE DISTRIBUTION</div>
     <div id="stage-dist"></div>
   </div>
+
+  <!-- Notable -->
+  <div class="notable-card" id="notable-card"></div>
 </div>
 </div>
 </div>
