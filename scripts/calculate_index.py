@@ -34,6 +34,7 @@ BASE_DATE_PATH = os.path.join(INDEX_DIR, "base_date.json")
 SUMMARY_PATH   = os.path.join(INDEX_DIR, "summary.json")
 
 BASE_VALUE = 1000.0
+NORMALISE_DATE = "2025-03-31"  # All indices normalised to BASE_VALUE on this date
 CAP_LIMIT  = 0.05  # 5% max weight per entity
 MIN_MARKET_CAP = 10_000_000  # $10M minimum for index inclusion
 
@@ -190,6 +191,38 @@ def backfill_index(entities, weights, price_matrix, all_dates, base_date_str, cu
     return series, base_date_str, base_prices
 
 
+def normalise_series(series, target_date=NORMALISE_DATE, target_value=BASE_VALUE):
+    """
+    Rescale an entire index series so that the value on target_date = target_value.
+    If target_date is not in the series, use the nearest available date.
+    Returns (normalised_series, actual_target_date, scale_factor).
+    """
+    if not series:
+        return series, target_date, 1.0
+
+    # Find the value on or nearest to target_date
+    raw_value = None
+    actual_date = None
+    for pt in series:
+        if pt["date"] == target_date:
+            raw_value = pt["value"]
+            actual_date = target_date
+            break
+        if pt["date"] > target_date and raw_value is None:
+            raw_value = pt["value"]
+            actual_date = pt["date"]
+            break
+        raw_value = pt["value"]
+        actual_date = pt["date"]
+
+    if raw_value is None or raw_value == 0:
+        return series, target_date, 1.0
+
+    scale_factor = target_value / raw_value
+    normalised = [{"date": pt["date"], "value": round(pt["value"] * scale_factor, 2)} for pt in series]
+    return normalised, actual_date, scale_factor
+
+
 def main():
     print("Robotnik Index Calculator (with backfill)")
     print("=" * 50)
@@ -323,15 +356,21 @@ def main():
         composite_series, actual_base_date, base_prices = backfill_index(
             eligible, weights, price_matrix, all_dates, full_base_str
         )
+        # Normalise: value on NORMALISE_DATE = BASE_VALUE (1000.00)
+        composite_series, norm_date, norm_factor = normalise_series(composite_series)
         composite_value = composite_series[-1]["value"] if composite_series else BASE_VALUE
         print(f"  Full basket series: {len(composite_series)} data points")
+        print(f"  Normalised to {BASE_VALUE:.2f} on {norm_date} (factor: {norm_factor:.6f})")
 
         # Equities-only series (~5Y)
         eq_series, eq_actual_base, eq_base_prices = backfill_index(
             equities_only, equities_weights, price_matrix, all_dates, eq_base_str
         )
+        # Normalise equities-only series to same date
+        eq_series, eq_norm_date, eq_norm_factor = normalise_series(eq_series)
         eq_value = eq_series[-1]["value"] if eq_series else BASE_VALUE
         print(f"  Equities-only series: {len(eq_series)} data points")
+        print(f"  Normalised to {BASE_VALUE:.2f} on {eq_norm_date} (factor: {eq_norm_factor:.6f})")
     else:
         composite_series = [{"date": today_str, "value": BASE_VALUE}]
         composite_value = BASE_VALUE
@@ -344,8 +383,10 @@ def main():
 
     # ── base_date.json ───────────────────────────────────────────────
     base_data = {
-        "base_date": actual_base_date,
+        "base_date": NORMALISE_DATE,
         "base_value": BASE_VALUE,
+        "raw_base_date": actual_base_date,
+        "normalise_date": NORMALISE_DATE,
         "base_prices": base_prices,
         "base_weights": weights,
         "entity_count": len(eligible),
@@ -357,7 +398,7 @@ def main():
     # ── robotnik_index.json ──────────────────────────────────────────
     index_output = {
         "name": "Robotnik Composite Index",
-        "base_date": actual_base_date,
+        "base_date": NORMALISE_DATE,
         "base_value": BASE_VALUE,
         "current_value": composite_value,
         "current_date": today_str,
@@ -365,7 +406,7 @@ def main():
         "series": composite_series,
         # Dynamic composition: equities-only series for longer time ranges
         "equities_only": {
-            "base_date": eq_actual_base,
+            "base_date": NORMALISE_DATE,
             "base_value": BASE_VALUE,
             "current_value": eq_value,
             "entity_count": len(equities_only),
@@ -390,7 +431,10 @@ def main():
             sub_series, _, _ = backfill_index(
                 sector_entities, sector_weights, price_matrix, all_dates, actual_base_date
             )
+            # Normalise sub-index to BASE_VALUE on NORMALISE_DATE
+            sub_series, sub_norm_date, sub_norm_factor = normalise_series(sub_series)
             sector_value = sub_series[-1]["value"] if sub_series else BASE_VALUE
+            print(f"    {sector}: normalised on {sub_norm_date} (factor: {sub_norm_factor:.6f})")
         else:
             sub_series = [{"date": today_str, "value": BASE_VALUE}]
             sector_value = BASE_VALUE
@@ -425,7 +469,7 @@ def main():
             "name": "Robotnik Composite Index",
             "value": composite_value,
             "daily_change_pct": daily_change_pct,
-            "base_date": actual_base_date,
+            "base_date": NORMALISE_DATE,
             "base_value": BASE_VALUE,
             "entities": len(eligible),
         },
