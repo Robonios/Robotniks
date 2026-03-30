@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-03-29T06:12:45.725707Z",
+  "fetched_at": "2026-03-30T07:19:03.648056Z",
   "count": 288,
   "source": "EODHD (eodhd.com)",
   "equities": [
@@ -992,11 +992,11 @@
       "eodhd_symbol": "2308.TW",
       "name": "Delta Electronics",
       "sector": "Robotics",
-      "price": 1510,
+      "price": 1485,
       "currency": "TWD",
-      "change_pct": -0.33,
-      "volume": 10513474,
-      "date": "2026-03-27",
+      "change_pct": -1.66,
+      "volume": 11714260,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -1172,11 +1172,11 @@
       "eodhd_symbol": "1ZM.F",
       "name": "Hirata Corp",
       "sector": "Robotics",
-      "price": 13.121,
+      "price": 13.193,
       "currency": "EUR",
-      "change_pct": -0.81,
-      "volume": 233,
-      "date": "2026-03-26",
+      "change_pct": 0.55,
+      "volume": 0,
+      "date": "2026-03-27",
       "source": "EODHD"
     },
     {
@@ -1196,11 +1196,11 @@
       "eodhd_symbol": "2317.TW",
       "name": "Hon Hai Precision (Foxconn)",
       "sector": "Robotics",
-      "price": 199.5,
+      "price": 194,
       "currency": "TWD",
-      "change_pct": -0.5,
-      "volume": 29465112,
-      "date": "2026-03-27",
+      "change_pct": -2.76,
+      "volume": 46242204,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -1619,7 +1619,7 @@
       "price": 127,
       "currency": "CHF",
       "change_pct": -0.86,
-      "volume": 50646,
+      "volume": 50606,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1823,7 +1823,7 @@
       "price": 202.59,
       "currency": "USD",
       "change_pct": -1.22,
-      "volume": 921293,
+      "volume": 920983,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1859,7 +1859,7 @@
       "price": 695.4,
       "currency": "USD",
       "change_pct": -1.11,
-      "volume": 2056711,
+      "volume": 2059801,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1955,7 +1955,7 @@
       "price": 83.78,
       "currency": "USD",
       "change_pct": -3.14,
-      "volume": 986547,
+      "volume": 986520,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2039,7 +2039,7 @@
       "price": 123.5,
       "currency": "USD",
       "change_pct": -5.72,
-      "volume": 548837,
+      "volume": 548848,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2111,7 +2111,7 @@
       "price": 343,
       "currency": "USD",
       "change_pct": -1.81,
-      "volume": 1095685,
+      "volume": 1095447,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2207,7 +2207,7 @@
       "price": 50.23,
       "currency": "USD",
       "change_pct": -3.05,
-      "volume": 6357473,
+      "volume": 6357482,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2375,7 +2375,7 @@
       "price": 34.79,
       "currency": "USD",
       "change_pct": -2.08,
-      "volume": 1429242,
+      "volume": 1441201,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2663,7 +2663,7 @@
       "price": 273.39,
       "currency": "USD",
       "change_pct": 0.28,
-      "volume": 612815,
+      "volume": 612709,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2771,7 +2771,7 @@
       "price": 190.52,
       "currency": "USD",
       "change_pct": -1.98,
-      "volume": 5999197,
+      "volume": 5989940,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2807,7 +2807,7 @@
       "price": 679,
       "currency": "USD",
       "change_pct": -1.88,
-      "volume": 581421,
+      "volume": 581280,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2819,7 +2819,7 @@
       "price": 346.76,
       "currency": "USD",
       "change_pct": -2.4,
-      "volume": 1505359,
+      "volume": 1502473,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2855,7 +2855,7 @@
       "price": 120.78,
       "currency": "USD",
       "change_pct": -0.53,
-      "volume": 175714,
+      "volume": 175746,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2951,7 +2951,7 @@
       "price": 79.38,
       "currency": "USD",
       "change_pct": -1.44,
-      "volume": 833907,
+      "volume": 833858,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3059,7 +3059,7 @@
       "price": 52.51,
       "currency": "USD",
       "change_pct": -2.07,
-      "volume": 992934,
+      "volume": 992932,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3104,11 +3104,11 @@
       "eodhd_symbol": "SCC.TA",
       "name": "Space Communication",
       "sector": "Space",
-      "price": 261,
+      "price": 251,
       "currency": "USD",
-      "change_pct": -0.76,
-      "volume": 194451,
-      "date": "2026-03-26",
+      "change_pct": -3.83,
+      "volume": 160979,
+      "date": "2026-03-27",
       "source": "EODHD"
     },
     {
@@ -3131,7 +3131,7 @@
       "price": 22.79,
       "currency": "USD",
       "change_pct": -4.32,
-      "volume": 1203244,
+      "volume": 1202428,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3200,11 +3200,11 @@
       "eodhd_symbol": "6153.TW",
       "name": "Coretronic",
       "sector": "Materials",
-      "price": 17.2,
+      "price": 16.55,
       "currency": "TWD",
-      "change_pct": 5.2,
-      "volume": 5123420,
-      "date": "2026-03-27",
+      "change_pct": -3.78,
+      "volume": 3847954,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -3296,11 +3296,11 @@
       "eodhd_symbol": "3037.TW",
       "name": "Unimicron",
       "sector": "Materials",
-      "price": 505,
+      "price": 493.5,
       "currency": "TWD",
-      "change_pct": 0.6,
-      "volume": 5741548,
-      "date": "2026-03-27",
+      "change_pct": -2.28,
+      "volume": 5093871,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -3320,11 +3320,11 @@
       "eodhd_symbol": "LYC.AU",
       "name": "Lynas Rare Earths",
       "sector": "Materials",
-      "price": 20.08,
+      "price": 19.72,
       "currency": "USD",
-      "change_pct": 0.4,
-      "volume": 3289128,
-      "date": "2026-03-27",
+      "change_pct": -1.79,
+      "volume": 2514527,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -3332,11 +3332,11 @@
       "eodhd_symbol": "ILU.AU",
       "name": "Iluka Resources",
       "sector": "Materials",
-      "price": 6.68,
+      "price": 6.58,
       "currency": "USD",
-      "change_pct": 3.41,
-      "volume": 2174821,
-      "date": "2026-03-27",
+      "change_pct": -1.5,
+      "volume": 1809913,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -3344,11 +3344,11 @@
       "eodhd_symbol": "ARU.AU",
       "name": "Arafura Rare Earths",
       "sector": "Materials",
-      "price": 0.27,
+      "price": 0.265,
       "currency": "USD",
-      "change_pct": -3.57,
-      "volume": 22182954,
-      "date": "2026-03-27",
+      "change_pct": -1.85,
+      "volume": 21298185,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -3383,7 +3383,7 @@
       "price": 179.45,
       "currency": "USD",
       "change_pct": 2.84,
-      "volume": 1571809,
+      "volume": 1570882,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3431,7 +3431,7 @@
       "price": 140.43,
       "currency": "USD",
       "change_pct": -2.44,
-      "volume": 1499147,
+      "volume": 1499694,
       "date": "2026-03-27",
       "source": "EODHD"
     },

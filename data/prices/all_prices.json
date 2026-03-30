@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-03-29T06:12:45.725707Z",
+  "fetched_at": "2026-03-30T07:19:03.648056Z",
   "count": 327,
   "sources": [
     "EODHD (eodhd.com)",
@@ -12,11 +12,11 @@
       "coingecko_id": "empulser-enterprises",
       "name": "Empulser Enterprises",
       "sector": "Token",
-      "price": 0.072506,
+      "price": 0.072446,
       "currency": "USD",
-      "change_pct": -8.48,
+      "change_pct": -0.35,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -228,11 +228,11 @@
       "eodhd_symbol": "2308.TW",
       "name": "Delta Electronics",
       "sector": "Robotics",
-      "price": 1510,
+      "price": 1485,
       "currency": "TWD",
-      "change_pct": -0.33,
-      "volume": 10513474,
-      "date": "2026-03-27",
+      "change_pct": -1.66,
+      "volume": 11714260,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -240,11 +240,11 @@
       "eodhd_symbol": "2317.TW",
       "name": "Hon Hai Precision (Foxconn)",
       "sector": "Robotics",
-      "price": 199.5,
+      "price": 194,
       "currency": "TWD",
-      "change_pct": -0.5,
-      "volume": 29465112,
-      "date": "2026-03-27",
+      "change_pct": -2.76,
+      "volume": 46242204,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -360,11 +360,11 @@
       "eodhd_symbol": "3037.TW",
       "name": "Unimicron",
       "sector": "Materials",
-      "price": 505,
+      "price": 493.5,
       "currency": "TWD",
-      "change_pct": 0.6,
-      "volume": 5741548,
-      "date": "2026-03-27",
+      "change_pct": -2.28,
+      "volume": 5093871,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -540,11 +540,11 @@
       "eodhd_symbol": "6153.TW",
       "name": "Coretronic",
       "sector": "Materials",
-      "price": 17.2,
+      "price": 16.55,
       "currency": "TWD",
-      "change_pct": 5.2,
-      "volume": 5123420,
-      "date": "2026-03-27",
+      "change_pct": -3.78,
+      "volume": 3847954,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -552,11 +552,11 @@
       "eodhd_symbol": "1ZM.F",
       "name": "Hirata Corp",
       "sector": "Robotics",
-      "price": 13.121,
+      "price": 13.193,
       "currency": "EUR",
-      "change_pct": -0.81,
-      "volume": 233,
-      "date": "2026-03-26",
+      "change_pct": 0.55,
+      "volume": 0,
+      "date": "2026-03-27",
       "source": "EODHD"
     },
     {
@@ -1023,7 +1023,7 @@
       "price": 179.45,
       "currency": "USD",
       "change_pct": 2.84,
-      "volume": 1571809,
+      "volume": 1570882,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1128,11 +1128,11 @@
       "coingecko_id": "animus",
       "name": "Animus",
       "sector": "Token",
-      "price": 1.159e-05,
+      "price": 1.182e-05,
       "currency": "USD",
-      "change_pct": 0.47,
+      "change_pct": 1.88,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1200,11 +1200,11 @@
       "eodhd_symbol": "ARU.AU",
       "name": "Arafura Rare Earths",
       "sector": "Materials",
-      "price": 0.27,
+      "price": 0.265,
       "currency": "USD",
-      "change_pct": -3.57,
-      "volume": 22182954,
-      "date": "2026-03-27",
+      "change_pct": -1.85,
+      "volume": 21298185,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -1251,7 +1251,7 @@
       "price": 140.43,
       "currency": "USD",
       "change_pct": -2.44,
-      "volume": 1499147,
+      "volume": 1499694,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1260,11 +1260,11 @@
       "coingecko_id": "autonoma-network",
       "name": "Autonoma Network",
       "sector": "Token",
-      "price": 4.25e-06,
+      "price": 4.3e-06,
       "currency": "USD",
-      "change_pct": -0.11,
+      "change_pct": 2.08,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1284,11 +1284,11 @@
       "coingecko_id": "auki-labs",
       "name": "Auki",
       "sector": "Token",
-      "price": 0.00774959,
+      "price": 0.00760027,
       "currency": "USD",
-      "change_pct": -2.62,
+      "change_pct": -5.0,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1347,7 +1347,7 @@
       "price": 190.52,
       "currency": "USD",
       "change_pct": -1.98,
-      "volume": 5999197,
+      "volume": 5989940,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1392,11 +1392,11 @@
       "coingecko_id": "homebrew-robotics-club",
       "name": "Homebrew Robotics Club",
       "sector": "Token",
-      "price": 0.00065743,
+      "price": 0.00068454,
       "currency": "USD",
-      "change_pct": -0.59,
+      "change_pct": 4.49,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1419,7 +1419,7 @@
       "price": 202.59,
       "currency": "USD",
       "change_pct": -1.22,
-      "volume": 921293,
+      "volume": 920983,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1455,7 +1455,7 @@
       "price": 695.4,
       "currency": "USD",
       "change_pct": -1.11,
-      "volume": 2056711,
+      "volume": 2059801,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1524,11 +1524,11 @@
       "coingecko_id": "codec-flow",
       "name": "Codec Flow",
       "sector": "Token",
-      "price": 0.00244231,
+      "price": 0.00231068,
       "currency": "USD",
-      "change_pct": -0.55,
+      "change_pct": -4.82,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1611,7 +1611,7 @@
       "price": 120.78,
       "currency": "USD",
       "change_pct": -0.53,
-      "volume": 175714,
+      "volume": 175746,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1624,7 +1624,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1648,7 +1648,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1692,11 +1692,11 @@
       "coingecko_id": "modulr",
       "name": "Modulr",
       "sector": "Token",
-      "price": 1.74,
+      "price": 2.0,
       "currency": "USD",
-      "change_pct": 2.01,
+      "change_pct": 14.59,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1800,11 +1800,11 @@
       "coingecko_id": "forma-robotics",
       "name": "Forma Robotics",
       "sector": "Token",
-      "price": 0.00031708,
+      "price": 0.00030542,
       "currency": "USD",
-      "change_pct": 2.15,
+      "change_pct": -3.42,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1851,7 +1851,7 @@
       "price": 346.76,
       "currency": "USD",
       "change_pct": -2.4,
-      "volume": 1505359,
+      "volume": 1502473,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1860,11 +1860,11 @@
       "coingecko_id": "geodnet",
       "name": "Geodnet",
       "sector": "Token",
-      "price": 0.142126,
+      "price": 0.142382,
       "currency": "USD",
-      "change_pct": 0.97,
+      "change_pct": 0.38,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -1887,7 +1887,7 @@
       "price": 83.78,
       "currency": "USD",
       "change_pct": -3.14,
-      "volume": 986547,
+      "volume": 986520,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1947,7 +1947,7 @@
       "price": 273.39,
       "currency": "USD",
       "change_pct": 0.28,
-      "volume": 612815,
+      "volume": 612709,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -1995,7 +1995,7 @@
       "price": 79.38,
       "currency": "USD",
       "change_pct": -1.44,
-      "volume": 833907,
+      "volume": 833858,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2016,11 +2016,11 @@
       "eodhd_symbol": "ILU.AU",
       "name": "Iluka Resources",
       "sector": "Materials",
-      "price": 6.68,
+      "price": 6.58,
       "currency": "USD",
-      "change_pct": 3.41,
-      "volume": 2174821,
-      "date": "2026-03-27",
+      "change_pct": -1.5,
+      "volume": 1809913,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -2076,11 +2076,11 @@
       "coingecko_id": "iotex",
       "name": "IoTeX",
       "sector": "Token",
-      "price": 0.00473062,
+      "price": 0.00469323,
       "currency": "USD",
-      "change_pct": -0.66,
+      "change_pct": -0.55,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2139,7 +2139,7 @@
       "price": 123.5,
       "currency": "USD",
       "change_pct": -5.72,
-      "volume": 548837,
+      "volume": 548848,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2160,11 +2160,11 @@
       "coingecko_id": "jojoworld",
       "name": "JojoWorld",
       "sector": "Token",
-      "price": 0.00350672,
+      "price": 0.00819552,
       "currency": "USD",
-      "change_pct": -7.19,
+      "change_pct": 129.44,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2172,11 +2172,11 @@
       "coingecko_id": "kage-network",
       "name": "KAGE Network",
       "sector": "Token",
-      "price": 0.00027683,
+      "price": 0.0002794,
       "currency": "USD",
-      "change_pct": -0.68,
+      "change_pct": -0.2,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2367,7 +2367,7 @@
       "price": 343,
       "currency": "USD",
       "change_pct": -1.81,
-      "volume": 1095685,
+      "volume": 1095447,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2436,11 +2436,11 @@
       "eodhd_symbol": "LYC.AU",
       "name": "Lynas Rare Earths",
       "sector": "Materials",
-      "price": 20.08,
+      "price": 19.72,
       "currency": "USD",
-      "change_pct": 0.4,
-      "volume": 3289128,
-      "date": "2026-03-27",
+      "change_pct": -1.79,
+      "volume": 2514527,
+      "date": "2026-03-30",
       "source": "EODHD"
     },
     {
@@ -2488,7 +2488,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2664,11 +2664,11 @@
       "coingecko_id": "natix-network",
       "name": "NATIX Network",
       "sector": "Token",
-      "price": 8.547e-05,
+      "price": 8.633e-05,
       "currency": "USD",
-      "change_pct": -1.95,
+      "change_pct": 0.9,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2703,7 +2703,7 @@
       "price": 679,
       "currency": "USD",
       "change_pct": -1.88,
-      "volume": 581421,
+      "volume": 581280,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2787,7 +2787,7 @@
       "price": 50.23,
       "currency": "USD",
       "change_pct": -3.05,
-      "volume": 6357473,
+      "volume": 6357482,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -2832,11 +2832,11 @@
       "coingecko_id": "onocoy-token",
       "name": "Onocoy Token",
       "sector": "Token",
-      "price": 0.02794815,
+      "price": 0.02659246,
       "currency": "USD",
-      "change_pct": -4.14,
+      "change_pct": -1.43,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2856,11 +2856,11 @@
       "coingecko_id": "one-path",
       "name": "One Path",
       "sector": "Token",
-      "price": 4.368e-05,
+      "price": 4.305e-05,
       "currency": "USD",
-      "change_pct": 0.61,
+      "change_pct": -1.26,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2872,7 +2872,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2880,11 +2880,11 @@
       "coingecko_id": "opus-2",
       "name": "Opus Genesis",
       "sector": "Token",
-      "price": 0.0018381,
+      "price": 0.00182295,
       "currency": "USD",
-      "change_pct": -5.57,
+      "change_pct": 1.52,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2904,11 +2904,11 @@
       "coingecko_id": "ovr",
       "name": "Ovr",
       "sector": "Token",
-      "price": 0.03896643,
+      "price": 0.03961254,
       "currency": "USD",
-      "change_pct": 2.99,
+      "change_pct": 2.36,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -2928,11 +2928,11 @@
       "coingecko_id": "peaq-2",
       "name": "peaq",
       "sector": "Token",
-      "price": 0.0146817,
+      "price": 0.01447668,
       "currency": "USD",
-      "change_pct": -7.16,
+      "change_pct": -1.37,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3027,7 +3027,7 @@
       "price": 52.51,
       "currency": "USD",
       "change_pct": -2.07,
-      "volume": 992934,
+      "volume": 992932,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3036,11 +3036,11 @@
       "coingecko_id": "qace-dynamics",
       "name": "Qace Dynamics",
       "sector": "Token",
-      "price": 1.351e-05,
+      "price": 1.353e-05,
       "currency": "USD",
-      "change_pct": 0.26,
+      "change_pct": 0.63,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3084,11 +3084,11 @@
       "coingecko_id": "robora",
       "name": "Robora",
       "sector": "Token",
-      "price": 0.00108847,
+      "price": 0.0011325,
       "currency": "USD",
-      "change_pct": 1.83,
+      "change_pct": 4.16,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3120,11 +3120,11 @@
       "coingecko_id": "rice-ai",
       "name": "Rice AI",
       "sector": "Token",
-      "price": 0.00310689,
+      "price": 0.00303905,
       "currency": "USD",
-      "change_pct": -1.15,
+      "change_pct": -2.79,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3156,11 +3156,11 @@
       "coingecko_id": "roba",
       "name": "ROBA",
       "sector": "Token",
-      "price": 0.00013192,
+      "price": 0.00013403,
       "currency": "USD",
-      "change_pct": 0.39,
+      "change_pct": 1.6,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3172,7 +3172,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3180,11 +3180,11 @@
       "coingecko_id": "robo-token-2",
       "name": "Fabric Protocol",
       "sector": "Token",
-      "price": 0.02386015,
+      "price": 0.02316862,
       "currency": "USD",
-      "change_pct": 2.82,
+      "change_pct": -2.81,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3192,11 +3192,11 @@
       "coingecko_id": "robostack",
       "name": "RoboStack",
       "sector": "Token",
-      "price": 0.00013119,
+      "price": 0.00013788,
       "currency": "USD",
-      "change_pct": -3.63,
+      "change_pct": 3.98,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3216,11 +3216,11 @@
       "coingecko_id": "roko-network",
       "name": "Roko Network",
       "sector": "Token",
-      "price": 4.11e-06,
+      "price": 4.16e-06,
       "currency": "USD",
-      "change_pct": -3.52,
+      "change_pct": 1.49,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3228,11 +3228,11 @@
       "coingecko_id": "rovr-network",
       "name": "ROVR Network",
       "sector": "Token",
-      "price": 0.00298458,
+      "price": 0.00295542,
       "currency": "USD",
-      "change_pct": -0.48,
+      "change_pct": -0.97,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3244,7 +3244,7 @@
       "currency": "USD",
       "change_pct": null,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3336,11 +3336,11 @@
       "eodhd_symbol": "SCC.TA",
       "name": "Space Communication",
       "sector": "Space",
-      "price": 261,
+      "price": 251,
       "currency": "USD",
-      "change_pct": -0.76,
-      "volume": 194451,
-      "date": "2026-03-26",
+      "change_pct": -3.83,
+      "volume": 160979,
+      "date": "2026-03-27",
       "source": "EODHD"
     },
     {
@@ -3396,11 +3396,11 @@
       "coingecko_id": "vitanova",
       "name": "VitaNova",
       "sector": "Token",
-      "price": 0.00012433,
+      "price": 0.00012355,
       "currency": "USD",
-      "change_pct": 1.36,
+      "change_pct": -0.44,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3468,11 +3468,11 @@
       "coingecko_id": "silencio",
       "name": "Silencio",
       "sector": "Token",
-      "price": 4.129e-05,
+      "price": 4.122e-05,
       "currency": "USD",
-      "change_pct": 0.23,
+      "change_pct": 0.67,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3480,11 +3480,11 @@
       "coingecko_id": "simple-ai",
       "name": "Simple AI",
       "sector": "Token",
-      "price": 0.00058606,
+      "price": 0.00058776,
       "currency": "USD",
-      "change_pct": 0.0,
+      "change_pct": 0.57,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3528,11 +3528,11 @@
       "coingecko_id": "spawn",
       "name": "Spawn",
       "sector": "Token",
-      "price": 2.691e-05,
+      "price": 2.75e-05,
       "currency": "USD",
-      "change_pct": 1.94,
+      "change_pct": 2.98,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3591,7 +3591,7 @@
       "price": 34.79,
       "currency": "USD",
       "change_pct": -2.08,
-      "volume": 1429242,
+      "volume": 1441201,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3687,7 +3687,7 @@
       "price": 127,
       "currency": "CHF",
       "change_pct": -0.86,
-      "volume": 50646,
+      "volume": 50606,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3816,11 +3816,11 @@
       "coingecko_id": "vaderai-by-virtuals",
       "name": "Vader",
       "sector": "Token",
-      "price": 0.00137895,
+      "price": 0.00133117,
       "currency": "USD",
-      "change_pct": 1.53,
+      "change_pct": -3.28,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3828,11 +3828,11 @@
       "coingecko_id": "virtual-protocol",
       "name": "Virtuals Protocol",
       "sector": "Token",
-      "price": 0.658819,
+      "price": 0.667198,
       "currency": "USD",
-      "change_pct": 1.02,
+      "change_pct": 1.76,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
@@ -3843,7 +3843,7 @@
       "price": 22.79,
       "currency": "USD",
       "change_pct": -4.32,
-      "volume": 1203244,
+      "volume": 1202428,
       "date": "2026-03-27",
       "source": "EODHD"
     },
@@ -3912,11 +3912,11 @@
       "coingecko_id": "robonomics-network",
       "name": "Robonomics Network",
       "sector": "Token",
-      "price": 0.637306,
+      "price": 0.03512992,
       "currency": "USD",
-      "change_pct": 1776.38,
+      "change_pct": -95.01,
       "volume": null,
-      "date": "2026-03-29",
+      "date": "2026-03-30",
       "source": "CoinGecko"
     },
     {
