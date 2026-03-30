@@ -284,19 +284,22 @@ function renderSectorChart(p){
       responsive:true,cutout:'60%',
       plugins:{
         tooltip:tooltipStyle,
-        legend:{display:true,position:'bottom',labels:{
-          color:'#E6E8ED',font:{family:'Roboto Mono',size:9},boxWidth:10,padding:6,
-          generateLabels:function(chart){
-            return chart.data.labels.map(function(l,i){
-              var v=chart.data.datasets[0].data[i];
-              var pct=total>0?(v/total*100).toFixed(0)+'%':'0%';
-              return{text:l+' '+pct+' ('+fmtM(v)+')',fillStyle:chart.data.datasets[0].backgroundColor[i],hidden:false,index:i};
-            });
-          }
-        }}
+        legend:{display:false}
       }
     }
   });
+  // Render HTML legend with guaranteed light text
+  var legendEl=document.getElementById('sector-legend');
+  if(legendEl){
+    legendEl.innerHTML=sectors.map(function(s,i){
+      var v=vals[i];
+      var pct=total>0?(v/total*100).toFixed(0)+'%':'0%';
+      var color=sectorColors[s];
+      return '<span style="display:inline-flex;align-items:center;margin-right:10px;margin-bottom:4px;font-size:9px;font-family:Roboto Mono,monospace;color:#E6E8ED;">'
+        +'<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+color+';margin-right:5px;flex-shrink:0;"><\/span>'
+        +esc(s)+' '+pct+' ('+fmtM(v)+')<\/span>';
+    }).join('');
+  }
 }
 
 // ===== Top Investors =====
