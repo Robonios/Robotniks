@@ -6,7 +6,7 @@
     { href: 'news.html', page: 'news', label: 'News', online: true },
     { href: 'intelligence.html', page: 'intelligence', label: 'Intelligence', online: true },
     { href: 'signals.html', page: 'signals', label: 'Frontier Signals', online: false },
-    { href: 'assets.html', page: 'assets', label: 'Frontier Assets', online: true },
+    { href: 'assets.html', page: 'assets', label: 'Frontier Assets', online: false },
     { href: 'commodities.html', page: 'commodities', label: 'Commodities', online: false },
     { href: 'funding.html', page: 'funding', label: 'Funding Ops', online: true },
     { href: 'recreation.html', page: 'recreation', label: 'Recreation Bay', online: true },
