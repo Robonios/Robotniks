@@ -350,33 +350,64 @@ def main():
     print(f"  Full basket base date: {full_base_str}")
     print(f"  Equities-only base date: {eq_base_str}")
 
-    # --- Backfill both series ---
+    # --- Backfill and produce a SINGLE unified series ---
+    # Strategy: compute full-basket (equities+tokens) from its start date,
+    # compute equities-only from its earlier start date, then splice them
+    # into one continuous series. Use the full-basket for all dates where
+    # it exists; prepend equities-only history (rescaled) for earlier dates.
+    # Normalise the unified series ONCE so 2025-03-31 = 1000.00.
     if all_dates and price_matrix:
         # Full basket series (~1Y)
         composite_series, actual_base_date, base_prices = backfill_index(
             eligible, weights, price_matrix, all_dates, full_base_str
         )
-        # Normalise: value on NORMALISE_DATE = BASE_VALUE (1000.00)
-        composite_series, norm_date, norm_factor = normalise_series(composite_series)
-        composite_value = composite_series[-1]["value"] if composite_series else BASE_VALUE
         print(f"  Full basket series: {len(composite_series)} data points")
-        print(f"  Normalised to {BASE_VALUE:.2f} on {norm_date} (factor: {norm_factor:.6f})")
 
         # Equities-only series (~5Y)
-        eq_series, eq_actual_base, eq_base_prices = backfill_index(
+        eq_series_raw, eq_actual_base, eq_base_prices = backfill_index(
             equities_only, equities_weights, price_matrix, all_dates, eq_base_str
         )
-        # Normalise equities-only series to same date
-        eq_series, eq_norm_date, eq_norm_factor = normalise_series(eq_series)
-        eq_value = eq_series[-1]["value"] if eq_series else BASE_VALUE
-        print(f"  Equities-only series: {len(eq_series)} data points")
-        print(f"  Normalised to {BASE_VALUE:.2f} on {eq_norm_date} (factor: {eq_norm_factor:.6f})")
+        print(f"  Equities-only series: {len(eq_series_raw)} data points")
+
+        # Splice: use equities-only for dates BEFORE the full basket starts,
+        # scaled so the splice point is seamless.
+        full_start_date = composite_series[0]["date"] if composite_series else today_str
+        full_start_value = composite_series[0]["value"] if composite_series else BASE_VALUE
+
+        # Find equities-only value at the splice date
+        eq_at_splice = None
+        for pt in eq_series_raw:
+            if pt["date"] >= full_start_date:
+                eq_at_splice = pt["value"]
+                break
+        if eq_at_splice and eq_at_splice > 0:
+            splice_factor = full_start_value / eq_at_splice
+        else:
+            splice_factor = 1.0
+
+        # Build unified series: rescaled eq history + full basket
+        unified_series = []
+        for pt in eq_series_raw:
+            if pt["date"] < full_start_date:
+                unified_series.append({"date": pt["date"], "value": round(pt["value"] * splice_factor, 2)})
+        unified_series.extend(composite_series)
+
+        # Normalise the entire unified series once: value on NORMALISE_DATE = 1000.00
+        unified_series, norm_date, norm_factor = normalise_series(unified_series)
+        composite_value = unified_series[-1]["value"] if unified_series else BASE_VALUE
+        print(f"  Unified series: {len(unified_series)} data points (spliced at {full_start_date})")
+        print(f"  Normalised to {BASE_VALUE:.2f} on {norm_date} (factor: {norm_factor:.6f})")
+
+        # For backwards compat, set eq_series = the same unified series
+        eq_series = unified_series
+        eq_value = composite_value
     else:
-        composite_series = [{"date": today_str, "value": BASE_VALUE}]
+        unified_series = [{"date": today_str, "value": BASE_VALUE}]
+        composite_series = unified_series
         composite_value = BASE_VALUE
         actual_base_date = today_str
         base_prices = prices_by_ticker
-        eq_series = [{"date": today_str, "value": BASE_VALUE}]
+        eq_series = unified_series
         eq_value = BASE_VALUE
         eq_actual_base = today_str
         eq_base_prices = prices_by_ticker
@@ -396,6 +427,8 @@ def main():
     save_json(BASE_DATE_PATH, base_data)
 
     # ── robotnik_index.json ──────────────────────────────────────────
+    # Use the unified series for BOTH the main series and equities_only
+    # (they are now identical — one continuous normalised series)
     index_output = {
         "name": "Robotnik Composite Index",
         "base_date": NORMALISE_DATE,
@@ -403,14 +436,14 @@ def main():
         "current_value": composite_value,
         "current_date": today_str,
         "entity_count": len(eligible),
-        "series": composite_series,
-        # Dynamic composition: equities-only series for longer time ranges
+        "series": unified_series,
+        # equities_only kept for backwards compat — same unified series
         "equities_only": {
             "base_date": NORMALISE_DATE,
             "base_value": BASE_VALUE,
-            "current_value": eq_value,
+            "current_value": composite_value,
             "entity_count": len(equities_only),
-            "series": eq_series,
+            "series": unified_series,
         },
     }
     save_json(INDEX_PATH, index_output)
