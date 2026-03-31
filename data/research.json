@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30 07:27",
+  "updated": "2026-03-31 07:12",
   "source": "OpenAlex",
   "count": 200,
   "papers": [
@@ -752,6 +752,25 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7142559653",
+      "title": "Rewired: Reconceptualizing Legal Services for the AI Age",
+      "authors": [
+        "Lev Breydo"
+      ],
+      "date": "2026-04-01",
+      "journal": "eYLS (Yale Law School)",
+      "abstract_snippet": "The legal profession is at a crossroads, caught between intensifying fears of AI-driven displacement and a generational opportunity for transformation. This Article provides a practical framework for navigating the shifting terrain. Situating legal innovation within a multi-century arc of...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Artificial Intelligence in Law",
+        "Law, AI, and Intellectual Property",
+        "Artificial Intelligence Applications"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7133575805",
       "title": "All I Really Need to Know About the Ethics of Third-Party Litigation Funding, I Learned From Watching Hulk Hogan",
       "authors": [
@@ -785,6 +804,65 @@
       "open_access": true,
       "category": "space",
       "topics": []
+    },
+    {
+      "id": "https://openalex.org/W7142669882",
+      "title": "AI-DRIVEN BLOCKCHAIN INTEGRATION IN LOGISTICS &amp; SUPPLY CHAIN MANAGEMENT",
+      "authors": [
+        "Neha Gupta",
+        "Rupali Dilip Taru"
+      ],
+      "date": "2026-03-29",
+      "journal": "",
+      "abstract_snippet": "Global supply chains are currently grappling with unprecedented complexity, fragmented data, and a lack of real-time transparency. This study explores the convergence of Artificial Intelligence (AI) and Blockchain technology as a dual-engine solution for Logistics and Supply Chain Management (SCM)....",
+      "doi_url": "https://doi.org/10.62823/mgm/2026/9789349468795/17",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Supply Chain Resilience and Risk Management",
+        "Blockchain Technology Applications and Security",
+        "Internet of Things and AI"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142738301",
+      "title": "A Survey on Cognitive Digital Twins: AI Integration, Cross-Platform Knowledge Services, and Intelligent Automation",
+      "authors": [
+        "Tharika Shree R"
+      ],
+      "date": "2026-03-29",
+      "journal": "International Journal for Research in Applied Science and Engineering Technology",
+      "abstract_snippet": "Cognitive Digital Twins (CDTs) represent the next evolutionary stage of Digital Twin systems which use artificial intelligence and adaptive learning and autonomous reasoning to create digital twins of physical and organizational systems. The emergingCDTframeworksusemachinelearningandknowledge...",
+      "doi_url": "https://doi.org/10.22214/ijraset.2026.78899",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Digital Transformation in Industry",
+        "Impact of AI and Big Data on Business and Society",
+        "Cognitive Science and Mapping"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142814100",
+      "title": "Impact of AI-Based Risk Management and Supply Chain Resilience",
+      "authors": [
+        "Bhumi Deb",
+        "Taru Rupali Dilip"
+      ],
+      "date": "2026-03-29",
+      "journal": "",
+      "abstract_snippet": "For decades, supply chain management was governed by a relentless pursuit of cost efficiency and lean operations. However, the fragility of these highly optimized, globalized networks has been laid bare by recent systemic shocks, including the COVID-19 pandemic, geopolitical instability, and...",
+      "doi_url": "https://doi.org/10.62823/mgm/2026/9789349468795/21",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Supply Chain Resilience and Risk Management",
+        "Leadership, Behavior, and Decision-Making Studies",
+        "Infrastructure Resilience and Vulnerability Analysis"
+      ]
     },
     {
       "id": "https://openalex.org/W7142439441",
@@ -829,6 +907,69 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7142104242",
+      "title": "Artificial intelligence in sustainable finance and Environmental, Social, and Governance (ESG) performance: A review",
+      "authors": [
+        "Vibhavari Prasad Mane"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Applied Resilience and Sustainability",
+      "abstract_snippet": "Artificial Intelligence (AI) is rapidly changing sustainable finance and Environmental, Social, and Governance (ESG) performance in particular, but the disjointed nature of current studies does not allow us to fully comprehend how machine learning, ESG analytics, responsible AI, and sustainable...",
+      "doi_url": "https://doi.org/10.70593/deepsci.0202033",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Sustainable Finance and Green Bonds",
+        "FinTech, Crowdfunding, Digital Finance",
+        "Corporate Social Responsibility Reporting"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4405465971",
+      "title": "Backstepping passivity-based trajectory tracking control of frictional oscillators: Continuous and discrete time analyses",
+      "authors": [
+        "Bernard Brogliato",
+        "F\u00e9lix Miranda-Villatoro",
+        "Aya Younes"
+      ],
+      "date": "2026-03-28",
+      "journal": "Automatica",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1016/j.automatica.2026.112944",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Iterative Learning Control Systems",
+        "Control Systems in Engineering",
+        "Dynamics and Control of Mechanical Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7141961053",
+      "title": "Towards Designing Valuable and Explainable Data-Driven Systems",
+      "authors": [
+        "Alberto Abell\u00f3",
+        "Ladjel Bellatreche",
+        "Oscar Romero",
+        "Panos Vassiliadis",
+        "Robert Wrembel"
+      ],
+      "date": "2026-03-28",
+      "journal": "Information Systems Frontiers",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.1007/s10796-026-10721-7",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Explainable Artificial Intelligence (XAI)",
+        "Big Data and Business Intelligence",
+        "Big Data and Digital Economy"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7142243459",
       "title": "Exploring the Impact of Socio-Economic Disparities on Crime Rates in Urban India",
       "authors": [
@@ -845,6 +986,65 @@
         "Crime Patterns and Interventions",
         "Agricultural risk and resilience",
         "Wildlife Conservation and Criminology Analyses"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7141936931",
+      "title": "Artificial intelligence, big data analytics, and deep learning for 6G communication networks: Challenges, applications, and future directions",
+      "authors": [
+        "Partha Sarathi Mohapatra"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Applied Resilience and Sustainability",
+      "abstract_snippet": "The fast development of 6G communication systems has posed serious challenges with management of ultra-density connections, massive traffic, and extremely evolving wireless environments that demand new solutions with the help of Artificial Intelligence, Big Data Analytics, and Deep Learning. The...",
+      "doi_url": "https://doi.org/10.70593/deepsci.0202034",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Advanced Data and IoT Technologies",
+        "Internet of Things and AI",
+        "Advanced Wireless Communication Technologies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142441389",
+      "title": "The labor theory of value in the era of artificial intelligence and digital platforms: challenges, innovations, and new mechanisms",
+      "authors": [
+        "Fenglin Zhang"
+      ],
+      "date": "2026-03-28",
+      "journal": "Humanities and Social Sciences Communications",
+      "abstract_snippet": "Abstract This research examines the contemporary relevance and necessary extensions of Marx\u2019s labor theory of value in the context of artificial intelligence (AI) and digital platforms through theoretical analysis and critical literature synthesis. As a primarily conceptual study, it explores how...",
+      "doi_url": "https://doi.org/10.1057/s41599-026-07030-4",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Digital Economy and Work Transformation",
+        "Political Economy and Marxism",
+        "Labor Movements and Unions"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142003371",
+      "title": "Concrete Demolition Techniques: A Global Review with Sustainable and Environmentally Friendly Insights for Pakistan",
+      "authors": [
+        "Muhammad Khubaib",
+        "Hamid Abdullah",
+        "Zeeshan Asghar"
+      ],
+      "date": "2026-03-28",
+      "journal": "Fusion Journal of Engineering and Sciences",
+      "abstract_snippet": "Concrete demolition is increasingly important due to global infrastructure renewal, urban densification, and the need for sustainable end-of-life management of built assets. Yet in many developing countries, including Pakistan, demolition practices remain labor-intensive, environmentally damaging,...",
+      "doi_url": "https://doi.org/10.64615/fjes...2026.111",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Innovations in Concrete and Construction Materials",
+        "Recycled Aggregate Concrete Performance",
+        "Construction Engineering and Safety"
       ]
     },
     {
@@ -960,6 +1160,45 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7143023333",
+      "title": "Exploration of Human\u2013Robot Collaborative Two-Sided Assembly Line Optimization Based on Workload Balancing",
+      "authors": [
+        "Na L\u00fc",
+        "Xuebin Zhu"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Global Economics and Management",
+      "abstract_snippet": "In the context of Industry 4.0, collaborative robots, as a key enabler of intelligent manufacturing, are increasingly being introduced into assembly environments, forming a novel human\u2013robot collaborative paradigm with workers. This study focuses on the optimal allocation of human\u2013robot...",
+      "doi_url": "https://doi.org/10.62051/ijgem.v10n3.15",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Assembly Line Balancing Optimization",
+        "Flexible and Reconfigurable Manufacturing Systems",
+        "Manufacturing Process and Optimization"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142834074",
+      "title": "Exploration of New Foreign Trade Opportunities in the Reshaping of Global Supply Chain",
+      "authors": [
+        "Xuantong Guo"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Global Economics and Management",
+      "abstract_snippet": "Global industrial chains are shifting toward nearshoring, digitalization, decarbonization, and enhanced resilience, driven by geopolitical, technological, environmental, and pandemic-related factors. This is both a pressure and a new opportunity for China's foreign trade. On the basis of analyzing...",
+      "doi_url": "https://doi.org/10.62051/ijgem.v10n3.06",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "E-commerce and Technology Innovations",
+        "Supply Chain Resilience and Risk Management",
+        "Advanced Technologies in Various Fields"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7141956492",
       "title": "The Ability to Influence",
       "authors": [
@@ -976,6 +1215,28 @@
         "International Student and Expatriate Challenges",
         "Organizational Leadership and Management Strategies",
         "Diverse Education and Engineering Focus"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7141903191",
+      "title": "Green Synthesis of Metal Oxide Nanoparticles Using Plant Extracts for Removal of Berberine Hydrochloride from Wastewater: A Comprehensive Review",
+      "authors": [
+        "Afnan Almalki",
+        "Seham S. Alterary",
+        "Maha Farouq El-Tohamy",
+        "Sayed M. Saleh"
+      ],
+      "date": "2026-03-28",
+      "journal": "JOURNAL of QASSIM UNIVERSITY FOR SCIENCE",
+      "abstract_snippet": "Water pollution caused by pharmaceutical residues, particularly berberine hydrochloride (BRB), has emerged as a significant environmental challenge in recent decades. Conventional wastewater treatment plants are not specifically designed to remove complex organic micropollutants, such as...",
+      "doi_url": "https://doi.org/10.25259/jqus_39_2025",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "Nanoparticles: synthesis and applications",
+        "Berberine and alkaloids research",
+        "Nanomaterials for catalytic reactions"
       ]
     },
     {
@@ -1047,6 +1308,25 @@
       "topics": []
     },
     {
+      "id": "https://openalex.org/W7142329527",
+      "title": "Students\u2019 perceptions and responsible adoption of artificial intelligence in education: Ethical considerations, impacts, and academic performance",
+      "authors": [
+        "Vibhavari Prasad Mane"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Applied Resilience and Sustainability",
+      "abstract_snippet": "The adoption of Artificial Intelligence in Education, specifically Generative AI in Education, has generated considerable opportunities to enhance the results of learning and at the same time has raised the issue of AI Ethics in Education, Academic Integrity, and the responsible use of intelligent...",
+      "doi_url": "https://doi.org/10.70593/deepsci.0202037",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Online Learning and Analytics",
+        "Ethics and Social Impacts of AI"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7142272691",
       "title": "The impact of artificial intelligence and learning analytics on students\u2019 academic performance",
       "authors": [
@@ -1092,6 +1372,25 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7142637789",
+      "title": "Exploration and Future Trends of Empowering ESG Development with Artificial Intelligence",
+      "authors": [
+        "Yi Lin"
+      ],
+      "date": "2026-03-28",
+      "journal": "International Journal of Global Economics and Management",
+      "abstract_snippet": "With the global emphasis on ESG, the concept of \"Environment (E) - Society (S) - Corporate Governance (G)\" has also entered people's vision and been widely used, mainly to describe a company's specific practices in environmental protection, social responsibility, corporate governance, and other...",
+      "doi_url": "https://doi.org/10.62051/ijgem.v10n3.05",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Impact of AI and Big Data on Business and Society",
+        "Advanced Technologies in Various Fields",
+        "Sustainable Finance and Green Bonds"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7141915174",
       "title": "Exploring spatial and economic feasibility of olive mill wastewater disposal and reuse in sicily through GIS analysis",
       "authors": [
@@ -1112,6 +1411,93 @@
         "Edible Oils Quality and Analysis",
         "Agriculture Sustainability and Environmental Impact",
         "Soil and Land Suitability Analysis"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142493504",
+      "title": "Atmospheric Correction for Multispectral Satellite Imagery: An introductory review",
+      "authors": [
+        "Arturo Jasso",
+        "Ignacio Mu\u00f1oz",
+        "David Duarte Cavalcante Pinto",
+        "Juan Manuel Ram\u00edrez"
+      ],
+      "date": "2026-03-28",
+      "journal": "Geof\u00edsica Internacional",
+      "abstract_snippet": "Remote Sensing provides valuable information about objects or remote areas, either using active sensors (i.e. RADAR and LiDAR) or passive (i.e. multispectral or hyperspectral imagery) using satellite retrieved images. Quality of remote sensing satellite images is frequently degraded due to several...",
+      "doi_url": "https://doi.org/10.22201/igeof.2954436xe.2026.65.2.1901",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Remote Sensing in Agriculture",
+        "Remote-Sensing Image Classification",
+        "Satellite Image Processing and Photogrammetry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142194712",
+      "title": "Building a representative UAV RGB reference dataset for national-scale satellite mapping of invasive goldenrods (Solidago spp.): an efficient workflow and accuracy drivers",
+      "authors": [
+        "Bo\u017cena Omelia\u0144ska",
+        "Ewa Ko\u0142aczkowska",
+        "Anna Kowalska",
+        "Martyna Zarzycka",
+        "Edyta Regulska"
+      ],
+      "date": "2026-03-28",
+      "journal": "",
+      "abstract_snippet": "Reliable wall-to-wall mapping of invasive plants from satellite imagery depends on representative reference data and transparent quality control. Here we present a nationally distributed UAV RGB reference dataset and an end-to-end workflow designed to support national-scale satellite mapping of...",
+      "doi_url": "https://doi.org/10.31223/x5pb4k",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Remote Sensing in Agriculture",
+        "Remote Sensing and LiDAR Applications",
+        "Remote-Sensing Image Classification"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142158738",
+      "title": "From Theory to Practice: Design Principles for Teaching with Earth Observation Data Using the Key Concept \u201cSpatial Patterns\u201d",
+      "authors": [
+        "Johannes Keller",
+        "Alexander Siegmund"
+      ],
+      "date": "2026-03-28",
+      "journal": "European Journal of Geography",
+      "abstract_snippet": "Earth Observation (EO) data provide significant opportunities for geography education, enabling students to better understand our changing world. To make this powerful knowledge accessible, the German key geographic concept of \u201cspatial patterns\u201d provides a promising foundation for helping students...",
+      "doi_url": "https://doi.org/10.48088/ejg.j.kel.17.2.065.084",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Geography Education and Pedagogy",
+        "Geographic Information Systems Studies",
+        "Spatial Cognition and Navigation"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142221065",
+      "title": "Integrating hydrological simulation and paddy yield prediction using SWAT in the Bharathapuzha River basin of South India",
+      "authors": [
+        "D. Karunanidhi",
+        "Gulja S. Nair",
+        "T. Subramani",
+        "Berihu Abadi Berhe"
+      ],
+      "date": "2026-03-28",
+      "journal": "Scientific Reports",
+      "abstract_snippet": "This study integrates hydrological simulation and crop yield modeling using the SWAT model to assess paddy production in the Palakkad and Alathur blocks of the Bharathapuzha River basin, South India. A majority of Indians rely on paddy as a staple food, particularly in Kerala; hence, the...",
+      "doi_url": "https://doi.org/10.1038/s41598-026-45201-0",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Climate change impacts on agriculture",
+        "Hydrology and Watershed Management Studies",
+        "Hydrology and Drought Analysis"
       ]
     },
     {
@@ -1138,6 +1524,29 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7142288132",
+      "title": "Assessing temporal trends of forest aboveground biomass density in Japan from 2009 to 2018 under disturbance regimes using multisource remote sensing data",
+      "authors": [
+        "Hantao Li",
+        "Takuya Hiroshima",
+        "Xiaoxuan Li",
+        "Tomomichi Kato",
+        "Masato Hayashi"
+      ],
+      "date": "2026-03-28",
+      "journal": "Journal of Forestry Research",
+      "abstract_snippet": "Abstract Understanding long-term aboveground biomass density (AGBD) trends under a changing climate is essential for quantifying forest carbon dynamics. However, management activities such as harvesting and thinning can obscure climate-driven signals. In this study, we developed a national...",
+      "doi_url": "https://doi.org/10.1007/s11676-026-02036-9",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Remote Sensing and LiDAR Applications",
+        "Remote Sensing in Agriculture",
+        "Plant Water Relations and Carbon Dynamics"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7141443036",
       "title": "A Systematic Review of Safety-Driven Approaches in Human\u2013Robot Collaborative Systems",
       "authors": [
@@ -1161,94 +1570,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141418607",
-      "title": "Internet of things: ethical and legal dimensions of the new technological environment",
-      "authors": [
-        "V. Horielova"
-      ],
-      "date": "2026-03-27",
-      "journal": "Publishing House \"Education and Science\" s.r.o. eBooks",
-      "abstract_snippet": "The article is devoted to an analysis of the ethical challenges arising from the rapid proliferation of Internet of Things technologies.Drawing on the report of the World Commission on the Ethics of Scientific Knowledge and Technology of UNESCO (COMEST, 2021), the study examines transformations at...",
-      "doi_url": "https://doi.org/10.65237/8-2026-2",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Digital Transformation in Law",
-        "Ukrainian Legal and Forensic Studies",
-        "Economic and Technological Systems Analysis"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141021682",
-      "title": "Smart Exploration of Perovskite Photovoltaics: From AI Driven Discovery to Autonomous Laboratories",
-      "authors": [
-        "Wenning Chen",
-        "Zheyu Zhang",
-        "Kelvian T. Mularso",
-        "Bonghyun Jo",
-        "H-T Jung"
-      ],
-      "date": "2026-03-27",
-      "journal": "Advanced Energy Materials",
-      "abstract_snippet": "ABSTRACT Metal halide perovskite solar cells have been developed as a front runner in next generation photovoltaic technology. However, such rapid development is hampered by complex relationships among material compositions, process routes, device architectures, and environmental conditions. The...",
-      "doi_url": "https://doi.org/10.1002/aenm.202506803",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Machine Learning in Materials Science",
-        "Perovskite Materials and Applications",
-        "Chemical and Physical Properties of Materials"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141733920",
-      "title": "Biodegradable Acoustic Microrobots for Imaging-Guided Rapid Thrombotic Lesion Reperfusion",
-      "authors": [
-        "Daniel Razansky",
-        "Paul Wrede",
-        "Dong Wook Kim",
-        "Jeanne Droux",
-        "H\u00e9ctor Estrada"
-      ],
-      "date": "2026-03-27",
-      "journal": "Research Square",
-      "abstract_snippet": "",
-      "doi_url": "https://doi.org/10.21203/rs.3.rs-8411344/v1",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Micro and Nano Robotics",
-        "Characterization and Applications of Magnetic Nanoparticles",
-        "Soft Robotics and Applications"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141138727",
-      "title": "One Patch Is All You Need: Joint Surface Material Reconstruction and Classification from Minimal Visual Cues",
-      "authors": [
-        "Sindhuja Penchala",
-        "Gavin Money",
-        "Gabriel Marques",
-        "Samuel Wood",
-        "Jessica Kirschman"
-      ],
-      "date": "2026-03-27",
-      "journal": "Sensors",
-      "abstract_snippet": "Understanding material surfaces from sparse visual cues is critical for applications in robotics, simulation and material perception. However, most existing methods rely on dense or full scene observations, limiting their effectiveness in constrained or partial view environments. This gap...",
-      "doi_url": "https://doi.org/10.3390/s26072083",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Robot Manipulation and Learning",
-        "3D Shape Modeling and Analysis",
-        "Advanced Sensor and Energy Harvesting Materials"
-      ]
-    },
-    {
       "id": "https://openalex.org/W7141377826",
       "title": "Deep Reinforcement Learning: From Single-Agent to Multi-Agent",
       "authors": [
@@ -1265,6 +1586,25 @@
         "Reinforcement Learning in Robotics",
         "Adversarial Robustness in Machine Learning",
         "Autonomous Vehicle Technology and Safety"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142251135",
+      "title": "Beyond Turing: From General Computing to Domain-Specific - The \"Post-Turing\" Era of Domain Architectures",
+      "authors": [
+        "Zhiyu Chen"
+      ],
+      "date": "2026-03-27",
+      "journal": "Frontiers in Computing and Intelligent Systems",
+      "abstract_snippet": "Alan Turing's machine model of the universal machine model laid the theory and foundation of current computers, and layers can be regarded as an essence of computer science of current generation computers, averting the ubiquity of the universal computing; however, gradually, against Moore\u2019s law and...",
+      "doi_url": "https://doi.org/10.54097/1c0n7j28",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Advanced Software Engineering Methodologies",
+        "Software Engineering and Design Patterns",
+        "Computability, Logic, AI Algorithms"
       ]
     },
     {
@@ -1731,85 +2071,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141084439",
-      "title": "Enhancing Trust in Collaborative Assembly Through Resilient Adversarial Reinforcement Learning",
-      "authors": [
-        "Dario Antonelli",
-        "Khurshid Aliev",
-        "Bo Yang"
-      ],
-      "date": "2026-03-27",
-      "journal": "Applied Sciences",
-      "abstract_snippet": "Collaborative robots, or cobots, are designed to improve productivity and safety in industrial settings. However, effective Human\u2013Robot Collaboration (HRC) relies heavily on the human operator\u2019s trust in the robotic partner. This study posits that trust is significantly enhanced by the robot\u2019s...",
-      "doi_url": "https://doi.org/10.3390/app16073244",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Robot Manipulation and Learning",
-        "Reinforcement Learning in Robotics",
-        "Social Robot Interaction and HRI"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141600720",
-      "title": "A Generalized SMCF-Driven Adaptive Test Framework for Pre-Silicon Verification of On-Chip Sensors with Formal and Stochastic Modeling",
-      "authors": [
-        "Sowmya K B",
-        "Lalith K"
-      ],
-      "date": "2026-03-27",
-      "journal": "Research Square",
-      "abstract_snippet": "",
-      "doi_url": "https://doi.org/10.21203/rs.3.rs-9145040/v1",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "VLSI and Analog Circuit Testing",
-        "Low-power high-performance VLSI design",
-        "Embedded Systems Design Techniques"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141422032",
-      "title": "Intelligent and Automated Technologies for Textile Recycling Pre-Processing: A Systematic Literature Review",
-      "authors": [
-        "Daniel Sim\u00f5es Lopes",
-        "Eduardo J. Solteiro Pires",
-        "V\u00edtor Manuel de Jesus Filipe",
-        "Manuel F. Silva",
-        "Lu\u00eds F. Rocha"
-      ],
-      "date": "2026-03-27",
-      "journal": "Technologies",
-      "abstract_snippet": "Textile-to-textile recycling is strongly constrained by upstream pre-processing, where post-consumer clothing must be identified, separated, and prepared under high variability in materials, appearance, and contamination. This paper presents a Preferred Reporting Items for Systematic Reviews and...",
-      "doi_url": "https://doi.org/10.3390/technologies14040200",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Textile materials and evaluations",
-        "Dyeing and Modifying Textile Fibers",
-        "Recycling and Waste Management Techniques"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141699472",
-      "title": "Cobot: Collaborative Robots",
-      "authors": [
-        "Li Liu"
-      ],
-      "date": "2026-03-27",
-      "journal": "",
-      "abstract_snippet": "The evolution from traditional industrial automation to cobots marks a significant shift in the manufacturing and automation industries. Collaboration is a hallmark of Industry 4.0 and cyber-physical systems, with collaborative robots being key participants in driving higher levels of...",
-      "doi_url": "https://doi.org/10.1002/9781394266401.ch11",
-      "citation_count": 0,
-      "open_access": false,
-      "category": "robo",
-      "topics": []
-    },
-    {
       "id": "https://openalex.org/W7141584863",
       "title": "No place to hide? Regional resilience and vulnerability to global catastrophic risk",
       "authors": [
@@ -1876,6 +2137,26 @@
         "Surface Modification and Superhydrophobicity",
         "Icing and De-icing Technologies",
         "Heat Transfer and Optimization"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7141600720",
+      "title": "A Generalized SMCF-Driven Adaptive Test Framework for Pre-Silicon Verification of On-Chip Sensors with Formal and Stochastic Modeling",
+      "authors": [
+        "Sowmya K B",
+        "Lalith K"
+      ],
+      "date": "2026-03-27",
+      "journal": "Research Square",
+      "abstract_snippet": "",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9145040/v1",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "supply",
+      "topics": [
+        "VLSI and Analog Circuit Testing",
+        "Low-power high-performance VLSI design",
+        "Embedded Systems Design Techniques"
       ]
     },
     {
@@ -1986,6 +2267,29 @@
         "Industrial Vision Systems and Defect Detection",
         "Advanced Neural Network Applications",
         "Infrastructure Maintenance and Monitoring"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7141138727",
+      "title": "One Patch Is All You Need: Joint Surface Material Reconstruction and Classification from Minimal Visual Cues",
+      "authors": [
+        "Sindhuja Penchala",
+        "Gavin Money",
+        "Gabriel Marques",
+        "Samuel Wood",
+        "Jessica Kirschman"
+      ],
+      "date": "2026-03-27",
+      "journal": "Sensors",
+      "abstract_snippet": "Understanding material surfaces from sparse visual cues is critical for applications in robotics, simulation and material perception. However, most existing methods rely on dense or full scene observations, limiting their effectiveness in constrained or partial view environments. This gap...",
+      "doi_url": "https://doi.org/10.3390/s26072083",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Robot Manipulation and Learning",
+        "3D Shape Modeling and Analysis",
+        "Advanced Sensor and Energy Harvesting Materials"
       ]
     },
     {
@@ -2156,25 +2460,22 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141331109",
-      "title": "Infrared Moving Maritime Vessel Segmentation Based on Multi-Scale Spatial\u2013Temporal Transformer Network",
+      "id": "https://openalex.org/W7142859971",
+      "title": "H\u2082EM-Field Propulsion: Extending the Griffiths-Canon Architecture to Electromagnetic-Governed Hydrogen Plasma Thrusters for Single-Stage-to-Orbit Applications",
       "authors": [
-        "Wenhui Liu",
-        "Yulong Qiao",
-        "Yue Zhao",
-        "Zhengyi Xing"
+        "Wayne Griffiths"
       ],
       "date": "2026-03-27",
-      "journal": "Remote Sensing",
-      "abstract_snippet": "Infrared moving maritime vessel segmentation is a crucial image processing task for maritime security, which is a challenging problem due to the complex backgrounds and targets with varying sizes. To address these issues, we propose an end-to-end segmentation network based on a multi-scale...",
-      "doi_url": "https://doi.org/10.3390/rs18071006",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "abstract_snippet": "H\u2082EM-Field Propulsion A New Class of Space Propulsion Engine Author: Wayne Griffiths, AEMS LLC / Griffiths Canon Research Group Living Document \u2014 Updated as validation programme progresses We have developed a propulsion architecture that uses electromagnetic fields to govern hydrogen plasma exhaust...",
+      "doi_url": "https://doi.org/10.5281/zenodo.19309413",
       "citation_count": 0,
       "open_access": true,
-      "category": "robo",
+      "category": "space",
       "topics": [
-        "Advanced Neural Network Applications",
-        "Infrared Target Detection Methodologies",
-        "Maritime Navigation and Safety"
+        "Plasma Diagnostics and Applications",
+        "Electromagnetic Launch and Propulsion Technology",
+        "Space Satellite Systems and Control"
       ]
     },
     {
@@ -2277,23 +2578,26 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141504888",
-      "title": "Projection of Light Pollution and Environmental Impact Estimation Based on Population and GDP: The Case of T\u00fcrkiye",
+      "id": "https://openalex.org/W7141273598",
+      "title": "Spatiotemporal Dynamics of Urban Green Spaces and Vegetation Condition Amidst Urban Growth in Zomba, Malawi (1998\u20132021)",
       "authors": [
-        "Abdulvahap Y\u0131lmaz",
-        "M\u00fcjgan ELVEREN"
+        "Patrick Likongwe",
+        "Charlie M. Shackleton",
+        "Madalitso Kachere",
+        "Clinton Nkolokosa",
+        "Sosten Chiotha"
       ],
       "date": "2026-03-27",
-      "journal": "Erciyes \u00dcniversitesi Fen Bilimleri Enstit\u00fcs\u00fc Fen Bilimleri Dergisi",
-      "abstract_snippet": "Artificial Light at Night (ALAN) prediction can inform the development of strategies to minimise future light pollution and mitigate its adverse health, ecological, and environmental impacts. Population growth and GDP expansion significantly influence ALAN dynamics. This study quantifies changes in...",
-      "doi_url": "https://doi.org/10.65520/erciyesfen.1773264",
+      "journal": "Land",
+      "abstract_snippet": "Urban green spaces (UGSs) provide critical ecosystem services (ESs) in rapidly urbanising cities but are increasingly threatened by land-use change, population growth, and socio-economic pressures. This study assessed spatial and temporal changes in UGS in Zomba City, Malawi, from 1998 to 2021...",
+      "doi_url": "https://doi.org/10.3390/land15040559",
       "citation_count": 0,
       "open_access": true,
       "category": "space",
       "topics": [
-        "Impact of Light on Environment and Health",
-        "Urban Transport and Accessibility",
-        "Air Quality and Health Impacts"
+        "Urban Green Space and Health",
+        "Land Use and Ecosystem Services",
+        "Urban Agriculture and Sustainability"
       ]
     },
     {
@@ -2319,26 +2623,23 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141273598",
-      "title": "Spatiotemporal Dynamics of Urban Green Spaces and Vegetation Condition Amidst Urban Growth in Zomba, Malawi (1998\u20132021)",
+      "id": "https://openalex.org/W7141504888",
+      "title": "Projection of Light Pollution and Environmental Impact Estimation Based on Population and GDP: The Case of T\u00fcrkiye",
       "authors": [
-        "Patrick Likongwe",
-        "Charlie M. Shackleton",
-        "Madalitso Kachere",
-        "Clinton Nkolokosa",
-        "Sosten Chiotha"
+        "Abdulvahap Y\u0131lmaz",
+        "M\u00fcjgan ELVEREN"
       ],
       "date": "2026-03-27",
-      "journal": "Land",
-      "abstract_snippet": "Urban green spaces (UGSs) provide critical ecosystem services (ESs) in rapidly urbanising cities but are increasingly threatened by land-use change, population growth, and socio-economic pressures. This study assessed spatial and temporal changes in UGS in Zomba City, Malawi, from 1998 to 2021...",
-      "doi_url": "https://doi.org/10.3390/land15040559",
+      "journal": "Erciyes \u00dcniversitesi Fen Bilimleri Enstit\u00fcs\u00fc Fen Bilimleri Dergisi",
+      "abstract_snippet": "Artificial Light at Night (ALAN) prediction can inform the development of strategies to minimise future light pollution and mitigate its adverse health, ecological, and environmental impacts. Population growth and GDP expansion significantly influence ALAN dynamics. This study quantifies changes in...",
+      "doi_url": "https://doi.org/10.65520/erciyesfen.1773264",
       "citation_count": 0,
       "open_access": true,
       "category": "space",
       "topics": [
-        "Urban Green Space and Health",
-        "Land Use and Ecosystem Services",
-        "Urban Agriculture and Sustainability"
+        "Impact of Light on Environment and Health",
+        "Urban Transport and Accessibility",
+        "Air Quality and Health Impacts"
       ]
     },
     {
@@ -2495,143 +2796,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141493147",
-      "title": "Internet of Things-Based Wireless Communication System for Smart Ocean Monitoring Systems",
-      "authors": [
-        "Arul Dalton G.",
-        "Bamila Virgin Louis. A",
-        "Rajendra Thilahar C.",
-        "M. P."
-      ],
-      "date": "2026-03-27",
-      "journal": "Research Square",
-      "abstract_snippet": "",
-      "doi_url": "https://doi.org/10.21203/rs.3.rs-9217835/v1",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Underwater Vehicles and Communication Systems",
-        "Maritime Navigation and Safety",
-        "IoT and Edge/Fog Computing"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140410942",
-      "title": "Numerical simulation of light-element geochemistry of the lunar surface using a compact and lightweight XRF imaging spectrometer",
-      "authors": [
-        "Airi Toida",
-        "Daiki Ishi",
-        "Yuichiro Ezoe",
-        "Masaki Numazawa",
-        "Kumi Ishikawa"
-      ],
-      "date": "2026-03-27",
-      "journal": "Earth Planets and Space",
-      "abstract_snippet": "Abstract Understanding the evolution of the Moon requires mapping the global distribution and abundance of major elements on the lunar surface. X-ray fluorescence exploration is a promising method for estimating the distribution of light elements. The lunar south pole has drawn increasing...",
-      "doi_url": "https://doi.org/10.1186/s40623-025-02326-2",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Planetary Science and Exploration",
-        "Astro and Planetary Science",
-        "Advanced X-ray Imaging Techniques"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141596850",
-      "title": "Low-data cross-modal adaptation for remote sensing with proxy-enhanced multi-granularity feature caching",
-      "authors": [
-        "Yong Sun",
-        "Qijin Cheng",
-        "Weijian Xie",
-        "Hongxin Huang",
-        "Chengcheng Gu"
-      ],
-      "date": "2026-03-27",
-      "journal": "Scientific Reports",
-      "abstract_snippet": "Despite the potential of vision-language models for open-vocabulary recognition, their deployment in remote sensing is limited by the limited effectiveness of generic prompts, the scarcity of annotated datasets, and insufficient domain-specific feature discriminability. To address these...",
-      "doi_url": "https://doi.org/10.1038/s41598-026-39823-7",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Remote-Sensing Image Classification",
-        "Advanced Image and Video Retrieval Techniques",
-        "Multimodal Machine Learning Applications"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141334353",
-      "title": "The lapse rate and the cold point tropopause in the Asian Summer Monsoon anticyclone",
-      "authors": [
-        "Rolf M\u00fcller",
-        "B\u00e4rbel Vogel",
-        "Martina Kr\u00e4mer",
-        "Christian Rolf",
-        "Nicole Spelten"
-      ],
-      "date": "2026-03-27",
-      "journal": "Atmospheric chemistry and physics",
-      "abstract_snippet": "Abstract. Tropospheric and stratospheric airmasses are separated by the tropopause. Here we investigate the lapse rate tropopause and the cold point tropopause in the Asian summer monsoon anticyclone (ASMA) based on high-altitude airborne measurements in summer 2017. We find that the lapse rate...",
-      "doi_url": "https://doi.org/10.5194/acp-26-4359-2026",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Atmospheric Ozone and Climate",
-        "Ionosphere and magnetosphere dynamics",
-        "Atmospheric aerosols and clouds"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140972646",
-      "title": "Global Spring\u2013Autumn Phenology Coupling Inferred from Satellite Observations and Reanalysis-Based Climate Limitations",
-      "authors": [
-        "Xiaolu Li",
-        "Yu Wei",
-        "Tong Qiu",
-        "Alison Donnelly",
-        "Yetang Wang"
-      ],
-      "date": "2026-03-27",
-      "journal": "Remote Sensing",
-      "abstract_snippet": "Spring and autumn phenology jointly regulate terrestrial carbon, water, and energy exchanges, yet the mechanisms linking seasonal transitions remain debated under increasing hydroclimatic stress. Here, we integrate satellite-derived phenology with reanalysis-based indicators of land\u2013atmosphere...",
-      "doi_url": "https://doi.org/10.3390/rs18071002",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Remote Sensing in Agriculture",
-        "Climate variability and models",
-        "Plant Water Relations and Carbon Dynamics"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141456815",
-      "title": "Monitoring Carbon Monoxide and Aerosol Concentrations in Aba Metropolis, Abia State, Nigeria: 2019\u20132024 Trends",
-      "authors": [
-        "Chika Floyd Amaechi",
-        "Favour Osemwonyenmwen Elegon",
-        "Akus Kingsley Okoduwa",
-        "S. M. Quamrul Hassan",
-        "Imelda Ebikere Iyorah-Elliot"
-      ],
-      "date": "2026-03-27",
-      "journal": "Trends in Ecological and Indoor Environmental Engineering",
-      "abstract_snippet": "Background: Air pollution poses major health and environmental risks globally, with disproportionate impacts in low- and middle-income countries lacking robust monitoring systems. In Nigeria, rapid urbanization, fossil fuel dependence, and informal industrial activities have intensified urban air...",
-      "doi_url": "https://doi.org/10.62622/teiee.026.4.2.01-11",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "space",
-      "topics": [
-        "Air Quality and Health Impacts",
-        "COVID-19 impact on air quality",
-        "Oil, Gas, and Environmental Issues"
-      ]
-    },
-    {
       "id": "https://openalex.org/W7141541511",
       "title": "SafeGuard ASF: SR Agentic Humanoid Robot System for Autonomous Industrial Safety",
       "authors": [
@@ -2651,6 +2815,28 @@
         "Social Robot Interaction and HRI",
         "Fire Detection and Safety Systems",
         "Robotic Path Planning Algorithms"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142557856",
+      "title": "Maximum Entropy Behavior Exploration for Sim2Real Zero-Shot Reinforcement Learning",
+      "authors": [
+        "Jiajun Hu",
+        "N\u00faria Armengol Urp\u00ed",
+        "Jin Cheng",
+        "Stelian Coros"
+      ],
+      "date": "2026-03-26",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Zero-shot reinforcement learning (RL) algorithms aim to learn a family of policies from a reward-free dataset, and recover optimal policies for any reward function directly at test time. Naturally, the quality of the pretraining dataset determines the performance of the recovered policies across...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "robo",
+      "topics": [
+        "Reinforcement Learning in Robotics",
+        "Adversarial Robustness in Machine Learning",
+        "Robot Manipulation and Learning"
       ]
     },
     {
@@ -2743,6 +2929,29 @@
       ]
     },
     {
+      "id": "https://openalex.org/W7142557550",
+      "title": "A Unified Memory Perspective for Probabilistic Trustworthy AI",
+      "authors": [
+        "Xueji Zhao",
+        "Likai Pei",
+        "Jianbo Liu",
+        "Kai Ni",
+        "Ningyuan Cao"
+      ],
+      "date": "2026-03-26",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Trustworthy artificial intelligence increasingly relies on probabilistic computation to achieve robustness, interpretability, security and privacy. In practical systems, such workloads interleave deterministic data access with repeated stochastic sampling across models, data paths and system...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "semi",
+      "topics": [
+        "Security and Verification in Computing",
+        "Physical Unclonable Functions (PUFs) and Hardware Security",
+        "Adversarial Robustness in Machine Learning"
+      ]
+    },
+    {
       "id": "https://openalex.org/W7140481365",
       "title": "Integrating Digital Twins into Smart Warehousing: A Practice-Based View Framework for Identifying and Prioritizing Critical Success Factors",
       "authors": [
@@ -2786,133 +2995,70 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7141119996",
-      "title": "Human-in-the-Loop Artificial Intelligence: A Systematic Review of Concepts, Methods, and Applications",
+      "id": "https://openalex.org/W7142557097",
+      "title": "AnyHand: A Large-Scale Synthetic Dataset for RGB(-D) Hand Pose Estimation",
       "authors": [
-        "Konstantinos Lazaros",
-        "Aristidis G. Vrahatis",
-        "Sotiris Kotsiantis"
-      ],
-      "date": "2026-03-26",
-      "journal": "Entropy",
-      "abstract_snippet": "The integration of human judgment into artificial intelligence (AI) systems has emerged as a key research direction, particularly for high-stakes applications where full automation remains insufficient. Human-in-the-Loop (HITL) AI represents a field that combines machine learning capabilities with...",
-      "doi_url": "https://doi.org/10.3390/e28040377",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "ai",
-      "topics": [
-        "Human-Automation Interaction and Safety",
-        "Healthcare Technology and Patient Monitoring",
-        "Social Robot Interaction and HRI"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141014414",
-      "title": "Artikel Review Brit J Educational Tech - 2024 - Cohn - A multimodal approach to support teacher researcher and AI collaboration in STEM C",
-      "authors": [
-        "Muhammad Sintur",
-        "Masra Latjompoh",
-        "Mursalin -",
-        "Ashwin T. S -",
-        "Clayton Cohn -"
-      ],
-      "date": "2026-03-26",
-      "journal": "International Journal For Multidisciplinary Research",
-      "abstract_snippet": "Abstract: Recent advances in generative artificial intelligence (AI) and multimodal learning analytics (MMLA) have allowed for new and creative ways of leveraging AI to support K12 students' collaborative learning in STEM+C domains. To date, there is little evidence of AI methods supporting...",
-      "doi_url": "https://doi.org/10.36948/ijfmr.2026.v08i02.72650",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "ai",
-      "topics": [
-        "Intelligent Tutoring Systems and Adaptive Learning",
-        "Teaching and Learning Programming",
-        "Online Learning and Analytics"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141126420",
-      "title": "VideoWeaver: Multimodal Multi-View Video-to-Video Transfer for Embodied Agents",
-      "authors": [
-        "George Eskandar",
-        "Fengyi Shen",
-        "Mohammad Altillawi",
-        "Dong Chen",
-        "Yang Bai"
-      ],
-      "date": "2026-03-26",
-      "journal": "arXiv (Cornell University)",
-      "abstract_snippet": "Recent progress in video-to-video (V2V) translation has enabled realistic resimulation of embodied AI demonstrations, a capability that allows pretrained robot policies to be transferable to new environments without additional data collection. However, prior works can only operate on a single view...",
-      "doi_url": "https://doi.org/10.48550/arxiv.2603.25420",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "ai",
-      "topics": [
-        "Generative Adversarial Networks and Image Synthesis",
-        "Advanced Vision and Imaging",
-        "Face recognition and analysis"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141451025",
-      "title": "Launch Editorial of AI in Medicine",
-      "authors": [
-        "Pierre Boulanger"
-      ],
-      "date": "2026-03-26",
-      "journal": "AI in Medicine",
-      "abstract_snippet": "Distinguished colleagues in the global medical and AI communities, [...]",
-      "doi_url": "https://doi.org/10.3390/aimed1010009",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "ai",
-      "topics": [
-        "Artificial Intelligence in Healthcare and Education",
-        "Machine Learning in Healthcare",
-        "Artificial Intelligence in Healthcare"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140635547",
-      "title": "An innovative non-formal learning model based on nature and science: content, pedagogy and continuous professional development",
-      "authors": [
-        "Volkan Hasan Kaya",
-        "Mehmet Ak\u0131n Bulut",
-        "Ahmet G\u00d6\u00c7EN"
-      ],
-      "date": "2026-03-26",
-      "journal": "Humanities and Social Sciences Communications",
-      "abstract_snippet": "The current education model is gradually shifting away from its traditional framework, evolving towards a more informal, out-of-brick, outdoor learning culture. In this context, the topic of non-formal out-of-school learning environments, which bridge education with real-life experiences and...",
-      "doi_url": "https://doi.org/10.1057/s41599-026-06823-x",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "ai",
-      "topics": [
-        "Education and Vocational Training",
-        "Higher Education Learning Practices",
-        "Education Practices and Evaluation"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7142558111",
-      "title": "VideoWeaver: Multimodal Multi-View Video-to-Video Transfer for Embodied Agents",
-      "authors": [
-        "George Eskandar",
-        "Fengyi Shen",
-        "Mohammad Altillawi",
-        "Dong Chen",
-        "Yang Bai"
+        "Chen Si",
+        "Yulin Liu",
+        "Bo Ai",
+        "Jianwen Xie",
+        "Rolandos Alexandros Potamias"
       ],
       "date": "2026-03-26",
       "journal": "ArXiv.org",
-      "abstract_snippet": "Recent progress in video-to-video (V2V) translation has enabled realistic resimulation of embodied AI demonstrations, a capability that allows pretrained robot policies to be transferable to new environments without additional data collection. However, prior works can only operate on a single view...",
+      "abstract_snippet": "We present AnyHand, a large-scale synthetic dataset designed to advance the state of the art in 3D hand pose estimation from both RGB-only and RGB-D inputs. While recent works with foundation approaches have shown that an increase in the quantity and diversity of training data can markedly improve...",
       "doi_url": "",
       "citation_count": 0,
       "open_access": true,
       "category": "ai",
       "topics": [
-        "Generative Adversarial Networks and Image Synthesis",
-        "Advanced Vision and Imaging",
-        "Face recognition and analysis"
+        "Human Pose and Action Recognition",
+        "Robot Manipulation and Learning",
+        "Hand Gesture Recognition Systems"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142557624",
+      "title": "Interpretable Zero-shot Referring Expression Comprehension with Query-driven Scene Graphs",
+      "authors": [
+        "Yike Wu",
+        "Necva B\u00f6l\u00fcc\u00fc",
+        "Stephen Wan",
+        "Dadong Wang",
+        "Jiahao Xia"
+      ],
+      "date": "2026-03-26",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Zero-shot referring expression comprehension (REC) aims to locate target objects in images given natural language queries without relying on task-specific training data, demanding strong visual understanding capabilities. Existing Vision-Language Models~(VLMs), such as CLIP, commonly address...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Multimodal Machine Learning Applications",
+        "Topic Modeling",
+        "Domain Adaptation and Few-Shot Learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142558232",
+      "title": "AG-EgoPose: Leveraging Action-Guided Motion and Kinematic Joint Encoding for Egocentric 3D Pose Estimation",
+      "authors": [
+        "Md Mushfiqur Azam",
+        "John Quarles",
+        "Kevin Desai"
+      ],
+      "date": "2026-03-26",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Egocentric 3D human pose estimation remains challenging due to severe perspective distortion, limited body visibility, and complex camera motion inherent in first-person viewpoints. Existing methods typically rely on single-frame analysis or limited temporal fusion, which fails to effectively...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "ai",
+      "topics": [
+        "Human Pose and Action Recognition",
+        "Human Motion and Animation",
+        "Robot Manipulation and Learning"
       ]
     },
     {
@@ -3135,6 +3281,29 @@
         "Space exploration and regulation",
         "Space Science and Extraterrestrial Life",
         "Military and Defense Studies"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7142557360",
+      "title": "Rotatable Antenna-Empowered Wireless Networks: A Tutorial",
+      "authors": [
+        "Beixiong Zheng",
+        "Qingjie Wu",
+        "Xue Xiong",
+        "Yanhua Tan",
+        "Weihua Zhu"
+      ],
+      "date": "2026-03-26",
+      "journal": "ArXiv.org",
+      "abstract_snippet": "Non-fixed flexible antenna architectures, such as fluid antenna system (FAS), movable antenna (MA), and pinching antenna, have garnered significant interest in recent years. Among them, rotatable antenna (RA) has emerged as a promising technology for enhancing wireless communication and sensing...",
+      "doi_url": "",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Antenna Design and Analysis",
+        "Indoor and Outdoor Localization Technologies",
+        "Energy Harvesting in Wireless Networks"
       ]
     },
     {
@@ -3771,25 +3940,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7140283690",
-      "title": "Assessing the Effectiveness of Green Logistics Strategies in Developing Carbon-Neutral Distribution Networks",
-      "authors": [
-        "Oliver Grant"
-      ],
-      "date": "2026-03-25",
-      "journal": "Preprints.org",
-      "abstract_snippet": "This study investigates the effectiveness of green logistics strategies in developing carbon-neutral distribution networks, focusing on how organizations integrate technological, organizational, and collaborative practices to achieve sustainability objectives. The purpose was to identify key...",
-      "doi_url": "https://doi.org/10.20944/preprints202603.2054.v1",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "supply",
-      "topics": [
-        "Sustainable Supply Chain Management",
-        "Urban and Freight Transport Logistics",
-        "Supply Chain Resilience and Risk Management"
-      ]
-    },
-    {
       "id": "https://openalex.org/W7140328399",
       "title": "The Price is Not Right: Economic Power as Control Over Feasibility in International Political Economy",
       "authors": [
@@ -3801,30 +3951,11 @@
       "doi_url": "https://doi.org/10.1007/s41111-026-00341-6",
       "citation_count": 0,
       "open_access": true,
-      "category": "supply",
+      "category": "semi",
       "topics": [
         "Global trade and economics",
         "International Relations and Foreign Policy",
         "Defense, Military, and Policy Studies"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140327342",
-      "title": "From Soldiers to Algorithms: AI and Autonomous Warfare in the UAE's Military Strategy",
-      "authors": [
-        "Soner Do\u011fan"
-      ],
-      "date": "2026-03-25",
-      "journal": "K\u00fclliye",
-      "abstract_snippet": "Artificial intelligence (AI) has become closely intertwined with modern weapon systems, shaping international peace, security, and military competition. Autonomous systems and AI technologies are transforming warfare by redefining operational capabilities and defence strategies. The United Arab...",
-      "doi_url": "https://doi.org/10.48139/aybukulliye.1792824",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "supply",
-      "topics": [
-        "Middle East and Rwanda Conflicts",
-        "Security, Politics, and Digital Transformation",
-        "Ethics and Social Impacts of AI"
       ]
     },
     {
@@ -3916,6 +4047,25 @@
         "Satellite Communication Systems",
         "Age of Information Optimization",
         "Network Traffic and Congestion Control"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7140300766",
+      "title": "Calibration of key parameters during the in-orbit phase for the Taiji-2 gravitational reference sensor",
+      "authors": [
+        "Anonymous"
+      ],
+      "date": "2026-03-25",
+      "journal": "Physical Review Applied",
+      "abstract_snippet": "The Taiji mission, a pioneering Chinese space-borne gravitational wave observatory, requires ultra-precise calibration of its gravitational reference sensors (GRSs) to achieve its targeted sensitivity of $3\\times10^{-15} \\mathrm{\\ m\\ s^{-2}\\ Hz^{-1/2}}$. Maintaining this precision is challenged by...",
+      "doi_url": "https://doi.org/10.1103/1bmr-zx57",
+      "citation_count": 0,
+      "open_access": true,
+      "category": "space",
+      "topics": [
+        "Pulsars and Gravitational Waves Research",
+        "Geophysics and Gravity Measurements",
+        "Geophysics and Sensor Technology"
       ]
     },
     {
@@ -4067,183 +4217,6 @@
         "Robot Manipulation and Learning",
         "Reinforcement Learning in Robotics",
         "Adversarial Robustness in Machine Learning"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140953649",
-      "title": "Path Planning and Reinforcement Learning-Driven Control of On-Orbit Free-Flying Multi-Arm Robots",
-      "authors": [
-        "\u00c1lvaro Belmonte-Baeza",
-        "Jos\u00e9 Luis Ram\u00f3n",
-        "Leonard Felicetti",
-        "Miguel Cazorla",
-        "Jorge Pomares"
-      ],
-      "date": "2026-03-24",
-      "journal": "arXiv (Cornell University)",
-      "abstract_snippet": "This paper presents a hybrid approach that integrates trajectory optimization (TO) and reinforcement learning (RL) for motion planning and control of free-flying multi-arm robots in on-orbit servicing scenarios. The proposed system integrates TO for generating feasible, efficient paths while...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Space Satellite Systems and Control",
-        "Spacecraft Dynamics and Control",
-        "Teleoperation and Haptic Systems"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140953343",
-      "title": "SG-VLA: Learning Spatially-Grounded Vision-Language-Action Models for Mobile Manipulation",
-      "authors": [
-        "Ruisen Tu",
-        "Arth Shukla",
-        "Sohyun Yoo",
-        "Xuanlin Li Xuanlin Li",
-        "Junxi Li"
-      ],
-      "date": "2026-03-24",
-      "journal": "ArXiv.org",
-      "abstract_snippet": "Vision-Language-Action (VLA) models show promise for robotic control, yet performance in complex household environments remains sub-optimal. Mobile manipulation requires reasoning about global scene layout, fine-grained geometry, and high-dimensional continuous actions, making standard imitation...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "robo",
-      "topics": [
-        "Robot Manipulation and Learning",
-        "Multimodal Machine Learning Applications",
-        "Social Robot Interaction and HRI"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140953909",
-      "title": "TRINE: A Token-Aware, Runtime-Adaptive FPGA Inference Engine for Multimodal AI",
-      "authors": [
-        "Hyunwoo Oh",
-        "Hanning Chen",
-        "Sanggeon Yun",
-        "Yang Ni",
-        "Suyeon Jang"
-      ],
-      "date": "2026-03-24",
-      "journal": "ArXiv.org",
-      "abstract_snippet": "Multimodal stacks that mix ViTs, CNNs, GNNs, and transformer NLP strain embedded platforms because their compute/memory patterns diverge and hard real-time targets leave little slack. TRINE is a single-bitstream FPGA accelerator and compiler that executes end-to-end multimodal inference without...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Advanced Neural Network Applications",
-        "Embedded Systems Design Techniques",
-        "Big Data and Digital Economy"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140211382",
-      "title": "MEMS-enabled reconfigurable metasurface and nanophotonics: advances and perspectives",
-      "authors": [
-        "Dongxiao Li",
-        "Weixin Liu",
-        "Yinpeng Wang",
-        "Daoye Zheng",
-        "Chengkuo Lee"
-      ],
-      "date": "2026-03-24",
-      "journal": "Micro & Nano Manufacturing",
-      "abstract_snippet": "Microelectromechanical systems (MEMS) have emerged as powerful technology for reconfigurable metasurface and nanophotonics, providing dynamic, low-power, and scalable control over optical functionalities that are inherently fixed in static nanophotonic devices. By introducing mechanical degrees of...",
-      "doi_url": "https://doi.org/10.1007/s44374-026-00015-y",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Metamaterials and Metasurfaces Applications",
-        "Plasmonic and Surface Plasmon Research",
-        "Mechanical and Optical Resonators"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140954299",
-      "title": "Numerical Kernels on a Spatial Accelerator: A Study of Tenstorrent Wormhole",
-      "authors": [
-        "Maya N.L. Taylor",
-        "Carl Pearson",
-        "Luc Berger-Vergiat",
-        "Giovanni Long",
-        "Jan Ciesko"
-      ],
-      "date": "2026-03-24",
-      "journal": "arXiv (Cornell University)",
-      "abstract_snippet": "As AI accelerators gain prominence, their potential for traditional scientific computing workloads remains unclear. This paper explores Tenstorrent's Wormhole architecture, a spatial computing platform designed for neural network acceleration, by implementing three numerical kernels and composing...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Stochastic Gradient Optimization Techniques",
-        "Parallel Computing and Optimization Techniques",
-        "Model Reduction and Neural Networks"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141772619",
-      "title": "AscendOptimizer: Episodic Agent for Ascend NPU Operator Optimization",
-      "authors": [
-        "Jiehao Wu",
-        "Zixiao Huang",
-        "Wenhao Li",
-        "Chuyun Shen",
-        "Junjie Sheng"
-      ],
-      "date": "2026-03-24",
-      "journal": "arXiv (Cornell University)",
-      "abstract_snippet": "AscendC (Ascend C) operator optimization on Huawei Ascend neural processing units (NPUs) faces a two-fold knowledge bottleneck: unlike the CUDA ecosystem, there are few public reference implementations to learn from, and performance hinges on a coupled two-part artifact - a host-side tiling program...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Ferroelectric and Negative Capacitance Devices",
-        "Advanced Memory and Neural Computing",
-        "Neural Networks and Reservoir Computing"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7141772203",
-      "title": "Energy Efficient Software Hardware CoDesign for Machine Learning: From TinyML to Large Language Models",
-      "authors": [
-        "Mohammad Saleh Vahdatpour",
-        "Yanqing Zhang"
-      ],
-      "date": "2026-03-24",
-      "journal": "ArXiv.org",
-      "abstract_snippet": "The rapid deployment of machine learning across platforms from milliwatt-class TinyML devices to large language models has made energy efficiency a primary constraint for sustainable AI. Across these scales, performance and energy are increasingly limited by data movement and memory-system behavior...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Parallel Computing and Optimization Techniques",
-        "Advanced Neural Network Applications",
-        "Big Data and Digital Economy"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W7140953819",
-      "title": "AI Lifecycle-Aware Feasibility Framework for Split-RIC Orchestration in NTN O-RAN",
-      "authors": [
-        "Daniele Tarchi"
-      ],
-      "date": "2026-03-24",
-      "journal": "ArXiv.org",
-      "abstract_snippet": "Integrating Artificial Intelligence (AI) into Non-Terrestrial Networks (NTN) is constrained by the joint limits of satellite SWaP and feeder-link capacity, which directly impact O-RAN closed-loop control and model lifecycle management. This paper studies the feasibility of distributing the O-RAN...",
-      "doi_url": "",
-      "citation_count": 0,
-      "open_access": true,
-      "category": "semi",
-      "topics": [
-        "Satellite Communication Systems",
-        "Age of Information Optimization",
-        "IoT and Edge/Fog Computing"
       ]
     }
   ]
