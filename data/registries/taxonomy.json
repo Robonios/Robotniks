@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "updated": "2026-04-02",
+  "sectors": {
+    "Semiconductors": [
+      "Fabless Design",
+      "IDM",
+      "Foundry",
+      "OSAT & Packaging",
+      "Equipment",
+      "EDA & IP",
+      "Power & Analog"
+    ],
+    "Robotics": [
+      "Full-Stack Integrator",
+      "Component Supplier",
+      "Software & Simulation",
+      "Sensor & Vision",
+      "Actuator & Motion",
+      "Industrial Robots",
+      "Humanoid & Service Robots",
+      "Surgical & Medical Robots",
+      "Warehouse & Logistics Automation",
+      "Autonomous Systems & Drones",
+      "Collaborative Robots"
+    ],
+    "Space": [
+      "Launch",
+      "Satellite Communications",
+      "Earth Observation",
+      "In-Orbit Services",
+      "Lunar & Planetary",
+      "Ground Systems & Antennas",
+      "Space Components"
+    ],
+    "Materials & Inputs": [
+      "Silicon & Substrates",
+      "Industrial & Specialty Gases",
+      "Process Chemicals",
+      "Packaging & Substrates",
+      "Rare Earths & Critical Minerals",
+      "Battery Materials",
+      "Structural Materials"
+    ],
+    "Cross-Stack": [
+      "Frontier Compute",
+      "Industrial Conglomerates",
+      "Test & Measurement"
+    ],
+    "Tokens": [
+      "Agentic Economy",
+      "Robotics Infrastructure",
+      "Decentralised Compute",
+      "Data Infrastructure",
+      "DePIN/Physical Infrastructure",
+      "Satellite & Connectivity"
+    ]
+  },
+  "tags_vocabulary": [
+    "earnings",
+    "M&A",
+    "funding",
+    "IPO",
+    "export_controls",
+    "supply_chain",
+    "capacity_expansion",
+    "partnership",
+    "product_launch",
+    "policy",
+    "personnel",
+    "litigation",
+    "delisting",
+    "technology_roadmap",
+    "market_sizing",
+    "forecast",
+    "supply_disruption",
+    "geopolitical"
+  ]
+}

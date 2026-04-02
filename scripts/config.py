@@ -26,6 +26,7 @@ EODHD_API_KEY = os.environ.get("EODHD_API_KEY", "")
 COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY", "")
 
 # Output paths — live data (served by GitHub Pages)
+# NOTE: Old paths kept for frontend compatibility. New paths added for restructured data layer.
 PRICES_JSON = BASE_DIR / "data" / "prices.json"
 EQUITIES_JSON = BASE_DIR / "data" / "prices" / "equities.json"
 TOKENS_JSON = BASE_DIR / "data" / "prices" / "tokens.json"
@@ -34,6 +35,13 @@ NEWS_JSON = BASE_DIR / "data" / "news.json"
 RESEARCH_JSON = BASE_DIR / "data" / "research.json"
 FILINGS_JSON = BASE_DIR / "data" / "filings.json"
 REPORTS_JSON = BASE_DIR / "data" / "reports.json"
+
+# New structured paths (data architecture v2)
+ENTITY_REGISTRY_JSON = BASE_DIR / "data" / "registries" / "entity_registry.json"
+TAXONOMY_JSON = BASE_DIR / "data" / "registries" / "taxonomy.json"
+FUNDING_ROUNDS_JSON = BASE_DIR / "data" / "funding" / "rounds.json"
+FUNDING_SUMMARY_JSON = BASE_DIR / "data" / "funding" / "summary.json"
+NEWS_STRUCTURED_JSON = BASE_DIR / "data" / "news" / "robotnik_news.json"
 
 # Archive paths — historical data for co-pilot training
 NEWS_ARCHIVE_JSON = BASE_DIR / "archive" / "archive_news.json"

@@ -13,7 +13,10 @@ Also importable:
 
 import json, re, os, sys
 
-REGISTRY_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'entities', 'registry.json')
+# Try new path first, fall back to legacy
+_new_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'registries', 'entity_registry.json')
+_old_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'entities', 'registry.json')
+REGISTRY_PATH = _new_path if os.path.exists(_new_path) else _old_path
 
 # Short tickers that need context to avoid false positives
 AMBIGUOUS_SHORT = {'ON', 'ARM', 'AI', 'MP', 'GE', 'HP', 'AM', 'IT', 'BE', 'OR'}
