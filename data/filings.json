@@ -1,8 +1,17 @@
 {
-  "updated": "2026-04-02 07:16",
+  "updated": "2026-04-03 07:09",
   "source": "SEC EDGAR",
   "count": 45,
   "filings": [
+    {
+      "id": "8ad701e69cef",
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "form_type": "8-K",
+      "date": "2026-04-02",
+      "description": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526140574/"
+    },
     {
       "id": "d2cedd5ee598",
       "ticker": "MU",
@@ -227,15 +236,6 @@
       "date": "2026-03-13",
       "description": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/6951/000119312526106339/"
-    },
-    {
-      "id": "9249cda8cac2",
-      "ticker": "AVGO",
-      "company": "Broadcom",
-      "form_type": "10-Q",
-      "date": "2026-03-11",
-      "description": "10-Q",
-      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/"
     },
     {
       "id": "6c257ad2c6c8",
