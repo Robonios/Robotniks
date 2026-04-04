@@ -1,6 +1,7 @@
 {
-  "version": "1.0",
-  "updated": "2026-04-02",
+  "version": "2.0",
+  "updated": "2026-04-04",
+  "note": "Cross-Stack sector eliminated. Former subsectors absorbed: Frontier Compute → Semiconductors (Fabless Design), Test & Measurement → Semiconductors, Industrial Conglomerates → Robotics.",
   "sectors": {
     "Semiconductors": [
       "Fabless Design",
@@ -9,7 +10,8 @@
       "OSAT & Packaging",
       "Equipment",
       "EDA & IP",
-      "Power & Analog"
+      "Power & Analog",
+      "Test & Measurement"
     ],
     "Robotics": [
       "Full-Stack Integrator",
@@ -22,7 +24,8 @@
       "Surgical & Medical Robots",
       "Warehouse & Logistics Automation",
       "Autonomous Systems & Drones",
-      "Collaborative Robots"
+      "Collaborative Robots",
+      "Industrial Conglomerates"
     ],
     "Space": [
       "Launch",
@@ -41,11 +44,6 @@
       "Rare Earths & Critical Minerals",
       "Battery Materials",
       "Structural Materials"
-    ],
-    "Cross-Stack": [
-      "Frontier Compute",
-      "Industrial Conglomerates",
-      "Test & Measurement"
     ],
     "Tokens": [
       "Agentic Economy",

@@ -1,49 +1,44 @@
 {
-  "calculated_at": "2026-04-03T07:06:26.836058+00:00Z",
+  "calculated_at": "2026-04-04T11:28:10.531665+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 1847.74,
-    "daily_change_pct": -4.34,
+    "value": 1966.45,
+    "daily_change_pct": -11.22,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
-    "entities": 270
+    "entities": 230
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 1847.74,
+    "value": 1966.45,
     "base_date": "2021-04-05",
     "base_value": 1000.0,
-    "entities": 264
+    "entities": 224
   },
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2613.18,
-      "entities": 44
+      "value": 2460.85,
+      "entities": 66
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1638.73,
-      "entities": 138
+      "value": 1428.76,
+      "entities": 97
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2841.2,
-      "entities": 40
-    },
-    "cross_stack": {
-      "name": "Robotnik Cross-stack Index",
-      "value": 2044.34,
-      "entities": 21
+      "value": 3139.6,
+      "entities": 38
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 1957.9,
-      "entities": 21
+      "value": 1837.75,
+      "entities": 23
     },
     "token": {
       "name": "Robotnik Token Index",
-      "value": 617.12,
+      "value": 608.13,
       "entities": 6
     }
   },
@@ -51,72 +46,72 @@
     {
       "ticker": "NVDA",
       "name": "NVIDIA",
-      "sector": "Cross-stack",
+      "sector": "Semiconductor",
       "market_cap_usd": 4311464017920,
-      "weight_pct": 5.0
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet",
-      "sector": "Robotics",
-      "market_cap_usd": 3562082664448,
-      "weight_pct": 5.0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon",
-      "sector": "Robotics",
-      "market_cap_usd": 2251864408064,
       "weight_pct": 5.0
     },
     {
       "ticker": "TSM",
       "name": "TSMC ADR",
-      "sector": "Cross-stack",
+      "sector": "Semiconductor",
       "market_cap_usd": 1758432591872,
       "weight_pct": 5.0
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom",
-      "sector": "Cross-stack",
+      "sector": "Semiconductor",
       "market_cap_usd": 1491367493632,
-      "weight_pct": 5.0
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "sector": "Robotics",
-      "market_cap_usd": 1353089417216,
       "weight_pct": 5.0
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding ADR",
-      "sector": "Cross-stack",
+      "sector": "Semiconductor",
       "market_cap_usd": 517221810176,
-      "weight_pct": 3.9165
+      "weight_pct": 5.0
     },
     {
       "ticker": "MU",
       "name": "Micron Technology",
       "sector": "Semiconductor",
       "market_cap_usd": 413021306880,
-      "weight_pct": 3.1275
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies",
-      "sector": "Robotics",
-      "market_cap_usd": 355068182528,
-      "weight_pct": 2.6886
+      "weight_pct": 4.7028
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "sector": "Cross-stack",
+      "sector": "Semiconductor",
       "market_cap_usd": 354614378496,
-      "weight_pct": 2.6852
+      "weight_pct": 4.0378
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "sector": "Semiconductor",
+      "market_cap_usd": 276549238784,
+      "weight_pct": 3.1489
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "sector": "Semiconductor",
+      "market_cap_usd": 274367184896,
+      "weight_pct": 3.1241
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "sector": "Space",
+      "market_cap_usd": 264093614080,
+      "weight_pct": 3.0071
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "sector": "Semiconductor",
+      "market_cap_usd": 252958507008,
+      "weight_pct": 2.8803
     }
   ]
 }

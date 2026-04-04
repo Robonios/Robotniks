@@ -200,7 +200,8 @@
       "DATAVAULT AI INC",
       "DVLT",
       "datavault ai inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "DIOD": {
     "id": "DIOD",
@@ -225,7 +226,7 @@
     "id": "ENTG",
     "name": "ENTEGRIS INC",
     "type": "public",
-    "sector": "Semiconductors",
+    "sector": "Materials",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -255,7 +256,8 @@
       "FIRST SOLAR INC",
       "FSLR",
       "first solar inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "FORM": {
     "id": "FORM",
@@ -348,7 +350,8 @@
       "INVESCO GOVERNMENT & AGENCY PORTFOLIO",
       "Invesco Government & Agency Portfolio",
       "invesco government & agency portfolio"
-    ]
+    ],
+    "status": "excluded"
   },
   "KOPN": {
     "id": "KOPN",
@@ -366,7 +369,8 @@
       "KOPIN CORP",
       "KOPN",
       "kopin corp"
-    ]
+    ],
+    "status": "excluded"
   },
   "KLIC": {
     "id": "KLIC",
@@ -554,7 +558,8 @@
       "PENGUIN SOLUTIONS",
       "PENGUIN SOLUTIONS INC",
       "penguin solutions inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "POWI": {
     "id": "POWI",
@@ -645,7 +650,8 @@
       "RIGETTI COMPUTING",
       "RIGETTI COMPUTING INC",
       "rigetti computing inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "SLAB": {
     "id": "SLAB",
@@ -811,7 +817,8 @@
       "Universal Display",
       "Universal Display Corp",
       "universal display corp"
-    ]
+    ],
+    "status": "excluded"
   },
   "LASR": {
     "id": "LASR",
@@ -836,7 +843,7 @@
     "id": "AMD",
     "name": "ADVANCED MICRO DEVICES INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -855,7 +862,7 @@
     "id": "AMBA",
     "name": "AMBARELLA INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -873,7 +880,7 @@
     "id": "ADI",
     "name": "ANALOG DEVICES INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -891,7 +898,7 @@
     "id": "AMAT",
     "name": "APPLIED MATERIAL INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -910,7 +917,7 @@
     "id": "ASML",
     "name": "ASML HOLDING ADR REPRESENTING NV",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Netherlands",
     "city": null,
@@ -928,7 +935,7 @@
     "id": "AVGO",
     "name": "BROADCOM INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -947,7 +954,7 @@
     "id": "CRDO",
     "name": "CREDO TECHNOLOGY GROUP HOLDING LTD",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -965,7 +972,7 @@
     "id": "CDNS",
     "name": "Cadence Design Systems Inc",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -986,7 +993,7 @@
     "id": "KLAC",
     "name": "KLA CORP",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1005,7 +1012,7 @@
     "id": "LRCX",
     "name": "LAM RESEARCH CORP",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1024,7 +1031,7 @@
     "id": "LSCC",
     "name": "Lattice Semiconductor Corp",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1044,7 +1051,7 @@
     "id": "MCHP",
     "name": "MICROCHIP TECHNOLOGY INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1062,7 +1069,7 @@
     "id": "NVMI",
     "name": "NOVA LTD",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Israel",
     "city": null,
@@ -1080,7 +1087,7 @@
     "id": "NVDA",
     "name": "NVIDIA CORP",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1100,7 +1107,7 @@
     "id": "NXPI",
     "name": "NXP SEMICONDUCTORS NV",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Netherlands",
     "city": null,
@@ -1118,7 +1125,7 @@
     "id": "ON",
     "name": "ON SEMICONDUCTOR CORP",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1140,7 +1147,7 @@
     "id": "QCOM",
     "name": "QUALCOMM INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1159,7 +1166,7 @@
     "id": "STM",
     "name": "STMICROELECTRONICS ADR NV",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Switzerland",
     "city": null,
@@ -1176,7 +1183,7 @@
     "id": "SNPS",
     "name": "Synopsys Inc",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1195,7 +1202,7 @@
     "id": "TSM",
     "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Taiwan",
     "city": null,
@@ -1216,7 +1223,7 @@
     "id": "TER",
     "name": "TERADYNE INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1234,7 +1241,7 @@
     "id": "TXN",
     "name": "TEXAS INSTRUMENT INC",
     "type": "public",
-    "sector": "Cross-Stack",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -1354,7 +1361,8 @@
       "GOOG",
       "Google",
       "alphabet inc-cl c"
-    ]
+    ],
+    "status": "excluded"
   },
   "AMZN": {
     "id": "AMZN",
@@ -1373,7 +1381,8 @@
       "AMZN",
       "Amazon",
       "amazon.com inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "APH": {
     "id": "APH",
@@ -1391,7 +1400,8 @@
       "AMPHENOL CORP-CL A",
       "APH",
       "amphenol corp-cl a"
-    ]
+    ],
+    "status": "excluded"
   },
   "455900 KS": {
     "id": "455900 KS",
@@ -1426,7 +1436,8 @@
       "APTIV PLC",
       "APTV",
       "aptiv plc"
-    ]
+    ],
+    "status": "excluded"
   },
   "ATS CN": {
     "id": "ATS CN",
@@ -1487,7 +1498,7 @@
     "id": "6857 JP",
     "name": "Advantest Corp",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Japan",
     "city": null,
@@ -1537,7 +1548,8 @@
       "ANDRITZ AG",
       "Andritz Ag",
       "andritz ag"
-    ]
+    ],
+    "status": "excluded"
   },
   "6845 JP": {
     "id": "6845 JP",
@@ -1574,7 +1586,8 @@
       "BAIDU INC - SPON ADR",
       "BIDU",
       "baidu inc - spon adr"
-    ]
+    ],
+    "status": "excluded"
   },
   "688169 C1": {
     "id": "688169 C1",
@@ -1609,7 +1622,8 @@
       "BWX TECHNOLOGIES INC",
       "BWXT",
       "bwx technologies inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "BYDDY": {
     "id": "BYDDY",
@@ -1627,7 +1641,8 @@
       "BYD CO LTD-UNSPONSORED ADR",
       "BYDDY",
       "byd co ltd-unsponsored adr"
-    ]
+    ],
+    "status": "excluded"
   },
   "BSL GR": {
     "id": "BSL GR",
@@ -1663,7 +1678,8 @@
       "CAMECO CORP",
       "CCJ",
       "cameco corp"
-    ]
+    ],
+    "status": "excluded"
   },
   "CAT": {
     "id": "CAT",
@@ -1681,7 +1697,8 @@
       "CATERPILLAR",
       "CATERPILLAR INC",
       "caterpillar inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "CLS CN": {
     "id": "CLS CN",
@@ -1699,7 +1716,8 @@
       "CELESTICA INC.",
       "CLS CN",
       "celestica inc."
-    ]
+    ],
+    "status": "excluded"
   },
   "002979": {
     "id": "002979",
@@ -1733,7 +1751,8 @@
       "600111",
       "CHINA NORTHERN RARE EARTH -A",
       "china northern rare earth -a"
-    ]
+    ],
+    "status": "excluded"
   },
   "CGNX": {
     "id": "CGNX",
@@ -1769,7 +1788,8 @@
       "COHERENT CORP",
       "COHR",
       "coherent corp"
-    ]
+    ],
+    "status": "excluded"
   },
   "6383 JP": {
     "id": "6383 JP",
@@ -1841,7 +1861,8 @@
       "DOORDASH",
       "DOORDASH INC - A",
       "doordash inc - a"
-    ]
+    ],
+    "status": "excluded"
   },
   "454910 KS": {
     "id": "454910 KS",
@@ -1968,7 +1989,8 @@
       "ELBIT SYSTEMS LTD",
       "ESLT",
       "elbit systems ltd"
-    ]
+    ],
+    "status": "excluded"
   },
   "EMR": {
     "id": "EMR",
@@ -2233,7 +2255,8 @@
       "HON HAI PRECISION INDUSTRY CO",
       "HON HAI PRECISION INDUSTRY CO LTD.",
       "hon hai precision industry co ltd."
-    ]
+    ],
+    "status": "excluded"
   },
   "9660 HK": {
     "id": "9660 HK",
@@ -2268,13 +2291,14 @@
       "1274 HK",
       "IMOTION AUTOMOTIVE TECHNOL-H",
       "imotion automotive technol-h"
-    ]
+    ],
+    "status": "excluded"
   },
   "IFX GR": {
     "id": "IFX GR",
     "name": "INFINEON TECHNOLOGIES AG",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Germany",
     "city": null,
@@ -2291,7 +2315,7 @@
     "id": "LUNR",
     "name": "INTUITIVE MACHINES INC",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Space",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -2346,7 +2370,7 @@
     "id": "IRDM",
     "name": "IRIDIUM COMMUNICATIONS INC",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Space",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -2413,7 +2437,8 @@
       "JABIL INC",
       "JBL",
       "jabil inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "JBTM": {
     "id": "JBTM",
@@ -2606,7 +2631,8 @@
       "KOMATSU",
       "KOMATSU LTD -SPONS ADR",
       "komatsu ltd -spons adr"
-    ]
+    ],
+    "status": "excluded"
   },
   "KTOS": {
     "id": "KTOS",
@@ -2623,7 +2649,8 @@
       "KRATOS DEFENSE & SECURITY",
       "KTOS",
       "kratos defense & security"
-    ]
+    ],
+    "status": "excluded"
   },
   "KRN GR": {
     "id": "KRN GR",
@@ -2659,7 +2686,8 @@
       "Kadant",
       "Kadant Inc",
       "kadant inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "KCR FH": {
     "id": "KCR FH",
@@ -2683,7 +2711,7 @@
     "id": "LHX",
     "name": "L3HARRIS TECHNOLOGIES INC",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Space",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -2718,7 +2746,7 @@
     "id": "6920 JP",
     "name": "Lasertec Corp",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Japan",
     "city": null,
@@ -2769,13 +2797,14 @@
       "MAGNA INTERNATIONAL INC",
       "MG",
       "magna international inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "MELE": {
     "id": "MELE",
     "name": "MELEXIS NV",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -2859,13 +2888,14 @@
       "MOOG",
       "MOOG INC-CLASS A",
       "moog inc-class a"
-    ]
+    ],
+    "status": "excluded"
   },
   "MP": {
     "id": "MP",
     "name": "MP MATERIALS CORP",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Materials",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -2932,7 +2962,8 @@
       "NINGBO TUOPU GROUP CO",
       "NINGBO TUOPU GROUP CO LTD-A",
       "ningbo tuopu group co ltd-a"
-    ]
+    ],
+    "status": "excluded"
   },
   "NDSN": {
     "id": "NDSN",
@@ -2985,7 +3016,8 @@
       "OKLO",
       "OKLO INC",
       "oklo inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "6645 JP": {
     "id": "6645 JP",
@@ -3021,7 +3053,8 @@
       "ONDAS INC.",
       "ONDS",
       "ondas inc."
-    ]
+    ],
+    "status": "excluded"
   },
   "6600 HK": {
     "id": "6600 HK",
@@ -3080,7 +3113,7 @@
     "id": "ONTO",
     "name": "Onto Innovation Inc",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -3111,7 +3144,8 @@
       "PALANTIR TECHNOLOGIES INC-A",
       "PLTR",
       "palantir technologies inc-a"
-    ]
+    ],
+    "status": "excluded"
   },
   "PRCT": {
     "id": "PRCT",
@@ -3182,7 +3216,8 @@
       "RBC BEARINGS",
       "RBC BEARINGS INC",
       "rbc bearings inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "RRX": {
     "id": "RRX",
@@ -3206,7 +3241,7 @@
     "id": "6723",
     "name": "RENESAS ELECTRONICS CORP",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "TBD",
     "city": null,
@@ -3350,7 +3385,7 @@
     "id": "6723 JP",
     "name": "Renesas Electronics Corp",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Japan",
     "city": null,
@@ -3363,7 +3398,8 @@
       "Renesas Electronics",
       "Renesas Electronics Corp",
       "renesas electronics corp"
-    ]
+    ],
+    "status": "excluded"
   },
   "SHA": {
     "id": "SHA",
@@ -3414,7 +3450,8 @@
       "SENSATA TECHNOLOGIES HOLDING",
       "ST",
       "sensata technologies holding"
-    ]
+    ],
+    "status": "excluded"
   },
   "SERV": {
     "id": "SERV",
@@ -3626,7 +3663,8 @@
       "STMICROELECTRONICS NV",
       "STMPA",
       "stmicroelectronics nv"
-    ]
+    ],
+    "status": "excluded"
   },
   "SRTA": {
     "id": "SRTA",
@@ -3644,7 +3682,8 @@
       "STRATA CRITICAL MEDICAL",
       "STRATA CRITICAL MEDICAL INC",
       "strata critical medical inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "SYM": {
     "id": "SYM",
@@ -3679,7 +3718,8 @@
       "TE CONNECTIVITY PLC",
       "TEL",
       "te connectivity plc"
-    ]
+    ],
+    "status": "excluded"
   },
   "TECN SW": {
     "id": "TECN SW",
@@ -3714,7 +3754,8 @@
       "TELEDYNE TECHNOLOGIES",
       "TELEDYNE TECHNOLOGIES INC",
       "teledyne technologies inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "TSLA": {
     "id": "TSLA",
@@ -3733,7 +3774,8 @@
       "TSLA",
       "Tesla",
       "tesla inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "6481 JP": {
     "id": "6481 JP",
@@ -3769,7 +3811,8 @@
       "TRIMBLE INC",
       "TRMB",
       "trimble inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "FTI": {
     "id": "FTI",
@@ -3787,13 +3830,14 @@
       "TECHNIPFMC PLC",
       "Technipfmc Plc",
       "technipfmc plc"
-    ]
+    ],
+    "status": "excluded"
   },
   "8035 JP": {
     "id": "8035 JP",
     "name": "Tokyo Electron Ltd",
     "type": "public",
-    "sector": "Robotics",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "Japan",
     "city": null,
@@ -3843,7 +3887,8 @@
       "XPENG INC - ADR",
       "XPEV",
       "xpeng inc - adr"
-    ]
+    ],
+    "status": "excluded"
   },
   "9868": {
     "id": "9868",
@@ -3861,7 +3906,8 @@
       "XPENG",
       "XPENG INC - CLASS A SHARES",
       "xpeng inc - class a shares"
-    ]
+    ],
+    "status": "excluded"
   },
   "6506 JP": {
     "id": "6506 JP",
@@ -4188,7 +4234,8 @@
       "Gogo",
       "Gogo Inc",
       "gogo inc"
-    ]
+    ],
+    "status": "excluded"
   },
   "GOMX SS": {
     "id": "GOMX SS",
@@ -4249,7 +4296,7 @@
     "id": "HXL",
     "name": "Hexcel Corp",
     "type": "public",
-    "sector": "Space",
+    "sector": "Materials",
     "subsector": null,
     "country": "United States",
     "city": null,
@@ -4392,7 +4439,8 @@
       "NN",
       "NextNav",
       "nextnav"
-    ]
+    ],
+    "status": "excluded"
   },
   "OVZON SS": {
     "id": "OVZON SS",
@@ -5514,7 +5562,7 @@
     "id": "WOLF",
     "name": "Wolfspeed Inc",
     "type": "public",
-    "sector": "Materials",
+    "sector": "Semiconductors",
     "subsector": null,
     "country": "United States",
     "city": null,

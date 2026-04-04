@@ -38,16 +38,19 @@ NORMALISE_DATE = "2025-03-31"  # All indices normalised to BASE_VALUE on this da
 CAP_LIMIT  = 0.05  # 5% max weight per entity
 MIN_MARKET_CAP = 10_000_000  # $10M minimum for index inclusion
 
-# sector mapping for sub-indices
+# sector mapping for sub-indices (Cross-Stack eliminated — entities reclassified)
 SECTOR_MAP = {
-    "Semiconductor": "Semiconductor",
-    "Semis":         "Semiconductor",
-    "Robotics":      "Robotics",
-    "Space":         "Space",
-    "Cross-stack":   "Cross-stack",
-    "Materials":     "Materials",
+    "Semiconductor":      "Semiconductor",
+    "Semiconductors":     "Semiconductor",
+    "Semis":              "Semiconductor",
+    "Robotics":           "Robotics",
+    "Space":              "Space",
+    "Cross-stack":        "Semiconductor",  # Legacy: former Cross-Stack → Semiconductor
+    "Cross-Stack":        "Semiconductor",  # Legacy: former Cross-Stack → Semiconductor
+    "Materials":          "Materials",
     "Materials & Inputs": "Materials",
-    "Token":         "Token",
+    "Token":              "Token",
+    "Tokens":             "Token",
 }
 
 
@@ -245,9 +248,11 @@ def main():
     for e in entities:
         e["sector"] = SECTOR_MAP.get(e.get("sector", ""), e.get("sector", "Other"))
 
-    # filter to entities that have mcap >= minimum threshold and a current price
+    # filter to entities that have mcap >= minimum threshold, a current price, and are not excluded
     eligible = [e for e in entities
-                if e["market_cap_usd"] >= MIN_MARKET_CAP and e["ticker"] in prices_by_ticker]
+                if e["market_cap_usd"] >= MIN_MARKET_CAP
+                and e["ticker"] in prices_by_ticker
+                and e.get("status") != "excluded"]
 
     excluded_micro = [e for e in entities
                       if 0 < e["market_cap_usd"] < MIN_MARKET_CAP and e["ticker"] in prices_by_ticker]
@@ -449,7 +454,7 @@ def main():
     save_json(INDEX_PATH, index_output)
 
     # ── sub-indices (with backfill) ──────────────────────────────────
-    sub_sectors = ["Semiconductor", "Robotics", "Space", "Cross-stack", "Materials", "Token"]
+    sub_sectors = ["Semiconductor", "Robotics", "Space", "Materials", "Token"]
     sub_indices = {}
 
     for sector in sub_sectors:

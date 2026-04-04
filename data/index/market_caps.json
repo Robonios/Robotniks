@@ -5,7 +5,7 @@
     {
       "ticker": "NVDA",
       "name": "NVIDIA",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 4311464017920,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -16,7 +16,8 @@
       "sector": "Robotics",
       "market_cap_usd": 3562082664448,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "AMZN",
@@ -24,12 +25,13 @@
       "sector": "Robotics",
       "market_cap_usd": 2251864408064,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "TSM",
       "name": "TSMC ADR",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 1758432591872,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -37,7 +39,7 @@
     {
       "ticker": "AVGO",
       "name": "Broadcom",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 1491367493632,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -48,12 +50,13 @@
       "sector": "Robotics",
       "market_cap_usd": 1353089417216,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding ADR",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 517221810176,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -72,12 +75,13 @@
       "sector": "Robotics",
       "market_cap_usd": 355068182528,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 354614378496,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -88,12 +92,13 @@
       "sector": "Robotics",
       "market_cap_usd": 335644295168,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 276549238784,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -101,7 +106,7 @@
     {
       "ticker": "LRCX",
       "name": "Lam Research",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 274367184896,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -133,7 +138,7 @@
     {
       "ticker": "KLAC",
       "name": "KLA Corp",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 199301152768,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -149,7 +154,7 @@
     {
       "ticker": "TXN",
       "name": "Texas Instruments",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 177421991936,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -184,12 +189,13 @@
       "sector": "Robotics",
       "market_cap_usd": 157339516928,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "ADI",
       "name": "Analog Devices",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 155414904832,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -221,7 +227,7 @@
     {
       "ticker": "QCOM",
       "name": "Qualcomm",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 135428120576,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -232,7 +238,8 @@
       "sector": "Robotics",
       "market_cap_usd": 132888748032,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "AI FP",
@@ -253,7 +260,7 @@
     {
       "ticker": "8035 JP",
       "name": "Tokyo Electron",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 109957126961,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -269,7 +276,7 @@
     {
       "ticker": "6857 JP",
       "name": "Advantest Corp",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 98043061472,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -304,12 +311,13 @@
       "sector": "Robotics",
       "market_cap_usd": 84413246486,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "CDNS",
       "name": "Cadence Design Systems",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 76952379392,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -317,7 +325,7 @@
     {
       "ticker": "SNPS",
       "name": "Synopsys",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 75848990720,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -352,7 +360,8 @@
       "sector": "Robotics",
       "market_cap_usd": 67966005248,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "LHX",
@@ -376,12 +385,13 @@
       "sector": "Robotics",
       "market_cap_usd": 61369466880,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "IFX GR",
       "name": "Infineon Technologies",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 58560966393,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -421,7 +431,7 @@
     {
       "ticker": "NXPI",
       "name": "NXP Semiconductors",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 49161396224,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -432,7 +442,8 @@
       "sector": "Robotics",
       "market_cap_usd": 49064091648,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "ASX",
@@ -445,7 +456,7 @@
     {
       "ticker": "TER",
       "name": "Teradyne",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 48471285760,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -456,7 +467,8 @@
       "sector": "Robotics",
       "market_cap_usd": 48400318464,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "ESLT",
@@ -464,7 +476,8 @@
       "sector": "Robotics",
       "market_cap_usd": 41377206272,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "ROK",
@@ -496,7 +509,8 @@
       "sector": "Robotics",
       "market_cap_usd": 37754437632,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "SATS",
@@ -512,12 +526,13 @@
       "sector": "Robotics",
       "market_cap_usd": 37022736384,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "MCHP",
       "name": "Microchip Technology",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 35498487808,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -536,7 +551,8 @@
       "sector": "Robotics",
       "market_cap_usd": 33897101150,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "6902 JP",
@@ -576,7 +592,8 @@
       "sector": "Robotics",
       "market_cap_usd": 28861689856,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "JBL",
@@ -584,7 +601,8 @@
       "sector": "Robotics",
       "market_cap_usd": 28687304704,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "FTI",
@@ -592,7 +610,8 @@
       "sector": "Robotics",
       "market_cap_usd": 28457713664,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "2802 JP",
@@ -613,7 +632,7 @@
     {
       "ticker": "6723",
       "name": "Renesas Electronics",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 25805620391,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -645,7 +664,7 @@
     {
       "ticker": "ON",
       "name": "ON Semiconductor",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 25023911936,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -704,7 +723,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 20959983616,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "6971 JP",
@@ -717,7 +737,7 @@
     {
       "ticker": "6920 JP",
       "name": "Lasertec Corp",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 20245080132,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -752,7 +772,8 @@
       "sector": "Robotics",
       "market_cap_usd": 19694729216,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "CRS",
@@ -765,7 +786,7 @@
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 18712444928,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -781,7 +802,7 @@
     {
       "ticker": "ENTG",
       "name": "Entegris",
-      "sector": "Semiconductor",
+      "sector": "Materials",
       "market_cap_usd": 17721772032,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -792,7 +813,8 @@
       "sector": "Robotics",
       "market_cap_usd": 17330667520,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "XPEV",
@@ -800,7 +822,8 @@
       "sector": "Robotics",
       "market_cap_usd": 16911477760,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "4091 JP",
@@ -832,7 +855,8 @@
       "sector": "Robotics",
       "market_cap_usd": 15493413888,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "APTV",
@@ -840,7 +864,8 @@
       "sector": "Robotics",
       "market_cap_usd": 15317399552,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "NDSN",
@@ -856,7 +881,8 @@
       "sector": "Robotics",
       "market_cap_usd": 14579700813,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "4062 JP",
@@ -869,7 +895,7 @@
     {
       "ticker": "NVMI",
       "name": "Nova Ltd",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 14055541760,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -901,7 +927,7 @@
     {
       "ticker": "LSCC",
       "name": "Lattice Semiconductor",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 13005332480,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -920,7 +946,8 @@
       "sector": "Space",
       "market_cap_usd": 12570661888,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "PL",
@@ -989,7 +1016,7 @@
     {
       "ticker": "ONTO",
       "name": "Onto Innovation",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 10712349696,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -1077,7 +1104,7 @@
     {
       "ticker": "MP",
       "name": "MP Materials",
-      "sector": "Robotics",
+      "sector": "Materials",
       "market_cap_usd": 8835402752,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -1096,7 +1123,8 @@
       "sector": "Robotics",
       "market_cap_usd": 8353865728,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "SWKS",
@@ -1216,7 +1244,8 @@
       "sector": "Robotics",
       "market_cap_usd": 6889214547,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "9880 HK",
@@ -1253,7 +1282,7 @@
     {
       "ticker": "HXL",
       "name": "Hexcel Corp",
-      "sector": "Space",
+      "sector": "Materials",
       "market_cap_usd": 6305581056,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -1328,7 +1357,8 @@
       "sector": "Robotics",
       "market_cap_usd": 5046122496,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "688017",
@@ -1360,7 +1390,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 4713216512,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "688297 C1",
@@ -1376,7 +1407,8 @@
       "sector": "Robotics",
       "market_cap_usd": 4624683008,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "6845 JP",
@@ -1416,7 +1448,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 4265490432,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "KRN GR",
@@ -1512,7 +1545,8 @@
       "sector": "Robotics",
       "market_cap_usd": 3378734080,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "LASR",
@@ -1685,7 +1719,7 @@
     {
       "ticker": "MELE",
       "name": "Melexis NV",
-      "sector": "Robotics",
+      "sector": "Semiconductors",
       "market_cap_usd": 2456814133,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -1733,7 +1767,7 @@
     {
       "ticker": "AMBA",
       "name": "Ambarella",
-      "sector": "Cross-stack",
+      "sector": "Semiconductors",
       "market_cap_usd": 2213090048,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -1984,7 +2018,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 1087469696,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "290A JP",
@@ -2013,7 +2048,7 @@
     {
       "ticker": "WOLF",
       "name": "Wolfspeed",
-      "sector": "Materials",
+      "sector": "Semiconductors",
       "market_cap_usd": 844476032,
       "date_fetched": "2026-04-03",
       "source": "Yahoo Finance"
@@ -2120,7 +2155,8 @@
       "sector": "Robotics",
       "market_cap_usd": 483412096,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "SGL GR",
@@ -2144,7 +2180,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 462062336,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "RR",
@@ -2168,7 +2205,8 @@
       "sector": "Semiconductor",
       "market_cap_usd": 442977696,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "VIRTUAL",
@@ -2200,7 +2238,8 @@
       "sector": "Robotics",
       "market_cap_usd": 361004960,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "NVEC",
@@ -2256,7 +2295,8 @@
       "sector": "Robotics",
       "market_cap_usd": 99364367,
       "date_fetched": "2026-04-03",
-      "source": "Yahoo Finance"
+      "source": "Yahoo Finance",
+      "status": "excluded"
     },
     {
       "ticker": "IMI LN",

@@ -83,7 +83,7 @@
           <li>Humanoid robotics funding crosses $5B in trailing twelve months, led by Figure and 1X Technologies. The capital concentration signals a shift from prototype to deployment &mdash; increasing demand for edge compute (NVIDIA Jetson), servo motors (Fanuc, Yaskawa), and rare earth magnets (MP Materials). <span class="feed-sector sector-robo">Robo</span> <span class="feed-sector sector-semi">Semi</span> <span class="feed-sector sector-materials">Materials</span></li>
           <li>Rocket Lab secures Neutron launch contract with major defense partner, first flight H2 2026. Neutron's reusable medium-lift architecture positions RKLB as the primary alternative to SpaceX for institutional payloads. Component suppliers to watch: Moog (MOG.A) for propulsion, Hexcel (HXL) for carbon fibre structures. <span class="feed-sector sector-space">Space</span> <span class="feed-sector sector-materials">Materials</span></li>
           <li>Rebellions secures $166M Korean government investment for AI accelerator chips. South Korea doubling down on domestic semiconductor sovereignty. Competes with NVIDIA (NVDA) and domestic rival FuriosaAI for inference market share. <span class="feed-sector sector-semi">Semi</span></li>
-          <li>Shield AI closes $2B Series G at $12.7B valuation for Hivemind autonomous combat AI. Advent International and JPMorgan lead. Largest defense AI raise to date signals institutional capital pivoting toward autonomous warfare systems. <span class="feed-sector sector-cross">Cross</span></li>
+          <li>Shield AI closes $2B Series G at $12.7B valuation for Hivemind autonomous combat AI. Advent International and JPMorgan lead. Largest defense AI raise to date signals institutional capital pivoting toward autonomous warfare systems. <span class="feed-sector sector-robo">Robo</span></li>
           <li>China's rare earth export controls expand to gallium and germanium derivatives. Downstream impact concentrated in compound semiconductor manufacturers (Wolfspeed, II-VI) and defense primes. MP Materials (MP) and Lynas (LYC AU) positioned as alternative western suppliers. <span class="feed-sector sector-materials">Materials</span> <span class="feed-sector sector-semi">Semi</span></li>
           <li>Unitree Robotics files for Hong Kong IPO seeking up to $610M. First major humanoid robotics IPO signals sector maturation. Low-cost Go2 quadruped and G1 humanoid have driven rapid revenue growth. Watch for pricing and secondary market dynamics. <span class="feed-sector sector-robo">Robo</span></li>
         </ul>
@@ -143,7 +143,6 @@
         <button class="intel-filter-btn" data-val="robo" onclick="setIntelFilter('sector',this)">Robotics</button>
         <button class="intel-filter-btn" data-val="space" onclick="setIntelFilter('sector',this)">Space</button>
         <button class="intel-filter-btn" data-val="materials" onclick="setIntelFilter('sector',this)">Materials</button>
-        <button class="intel-filter-btn" data-val="cross" onclick="setIntelFilter('sector',this)">Cross-stack</button>
       </div>
       <div class="intel-filter-group" data-filter="time">
         <button class="intel-filter-btn active" data-val="24h" onclick="setIntelFilter('time',this)">24h</button>
@@ -211,8 +210,8 @@ var ITEMS_PER_PAGE = 25;
 // Category mapping from RSS data
 var sectorMap = {
   'semi': 'semi', 'robo': 'robo', 'space': 'space',
-  'materials': 'materials', 'supply': 'cross',
-  'ai': 'cross', 'cross': 'cross'
+  'materials': 'materials', 'supply': 'semi',
+  'ai': 'semi', 'cross': 'semi'
 };
 
 // Sector display labels
@@ -221,7 +220,7 @@ var sectorLabels = {
   'robo': { cls: 'sector-robo', text: 'Robo' },
   'space': { cls: 'sector-space', text: 'Space' },
   'materials': { cls: 'sector-materials', text: 'Materials' },
-  'cross': { cls: 'sector-cross', text: 'Cross' }
+  'cross': { cls: 'sector-semi', text: 'Semi' }
 };
 
 // Time ago helper
@@ -273,7 +272,7 @@ function renderCard(item) {
               '<span style="font-weight:700;color:#F5D921;font-size:10px;letter-spacing:0.08em;">ROBOTNIK ANALYSIS</span>' +
               '<span style="font-size:10px;color:#5A6178;">&#x1F512; LOCKED</span>' +
             '</div>' +
-            '<div class="analysis-blur">Cross-referencing against Robotnik universe: mapping supply chain dependencies, second-order impact on related entities, and sector correlation analysis across 347 tracked assets. Price sensitivity and historical pattern matching available with clearance.</div>' +
+            '<div class="analysis-blur">Cross-referencing against Robotnik universe: mapping supply chain dependencies, second-order impact on related entities, and sector correlation analysis across 299 tracked assets. Price sensitivity and historical pattern matching available with clearance.</div>' +
             '<a href="index.html#signup" class="btn-y" style="font-size:10px;margin-top:0.5rem;">Request clearance to unlock</a>' +
           '</div>' +
         '</div>' +
