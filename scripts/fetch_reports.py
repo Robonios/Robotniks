@@ -152,7 +152,7 @@ def fetch_ifr():
 # ── SEMI ─────────────────────────────────────────────────────────────────────
 
 def fetch_semi():
-    """Scrape SEMI newsroom (browser-like headers)."""
+    """Scrape SEMI newsroom — tries direct HTML first, falls back to Brave Search."""
     url = "https://www.semi.org/en/news-media-press/semi-press-releases"
     print(f"  [SEMI] Fetching {url}")
     try:
@@ -191,8 +191,29 @@ def fetch_semi():
         print(f"  [SEMI] {len(unique)} press releases")
         return unique[:20]
     except Exception as e:
-        print(f"  [SEMI] FAILED: {e}")
-        return []
+        print(f"  [SEMI] Direct fetch failed: {e}")
+        # Fallback: use Brave Search API
+        print(f"  [SEMI] Falling back to Brave Search...")
+        try:
+            from web_crawler import WebCrawler
+            crawler = WebCrawler()
+            brave_items = crawler.crawl_semi_org()
+            items = []
+            for bi in brave_items:
+                items.append({
+                    "id": make_id(bi["url"]),
+                    "title": bi["title"],
+                    "url": bi["url"],
+                    "source": "SEMI",
+                    "date": bi.get("date", ""),
+                    "summary": bi.get("summary", ""),
+                    "category": "semi",
+                })
+            print(f"  [SEMI] {len(items)} items via Brave Search fallback")
+            return items[:20]
+        except Exception as e2:
+            print(f"  [SEMI] Brave fallback also failed: {e2}")
+            return []
 
 
 # ── SIA (Semiconductor Industry Association) ─────────────────────────────────
@@ -342,9 +363,33 @@ def fetch_sat_sia():
 
 
 def fetch_space_foundation():
-    """Scrape Space Foundation news."""
+    """Fetch Space Foundation news — tries RSS feed first, falls back to HTML scraping."""
+    # Strategy 1: RSS feed (discovered to work even though HTML page blocks)
+    print(f"  [SpaceFdn] Trying RSS feed...")
+    try:
+        from web_crawler import WebCrawler
+        crawler = WebCrawler()
+        rss_items = crawler.fetch_rss("https://www.spacefoundation.org/feed/", max_items=30)
+        if rss_items:
+            items = []
+            for ri in rss_items:
+                items.append({
+                    "id": make_id(ri["url"]),
+                    "title": ri["title"],
+                    "url": ri["url"],
+                    "source": "Space Foundation",
+                    "date": ri.get("date", ""),
+                    "summary": ri.get("summary", "")[:300],
+                    "category": "space",
+                })
+            print(f"  [SpaceFdn] {len(items)} items from RSS feed")
+            return items[:15]
+    except Exception as e:
+        print(f"  [SpaceFdn] RSS failed: {e}")
+
+    # Strategy 2: Direct HTML scraping (may be blocked by Cloudflare)
     url = "https://www.spacefoundation.org/news/"
-    print(f"  [SpaceFdn] Fetching {url}")
+    print(f"  [SpaceFdn] Trying HTML scrape: {url}")
     try:
         html = fetch_html(url)
         soup = BeautifulSoup(html, "lxml")
@@ -373,10 +418,10 @@ def fetch_space_foundation():
             if item["url"] not in seen:
                 seen.add(item["url"])
                 unique.append(item)
-        print(f"  [SpaceFdn] {len(unique)} articles")
+        print(f"  [SpaceFdn] {len(unique)} articles from HTML")
         return unique[:15]
     except Exception as e:
-        print(f"  [SpaceFdn] FAILED: {e}")
+        print(f"  [SpaceFdn] HTML scrape also failed: {e}")
         return []
 
 
