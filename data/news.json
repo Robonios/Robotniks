@@ -1,8 +1,674 @@
 {
-  "updated": "2026-04-05 06:18",
+  "updated": "2026-04-06 07:28",
   "source": "RSS Aggregation",
   "count": 150,
   "items": [
+    {
+      "id": "ab47d2b959fc",
+      "title": "NXP introduces omlox Starter Kit for industrial RTLS deployment",
+      "url": "https://www.eenewseurope.com/en/nxp-introduces-omlox-starter-kit-for-industrial-rtls-deployment/",
+      "source": "eeNews Europe",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "NXP Semiconductors has introduced the omlox Starter Kit aimed at simplifying the deployment of real-time location systems (RTLS) in industrial environments. The kit combines hardware, software and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "8e10f9b6ce01",
+      "title": "February  chip sales up 61.8% YoY",
+      "url": "https://www.electronicsweekly.com/news/business/february-chip-sales-up-61-8-yoy-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "February semiconductor sales of $88.8 billion were up 7.6% on January\u2019s $82.5 billion and 61.8% more than the $54.9 billion of February 2035, reports the SIA. \u201cGlobal chip sales remained ... The post...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "a4ffe4ac69cb",
+      "title": "Raspberry Pi price hikes",
+      "url": "https://www.electronicsweekly.com/news/business/raspberrypi-price-hikes-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "The memory price surge has hit Raspberry Pi which has introduced three price rises in four months. The 16GB Pi 5 model gets a $100 hike, taking its retail price ... The post Raspberry Pi price hikes...",
+      "mentioned_entities": [
+        "RPI LN"
+      ],
+      "mentioned_tickers": [
+        "RPI LN"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ef4f27848f9a",
+      "title": "Renesas ICs in Artemis",
+      "url": "https://www.electronicsweekly.com/news/business/renesas-ics-in-artemis-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "Renesas\u2019 rad-hard ICs are being used in NASA\u2019s Artemis II mission, which launched from the Kennedy Space Center in Florida on April 1 Within the Artemis II core systems, including ... The post...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ac380eadf9fa",
+      "title": "ST launches GaN gate drivers",
+      "url": "https://www.electronicsweekly.com/news/business/st-launches-gan-gate-drivers-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "ST has announced two new high-speed half-bridge gate drivers that bring GaN efficiency, thermal performance, and miniaturisation to a broad range of power and motion-control applications. The...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ca6fbe022085",
+      "title": "Rohm adds broad range of op amps",
+      "url": "https://www.electronicsweekly.com/news/products/analogue-linear-mixed-signal-ics/rohm-adds-broad-range-of-op-amps-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "ROHM has added the op amp series \u201cTLRx728\u201d and \u201cBD728x\u201c which are suitable automotive, industrial, and consumer systems and have a balanced set of key characteristics across Input Offset Voltage, ......",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "069eaf324393",
+      "title": "Ed Goes Extra-Terrestrial",
+      "url": "https://www.electronicsweekly.com/blogs/mannerisms/ed-the-serial-ceo/ed-goes-extra-terrestrial-2026-04/",
+      "source": "Electronics Weekly",
+      "date": "2026-04-06",
+      "category": "semi",
+      "summary": "There is nothing new under the sun but if Jeff, Elon and a few others get their way there will soon be millions, Ed confides to his diary. Amazon, Tesla ... The post Ed Goes Extra-Terrestrial...",
+      "mentioned_entities": [
+        "AMZN",
+        "TSLA"
+      ],
+      "mentioned_tickers": [
+        "AMZN",
+        "TSLA"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "96a7793a36d8",
+      "title": "Humanity is back at the moon! Artemis 2 astronauts arrive in lunar space",
+      "url": "https://www.space.com/space-exploration/artemis/humanity-is-back-at-the-moon-artemis-2-astronauts-arrive-in-lunar-space",
+      "source": "Space.com",
+      "date": "2026-04-06",
+      "category": "space",
+      "summary": "The four astronauts of NASA's Artemis 2 mission have arrived at the moon. They entered the lunar sphere of influence early Monday morning (April 6).",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "689de64961bb",
+      "title": "A Dynamic Toolkit for Transmission Characteristics of Precision Reducers with Explicit Contact Geometry",
+      "url": "https://arxiv.org/abs/2604.02387",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02387v1 Announce Type: new Abstract: Precision reducers are critical components in robotic systems, directly affecting the motion accuracy and dynamic performance of humanoid robots,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "757640744884",
+      "title": "Backup-Based Safety Filters: A Comparative Review of Backup CBF, Model Predictive Shielding, and gatekeeper",
+      "url": "https://arxiv.org/abs/2604.02401",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02401v1 Announce Type: new Abstract: This paper revisits three backup-based safety filters -- Backup Control Barrier Functions (Backup CBF), Model Predictive Shielding (MPS), and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "12fcbac02e28",
+      "title": "F2F-AP: Flow-to-Future Asynchronous Policy for Real-time Dynamic Manipulation",
+      "url": "https://arxiv.org/abs/2604.02408",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02408v1 Announce Type: new Abstract: Asynchronous inference has emerged as a prevalent paradigm in robotic manipulation, achieving significant progress in ensuring trajectory smoothness...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "cf5f01114a6d",
+      "title": "Adaptive Learned State Estimation based on KalmanNet",
+      "url": "https://arxiv.org/abs/2604.02441",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02441v1 Announce Type: new Abstract: Hybrid state estimators that combine model-based Kalman filtering with learned components have shown promise on simulated data, yet their performance...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "5e6a738ff731",
+      "title": "Tune to Learn: How Controller Gains Shape Robot Policy Learning",
+      "url": "https://arxiv.org/abs/2604.02523",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02523v1 Announce Type: new Abstract: Position controllers have become the dominant interface for executing learned manipulation policies. Yet a critical design decision remains...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "a618c1c84bce",
+      "title": "From Impact to Insight: Dynamics-Aware Proprioceptive Terrain Sensing on Granular Media",
+      "url": "https://arxiv.org/abs/2604.02563",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02563v1 Announce Type: new Abstract: Robots that traverse natural terrain must interpret contact forces generated under highly dynamic conditions. However, most terrain characterization...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "efc36d993421",
+      "title": "Elastomeric Strain Limitation for Design of Soft Pneumatic Actuators",
+      "url": "https://arxiv.org/abs/2604.02609",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02609v1 Announce Type: new Abstract: Modern robots embody power and precision control. Yet, as robots undertake tasks that apply forces on humans, this power brings risk of injury. Soft...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "2a0503283522",
+      "title": "Differentiable SpaTiaL: Symbolic Learning and Reasoning with Geometric Temporal Logic for Manipulation Tasks",
+      "url": "https://arxiv.org/abs/2604.02643",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02643v1 Announce Type: new Abstract: Executing complex manipulation in cluttered environments requires satisfying coupled geometric and temporal constraints. Although Spatio-Temporal Logic...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "bcc433e1bdb1",
+      "title": "ALIVE-LIO: Degeneracy-Aware Learning of Inertial Velocity for Enhancing ESKF-Based LiDAR-Inertial Odometry",
+      "url": "https://arxiv.org/abs/2604.02706",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02706v1 Announce Type: new Abstract: Odometry estimation using light detection and ranging (LiDAR) and an inertial measurement unit (IMU), known as LiDAR-inertial odometry (LIO), often...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "b0452f27b2b2",
+      "title": "A Rapid Instrument Exchange System for Humanoid Robots in Minimally Invasive Surgery",
+      "url": "https://arxiv.org/abs/2604.02707",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02707v1 Announce Type: new Abstract: Humanoid robot technologies have demonstrated immense potential for minimally invasive surgery (MIS). Unlike dedicated multi-arm surgical platforms,...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "57b88e9a2db6",
+      "title": "V2X-QA: A Comprehensive Reasoning Dataset and Benchmark for Multimodal Large Language Models in Autonomous Driving Across Ego, Infrastructure, and Cooperative Views",
+      "url": "https://arxiv.org/abs/2604.02710",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02710v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) have shown strong potential for autonomous driving, yet existing benchmarks remain largely ego-centric and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "76f89e01f3a5",
+      "title": "Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards",
+      "url": "https://arxiv.org/abs/2604.02744",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02744v1 Announce Type: new Abstract: Quadrupedal locomotion over complex terrain has been a long-standing research topic in robotics. While recent reinforcement learning-based locomotion...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "7d1c1dbe4a01",
+      "title": "Geometrically-Constrained Radar-Inertial Odometry via Continuous Point-Pose Uncertainty Modeling",
+      "url": "https://arxiv.org/abs/2604.02745",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02745v1 Announce Type: new Abstract: Radar odometry is crucial for robust localization in challenging environments; however, the sparsity of reliable returns and distinctive noise...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "f8349ffeff66",
+      "title": "OMNI-PoseX: A Fast Vision Model for 6D Object Pose Estimation in Embodied Tasks",
+      "url": "https://arxiv.org/abs/2604.02759",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02759v1 Announce Type: new Abstract: Accurate 6D object pose estimation is a fundamental capability for embodied agents, yet remains highly challenging in open-world environments. Many...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "e0b7379faefa",
+      "title": "Vision-Based End-to-End Learning for UAV Traversal of Irregular Gaps via Differentiable Simulation",
+      "url": "https://arxiv.org/abs/2604.02779",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02779v1 Announce Type: new Abstract: -Navigation through narrow and irregular gaps is an essential skill in autonomous drones for applications such as inspection, search-and-rescue, and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "32faf85989fe",
+      "title": "QuadAgent: A Responsive Agent System for Vision-Language Guided Quadrotor Agile Flight",
+      "url": "https://arxiv.org/abs/2604.02786",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02786v1 Announce Type: new Abstract: We present QuadAgent, a training-free agent system for agile quadrotor flight guided by vision-language inputs. Unlike prior end-to-end or serial agent...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "68433a7e92a2",
+      "title": "Learning Structured Robot Policies from Vision-Language Models via Synthetic Neuro-Symbolic Supervision",
+      "url": "https://arxiv.org/abs/2604.02812",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02812v1 Announce Type: new Abstract: Vision-language models (VLMs) have recently demonstrated strong capabilities in mapping multimodal observations to robot behaviors. However, most...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "4174a21a0382",
+      "title": "MFE: A Multimodal Hand Exoskeleton with Interactive Force, Pressure and Thermo-haptic Feedback",
+      "url": "https://arxiv.org/abs/2604.02820",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02820v1 Announce Type: new Abstract: Recent advancements in virtual reality and robotic teleoperation have greatly increased the variety of haptic information that must be conveyed to...",
+      "mentioned_entities": [
+        "VIRTUAL"
+      ],
+      "mentioned_tickers": [
+        "VIRTUAL"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "30b47b4353a8",
+      "title": "Goal-Conditioned Neural ODEs with Guaranteed Safety and Stability for Learning-Based All-Pairs Motion Planning",
+      "url": "https://arxiv.org/abs/2604.02821",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02821v1 Announce Type: new Abstract: This paper presents a learning-based approach for all-pairs motion planning, where the initial and goal states are allowed to be arbitrary points in a...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ff2152b6040e",
+      "title": "Orientation Matters: Learning Radiation Patterns of Multi-Rotor UAVs In-Flight to Enhance Communication Availability Modeling",
+      "url": "https://arxiv.org/abs/2604.02827",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02827v1 Announce Type: new Abstract: The paper presents an approach for learning antenna Radiation Patterns (RPs) of a pair of heterogeneous quadrotor Uncrewed Aerial Vehicles (UAVs) by...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "5a46d0444e79",
+      "title": "An Asynchronous Two-Speed Kalman Filter for Real-Time UUV Cooperative Navigation Under Acoustic Delays",
+      "url": "https://arxiv.org/abs/2604.02878",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02878v1 Announce Type: new Abstract: In GNSS-denied underwater environments, individual unmanned underwater vehicles (UUVs) suffer from unbounded dead-reckoning drift, making collaborative...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ba87e8cad4db",
+      "title": "RAGE: A Tightly Coupled Radar-Aided Grip Estimator For Autonomous Race Cars",
+      "url": "https://arxiv.org/abs/2604.02892",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02892v1 Announce Type: new Abstract: Real-time estimation of vehicle-tire-road friction is critical for allowing autonomous race cars to safely and effectively operate at their physical...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "11279e7e39b2",
+      "title": "Learning Task-Invariant Properties via Dreamer: Enabling Efficient Policy Transfer for Quadruped Robots",
+      "url": "https://arxiv.org/abs/2604.02911",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02911v1 Announce Type: new Abstract: Achieving quadruped robot locomotion across diverse and dynamic terrains presents significant challenges, primarily due to the discrepancies between...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "f9787284a222",
+      "title": "Open-Loop Planning, Closed-Loop Verification: Speculative Verification for VLA",
+      "url": "https://arxiv.org/abs/2604.02965",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.02965v1 Announce Type: new Abstract: Vision-Language-Action (VLA) models, as large foundation models for embodied control, have shown strong performance in manipulation tasks. However,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "d661d265cde6",
+      "title": "A Flow Matching Framework for Soft-Robot Inverse Dynamics",
+      "url": "https://arxiv.org/abs/2604.03006",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03006v1 Announce Type: new Abstract: Learning the inverse dynamics of soft continuum robots remains challenging due to high-dimensional nonlinearities and complex actuation coupling....",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "4fa5684d875b",
+      "title": "Asymptotically-Bounded 3D Frontier Exploration enhanced with Bayesian Information Gain",
+      "url": "https://arxiv.org/abs/2604.03008",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03008v1 Announce Type: new Abstract: Robotic exploration in large-scale environments is computationally demanding due to the high overhead of processing extensive frontiers. This article...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "33692d7c57ad",
+      "title": "Behavior-Constrained Reinforcement Learning with Receding-Horizon Credit Assignment for High-Performance Control",
+      "url": "https://arxiv.org/abs/2604.03023",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03023v1 Announce Type: new Abstract: Learning high-performance control policies that remain consistent with expert behavior is a fundamental challenge in robotics. Reinforcement learning...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "8a15b80b1f26",
+      "title": "ARM: Advantage Reward Modeling for Long-Horizon Manipulation",
+      "url": "https://arxiv.org/abs/2604.03037",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03037v1 Announce Type: new Abstract: Long-horizon robotic manipulation remains challenging for reinforcement learning (RL) because sparse rewards provide limited guidance for credit...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "8d9ef3ea226c",
+      "title": "Enhancing Multi-Robot Exploration Using Probabilistic Frontier Prioritization with Dirichlet Process Gaussian Mixtures",
+      "url": "https://arxiv.org/abs/2604.03042",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03042v1 Announce Type: new Abstract: Multi-agent autonomous exploration is essential for applications such as environmental monitoring, search and rescue, and industrial-scale...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "be1ddb705fab",
+      "title": "Joint Prediction of Human Motions and Actions in Human-Robot Collaboration",
+      "url": "https://arxiv.org/abs/2604.03065",
+      "source": "arXiv Robotics",
+      "date": "2026-04-06",
+      "category": "robo",
+      "summary": "arXiv:2604.03065v1 Announce Type: new Abstract: Fluent human--robot collaboration requires robots to continuously estimate human behaviour and anticipate future intentions. This entails reasoning...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "2445e01da705",
+      "title": "Holos: A Web-Scale LLM-Based Multi-Agent System for the Agentic Web",
+      "url": "https://arxiv.org/abs/2604.02334",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02334v1 Announce Type: new Abstract: As large language models (LLM)-driven agents transition from isolated task solvers to persistent digital entities, the emergence of the Agentic Web, an...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "9820eb0a058d",
+      "title": "Understanding the Nature of Generative AI as Threshold Logic in High-Dimensional Space",
+      "url": "https://arxiv.org/abs/2604.02476",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02476v1 Announce Type: new Abstract: This paper examines the role of threshold logic in understanding generative artificial intelligence. Threshold functions, originally studied in the...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "18eb7db68afe",
+      "title": "AIVV: Neuro-Symbolic LLM Agent-Integrated Verification and Validation for Trustworthy Autonomous Systems",
+      "url": "https://arxiv.org/abs/2604.02478",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02478v1 Announce Type: new Abstract: Deep learning models excel at detecting anomaly patterns in normal data. However, they do not provide a direct solution for anomaly classification and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "bb322e56d203",
+      "title": "AutoVerifier: An Agentic Automated Verification Framework Using Large Language Models",
+      "url": "https://arxiv.org/abs/2604.02617",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02617v1 Announce Type: new Abstract: Scientific and Technical Intelligence (S&amp;TI) analysis requires verifying complex technical claims across rapidly growing literature, where existing...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "4ab6a9e5683e",
+      "title": "DeltaLogic: Minimal Premise Edits Reveal Belief-Revision Failures in Logical Reasoning Models",
+      "url": "https://arxiv.org/abs/2604.02733",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02733v1 Announce Type: new Abstract: Reasoning benchmarks typically evaluate whether a model derives the correct answer from a fixed premise set, but they under-measure a closely related...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "57671e4bdec8",
+      "title": "Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents",
+      "url": "https://arxiv.org/abs/2604.02734",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02734v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated strong potential in long-horizon decision-making tasks, such as embodied manipulation and web...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "e140c2686697",
+      "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2604.02947",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.02947v1 Announce Type: new Abstract: Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "d8e6d2f47345",
+      "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
+      "url": "https://arxiv.org/abs/2604.03016",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.03016v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are evolving from passive observers into active agents, solving problems through Visual Expansion (invoking...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "0cfe5b84ac5b",
+      "title": "Automatic Textbook Formalization",
+      "url": "https://arxiv.org/abs/2604.03071",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.03071v1 Announce Type: new Abstract: We present a case study where an automatic AI system formalizes a textbook with more than 500 pages of graduate-level algebraic combinatorics to Lean....",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "6b3872c88421",
+      "title": "Chart-RL: Policy Optimization Reinforcement Learning for Enhanced Visual Reasoning in Chart Question Answering with Vision Language Models",
+      "url": "https://arxiv.org/abs/2604.03157",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.03157v1 Announce Type: new Abstract: The recent advancements in Vision Language Models (VLMs) have demonstrated progress toward true intelligence requiring robust reasoning capabilities....",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "0243f3431790",
+      "title": "Coupled Control, Structured Memory, and Verifiable Action in Agentic AI (SCRAT -- Stochastic Control with Retrieval and Auditable Trajectories): A Comparative Perspective from Squirrel Locomotion and Scatter-Hoarding",
+      "url": "https://arxiv.org/abs/2604.03201",
+      "source": "arXiv AI",
+      "date": "2026-04-06",
+      "category": "ai",
+      "summary": "arXiv:2604.03201v1 Announce Type: new Abstract: Agentic AI is increasingly judged not by fluent output alone but by whether it can act, remember, and verify under partial observability, delay, and...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "8686f15295bd",
+      "title": "NORD Drivesystems launches industrial gear units for the mining industry",
+      "url": "https://www.therobotreport.com/nord-drivesystems-launches-industrial-gear-units-for-the-mining-industry/",
+      "source": "The Robot Report",
+      "date": "2026-04-05",
+      "category": "robo",
+      "summary": "NORD designed the MAXXDRIVE series with a one-piece UNICASE housing that ensures high structural rigidity and leak protection. The post NORD Drivesystems launches industrial gear units for the mining...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "5fb85cc7bd04",
+      "title": "Studying Human Attitudes Towards Robots Through Experience",
+      "url": "https://spectrum.ieee.org/boston-dynamics-spot-interaction",
+      "source": "IEEE Spectrum Robotics",
+      "date": "2026-04-05",
+      "category": "robo",
+      "summary": "Building the next generation of robots for successful integration into our homes, offices, and factories is more than just solving the hardware and software problems \u2013 we also need to understand how...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "9e659d359704",
+      "title": "New: Elektor\u2019s robotics and automation special",
+      "url": "https://www.eenewseurope.com/en/new-elektors-robotics-and-automation-special/",
+      "source": "eeNews Europe",
+      "date": "2026-04-05",
+      "category": "semi",
+      "summary": "The subjects of robotics and automation remain a strong draw for engineers and tech enthusiasts eager to understand how intelligent systems are designed and applied. Thanks to increasingly accessible...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
     {
       "id": "e78c837af801",
       "title": "Rutronik adds DIN-rail power supply modules",
@@ -13,7 +679,59 @@
       "summary": "Rutronik has expanded its industrial portfolio with a modular set of power and protection components aimed at 24 V industrial systems. The RACPRO1 series, developed by RECOM, combines power supplies,...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "ba9096857fd9",
+      "title": "Can orbital data centers help justify a massive valuation for SpaceX?",
+      "url": "https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/",
+      "source": "TechCrunch AI",
+      "date": "2026-04-05",
+      "category": "ai",
+      "summary": "On the latest episode of TechCrunch\u2019s Equity podcast, we debated Elon Musk's vision for data centers in space.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "c6c4912748dd",
+      "title": "In Japan, the robot isn\u2019t coming for your job; it\u2019s filling the one nobody wants",
+      "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+      "source": "TechCrunch AI",
+      "date": "2026-04-05",
+      "category": "ai",
+      "summary": "Driven by labor shortages, Japan is pushing physical AI from pilot projects into real-world deployment.",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "1577ed2fd09e",
+      "title": "Isaacman defends NASA budget proposal despite steep cuts",
+      "url": "https://spacenews.com/isaacman-defends-nasa-budget-proposal-despite-steep-cuts/",
+      "source": "SpaceNews",
+      "date": "2026-04-05",
+      "category": "space",
+      "summary": "NASA Administrator Jared Isaacman defended a fiscal year 2027 budget proposal that would cut the agency\u2019s budget by nearly 25%. The post Isaacman defends NASA budget proposal despite steep cuts...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "7ca6a99a0622",
+      "title": "NASA stops work on SLS Mobile Launcher 2",
+      "url": "https://spacenews.com/nasa-stops-work-on-sls-mobile-launcher-2/",
+      "source": "SpaceNews",
+      "date": "2026-04-05",
+      "category": "space",
+      "summary": "NASA has stopped work on a second mobile launch platform intended for an upgraded version of the Space Launch System the agency no longer plans to develop. The post NASA stops work on SLS Mobile...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c80945e0d7a1",
@@ -22,10 +740,34 @@
       "source": "SpaceNews",
       "date": "2026-04-05",
       "category": "space",
-      "summary": "WASHINGTON \u2014 As Artemis 2 approaches the moon, a NASA science team is finalizing plans for the observations they want the astronauts to perform during their flyby. At an April 4 briefing, a...",
+      "summary": "As Artemis 2 approaches the moon, a NASA science team is finalizing plans for the observations they want the astronauts to perform during their flyby. The post NASA finalizes science plans for...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "f5923867628d",
+      "title": "The breakout star of NASA's Artemis 2 moon mission isn't an astronaut \u2014 it's the space toilet",
+      "url": "https://www.space.com/space-exploration/artemis/the-breakout-star-of-nasas-artemis-2-mission-to-the-moon-isnt-an-astronaut-its-the-space-toilet",
+      "source": "Space.com",
+      "date": "2026-04-05",
+      "category": "space",
+      "summary": "The on-again, off-again lunar loo allows astronauts to \"go\" at the moon like no one's gone before.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "0359d5b310a8",
+      "title": "Learn to build warehouse robots people enjoy working with at the Robotics Summit",
+      "url": "https://www.therobotreport.com/learn-to-build-warehouse-robots-people-enjoy-working-with-at-the-robotics-summit/",
+      "source": "The Robot Report",
+      "date": "2026-04-04",
+      "category": "robo",
+      "summary": "At the Robotics Summit &#038; Expo, Anthony Jules, Robust.AI, will explore what it takes to bring automation into complex warehouse environments. The post Learn to build warehouse robots people enjoy...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "fa40cb28424a",
@@ -37,7 +779,7 @@
       "summary": "A new system-level reference design platform aims to accelerate adoption of Single-Pair Ethernet (SPE) in industrial and building automation applications. Developed through a collaboration between...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "4b0bfe976815",
@@ -49,7 +791,7 @@
       "summary": "Glen Anderson, president of Rainmaker Securities, says the secondary market for private shares has never been more active \u2014 with Anthropic the hottest trade around, OpenAI losing ground, and SpaceX's...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "96a133f4d4ea",
@@ -93,7 +835,7 @@
       "summary": "$71 billion request for the U.S. Space Force for fiscal year 2027 includes more than $60 billion for procurement, research and development The post Space Force budget would more than double in...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "61c68b306a5b",
@@ -105,7 +847,7 @@
       "summary": "A day after lighting its engine to head to the moon, the Artemis 2 Orion spacecraft is performing well with only minor issues. The post Artemis 2 in good shape cruising towards the moon appeared...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "a76006ad9c6b",
@@ -117,7 +859,7 @@
       "summary": "As NASA\u2019s Artemis II mission enters its critical mid-flight phase, the Orion spacecraft\u2014carrying the first&#8230; The post Orion Spacecraft Races Toward Historic Lunar Flyby in Artemis II Mission...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "7d13281934a8",
@@ -129,7 +871,47 @@
       "summary": "The astronauts on NASA's Artemis 2 moon mission reported a burning smell from their Orion spacecraft toilet overnight, but Mission Control isn't overly concerned. They are over halfway to the moon...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "c200e6a171c7",
+      "title": "AES Maximo robot installs 100 megawatts of solar capacity",
+      "url": "https://www.therobotreport.com/aes-maximo-robot-installs-100-megawatts-of-solar-capacity/",
+      "source": "The Robot Report",
+      "date": "2026-04-03",
+      "category": "robo",
+      "summary": "Maximo, a robotics startup incubated by energy company AES, has successfully deployed its solar panel installation robots at a site in California. The post AES Maximo robot installs 100 megawatts of...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "b0afc4380fc2",
+      "title": "The future of RealSense 3D vision with Chris Matthieu",
+      "url": "https://www.therobotreport.com/the-future-of-realsense-3d-vision-with-chris-matthieu/",
+      "source": "The Robot Report",
+      "date": "2026-04-03",
+      "category": "robo",
+      "summary": "The podcast's guest this week is Chris Matthieu, VP of Developer Ecosystem for RealSense, looking to the future of 3D vision. The post The future of RealSense 3D vision with Chris Matthieu appeared...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "520085988ec2",
+      "title": "Generalist introduces GEN-1 general-purpose model for physical AI",
+      "url": "https://www.therobotreport.com/generalist-introduces-gen-1-general-purpose-model-for-physical-ai/",
+      "source": "The Robot Report",
+      "date": "2026-04-03",
+      "category": "robo",
+      "summary": "Generalist AI said its latest model marks a significant step toward its mission of creating general intelligence for the physical world. The post Generalist introduces GEN-1 general-purpose model for...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "9ac070e359f3",
@@ -141,7 +923,7 @@
       "summary": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "ac86a18d6a37",
@@ -185,7 +967,7 @@
       "summary": "A new technical paper, &#8220;Assertain: Automated Security Assertion Generation Using Large Language Models,&#8221; was published by University of Florida. Abstract &#8220;The increasing complexity...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "cbe73b0b199e",
@@ -215,7 +997,7 @@
       "summary": "Discover how 75-year-old holography tech could finally unlock true AR smart glasses. The post Why Today\u2019s AR Displays Fall Short and a 75-Year-Old Idea May Help appeared first on EE Times.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "71e0257e4455",
@@ -227,7 +1009,7 @@
       "summary": "Hardware shortages are stimulating the AI chip counterfeit market. Experts believe a hardware root of trust could alleviate authenticity and security challenges. The post Hardware Root of Trust...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "6c275c343d5d",
@@ -239,7 +1021,7 @@
       "summary": "Samsung Electronics Co., Ltd. said it held its 2026 Device Solutions (DS) Division Mutual Growth Cooperation Day, recognizing top-performing suppliers including KCTech Co., Ltd. and Wonik IPS Co.,...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "0a57e5ce6f35",
@@ -251,7 +1033,7 @@
       "summary": "DEEPX said on April 2 it has expanded its partnership with Lotte Innovate Co., Ltd. following successful proof-of-concept (PoC) validation of its neural processing unit (NPU), DX-M1.The company said...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "f356fb77c52f",
@@ -263,7 +1045,7 @@
       "summary": "AUROS Technology Inc. is conducting qualification testing of its ultra-precision thin-film thickness measurement equipment with a major domestic chipmaker, potentially paving the way for annual...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "fa8e26779148",
@@ -291,7 +1073,7 @@
       "summary": "\"Helium can be sourced from the U.S. or Russia. Tungsten can only come from China.\"While concerns are rising over semiconductor material supplies such as helium amid tensions linked to Iran, industry...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "f8609fc5faf4",
@@ -303,7 +1085,7 @@
       "summary": "Mobilint, Inc. said on April 1 it has completed a 70 billion won Series C funding round, with proceeds to be used to advance next-generation neural processing unit (NPU) architecture, expand mass...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "97aa8bb5cfb2",
@@ -331,7 +1113,7 @@
       "summary": "Samsung Electronics Co., Ltd. and SK Hynix Inc. are expected to report record-breaking first-quarter earnings, driven by strong demand for high-bandwidth memory (HBM) and sharp price increases in...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "db88a7a0db83",
@@ -343,7 +1125,7 @@
       "summary": "FuriosaAI Inc. will begin mass production of its second-generation AI chip, Renegade (RNGD), with plans to supply the product to Samsung SDS Co., Ltd. for cloud deployment starting in July.Chief...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "9eedfcedf79f",
@@ -355,7 +1137,7 @@
       "summary": "The European Commission has approved a \u20ac500 million Luxembourg state aid scheme designed to expand clean technology manufacturing capacity. The initiative supports strategic investments that will...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "d3ac35a2b06b",
@@ -367,7 +1149,7 @@
       "summary": "London-based AI firm Arcas has partnered with US AI company Seekr to deliver explainable AI systems tailored for European enterprises operating under increasingly strict regulatory oversight. The...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "72ee1eb74387",
@@ -379,7 +1161,7 @@
       "summary": "Keysight has introduced a software tool designed to help manufacturers meet the increasing transparency requirements for software as cybersecurity regulations worldwide become more stringent. The...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "12e970abb8db",
@@ -391,7 +1173,7 @@
       "summary": "22 years ago people were concerned about the damage mobile phones would do to their ears, In 2004, the UK\u2019s National Radiological Protection Board (NRPB) said that Swedish research indicating ... The...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "f4ad4b931f82",
@@ -403,7 +1185,7 @@
       "summary": "The Melexis MLX80339 fan driver is designed to produce efficient, low-noise motor control. Featuring pre-validated logic configurable via an intuitive interface, the code-free MLX80339 enables rapid...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "f0a17720c919",
@@ -415,7 +1197,7 @@
       "summary": "Samsung says it has opened a foundry service for photonic integrated circuits (PICs) integrating modulators, waveguides, photodiodes and memory and has a PDK currently available for potential...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "547599fdc304",
@@ -438,60 +1220,6 @@
       "entity_tagged": "2026-04-03"
     },
     {
-      "id": "be728a093387",
-      "title": "Mouser expands Autonomous Vehicle resource centre",
-      "url": "https://www.electronicsweekly.com/news/business/mouser-expands-autonomous-vehicle-resource-centre-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-03",
-      "category": "semi",
-      "summary": "Mouser has expanded its Autonomous Vehicle (AV) resource centre focused on the system architectures and design constraints shaping production-ready autonomy. The hub examines how sensing, in-vehicle...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "d05e6a6d4399",
-      "title": "element14 launches Inspire Her Future",
-      "url": "https://www.electronicsweekly.com/news/business/element14-launches-inspire-her-future-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-03",
-      "category": "semi",
-      "summary": "element14, has launched INSPIRE HER FUTURE, a global celebration recognizing women driving progress across science, technology, engineering and mathematics. Women are building, testing, teaching and...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "5c6d608fd20b",
-      "title": "PMICs for ST Cortex-A MPUs",
-      "url": "https://www.electronicsweekly.com/news/products/micros/pmics-for-st-cortex-a-mpus-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-03",
-      "category": "semi",
-      "summary": "ST\u2019s STPMIC1L and STPMIC2L PMICs help designers leverage its Arm CortexA-based MPUs in industrial applications. Tailored for the 32-bit STM32MP1x and 64-bit STM32MP2x series, the new PMICs deliver...",
-      "mentioned_entities": [
-        "ARM",
-        "STM"
-      ],
-      "mentioned_tickers": [
-        "ARM",
-        "STM"
-      ],
-      "entity_tagged": "2026-04-03"
-    },
-    {
-      "id": "d63baf6d6a98",
-      "title": "Where Homosexuality Is Illegal",
-      "url": "https://www.electronicsweekly.com/blogs/mannerisms/democracy-and-standards/where-homosexuality-is-illegal-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-03",
-      "category": "semi",
-      "summary": "Consensual same\u2011sex relations remain criminalized in a number of countries, with some prescribing the death penalty, according to ILGA \u2014 the International Lesbian, Gay, Bisexual, Trans and Intersex...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
       "id": "27d3afa21fd5",
       "title": "Elon Musk insists banks working on SpaceX IPO must buy Grok subscriptions",
       "url": "https://arstechnica.com/tech-policy/2026/04/elon-musk-insists-banks-working-on-spacex-ipo-must-buy-grok-subscriptions/",
@@ -501,7 +1229,7 @@
       "summary": "Some banks \"agreed to spend tens of millions on the chatbot,\" NYT reports.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "df184438a27f",
@@ -513,7 +1241,7 @@
       "summary": "Italy\u2019s Argotec has officially opened its first U.S. satellite production facility, cementing a foothold near Kennedy Space Center in Florida to join other foreign space firms pursuing growing demand...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "e222a6a83f5e",
@@ -525,7 +1253,7 @@
       "summary": "For the second consecutive year, the White House is proposing a major budget cut for NASA that would significantly impact the agency\u2019s science programs and the International Space Station. The post...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "293fc6b1c9d0",
@@ -553,7 +1281,7 @@
       "summary": "Europe\u2019s future in space really boils down to one question: can it stay ahead without relying on technology made somewhere else? As we step into what experts call the \u201csecond space age,\u201d strategic...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "d03a52cb0201",
@@ -565,7 +1293,7 @@
       "summary": "The first launch of the Tianlong-3 rocket from Chinese commercial firm Space Pioneer failed Friday after suffering an anomaly in its ascent phase. The post China\u2019s commercial Tianlong-3 rocket fails...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c5ce82d7cbff",
@@ -577,7 +1305,7 @@
       "summary": "NASA\u2019s Artemis 2 mission is on its way to the moon after a successful maneuver April 2. The post Artemis 2 heads to the moon appeared first on SpaceNews.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "de56c7c474b1",
@@ -589,7 +1317,7 @@
       "summary": "The budget proposal includes the same top line as the administration\u2019s fiscal 2026 request, and would make similar cuts to NASA\u2019s science and STEM missions. The post White House Requests $18.8B FY27...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "dcbafb02edae",
@@ -617,7 +1345,7 @@
       "summary": "Revenge of EO The post Charts Defining the Space Industry in Q1 2026 appeared first on Payload Pro. The post Charts Defining the Space Industry in Q1 2026 appeared first on Payload.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "6f3339f8dfd9",
@@ -629,7 +1357,7 @@
       "summary": "In a historic milestone more than 50 years in the making, NASA\u2019s Orion spacecraft Integrity&#8230; The post Artemis II Orion performs TLI Burn \u2014 Now headed to the Moon appeared first on...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "fb514a4b11af",
@@ -641,7 +1369,7 @@
       "summary": "From the ground to low Earth orbit, the Artemis 2 launch became a shared moment across the planet and beyond.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c7501eede507",
@@ -685,7 +1413,7 @@
       "summary": "Artemis 2's Orion capsule aced a critical engine burn this evening (April 2) that sent it from Earth orbit outward toward the moon.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "376975f81365",
@@ -697,7 +1425,7 @@
       "summary": "Week in images: 30 March - 03 April 2026 Discover our week through the lens",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c2ad5a2407e7",
@@ -709,7 +1437,7 @@
       "summary": "Image: A pair of planet-forming discs",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "6dad36d505f2",
@@ -721,7 +1449,47 @@
       "summary": "Image: In an unusual perspective for an Earth-observing satellite, the Copernicus Sentinel-2 mission captures this image of Earth\u2019s only natural satellite.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "4e2dce29f59f",
+      "title": "Qualcomm joins MassRobotics, to support startups with Dragonwing Robotics Hub",
+      "url": "https://www.therobotreport.com/qualcomm-joins-massrobotics-supports-startups-dragonwing-robotics-hub/",
+      "source": "The Robot Report",
+      "date": "2026-04-02",
+      "category": "robo",
+      "summary": "Qualcomm has joined MassRobotics as a sponsor and will support startups with its Dragonwing collaborative developer hub. The post Qualcomm joins MassRobotics, to support startups with Dragonwing...",
+      "mentioned_entities": [
+        "QCOM"
+      ],
+      "mentioned_tickers": [
+        "QCOM"
+      ],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "03f7400f392c",
+      "title": "Sanctuary AI\u2019s robotic hand demonstrates zero-shot in-hand manipulation",
+      "url": "https://www.therobotreport.com/sanctuary-ais-robotic-hand-demonstrates-zero-shot-in-hand-manipulation/",
+      "source": "The Robot Report",
+      "date": "2026-04-02",
+      "category": "robo",
+      "summary": "Sanctuary AI said its robotic hand and AI system achieved the target orientation 10 times in a row without dropping the cube. The post Sanctuary AI&#8217;s robotic hand demonstrates zero-shot in-hand...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
+    },
+    {
+      "id": "42f8f71fd35d",
+      "title": "PickNik Robotics gives MoveIt Pro 9.0 enhanced perception-to-motion, teleop capabilities",
+      "url": "https://www.therobotreport.com/picknik-robotics-says-moveit-pro-9-0-enhanced-perception-to-motion-teleop-capabilities/",
+      "source": "The Robot Report",
+      "date": "2026-04-02",
+      "category": "robo",
+      "summary": "MoveIt Pro 9.0 strengthens workflows for commercial cleaning, sanitation, and vehicle-washing robots, says PickNik. The post PickNik Robotics gives MoveIt Pro 9.0 enhanced perception-to-motion,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "e2e0b700d3b2",
@@ -733,7 +1501,7 @@
       "summary": "In 2012, the U.S. Defense Advanced Research Projects Agency announced the DARPA Robotics Challenge (DRC). The multiyear, multimillion-dollar competition for disaster robotics resulted in Boston...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "614b40fab0ad",
@@ -745,7 +1513,7 @@
       "summary": "Researchers have made a Wi-Fi receiver that\u2019s tough enough to work inside a nuclear reactor. They hope the receiver might be part of a wireless communications system for robotics used to decommission...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c54b336820c8",
@@ -789,7 +1557,7 @@
       "summary": "",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "1a2614edfb31",
@@ -833,7 +1601,7 @@
       "summary": "System enhancements advance regional diversion goals for South Hampton Roads",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "35b7ffc76fc1",
@@ -845,7 +1613,7 @@
       "summary": "Company showcases intelligent warehousing solutions and expands European presence with distributor agreements across the region",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "9b31fe36e21f",
@@ -857,7 +1625,7 @@
       "summary": "Security must be addressed at the platform level to ensure every security-relevant chiplet has an identity that can be consistently validated. The post Developing A Security Framework For...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "8cf507e3142b",
@@ -885,7 +1653,7 @@
       "summary": "A focus on DRAM and NAND is squeezing NOR wafer capacity and backend test resources. The post AI Demand Resets Memory Market Priorities, Tightening NOR Flash Availability appeared first on...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "780ac30f6287",
@@ -913,7 +1681,7 @@
       "summary": "Securing data in a way that preserves the predictable timing behavior required for AI-driven systems. The post World First: MACsec IP Receives ISO/PAS 8800 Certification For Automotive And Physical...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "1dc248e8b8f1",
@@ -975,7 +1743,7 @@
       "summary": "Why transatlantic execution, not transatlantic symbolism, now matters to the electronics and semiconductor supply chain. The post From MOUs to Markets: Transatlantic Deals Face Reality Test appeared...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "9d1c7646c5f5",
@@ -1003,7 +1771,7 @@
       "summary": "AI may not solve the telecom industry\u2019s revenue dilemma overnight, but it offers a credible path from infrastructure investment to tangible growth. The post Bell Called Watson; Today, We Call AI...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "c51b5b654c8a",
@@ -1033,7 +1801,7 @@
       "summary": "Finnish quantum computing specialist IQM has secured a \u20ac50 million financing package from funds and accounts managed by BlackRock, aimed at accelerating the company\u2019s global growth and technology...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "e89fa1cde575",
@@ -1061,31 +1829,7 @@
       "summary": "Rising fuel costs across Europe are once again putting pressure on policymakers, as a fresh analysis highlights the financial gains accruing to oil majors during geopolitical instability. A new...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "42a30a4f087e",
-      "title": "Fable: The Deceiver",
-      "url": "https://www.electronicsweekly.com/blogs/mannerisms/fable/fable-the-deceiver-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-02",
-      "category": "semi",
-      "summary": "A CEO who led his company into the then biggest ever US bankruptcy with investor losses of $180 billion, used two main techniques to ruin his company. In the accounts ... The post Fable: The Deceiver...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "b1c152d5c8bb",
-      "title": "Samtec offers upscreen testing service",
-      "url": "https://www.electronicsweekly.com/news/samtec-offers-upscreen-testing-service-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-02",
-      "category": "semi",
-      "summary": "Samtec is offering in-house upscreen testing services for mission-critical applications. This new service is primarily designed for military and aerospace customers, and the testing is specifically...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "823041a470aa",
@@ -1177,7 +1921,7 @@
       "summary": "No joke \u2014 GFN Thursday is skipping the tricks and heading straight into the games. April kicks off with ten new titles, bringing fresh adventures to GeForce NOW, including the launch of Capcom\u2019s...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "04c998fd1f10",
@@ -1221,7 +1965,7 @@
       "summary": "In algorithmic trading, reducing response times to market events is crucial. To keep pace with high-speed electronic markets, latency-sensitive firms often use...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "46496a78099b",
@@ -1233,7 +1977,7 @@
       "summary": "NASA modified operations of an astrophysics spacecraft in a decaying orbit to buy more time for a mission later this year that will attempt to raise its orbit. The post Swift spacecraft reorientation...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
+      "entity_tagged": "2026-04-06"
     },
     {
       "id": "d97ff59a2dc2",
@@ -1248,762 +1992,6 @@
       ],
       "mentioned_tickers": [],
       "entity_tagged": "2026-04-03"
-    },
-    {
-      "id": "c72d1b6bf2b2",
-      "title": "Optical terminals still a bottleneck in Pentagon\u2019s proliferated constellation",
-      "url": "https://spacenews.com/optical-terminals-still-a-bottleneck-in-pentagons-proliferated-constellation/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "GP Sandhoo: \u2018From an optical communications terminal perspective, we\u2019re not there yet on how many we need\u2019 The post Optical terminals still a bottleneck in Pentagon\u2019s proliferated constellation...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "4fb03f18a05f",
-      "title": "Pentagon awards Raytheon $45 million for GPS ground system as program future is reassessed",
-      "url": "https://spacenews.com/pentagon-awards-raytheon-45-million-for-gps-ground-system-as-program-future-is-reassessed/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "The \u2018unpriced change order\u2019 supports satellite launches while officials reassess long-delayed ground system The post Pentagon awards Raytheon $45 million for GPS ground system as program future is...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "c9d7b0c4dbf6",
-      "title": "Moog Technology Successfully Steers Artemis II Launch",
-      "url": "https://spacenews.com/moog-technology-successfully-steers-artemis-ii-launch/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "East Aurora, NY &#8212; Moog Inc. (NYSE: MOG.A and MOG.B), a worldwide designer, manufacturer, and systems integrator of high-performance precision motion and fluid controls and control systems,...",
-      "mentioned_entities": [
-        "MOG.A",
-        "MOG/A"
-      ],
-      "mentioned_tickers": [
-        "MOG.A",
-        "MOG/A"
-      ],
-      "entity_tagged": "2026-04-03"
-    },
-    {
-      "id": "d0138f1acb25",
-      "title": "Carmel Ortiz on the evolving landscape of satellite communications",
-      "url": "https://spacenews.com/carmel-ortiz-on-the-evolving-landscape-of-satellite-communications/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "In this week&#8217;s episode of Space Minds, host Mike Gruss interviews Carmel Ortiz, senior vice president of medium-Earth-orbit constellation programs at SES. They discuss new technology to help...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "b43df0cb77c4",
-      "title": "Phantom Space buys thermal specialist to support orbital data center push",
-      "url": "https://spacenews.com/phantom-space-buys-thermal-specialist-to-support-orbital-data-center-push/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "Phantom Space has acquired satellite thermal hardware provider Thermal Management Technologies to bolster development of its planned Phantom Cloud orbital data center constellation. The post Phantom...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "bc28dd6104d6",
-      "title": "Relativity, Hermeus, Astrion and Divergent executives join Fortastra C-suite",
-      "url": "https://spacenews.com/relativity-hermeus-astrion-and-divergent-executives-join-fortastra-c-suite/",
-      "source": "SpaceNews",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "SAN FRANCISCO \u2013 Los Angeles startup Fortastra has hired veterans from Relativity Space, Hermeus, Astrion and Divergent Technologies to design and operate maneuverable spacecraft for on-orbit...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "a43487e45a23",
-      "title": "CLPS Companies Excited For NASA\u2019s \u2018Opportunity Bomb\u2019 Lunar Plan",
-      "url": "https://payloadspace.com/clps-companies-excited-for-nasas-opportunity-bomb-lunar-plan/",
-      "source": "Payload Space",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "Last week, NASA laid out a vision for a lunar base that\u2019s built and supplied through monthly uncrewed lunar landings, with launches beginning as soon as next year.It\u2019s no surprise that CLPS companies...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "c454098e13f1",
-      "title": "Phantom Space Acquires Thermal Management Technologies",
-      "url": "https://payloadspace.com/phantom-space-acquires-thermal-management-technologies/",
-      "source": "Payload Space",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "Thermal Management Technologies builds advanced satellite thermal components for in-space applications. The post Phantom Space Acquires Thermal Management Technologies appeared first on Payload.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "dff07e5a6924",
-      "title": "Lucky airplane passengers capture NASA's Artemis 2 moon launch from the sky",
-      "url": "https://www.space.com/space-exploration/missions/lucky-airplane-passengers-capture-nasas-artemis-2-moon-launch-from-the-sky",
-      "source": "Space.com",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "Some airplane passengers had the best seats in the house during NASA's Artemis 2 moon rocket launch. Here are some of my favorite videos captured from the sky.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "d82537ca47b2",
-      "title": "Five things Juice has revealed about Comet 3I/ATLAS",
-      "url": "https://www.esa.int/Science_Exploration/Space_Science/Juice/Five_things_Juice_has_revealed_about_Comet_3I_ATLAS",
-      "source": "ESA News",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "\u2018Extreme but not exotic,\u2019 \u2013 a glimpse at Comet 3I/ATLAS through the eyes of the European Space Agency\u2019s Jupiter Icy Moons Explorer (Juice).",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "4e0acbdf611b",
-      "title": "Artemis II: Journey to the Moon begins",
-      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/04/Artemis_II_Journey_to_the_Moon_begins",
-      "source": "ESA News",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "Video: 00:02:12 Artemis II launched on 2 April at 00:35 CEST, (18:35 local time on 1 April), sending astronauts around the Moon for the first time in over 50 years. At the heart of the mission is...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "534fe89c661e",
-      "title": "Artemis II mission begins",
-      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Artemis_II_mission_begins",
-      "source": "ESA News",
-      "date": "2026-04-02",
-      "category": "space",
-      "summary": "At 00:35 CEST today (18:35 local time on 1 April), NASA's Space Launch System rocket lifted off from the Kennedy Space Center in Florida, carrying four astronauts aboard the Orion spacecraft on...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "6375f65aeffb",
-      "title": "The future of supply chain performance starts at MODEX",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/the-future-of-supply-chain-performance-starts-at-modex/26352",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "Datalogic introduces four next-generation technologies for improved efficiency, traceability, and safety in support of higher performance logistics and warehousing operations",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e670101c75a2",
-      "title": "Dematic to Debut New Command Center Analytics Platform at MODEX 2026",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/dematic-to-debut-new-command-center-analytics-platform-at-modex-2026/26351",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "Attendees can experience live demonstrations at booth #B11919 and hear expert insights during the show",
-      "mentioned_entities": [
-        "SHOW"
-      ],
-      "mentioned_tickers": [
-        "SHOW"
-      ],
-      "entity_tagged": "2026-04-02"
-    },
-    {
-      "id": "91798f7ba61a",
-      "title": "e-con Systems Launches STURDeCAM57: A 5MP Global Shutter RGB-IR Camera for In-cabin Monitoring Systems",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/e-con-systems-launches-sturdecam57-a-5mp-global-shutter-rgb-ir-camera-for-in-cabin-monitoring-systems-/26350",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "This new RGB-IR camera is based on the automotive grade image sensor. STURDeCAM57 streams RGB and infrared frames as independent channels, providing AI vision systems with both full-color imagery and...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "627b70ce4453",
-      "title": "Realbotix Provides AI Humanoid Robot Delivery Update",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/realbotix-provides-ai-humanoid-robot-delivery-update/26349",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-02"
-    },
-    {
-      "id": "52594fcfd41e",
-      "title": "Agile Robots closes acquisition of thyssenkrupp Automation Engineering",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/agile-robots-closes-acquisition-of-thyssenkrupp-automation-engineering/26348",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "Through the acquisition, the Munich-based company is strengthening its position in next-generation automation solutions and is tapping into new growth markets and close partnerships with leading...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "c92acaff9103",
-      "title": "MODEX 2026: Cimcorp to Showcase Dreamfield Solution for Seamless Grocery Distribution",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/modex-2026-cimcorp-to-showcase-dreamfield-solution-for-seamless-grocery-distribution/26347",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "The modular automation solution supports scalable, high-performance fresh food networks",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "0e4c747eb0e7",
-      "title": "Hexapod Concept for Low-Temperature Quantum Applications",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/01/hexapod-concept-for-low-temperature-quantum-applications-/26346",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-01",
-      "category": "robo",
-      "summary": "Low-temperature nanopositioning concept to address growing demand for ultra-precise optical alignment in cryogenic environments.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "8b55651518b8",
-      "title": "Shaping the UAE\u2019s Digital Destiny: Building Sovereignty, Trust, and Resilience in the Cyber Era",
-      "url": "https://www.eetimes.com/shaping-the-uaes-digital-destiny-building-sovereignty-trust-and-resilience-in-the-cyber-era/",
-      "source": "EE Times",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "Interview with Lt. Colonel Saeed M. Al Shebli, Deputy Director of Digital Security Dept. Ministry of Interior UAE The post Shaping the UAE\u2019s Digital Destiny: Building Sovereignty, Trust, and...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "f5b07e699d0b",
-      "title": "Taking on CUDA With ROCm: \u2018One Step After Another\u2019",
-      "url": "https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/",
-      "source": "EE Times",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "Anush Elangovan is taking on CUDA, one 'ROCm Sucks' tweet at a time. The post Taking on CUDA With ROCm: \u2018One Step After Another\u2019 appeared first on EE Times.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "8d532f723ef9",
-      "title": "Micron Readies Client Storage for AI",
-      "url": "https://www.eetimes.com/micron-readies-client-storage-for-ai/",
-      "source": "EE Times",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "Privacy and security concerns are expected to drive more on-premises AI workloads, bringing sensitive IP onto desktops. The post Micron Readies Client Storage for AI appeared first on EE Times.",
-      "mentioned_entities": [
-        "MU",
-        "ONTO"
-      ],
-      "mentioned_tickers": [
-        "MU",
-        "ONTO"
-      ],
-      "entity_tagged": "2026-04-02"
-    },
-    {
-      "id": "a7180900705e",
-      "title": "How Small Electronics Manufacturers Manage Operational Complexity",
-      "url": "https://www.eetimes.com/how-small-electronics-manufacturers-manage-operational-complexity/",
-      "source": "EE Times",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "The most effective electronics manufacturers manage increasing complexity by building workflows and systems that scale with the business. The post How Small Electronics Manufacturers Manage...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "ace56ada44ba",
-      "title": "Alibaba Launches XuanTie C950 CPU for Agentic AI",
-      "url": "https://www.eetimes.com/alibaba-launches-xuantie-c950-cpu-for-agentic-ai/",
-      "source": "EE Times",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "Alibaba is directly challenging global chip leaders by leveraging open-standard architecture to redefine the AI hardware landscape. The post Alibaba Launches XuanTie C950 CPU for Agentic AI appeared...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "8a22f022d407",
-      "title": "SEC Develops Inline X-Ray Inspection Tool for HBM Production",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6266",
-      "source": "The Elec",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "SEC Co. said it has completed development of an automated inline inspection system for high bandwidth memory (HBM) production lines based on X-ray technology.The system, named the Semi-Scan-SW model,...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "ea3efb08263d",
-      "title": "Embedded hypervisor market set for 12% CAGR as AI and 5G drive adoption",
-      "url": "https://www.eenewseurope.com/en/embedded-hypervisor-market-set-for-12-cagr-as-ai-and-5g-drive-adoption/",
-      "source": "eeNews Europe",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "The embedded hypervisor market is growing, fueled by increasing demand for real-time, secure, and scalable computing across multiple industries. According to a new market analysis from Future Market...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "fd957feefc5e",
-      "title": "Nvidia and Marvell expand AI infrastructure ecosystem with NVLink Fusion partnership",
-      "url": "https://www.eenewseurope.com/en/nvidia-and-marvell-expand-ai-infrastructure-ecosystem-with-nvlink-fusion-partnership/",
-      "source": "eeNews Europe",
-      "date": "2026-04-01",
-      "category": "semi",
-      "summary": "NVIDIA and Marvell Technology have announced a strategic partnership aimed at expanding the NVIDIA AI infrastructure ecosystem. The agreement connects Marvell technologies to the NVIDIA AI factory...",
-      "mentioned_entities": [
-        "MRVL",
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "MRVL",
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-02"
-    },
-    {
-      "id": "2dbee207e554",
-      "title": "Cognichip wants AI to design the chips that power AI, and just raised $60M to try",
-      "url": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips-that-power-ai-and-just-raised-60m-to-try/",
-      "source": "TechCrunch AI",
-      "date": "2026-04-01",
-      "category": "ai",
-      "summary": "The firm says it can reduce the cost of chip development by more than 75% and cut the timeline by more than half.",
-      "mentioned_entities": [
-        "cognichip"
-      ],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-02"
-    },
-    {
-      "id": "d31902e874ca",
-      "title": "Manufacturing sector expands for third consecutive month, but war, tariffs cause worry: PMI",
-      "url": "https://www.supplychaindive.com/news/pmi-expands-march-third-consecutive-month-war-tariffs-cause-wo/816361/",
-      "source": "Supply Chain Dive",
-      "date": "2026-04-01",
-      "category": "supply",
-      "summary": "Price increases in 17 of the 18 economic sectors tracked are a particular concern and are impacting business operations, according to survey respondents.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "b87a0bb37fc1",
-      "title": "CUDA Tile Programming Now Available for BASIC!",
-      "url": "https://developer.nvidia.com/blog/cuda-tile-programming-now-available-for-basic/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-01",
-      "category": "ai",
-      "summary": "Note: CUDA Tile Programming in BASIC is an April Fools\u2019 joke, but it's also real and actually works, demonstrating the flexibility of CUDA. CUDA 13.1...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "267fa508d06b",
-      "title": "NVIDIA Platform Delivers Lowest Token Cost Enabled by Extreme Co-Design",
-      "url": "https://developer.nvidia.com/blog/nvidia-platform-delivers-lowest-token-cost-enabled-by-extreme-co-design/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-01",
-      "category": "ai",
-      "summary": "Co-designed hardware, software, and models are key to delivering the highest AI factory throughput and lowest token cost. Measuring this goes far beyond peak...",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-04"
-    },
-    {
-      "id": "30372bbfc557",
-      "title": "Accelerate Token Production in AI Factories Using Unified Services and Real-Time AI",
-      "url": "https://developer.nvidia.com/blog/accelerate-token-production-in-ai-factories-using-unified-services-and-real-time-ai/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-01",
-      "category": "ai",
-      "summary": "In today\u2019s AI factory environment, performance is not theoretical. It is economic, competitive, and existential. A 1% drop in usable GPU time can mean...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "c52dd40fbd0a",
-      "title": "Artemis 2 launches on first human mission to the moon in more than 50 years",
-      "url": "https://spacenews.com/artemis-2-launches-on-first-mission-to-the-moon-in-more-than-50-years/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "The first human mission beyond Earth orbit in more than 50 years is underway with an April 1 launch of four astronauts on a flight around the moon. The post Artemis 2 launches on first human mission...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "62d2ec8d9382",
-      "title": "SpaceX quietly files for big bang IPO",
-      "url": "https://spacenews.com/spacex-quietly-files-for-big-bang-ipo/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "SpaceX has taken a key step toward going public after confidentially filing for a potentially record-breaking initial public offering, according to multiple reports citing people familiar with the...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "915d58a49f1c",
-      "title": "Teledyne forms dedicated space unit to capture rising demand",
-      "url": "https://spacenews.com/teledyne-forms-dedicated-space-unit-to-capture-rising-demand/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "The aerospace supplier is combining imaging, electronics and component lines under Teledyne Space The post Teledyne forms dedicated space unit to capture rising demand appeared first on SpaceNews.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "7e8aa55a9367",
-      "title": "Artemis 2\u2019s (nearly) 10-day flight around the moon",
-      "url": "https://spacenews.com/artemis-2s-nearly-10-day-flight-around-the-moon/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "The Artemis 2 mission will send humans to the vicinity of the moon for the first time in more than 50 years on a mission lasting almost 10 days. The post Artemis 2\u2019s (nearly) 10-day flight around the...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "ffcb18f3ed2e",
-      "title": "Saltzman: Space \u2018baked into\u2019 modern combat operations",
-      "url": "https://spacenews.com/saltzman-space-baked-into-modern-combat-operations/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "Space Force personnel supporting operations under U.S. Central Command are positioned in the Middle East, at headquarters in Tampa, Florida, and at Shaw Air Force Base in South Carolina The post...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "bea55b18f705",
-      "title": "Aspect Aerospace secures early funding to advance swarm-deployable VLEO satellites",
-      "url": "https://spacenews.com/aspect-aerospace-secures-early-funding-to-advance-swarm-deployable-vleo-satellites/",
-      "source": "SpaceNews",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "Aspect Aerospace, a University of South Alabama spin-off, has secured $2.4 million to develop circuit-board-sized spacecraft that could be deployed from space into very low Earth orbit in swarms to...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "fc003af42fd0",
-      "title": "Artemis II Is On The Way To The Moon",
-      "url": "https://payloadspace.com/artemis-ii-is-on-the-way-to-the-moon/",
-      "source": "Payload Space",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "NASA astronauts Reid Wiseman, Christina Koch, and Victor Glover, plus Canadian Space Agency astronaut Jeremy Hansen, are on board\u2014with Koch and Glover poised to make history as the first woman and...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "747cff5ed22f",
-      "title": "Exclusive: In-Orbit Manufacturing Startup Dispatch Emerges from Stealth",
-      "url": "https://payloadspace.com/exclusive-in-orbit-manufacturing-startup-dispatch-emerges-from-stealth/",
-      "source": "Payload Space",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "Dispatch emerged from stealth this week with $500,000 in funding to build an uncrewed space station that will host manufacturing infrastructure on orbit The post Exclusive: In-Orbit Manufacturing...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "c40b9aacaa0d",
-      "title": "Antaris Raises $28M Series A",
-      "url": "https://payloadspace.com/antaris-raises-28m-series-a/",
-      "source": "Payload Space",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "WestWave Capital led the round, which also included participation from Lockheed Martin Ventures and other new investors. The post Antaris Raises $28M Series A appeared first on Payload.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e6b4d9afb961",
-      "title": "SpaceX reportedly files for IPO but it\u2019s keeping the numbers secret (for now)",
-      "url": "https://www.theverge.com/science/904991/spacex-announces-ipo-but-its-keeping-the-numbers-secret-for-now",
-      "source": "The Verge Space",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "What's expected to be the biggest IPO in human history is reportedly underway. SpaceX has filed for an initial public offering with the Securities and Exchange Commission, according to a report from...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "8c6550ee27b7",
-      "title": "G\u00e9raldine Naja takes up duty as Director of Space Transportation",
-      "url": "https://www.esa.int/About_Us/Corporate_news/Geraldine_Naja_takes_up_duty_as_Director_of_Space_Transportation",
-      "source": "ESA News",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "G\u00e9raldine Naja took up duty as Director of Space Transportation (D/STS) at the European Space Agency on 1 April 2026. She will continue to serve as head of her former directorate, now called the...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "449bd99f3479",
-      "title": "Christine Klein takes up duty as acting Director of Controlling, Finance and Operational Procurement",
-      "url": "https://www.esa.int/About_Us/Corporate_news/Christine_Klein_takes_up_duty_as_acting_Director_of_Controlling_Finance_and_Operational_Procurement",
-      "source": "ESA News",
-      "date": "2026-04-01",
-      "category": "space",
-      "summary": "Christine Klein took up duty as acting Director of Controlling, Finance and Operational Procurement (D/CFO) at the European Space Agency on 1 April 2026. She will lead the newly established...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "3ede6904e5a1",
-      "title": "Resource-sharing boosts robotic resilience",
-      "url": "https://robohub.org/resource-sharing-boosts-robotic-resilience/",
-      "source": "Robohub",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "The Mori3 modular origami robot. Image credit: EPFL. Reproduced under CC-BY-SA. By Celia Luterbacher If the goal of a robot is to perform a function, then minimizing the possibility of failure is a...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "0c21a1aa9dfb",
-      "title": "Epson Announces Authorized Distribution Alliance with Clayton Controls to Deliver Advanced Automation Solutions to the Southwest Region",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/epson-announces-authorized-distribution-alliance-with-clayton-controls-to-deliver-advanced-automation-solutions-to-the-southwest-region/26344",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "Epson Robots, the #1 SCARA robot manufacturer in the world, announced a strategic alliance with Clayton Controls, Inc. to deliver advanced automation solutions to the Southwest region. For nearly 60...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e89c73d8a9b0",
-      "title": "GMEX Robotics Advances Development of Intelligent Robot Chassis",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/gmex-robotics-advances-development-of-intelligent-robot-chassis/26343",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "In connection with this technological advancement, GMEX is in the process of securing intellectual property recognition in key markets, including Southeast Asia, China, Australia, and the United...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e2269e405661",
-      "title": "Samsara to Accelerate the Future of Physical AI at HumanX 2026",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/samsara-to-accelerate-the-future-of-physical-ai-at-humanx-2026/26342",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "Aurora, Semafor, and Serve Robotics to join Samsara for a masterclass on the mixed-autonomy revolution",
-      "mentioned_entities": [
-        "SERV"
-      ],
-      "mentioned_tickers": [
-        "SERV"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "7f970cb9b4df",
-      "title": "Cyngn Deploys 4 DriveMod Tuggers at Vann Family Orchards",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/cyngn-deploys-4-drivemod-tuggers-at-vann-family-orchards/26341",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "The deployment expands Cyngn's footprint into the agricultural processing market, and reflects growing adoption of autonomous material handling across food and agriculture supply chains.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e6b1c88c97be",
-      "title": "Geekplus Hits Profitability Milestone with 31.6% YoY Revenue Growth, Fueled by Embodied Intelligence-Driven Tech Innovation",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/geekplus-hits-profitability-milestone-with-316-yoy-revenue-growth-fueled-by-embodied-intelligence-driven-tech-innovation/26340",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "Driven by the strategic integration of embodied intelligence and AI technologies, the company delivered a landmark performance characterized by rapid revenue expansion and a historic transition into...",
-      "mentioned_entities": [
-        "geekplus"
-      ],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "174b50335223",
-      "title": "maxon Introduces the ECX PRIME 22 for High-Torque, High-Speed Applications",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/maxon-introduces-the-ecx-prime-22-for-high-torque-high-speed-applications/26337",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "It targets precision-driven systems that require stable performance under varying loads.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "30abdba21438",
-      "title": "Robotic Hands from the 3D Printer and AI Powered  Production Lines: EOS at Hannover Fair 2026",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/03/31/robotic-hands-from-the-3d-printer-and-ai-powered-production-lines-eos-at-hannover-fair-2026/26336",
-      "source": "Robotics Tomorrow",
-      "date": "2026-03-31",
-      "category": "robo",
-      "summary": "",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "615a755211ee",
-      "title": "DRAM Price Rally Pauses in March, Seen Resuming in Second Quarter",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6259",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "The year-long rally in commodity DRAM prices paused in March as pre-negotiated supply contracts between memory makers and PC manufacturers stabilized short-term pricing.According to market research...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "e31dda476b97",
-      "title": "Telechips Advances Network Gateway Chip Business, Seeks Global Customers",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6258",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "Telechips is approaching tangible results from new businesses launched in 2024, aiming to secure a turnaround through AI-integrated automotive semiconductors and network gateway solutions while...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "cd0025c5de9c",
-      "title": "SK hynix Orders Hybrid Bonding Equipment From Applied Materials and Besi",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6246",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "SK hynix Inc. has decided to purchase mass-production hybrid bonding equipment for the development of next-generation high-bandwidth memory (HBM), according to industry sources on March 31.The...",
-      "mentioned_entities": [
-        "AMAT"
-      ],
-      "mentioned_tickers": [
-        "AMAT"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "0633ab65a714",
-      "title": "Mobilint Seeks to Supply NPU Chips for Shinsegae AI Checkout Systems",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6233",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "South Korean AI semiconductor startup Mobilint is preparing to supply neural processing units (NPUs) to Shinsegae Group, with a potential order expected to generate hundreds of billions of won in...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "5fcd7207b241",
-      "title": "Samsung Electronics Adopts Hybrid Bonding Inspection Equipment",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6232",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "Samsung Electronics has begun introducing new inspection equipment for hybrid bonding, with Onto Innovation\u2019s systems reportedly undergoing validation on mass production lines.According to industry...",
-      "mentioned_entities": [
-        "ONTO"
-      ],
-      "mentioned_tickers": [
-        "ONTO"
-      ],
-      "entity_tagged": "2026-04-05"
-    },
-    {
-      "id": "25d2c5e971a1",
-      "title": "Rebellions Raises 640 Billion Won in Pre-IPO Round as First Korea National Growth Fund Pick",
-      "url": "http://www.thelec.net/news/articleView.html?idxno=6227",
-      "source": "The Elec",
-      "date": "2026-03-31",
-      "category": "semi",
-      "summary": "Rebellions Inc., a South Korean AI chip designer, has secured 640 billion won in a pre-IPO funding round, becoming the first direct investment recipient of the state-backed Korea National Growth...",
-      "mentioned_entities": [
-        "rebellions"
-      ],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-05"
     }
   ]
 }

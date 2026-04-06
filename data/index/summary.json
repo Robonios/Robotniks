@@ -1,17 +1,17 @@
 {
-  "calculated_at": "2026-04-05T06:18:09.963775+00:00Z",
+  "calculated_at": "2026-04-06T07:28:08.627867+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 1984.04,
-    "daily_change_pct": -10.23,
+    "value": 1984.34,
+    "daily_change_pct": -10.22,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 226
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 1984.04,
-    "base_date": "2021-04-06",
+    "value": 1984.34,
+    "base_date": "2021-04-07",
     "base_value": 1000.0,
     "entities": 220
   },
@@ -23,22 +23,22 @@
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1772.54,
+      "value": 1773.35,
       "entities": 103
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 3106.71,
+      "value": 3106.62,
       "entities": 37
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2325.39,
+      "value": 2325.41,
       "entities": 21
     },
     "token": {
       "name": "Robotnik Token Index",
-      "value": 676.76,
+      "value": 684.29,
       "entities": 6
     }
   },
@@ -76,42 +76,42 @@
       "name": "Micron Technology",
       "sector": "Semiconductor",
       "market_cap_usd": 413021306880,
-      "weight_pct": 4.733
+      "weight_pct": 4.7299
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
       "sector": "Semiconductor",
       "market_cap_usd": 354614378496,
-      "weight_pct": 4.0637
+      "weight_pct": 4.0611
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
       "market_cap_usd": 276549238784,
-      "weight_pct": 3.1691
+      "weight_pct": 3.1671
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Semiconductor",
       "market_cap_usd": 274367184896,
-      "weight_pct": 3.1441
+      "weight_pct": 3.1421
     },
     {
       "ticker": "RTX",
       "name": "RTX Corp",
       "sector": "Space",
       "market_cap_usd": 264093614080,
-      "weight_pct": 3.0264
+      "weight_pct": 3.0244
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
       "market_cap_usd": 252958507008,
-      "weight_pct": 2.8988
+      "weight_pct": 2.8969
     }
   ]
 }
