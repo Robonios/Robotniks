@@ -1,8 +1,8 @@
 {
   "fetched_at": "2026-04-08T07:12:41.925355Z",
-  "count": 279,
-  "total_fetched": 327,
-  "excluded": 48,
+  "count": 273,
+  "total_fetched": 279,
+  "excluded": 6,
   "sources": [
     "EODHD (eodhd.com)",
     "CoinGecko (coingecko.com)"
@@ -1210,18 +1210,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "BA",
-      "eodhd_symbol": "BA.US",
-      "name": "Boeing Co",
-      "sector": "Space",
-      "price": 210,
-      "currency": "USD",
-      "change_pct": -1.08,
-      "volume": 3964804,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
       "ticker": "BAS GR",
       "eodhd_symbol": "BAS.XETRA",
       "name": "BASF",
@@ -1486,18 +1474,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "ESE",
-      "eodhd_symbol": "ESE.US",
-      "name": "ESCO Technologies",
-      "sector": "Space",
-      "price": 291.33,
-      "currency": "USD",
-      "change_pct": -0.71,
-      "volume": 467991,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
       "ticker": "ETL FP",
       "eodhd_symbol": "ETL.PA",
       "name": "Eutelsat Communications",
@@ -1566,18 +1542,6 @@
       "currency": "EUR",
       "change_pct": -1.93,
       "volume": 314621,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
-      "ticker": "GD",
-      "eodhd_symbol": "GD.US",
-      "name": "General Dynamics",
-      "sector": "Space",
-      "price": 348.43,
-      "currency": "USD",
-      "change_pct": -0.84,
-      "volume": 413342,
       "date": "2026-04-07",
       "source": "EODHD"
     },
@@ -2566,18 +2530,6 @@
       "source": "EODHD"
     },
     {
-      "ticker": "PSN",
-      "eodhd_symbol": "PSN.US",
-      "name": "Parsons Corp",
-      "sector": "Space",
-      "price": 56.25,
-      "currency": "USD",
-      "change_pct": -0.23,
-      "volume": 722153,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
       "ticker": "QACE",
       "coingecko_id": "qace-dynamics",
       "name": "Qace Dynamics",
@@ -2814,18 +2766,6 @@
       "currency": "GBp",
       "change_pct": -1.64,
       "volume": 64449,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
-      "ticker": "RTX",
-      "eodhd_symbol": "RTX.US",
-      "name": "RTX Corp",
-      "sector": "Space",
-      "price": 197.92,
-      "currency": "USD",
-      "change_pct": -0.25,
-      "volume": 3036547,
       "date": "2026-04-07",
       "source": "EODHD"
     },
@@ -3210,18 +3150,6 @@
       "currency": "USD",
       "change_pct": 1.04,
       "volume": 6290393,
-      "date": "2026-04-07",
-      "source": "EODHD"
-    },
-    {
-      "ticker": "TTMI",
-      "eodhd_symbol": "TTMI.US",
-      "name": "TTM Technologies",
-      "sector": "Space",
-      "price": 99.29,
-      "currency": "USD",
-      "change_pct": 3.75,
-      "volume": 1131103,
       "date": "2026-04-07",
       "source": "EODHD"
     },
