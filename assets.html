@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Robotnik — Frontier Assets</title>
-<meta name="description" content="Robotnik Frontier Assets — The full universe of frontier technology entities. Coming soon.">
+<meta name="description" content="Robotnik Frontier Assets — 296 entities across the frontier technology stack.">
 <meta property="og:title" content="Robotnik — Frontier Assets">
 <meta property="og:description" content="Every entity in the frontier technology stack — filter, compare, and analyse.">
 <meta property="og:type" content="website">
@@ -20,18 +20,86 @@
 <div id="nav-container"></div>
 
 <div class="main-content">
-<section class="main-section" style="min-height:70vh;display:flex;align-items:center;justify-content:center;">
-  <div style="text-align:center;max-width:560px;">
-    <div class="section-tag">Entity Database</div>
-    <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:1rem;margin-top:0.75rem;">
-      FRONTIER ASSETS: <span>CALIBRATING</span><span class="animated-dots" style="display:inline-block;width:24px;text-align:left"></span>
-    </h2>
-    <p style="color:var(--text-dim);font-size:var(--fs-body);line-height:1.8;margin-top:1.5rem;">
-      Robotnik's entity database will map every company, token, and material input across the frontier technology stack. Filter by sector, subsector, geography, market cap, and performance. Compare entities across the dependency chain &mdash; from foundry to orbit.
-    </p>
-    <p style="color:#F5D921;font-size:12px;margin-top:2rem;">Standby, tovarishch.</p>
+<div class="dash-layout">
+<div class="dash-main">
+
+  <!-- Header -->
+  <div class="dash-widget" style="padding:1rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+      <div>
+        <div class="section-tag">Frontier Assets</div>
+        <h2 style="font-size:clamp(1rem,2vw,1.3rem);font-weight:700;margin:0.25rem 0 0;">Public Market Universe</h2>
+      </div>
+      <div style="font-size:11px;color:var(--text-dim);" id="assets-summary">Loading...</div>
+    </div>
   </div>
-</section>
+
+  <!-- Filters -->
+  <div class="dash-widget" style="padding:0.5rem 1rem;">
+    <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+      <div class="market-tabs" id="asset-tabs">
+        <button class="market-tab active" data-sector="all" onclick="filterAssets(this)">All</button>
+        <button class="market-tab" data-sector="semi" onclick="filterAssets(this)">Semi</button>
+        <button class="market-tab" data-sector="robo" onclick="filterAssets(this)">Robotics</button>
+        <button class="market-tab" data-sector="space" onclick="filterAssets(this)">Space</button>
+        <button class="market-tab" data-sector="materials" onclick="filterAssets(this)">Materials</button>
+        <button class="market-tab" data-sector="token" onclick="filterAssets(this)">Tokens</button>
+      </div>
+      <input type="text" id="asset-search" class="compare-search-input" placeholder="Search ticker or name..." oninput="renderAssetsTable()" style="width:180px;" />
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="dash-widget" style="padding:0;">
+    <div style="overflow-x:auto;">
+      <table class="market-table" style="width:100%;">
+        <thead>
+          <tr>
+            <th class="sortable" onclick="sortAssets('#')" style="width:35px;"># <span id="sa-#"></span></th>
+            <th class="sortable" onclick="sortAssets('ticker')" style="width:70px;">Ticker <span id="sa-ticker"></span></th>
+            <th class="sortable" onclick="sortAssets('company')">Company <span id="sa-company"></span></th>
+            <th style="width:70px;">Sector</th>
+            <th class="sortable r" onclick="sortAssets('price')" style="width:80px;">Price <span id="sa-price"></span></th>
+            <th class="sortable r" onclick="sortAssets('24h')" style="width:65px;">24H <span id="sa-24h"></span></th>
+            <th class="sortable r" onclick="sortAssets('7d')" style="width:60px;">7D <span id="sa-7d"></span></th>
+            <th class="sortable r" onclick="sortAssets('30d')" style="width:60px;">30D <span id="sa-30d"></span></th>
+            <th class="sortable r" onclick="sortAssets('ytd')" style="width:60px;">YTD <span id="sa-ytd"></span></th>
+            <th class="sortable r" onclick="sortAssets('mcap')" style="width:80px;">MCap <span id="sa-mcap"></span></th>
+            <th class="sortable r" onclick="sortAssets('pe')" style="width:55px;">P/E <span id="sa-pe"></span></th>
+          </tr>
+        </thead>
+        <tbody id="assets-tbody"></tbody>
+      </table>
+    </div>
+    <div style="padding:0.5rem 1rem;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--text-dim);">
+      <span id="assets-showing">Showing 0</span>
+      <div>
+        <button class="chart-range-btn" id="assets-prev" onclick="assetsPage(-1)" style="margin-right:4px;">&lt; Prev</button>
+        <span id="assets-page-info">Page 1</span>
+        <button class="chart-range-btn" id="assets-next" onclick="assetsPage(1)" style="margin-left:4px;">Next &gt;</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- dash-main -->
+
+<!-- Sidebar -->
+<div class="dash-sidebar">
+  <div class="dash-widget">
+    <div class="dash-widget-title">About Frontier Assets</div>
+    <div style="font-size:11px;color:#8B92A5;line-height:1.6;">
+      The complete Robotnik public market universe. 296 frontier technology entities across semiconductors, robotics, space, materials, and tokens.
+      <div style="margin-top:0.5rem;">Sortable by price, performance, market cap, and valuation. Click any entity for detail (coming soon).</div>
+      <div style="margin-top:0.5rem;">Data from EODHD + CoinGecko. Fundamentals updated weekly.</div>
+    </div>
+  </div>
+  <div class="dash-widget">
+    <div class="dash-widget-title">Quick Stats</div>
+    <div style="font-size:11px;color:var(--text-dim);line-height:2;" id="assets-quick-stats">Loading...</div>
+  </div>
+</div>
+
+</div><!-- dash-layout -->
 
 <footer>
   <p style="margin-bottom:0.5rem;">Robotnik &mdash; Mapping the frontier technology stack since re-entry.</p>
@@ -41,5 +109,6 @@
 </div><!-- .main-content -->
 
 <script src="js/nav.js"></script>
+<script src="js/assets.js"></script>
 </body>
 </html>
