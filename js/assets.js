@@ -196,6 +196,38 @@ function sortAssets(col){
   renderAssetsTable();
 }
 
+function exportAssetsCSV(){
+  if(!assetsFiltered.length)return;
+  var cols=COL_GROUPS[assetsColGroup]||COL_GROUPS.overview;
+  var headers=['#','Ticker','Company','Sector','Subsector'].concat(cols.map(function(c){return c.label;}));
+  var rows=[headers.join(',')];
+  assetsFiltered.forEach(function(e,i){
+    var sk=SMAP[e.sector]||'';
+    var sl=SLBL[sk]||e.sector;
+    var vals=[i+1,e.ticker,'"'+(e.name||'').replace(/"/g,'""')+'"',sl,'"'+(e.subsector||'')+'"'];
+    cols.forEach(function(c){
+      var v='';
+      if(c.key==='price')v=e.price||'';
+      else if(c.key==='ccy')v=e.currency||'USD';
+      else if(c.key.match(/^(24h|7d|30d|ytd|3m|6m|1y|3y|5y|fromAth)$/))v=e['change_'+c.key.replace('h','h').replace('fromAth','')+'_pct']||'';
+      else if(c.key==='mcap')v=e.market_cap||'';
+      else if(c.key==='pe')v=e.pe_ratio||'';
+      else if(c.key==='vol')v=e.volume||'';
+      else if(c.key==='rev')v=e.revenue_ttm||'';
+      else if(c.key==='spark30')v='';
+      else v='';
+      vals.push(v);
+    });
+    rows.push(vals.join(','));
+  });
+  var blob=new Blob([rows.join('\n')],{type:'text/csv'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;a.download='robotnik_frontier_assets_'+assetsColGroup+'.csv';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
 function assetsPage(d){
   var mx=Math.ceil(assetsFiltered.length/assetsPerPage)-1;
   assetsCurrentPage=Math.max(0,Math.min(mx,assetsCurrentPage+d));

@@ -1085,7 +1085,9 @@ function getFilteredData(data) {
     filtered = data.filter(d => (d.time || d.date) >= cutoffStr);
   } else if (currentIndexRange > 0) {
     var cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - currentIndexRange);
+    // For sub-day ranges (12H=0.5, 1D=1), show last few trading days since we only have daily data
+    var days = currentIndexRange < 2 ? 3 : Math.ceil(currentIndexRange);
+    cutoff.setDate(cutoff.getDate() - days);
     var cutoffStr2 = cutoff.toISOString().slice(0, 10);
     filtered = data.filter(d => (d.time || d.date) >= cutoffStr2);
   }
@@ -1094,7 +1096,7 @@ function getFilteredData(data) {
 
 function getRangeLabel() {
   if (currentIndexRange === 'ytd') return 'YTD';
-  var labels = {1:'1D',7:'1W',30:'1M',90:'3M',365:'1Y',1095:'3Y',1825:'5Y',0:'ALL'};
+  var labels = {0.5:'12H',1:'1D',7:'1W',30:'1M',90:'3M',365:'1Y',1095:'3Y',1825:'5Y',0:'ALL'};
   return labels[currentIndexRange] || currentIndexRange + 'D';
 }
 
@@ -1154,7 +1156,7 @@ function setIndexRange(btn) {
   document.querySelectorAll('.chart-range-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   var rv = btn.dataset.range;
-  currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseInt(rv) || 0);
+  currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseFloat(rv) || 0);
   var data = indexChartData[currentIndexSeries];
   // For composite with long ranges, use equities-only if available
   if (currentIndexSeries === 'composite' && currentIndexRange !== 'ytd' && currentIndexRange > 365 && indexChartData.composite_eq) {
@@ -1170,8 +1172,32 @@ function setIndexSeries(btn) {
   var data = indexChartData[currentIndexSeries];
   // Update title
   var titleEl = document.getElementById('chart-title');
-  var labels = { composite:'Robotnik Index', semi:'Semi Index', robotics:'Robotics Index', space:'Space Index', materials:'Materials Index', token:'Token Index' };
+  var labels = { composite:'Robotnik Index', semi:'Semi Index', robotics:'Robotics Index', space:'Space Index', materials:'Materials Index' };
   if (titleEl) titleEl.textContent = labels[currentIndexSeries] || 'Robotnik Index';
+
+  // Sub-indices only have ~1Y of data; disable 3Y/5Y for non-composite
+  var isSubIndex = currentIndexSeries !== 'composite';
+  document.querySelectorAll('.chart-range-btn').forEach(function(rb) {
+    var rv = parseFloat(rb.dataset.range);
+    if (isSubIndex && rv > 365) {
+      rb.classList.add('disabled');
+      rb.title = 'Sub-index data available for 1Y only';
+      rb.onclick = null;
+    } else if (rv > 0) {
+      rb.classList.remove('disabled');
+      rb.removeAttribute('title');
+      rb.onclick = function() { setIndexRange(this); };
+    }
+  });
+  // If current range is >1Y and we switched to sub-index, snap to 1Y
+  if (isSubIndex && typeof currentIndexRange === 'number' && currentIndexRange > 365) {
+    currentIndexRange = 365;
+    document.querySelectorAll('.chart-range-btn').forEach(function(rb) {
+      rb.classList.remove('active');
+      if (rb.dataset.range === '365') rb.classList.add('active');
+    });
+  }
+
   if (data) {
     applyIndexData(data);
   } else {
