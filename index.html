@@ -53,11 +53,6 @@
           <div class="sub-index-val">--</div>
           <div class="sub-index-chg">&mdash;</div>
         </div>
-        <div class="sub-index-card" data-sub="token">
-          <div class="sub-index-name">Token</div>
-          <div class="sub-index-val">--</div>
-          <div class="sub-index-chg">&mdash;</div>
-        </div>
       </div>
     </div>
 
@@ -84,7 +79,6 @@
           <button class="chart-index-btn" data-idx="robotics" onclick="setIndexSeries(this)">Robotics</button>
           <button class="chart-index-btn" data-idx="space" onclick="setIndexSeries(this)">Space</button>
           <button class="chart-index-btn" data-idx="materials" onclick="setIndexSeries(this)">Materials</button>
-          <button class="chart-index-btn" data-idx="token" onclick="setIndexSeries(this)">Token</button>
           <button class="chart-compare-btn" onclick="toggleCompareInput()">+ Compare</button>
         </div>
       </div>
@@ -114,7 +108,6 @@
           <button class="market-tab" data-sector="robo" onclick="filterMarketTable(this)">Robotics</button>
           <button class="market-tab" data-sector="space" onclick="filterMarketTable(this)">Space</button>
           <button class="market-tab" data-sector="materials" onclick="filterMarketTable(this)">Materials</button>
-          <button class="market-tab" data-sector="token" onclick="filterMarketTable(this)">Tokens</button>
         </div>
         <div style="display:flex;gap:0.5rem;align-items:center;">
           <input type="text" class="market-search-input" id="mkt-search" placeholder="Search tickers, companies..." oninput="renderMarketTable()" />
@@ -178,7 +171,7 @@
       </div>
       <div class="overview-row">
         <span class="overview-label">Universe</span>
-        <span class="overview-val" id="ov-universe">296</span>
+        <span class="overview-val" id="ov-universe">253</span>
       </div>
       <div class="overview-row">
         <span class="overview-label">Live Data</span>
@@ -206,8 +199,8 @@
     <div class="dash-widget">
       <div class="dash-widget-title">Robotnik Index</div>
       <div style="font-size:11px;color:#8B92A5;line-height:1.6;">
-        The Robotnik Composite Index tracks 296 frontier technology assets across semiconductors, robotics, space technology, materials, and tokens. Market-cap weighted with a 5% single-entity cap.
-        <div style="margin-top:0.5rem;">Sub-indices: Semi &middot; Robotics &middot; Space &middot; Materials &middot; Tokens</div>
+        The Robotnik Composite Index tracks 253 frontier technology equities across semiconductors, robotics, space technology, and materials. Market-cap weighted with a 5% single-entity cap.
+        <div style="margin-top:0.5rem;">Sub-indices: Semi &middot; Robotics &middot; Space &middot; Materials</div>
         <div style="margin-top:0.3rem;">Sourced from EODHD + CoinGecko.</div>
         <div style="margin-top:0.3rem;" id="explainer-base">Base: 1,000.00</div>
       </div>

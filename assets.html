@@ -43,7 +43,6 @@
         <button class="market-tab" data-sector="robo" onclick="filterAssets(this)">Robotics</button>
         <button class="market-tab" data-sector="space" onclick="filterAssets(this)">Space</button>
         <button class="market-tab" data-sector="materials" onclick="filterAssets(this)">Materials</button>
-        <button class="market-tab" data-sector="token" onclick="filterAssets(this)">Tokens</button>
       </div>
       <input type="text" id="asset-search" class="compare-search-input" placeholder="Search ticker or name..." oninput="renderAssetsTable()" style="width:180px;" />
     </div>
@@ -55,17 +54,20 @@
       <table class="market-table" style="width:100%;">
         <thead>
           <tr>
-            <th class="sortable" onclick="sortAssets('#')" style="width:35px;"># <span id="sa-#"></span></th>
-            <th class="sortable" onclick="sortAssets('ticker')" style="width:70px;">Ticker <span id="sa-ticker"></span></th>
+            <th class="sortable" onclick="sortAssets('#')" style="width:30px;"># <span id="sa-#"></span></th>
+            <th class="sortable" onclick="sortAssets('ticker')" style="width:65px;">Ticker <span id="sa-ticker"></span></th>
             <th class="sortable" onclick="sortAssets('company')">Company <span id="sa-company"></span></th>
-            <th style="width:70px;">Sector</th>
-            <th class="sortable r" onclick="sortAssets('price')" style="width:80px;">Price <span id="sa-price"></span></th>
-            <th class="sortable r" onclick="sortAssets('24h')" style="width:65px;">24H <span id="sa-24h"></span></th>
-            <th class="sortable r" onclick="sortAssets('7d')" style="width:60px;">7D <span id="sa-7d"></span></th>
-            <th class="sortable r" onclick="sortAssets('30d')" style="width:60px;">30D <span id="sa-30d"></span></th>
-            <th class="sortable r" onclick="sortAssets('ytd')" style="width:60px;">YTD <span id="sa-ytd"></span></th>
-            <th class="sortable r" onclick="sortAssets('mcap')" style="width:80px;">MCap <span id="sa-mcap"></span></th>
-            <th class="sortable r" onclick="sortAssets('pe')" style="width:55px;">P/E <span id="sa-pe"></span></th>
+            <th style="width:55px;">Sector</th>
+            <th style="width:85px;">Subsector</th>
+            <th class="sortable r" onclick="sortAssets('price')" style="width:75px;">Price <span id="sa-price"></span></th>
+            <th style="width:35px;">Ccy</th>
+            <th class="sortable r" onclick="sortAssets('24h')" style="width:55px;">24H <span id="sa-24h"></span></th>
+            <th class="sortable r" onclick="sortAssets('7d')" style="width:50px;">7D <span id="sa-7d"></span></th>
+            <th class="sortable r" onclick="sortAssets('30d')" style="width:50px;">30D <span id="sa-30d"></span></th>
+            <th class="sortable r" onclick="sortAssets('ytd')" style="width:50px;">YTD <span id="sa-ytd"></span></th>
+            <th class="sortable r" onclick="sortAssets('mcap')" style="width:70px;">MCap <span id="sa-mcap"></span></th>
+            <th class="sortable r" onclick="sortAssets('pe')" style="width:45px;">P/E <span id="sa-pe"></span></th>
+            <th class="sortable r" onclick="sortAssets('vol')" style="width:60px;">Vol <span id="sa-vol"></span></th>
           </tr>
         </thead>
         <tbody id="assets-tbody"></tbody>

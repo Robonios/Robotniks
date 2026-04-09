@@ -69,10 +69,18 @@ def main():
     reg = load_json(REGISTRY_PATH) or {}
     prices_data = load_json(PRICES_PATH) or {"prices": []}
     fundamentals_data = load_json(FUNDAMENTALS_PATH) or {"entities": {}}
+    mcap_path = ROOT / "data" / "index" / "market_caps.json"
+    mcap_json = load_json(mcap_path) or {"market_caps": []}
 
     excluded = {k for k, v in reg.items() if isinstance(v, dict) and v.get("status") == "excluded"}
     sector_map = {k: v.get("sector", "") for k, v in reg.items()
                   if isinstance(v, dict) and v.get("status") != "excluded"}
+    subsector_map = {k: v.get("subsector") for k, v in reg.items()
+                     if isinstance(v, dict) and v.get("status") != "excluded"}
+
+    # USD market cap lookup (already converted by fetch_market_caps.py)
+    mcap_usd = {m["ticker"]: m["market_cap_usd"] for m in mcap_json.get("market_caps", [])
+                if m.get("market_cap_usd") and m["ticker"] not in excluded}
 
     # Current price lookup
     current_prices = {}
@@ -170,10 +178,15 @@ def main():
         # Fundamentals data
         fdata = fundas.get(ticker, {})
 
+        # Use USD market cap from market_caps.json (already currency-converted)
+        usd_mcap = mcap_usd.get(ticker)
+        subsector = subsector_map.get(ticker) or None
+
         entity = {
             "ticker": ticker,
             "name": name,
             "sector": sector,
+            "subsector": subsector,
             "currency": currency,
             # Current price
             "price": current_close,
@@ -193,8 +206,8 @@ def main():
             "pct_from_ath": pct_from_ath,
             # Sparkline
             "sparkline_30d": sparkline_30d[-30:] if sparkline_30d else [],
-            # Market cap
-            "market_cap": fdata.get("market_cap") if fdata.get("fetch_status") == "success" else None,
+            # Market cap (USD-converted from market_caps.json)
+            "market_cap": usd_mcap,
             "shares_outstanding": fdata.get("shares_outstanding"),
             # Volume
             "volume": vol_current,

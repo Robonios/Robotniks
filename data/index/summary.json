@@ -1,16 +1,16 @@
 {
-  "calculated_at": "2026-04-09T07:18:53.566072+00:00Z",
+  "calculated_at": "2026-04-09T11:32:09.472463+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2238.37,
+    "value": 2238.43,
     "daily_change_pct": 8.79,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
-    "entities": 222
+    "entities": 216
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2238.37,
+    "value": 2238.43,
     "base_date": "2021-04-12",
     "base_value": 1000.0,
     "entities": 216
@@ -35,11 +35,6 @@
       "name": "Robotnik Materials Index",
       "value": 2548.06,
       "entities": 21
-    },
-    "token": {
-      "name": "Robotnik Token Index",
-      "value": 743.34,
-      "entities": 6
     }
   },
   "top_10_weights": [
@@ -83,35 +78,35 @@
       "name": "Advanced Micro Devices",
       "sector": "Semiconductor",
       "market_cap_usd": 377961873408,
-      "weight_pct": 4.3645
+      "weight_pct": 4.365
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Semiconductor",
       "market_cap_usd": 309598814208,
-      "weight_pct": 3.5751
+      "weight_pct": 3.5755
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
       "market_cap_usd": 306111184896,
-      "weight_pct": 3.5348
+      "weight_pct": 3.5352
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
       "market_cap_usd": 295988559872,
-      "weight_pct": 3.4179
+      "weight_pct": 3.4183
     },
     {
       "ticker": "LIN",
       "name": "Linde plc",
       "sector": "Materials",
       "market_cap_usd": 231919501312,
-      "weight_pct": 2.6781
+      "weight_pct": 2.6784
     }
   ]
 }

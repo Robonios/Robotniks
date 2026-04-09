@@ -87,8 +87,8 @@ async function loadPriceData() {
     }
 
     if (priceData && priceData.prices) {
-      // Filter out excluded entities
-      const activePrices = priceData.prices.filter(e => !excludedTickers.has(e.ticker));
+      // Filter out excluded entities and tokens
+      const activePrices = priceData.prices.filter(e => !excludedTickers.has(e.ticker) && mapSector(e.sector) !== 'token');
       allCompanies = activePrices.map(e => ({
         name: e.name || e.ticker,
         sub: e.sector || '',
@@ -1416,11 +1416,11 @@ function renderMarketTable() {
 
   // Update tab counts
   var tabs = document.querySelectorAll('.market-tab');
-  var counts = {all: uniqueCompanies.length, semi:0, robo:0, space:0, materials:0, token:0};
+  var counts = {all: uniqueCompanies.length, semi:0, robo:0, space:0, materials:0};
   uniqueCompanies.forEach(function(c) { if (counts[c.sector] !== undefined) counts[c.sector]++; });
   tabs.forEach(function(t) {
     var s = t.dataset.sector;
-    var label = s === 'all' ? 'All' : s === 'semi' ? 'Semi' : s === 'robo' ? 'Robotics' : s === 'space' ? 'Space' : s === 'materials' ? 'Materials' : 'Tokens';
+    var label = s === 'all' ? 'All' : s === 'semi' ? 'Semi' : s === 'robo' ? 'Robotics' : s === 'space' ? 'Space' : s === 'materials' ? 'Materials' : s;
     t.textContent = label + ' (' + (counts[s] || 0) + ')';
   });
 
