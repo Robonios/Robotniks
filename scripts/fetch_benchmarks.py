@@ -104,38 +104,79 @@ def fetch_eodhd_history(symbol, years=5):
 
 
 # ── Alpha Vantage fallback ───────────────────────────────────────────────
+FROM_DATE = "2021-01-01"
+
+def _av_request(url):
+    """Make an Alpha Vantage API request."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Robotnik/1.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode())
+
+
 def fetch_av_history(symbol):
-    """Fetch daily prices from Alpha Vantage (compact = last 100 trading days)."""
+    """Fetch 5Y history via AV: weekly adjusted (full) + daily compact, merged."""
     if not AV_KEY:
         return None
-    url = (
-        "https://www.alphavantage.co/query?"
-        "function=TIME_SERIES_DAILY&symbol={symbol}"
-        "&outputsize=compact&apikey={key}"
-    ).format(symbol=symbol, key=AV_KEY)
 
+    weekly_series = []
+    daily_series = []
+
+    # 1. Weekly adjusted — full history (free tier)
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Robotnik/1.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode())
-
-        ts = data.get("Time Series (Daily)", {})
-        if not ts:
+        url = ("https://www.alphavantage.co/query?"
+               "function=TIME_SERIES_WEEKLY_ADJUSTED&symbol={}&apikey={}").format(symbol, AV_KEY)
+        data = _av_request(url)
+        ts = data.get("Weekly Adjusted Time Series", {})
+        if ts:
+            for d in sorted(ts.keys()):
+                if d >= FROM_DATE:
+                    weekly_series.append({
+                        "date": d,
+                        "close": float(ts[d]["5. adjusted close"]),
+                    })
+            print("  AV weekly: {} weeks ({} to {})".format(
+                len(weekly_series), weekly_series[0]["date"], weekly_series[-1]["date"]))
+        else:
             note = data.get("Note") or data.get("Information") or data.get("Error Message")
-            print("  AV warning for {}: {}".format(symbol, note))
-            return None
+            print("  AV weekly failed for {}: {}".format(symbol, note))
+    except Exception as e:
+        print("  AV weekly error for {}: {}".format(symbol, e))
 
-        series = []
-        for date_str in sorted(ts.keys()):
-            vals = ts[date_str]
-            series.append({
-                "date": date_str,
-                "close": float(vals["4. close"]),
-            })
-        return series
-    except (urllib.error.URLError, json.JSONDecodeError) as e:
-        print("  AV error for {}: {}".format(symbol, e))
-        return None
+    time.sleep(15)  # AV rate limit: 5 calls/min
+
+    # 2. Daily compact — last ~100 trading days (free tier)
+    try:
+        url = ("https://www.alphavantage.co/query?"
+               "function=TIME_SERIES_DAILY&symbol={}&outputsize=compact&apikey={}").format(symbol, AV_KEY)
+        data = _av_request(url)
+        ts = data.get("Time Series (Daily)", {})
+        if ts:
+            for d in sorted(ts.keys()):
+                daily_series.append({
+                    "date": d,
+                    "close": float(ts[d]["4. close"]),
+                })
+            print("  AV daily: {} days ({} to {})".format(
+                len(daily_series), daily_series[0]["date"], daily_series[-1]["date"]))
+        else:
+            note = data.get("Note") or data.get("Information") or data.get("Error Message")
+            print("  AV daily failed for {}: {}".format(symbol, note))
+    except Exception as e:
+        print("  AV daily error for {}: {}".format(symbol, e))
+
+    # 3. Merge: weekly history + daily for recent period (daily overrides overlap)
+    if weekly_series and daily_series:
+        daily_start = daily_series[0]["date"]
+        merged = [pt for pt in weekly_series if pt["date"] < daily_start]
+        merged.extend(daily_series)
+        print("  Merged: {} data points ({} to {})".format(
+            len(merged), merged[0]["date"], merged[-1]["date"]))
+        return merged
+    elif daily_series:
+        return daily_series
+    elif weekly_series:
+        return weekly_series
+    return None
 
 
 # ── main ─────────────────────────────────────────────────────────────────
@@ -147,6 +188,8 @@ def main():
     ts = datetime.utcnow().isoformat() + "Z"
     output = {
         "fetched_at": ts,
+        "base_date": "2025-03-31",
+        "base_value": 1000,
         "benchmarks": {},
     }
 

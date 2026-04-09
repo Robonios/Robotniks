@@ -1228,6 +1228,39 @@ function addCompare(ticker) {
     });
 }
 
+var BENCHMARK_BASE_DATE = '2025-03-31';
+var BENCHMARK_BASE_VALUE = 1000;
+
+function _rebaseBenchmark(rawSeries) {
+  // Find the base price on 2025-03-31 (or nearest prior date)
+  var basePrice = null;
+  var baseCandidates = ['2025-03-31', '2025-03-28', '2025-03-27', '2025-03-26'];
+  for (var i = 0; i < baseCandidates.length; i++) {
+    for (var j = 0; j < rawSeries.length; j++) {
+      if (rawSeries[j].date === baseCandidates[i]) {
+        basePrice = rawSeries[j].close;
+        break;
+      }
+    }
+    if (basePrice) break;
+  }
+  if (!basePrice) {
+    // Fallback: find closest date <= 2025-03-31
+    for (var k = rawSeries.length - 1; k >= 0; k--) {
+      if (rawSeries[k].date <= '2025-03-31') {
+        basePrice = rawSeries[k].close;
+        break;
+      }
+    }
+  }
+  if (!basePrice || basePrice <= 0) return rawSeries; // can't rebase
+
+  // Rebase: value = (price / basePrice) * 1000
+  return rawSeries.map(function(d) {
+    return { date: d.date, close: (d.close / basePrice) * BENCHMARK_BASE_VALUE };
+  });
+}
+
 function addBenchmark(ticker) {
   if (compareLines.length >= 3) return;
   if (compareLines.find(function(c) { return c.ticker === ticker; })) {
@@ -1238,11 +1271,13 @@ function addBenchmark(ticker) {
   if (!meta) return;
   var color = meta.color;
 
-  function doAdd(series) {
-    if (!series || !series.length) return;
+  function doAdd(rawSeries) {
+    if (!rawSeries || !rawSeries.length) return;
     if (!indexChart) return;
+    // Rebase to 1,000 on 2025-03-31 to match Robotnik Composite base
+    var rebasedSeries = _rebaseBenchmark(rawSeries);
     var lineSeries = indexChart.addLineSeries({ color: color, lineWidth: 2, lastValueVisible: true, priceLineVisible: false });
-    compareLines.push({ ticker: ticker, series: series, color: color, lwcSeries: lineSeries, isBenchmark: true, name: meta.name });
+    compareLines.push({ ticker: ticker, series: rebasedSeries, color: color, lwcSeries: lineSeries, isBenchmark: true, name: meta.name });
     refreshCompareLines();
     renderComparePillsChart();
     // Toggle button active state
@@ -1285,23 +1320,29 @@ function removeCompare(ticker) {
 
 function refreshCompareLines() {
   if (!indexChart) return;
-  // Get current index data to normalise % change from same start date
+  // Get current index data to determine visible date range
   var idxData = indexChartData[currentIndexSeries] || [];
   var filtered = getFilteredData(idxData);
-  var startDate = filtered.length ? (filtered[0].time || filtered[0].date) : null;
 
   for (var i = 0; i < compareLines.length; i++) {
     var cl = compareLines[i];
-    var compFiltered = getFilteredData(cl.series.map(d => ({ time: d.date, value: d.close || d.price || d.value })));
-    // Normalise to % change matching index base value
-    if (compFiltered.length > 0 && filtered.length > 0) {
-      var idxBase = filtered[0].value || filtered[0].close || 1;
-      var compBase = compFiltered[0].value || 1;
-      var normalised = compFiltered.map(d => ({
-        time: d.time,
-        value: idxBase * (d.value / compBase)
-      }));
-      cl.lwcSeries.setData(normalised);
+    var compAll = cl.series.map(function(d) { return { time: d.date, value: d.close || d.price || d.value }; });
+    var compFiltered = getFilteredData(compAll);
+
+    if (cl.isBenchmark) {
+      // Benchmarks are already rebased to 1,000 on 2025-03-31
+      // Plot directly — values are on the same scale as the Robotnik index
+      cl.lwcSeries.setData(compFiltered);
+    } else {
+      // Regular asset comparisons: normalise to index start value
+      if (compFiltered.length > 0 && filtered.length > 0) {
+        var idxBase = filtered[0].value || filtered[0].close || 1;
+        var compBase = compFiltered[0].value || 1;
+        var normalised = compFiltered.map(function(d) {
+          return { time: d.time, value: idxBase * (d.value / compBase) };
+        });
+        cl.lwcSeries.setData(normalised);
+      }
     }
   }
 }
