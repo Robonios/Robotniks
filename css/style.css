@@ -463,6 +463,30 @@
     flex-wrap: wrap;
   }
 
+  .chart-mode-tabs {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 0.5rem;
+  }
+  .chart-mode-tab {
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: var(--font);
+    font-size: 10px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .chart-mode-tab:last-child { border-right: none; }
+  .chart-mode-tab:hover { color: var(--text); }
+  .chart-mode-tab.active { background: rgba(245,217,33,0.06); color: var(--yellow); }
+  .chart-mode-tab.disabled { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
+
   .chart-range-group, .chart-index-group {
     display: flex;
     gap: 2px;

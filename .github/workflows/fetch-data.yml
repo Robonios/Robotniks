@@ -28,11 +28,16 @@ jobs:
         env:
           EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
         run: python scripts/fetch_live_prices.py
+      - name: Fetch intraday index (SOXX proxy)
+        env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+        run: python scripts/fetch_intraday_index.py
+        continue-on-error: true
       - name: Commit live data
         run: |
           git config user.name "Robotnik Pipeline"
           git config user.email "data@robotniks.com"
-          git add data/prices/live.json data/prices/intraday.json
+          git add data/prices/live.json data/prices/intraday.json data/prices/intraday_index.json
           if git diff --cached --quiet; then
             echo "No live price changes"
           else

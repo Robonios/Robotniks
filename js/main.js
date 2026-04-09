@@ -46,12 +46,13 @@ function tickerColor(ticker) {
 async function loadPriceData() {
   try {
     const cb = '?v=' + Date.now();
-    const [priceResp, mcapResp, summaryResp, registryResp, liveResp] = await Promise.allSettled([
+    const [priceResp, mcapResp, summaryResp, registryResp, liveResp, metricsResp] = await Promise.allSettled([
       fetch('data/prices/all_prices.json' + cb),
       fetch('data/index/market_caps.json' + cb),
       fetch('data/index/summary.json' + cb),
       fetch('data/registries/entity_registry.json' + cb),
       fetch('data/prices/live.json' + cb),
+      fetch('data/markets/robotnik_public_markets.json' + cb),
     ]);
 
     let priceData = null;
@@ -99,6 +100,13 @@ async function loadPriceData() {
       }
     }
 
+    // Load metrics data (for sparklines and multi-timeframe %)
+    window.metricsData = {};
+    if (metricsResp.status === 'fulfilled' && metricsResp.value.ok) {
+      var mData = await metricsResp.value.json();
+      if (mData && mData.entities) window.metricsData = mData.entities;
+    }
+
     // Build mcap lookup
     const mcapMap = {};
     if (mcapData && mcapData.market_caps) {
@@ -126,7 +134,7 @@ async function loadPriceData() {
         sector: mapSector(e.sector),
         currency: e.currency || 'USD',
         color: tickerColor(e.ticker),
-        date: live ? new Date(live.timestamp * 1000).toISOString().slice(0,10) : (e.date || ''),
+        date: (live && typeof live.timestamp === 'number' && live.timestamp > 0) ? new Date(live.timestamp * 1000).toISOString().slice(0,10) : (e.date || ''),
         isLive: !!live,
       };});
 
@@ -1001,8 +1009,10 @@ let indexChartData = {};
 let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
 let currentIndexSeries = 'composite';
 let currentIndexRange = 365;  // days, or 'ytd' — default 1Y
+let currentChartMode = 'price';  // 'price' | 'pct'
+let _intradayCache = null;   // cached intraday_index.json
 let compareLines = [];       // [{ticker, series, color, isBenchmark}]
-const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B'];
+const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#EC4899', '#8B5CF6'];
 const BENCHMARK_META = {
   'SPY':  { name: 'S&P 500',  color: '#7B8794' },
   'QQQ':  { name: 'NASDAQ',   color: '#5B9BD5' },
@@ -1131,8 +1141,25 @@ function getRangeLabel() {
 function applyIndexData(data) {
   if (!indexAreaSeries || !data || !data.length) return;
   var filtered = getFilteredData(data);
-  indexAreaSeries.setData(filtered.map(d => ({ time: d.time || d.date, value: d.value || d.close })));
+  var chartData;
+
+  if (currentChartMode === 'pct') {
+    // Rebase to 0% from start of visible range
+    var baseVal = filtered[0].value || filtered[0].close || 1;
+    chartData = filtered.map(function(d) {
+      var v = d.value || d.close || 0;
+      return { time: d.time || d.date, value: parseFloat(((v - baseVal) / baseVal * 100).toFixed(2)) };
+    });
+    // Update Y-axis format for percentage
+    indexAreaSeries.applyOptions({ priceFormat: { type: 'custom', formatter: function(v) { return (v >= 0 ? '+' : '') + v.toFixed(1) + '%'; } } });
+  } else {
+    chartData = filtered.map(function(d) { return { time: d.time || d.date, value: d.value || d.close }; });
+    indexAreaSeries.applyOptions({ priceFormat: { type: 'price', precision: 2, minMove: 0.01 } });
+  }
+
+  indexAreaSeries.setData(chartData);
   indexChart.timeScale().fitContent();
+
   // Update the main index hero value + % to match selected period
   var last = filtered[filtered.length - 1];
   var first = filtered[0];
@@ -1151,6 +1178,18 @@ function applyIndexData(data) {
   refreshCompareLines();
 }
 
+function setChartMode(btn) {
+  if (btn.classList.contains('disabled')) return;
+  document.querySelectorAll('.chart-mode-tab').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  currentChartMode = btn.dataset.mode;
+  var data = indexChartData[currentIndexSeries];
+  if (currentIndexSeries === 'composite' && currentIndexRange !== 'ytd' && currentIndexRange > 365 && indexChartData.composite_eq) {
+    data = indexChartData.composite_eq;
+  }
+  if (data) applyIndexData(data);
+}
+
 function updateRangeAvailability(data) {
   if (!data || !data.length) return;
   var firstDate = data[0].time || data[0].date;
@@ -1165,7 +1204,7 @@ function updateRangeAvailability(data) {
   }
   document.querySelectorAll('.chart-range-btn[data-range]').forEach(function(btn) {
     var r = btn.dataset.range;
-    if (r === '0.5' || r === '1') return; // 12H and 1D stay disabled (no intraday data)
+    // 12H and 1D use intraday data (loaded on demand)
     if (r === 'ytd' || r === '0') { btn.classList.remove('disabled'); btn.removeAttribute('title'); return; }
     var days = parseInt(r);
     if (days > availDays + 30) {
@@ -1180,17 +1219,72 @@ function updateRangeAvailability(data) {
   });
 }
 
+async function loadIntradayIndex() {
+  if (_intradayCache) return _filterIntraday(_intradayCache);
+  try {
+    var resp = await fetch('data/prices/intraday_index.json?v=' + Date.now());
+    if (!resp.ok) return null;
+    _intradayCache = await resp.json();
+    return _filterIntraday(_intradayCache);
+  } catch(e) { return null; }
+}
+
+function _filterIntraday(data) {
+  // Pick series based on range: 12H/1D = 5min, 1W = 1h
+  var series = currentIndexRange <= 1 ? data.series_5m : data.series_1h;
+  if (!series || !series.length) return null;
+
+  // Filter by time window
+  var now = new Date();
+  var hoursBack = currentIndexRange <= 0.5 ? 12 : currentIndexRange <= 1 ? 24 : 168; // 168h = 7 days
+  var cutoff = new Date(now.getTime() - hoursBack * 3600000);
+
+  var filtered = series.filter(function(pt) {
+    return new Date(pt.datetime + ' GMT') >= cutoff;
+  });
+
+  if (!filtered.length) filtered = series.slice(-50); // fallback: last 50 points
+
+  // Convert to Lightweight Charts format (business day + time)
+  return filtered.map(function(pt) {
+    var d = new Date(pt.datetime + ' GMT');
+    return {
+      time: Math.floor(d.getTime() / 1000), // Unix timestamp (seconds)
+      value: pt.value,
+    };
+  });
+}
+
 function setIndexRange(btn) {
   document.querySelectorAll('.chart-range-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   var rv = btn.dataset.range;
   currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseFloat(rv) || 0);
+
+  // For 12H, 1D, 1W: load intraday data (SOXX proxy)
+  if (currentIndexRange <= 7 && currentIndexRange > 0 && currentIndexSeries === 'composite') {
+    loadIntradayIndex().then(function(intradayData) {
+      if (intradayData) {
+        applyIndexData(intradayData);
+      } else {
+        // Fall back to daily data
+        var data = indexChartData[currentIndexSeries];
+        if (data) applyIndexData(data);
+      }
+    });
+    // Also re-render market table for range-synced %
+    renderMarketTable();
+    return;
+  }
+
   var data = indexChartData[currentIndexSeries];
   // For composite with long ranges, use equities-only if available
   if (currentIndexSeries === 'composite' && currentIndexRange !== 'ytd' && currentIndexRange > 365 && indexChartData.composite_eq) {
     data = indexChartData.composite_eq;
   }
   if (data) applyIndexData(data);
+  // Re-render market table for range-synced %
+  renderMarketTable();
 }
 
 function setIndexSeries(btn) {
@@ -1256,7 +1350,7 @@ function filterCompareResults() {
 }
 
 function addCompare(ticker) {
-  if (compareLines.length >= 3) return;
+  if (compareLines.length >= 5) return;
   if (compareLines.find(c => c.ticker === ticker)) return;
   var color = COMPARE_COLORS[compareLines.length];
   // Load history
@@ -1316,7 +1410,7 @@ function _rebaseBenchmark(rawSeries) {
 }
 
 function addBenchmark(ticker) {
-  if (compareLines.length >= 3) return;
+  if (compareLines.length >= 5) return;
   if (compareLines.find(function(c) { return c.ticker === ticker; })) {
     removeCompare(ticker);
     return;
@@ -1432,35 +1526,91 @@ function sortMarketTable(col) {
   renderMarketTable();
 }
 
+// Get the matching change field for the current chart range
+function _rangeChangeField() {
+  var m = { 0.5:'change_24h_pct', 1:'change_24h_pct', 7:'change_7d_pct', 30:'change_30d_pct',
+            90:'change_3m_pct', 365:'change_1y_pct', 1095:'change_3y_pct', 1825:'change_5y_pct' };
+  if (currentIndexRange === 'ytd') return 'change_ytd_pct';
+  return m[currentIndexRange] || 'change_24h_pct';
+}
+
+function _rangeChangeLabel() {
+  var m = { 0.5:'24h', 1:'24h', 7:'7D', 30:'1M', 90:'3M', 365:'1Y', 1095:'3Y', 1825:'5Y' };
+  if (currentIndexRange === 'ytd') return 'YTD';
+  return m[currentIndexRange] || '24h';
+}
+
+// Sparkline SVG from data array
+function _sparkSvg(arr) {
+  if (!arr || arr.length < 2) return '';
+  var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr);
+  if (mx === mn) mx += 1;
+  var pts = arr.map(function(v, i) { return (i / (arr.length - 1) * 50).toFixed(1) + ',' + (18 - (v - mn) / (mx - mn) * 16).toFixed(1); }).join(' ');
+  var col = arr[arr.length - 1] >= arr[0] ? '%2322c55e' : '%23ef4444';
+  return '<svg width="50" height="18" viewBox="0 0 50 18"><polyline fill="none" stroke="' + col + '" stroke-width="1.2" points="' + pts + '"/></svg>';
+}
+
+// Highlight compare line on hover
+function _highlightComp(ticker) {
+  var cl = compareLines.find(function(c) { return c.ticker === ticker; });
+  if (cl && cl.lwcSeries) cl.lwcSeries.applyOptions({ lineWidth: 4 });
+}
+function _unhighlightComp(ticker) {
+  var cl = compareLines.find(function(c) { return c.ticker === ticker; });
+  if (cl && cl.lwcSeries) cl.lwcSeries.applyOptions({ lineWidth: 2 });
+}
+
 function renderMarketTable() {
   var tbody = document.getElementById('mkt-tbody');
   if (!tbody || !uniqueCompanies.length) return;
   var search = (document.getElementById('mkt-search')?.value || '').toLowerCase();
-  var data = mktSector === 'all' ? uniqueCompanies : uniqueCompanies.filter(c => c.sector === mktSector);
-  if (search) data = data.filter(c => c.ticker.toLowerCase().includes(search) || c.name.toLowerCase().includes(search));
+  var data = mktSector === 'all' ? uniqueCompanies : uniqueCompanies.filter(function(c) { return c.sector === mktSector; });
+  if (search) data = data.filter(function(c) { return c.ticker.toLowerCase().includes(search) || c.name.toLowerCase().includes(search); });
 
   // Sort
+  var chgField = _rangeChangeField();
   var sorted = data.slice().sort(function(a, b) {
     var va, vb;
     if (mktSort === 'ticker') { va = a.ticker; vb = b.ticker; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
     if (mktSort === 'company') { va = a.name; vb = b.name; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
     if (mktSort === 'sector') { va = a.sector; vb = b.sector; return va < vb ? -mktSortDir : va > vb ? mktSortDir : 0; }
     if (mktSort === 'price') { return (a.price - b.price) * mktSortDir; }
-    if (mktSort === 'change') { return (a.change - b.change) * mktSortDir; }
-    return ((a.mcap || 0) - (b.mcap || 0)) * mktSortDir; // default: mcap
+    if (mktSort === 'change') {
+      var ma = window.metricsData[a.ticker], mb = window.metricsData[b.ticker];
+      va = ma ? (ma[chgField] || 0) : (a.change || 0);
+      vb = mb ? (mb[chgField] || 0) : (b.change || 0);
+      return (va - vb) * mktSortDir;
+    }
+    return ((a.mcap || 0) - (b.mcap || 0)) * mktSortDir;
   });
 
   var top10 = search ? sorted : sorted.slice(0, 10);
   var rows = top10.map(function(c, i) {
-    var chgCls = c.change >= 0 ? 'v-green' : 'v-red';
-    var chgSign = c.change >= 0 ? '+' : '';
+    var md = window.metricsData[c.ticker] || {};
+    var chgVal = md[chgField] !== undefined && md[chgField] !== null ? md[chgField] : c.change;
+    var chgCls = chgVal >= 0 ? 'v-green' : 'v-red';
+    var chgSign = chgVal >= 0 ? '+' : '';
+    var chgStr = chgVal !== null && chgVal !== undefined ? chgSign + chgVal.toFixed(2) + '%' : '—';
     var secCss = SECTOR_CSS[c.sector] || 'sector-semi';
     var secLabel = SECTOR_LABELS[c.sector] || c.sector;
-    return '<tr><td>' + (i+1) + '</td><td class="ticker">' + c.ticker + '</td><td class="company-name">' + c.name +
+    var spark = _sparkSvg(md.sparkline_30d);
+    var isCompared = compareLines.some(function(cl) { return cl.ticker === c.ticker; });
+    var rowStyle = isCompared ? 'border-left:3px solid var(--yellow);' : '';
+    var esc = c.ticker.replace(/'/g, "\\'");
+    return '<tr style="cursor:pointer;' + rowStyle + '" onclick="addCompare(\'' + esc + '\')" ' +
+      'onmouseenter="_highlightComp(\'' + esc + '\')" onmouseleave="_unhighlightComp(\'' + esc + '\')">' +
+      '<td>' + (i+1) + '</td><td class="ticker">' + c.ticker + '</td><td class="company-name">' + c.name +
       '</td><td><span class="sector-tag ' + secCss + '">' + secLabel + '</span></td><td class="r">' + fmtPrice(c.price, c.currency) +
-      '</td><td class="r ' + chgCls + '">' + chgSign + c.change.toFixed(2) + '%</td><td class="r">' + c.mcapFmt + '</td></tr>';
+      '</td><td style="text-align:center">' + spark + '</td>' +
+      '<td class="r ' + chgCls + '">' + chgStr + '</td><td class="r">' + c.mcapFmt + '</td></tr>';
   }).join('');
   tbody.innerHTML = rows;
+
+  // Update change column header
+  var chgHeader = document.getElementById('sort-arrow-change');
+  if (chgHeader && chgHeader.parentElement) {
+    chgHeader.parentElement.childNodes[0].textContent = _rangeChangeLabel() + ' ';
+  }
 
   // Update sort arrows
   ['#','ticker','company','sector','price','change','mcap'].forEach(function(col) {
