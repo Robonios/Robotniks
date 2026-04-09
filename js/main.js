@@ -1107,11 +1107,74 @@ function createIndexChart(container, data) {
   applyIndexData(data);
   const ro = new ResizeObserver(() => { indexChart.applyOptions({ width: container.clientWidth }); });
   ro.observe(container);
+
   // Add base label inside chart area (bottom-left)
   var baseLabel = document.createElement('div');
   baseLabel.id = 'chart-base-label';
   baseLabel.style.cssText = 'position:absolute;bottom:24px;left:8px;font-size:9px;color:#5A6178;font-family:var(--font);z-index:2;pointer-events:none;';
   container.appendChild(baseLabel);
+
+  // ── Crosshair tooltip ──
+  var tooltip = document.createElement('div');
+  tooltip.id = 'chart-tooltip';
+  tooltip.style.cssText = 'display:none;position:absolute;z-index:10;background:rgba(22,25,32,0.95);border:1px solid #252A36;border-radius:4px;padding:6px 10px;font-family:var(--font);font-size:10px;color:#E6E8ED;pointer-events:none;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,0.4);';
+  container.appendChild(tooltip);
+
+  indexChart.subscribeCrosshairMove(function(param) {
+    if (!param || !param.time || param.point === undefined || param.point.x < 0) {
+      tooltip.style.display = 'none';
+      return;
+    }
+
+    // Format time
+    var timeStr = '';
+    if (typeof param.time === 'number') {
+      // Unix timestamp (intraday)
+      var d = new Date(param.time * 1000);
+      timeStr = d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
+                d.toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',timeZoneName:'short'});
+    } else if (typeof param.time === 'string') {
+      timeStr = param.time;
+    } else {
+      // Business day object
+      timeStr = param.time.year + '-' + String(param.time.month).padStart(2,'0') + '-' + String(param.time.day).padStart(2,'0');
+    }
+
+    var html = '<div style="color:var(--text-dim);margin-bottom:3px;">' + timeStr + '</div>';
+
+    // Index (area) series value
+    var indexVal = param.seriesData.get(indexAreaSeries);
+    if (indexVal && indexVal.value !== undefined) {
+      var suffix = currentChartMode === 'pct' ? '%' : '';
+      var prefix = currentChartMode === 'pct' ? (indexVal.value >= 0 ? '+' : '') : '';
+      html += '<div style="color:#F5D921;">● ' + (document.getElementById('chart-title')?.textContent || 'Composite') +
+              '<span style="float:right;margin-left:12px;">' + prefix + indexVal.value.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}) + suffix + '</span></div>';
+    }
+
+    // Comparison lines
+    for (var i = 0; i < compareLines.length; i++) {
+      var cl = compareLines[i];
+      if (!cl.lwcSeries) continue;
+      var clVal = param.seriesData.get(cl.lwcSeries);
+      if (clVal && clVal.value !== undefined) {
+        var label = cl.name || cl.ticker;
+        html += '<div style="color:' + cl.color + ';">● ' + label +
+                '<span style="float:right;margin-left:12px;">' + clVal.value.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}) + '</span></div>';
+      }
+    }
+
+    tooltip.innerHTML = html;
+    tooltip.style.display = 'block';
+
+    // Position tooltip near cursor but keep within bounds
+    var x = param.point.x + 15;
+    var y = param.point.y - 10;
+    if (x + tooltip.offsetWidth > container.clientWidth) x = param.point.x - tooltip.offsetWidth - 15;
+    if (y < 0) y = 10;
+    if (y + tooltip.offsetHeight > container.clientHeight) y = container.clientHeight - tooltip.offsetHeight - 10;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  });
 }
 
 function getFilteredData(data) {
