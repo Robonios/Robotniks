@@ -1,5 +1,5 @@
 {
-  "calculated_at": "2026-04-09T22:42:46.165346+00:00Z",
+  "calculated_at": "2026-04-10T22:37:54.845833+00:00Z",
   "cap_limit_pct": 5.0,
   "entity_count": 232,
   "weights": [
@@ -7,1624 +7,1624 @@
       "ticker": "NVDA",
       "name": "NVIDIA",
       "sector": "Semiconductor",
-      "market_cap_usd": 4469932687360,
+      "market_cap_usd": 4584652144640,
       "weight_pct": 5.0
     },
     {
       "ticker": "TSM",
       "name": "TSMC ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 1895615561728,
+      "market_cap_usd": 1922118713344,
       "weight_pct": 5.0
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom",
       "sector": "Semiconductor",
-      "market_cap_usd": 1682725404672,
+      "market_cap_usd": 1761620131840,
       "weight_pct": 5.0
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 568821088256,
+      "market_cap_usd": 580459495424,
       "weight_pct": 5.0
     },
     {
       "ticker": "MU",
       "name": "Micron Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 475351187456,
+      "market_cap_usd": 474313654272,
       "weight_pct": 5.0
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
       "sector": "Semiconductor",
-      "market_cap_usd": 385820426240,
-      "weight_pct": 4.2766
+      "market_cap_usd": 399515877376,
+      "weight_pct": 4.3764
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Semiconductor",
-      "market_cap_usd": 325010325504,
-      "weight_pct": 3.6026
+      "market_cap_usd": 331164876800,
+      "weight_pct": 3.6277
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
-      "market_cap_usd": 315705950208,
-      "weight_pct": 3.4994
+      "market_cap_usd": 317039181824,
+      "weight_pct": 3.4729
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
-      "market_cap_usd": 309896773632,
-      "weight_pct": 3.435
+      "market_cap_usd": 313210634240,
+      "weight_pct": 3.431
     },
     {
       "ticker": "LIN",
       "name": "Linde plc",
       "sector": "Materials",
-      "market_cap_usd": 233226272768,
-      "weight_pct": 2.5852
+      "market_cap_usd": 233156755456,
+      "weight_pct": 2.5541
     },
     {
       "ticker": "KLAC",
       "name": "KLA Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 226948726784,
-      "weight_pct": 2.5156
+      "market_cap_usd": 228265279488,
+      "weight_pct": 2.5005
     },
     {
       "ticker": "SIE GR",
       "name": "Siemens AG",
       "sector": "Robotics",
-      "market_cap_usd": 202306771078,
-      "weight_pct": 2.2425
+      "market_cap_usd": 205267975862,
+      "weight_pct": 2.2486
     },
     {
       "ticker": "TXN",
       "name": "Texas Instruments",
       "sector": "Semiconductor",
-      "market_cap_usd": 195731406848,
-      "weight_pct": 2.1696
-    },
-    {
-      "ticker": "ADI",
-      "name": "Analog Devices",
-      "sector": "Semiconductor",
-      "market_cap_usd": 171535400960,
-      "weight_pct": 1.9014
+      "market_cap_usd": 195503800320,
+      "weight_pct": 2.1416
     },
     {
       "ticker": "SU FP",
       "name": "Schneider Electric",
       "sector": "Robotics",
-      "market_cap_usd": 168380258293,
-      "weight_pct": 1.8664
+      "market_cap_usd": 171537437367,
+      "weight_pct": 1.8791
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "sector": "Semiconductor",
+      "market_cap_usd": 170939809792,
+      "weight_pct": 1.8725
     },
     {
       "ticker": "ABBN SW",
       "name": "ABB Ltd",
       "sector": "Robotics",
-      "market_cap_usd": 162602893425,
-      "weight_pct": 1.8024
+      "market_cap_usd": 165372837893,
+      "weight_pct": 1.8115
     },
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical",
       "sector": "Robotics",
-      "market_cap_usd": 161580908544,
-      "weight_pct": 1.791
+      "market_cap_usd": 160046563328,
+      "weight_pct": 1.7532
     },
     {
       "ticker": "ARM",
       "name": "ARM Holdings ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 159082070016,
-      "weight_pct": 1.7633
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin",
-      "sector": "Space",
-      "market_cap_usd": 143778398208,
-      "weight_pct": 1.5937
-    },
-    {
-      "ticker": "QCOM",
-      "name": "Qualcomm",
-      "sector": "Semiconductor",
-      "market_cap_usd": 136442765312,
-      "weight_pct": 1.5124
+      "market_cap_usd": 158163435520,
+      "weight_pct": 1.7326
     },
     {
       "ticker": "2308 TT",
       "name": "Delta Electronics",
       "sector": "Robotics",
-      "market_cap_usd": 134687431015,
-      "weight_pct": 1.4929
+      "market_cap_usd": 142051875960,
+      "weight_pct": 1.5561
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "sector": "Space",
+      "market_cap_usd": 141439205376,
+      "weight_pct": 1.5494
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "sector": "Semiconductor",
+      "market_cap_usd": 136773853184,
+      "weight_pct": 1.4983
     },
     {
       "ticker": "AI FP",
       "name": "Air Liquide",
       "sector": "Materials",
-      "market_cap_usd": 126333383645,
-      "weight_pct": 1.4003
+      "market_cap_usd": 127594579499,
+      "weight_pct": 1.3977
     },
     {
       "ticker": "8035 JP",
       "name": "Tokyo Electron",
       "sector": "Robotics",
-      "market_cap_usd": 121178745462,
-      "weight_pct": 1.3432
+      "market_cap_usd": 126335072377,
+      "weight_pct": 1.3839
     },
     {
       "ticker": "6857 JP",
       "name": "Advantest Corp",
       "sector": "Robotics",
-      "market_cap_usd": 113206516830,
-      "weight_pct": 1.2548
+      "market_cap_usd": 113931987813,
+      "weight_pct": 1.248
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 104873779200,
-      "weight_pct": 1.1625
+      "market_cap_usd": 112359145472,
+      "weight_pct": 1.2308
     },
     {
       "ticker": "NOC",
       "name": "Northrop Grumman",
       "sector": "Space",
-      "market_cap_usd": 98083831808,
-      "weight_pct": 1.0872
+      "market_cap_usd": 95691988992,
+      "weight_pct": 1.0482
     },
     {
       "ticker": "6861 JP",
       "name": "Keyence Corp",
       "sector": "Robotics",
-      "market_cap_usd": 93916429254,
-      "weight_pct": 1.041
+      "market_cap_usd": 95094184584,
+      "weight_pct": 1.0417
     },
     {
       "ticker": "EMR",
       "name": "Emerson Electric",
       "sector": "Robotics",
-      "market_cap_usd": 81348239360,
-      "weight_pct": 0.9017
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
-      "sector": "Semiconductor",
-      "market_cap_usd": 77584629760,
-      "weight_pct": 0.86
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys",
-      "sector": "Semiconductor",
-      "market_cap_usd": 77567303680,
-      "weight_pct": 0.8598
+      "market_cap_usd": 80842170368,
+      "weight_pct": 0.8856
     },
     {
       "ticker": "4063 JP",
       "name": "Shin-Etsu Chemical",
       "sector": "Materials",
-      "market_cap_usd": 75934643720,
-      "weight_pct": 0.8417
+      "market_cap_usd": 76423078895,
+      "weight_pct": 0.8372
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "sector": "Semiconductor",
+      "market_cap_usd": 75138285568,
+      "weight_pct": 0.8231
     },
     {
       "ticker": "6503 JP",
       "name": "Mitsubishi Electric",
       "sector": "Robotics",
-      "market_cap_usd": 72553135017,
-      "weight_pct": 0.8042
+      "market_cap_usd": 74698882693,
+      "weight_pct": 0.8183
     },
     {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies",
-      "sector": "Space",
-      "market_cap_usd": 66863742976,
-      "weight_pct": 0.7412
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "sector": "Semiconductor",
+      "market_cap_usd": 73346621440,
+      "weight_pct": 0.8035
     },
     {
       "ticker": "APD",
       "name": "Air Products",
       "sector": "Materials",
-      "market_cap_usd": 66293596160,
-      "weight_pct": 0.7348
+      "market_cap_usd": 66509570048,
+      "weight_pct": 0.7286
     },
     {
       "ticker": "MPWR",
       "name": "Monolithic Power Systems",
       "sector": "Semiconductor",
-      "market_cap_usd": 65533726720,
-      "weight_pct": 0.7264
+      "market_cap_usd": 66498404352,
+      "weight_pct": 0.7284
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies",
+      "sector": "Space",
+      "market_cap_usd": 66045620224,
+      "weight_pct": 0.7235
     },
     {
       "ticker": "IFX GR",
       "name": "Infineon Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 64566269475,
-      "weight_pct": 0.7157
+      "market_cap_usd": 65404808931,
+      "weight_pct": 0.7165
     },
     {
       "ticker": "TER",
       "name": "Teradyne",
       "sector": "Semiconductor",
-      "market_cap_usd": 57020506112,
-      "weight_pct": 0.632
+      "market_cap_usd": 57612300288,
+      "weight_pct": 0.6311
     },
     {
       "ticker": "MRK GR",
       "name": "Merck KGaA",
       "sector": "Materials",
-      "market_cap_usd": 56654880750,
-      "weight_pct": 0.628
+      "market_cap_usd": 57037193388,
+      "weight_pct": 0.6248
     },
     {
       "ticker": "BAS GR",
       "name": "BASF",
       "sector": "Materials",
-      "market_cap_usd": 55424197817,
-      "weight_pct": 0.6143
+      "market_cap_usd": 56735393206,
+      "weight_pct": 0.6215
     },
     {
       "ticker": "ASX",
       "name": "ASE Technology Holding ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 53687394304,
-      "weight_pct": 0.5951
-    },
-    {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors",
-      "sector": "Semiconductor",
-      "market_cap_usd": 51971338240,
-      "weight_pct": 0.5761
+      "market_cap_usd": 54410235904,
+      "weight_pct": 0.596
     },
     {
       "ticker": "012450 KS",
       "name": "Hanwha Aerospace",
       "sector": "Space",
-      "market_cap_usd": 50640149486,
-      "weight_pct": 0.5613
+      "market_cap_usd": 52196577665,
+      "weight_pct": 0.5718
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors",
+      "sector": "Semiconductor",
+      "market_cap_usd": 51642834944,
+      "weight_pct": 0.5657
     },
     {
       "ticker": "ROK",
       "name": "Rockwell Automation",
       "sector": "Robotics",
-      "market_cap_usd": 44399861760,
-      "weight_pct": 0.4921
+      "market_cap_usd": 44523540480,
+      "weight_pct": 0.4877
     },
     {
       "ticker": "HEI",
       "name": "HEICO Corp",
       "sector": "Space",
-      "market_cap_usd": 40909586432,
-      "weight_pct": 0.4535
-    },
-    {
-      "ticker": "MCHP",
-      "name": "Microchip Technology",
-      "sector": "Semiconductor",
-      "market_cap_usd": 38539669504,
-      "weight_pct": 0.4272
+      "market_cap_usd": 40344539136,
+      "weight_pct": 0.4419
     },
     {
       "ticker": "RKLB",
       "name": "Rocket Lab USA",
       "sector": "Space",
-      "market_cap_usd": 38426710016,
-      "weight_pct": 0.4259
+      "market_cap_usd": 39180967936,
+      "weight_pct": 0.4292
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "sector": "Space",
-      "market_cap_usd": 34997530624,
-      "weight_pct": 0.3879
-    },
-    {
-      "ticker": "STMPA",
-      "name": "STMicroelectronics NV",
-      "sector": "Robotics",
-      "market_cap_usd": 34786385920,
-      "weight_pct": 0.3856
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "sector": "Semiconductor",
+      "market_cap_usd": 38723653632,
+      "weight_pct": 0.4242
     },
     {
       "ticker": "SATS",
       "name": "EchoStar Corp",
       "sector": "Space",
-      "market_cap_usd": 34691100672,
-      "weight_pct": 0.3845
+      "market_cap_usd": 37146546176,
+      "weight_pct": 0.4069
     },
     {
       "ticker": "6954 JP",
       "name": "Fanuc Corp",
       "sector": "Robotics",
-      "market_cap_usd": 34587085580,
-      "weight_pct": 0.3834
+      "market_cap_usd": 36618486853,
+      "weight_pct": 0.4011
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "sector": "Space",
+      "market_cap_usd": 36254404608,
+      "weight_pct": 0.3971
+    },
+    {
+      "ticker": "STMPA",
+      "name": "STMicroelectronics NV",
+      "sector": "Robotics",
+      "market_cap_usd": 35088564224,
+      "weight_pct": 0.3844
     },
     {
       "ticker": "6902 JP",
       "name": "Denso Corp",
       "sector": "Robotics",
-      "market_cap_usd": 32999123940,
-      "weight_pct": 0.3658
+      "market_cap_usd": 32645655003,
+      "weight_pct": 0.3576
     },
     {
       "ticker": "SYM",
       "name": "Symbotic",
       "sector": "Robotics",
-      "market_cap_usd": 32275959808,
-      "weight_pct": 0.3578
+      "market_cap_usd": 32420505600,
+      "weight_pct": 0.3551
     },
     {
       "ticker": "3037 TT",
       "name": "Unimicron",
       "sector": "Materials",
-      "market_cap_usd": 31020255854,
-      "weight_pct": 0.3438
+      "market_cap_usd": 31664481630,
+      "weight_pct": 0.3469
     },
     {
       "ticker": "6723",
       "name": "Renesas Electronics",
       "sector": "Robotics",
-      "market_cap_usd": 29586243072,
-      "weight_pct": 0.3279
+      "market_cap_usd": 30249763056,
+      "weight_pct": 0.3314
     },
     {
       "ticker": "2802 JP",
       "name": "Ajinomoto Co",
       "sector": "Materials",
-      "market_cap_usd": 28444087913,
-      "weight_pct": 0.3153
-    },
-    {
-      "ticker": "600111 C1",
-      "name": "Northern Rare Earth",
-      "sector": "Materials",
-      "market_cap_usd": 27413724099,
-      "weight_pct": 0.3039
-    },
-    {
-      "ticker": "HEXAB SS",
-      "name": "Hexagon AB",
-      "sector": "Robotics",
-      "market_cap_usd": 27273695353,
-      "weight_pct": 0.3023
+      "market_cap_usd": 28041030517,
+      "weight_pct": 0.3072
     },
     {
       "ticker": "6273 JP",
       "name": "SMC Corp",
       "sector": "Robotics",
-      "market_cap_usd": 27141772197,
-      "weight_pct": 0.3009
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor",
-      "sector": "Semiconductor",
-      "market_cap_usd": 26986465280,
-      "weight_pct": 0.2991
+      "market_cap_usd": 27952548996,
+      "weight_pct": 0.3062
     },
     {
       "ticker": "002050",
       "name": "Zhejiang Sanhua Intelligent",
       "sector": "Robotics",
-      "market_cap_usd": 26969629879,
-      "weight_pct": 0.2989
+      "market_cap_usd": 27655672450,
+      "weight_pct": 0.3029
+    },
+    {
+      "ticker": "600111 C1",
+      "name": "Northern Rare Earth",
+      "sector": "Materials",
+      "market_cap_usd": 27401704014,
+      "weight_pct": 0.3002
+    },
+    {
+      "ticker": "HEXAB SS",
+      "name": "Hexagon AB",
+      "sector": "Robotics",
+      "market_cap_usd": 27357054806,
+      "weight_pct": 0.2997
+    },
+    {
+      "ticker": "ON",
+      "name": "ON Semiconductor",
+      "sector": "Semiconductor",
+      "market_cap_usd": 27049510912,
+      "weight_pct": 0.2963
     },
     {
       "ticker": "300124 C2",
       "name": "Shenzhen Inovance Technology",
       "sector": "Robotics",
-      "market_cap_usd": 26173035843,
-      "weight_pct": 0.2901
-    },
-    {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor",
-      "sector": "Semiconductor",
-      "market_cap_usd": 24252344320,
-      "weight_pct": 0.2688
-    },
-    {
-      "ticker": "UMC",
-      "name": "United Microelectronics ADR",
-      "sector": "Semiconductor",
-      "market_cap_usd": 24187627520,
-      "weight_pct": 0.2681
-    },
-    {
-      "ticker": "SQM",
-      "name": "Sociedad Quimica y Minera",
-      "sector": "Materials",
-      "market_cap_usd": 23470860288,
-      "weight_pct": 0.2602
+      "market_cap_usd": 27007653375,
+      "weight_pct": 0.2958
     },
     {
       "ticker": "ALAB",
       "name": "Astera Labs",
       "sector": "Semiconductor",
-      "market_cap_usd": 22035970048,
-      "weight_pct": 0.2443
+      "market_cap_usd": 25370470400,
+      "weight_pct": 0.2779
     },
     {
-      "ticker": "ATI",
-      "name": "ATI Inc",
+      "ticker": "UMC",
+      "name": "United Microelectronics ADR",
+      "sector": "Semiconductor",
+      "market_cap_usd": 24720619520,
+      "weight_pct": 0.2708
+    },
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "sector": "Semiconductor",
+      "market_cap_usd": 24224974848,
+      "weight_pct": 0.2654
+    },
+    {
+      "ticker": "SQM",
+      "name": "Sociedad Quimica y Minera",
       "sector": "Materials",
-      "market_cap_usd": 21859143680,
-      "weight_pct": 0.2423
+      "market_cap_usd": 23456579584,
+      "weight_pct": 0.2569
     },
     {
       "ticker": "6920 JP",
       "name": "Lasertec Corp",
       "sector": "Robotics",
-      "market_cap_usd": 21809319933,
-      "weight_pct": 0.2417
+      "market_cap_usd": 23403204473,
+      "weight_pct": 0.2564
     },
     {
-      "ticker": "CRS",
-      "name": "Carpenter Technology",
+      "ticker": "ATI",
+      "name": "ATI Inc",
       "sector": "Materials",
-      "market_cap_usd": 21482375168,
-      "weight_pct": 0.2381
-    },
-    {
-      "ticker": "6971 JP",
-      "name": "Kyocera",
-      "sector": "Materials",
-      "market_cap_usd": 21448353781,
-      "weight_pct": 0.2377
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle Corp",
-      "sector": "Materials",
-      "market_cap_usd": 20317806592,
-      "weight_pct": 0.2252
-    },
-    {
-      "ticker": "ENTG",
-      "name": "Entegris",
-      "sector": "Semiconductor",
-      "market_cap_usd": 20192772096,
-      "weight_pct": 0.2238
+      "market_cap_usd": 22212438016,
+      "weight_pct": 0.2433
     },
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group",
       "sector": "Semiconductor",
-      "market_cap_usd": 19907682304,
-      "weight_pct": 0.2207
+      "market_cap_usd": 22058366976,
+      "weight_pct": 0.2416
+    },
+    {
+      "ticker": "CRS",
+      "name": "Carpenter Technology",
+      "sector": "Materials",
+      "market_cap_usd": 21686132736,
+      "weight_pct": 0.2376
+    },
+    {
+      "ticker": "6971 JP",
+      "name": "Kyocera",
+      "sector": "Materials",
+      "market_cap_usd": 21454987873,
+      "weight_pct": 0.235
+    },
+    {
+      "ticker": "ENTG",
+      "name": "Entegris",
+      "sector": "Semiconductor",
+      "market_cap_usd": 20602320896,
+      "weight_pct": 0.2257
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corp",
+      "sector": "Materials",
+      "market_cap_usd": 20469878784,
+      "weight_pct": 0.2242
     },
     {
       "ticker": "601100",
       "name": "Jiangsu Hengli Hydraulic",
       "sector": "Robotics",
-      "market_cap_usd": 19864305852,
-      "weight_pct": 0.2202
+      "market_cap_usd": 19910129497,
+      "weight_pct": 0.2181
     },
     {
       "ticker": "MTSI",
       "name": "MACOM Technology Solutions",
       "sector": "Semiconductor",
-      "market_cap_usd": 18581215232,
-      "weight_pct": 0.206
+      "market_cap_usd": 19361337344,
+      "weight_pct": 0.2121
     },
     {
       "ticker": "MKSI",
       "name": "MKS Instruments",
       "sector": "Semiconductor",
-      "market_cap_usd": 17722435584,
-      "weight_pct": 0.1964
+      "market_cap_usd": 18094051328,
+      "weight_pct": 0.1982
     },
     {
       "ticker": "4062 JP",
       "name": "Ibiden",
       "sector": "Materials",
-      "market_cap_usd": 17223851224,
-      "weight_pct": 0.1909
+      "market_cap_usd": 17339212684,
+      "weight_pct": 0.1899
     },
     {
       "ticker": "6594",
       "name": "Nidec Corp",
       "sector": "Robotics",
-      "market_cap_usd": 16173328699,
-      "weight_pct": 0.1793
+      "market_cap_usd": 16541932442,
+      "weight_pct": 0.1812
     },
     {
       "ticker": "4091 JP",
       "name": "Nippon Sanso",
       "sector": "Materials",
-      "market_cap_usd": 15978216048,
-      "weight_pct": 0.1771
+      "market_cap_usd": 16056204280,
+      "weight_pct": 0.1759
     },
     {
       "ticker": "NVMI",
       "name": "Nova Ltd",
       "sector": "Semiconductor",
-      "market_cap_usd": 15703330816,
-      "weight_pct": 0.1741
+      "market_cap_usd": 15766260736,
+      "weight_pct": 0.1727
     },
     {
       "ticker": "NDSN",
       "name": "Nordson Corp",
       "sector": "Robotics",
-      "market_cap_usd": 15410219008,
-      "weight_pct": 0.1708
-    },
-    {
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor",
-      "sector": "Semiconductor",
-      "market_cap_usd": 14547851264,
-      "weight_pct": 0.1613
+      "market_cap_usd": 15356109824,
+      "weight_pct": 0.1682
     },
     {
       "ticker": "6383 JP",
       "name": "Daifuku Co",
       "sector": "Robotics",
-      "market_cap_usd": 14366505246,
-      "weight_pct": 0.1592
+      "market_cap_usd": 14999804049,
+      "weight_pct": 0.1643
+    },
+    {
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor",
+      "sector": "Semiconductor",
+      "market_cap_usd": 14521845760,
+      "weight_pct": 0.1591
     },
     {
       "ticker": "AEIS",
       "name": "Advanced Energy Industries",
       "sector": "Semiconductor",
-      "market_cap_usd": 14259594240,
+      "market_cap_usd": 14436803584,
       "weight_pct": 0.1581
-    },
-    {
-      "ticker": "LECO",
-      "name": "Lincoln Electric Holdings",
-      "sector": "Robotics",
-      "market_cap_usd": 14040911872,
-      "weight_pct": 0.1556
-    },
-    {
-      "ticker": "3407 JP",
-      "name": "Asahi Kasei",
-      "sector": "Materials",
-      "market_cap_usd": 13965510493,
-      "weight_pct": 0.1548
-    },
-    {
-      "ticker": "RRX",
-      "name": "Regal Rexnord",
-      "sector": "Robotics",
-      "market_cap_usd": 13822321664,
-      "weight_pct": 0.1532
     },
     {
       "ticker": "AMKR",
       "name": "Amkor Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 13664311296,
-      "weight_pct": 0.1515
+      "market_cap_usd": 14363139072,
+      "weight_pct": 0.1573
+    },
+    {
+      "ticker": "LECO",
+      "name": "Lincoln Electric Holdings",
+      "sector": "Robotics",
+      "market_cap_usd": 14049137664,
+      "weight_pct": 0.1539
+    },
+    {
+      "ticker": "3407 JP",
+      "name": "Asahi Kasei",
+      "sector": "Materials",
+      "market_cap_usd": 13931111883,
+      "weight_pct": 0.1526
+    },
+    {
+      "ticker": "RRX",
+      "name": "Regal Rexnord",
+      "sector": "Robotics",
+      "market_cap_usd": 13867586560,
+      "weight_pct": 0.1519
     },
     {
       "ticker": "5706 JP",
       "name": "Mitsui Mining",
       "sector": "Materials",
-      "market_cap_usd": 12507590715,
-      "weight_pct": 0.1386
-    },
-    {
-      "ticker": "9660 HK",
-      "name": "Horizon Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 12386355048,
-      "weight_pct": 0.1373
-    },
-    {
-      "ticker": "GMED",
-      "name": "Globus Medical",
-      "sector": "Robotics",
-      "market_cap_usd": 12362129408,
-      "weight_pct": 0.137
+      "market_cap_usd": 13365080361,
+      "weight_pct": 0.1464
     },
     {
       "ticker": "ONTO",
       "name": "Onto Innovation",
       "sector": "Robotics",
-      "market_cap_usd": 12274495488,
-      "weight_pct": 0.1361
+      "market_cap_usd": 12780465152,
+      "weight_pct": 0.14
+    },
+    {
+      "ticker": "9660 HK",
+      "name": "Horizon Robotics",
+      "sector": "Robotics",
+      "market_cap_usd": 12729439808,
+      "weight_pct": 0.1394
+    },
+    {
+      "ticker": "GMED",
+      "name": "Globus Medical",
+      "sector": "Robotics",
+      "market_cap_usd": 12229580800,
+      "weight_pct": 0.134
     },
     {
       "ticker": "300757 C2",
       "name": "Robotechnik Intelligent",
       "sector": "Robotics",
-      "market_cap_usd": 11980070823,
+      "market_cap_usd": 12127547181,
       "weight_pct": 0.1328
     },
     {
       "ticker": "PL",
       "name": "Planet Labs PBC",
       "sector": "Space",
-      "market_cap_usd": 11848680448,
-      "weight_pct": 0.1313
-    },
-    {
-      "ticker": "G1A GR",
-      "name": "GEA Group",
-      "sector": "Robotics",
-      "market_cap_usd": 11695492119,
-      "weight_pct": 0.1296
-    },
-    {
-      "ticker": "002008 C2",
-      "name": "Han's Laser Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 11509540197,
-      "weight_pct": 0.1276
+      "market_cap_usd": 12000986112,
+      "weight_pct": 0.1315
     },
     {
       "ticker": "RMBS",
       "name": "Rambus",
       "sector": "Semiconductor",
-      "market_cap_usd": 11419466752,
-      "weight_pct": 0.1266
+      "market_cap_usd": 11945121792,
+      "weight_pct": 0.1308
     },
     {
-      "ticker": "KRMN",
-      "name": "Karman Holdings",
-      "sector": "Space",
-      "market_cap_usd": 11161364480,
-      "weight_pct": 0.1237
-    },
-    {
-      "ticker": "ZBRA",
-      "name": "Zebra Technologies",
+      "ticker": "G1A GR",
+      "name": "GEA Group",
       "sector": "Robotics",
-      "market_cap_usd": 10973194240,
-      "weight_pct": 0.1216
+      "market_cap_usd": 11727043202,
+      "weight_pct": 0.1285
     },
     {
-      "ticker": "3402 JP",
-      "name": "Toray Industries",
-      "sector": "Materials",
-      "market_cap_usd": 10780226987,
-      "weight_pct": 0.1195
+      "ticker": "002008 C2",
+      "name": "Han's Laser Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 11544262100,
+      "weight_pct": 0.1265
     },
     {
       "ticker": "SITM",
       "name": "SiTime Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 10695912448,
-      "weight_pct": 0.1186
+      "market_cap_usd": 11054381056,
+      "weight_pct": 0.1211
+    },
+    {
+      "ticker": "KRMN",
+      "name": "Karman Holdings",
+      "sector": "Space",
+      "market_cap_usd": 10936069120,
+      "weight_pct": 0.1198
+    },
+    {
+      "ticker": "ZBRA",
+      "name": "Zebra Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 10926953472,
+      "weight_pct": 0.1197
+    },
+    {
+      "ticker": "3402 JP",
+      "name": "Toray Industries",
+      "sector": "Materials",
+      "market_cap_usd": 10812815639,
+      "weight_pct": 0.1184
     },
     {
       "ticker": "MOG/A",
       "name": "Moog Inc Class A",
       "sector": "Robotics",
-      "market_cap_usd": 10104223744,
-      "weight_pct": 0.112
+      "market_cap_usd": 9903631360,
+      "weight_pct": 0.1085
     },
     {
       "ticker": "MP",
       "name": "MP Materials",
       "sector": "Robotics",
-      "market_cap_usd": 9576275968,
-      "weight_pct": 0.1061
-    },
-    {
-      "ticker": "2395 TT",
-      "name": "Advantech Co",
-      "sector": "Robotics",
-      "market_cap_usd": 9497519951,
-      "weight_pct": 0.1053
+      "market_cap_usd": 9814350848,
+      "weight_pct": 0.1075
     },
     {
       "ticker": "FORM",
       "name": "FormFactor",
       "sector": "Semiconductor",
-      "market_cap_usd": 9437943808,
-      "weight_pct": 0.1046
+      "market_cap_usd": 9650759680,
+      "weight_pct": 0.1057
+    },
+    {
+      "ticker": "2395 TT",
+      "name": "Advantech Co",
+      "sector": "Robotics",
+      "market_cap_usd": 9442639715,
+      "weight_pct": 0.1034
     },
     {
       "ticker": "GSAT",
       "name": "Globalstar Inc",
       "sector": "Space",
-      "market_cap_usd": 9403869184,
-      "weight_pct": 0.1042
-    },
-    {
-      "ticker": "6841 JP",
-      "name": "Yokogawa Electric",
-      "sector": "Robotics",
-      "market_cap_usd": 9051870209,
-      "weight_pct": 0.1003
-    },
-    {
-      "ticker": "CGNX",
-      "name": "Cognex",
-      "sector": "Robotics",
-      "market_cap_usd": 9003716608,
-      "weight_pct": 0.0998
+      "market_cap_usd": 9407727616,
+      "weight_pct": 0.1031
     },
     {
       "ticker": "AVAV",
       "name": "AeroVironment",
       "sector": "Robotics",
-      "market_cap_usd": 8992521216,
-      "weight_pct": 0.0997
+      "market_cap_usd": 9094744064,
+      "weight_pct": 0.0996
     },
     {
-      "ticker": "SWKS",
-      "name": "Skyworks Solutions",
-      "sector": "Semiconductor",
-      "market_cap_usd": 8506961920,
-      "weight_pct": 0.0943
+      "ticker": "6841 JP",
+      "name": "Yokogawa Electric",
+      "sector": "Robotics",
+      "market_cap_usd": 9013432366,
+      "weight_pct": 0.0987
+    },
+    {
+      "ticker": "CGNX",
+      "name": "Cognex",
+      "sector": "Robotics",
+      "market_cap_usd": 8920210432,
+      "weight_pct": 0.0977
     },
     {
       "ticker": "KCR FH",
       "name": "Konecranes Oyj",
       "sector": "Robotics",
-      "market_cap_usd": 8500546264,
-      "weight_pct": 0.0942
+      "market_cap_usd": 8579223610,
+      "weight_pct": 0.094
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions",
+      "sector": "Semiconductor",
+      "market_cap_usd": 8476880384,
+      "weight_pct": 0.0929
     },
     {
       "ticker": "4188 JP",
       "name": "Mitsubishi Chemical",
       "sector": "Materials",
-      "market_cap_usd": 8392363307,
-      "weight_pct": 0.093
-    },
-    {
-      "ticker": "SMTC",
-      "name": "Semtech Corp",
-      "sector": "Semiconductor",
-      "market_cap_usd": 8241051136,
-      "weight_pct": 0.0913
-    },
-    {
-      "ticker": "CAMT",
-      "name": "Camtek Ltd",
-      "sector": "Semiconductor",
-      "market_cap_usd": 8216294400,
-      "weight_pct": 0.0911
+      "market_cap_usd": 8395578658,
+      "weight_pct": 0.092
     },
     {
       "ticker": "CRUS",
       "name": "Cirrus Logic",
       "sector": "Semiconductor",
-      "market_cap_usd": 8150063616,
-      "weight_pct": 0.0903
+      "market_cap_usd": 8164861952,
+      "weight_pct": 0.0894
+    },
+    {
+      "ticker": "CAMT",
+      "name": "Camtek Ltd",
+      "sector": "Semiconductor",
+      "market_cap_usd": 8124128256,
+      "weight_pct": 0.089
     },
     {
       "ticker": "6506 JP",
       "name": "Yaskawa Electric",
       "sector": "Robotics",
-      "market_cap_usd": 7621549004,
-      "weight_pct": 0.0845
+      "market_cap_usd": 7970364449,
+      "weight_pct": 0.0873
+    },
+    {
+      "ticker": "SMTC",
+      "name": "Semtech Corp",
+      "sector": "Semiconductor",
+      "market_cap_usd": 7921298432,
+      "weight_pct": 0.0868
     },
     {
       "ticker": "VSAT",
       "name": "Viasat Inc",
       "sector": "Space",
-      "market_cap_usd": 7523701760,
-      "weight_pct": 0.0834
+      "market_cap_usd": 7640516608,
+      "weight_pct": 0.0837
     },
     {
       "ticker": "QRVO",
       "name": "Qorvo",
       "sector": "Semiconductor",
-      "market_cap_usd": 7400694784,
-      "weight_pct": 0.082
+      "market_cap_usd": 7398840320,
+      "weight_pct": 0.081
     },
     {
       "ticker": "6680 HK",
       "name": "China Rare Earth Resources",
       "sector": "Materials",
-      "market_cap_usd": 7115204750,
-      "weight_pct": 0.0789
-    },
-    {
-      "ticker": "SLAB",
-      "name": "Silicon Laboratories",
-      "sector": "Semiconductor",
-      "market_cap_usd": 6935895552,
-      "weight_pct": 0.0769
-    },
-    {
-      "ticker": "9880 HK",
-      "name": "UBTECH Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 6888832040,
-      "weight_pct": 0.0764
-    },
-    {
-      "ticker": "ALGM",
-      "name": "Allegro MicroSystems",
-      "sector": "Semiconductor",
-      "market_cap_usd": 6859467776,
-      "weight_pct": 0.076
+      "market_cap_usd": 7079236191,
+      "weight_pct": 0.0775
     },
     {
       "ticker": "1590 TT",
       "name": "Airtac International",
       "sector": "Robotics",
-      "market_cap_usd": 6776989573,
-      "weight_pct": 0.0751
+      "market_cap_usd": 7028935513,
+      "weight_pct": 0.077
     },
     {
-      "ticker": "JBTM",
-      "name": "JBT Marel Corp",
+      "ticker": "9880 HK",
+      "name": "UBTECH Robotics",
       "sector": "Robotics",
-      "market_cap_usd": 6727476224,
-      "weight_pct": 0.0746
+      "market_cap_usd": 7001598057,
+      "weight_pct": 0.0767
+    },
+    {
+      "ticker": "SLAB",
+      "name": "Silicon Laboratories",
+      "sector": "Semiconductor",
+      "market_cap_usd": 6963589120,
+      "weight_pct": 0.0763
+    },
+    {
+      "ticker": "ALGM",
+      "name": "Allegro MicroSystems",
+      "sector": "Semiconductor",
+      "market_cap_usd": 6948407296,
+      "weight_pct": 0.0761
     },
     {
       "ticker": "KGX GR",
       "name": "Kion Group",
       "sector": "Robotics",
-      "market_cap_usd": 6698114629,
-      "weight_pct": 0.0742
+      "market_cap_usd": 6926882506,
+      "weight_pct": 0.0759
+    },
+    {
+      "ticker": "JBTM",
+      "name": "JBT Marel Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 6691041792,
+      "weight_pct": 0.0733
     },
     {
       "ticker": "HXL",
       "name": "Hexcel Corp",
       "sector": "Space",
-      "market_cap_usd": 6404221952,
-      "weight_pct": 0.071
+      "market_cap_usd": 6342007808,
+      "weight_pct": 0.0695
     },
     {
       "ticker": "MBLY",
       "name": "Mobileye Global",
       "sector": "Robotics",
-      "market_cap_usd": 6066360832,
-      "weight_pct": 0.0672
+      "market_cap_usd": 6091601920,
+      "weight_pct": 0.0667
     },
     {
       "ticker": "FLY",
       "name": "Firefly Aerospace",
       "sector": "Space",
-      "market_cap_usd": 6009411072,
-      "weight_pct": 0.0666
+      "market_cap_usd": 6004612608,
+      "weight_pct": 0.0658
     },
     {
       "ticker": "6645 JP",
       "name": "Omron Corp",
       "sector": "Robotics",
-      "market_cap_usd": 5677105599,
-      "weight_pct": 0.0629
-    },
-    {
-      "ticker": "4005 JP",
-      "name": "Sumitomo Chemical",
-      "sector": "Materials",
-      "market_cap_usd": 5530486793,
-      "weight_pct": 0.0613
+      "market_cap_usd": 5768828544,
+      "weight_pct": 0.0632
     },
     {
       "ticker": "WCH GR",
       "name": "Wacker Chemie",
       "sector": "Materials",
-      "market_cap_usd": 5413005419,
-      "weight_pct": 0.06
+      "market_cap_usd": 5536888276,
+      "weight_pct": 0.0607
     },
     {
       "ticker": "688017",
       "name": "Leader Harmonious Drive Systems",
       "sector": "Robotics",
-      "market_cap_usd": 5348347519,
-      "weight_pct": 0.0593
+      "market_cap_usd": 5477911748,
+      "weight_pct": 0.06
+    },
+    {
+      "ticker": "4005 JP",
+      "name": "Sumitomo Chemical",
+      "sector": "Materials",
+      "market_cap_usd": 5455747174,
+      "weight_pct": 0.0598
     },
     {
       "ticker": "IPGP",
       "name": "IPG Photonics",
       "sector": "Robotics",
-      "market_cap_usd": 5279107584,
-      "weight_pct": 0.0585
-    },
-    {
-      "ticker": "688297 C1",
-      "name": "AVIC Chengdu UAS",
-      "sector": "Robotics",
-      "market_cap_usd": 4738211761,
-      "weight_pct": 0.0525
-    },
-    {
-      "ticker": "6845 JP",
-      "name": "Azbil Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 4715751210,
-      "weight_pct": 0.0523
+      "market_cap_usd": 5403891200,
+      "weight_pct": 0.0592
     },
     {
       "ticker": "6113 JP",
       "name": "Amada Co",
       "sector": "Robotics",
-      "market_cap_usd": 4624150717,
-      "weight_pct": 0.0513
+      "market_cap_usd": 4864455618,
+      "weight_pct": 0.0533
+    },
+    {
+      "ticker": "688297 C1",
+      "name": "AVIC Chengdu UAS",
+      "sector": "Robotics",
+      "market_cap_usd": 4782234295,
+      "weight_pct": 0.0524
     },
     {
       "ticker": "002472",
       "name": "Zhejiang Shuanghuan Driveline",
       "sector": "Robotics",
-      "market_cap_usd": 4606764870,
-      "weight_pct": 0.0511
+      "market_cap_usd": 4746075949,
+      "weight_pct": 0.052
+    },
+    {
+      "ticker": "6845 JP",
+      "name": "Azbil Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 4701924116,
+      "weight_pct": 0.0515
     },
     {
       "ticker": "KRN GR",
       "name": "Krones AG",
       "sector": "Robotics",
-      "market_cap_usd": 4486371369,
-      "weight_pct": 0.0497
+      "market_cap_usd": 4572584305,
+      "weight_pct": 0.0501
     },
     {
       "ticker": "NOVT",
       "name": "Novanta",
       "sector": "Robotics",
-      "market_cap_usd": 4404090368,
-      "weight_pct": 0.0488
-    },
-    {
-      "ticker": "688169 C1",
-      "name": "Beijing Roborock Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 4324192492,
-      "weight_pct": 0.0479
+      "market_cap_usd": 4468678144,
+      "weight_pct": 0.049
     },
     {
       "ticker": "3436 JP",
       "name": "SUMCO Corp",
       "sector": "Materials",
-      "market_cap_usd": 4286558757,
-      "weight_pct": 0.0475
+      "market_cap_usd": 4465698619,
+      "weight_pct": 0.0489
+    },
+    {
+      "ticker": "688169 C1",
+      "name": "Beijing Roborock Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 4400857479,
+      "weight_pct": 0.0482
     },
     {
       "ticker": "MDA CN",
       "name": "MDA Space",
       "sector": "Space",
-      "market_cap_usd": 4146108538,
-      "weight_pct": 0.046
-    },
-    {
-      "ticker": "454910 KS",
-      "name": "Doosan Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 4023299583,
-      "weight_pct": 0.0446
+      "market_cap_usd": 4175770302,
+      "weight_pct": 0.0457
     },
     {
       "ticker": "KLIC",
       "name": "Kulicke & Soffa Industries",
       "sector": "Semiconductor",
-      "market_cap_usd": 4019144960,
-      "weight_pct": 0.0446
-    },
-    {
-      "ticker": "003021",
-      "name": "Shenzhen Zhaowei Machinery",
-      "sector": "Robotics",
-      "market_cap_usd": 3816706481,
-      "weight_pct": 0.0423
-    },
-    {
-      "ticker": "DIOD",
-      "name": "Diodes Inc",
-      "sector": "Semiconductor",
-      "market_cap_usd": 3785880320,
-      "weight_pct": 0.042
+      "market_cap_usd": 4053684480,
+      "weight_pct": 0.0444
     },
     {
       "ticker": "6481 JP",
       "name": "THK Co",
       "sector": "Robotics",
-      "market_cap_usd": 3742749695,
-      "weight_pct": 0.0415
+      "market_cap_usd": 4015252772,
+      "weight_pct": 0.044
     },
     {
-      "ticker": "IRDM",
-      "name": "Iridium Communications",
-      "sector": "Space",
-      "market_cap_usd": 3663128064,
-      "weight_pct": 0.0406
-    },
-    {
-      "ticker": "2252 HK",
-      "name": "Shanghai MicroPort MedBot",
+      "ticker": "003021",
+      "name": "Shenzhen Zhaowei Machinery",
       "sector": "Robotics",
-      "market_cap_usd": 3599421510,
-      "weight_pct": 0.0399
+      "market_cap_usd": 3910004622,
+      "weight_pct": 0.0428
     },
     {
-      "ticker": "KALMAR FH",
-      "name": "Kalmar Oyj",
+      "ticker": "454910 KS",
+      "name": "Doosan Robotics",
       "sector": "Robotics",
-      "market_cap_usd": 3568113839,
-      "weight_pct": 0.0396
+      "market_cap_usd": 3905580383,
+      "weight_pct": 0.0428
+    },
+    {
+      "ticker": "DIOD",
+      "name": "Diodes Inc",
+      "sector": "Semiconductor",
+      "market_cap_usd": 3821765376,
+      "weight_pct": 0.0419
     },
     {
       "ticker": "LUNR",
       "name": "Intuitive Machines",
       "sector": "Space",
-      "market_cap_usd": 3501414912,
-      "weight_pct": 0.0388
+      "market_cap_usd": 3756411136,
+      "weight_pct": 0.0411
+    },
+    {
+      "ticker": "2252 HK",
+      "name": "Shanghai MicroPort MedBot",
+      "sector": "Robotics",
+      "market_cap_usd": 3754028382,
+      "weight_pct": 0.0411
+    },
+    {
+      "ticker": "KALMAR FH",
+      "name": "Kalmar Oyj",
+      "sector": "Robotics",
+      "market_cap_usd": 3654534488,
+      "weight_pct": 0.04
     },
     {
       "ticker": "LASR",
       "name": "nLIGHT",
       "sector": "Semiconductor",
-      "market_cap_usd": 3499231744,
-      "weight_pct": 0.0388
+      "market_cap_usd": 3647078656,
+      "weight_pct": 0.04
     },
     {
-      "ticker": "HIAB FH",
-      "name": "Hiab Oyj",
-      "sector": "Robotics",
-      "market_cap_usd": 3471584861,
-      "weight_pct": 0.0385
+      "ticker": "IRDM",
+      "name": "Iridium Communications",
+      "sector": "Space",
+      "market_cap_usd": 3615554816,
+      "weight_pct": 0.0396
     },
     {
       "ticker": "AUTO NO",
       "name": "AutoStore Holdings",
       "sector": "Robotics",
-      "market_cap_usd": 3465259171,
-      "weight_pct": 0.0384
+      "market_cap_usd": 3587734922,
+      "weight_pct": 0.0393
     },
     {
-      "ticker": "6268 JP",
-      "name": "Nabtesco Corp",
+      "ticker": "HIAB FH",
+      "name": "Hiab Oyj",
       "sector": "Robotics",
-      "market_cap_usd": 3425344893,
-      "weight_pct": 0.038
+      "market_cap_usd": 3580838550,
+      "weight_pct": 0.0392
     },
     {
       "ticker": "HSAI",
       "name": "Hesai Group",
       "sector": "Robotics",
-      "market_cap_usd": 3420985856,
-      "weight_pct": 0.0379
+      "market_cap_usd": 3560842496,
+      "weight_pct": 0.039
     },
     {
-      "ticker": "MTRN",
-      "name": "Materion Corp",
-      "sector": "Materials",
-      "market_cap_usd": 3389993984,
-      "weight_pct": 0.0376
+      "ticker": "6268 JP",
+      "name": "Nabtesco Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 3480691865,
+      "weight_pct": 0.0381
     },
     {
       "ticker": "300024 C2",
       "name": "Siasun Robot & Automation",
       "sector": "Robotics",
-      "market_cap_usd": 3360024267,
-      "weight_pct": 0.0372
+      "market_cap_usd": 3421418354,
+      "weight_pct": 0.0375
     },
     {
-      "ticker": "PI",
-      "name": "Impinj",
-      "sector": "Semiconductor",
-      "market_cap_usd": 3188536064,
-      "weight_pct": 0.0353
+      "ticker": "MTRN",
+      "name": "Materion Corp",
+      "sector": "Materials",
+      "market_cap_usd": 3397690368,
+      "weight_pct": 0.0372
     },
     {
       "ticker": "SESG FP",
       "name": "SES SA",
       "sector": "Space",
-      "market_cap_usd": 3152332291,
-      "weight_pct": 0.0349
-    },
-    {
-      "ticker": "6600 HK",
-      "name": "OneRobotics Shenzhen",
-      "sector": "Robotics",
-      "market_cap_usd": 3147190597,
+      "market_cap_usd": 3188063780,
       "weight_pct": 0.0349
     },
     {
       "ticker": "ETL FP",
       "name": "Eutelsat Communications",
       "sector": "Space",
-      "market_cap_usd": 3129124000,
-      "weight_pct": 0.0347
+      "market_cap_usd": 3109933931,
+      "weight_pct": 0.0341
+    },
+    {
+      "ticker": "6600 HK",
+      "name": "OneRobotics Shenzhen",
+      "sector": "Robotics",
+      "market_cap_usd": 3091209992,
+      "weight_pct": 0.0339
+    },
+    {
+      "ticker": "PI",
+      "name": "Impinj",
+      "sector": "Semiconductor",
+      "market_cap_usd": 3069725440,
+      "weight_pct": 0.0336
     },
     {
       "ticker": "POWI",
       "name": "Power Integrations",
       "sector": "Semiconductor",
-      "market_cap_usd": 3027188224,
-      "weight_pct": 0.0336
-    },
-    {
-      "ticker": "ATS CN",
-      "name": "ATS Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 2975754871,
-      "weight_pct": 0.033
+      "market_cap_usd": 3026632960,
+      "weight_pct": 0.0332
     },
     {
       "ticker": "6134 JP",
       "name": "Fuji Corporation",
       "sector": "Robotics",
-      "market_cap_usd": 2951691576,
-      "weight_pct": 0.0327
+      "market_cap_usd": 3007092256,
+      "weight_pct": 0.0329
     },
     {
-      "ticker": "SYNA",
-      "name": "Synaptics",
-      "sector": "Semiconductor",
-      "market_cap_usd": 2885265408,
-      "weight_pct": 0.032
+      "ticker": "ATS CN",
+      "name": "ATS Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 2970164557,
+      "weight_pct": 0.0325
     },
     {
       "ticker": "002747 C2",
       "name": "Estun Automation",
       "sector": "Robotics",
-      "market_cap_usd": 2839257392,
+      "market_cap_usd": 2901708474,
+      "weight_pct": 0.0318
+    },
+    {
+      "ticker": "SYNA",
+      "name": "Synaptics",
+      "sector": "Semiconductor",
+      "market_cap_usd": 2877467392,
       "weight_pct": 0.0315
     },
     {
       "ticker": "2049",
       "name": "Hiwin Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 2732201621,
-      "weight_pct": 0.0303
-    },
-    {
-      "ticker": "PLAB",
-      "name": "Photronics",
-      "sector": "Semiconductor",
-      "market_cap_usd": 2622825216,
-      "weight_pct": 0.0291
-    },
-    {
-      "ticker": "MELE",
-      "name": "Melexis NV",
-      "sector": "Robotics",
-      "market_cap_usd": 2549454242,
-      "weight_pct": 0.0283
-    },
-    {
-      "ticker": "010060 KS",
-      "name": "OCI Holdings",
-      "sector": "Materials",
-      "market_cap_usd": 2532982132,
-      "weight_pct": 0.0281
-    },
-    {
-      "ticker": "603009",
-      "name": "Shanghai Beite Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 2525320862,
-      "weight_pct": 0.028
-    },
-    {
-      "ticker": "300100",
-      "name": "Shuanglin Co",
-      "sector": "Robotics",
-      "market_cap_usd": 2516225702,
-      "weight_pct": 0.0279
-    },
-    {
-      "ticker": "EXA FP",
-      "name": "Exail Technologies",
-      "sector": "Robotics",
-      "market_cap_usd": 2457711976,
-      "weight_pct": 0.0272
-    },
-    {
-      "ticker": "KARN SW",
-      "name": "Kardex Holding",
-      "sector": "Robotics",
-      "market_cap_usd": 2439921951,
-      "weight_pct": 0.027
-    },
-    {
-      "ticker": "6324",
-      "name": "Harmonic Drive Systems",
-      "sector": "Robotics",
-      "market_cap_usd": 2345137977,
-      "weight_pct": 0.026
-    },
-    {
-      "ticker": "AMBA",
-      "name": "Ambarella",
-      "sector": "Semiconductor",
-      "market_cap_usd": 2331320064,
-      "weight_pct": 0.0258
-    },
-    {
-      "ticker": "TSAT",
-      "name": "Telesat Corp",
-      "sector": "Space",
-      "market_cap_usd": 2278692352,
-      "weight_pct": 0.0253
-    },
-    {
-      "ticker": "6141 JP",
-      "name": "DMG Mori Co",
-      "sector": "Robotics",
-      "market_cap_usd": 2267407231,
-      "weight_pct": 0.0251
-    },
-    {
-      "ticker": "603662",
-      "name": "Keli Sensing Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 2248809675,
-      "weight_pct": 0.0249
+      "market_cap_usd": 2698661403,
+      "weight_pct": 0.0296
     },
     {
       "ticker": "SOI FP",
       "name": "Soitec",
       "sector": "Materials",
-      "market_cap_usd": 2236168667,
-      "weight_pct": 0.0248
+      "market_cap_usd": 2668370229,
+      "weight_pct": 0.0292
+    },
+    {
+      "ticker": "PLAB",
+      "name": "Photronics",
+      "sector": "Semiconductor",
+      "market_cap_usd": 2647591168,
+      "weight_pct": 0.029
+    },
+    {
+      "ticker": "MELE",
+      "name": "Melexis NV",
+      "sector": "Robotics",
+      "market_cap_usd": 2634846117,
+      "weight_pct": 0.0289
+    },
+    {
+      "ticker": "300100",
+      "name": "Shuanglin Co",
+      "sector": "Robotics",
+      "market_cap_usd": 2575359753,
+      "weight_pct": 0.0282
+    },
+    {
+      "ticker": "603009",
+      "name": "Shanghai Beite Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 2521578643,
+      "weight_pct": 0.0276
+    },
+    {
+      "ticker": "KARN SW",
+      "name": "Kardex Holding",
+      "sector": "Robotics",
+      "market_cap_usd": 2514698175,
+      "weight_pct": 0.0275
+    },
+    {
+      "ticker": "010060 KS",
+      "name": "OCI Holdings",
+      "sector": "Materials",
+      "market_cap_usd": 2467309703,
+      "weight_pct": 0.027
+    },
+    {
+      "ticker": "EXA FP",
+      "name": "Exail Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 2454389224,
+      "weight_pct": 0.0269
+    },
+    {
+      "ticker": "6324",
+      "name": "Harmonic Drive Systems",
+      "sector": "Robotics",
+      "market_cap_usd": 2371945760,
+      "weight_pct": 0.026
+    },
+    {
+      "ticker": "6141 JP",
+      "name": "DMG Mori Co",
+      "sector": "Robotics",
+      "market_cap_usd": 2364303426,
+      "weight_pct": 0.0259
+    },
+    {
+      "ticker": "AMBA",
+      "name": "Ambarella",
+      "sector": "Semiconductor",
+      "market_cap_usd": 2311176960,
+      "weight_pct": 0.0253
+    },
+    {
+      "ticker": "603662",
+      "name": "Keli Sensing Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 2303879991,
+      "weight_pct": 0.0252
     },
     {
       "ticker": "NVTS",
       "name": "Navitas Semiconductor",
       "sector": "Semiconductor",
-      "market_cap_usd": 2174067968,
+      "market_cap_usd": 2201763072,
+      "weight_pct": 0.0241
+    },
+    {
+      "ticker": "TSAT",
+      "name": "Telesat Corp",
+      "sector": "Space",
+      "market_cap_usd": 2201154816,
       "weight_pct": 0.0241
     },
     {
       "ticker": "2498 HK",
       "name": "RoboSense Technology",
       "sector": "Robotics",
-      "market_cap_usd": 2168821827,
+      "market_cap_usd": 2186799547,
       "weight_pct": 0.024
     },
     {
       "ticker": "TECN SW",
       "name": "Tecan Group",
       "sector": "Robotics",
-      "market_cap_usd": 2107074839,
-      "weight_pct": 0.0234
-    },
-    {
-      "ticker": "DCO",
-      "name": "Ducommun",
-      "sector": "Space",
-      "market_cap_usd": 2107014784,
-      "weight_pct": 0.0234
-    },
-    {
-      "ticker": "3401 JP",
-      "name": "Teijin Ltd",
-      "sector": "Materials",
-      "market_cap_usd": 2080681121,
-      "weight_pct": 0.0231
+      "market_cap_usd": 2165473004,
+      "weight_pct": 0.0237
     },
     {
       "ticker": "WAF GR",
       "name": "Siltronic",
       "sector": "Materials",
-      "market_cap_usd": 2051117112,
+      "market_cap_usd": 2111189461,
+      "weight_pct": 0.0231
+    },
+    {
+      "ticker": "DCO",
+      "name": "Ducommun",
+      "sector": "Space",
+      "market_cap_usd": 2098022784,
+      "weight_pct": 0.023
+    },
+    {
+      "ticker": "3401 JP",
+      "name": "Teijin Ltd",
+      "sector": "Materials",
+      "market_cap_usd": 2075671351,
+      "weight_pct": 0.0227
+    },
+    {
+      "ticker": "6622 JP",
+      "name": "Daihen Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 2069943510,
       "weight_pct": 0.0227
     },
     {
       "ticker": "JEN GR",
       "name": "Jenoptik AG",
       "sector": "Robotics",
-      "market_cap_usd": 2000555390,
-      "weight_pct": 0.0222
-    },
-    {
-      "ticker": "6622 JP",
-      "name": "Daihen Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 1989322298,
-      "weight_pct": 0.0221
+      "market_cap_usd": 2069058001,
+      "weight_pct": 0.0227
     },
     {
       "ticker": "2432 HK",
       "name": "Shenzhen Dobot Corp",
       "sector": "Robotics",
-      "market_cap_usd": 1925244367,
-      "weight_pct": 0.0213
+      "market_cap_usd": 1928460853,
+      "weight_pct": 0.0211
     },
     {
       "ticker": "MXL",
       "name": "MaxLinear",
       "sector": "Semiconductor",
-      "market_cap_usd": 1776259712,
-      "weight_pct": 0.0197
-    },
-    {
-      "ticker": "RDW",
-      "name": "Redwire Corp",
-      "sector": "Space",
-      "market_cap_usd": 1770017024,
-      "weight_pct": 0.0196
-    },
-    {
-      "ticker": "4043 JP",
-      "name": "Tokuyama Corp",
-      "sector": "Materials",
-      "market_cap_usd": 1751987886,
-      "weight_pct": 0.0194
-    },
-    {
-      "ticker": "VOYG",
-      "name": "Voyager Technologies",
-      "sector": "Space",
-      "market_cap_usd": 1746630272,
-      "weight_pct": 0.0194
+      "market_cap_usd": 1852359552,
+      "weight_pct": 0.0203
     },
     {
       "ticker": "002979",
       "name": "China Leadshine Technology",
       "sector": "Robotics",
-      "market_cap_usd": 1732835628,
-      "weight_pct": 0.0192
+      "market_cap_usd": 1805988887,
+      "weight_pct": 0.0198
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire Corp",
+      "sector": "Space",
+      "market_cap_usd": 1783455232,
+      "weight_pct": 0.0195
+    },
+    {
+      "ticker": "VOYG",
+      "name": "Voyager Technologies",
+      "sector": "Space",
+      "market_cap_usd": 1759629568,
+      "weight_pct": 0.0193
     },
     {
       "ticker": "DUE GR",
       "name": "Duerr AG",
       "sector": "Robotics",
-      "market_cap_usd": 1720135975,
+      "market_cap_usd": 1741009560,
       "weight_pct": 0.0191
+    },
+    {
+      "ticker": "4043 JP",
+      "name": "Tokuyama Corp",
+      "sector": "Materials",
+      "market_cap_usd": 1734900203,
+      "weight_pct": 0.019
     },
     {
       "ticker": "INRN SW",
       "name": "Interroll Holding",
       "sector": "Robotics",
-      "market_cap_usd": 1645418216,
-      "weight_pct": 0.0182
+      "market_cap_usd": 1692008064,
+      "weight_pct": 0.0185
     },
     {
       "ticker": "4208 JP",
       "name": "UBE Corp",
       "sector": "Materials",
-      "market_cap_usd": 1506753568,
-      "weight_pct": 0.0167
-    },
-    {
-      "ticker": "KDK",
-      "name": "Kodiak AI",
-      "sector": "Robotics",
-      "market_cap_usd": 1411605632,
-      "weight_pct": 0.0156
+      "market_cap_usd": 1492680083,
+      "weight_pct": 0.0164
     },
     {
       "ticker": "SKYT",
       "name": "SkyWater Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 1382428288,
+      "market_cap_usd": 1399447296,
       "weight_pct": 0.0153
     },
     {
       "ticker": "5384 JP",
       "name": "Fujimi Inc",
       "sector": "Materials",
-      "market_cap_usd": 1369885718,
+      "market_cap_usd": 1384952904,
+      "weight_pct": 0.0152
+    },
+    {
+      "ticker": "KDK",
+      "name": "Kodiak AI",
+      "sector": "Robotics",
+      "market_cap_usd": 1384424448,
       "weight_pct": 0.0152
     },
     {
       "ticker": "GILT",
       "name": "Gilat Satellite Networks",
       "sector": "Space",
-      "market_cap_usd": 1340364032,
-      "weight_pct": 0.0149
+      "market_cap_usd": 1336590336,
+      "weight_pct": 0.0146
     },
     {
       "ticker": "PRCT",
       "name": "PROCEPT BioRobotics",
       "sector": "Robotics",
-      "market_cap_usd": 1312199936,
-      "weight_pct": 0.0145
+      "market_cap_usd": 1308252544,
+      "weight_pct": 0.0143
     },
     {
       "ticker": "688165 C1",
       "name": "EFORT Intelligent Robot",
       "sector": "Robotics",
-      "market_cap_usd": 1262648289,
-      "weight_pct": 0.014
+      "market_cap_usd": 1303055100,
+      "weight_pct": 0.0143
     },
     {
       "ticker": "OUST",
       "name": "Ouster",
       "sector": "Robotics",
-      "market_cap_usd": 1257964032,
-      "weight_pct": 0.0139
+      "market_cap_usd": 1299414656,
+      "weight_pct": 0.0142
     },
     {
       "ticker": "BKSY",
       "name": "BlackSky Technology",
       "sector": "Space",
-      "market_cap_usd": 1207880832,
-      "weight_pct": 0.0134
+      "market_cap_usd": 1263003008,
+      "weight_pct": 0.0138
     },
     {
       "ticker": "WOLF",
       "name": "Wolfspeed",
       "sector": "Materials",
-      "market_cap_usd": 1180913024,
-      "weight_pct": 0.0131
+      "market_cap_usd": 1122423168,
+      "weight_pct": 0.0123
     },
     {
       "ticker": "SATL",
       "name": "Satellogic",
       "sector": "Space",
-      "market_cap_usd": 1030022208,
-      "weight_pct": 0.0114
-    },
-    {
-      "ticker": "EH",
-      "name": "EHang Holdings ADR",
-      "sector": "Robotics",
-      "market_cap_usd": 779595968,
-      "weight_pct": 0.0086
+      "market_cap_usd": 1048619840,
+      "weight_pct": 0.0115
     },
     {
       "ticker": "AOSL",
       "name": "Alpha + Omega Semiconductor",
       "sector": "Semiconductor",
-      "market_cap_usd": 752056064,
-      "weight_pct": 0.0083
+      "market_cap_usd": 773186176,
+      "weight_pct": 0.0085
+    },
+    {
+      "ticker": "EH",
+      "name": "EHang Holdings ADR",
+      "sector": "Robotics",
+      "market_cap_usd": 771677696,
+      "weight_pct": 0.0085
+    },
+    {
+      "ticker": "SPIR",
+      "name": "Spire Global",
+      "sector": "Space",
+      "market_cap_usd": 722347520,
+      "weight_pct": 0.0079
+    },
+    {
+      "ticker": "6104 JP",
+      "name": "Shibaura Machine Co",
+      "sector": "Robotics",
+      "market_cap_usd": 649664719,
+      "weight_pct": 0.0071
     },
     {
       "ticker": "6914 JP",
       "name": "Optex Group",
       "sector": "Robotics",
-      "market_cap_usd": 643668668,
+      "market_cap_usd": 647789374,
       "weight_pct": 0.0071
     },
     {
       "ticker": "OVZON SS",
       "name": "Ovzon AB",
       "sector": "Space",
-      "market_cap_usd": 640428341,
-      "weight_pct": 0.0071
+      "market_cap_usd": 628321587,
+      "weight_pct": 0.0069
     },
     {
       "ticker": "SERV",
       "name": "Serve Robotics",
       "sector": "Robotics",
-      "market_cap_usd": 611576640,
+      "market_cap_usd": 625200896,
       "weight_pct": 0.0068
-    },
-    {
-      "ticker": "SPIR",
-      "name": "Spire Global",
-      "sector": "Space",
-      "market_cap_usd": 600392768,
-      "weight_pct": 0.0067
-    },
-    {
-      "ticker": "6104 JP",
-      "name": "Shibaura Machine Co",
-      "sector": "Robotics",
-      "market_cap_usd": 596948820,
-      "weight_pct": 0.0066
     },
     {
       "ticker": "INDI",
       "name": "Indie Semiconductor",
       "sector": "Semiconductor",
-      "market_cap_usd": 586221888,
-      "weight_pct": 0.0065
+      "market_cap_usd": 602793600,
+      "weight_pct": 0.0066
     },
     {
       "ticker": "CEVA",
       "name": "CEVA Inc",
       "sector": "Semiconductor",
-      "market_cap_usd": 562021248,
-      "weight_pct": 0.0062
-    },
-    {
-      "ticker": "2431 HK",
-      "name": "MiniEye Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 543837376,
-      "weight_pct": 0.006
+      "market_cap_usd": 571457664,
+      "weight_pct": 0.0063
     },
     {
       "ticker": "SGL GR",
       "name": "SGL Carbon",
       "sector": "Materials",
-      "market_cap_usd": 532048226,
-      "weight_pct": 0.0059
+      "market_cap_usd": 560731358,
+      "weight_pct": 0.0061
     },
     {
       "ticker": "6258 JP",
       "name": "Hirata Corp",
       "sector": "Robotics",
-      "market_cap_usd": 489482125,
-      "weight_pct": 0.0054
+      "market_cap_usd": 556184969,
+      "weight_pct": 0.0061
+    },
+    {
+      "ticker": "2431 HK",
+      "name": "MiniEye Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 543057648,
+      "weight_pct": 0.0059
     },
     {
       "ticker": "BSL GR",
       "name": "Basler AG",
       "sector": "Robotics",
-      "market_cap_usd": 469001190,
+      "market_cap_usd": 487576860,
+      "weight_pct": 0.0053
+    },
+    {
+      "ticker": "9348 JP",
+      "name": "ispace Inc",
+      "sector": "Space",
+      "market_cap_usd": 472717726,
       "weight_pct": 0.0052
     },
     {
       "ticker": "RR",
       "name": "Richtech Robotics",
       "sector": "Robotics",
-      "market_cap_usd": 444955968,
+      "market_cap_usd": 449427904,
       "weight_pct": 0.0049
-    },
-    {
-      "ticker": "9348 JP",
-      "name": "ispace Inc",
-      "sector": "Space",
-      "market_cap_usd": 420001839,
-      "weight_pct": 0.0047
-    },
-    {
-      "ticker": "2121 HK",
-      "name": "AInnovation Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 371743869,
-      "weight_pct": 0.0041
     },
     {
       "ticker": "NVEC",
       "name": "NVE Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 367963296,
+      "market_cap_usd": 370575360,
       "weight_pct": 0.0041
+    },
+    {
+      "ticker": "2121 HK",
+      "name": "AInnovation Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 360134609,
+      "weight_pct": 0.0039
     },
     {
       "ticker": "6153 TT",
       "name": "Coretronic",
       "sector": "Materials",
-      "market_cap_usd": 350925409,
-      "weight_pct": 0.0039
+      "market_cap_usd": 341890841,
+      "weight_pct": 0.0037
     },
     {
       "ticker": "GOMX SS",
       "name": "GomSpace",
       "sector": "Space",
-      "market_cap_usd": 308110357,
-      "weight_pct": 0.0034
+      "market_cap_usd": 304979538,
+      "weight_pct": 0.0033
+    },
+    {
+      "ticker": "SIDU",
+      "name": "Sidus Space",
+      "sector": "Space",
+      "market_cap_usd": 282709376,
+      "weight_pct": 0.0031
     },
     {
       "ticker": "SPCE",
       "name": "Virgin Galactic",
       "sector": "Space",
-      "market_cap_usd": 241783872,
+      "market_cap_usd": 245854304,
       "weight_pct": 0.0027
     },
     {
       "ticker": "4112 JP",
       "name": "Daicel Corp",
       "sector": "Materials",
-      "market_cap_usd": 231517287,
-      "weight_pct": 0.0026
-    },
-    {
-      "ticker": "SIDU",
-      "name": "Sidus Space",
-      "sector": "Space",
-      "market_cap_usd": 222176304,
+      "market_cap_usd": 229531407,
       "weight_pct": 0.0025
     },
     {
       "ticker": "IMI LN",
       "name": "IMI PLC",
       "sector": "Robotics",
-      "market_cap_usd": 90199717,
+      "market_cap_usd": 92050622,
       "weight_pct": 0.001
     },
     {
       "ticker": "RSW LN",
       "name": "Renishaw PLC",
       "sector": "Robotics",
-      "market_cap_usd": 36667900,
+      "market_cap_usd": 36969327,
       "weight_pct": 0.0004
     },
     {
       "ticker": "RPI LN",
       "name": "Raspberry Pi Holdings",
       "sector": "Robotics",
-      "market_cap_usd": 12800550,
+      "market_cap_usd": 13088443,
       "weight_pct": 0.0001
     }
   ]
