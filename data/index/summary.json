@@ -1,39 +1,39 @@
 {
-  "calculated_at": "2026-04-10T22:37:55.272809+00:00Z",
+  "calculated_at": "2026-04-12T06:30:42.521598+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2328.58,
-    "daily_change_pct": -1.25,
+    "value": 2334.12,
+    "daily_change_pct": 1.71,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 232
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2328.58,
-    "base_date": "2021-04-12",
+    "value": 2334.12,
+    "base_date": "2021-04-13",
     "base_value": 1000.0,
     "entities": 232
   },
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2171.61,
+      "value": 2178.96,
       "entities": 59
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1807.93,
+      "value": 1807.62,
       "entities": 105
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2064.13,
+      "value": 2085.69,
       "entities": 32
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2043.75,
+      "value": 2052.26,
       "entities": 36
     }
   },
@@ -78,35 +78,35 @@
       "name": "Advanced Micro Devices",
       "sector": "Semiconductor",
       "market_cap_usd": 399515877376,
-      "weight_pct": 4.3764
+      "weight_pct": 4.3759
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Semiconductor",
       "market_cap_usd": 331164876800,
-      "weight_pct": 3.6277
+      "weight_pct": 3.6272
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
       "market_cap_usd": 317039181824,
-      "weight_pct": 3.4729
+      "weight_pct": 3.4725
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
       "market_cap_usd": 313210634240,
-      "weight_pct": 3.431
+      "weight_pct": 3.4306
     },
     {
       "ticker": "LIN",
       "name": "Linde plc",
       "sector": "Materials",
       "market_cap_usd": 233156755456,
-      "weight_pct": 2.5541
+      "weight_pct": 2.5538
     }
   ]
 }
