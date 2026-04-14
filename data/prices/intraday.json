@@ -1,17 +1,12 @@
 {
-  "fetched_at": "2026-04-14T17:59:59.587357Z",
+  "fetched_at": "2026-04-14T19:27:04.133715Z",
   "source": "EODHD Intraday (1h)",
   "count": 20,
   "tickers": {
     "ALGM": {
       "ticker": "ALGM",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 36.884998,
-          "volume": 279067
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 37.034999,
@@ -106,13 +101,8 @@
     },
     "AOSL": {
       "ticker": "AOSL",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 25.3299,
-          "volume": 22359
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 25.26,
@@ -207,13 +197,8 @@
     },
     "ARM": {
       "ticker": "ARM",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 149.399993,
-          "volume": 419876
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 149.820007,
@@ -308,13 +293,8 @@
     },
     "ASX": {
       "ticker": "ASX",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 24.495,
-          "volume": 539712
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 24.514999,
@@ -409,13 +389,8 @@
     },
     "ALAB": {
       "ticker": "ALAB",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 128.544998,
-          "volume": 431492
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 129.470001,
@@ -510,13 +485,8 @@
     },
     "AEIS": {
       "ticker": "AEIS",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 375.579986,
-          "volume": 56314
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 374.850006,
@@ -611,13 +581,8 @@
     },
     "AMKR": {
       "ticker": "AMKR",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 55.060001,
-          "volume": 391307
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 55.159999,
@@ -712,13 +677,8 @@
     },
     "CEVA": {
       "ticker": "CEVA",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 20.203399,
-          "volume": 31489
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 20.25,
@@ -813,13 +773,8 @@
     },
     "CAMT": {
       "ticker": "CAMT",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 175.380004,
-          "volume": 37589
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 176.529998,
@@ -914,13 +869,8 @@
     },
     "CRUS": {
       "ticker": "CRUS",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 160.014999,
-          "volume": 61637
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 159.589996,
@@ -1015,13 +965,8 @@
     },
     "DIOD": {
       "ticker": "DIOD",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 82.580001,
-          "volume": 108877
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 82.279998,
@@ -1116,13 +1061,8 @@
     },
     "ENTG": {
       "ticker": "ENTG",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 132.490005,
-          "volume": 198916
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 132.630004,
@@ -1217,13 +1157,8 @@
     },
     "FORM": {
       "ticker": "FORM",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 121.714996,
-          "volume": 83722
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 121.050003,
@@ -1318,13 +1253,8 @@
     },
     "PI": {
       "ticker": "PI",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 105.875,
-          "volume": 22608
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 105.529998,
@@ -1419,13 +1349,8 @@
     },
     "INDI": {
       "ticker": "INDI",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 2.809999,
-          "volume": 176229
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 2.839999,
@@ -1520,13 +1445,8 @@
     },
     "INTC": {
       "ticker": "INTC",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 61.43,
-          "volume": 12725760
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 61.68,
@@ -1621,13 +1541,8 @@
     },
     "KLIC": {
       "ticker": "KLIC",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 76.855003,
-          "volume": 87488
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 76.800003,
@@ -1722,13 +1637,8 @@
     },
     "MTSI": {
       "ticker": "MTSI",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 248.330001,
-          "volume": 62620
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 247.669998,
@@ -1823,13 +1733,8 @@
     },
     "MRVL": {
       "ticker": "MRVL",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 119.730003,
-          "volume": 2108482
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 119.919998,
@@ -1924,13 +1829,8 @@
     },
     "MU": {
       "ticker": "MU",
-      "points": 19,
+      "points": 18,
       "series": [
-        {
-          "datetime": "2026-04-09 18:30:00",
-          "close": 420.709991,
-          "volume": 5702772
-        },
         {
           "datetime": "2026-04-09 19:30:00",
           "close": 421.445007,
