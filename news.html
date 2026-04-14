@@ -496,10 +496,15 @@ function setIntelFilter(group, btn) {
     });
     previewHtml += '</div>';
     gate.innerHTML = previewHtml +
-      '<div class="premium-gate-front">' +
-        '<div class="gate-title">CLEARANCE REQUIRED</div>' +
-        '<div class="gate-text">Intelligence archive requires enterprise clearance.<br>24-hour newsfeed is available to all operatives.</div>' +
-        '<a href="index.html#signup" class="btn-y" style="font-size:11px;">Request clearance &rarr;</a>' +
+      '<div class="enterprise-preview">' +
+        '<h3>CLEARANCE REQUIRED</h3>' +
+        '<p>Enterprise operatives receive:</p>' +
+        '<div class="feature-grid">' +
+          '<div class="feature-card"><div class="feature-label">[ARCHIVE]</div><h4>Full News Archive</h4><p>Complete searchable archive of all frontier stack news, tagged by entity and sector</p></div>' +
+          '<div class="feature-card"><div class="feature-label">[SIGNAL]</div><h4>Frontier Signals</h4><p>Automated alerts when dependency chain events affect your watchlist</p></div>' +
+          '<div class="feature-card"><div class="feature-label">[BRIEFING]</div><h4>Weekly Transmissions</h4><p>Robotnik\'s weekly intelligence briefing delivered to your inbox</p></div>' +
+        '</div>' +
+        '<a href="mailto:robotnik@proton.me?subject=Enterprise%20Clearance%20Request" class="cta-enterprise">Request Enterprise Clearance &rarr;</a>' +
       '</div>';
     feed.innerHTML = '';
     feed.parentElement.insertBefore(gate, feed);
