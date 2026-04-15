@@ -8,8 +8,8 @@
 <meta property="og:title" content="Robotnik — News">
 <meta property="og:description" content="Aggregated news, filings, research, and reports from across the frontier technology stack.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://robonios.github.io/Robotniks/news.html">
-<meta property="og:image" content="https://robonios.github.io/Robotniks/robotlogo.png">
+<meta property="og:url" content="https://robotnik.world/news.html">
+<meta property="og:image" content="https://robotnik.world/robotlogo.png">
 <link rel="icon" type="image/png" href="robotlogo.png">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -136,7 +136,7 @@
       <div style="font-size:11px;color:#8B92A5;line-height:1.6;">
         Robotnik's weekly intelligence briefing covering the frontier technology stack.
       </div>
-      <a href="mailto:robotnik@proton.me?subject=Field%20Transmission%20Signup" class="view-all-link">Sign up to receive transmissions &rarr;</a>
+      <a href="#" onclick="openEarlyAccess();return false;" class="view-all-link">Sign up to receive transmissions &rarr;</a>
     </div>
 
     <!-- Contributors -->
@@ -145,7 +145,7 @@
       <div style="font-size:11px;color:#8B92A5;line-height:1.6;">
         Robotnik is seeking research contributors covering semiconductors, robotics, space, or critical materials.
       </div>
-      <a href="mailto:robotnik@proton.me?subject=Contributor%20Application" class="view-all-link">Apply to contribute &rarr;</a>
+      <a href="#" onclick="openEarlyAccess();return false;" class="view-all-link">Apply to contribute &rarr;</a>
     </div>
 
   </div>
@@ -227,7 +227,7 @@ function renderCard(item) {
               '<span style="font-size:10px;color:#5A6178;">&#x1F512; LOCKED</span>' +
             '</div>' +
             '<div class="analysis-blur">Cross-referencing against Robotnik universe: mapping supply chain dependencies, second-order impact on related entities, and sector correlation analysis across 299 tracked assets. Price sensitivity and historical pattern matching available with clearance.</div>' +
-            '<a href="index.html#signup" class="btn-y" style="font-size:10px;margin-top:0.5rem;">Request clearance to unlock</a>' +
+            '<a href="index.html#signup" class="btn-y" style="font-size:10px;margin-top:0.5rem;">Request early access to unlock</a>' +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -341,7 +341,7 @@ function buildPastBriefings() {
       html += '<div class="past-briefing-item" style="margin-bottom:0.5rem;position:relative;overflow:hidden;">' +
         '<div class="past-briefing-date">DAILY BRIEFING // ' + dateLabel + '</div>' +
         '<div class="past-briefing-blur">' + escapeHtml(preview.substring(0, 150)) + '</div>' +
-        '<div class="past-briefing-gate"><span style="font-size:9px;color:#5A6178;">&#x1F512; Older briefings require enterprise clearance</span></div></div>';
+        '<div class="past-briefing-gate"><span style="font-size:9px;color:#5A6178;">&#x1F512; Older briefings require early access</span></div></div>';
     }
     shownCount++;
   });
@@ -497,14 +497,14 @@ function setIntelFilter(group, btn) {
     previewHtml += '</div>';
     gate.innerHTML = previewHtml +
       '<div class="enterprise-preview">' +
-        '<h3>CLEARANCE REQUIRED</h3>' +
+        '<h3>EARLY ACCESS REQUIRED</h3>' +
         '<p>Enterprise operatives receive:</p>' +
         '<div class="feature-grid">' +
           '<div class="feature-card"><div class="feature-label">[ARCHIVE]</div><h4>Full News Archive</h4><p>Complete searchable archive of all frontier stack news, tagged by entity and sector</p></div>' +
           '<div class="feature-card"><div class="feature-label">[SIGNAL]</div><h4>Frontier Signals</h4><p>Automated alerts when dependency chain events affect your watchlist</p></div>' +
           '<div class="feature-card"><div class="feature-label">[BRIEFING]</div><h4>Weekly Transmissions</h4><p>Robotnik\'s weekly intelligence briefing delivered to your inbox</p></div>' +
         '</div>' +
-        '<a href="mailto:robotnik@proton.me?subject=Enterprise%20Clearance%20Request" class="cta-enterprise">Request Enterprise Clearance &rarr;</a>' +
+        '<a href="#" onclick="openEarlyAccess();return false;" class="cta-enterprise">Request Early Access &rarr;</a>' +
       '</div>';
     feed.innerHTML = '';
     feed.parentElement.insertBefore(gate, feed);

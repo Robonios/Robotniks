@@ -4,7 +4,7 @@
   const navItems = [
     { href: 'index.html', page: 'home', label: 'Home', online: true },
     { href: 'news.html', page: 'news', label: 'News', online: true },
-    { href: 'intelligence.html', page: 'intelligence', label: 'Intelligence', online: true },
+    { href: 'research.html', page: 'research', label: 'Research', online: true },
     { href: 'assets.html', page: 'assets', label: 'Frontier Assets', online: true },
     { href: 'funding.html', page: 'funding', label: 'Funding Ops', online: true },
     { href: 'portfolio.html', page: 'portfolio', label: 'Portfolio', online: false },
@@ -58,10 +58,51 @@
         <input type="text" class="top-search" placeholder="Search assets, news, research..." />
       </div>
       <div class="top-bar-right">
-        <a href="index.html#signup" class="btn-y">Request Enterprise Clearance</a>
+        <a href="#" onclick="openEarlyAccess();return false;" class="btn-y">Request Early Access</a>
       </div>
     </header>
   `;
 
   document.getElementById('nav-container').innerHTML = sidebar + topBar;
+
+  // Early Access modal (shared across all pages)
+  var modalDiv = document.createElement('div');
+  modalDiv.id = 'early-access-modal';
+  modalDiv.style.cssText = 'display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;';
+  modalDiv.innerHTML = `
+    <div style="background:#0A0A0F;border:1px solid #333;border-radius:8px;padding:2rem 2.5rem;max-width:460px;width:90%;position:relative;font-family:var(--font);">
+      <button onclick="document.getElementById('early-access-modal').style.display='none'" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#888;font-size:18px;cursor:pointer;">&#10005;</button>
+      <h3 style="color:#F5D921;font-size:12px;letter-spacing:0.1em;margin:0 0 0.75rem;">REQUEST EARLY ACCESS</h3>
+      <p style="color:#8B92A5;font-size:10px;line-height:1.6;margin-bottom:1.25rem;">
+        Join the Robotnik early access programme. Enterprise operatives receive the full Intelligence data layer, funding database, news archive, data export, and priority access to Portfolio Intelligence, Frontier Signals, and Commodities as they launch.
+      </p>
+      <div id="mailchimp-form-container">
+        <form action="https://formspree.io/f/placeholder" method="POST" style="display:flex;flex-direction:column;gap:0.5rem;" onsubmit="this.querySelector('[type=submit]').textContent='Submitted!';this.querySelector('[type=submit]').disabled=true;">
+          <input type="email" name="email" placeholder="Email address *" required style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
+          <input type="text" name="name" placeholder="Name *" required style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
+          <input type="text" name="company" placeholder="Company / Organisation" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
+          <input type="url" name="linkedin" placeholder="LinkedIn profile URL" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
+          <select name="source" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#8B92A5;border-radius:3px;font-family:var(--font);font-size:10px;">
+            <option value="">How did you hear about Robotnik?</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="twitter">Twitter / X</option>
+            <option value="referral">Referral</option>
+            <option value="search">Search</option>
+            <option value="report">1Q26 Report</option>
+            <option value="other">Other</option>
+          </select>
+          <button type="submit" style="width:100%;margin-top:0.5rem;padding:0.6rem;background:#F5D921;color:#0A0A0F;font-family:var(--font);font-weight:700;font-size:10px;letter-spacing:0.06em;border:none;border-radius:3px;cursor:pointer;">Submit Request &rarr;</button>
+        </form>
+        <p style="color:#5A6178;font-size:8px;margin-top:0.5rem;text-align:center;">Mailchimp integration pending. Form submissions are temporarily collected via email.</p>
+      </div>
+    </div>
+  `;
+  modalDiv.addEventListener('click', function(e) { if (e.target === modalDiv) modalDiv.style.display = 'none'; });
+  document.body.appendChild(modalDiv);
 })();
+
+// Global function to open early access modal
+function openEarlyAccess() {
+  var m = document.getElementById('early-access-modal');
+  if (m) m.style.display = 'flex';
+}
