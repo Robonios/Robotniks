@@ -1,0 +1,207 @@
+/* ============================================
+   ROBOTNIK TYPOGRAPHY & READABILITY SYSTEM
+   ============================================
+   Fonts: Space Grotesk (headings), Mulish (body), Space Mono (numbers)
+   Loaded via Google Fonts in HTML <head>
+   ============================================ */
+
+/* ── Base ── */
+body {
+  font-family: 'Mulish', 'Roboto Mono', sans-serif;
+  color: #D0D0D0;
+}
+
+/* ── Headings — Space Grotesk ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+  color: #F0F0F0;
+}
+
+.section-tag,
+.dash-widget-title,
+.sidebar-widget-title,
+.chart-widget-title,
+.fund-title,
+.briefing-header,
+.intel-title,
+.glossary-toggle,
+.glossary-content h3,
+.glossary-content h4,
+.feature-label,
+.enterprise-preview h3,
+.feature-card h4,
+.coming-soon-content h2,
+.sub-index-name,
+.past-briefing-date,
+.signal-badge {
+  font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+}
+
+/* Nav items */
+.nav-item .nav-label {
+  font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+}
+
+/* Buttons and tabs */
+.btn-y,
+.cta-enterprise,
+.chart-range-btn,
+.chart-index-btn,
+.chart-mode-tab,
+.col-group-tab,
+.market-tab,
+.intel-filter-btn,
+.time-btn,
+.export-btn,
+.glossary-toggle {
+  font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+}
+
+/* Table headers */
+.market-table th,
+.assets-table th,
+.top-table th {
+  font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+  color: #F0F0F0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* ── Numbers — Space Mono ── */
+.index-value,
+.sub-index-val,
+.overview-val,
+.metric-val,
+.ticker,
+.ticker-cell {
+  font-family: 'Space Mono', 'Roboto Mono', monospace;
+}
+
+/* Percentage badges */
+.v-green, .v-red,
+.index-change,
+.sub-index-chg span {
+  font-family: 'Space Mono', 'Roboto Mono', monospace;
+}
+
+/* Table numeric cells — prices, percentages, market caps */
+.market-table td.r,
+.assets-table td.r,
+.top-table td.r {
+  font-family: 'Space Mono', 'Roboto Mono', monospace;
+}
+
+/* Chart axis labels */
+/* Handled by Lightweight Charts config — fontFamily set in createChart() */
+
+/* ── Body Text — Mulish ── */
+p,
+.description,
+.assets-desc,
+.body-text,
+.briefing-body,
+.feed-expand,
+.feed-excerpt,
+.glossary-content dd,
+.feature-card p,
+.enterprise-preview > p,
+.coming-soon-content .subtitle,
+.coming-soon-content p,
+.cross-asset-item p,
+.portfolio-hero .desc,
+.sidebar-widget-text,
+footer p {
+  font-family: 'Mulish', 'Roboto Mono', sans-serif;
+}
+
+/* ── Text Colour Hierarchy ── */
+
+/* Primary — body copy, table cells, descriptions */
+.market-table td,
+.assets-table td,
+.feed-body,
+.briefing-body,
+.sidebar-widget-text {
+  color: #D0D0D0;
+}
+
+/* Headings and emphasis */
+.page-title, .intel-title,
+.fund-title {
+  color: #F0F0F0;
+}
+
+/* Secondary — captions, timestamps, metadata */
+.feed-meta,
+.feed-source,
+.past-briefing-preview,
+.sub-index-meta,
+.assets-desc {
+  color: #A0A0A0;
+}
+
+/* Sidebar labels and values */
+.overview-label {
+  color: #A0A0A0;
+}
+.overview-val {
+  color: #E0E0E0;
+}
+
+/* ── Minimum Font Sizes ── */
+/* Ensure nothing is below 11px for readability */
+.feed-meta, .feed-source { font-size: max(11px, 0.7rem); }
+
+/* ── Table Row Hover ── */
+.market-table tbody tr:hover td,
+.top-table tbody tr:hover td {
+  background-color: rgba(245, 217, 33, 0.04);
+}
+
+/* ── Sub-Index Card Improvements ── */
+.sub-index-card {
+  transition: border-color 0.2s;
+}
+.sub-index-card:hover {
+  border-color: #F5D921;
+  cursor: pointer;
+}
+.sub-index-val {
+  font-size: 22px;
+}
+
+/* ── Active Nav Item ── */
+.nav-item.active .nav-label {
+  color: #F5D921;
+}
+.nav-item:not(.active) .nav-label {
+  color: #A0A0A0;
+}
+.nav-item:hover:not(.active) .nav-label {
+  color: #D0D0D0;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ── Link Styling ── */
+a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more) {
+  color: #F5D921;
+  text-decoration: none;
+}
+a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more):hover {
+  text-decoration: underline;
+}

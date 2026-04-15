@@ -191,9 +191,11 @@ function updateMarketOverview() {
   var mcapEl = document.getElementById('ov-mcap');
   if (mcapEl) mcapEl.textContent = totalMcap >= 1e12 ? '$' + (totalMcap / 1e12).toFixed(2) + 'T' : totalMcap >= 1e9 ? '$' + (totalMcap / 1e9).toFixed(0) + 'B' : '--';
 
-  // Tracked count
+  // Tracked count — use same number for both Universe and Live Data
   var countEl = document.getElementById('ov-count');
   if (countEl) countEl.textContent = String(uniqueCompanies.length);
+  var univEl = document.getElementById('ov-universe');
+  if (univEl) univEl.textContent = String(uniqueCompanies.length);
 
   // Find top gainer, top loser, largest
   var largest = uniqueCompanies[0]; // already sorted by mcap
