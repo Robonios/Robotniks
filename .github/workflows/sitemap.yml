@@ -1,0 +1,43 @@
+name: Regenerate sitemap.xml
+
+# Keeps sitemap.xml in sync with the actual site on every push to main.
+# lastmod is derived from git commit dates inside generate_sitemap.py,
+# so the sitemap always reflects when each page was last changed.
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '*.html'
+      - 'scripts/generate_sitemap.py'
+      - '.github/workflows/sitemap.yml'
+  workflow_dispatch: {}
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history so `git log --format=%cI` resolves lastmod
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate sitemap
+        run: python scripts/generate_sitemap.py
+
+      - name: Commit sitemap if changed
+        run: |
+          git config user.name "Robotnik Pipeline"
+          git config user.email "data@robotniks.com"
+          git add sitemap.xml
+          if git diff --cached --quiet; then
+            echo "sitemap.xml unchanged — skipping commit"
+          else
+            git commit -m "chore(seo): regenerate sitemap.xml"
+            git push
+          fi
