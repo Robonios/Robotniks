@@ -56,14 +56,27 @@ function tickerColor(ticker) {
 async function loadPriceData() {
   try {
     const cb = '?v=' + Date.now();
-    const [priceResp, mcapResp, summaryResp, registryResp, liveResp, metricsResp] = await Promise.allSettled([
+    const [priceResp, mcapResp, summaryResp, registryResp, liveResp, metricsResp, weightsResp] = await Promise.allSettled([
       fetch('data/prices/all_prices.json' + cb),
       fetch('data/index/market_caps.json' + cb),
       fetch('data/index/summary.json' + cb),
       fetch('data/registries/entity_registry.json' + cb),
       fetch('data/prices/live.json' + cb),
       fetch('data/markets/robotnik_public_markets.json' + cb),
+      fetch('data/index/weights.json' + cb),
     ]);
+
+    // Build sector counts from index weights (authoritative for "index-eligible")
+    if (weightsResp.status === 'fulfilled' && weightsResp.value.ok) {
+      var weightsData = await weightsResp.value.json();
+      if (weightsData && weightsData.weights) {
+        window.indexWeightSectors = {semi:0, robo:0, space:0, materials:0};
+        weightsData.weights.forEach(function(w) {
+          var s = mapSector(w.sector);
+          if (window.indexWeightSectors[s] !== undefined) window.indexWeightSectors[s]++;
+        });
+      }
+    }
 
     let priceData = null;
     if (priceResp.status === 'fulfilled' && priceResp.value.ok) {
@@ -1743,10 +1756,20 @@ function renderMarketTable() {
     if (el) el.textContent = mktSort === col ? (mktSortDir === -1 ? '▼' : '▲') : '';
   });
 
-  // Update tab counts
+  // Update tab counts — per-sector counts must match the Robotnik Index's
+  // eligibility criteria (same authoritative source used by the sector cards).
+  // "All" stays at the raw tracked-entity count because sub-$10M equities
+  // are still displayed in the table, just not in the index.
   var tabs = document.querySelectorAll('.market-tab');
   var counts = {all: uniqueCompanies.length, semi:0, robo:0, space:0, materials:0};
-  uniqueCompanies.forEach(function(c) { if (counts[c.sector] !== undefined) counts[c.sector]++; });
+  if (window.indexWeightSectors) {
+    counts.semi = window.indexWeightSectors.semi || 0;
+    counts.robo = window.indexWeightSectors.robo || 0;
+    counts.space = window.indexWeightSectors.space || 0;
+    counts.materials = window.indexWeightSectors.materials || 0;
+  } else {
+    uniqueCompanies.forEach(function(c) { if (counts[c.sector] !== undefined) counts[c.sector]++; });
+  }
   tabs.forEach(function(t) {
     var s = t.dataset.sector;
     var label = s === 'all' ? 'All' : s === 'semi' ? 'Semi' : s === 'robo' ? 'Robotics' : s === 'space' ? 'Space' : s === 'materials' ? 'Materials' : s;

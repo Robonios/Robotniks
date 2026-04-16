@@ -182,25 +182,43 @@ function sortVal(e,key){
 }
 
 // ── Load data ──
+// Sector tab counts must match the Robotnik Index's per-sector eligible counts
+// (Semi 59 / Robotics 105 / Space 33 / Materials 36) rather than raw
+// public-markets counts, which include sub-$10M entities that the index
+// excludes. weights.json is the authoritative source — every entity with a
+// nonzero weight is in the index.
 (function(){
-  fetch('data/markets/robotnik_public_markets.json?v='+Date.now())
-    .then(function(r){return r.ok?r.json():null;})
-    .then(function(data){
-      if(!data||!data.entities){document.getElementById('assets-summary').textContent='Data not available.';return;}
-      assetsData=Object.values(data.entities).filter(function(e){return SMAP[e.sector]!==undefined;});
-      var total=assetsData.length;
-      var withMcap=assetsData.filter(function(e){return e.market_cap>0;}).length;
-      document.getElementById('assets-summary').textContent=total+' entities \u00b7 '+withMcap+' with market cap \u00b7 Updated '+new Date(data.last_updated).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-      var descEl=document.getElementById('assets-desc');
-      if(descEl)descEl.textContent=total+' frontier technology equities across semiconductors, robotics, space, and materials. Data from EODHD. Fundamentals weekly.';
-      var sc={};assetsData.forEach(function(e){var s=SMAP[e.sector]||'?';sc[s]=(sc[s]||0)+1;});
-      document.querySelectorAll('#asset-tabs .market-tab').forEach(function(t){var s=t.dataset.sector;t.textContent=s==='all'?'All ('+total+')':(SLBL[s]||s)+' ('+(sc[s]||0)+')';});
-      renderAssetsTable();
-      // Load enrichment data for Intelligence tab
-      fetch('data/markets/enrichment_data.json?v='+Date.now())
-        .then(function(r){return r.ok?r.json():null;})
-        .then(function(enr){if(enr){_enrichmentData=enr;}});
-    });
+  Promise.all([
+    fetch('data/markets/robotnik_public_markets.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;}),
+    fetch('data/index/weights.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;})
+  ]).then(function(results){
+    var data=results[0];
+    var weightsData=results[1];
+    if(!data||!data.entities){document.getElementById('assets-summary').textContent='Data not available.';return;}
+    assetsData=Object.values(data.entities).filter(function(e){return SMAP[e.sector]!==undefined;});
+    var total=assetsData.length;
+    var withMcap=assetsData.filter(function(e){return e.market_cap>0;}).length;
+    document.getElementById('assets-summary').textContent=total+' entities \u00b7 '+withMcap+' with market cap \u00b7 Updated '+new Date(data.last_updated).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    var descEl=document.getElementById('assets-desc');
+    if(descEl)descEl.textContent=total+' frontier technology equities across semiconductors, robotics, space, and materials. Data from EODHD. Fundamentals weekly.';
+    // Per-sector counts derived from index eligibility
+    var sc={semi:0,robo:0,space:0,materials:0};
+    if(weightsData&&weightsData.weights){
+      weightsData.weights.forEach(function(w){
+        var s=SMAP[w.sector];
+        if(s)sc[s]=(sc[s]||0)+1;
+      });
+    }else{
+      // Fallback: raw sector breakdown from public_markets
+      assetsData.forEach(function(e){var s=SMAP[e.sector]||'?';sc[s]=(sc[s]||0)+1;});
+    }
+    document.querySelectorAll('#asset-tabs .market-tab').forEach(function(t){var s=t.dataset.sector;t.textContent=s==='all'?'All ('+total+')':(SLBL[s]||s)+' ('+(sc[s]||0)+')';});
+    renderAssetsTable();
+    // Load enrichment data for Intelligence tab
+    fetch('data/markets/enrichment_data.json?v='+Date.now())
+      .then(function(r){return r.ok?r.json():null;})
+      .then(function(enr){if(enr){_enrichmentData=enr;}});
+  });
 })();
 
 function setColGroup(btn){
