@@ -49,6 +49,47 @@ EODHD_KEY = os.environ.get("EODHD_API_KEY", "")
 COINGECKO_KEY = os.environ.get("COINGECKO_API_KEY", "")
 
 # ---------------------------------------------------------------------------
+# Per-ticker data-source overrides
+# ---------------------------------------------------------------------------
+# Some tickers cannot use the primary provider (EODHD) due to structural
+# limitations — e.g. Hanwha Aerospace (012450 KS) whose real price exceeds
+# EODHD's KRW field cap of ₩999,999.9999. The override registry lets us
+# route individual tickers through alternative providers without disturbing
+# the rest of the pipeline. See data/registries/data_source_overrides.json.
+def load_source_overrides():
+    path = ROOT / "data" / "registries" / "data_source_overrides.json"
+    if not path.exists():
+        return {}
+    with open(path) as f:
+        return json.load(f)
+
+
+def fetch_from_override(ticker, override):
+    """Route a ticker fetch through its configured override provider.
+
+    Returns the same shape as fetch_eodhd_price(). Raises on any error —
+    we deliberately do NOT silently fall back to EODHD, since that would
+    re-corrupt the data for tickers that were moved off EODHD specifically.
+    """
+    provider = override.get("provider")
+    if provider == "yahoo":
+        from fetch_yahoo import fetch_latest_from_yahoo, YahooFetchError
+        sym = override.get("yahoo_symbol")
+        if not sym:
+            raise ValueError(f"Override for {ticker} missing 'yahoo_symbol'")
+        return fetch_latest_from_yahoo(sym), sym
+    if provider == "alpha_vantage":
+        from fetch_alpha_vantage import fetch_latest_from_av  # future extension
+        sym = override.get("av_symbol")
+        api_key = os.environ.get("ALPHA_VANTAGE_API_KEY", "")
+        if not sym:
+            raise ValueError(f"Override for {ticker} missing 'av_symbol'")
+        if not api_key:
+            raise RuntimeError("ALPHA_VANTAGE_API_KEY not set")
+        return fetch_latest_from_av(sym, api_key), sym
+    raise ValueError(f"Unknown override provider '{provider}' for {ticker}")
+
+# ---------------------------------------------------------------------------
 # Robotnik Universe — 219 equities
 # (ticker, company, sector, country) — direct from spreadsheet
 # ---------------------------------------------------------------------------
@@ -582,6 +623,7 @@ def load_eodhd_mapping():
 
 _EODHD_MAP = None
 _PENDING_TICKERS = None
+_OVERRIDES = None
 
 def load_pending_tickers():
     """Load list of tickers with pending EODHD coverage (new IPOs etc)."""
@@ -592,21 +634,58 @@ def load_pending_tickers():
     return set()
 
 def fetch_all_equities():
-    global _EODHD_MAP, _PENDING_TICKERS
+    global _EODHD_MAP, _PENDING_TICKERS, _OVERRIDES
     if _EODHD_MAP is None:
         _EODHD_MAP = load_eodhd_mapping()
     if _PENDING_TICKERS is None:
         _PENDING_TICKERS = load_pending_tickers()
+    if _OVERRIDES is None:
+        _OVERRIDES = load_source_overrides()
     if _EODHD_MAP:
         print("  Using explicit EODHD ticker mapping ({} entries)".format(len(_EODHD_MAP)))
     if _PENDING_TICKERS:
         print("  Pending coverage tickers: {}".format(len(_PENDING_TICKERS)))
+    if _OVERRIDES:
+        print("  Source overrides: {}".format(", ".join(
+            "{} -> {}".format(k, v.get("provider")) for k, v in _OVERRIDES.items()
+        )))
 
     results = []
     errors = []
     total = len(EQUITIES)
 
     for i, (ticker, company, sector, country) in enumerate(EQUITIES):
+        # ── 1. Per-ticker override path ────────────────────────────────
+        override = _OVERRIDES.get(ticker)
+        if override:
+            provider = override.get("provider", "?")
+            print("[{}/{}] {} -> OVERRIDE[{}] ...".format(
+                i + 1, total, ticker, provider), end=" ")
+            try:
+                data, override_sym = fetch_from_override(ticker, override)
+                results.append({
+                    "ticker": ticker,
+                    "eodhd_symbol": override_sym,  # kept for frontend compat
+                    "override_provider": provider,
+                    "name": company,
+                    "sector": sector,
+                    "price": data["price"],
+                    "currency": data["currency"],
+                    "change_pct": data["change_pct"],
+                    "volume": data["volume"],
+                    "date": data["date"],
+                    "source": provider,
+                })
+                print("{} ({})".format(data["price"], data["currency"]))
+            except Exception as e:
+                # Loud failure: do NOT fall back to EODHD for overridden tickers
+                errors.append("{} ({}) — OVERRIDE[{}] FAILED: {}".format(
+                    ticker, company, provider, e))
+                print("OVERRIDE FAILED: {}".format(e))
+            time.sleep(0.2)
+            continue
+
+        # ── 2. Default EODHD path ──────────────────────────────────────
         # Use explicit mapping if available, fall back to rule-based
         if _EODHD_MAP and ticker in _EODHD_MAP:
             eodhd_sym = _EODHD_MAP[ticker]

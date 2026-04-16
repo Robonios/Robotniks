@@ -1,0 +1,8 @@
+{
+  "012450 KS": {
+    "provider": "yahoo",
+    "yahoo_symbol": "012450.KS",
+    "reason": "EODHD KRW field caps at ₩999,999.9999; real price (~₩1,519,000) exceeds cap. Alpha Vantage lacks KOSPI coverage (confirmed 2026-04-16). Yahoo Finance returns native KRW without ceiling.",
+    "added_date": "2026-04-16"
+  }
+}
