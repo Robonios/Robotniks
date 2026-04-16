@@ -239,14 +239,17 @@ function updateMarketOverview() {
     largestEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;">' + largest.ticker + '</a> <span class="' + lCls + '">' + lSign + largest.change.toFixed(2) + '%</span>';
   }
 
+  // Display company name with ellipsis truncation — prevents tickers like
+  // "012450 KS" from appearing visually clipped to "01245" in the narrow sidebar.
+  var nameStyle = 'display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom;';
   var gainerEl = document.getElementById('ov-gainer');
   if (gainerEl && gainer) {
-    gainerEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;" title="' + gainer.name + '">' + gainer.ticker + '</a> <span class="v-green">+' + gainer.change.toFixed(2) + '%</span>';
+    gainerEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;' + nameStyle + '" title="' + gainer.name + ' (' + gainer.ticker + ')">' + gainer.name + '</a> <span class="v-green">+' + gainer.change.toFixed(2) + '%</span>';
   }
 
   var loserEl = document.getElementById('ov-loser');
   if (loserEl && loser) {
-    loserEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;" title="' + loser.name + '">' + loser.ticker + '</a> <span class="v-red">' + loser.change.toFixed(2) + '%</span>';
+    loserEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;' + nameStyle + '" title="' + loser.name + ' (' + loser.ticker + ')">' + loser.name + '</a> <span class="v-red">' + loser.change.toFixed(2) + '%</span>';
   }
 
   // Last updated timestamp
