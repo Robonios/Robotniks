@@ -1,65 +1,10 @@
 {
-  "fetched_at": "2026-04-17T16:53:13.475476Z",
+  "fetched_at": "2026-04-17T17:45:51.424750Z",
   "source": "SOXX.US proxy (EODHD 5min intraday)",
   "robotnik_base_close": 2457.13,
   "robotnik_base_date": "2026-04-16",
   "soxx_base_close": 405.95,
   "series_5m": [
-    {
-      "datetime": "2026-04-10 16:55:00",
-      "value": 2340.67,
-      "volume": 24015
-    },
-    {
-      "datetime": "2026-04-10 17:00:00",
-      "value": 2338.98,
-      "volume": 29192
-    },
-    {
-      "datetime": "2026-04-10 17:05:00",
-      "value": 2339.46,
-      "volume": 82964
-    },
-    {
-      "datetime": "2026-04-10 17:10:00",
-      "value": 2338.19,
-      "volume": 19574
-    },
-    {
-      "datetime": "2026-04-10 17:15:00",
-      "value": 2338.98,
-      "volume": 14724
-    },
-    {
-      "datetime": "2026-04-10 17:20:00",
-      "value": 2337.65,
-      "volume": 17597
-    },
-    {
-      "datetime": "2026-04-10 17:25:00",
-      "value": 2338.86,
-      "volume": 20128
-    },
-    {
-      "datetime": "2026-04-10 17:30:00",
-      "value": 2343.16,
-      "volume": 19383
-    },
-    {
-      "datetime": "2026-04-10 17:35:00",
-      "value": 2343.88,
-      "volume": 20971
-    },
-    {
-      "datetime": "2026-04-10 17:40:00",
-      "value": 2346.97,
-      "volume": 23637
-    },
-    {
-      "datetime": "2026-04-10 17:45:00",
-      "value": 2346.12,
-      "volume": 30038
-    },
     {
       "datetime": "2026-04-10 17:50:00",
       "value": 2349.24,
@@ -1777,11 +1722,6 @@
     }
   ],
   "series_1h": [
-    {
-      "datetime": "2026-04-10 16:00:00",
-      "value": 2340.67,
-      "volume": 24015
-    },
     {
       "datetime": "2026-04-10 17:00:00",
       "value": 2350.18,
