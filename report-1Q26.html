@@ -122,6 +122,22 @@
   @media (max-width: 640px) {
     .report-hero { padding: 2rem 0 1.5rem; }
   }
+
+  @media print {
+    body { background: #fff !important; color: #000 !important; }
+    .bg-layer, #nav-container, .top-bar, .sidebar { display: none !important; }
+    .main-content { margin: 0 !important; padding: 0 !important; }
+    .report-page { max-width: 100% !important; padding: 0 !important; }
+    .report-title, .report-section h2, .report-briefing-tagline { color: #000 !important; }
+    .report-subtitle, .report-section p, .report-section li,
+    .report-meta, .findings-list li span { color: #222 !important; }
+    .report-hero { border-color: #ccc !important; }
+    .findings-list li { border-bottom-color: #ccc !important; }
+    .report-cta-row { display: none !important; }
+    a { color: #000 !important; text-decoration: none !important; }
+    .findings-list .dot { background: #000 !important; }
+    .report-eyebrow { color: #555 !important; }
+  }
 </style>
 <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
 <script data-goatcounter="https://robotnik.goatcounter.com/count"
