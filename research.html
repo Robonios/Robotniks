@@ -106,39 +106,6 @@
 .report-featured-ctas .btn-y,
 .report-featured-ctas .btn-ghost { font-size: 12px; padding: 0.55rem 1.15rem; }
 
-.next-report-card {
-  background: #0E1117;
-  border: 1px dashed #252A36;
-  border-radius: 6px;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.next-report-card .label {
-  font-family: 'Space Grotesk', var(--font);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #5A6178;
-  margin-bottom: 0.25rem;
-}
-.next-report-card .title {
-  font-family: 'Space Grotesk', var(--font);
-  font-size: 14px;
-  font-weight: 600;
-  color: #8B92A5;
-}
-.next-report-card .when {
-  font-family: 'Mulish', var(--font);
-  font-size: 11px;
-  color: #5A6178;
-}
-
 @media (max-width: 640px) {
   .report-featured { grid-template-columns: 1fr; }
   .report-featured-cover { max-width: 240px; }
@@ -170,6 +137,9 @@
 @media (max-width: 900px) {
   .intel-research-layout { grid-template-columns:1fr; }
 }
+
+/* Breathing room between the fixed top-bar search and the page heading */
+body[data-page="research"] .intel-header { margin-top: 32px; }
 </style>
 <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
 <script data-goatcounter="https://robotnik.goatcounter.com/count"
@@ -213,15 +183,6 @@
       </div>
     </div>
 
-    <!-- Coming next quarter -->
-    <div class="next-report-card">
-      <div>
-        <div class="label">Coming next quarter</div>
-        <div class="title">2Q26 State of the Frontier Stack</div>
-      </div>
-      <div class="when">Expected July 2026</div>
-    </div>
-
     <!-- Other research streams (still on the roadmap) -->
     <div id="research-feed">
 
@@ -231,7 +192,7 @@
         <div class="research-card-meta" style="margin-top:0.75rem;">
           <span style="color:#F5D921;font-size:9px;font-weight:700;">COMING SOON</span>
         </div>
-        <a href="index.html#signup" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
+        <a href="#" onclick="openEarlyAccess();return false;" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
       </div>
 
       <div class="research-card" style="border-left:3px solid #3b82f6;">
@@ -240,7 +201,7 @@
         <div class="research-card-meta" style="margin-top:0.75rem;">
           <span style="color:#3b82f6;font-size:9px;font-weight:700;">COMING SOON</span>
         </div>
-        <a href="index.html#signup" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
+        <a href="#" onclick="openEarlyAccess();return false;" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
       </div>
 
       <div class="research-card" style="border-left:3px solid #a78bfa;">
@@ -249,7 +210,7 @@
         <div class="research-card-meta" style="margin-top:0.75rem;">
           <span style="color:#a78bfa;font-size:9px;font-weight:700;">COMING SOON</span>
         </div>
-        <a href="index.html#signup" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
+        <a href="#" onclick="openEarlyAccess();return false;" style="color:#F5D921;font-size:10px;text-decoration:none;display:inline-block;margin-top:0.5rem;">Sign up to receive transmissions &rarr;</a>
       </div>
 
     </div>
@@ -264,7 +225,7 @@
       <div class="sidebar-widget-title">ABOUT RESEARCH</div>
       <div class="sidebar-widget-text">
         Robotnik Research publishes original analysis covering the frontier technology stack. Field Transmissions publish weekly. The State of the Frontier Stack report publishes quarterly. Deep Dives are published as events warrant.
-        <div style="margin-top:0.75rem;">All Research content is free for the first 7 days after publication. Archive access requires early access.</div>
+        <div style="margin-top:0.75rem;">All research is currently free. Enterprise subscribers will receive early access to future reports.</div>
       </div>
     </div>
 
@@ -274,16 +235,7 @@
       <div class="sidebar-widget-text">
         Robotnik is seeking research contributors. Academics and analysts covering semiconductors, robotics, space technology, or critical materials.
         <div style="margin-top:0.75rem;">Contributors receive: free platform access, publication outlet, thought leadership visibility, and potential hire pathway.</div>
-        <div style="margin-top:0.75rem;"><a href="index.html#signup">Transmit your interest &rarr;</a></div>
-      </div>
-    </div>
-
-    <!-- Field Transmissions -->
-    <div class="sidebar-widget">
-      <div class="sidebar-widget-title">FIELD TRANSMISSIONS</div>
-      <div class="sidebar-widget-text">
-        Robotnik's weekly intelligence briefing covering the frontier technology stack.
-        <div style="margin-top:0.75rem;"><a href="index.html#signup">Sign up to receive transmissions &rarr;</a></div>
+        <div style="margin-top:0.75rem;"><a href="#" onclick="openEarlyAccess();return false;">Transmit your interest &rarr;</a></div>
       </div>
     </div>
 
