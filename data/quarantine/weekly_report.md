@@ -1,22 +1,15 @@
 # Robotnik Data Quality — Weekly Report
-**Generated:** 16-Apr-2026 11:38 UTC
-**Period:** 09-Apr to 16-Apr-2026
+**Generated:** 19-Apr-2026 23:35 UTC
+**Period:** 12-Apr to 19-Apr-2026
 
 ## 🟢 Ready for Reinstatement
-- **012450 KS** (Hanwha Aerospace)
-  - Quarantined: None
-  - Clean fetches: 5
-  - Recent USD values: [370.0, 370.7, 371.4, 372.1, 372.8]
-  - Command: `python scripts/reinstate_quarantined.py '012450 KS'`
+No entities ready for reinstatement.
 
 ## 🟡 Reinstatement Watch
 No entities in progress toward reinstatement.
 
 ## 🔴 Currently Quarantined (No Recovery Yet)
-- **012450 KS** (Hanwha Aerospace)
-  - Reason: EODHD sentinel KRW 999,999.9999 corruption — awaiting upstream data correction
-  - Since: 2026-04-16
-  - Clean fetches: 5, last status: clean
+No entities quarantined.
 
 ## ⚠️ Quarantine Candidates (3+ Consecutive Rejections)
 No new candidates this week.
@@ -30,6 +23,11 @@ No new candidates this week.
 - 2026-04-16: **MNTS** — index-side validation
 - 2026-04-16: **SHA** — index-side validation
 - 2026-04-16: **CRDO** — index-side validation
+- 2026-04-16: **SHA** — index-side validation
+- 2026-04-16: **SHA** — index-side validation
+- 2026-04-16: **SHA** — index-side validation
+- 2026-04-17: **SHA** — index-side validation
+- 2026-04-19: **SHA** — index-side validation
 
 ## 📋 Fetcher Rejection Summary (7 days)
 No rejection log found.
