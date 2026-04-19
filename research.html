@@ -38,7 +38,13 @@
     "name": "Robotnik",
     "url": "https://robotnik.world"
   },
-  "hasPart": []
+  "hasPart": [{
+    "@type": "Report",
+    "name": "1Q26 State of the Frontier Stack",
+    "url": "https://robotnik.world/report-1Q26.html",
+    "datePublished": "2026-04-19",
+    "publisher": {"@type": "Organization", "name": "Robotnik"}
+  }]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -50,6 +56,93 @@
 .featured-title { font-size:1.5rem; font-weight:700; color:#e6e8ed; line-height:1.3; margin-bottom:0.75rem; }
 .featured-desc { font-size:12px; color:#8B92A5; line-height:1.7; margin-bottom:1rem; }
 .featured-meta { font-size:10px; color:#5A6178; }
+
+/* 1Q26 report featured layout — cover thumbnail left, content right */
+.report-featured {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+.report-featured-cover {
+  background: #0E1117;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #252A36;
+}
+.report-featured-cover img { display: block; width: 100%; height: auto; }
+.report-featured-body { display: flex; flex-direction: column; }
+.report-featured-tagline {
+  font-family: 'Space Grotesk', var(--font);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #F5D921;
+  margin-bottom: 0.5rem;
+}
+.report-featured-title {
+  font-family: 'Space Grotesk', var(--font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #e6e8ed;
+  margin: 0 0 0.75rem;
+}
+.report-featured-desc {
+  font-family: 'Mulish', var(--font);
+  font-size: 13px;
+  line-height: 1.65;
+  color: #8B92A5;
+  margin: 0 0 1rem;
+}
+.report-featured-meta {
+  font-family: 'Mulish', var(--font);
+  font-size: 11px;
+  color: #5A6178;
+  margin-bottom: 1.25rem;
+}
+.report-featured-ctas { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.report-featured-ctas .btn-y,
+.report-featured-ctas .btn-ghost { font-size: 12px; padding: 0.55rem 1.15rem; }
+
+.next-report-card {
+  background: #0E1117;
+  border: 1px dashed #252A36;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.next-report-card .label {
+  font-family: 'Space Grotesk', var(--font);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5A6178;
+  margin-bottom: 0.25rem;
+}
+.next-report-card .title {
+  font-family: 'Space Grotesk', var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B92A5;
+}
+.next-report-card .when {
+  font-family: 'Mulish', var(--font);
+  font-size: 11px;
+  color: #5A6178;
+}
+
+@media (max-width: 640px) {
+  .report-featured { grid-template-columns: 1fr; }
+  .report-featured-cover { max-width: 240px; }
+}
 .research-tabs { display:flex; gap:0; margin-bottom:1.25rem; border-bottom:1px solid #252A36; }
 .research-tab { background:none; border:none; color:#8B92A5; font-family:var(--font); font-size:11px; padding:0.6rem 1rem; cursor:pointer; border-bottom:2px solid transparent; transition:all 0.2s; }
 .research-tab:hover { color:#e6e8ed; }
@@ -96,17 +189,36 @@
       <div class="intel-subtitle">Original research, analysis, and field transmissions from Robotnik</div>
     </div>
 
-    <!-- B. Featured piece -->
+    <!-- B. Featured report — 1Q26 State of the Frontier Stack -->
     <div class="featured-card">
-      <div class="featured-label">FEATURED</div>
-      <div class="featured-title">State of the Frontier Stack: Q1 2026</div>
-      <div class="featured-desc">The inaugural Robotnik sector report covering semiconductors, robotics, space technology, and critical materials. A comprehensive analysis of the physical AI stack and the companies building it.</div>
-      <div class="featured-meta">Coming soon &middot; Q2 2026</div>
+      <div class="featured-label">LATEST REPORT</div>
+      <div class="report-featured">
+        <a href="report-1Q26.html" class="report-featured-cover" aria-label="1Q26 report cover">
+          <img src="og/1Q26-report-thumb.png" alt="1Q26 State of the Frontier Stack cover">
+        </a>
+        <div class="report-featured-body">
+          <div class="report-featured-tagline">The inaugural quarterly intelligence report</div>
+          <h2 class="report-featured-title">1Q26 State of the Frontier Stack</h2>
+          <p class="report-featured-desc">Covering the first full quarter of Robotnik Composite data. Cross-sector dependency analysis across semiconductors, robotics, space, and critical materials.</p>
+          <div class="report-featured-meta">Published April 2026 &middot; 48 pages &middot; PDF</div>
+          <div class="report-featured-ctas">
+            <a href="report-1Q26.html" class="btn-y">Read report</a>
+            <a href="reports/1Q26-State-of-the-Frontier-Stack.pdf" class="btn-ghost" download>Download PDF &darr;</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Content tabs (will be activated when content is published) -->
+    <!-- Coming next quarter -->
+    <div class="next-report-card">
+      <div>
+        <div class="label">Coming next quarter</div>
+        <div class="title">2Q26 State of the Frontier Stack</div>
+      </div>
+      <div class="when">Expected July 2026</div>
+    </div>
 
-    <!-- Content sections (coming soon) -->
+    <!-- Other research streams (still on the roadmap) -->
     <div id="research-feed">
 
       <div class="research-card" style="border-left:3px solid #F5D921;">
