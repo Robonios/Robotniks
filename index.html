@@ -63,6 +63,30 @@
 <div id="nav-container"></div>
 
 <div class="main-content">
+
+<!-- Launch banner: 1Q26 inaugural report -->
+<div id="report-banner" style="display:none;background:rgba(245,217,33,0.06);border:1px solid rgba(245,217,33,0.25);border-radius:6px;padding:0.75rem 1rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:'Mulish',sans-serif;">
+  <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+    <span style="background:#F5D921;color:#0A0A0F;font-family:'Space Grotesk',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.1em;padding:3px 8px;border-radius:3px;">NEW</span>
+    <span style="font-size:12px;color:#e6e8ed;">The inaugural <strong>1Q26 State of the Frontier Stack</strong> report is now available.</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:0.5rem;">
+    <a href="report-1Q26.html" style="color:#F5D921;text-decoration:none;font-size:12px;font-weight:600;">Read it &rarr;</a>
+    <button onclick="document.getElementById('report-banner').style.display='none';try{localStorage.setItem('robotnik_banner_1q26_dismissed','1');}catch(e){}" aria-label="Dismiss" style="background:none;border:none;color:#8B92A5;cursor:pointer;font-size:16px;padding:0 0.25rem;line-height:1;">&times;</button>
+  </div>
+</div>
+<script>
+  (function(){
+    try {
+      if (!localStorage.getItem('robotnik_banner_1q26_dismissed')) {
+        document.getElementById('report-banner').style.display = 'flex';
+      }
+    } catch(e) {
+      document.getElementById('report-banner').style.display = 'flex';
+    }
+  })();
+</script>
+
 <div class="dash-layout">
 
   <!-- ===== LEFT COLUMN ===== -->
