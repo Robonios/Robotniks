@@ -88,7 +88,7 @@
 
   .findings-list { list-style: none; padding: 0; margin: 0; }
   .findings-list li {
-    padding: 0.9rem 0;
+    padding: 0.45rem 0;
     border-bottom: 1px solid rgba(30,35,48,0.5);
     display: flex;
     gap: 0.9rem;
@@ -104,66 +104,22 @@
     margin-top: 0.55rem;
   }
 
-  .toc-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.4rem 2rem;
-    padding: 1.25rem 1.5rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
+  .report-section .briefing-lead {
+    margin: 0 0 1rem;
   }
-  .toc-grid .toc-item {
-    font-family: 'Mulish', var(--font);
-    font-size: 13px;
-    color: var(--text-dim);
-    padding: 0.35rem 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-  .toc-grid .toc-item span:first-child { color: var(--text); }
-  .toc-grid .toc-item span:last-child { color: var(--text-muted); font-size: 11px; }
-
-  .about-robotnik {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1.5rem;
-  }
-  .about-robotnik .links { margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
-  .about-robotnik .links a {
-    color: var(--yellow);
-    font-size: 13px;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .about-robotnik .links a:hover { opacity: 0.8; }
-
-  .footer-cta {
-    margin: 3rem 0 4rem;
-    padding: 2rem 1.5rem;
-    background: linear-gradient(135deg, rgba(245,217,33,0.04), rgba(245,217,33,0.01));
-    border: 1px solid rgba(245,217,33,0.15);
-    border-radius: 6px;
-    text-align: center;
-  }
-  .footer-cta h3 {
-    font-family: 'Space Grotesk', var(--font);
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text);
+  .report-section .briefing-intro {
     margin: 0 0 0.5rem;
   }
-  .footer-cta p {
-    font-family: 'Mulish', var(--font);
-    font-size: 13px;
-    color: var(--text-dim);
-    margin: 0 0 1.25rem;
+  .report-briefing-tagline {
+    font-family: 'Space Grotesk', var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    margin: 1.25rem 0 0;
   }
 
   @media (max-width: 640px) {
-    .toc-grid { grid-template-columns: 1fr; }
     .report-hero { padding: 2rem 0 1.5rem; }
   }
 </style>
@@ -188,7 +144,6 @@
     <div class="report-cta-row">
       <a href="/reports/1Q26-State-of-the-Frontier-Stack.pdf" class="btn-y" download
          onclick="if(window.goatcounter)window.goatcounter.count({path:'pdf-download-1Q26',title:'1Q26 Report Download',event:true})">Download PDF &darr;</a>
-      <a href="#" class="btn-ghost" onclick="openEarlyAccess();return false;">Request early access</a>
     </div>
   </section>
 
@@ -219,48 +174,67 @@
     </ul>
   </section>
 
-  <!-- REPORT CONTENTS -->
+  <!-- WHY THIS REPORT -->
   <section class="report-section">
-    <h2>What's inside</h2>
-    <div class="toc-grid">
-      <div class="toc-item"><span>Opening Transmission</span><span>p. 2</span></div>
-      <div class="toc-item"><span>Executive Summary</span><span>p. 6</span></div>
-      <div class="toc-item"><span>Section 1 · The Dependency Chain</span><span>p. 9</span></div>
-      <div class="toc-item"><span>Section 2 · The Robotnik Index</span><span>p. 15</span></div>
-      <div class="toc-item"><span>Section 3 · Sector Briefings</span><span>p. 20</span></div>
-      <div class="toc-item"><span>Section 4 · Funding Intelligence</span><span>p. 26</span></div>
-      <div class="toc-item"><span>Section 5 · The Robotnik Platform</span><span>p. 30</span></div>
-      <div class="toc-item"><span>Section 6 · Implications and Risks</span><span>p. 33</span></div>
-      <div class="toc-item"><span>Closing Transmission</span><span>p. 37</span></div>
-      <div class="toc-item"><span>Appendix A · Methodology</span><span>p. 39</span></div>
-      <div class="toc-item"><span>Appendix B · Sources</span><span>p. 43</span></div>
-      <div class="toc-item"><span>Glossary</span><span>p. 45</span></div>
-    </div>
+    <h2>Why this report</h2>
+    <p class="briefing-lead">The frontier technology stack — semiconductors, robotics, space, critical materials — is usually analysed one sector at a time. Robotnik's thesis is that the four sectors move as a single system, connected by supply-chain dependencies that determine which systems scale, which bottleneck, and where value concentrates.</p>
+    <p class="briefing-intro">1Q26 was the quarter that thesis became visible. In three months:</p>
+    <ul class="findings-list">
+      <li>
+        <span class="dot"></span>
+        <span>A single Chinese policy decision on rare earths propagated through magnet prices, servo motors, satellite actuators, and semiconductor polishing compounds &mdash; repricing four sectors across fourteen countries</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>The Materials &amp; Inputs sub-index returned <strong>+26.3%</strong> while broad US equities fell 4&ndash;6%, a 30-point divergence explained entirely by dependency-chain transmission</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span><strong>$46 billion</strong> flowed into private robotics, semiconductors, space, and materials across <strong>91 rounds</strong> &mdash; more than the entire previous year, in a single quarter</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>Public robotics companies returned <strong>+5.6%</strong> while private robotics raised more than any other sector, a divergence the framework predicts will unwind over the next 18&ndash;24 months</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>Four of the top five individual performers sat at specific chokepoints in the dependency chain: Satellogic, Soitec, Unimicron, FormFactor</span>
+      </li>
+    </ul>
   </section>
 
-  <!-- ABOUT ROBOTNIK -->
+  <!-- WHO SHOULD READ IT -->
   <section class="report-section">
-    <h2>About Robotnik</h2>
-    <div class="about-robotnik">
-      <p style="margin:0;">Robotnik is a structured intelligence platform for the frontier technology stack. It tracks 253 public equities across semiconductors, robotics, space, and critical materials, plus the private funding rounds, dependency chains, and bottlenecks that connect them as a single system.</p>
-      <div class="links">
-        <a href="assets.html">Frontier Assets &rarr;</a>
-        <a href="funding.html">Funding Ops &rarr;</a>
-        <a href="news.html">News &rarr;</a>
-        <a href="index.html">Robotnik Index &rarr;</a>
-      </div>
-    </div>
+    <h2>Who should read it</h2>
+    <p>Investors, corporate strategists, sovereign investors, and research teams covering semiconductors, robotics, space, or critical materials as separate mandates &mdash; and realising the mandates interact more than the coverage does.</p>
   </section>
 
-  <!-- FOOTER CTA -->
-  <section class="footer-cta">
-    <h3>Get the full 48-page report</h3>
-    <p>Cross-sector dependency analysis, the Robotnik Composite methodology, and a funding intelligence briefing.</p>
-    <div class="report-cta-row" style="justify-content:center;">
-      <a href="/reports/1Q26-State-of-the-Frontier-Stack.pdf" class="btn-y" download
-         onclick="if(window.goatcounter)window.goatcounter.count({path:'pdf-download-1Q26',title:'1Q26 Report Download',event:true})">Download PDF &darr;</a>
-      <a href="#" class="btn-ghost" onclick="openEarlyAccess();return false;">Request early access</a>
-    </div>
+  <!-- WHAT YOU WILL COME AWAY WITH -->
+  <section class="report-section">
+    <h2>What you will come away with</h2>
+    <ul class="findings-list">
+      <li>
+        <span class="dot"></span>
+        <span>A framework for tracking four sectors as one dependency chain, with three chains mapped out in detail for 1Q26</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>The Robotnik Composite and its four sub-indices, with 1Q26 attribution</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>A sector-by-sector briefing with top-10 constituents, bottleneck risk classifications, and Q2 watch items</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>Private funding intelligence: 91 rounds, $46bn, full breakdown by sector, deal-size hierarchy, concentration analysis</span>
+      </li>
+      <li>
+        <span class="dot"></span>
+        <span>Testable claims &mdash; what would change our view in Q2</span>
+      </li>
+    </ul>
+    <p class="report-briefing-tagline">48 pages. PDF. Free.</p>
   </section>
 
 </div>
