@@ -18,16 +18,18 @@ BASE_URL = "https://robotnik.world"
 # Orphan pages (intelligence.html, thesis.html, tetris.html) are intentionally
 # excluded — they're not in the nav and shouldn't be advertised.
 PAGES = [
-    # (path,              priority, changefreq)
-    ("",                  "1.0",    "daily"),    # homepage (index.html)
-    ("news.html",         "0.8",    "daily"),
-    ("research.html",     "0.8",    "monthly"),
-    ("assets.html",       "0.8",    "weekly"),
-    ("funding.html",      "0.8",    "weekly"),
-    ("portfolio.html",    "0.5",    "yearly"),
-    ("signals.html",      "0.5",    "yearly"),
-    ("commodities.html",  "0.5",    "yearly"),
-    ("recreation.html",   "0.3",    "yearly"),
+    # (path,                                                   priority, changefreq)
+    ("",                                                        "1.0",    "daily"),    # homepage (index.html)
+    ("news.html",                                               "0.8",    "daily"),
+    ("research.html",                                           "0.8",    "monthly"),
+    ("report-1Q26.html",                                        "0.9",    "weekly"),
+    ("reports/1Q26-State-of-the-Frontier-Stack.pdf",            "0.8",    "monthly"),
+    ("assets.html",                                             "0.8",    "weekly"),
+    ("funding.html",                                            "0.8",    "weekly"),
+    ("portfolio.html",                                          "0.5",    "yearly"),
+    ("signals.html",                                            "0.5",    "yearly"),
+    ("commodities.html",                                        "0.5",    "yearly"),
+    ("recreation.html",                                         "0.3",    "yearly"),
 ]
 
 
