@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-17T22:36:36.458585Z",
+  "fetched_at": "2026-04-19T06:51:03.696472Z",
   "source": "EODHD Real-Time (15-min delayed)",
   "count": 259,
   "is_live": true,
@@ -878,14 +878,14 @@
     "6857 JP": {
       "ticker": "6857 JP",
       "eodhd_symbol": "ATEYY.US",
-      "price": 182.47,
+      "price": 182,
       "open": 179.99,
       "high": 184.8,
       "low": 179.99,
-      "volume": 7569,
-      "prev_close": 177.99,
-      "change": 4.48,
-      "change_pct": 2.517,
+      "volume": 7036,
+      "prev_close": 178,
+      "change": 4,
+      "change_pct": 2.2472,
       "timestamp": 1776455760
     },
     "6113 JP": {
@@ -899,7 +899,7 @@
       "prev_close": 47.15,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776346200
+      "timestamp": 1776432600
     },
     "6845 JP": {
       "ticker": "6845 JP",
@@ -1013,9 +1013,9 @@
       "high": 12.32,
       "low": 12.22,
       "volume": 7736,
-      "prev_close": 11.95,
-      "change": 0.33,
-      "change_pct": 2.7615,
+      "prev_close": 11.99,
+      "change": 0.29,
+      "change_pct": 2.4187,
       "timestamp": 1776455700
     },
     "6141 JP": {
@@ -1125,15 +1125,15 @@
     "6324": {
       "ticker": "6324",
       "eodhd_symbol": "HSYDF.US",
-      "price": 27.15,
-      "open": 26.6,
-      "high": 26.6,
-      "low": 26.6,
-      "volume": 1000,
+      "price": 28.55,
+      "open": 29,
+      "high": 29,
+      "low": 27.2,
+      "volume": 419,
       "prev_close": 27.15,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776369600
+      "change": 1.4,
+      "change_pct": 5.1565,
+      "timestamp": 1776432600
     },
     "HEXAB SS": {
       "ticker": "HEXAB SS",
@@ -1286,9 +1286,9 @@
       "high": 407,
       "low": 402.01,
       "volume": 843,
-      "prev_close": 393.43,
-      "change": 11.57,
-      "change_pct": 2.9408,
+      "prev_close": 395.5,
+      "change": 9.5,
+      "change_pct": 2.402,
       "timestamp": 1776455220
     },
     "KGX GR": {
@@ -1351,9 +1351,9 @@
       "high": 52.19,
       "low": 51.57,
       "volume": 6688,
-      "prev_close": 52.09,
-      "change": -0.26,
-      "change_pct": -0.4991,
+      "prev_close": 52.11,
+      "change": -0.28,
+      "change_pct": -0.5373,
       "timestamp": 1776455820
     },
     "2431 HK": {
@@ -1377,23 +1377,23 @@
       "high": 75.3,
       "low": 74.6,
       "volume": 9318,
-      "prev_close": 74.87,
-      "change": -0.27,
-      "change_pct": -0.3606,
+      "prev_close": 74.63,
+      "change": -0.03,
+      "change_pct": -0.0402,
       "timestamp": 1776455700
     },
     "6268 JP": {
       "ticker": "6268 JP",
       "eodhd_symbol": "NCTKY.US",
-      "price": 15.19,
-      "open": 15.61,
-      "high": 15.61,
-      "low": 15.61,
-      "volume": 42,
+      "price": 13.5,
+      "open": 15.2,
+      "high": 15.2,
+      "low": 13.5,
+      "volume": 397,
       "prev_close": 15.19,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776369600
+      "change": -1.69,
+      "change_pct": -11.1257,
+      "timestamp": 1776432600
     },
     "6645 JP": {
       "ticker": "6645 JP",
@@ -1403,9 +1403,9 @@
       "high": 32.05,
       "low": 31.98,
       "volume": 2790,
-      "prev_close": 31.03,
-      "change": 1.02,
-      "change_pct": 3.2871,
+      "prev_close": 31.01,
+      "change": 1.04,
+      "change_pct": 3.3538,
       "timestamp": 1776455880
     },
     "6600 HK": {
@@ -1610,7 +1610,7 @@
       "open": 22.44,
       "high": 22.55,
       "low": 22.25,
-      "volume": 98871,
+      "volume": 89071,
       "prev_close": 22.4,
       "change": -0.02,
       "change_pct": -0.0893,
@@ -1650,9 +1650,9 @@
       "high": 144.11,
       "low": 142,
       "volume": 5662,
-      "prev_close": 142.64,
-      "change": 0.15,
-      "change_pct": 0.1052,
+      "prev_close": 142.93,
+      "change": -0.14,
+      "change_pct": -0.098,
       "timestamp": 1776455880
     },
     "9880 HK": {
@@ -1676,23 +1676,23 @@
       "high": 67.24,
       "low": 67.24,
       "volume": 120,
-      "prev_close": 65.77,
-      "change": 1.47,
-      "change_pct": 2.2351,
+      "prev_close": 65.69,
+      "change": 1.55,
+      "change_pct": 2.3596,
       "timestamp": 1776446580
     },
     "6841 JP": {
       "ticker": "6841 JP",
       "eodhd_symbol": "YOKEY.US",
       "price": 73.4,
-      "open": 68.55,
-      "high": 68.55,
-      "low": 68.55,
-      "volume": 1000,
+      "open": 73.4,
+      "high": 73.4,
+      "low": 73.4,
+      "volume": 0,
       "prev_close": 73.4,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "388720 KS": {
       "ticker": "388720 KS",
@@ -2217,15 +2217,15 @@
     "6594": {
       "ticker": "6594",
       "eodhd_symbol": "NJDCY.US",
-      "price": 3.56,
-      "open": 4.3,
-      "high": 4.3,
-      "low": 3.39,
-      "volume": 49900,
-      "prev_close": 3.471,
-      "change": 0.089,
-      "change_pct": 2.5641,
-      "timestamp": 1776346200
+      "price": 3.57,
+      "open": 3.56,
+      "high": 3.99,
+      "low": 3.56,
+      "volume": 10500,
+      "prev_close": 3.62,
+      "change": -0.05,
+      "change_pct": -1.3812,
+      "timestamp": 1776432600
     },
     "6723": {
       "ticker": "6723",
@@ -2829,14 +2829,14 @@
       "ticker": "4043 JP",
       "eodhd_symbol": "TKYMY.US",
       "price": 11.88,
-      "open": 11.4,
-      "high": 11.4,
-      "low": 11.4,
-      "volume": 3,
+      "open": 11.88,
+      "high": 11.88,
+      "low": 11.88,
+      "volume": 0,
       "prev_close": 11.88,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "WCH GR": {
       "ticker": "WCH GR",
@@ -2936,11 +2936,11 @@
       "open": 15.2,
       "high": 15.2,
       "low": 15.2,
-      "volume": 153,
+      "volume": 0,
       "prev_close": 15.2,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "MRK GR": {
       "ticker": "MRK GR",
@@ -2998,14 +2998,14 @@
       "ticker": "4208 JP",
       "eodhd_symbol": "UBEOF.US",
       "price": 15.285,
-      "open": 19.24,
-      "high": 19.24,
-      "low": 19.24,
-      "volume": 100,
+      "open": 15.285,
+      "high": 15.285,
+      "low": 15.285,
+      "volume": 0,
       "prev_close": 15.285,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "3407 JP": {
       "ticker": "3407 JP",
@@ -3015,36 +3015,36 @@
       "high": 20.73,
       "low": 20.46,
       "volume": 1600,
-      "prev_close": 20.12,
-      "change": 0.36,
-      "change_pct": 1.7893,
+      "prev_close": 21.06,
+      "change": -0.58,
+      "change_pct": -2.754,
       "timestamp": 1776455640
     },
     "5384 JP": {
       "ticker": "5384 JP",
       "eodhd_symbol": "FUJIF.US",
       "price": 20.69,
-      "open": 20.28,
+      "open": 20.69,
       "high": 20.69,
-      "low": 20.28,
-      "volume": 7111,
+      "low": 20.69,
+      "volume": 0,
       "prev_close": 20.69,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "5706 JP": {
       "ticker": "5706 JP",
       "eodhd_symbol": "MMTLF.US",
-      "price": 0.8363,
-      "open": 0.7693,
-      "high": 0.8149,
-      "low": 0.7693,
-      "volume": 14000,
-      "prev_close": 0.8078,
-      "change": 0.0285,
-      "change_pct": 3.5281,
-      "timestamp": 1776369600
+      "price": 0.8006,
+      "open": 0.8006,
+      "high": 0.8006,
+      "low": 0.8006,
+      "volume": 1004,
+      "prev_close": 0.8363,
+      "change": -0.0357,
+      "change_pct": -4.2688,
+      "timestamp": 1776432600
     },
     "MTRN": {
       "ticker": "MTRN",
@@ -3088,15 +3088,15 @@
     "2802 JP": {
       "ticker": "2802 JP",
       "eodhd_symbol": "AJINY.US",
-      "price": 29.31,
-      "open": 30.64,
-      "high": 30.64,
-      "low": 29.3,
-      "volume": 22654,
-      "prev_close": 29.45,
-      "change": -0.14,
-      "change_pct": -0.4754,
-      "timestamp": 1776346200
+      "price": 29.205,
+      "open": 29.25,
+      "high": 29.32,
+      "low": 29.1675,
+      "volume": 19044,
+      "prev_close": 29.31,
+      "change": -0.105,
+      "change_pct": -0.3582,
+      "timestamp": 1776432600
     },
     "6971 JP": {
       "ticker": "6971 JP",
@@ -3106,9 +3106,9 @@
       "high": 17.31,
       "low": 16.24,
       "volume": 4471,
-      "prev_close": 16.86,
-      "change": 0.45,
-      "change_pct": 2.669,
+      "prev_close": 16.82,
+      "change": 0.49,
+      "change_pct": 2.9132,
       "timestamp": 1776455460
     },
     "LYC AU": {
@@ -3235,24 +3235,24 @@
       "open": 11.6,
       "high": 11.6,
       "low": 11.6,
-      "volume": 100,
+      "volume": 0,
       "prev_close": 11.6,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "4188 JP": {
       "ticker": "4188 JP",
       "eodhd_symbol": "MTLHY.US",
       "price": 30.65,
-      "open": 32.84,
-      "high": 32.84,
-      "low": 32.84,
-      "volume": 1,
+      "open": 30.65,
+      "high": 30.65,
+      "low": 30.65,
+      "volume": 0,
       "prev_close": 30.65,
       "change": 0,
       "change_pct": 0,
-      "timestamp": 1776369600
+      "timestamp": 1776432600
     },
     "SGL GR": {
       "ticker": "SGL GR",

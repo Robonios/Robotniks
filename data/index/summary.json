@@ -1,39 +1,39 @@
 {
-  "calculated_at": "2026-04-17T22:36:36.367411+00:00Z",
+  "calculated_at": "2026-04-19T06:51:03.609459+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2479.48,
-    "daily_change_pct": 4.02,
+    "value": 2618.63,
+    "daily_change_pct": 1.71,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2479.48,
-    "base_date": "2021-04-19",
+    "value": 2618.63,
+    "base_date": "2021-04-20",
     "base_value": 1000.0,
     "entities": 233
   },
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2328.23,
+      "value": 2329.2,
       "entities": 59
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1949.6,
+      "value": 1943.09,
       "entities": 105
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2468.68,
+      "value": 2460.32,
       "entities": 33
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2067.6,
+      "value": 2080.32,
       "entities": 36
     }
   },
@@ -56,7 +56,7 @@
       "ticker": "TSM",
       "name": "TSMC ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 1921599930368,
+      "market_cap_usd": 1921561264128,
       "weight_pct": 5.0
     },
     {
@@ -92,7 +92,7 @@
       "name": "Lam Research",
       "sector": "Semiconductor",
       "market_cap_usd": 336113631232,
-      "weight_pct": 3.4879
+      "weight_pct": 3.4878
     },
     {
       "ticker": "AMAT",

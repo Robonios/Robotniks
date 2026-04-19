@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-17T22:33:37.920429Z",
+  "fetched_at": "2026-04-19T06:48:11.729883Z",
   "count": 263,
   "total_fetched": 343,
   "excluded": 80,
@@ -14,11 +14,11 @@
       "coingecko_id": "empulser-enterprises",
       "name": "Empulser Enterprises",
       "sector": "Token",
-      "price": 0.07227,
+      "price": 0.061913,
       "currency": "USD",
-      "change_pct": -4.08,
+      "change_pct": -14.89,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -298,11 +298,11 @@
       "eodhd_symbol": "AJINY.US",
       "name": "Ajinomoto Co",
       "sector": "Materials",
-      "price": 29.31,
+      "price": 29.205,
       "currency": "USD",
-      "change_pct": -0.48,
-      "volume": 22654,
-      "date": "2026-04-16",
+      "change_pct": -0.36,
+      "volume": 19044,
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -374,7 +374,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -385,7 +385,7 @@
       "price": 14.79,
       "currency": "USD",
       "change_pct": 1.37,
-      "volume": 7080,
+      "volume": 35000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -397,7 +397,7 @@
       "price": 20.48,
       "currency": "USD",
       "change_pct": 1.79,
-      "volume": 1600,
+      "volume": 25300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -409,7 +409,7 @@
       "price": 26.97,
       "currency": "USD",
       "change_pct": -7.0,
-      "volume": 1636,
+      "volume": 6400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -431,10 +431,10 @@
       "eodhd_symbol": "SMMYY.US",
       "name": "Sumitomo Chemical",
       "sector": "Materials",
-      "price": 16.45,
+      "price": 16.4,
       "currency": "USD",
-      "change_pct": -4.03,
-      "volume": 7913,
+      "change_pct": -4.32,
+      "volume": 64200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -447,7 +447,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -455,10 +455,10 @@
       "eodhd_symbol": "IBIDF.US",
       "name": "Ibiden",
       "sector": "Materials",
-      "price": 59.94,
+      "price": 57.88,
       "currency": "USD",
-      "change_pct": -4.85,
-      "volume": 200,
+      "change_pct": -8.12,
+      "volume": 700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -470,7 +470,7 @@
       "price": 21.81,
       "currency": "USD",
       "change_pct": -0.41,
-      "volume": 235789,
+      "volume": 1197900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -483,7 +483,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -507,7 +507,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -519,7 +519,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -570,7 +570,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -650,11 +650,11 @@
       "eodhd_symbol": "TOA.F",
       "name": "Shibaura Machine Co",
       "sector": "Robotics",
-      "price": 22.636,
+      "price": 22.737,
       "currency": "EUR",
-      "change_pct": 1.44,
+      "change_pct": 0.45,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -666,7 +666,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -674,11 +674,11 @@
       "eodhd_symbol": "F5M.F",
       "name": "Fuji Corporation",
       "sector": "Robotics",
-      "price": 30.263,
+      "price": 30.009,
       "currency": "EUR",
-      "change_pct": 1.52,
+      "change_pct": -0.84,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -722,11 +722,11 @@
       "eodhd_symbol": "NCTKY.US",
       "name": "Nabtesco Corp",
       "sector": "Robotics",
-      "price": 15.19,
+      "price": 13.5,
       "currency": "USD",
-      "change_pct": 4.87,
-      "volume": 621,
-      "date": "2026-04-16",
+      "change_pct": -11.13,
+      "volume": 397,
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -737,7 +737,7 @@
       "price": 22.38,
       "currency": "USD",
       "change_pct": -0.09,
-      "volume": 98871,
+      "volume": 1014400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -746,11 +746,11 @@
       "eodhd_symbol": "HSYDF.US",
       "name": "Harmonic Drive Systems",
       "sector": "Robotics",
-      "price": 27.15,
+      "price": 28.55,
       "currency": "USD",
-      "change_pct": 3.04,
-      "volume": 26939,
-      "date": "2026-04-15",
+      "change_pct": 5.16,
+      "volume": 419,
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -758,10 +758,10 @@
       "eodhd_symbol": "DFKCY.US",
       "name": "Daifuku Co",
       "sector": "Robotics",
-      "price": 20.38,
+      "price": 20.51,
       "currency": "USD",
-      "change_pct": 0.64,
-      "volume": 3101,
+      "change_pct": 1.28,
+      "volume": 19600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -773,7 +773,7 @@
       "price": 17.6,
       "currency": "USD",
       "change_pct": 1.62,
-      "volume": 705,
+      "volume": 800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -797,7 +797,7 @@
       "price": 74.6,
       "currency": "USD",
       "change_pct": -0.36,
-      "volume": 9318,
+      "volume": 77800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -806,10 +806,10 @@
       "eodhd_symbol": "YASKY.US",
       "name": "Yaskawa Electric",
       "sector": "Robotics",
-      "price": 67.24,
+      "price": 67,
       "currency": "USD",
-      "change_pct": 2.24,
-      "volume": 120,
+      "change_pct": 1.87,
+      "volume": 7500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -820,8 +820,8 @@
       "sector": "Robotics",
       "price": 3.57,
       "currency": "USD",
-      "change_pct": -1.38,
-      "volume": 10517,
+      "change_pct": 0.28,
+      "volume": 10500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -842,11 +842,11 @@
       "eodhd_symbol": "6NV.F",
       "name": "Daihen Corp",
       "sector": "Robotics",
-      "price": 74.072,
+      "price": 71.873,
       "currency": "EUR",
-      "change_pct": 2.11,
+      "change_pct": -2.97,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -857,7 +857,7 @@
       "price": 32.05,
       "currency": "USD",
       "change_pct": 3.29,
-      "volume": 2790,
+      "volume": 14600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -881,7 +881,7 @@
       "price": 9.02,
       "currency": "USD",
       "change_pct": 4.76,
-      "volume": 28741,
+      "volume": 322900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -893,7 +893,7 @@
       "price": 9.02,
       "currency": "USD",
       "change_pct": 4.76,
-      "volume": 28741,
+      "volume": 322900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -906,7 +906,7 @@
       "currency": "USD",
       "change_pct": 0.0,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -914,11 +914,11 @@
       "eodhd_symbol": "YMK.F",
       "name": "Azbil Corp",
       "sector": "Robotics",
-      "price": 7.736,
+      "price": 7.877,
       "currency": "EUR",
-      "change_pct": 0.39,
+      "change_pct": 1.82,
       "volume": 0,
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "source": "EODHD"
     },
     {
@@ -926,10 +926,10 @@
       "eodhd_symbol": "ATEYY.US",
       "name": "Advantest Corp",
       "sector": "Robotics",
-      "price": 182.47,
+      "price": 181.88,
       "currency": "USD",
-      "change_pct": 2.52,
-      "volume": 7569,
+      "change_pct": 2.19,
+      "volume": 54100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -938,10 +938,10 @@
       "eodhd_symbol": "KYCCF.US",
       "name": "Keyence Corp",
       "sector": "Robotics",
-      "price": 405,
+      "price": 407,
       "currency": "USD",
-      "change_pct": 2.94,
-      "volume": 843,
+      "change_pct": 3.45,
+      "volume": 5800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -998,10 +998,10 @@
       "eodhd_symbol": "DNZOY.US",
       "name": "Denso Corp",
       "sector": "Robotics",
-      "price": 12.28,
+      "price": 12.23,
       "currency": "USD",
-      "change_pct": 2.76,
-      "volume": 7736,
+      "change_pct": 2.34,
+      "volume": 141400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1013,7 +1013,7 @@
       "price": 9.1,
       "currency": "USD",
       "change_pct": -17.65,
-      "volume": 2292167,
+      "volume": 2296300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1025,7 +1025,7 @@
       "price": 51.83,
       "currency": "USD",
       "change_pct": -0.5,
-      "volume": 6688,
+      "volume": 33400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1034,10 +1034,10 @@
       "eodhd_symbol": "FANUY.US",
       "name": "Fanuc Corp",
       "sector": "Robotics",
-      "price": 20.11,
+      "price": 20.1,
       "currency": "USD",
-      "change_pct": 1.93,
-      "volume": 26656,
+      "change_pct": 1.88,
+      "volume": 305900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1049,7 +1049,7 @@
       "price": 17.31,
       "currency": "USD",
       "change_pct": 2.67,
-      "volume": 4471,
+      "volume": 30800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1058,10 +1058,10 @@
       "eodhd_symbol": "TOELY.US",
       "name": "Tokyo Electron",
       "sector": "Robotics",
-      "price": 142.79,
+      "price": 142.85,
       "currency": "USD",
-      "change_pct": 0.11,
-      "volume": 5662,
+      "change_pct": 0.15,
+      "volume": 92400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1070,10 +1070,10 @@
       "eodhd_symbol": "IPCFF.US",
       "name": "ispace Inc",
       "sector": "Space",
-      "price": 24.83,
+      "price": 25.08,
       "currency": "USD",
-      "change_pct": -6.48,
-      "volume": 100,
+      "change_pct": -5.54,
+      "volume": 35200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1121,7 +1121,7 @@
       "price": 371.45,
       "currency": "USD",
       "change_pct": 4.99,
-      "volume": 5244914,
+      "volume": 5246400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1133,7 +1133,7 @@
       "price": 375.6,
       "currency": "USD",
       "change_pct": 0.91,
-      "volume": 649097,
+      "volume": 662900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1157,7 +1157,7 @@
       "price": 174.05,
       "currency": "USD",
       "change_pct": 1.9,
-      "volume": 5151074,
+      "volume": 5160900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1169,7 +1169,7 @@
       "price": 197.75,
       "currency": "USD",
       "change_pct": -8.29,
-      "volume": 4142201,
+      "volume": 4157100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1181,7 +1181,7 @@
       "price": 40,
       "currency": "USD",
       "change_pct": 4.66,
-      "volume": 1568063,
+      "volume": 1568800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1193,7 +1193,7 @@
       "price": 396.94,
       "currency": "USD",
       "change_pct": 1.81,
-      "volume": 6006813,
+      "volume": 6013700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1205,7 +1205,7 @@
       "price": 58.23,
       "currency": "USD",
       "change_pct": 1.59,
-      "volume": 950502,
+      "volume": 951000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1217,7 +1217,7 @@
       "price": 278.39,
       "currency": "USD",
       "change_pct": 0.05,
-      "volume": 35414017,
+      "volume": 35441000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1241,7 +1241,7 @@
       "price": 67.37,
       "currency": "USD",
       "change_pct": 7.11,
-      "volume": 6150046,
+      "volume": 6151200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1253,7 +1253,7 @@
       "price": 33.88,
       "currency": "USD",
       "change_pct": 8.55,
-      "volume": 1047803,
+      "volume": 1055800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1265,7 +1265,7 @@
       "price": 291.81,
       "currency": "USD",
       "change_pct": -1.83,
-      "volume": 901898,
+      "volume": 1203700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1277,7 +1277,7 @@
       "price": 166.73,
       "currency": "USD",
       "change_pct": 2.71,
-      "volume": 4995569,
+      "volume": 5083300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1301,7 +1301,7 @@
       "price": 1459.8,
       "currency": "USD",
       "change_pct": 3.47,
-      "volume": 1868467,
+      "volume": 1872200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1313,7 +1313,7 @@
       "price": 85.53,
       "currency": "USD",
       "change_pct": -5.95,
-      "volume": 19636331,
+      "volume": 19947300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1325,7 +1325,7 @@
       "price": 28.59,
       "currency": "USD",
       "change_pct": 3.59,
-      "volume": 9207012,
+      "volume": 9229700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1337,7 +1337,7 @@
       "price": 164.66,
       "currency": "USD",
       "change_pct": 5.67,
-      "volume": 1781051,
+      "volume": 1781100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1373,7 +1373,7 @@
       "price": 191.42,
       "currency": "USD",
       "change_pct": -5.23,
-      "volume": 1567920,
+      "volume": 1569700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1385,7 +1385,7 @@
       "price": 406.54,
       "currency": "USD",
       "change_pct": 2.03,
-      "volume": 20456056,
+      "volume": 20492100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1394,11 +1394,11 @@
       "eodhd_symbol": "2ZP.STU",
       "name": "Avio SpA",
       "sector": "Space",
-      "price": 36.02,
+      "price": 36.27,
       "currency": "USD",
-      "change_pct": 3.27,
-      "volume": 0,
-      "date": "2026-04-15",
+      "change_pct": 0.69,
+      "volume": 800,
+      "date": "2026-04-16",
       "source": "EODHD"
     },
     {
@@ -1421,7 +1421,7 @@
       "price": 37.57,
       "currency": "USD",
       "change_pct": -3.67,
-      "volume": 2675794,
+      "volume": 2677000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1445,7 +1445,7 @@
       "price": 179.78,
       "currency": "USD",
       "change_pct": -0.47,
-      "volume": 587004,
+      "volume": 592800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1457,7 +1457,7 @@
       "price": 311.03,
       "currency": "USD",
       "change_pct": 1.33,
-      "volume": 2209689,
+      "volume": 2211300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1469,7 +1469,7 @@
       "price": 23.42,
       "currency": "USD",
       "change_pct": 4.79,
-      "volume": 379665,
+      "volume": 379700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1481,7 +1481,7 @@
       "price": 55.5,
       "currency": "USD",
       "change_pct": 0.96,
-      "volume": 2106092,
+      "volume": 2159600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1493,7 +1493,7 @@
       "price": 160.69,
       "currency": "USD",
       "change_pct": 1.11,
-      "volume": 7192010,
+      "volume": 7221500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1505,7 +1505,7 @@
       "price": 445.69,
       "currency": "USD",
       "change_pct": 4.58,
-      "volume": 678382,
+      "volume": 678500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1517,7 +1517,7 @@
       "price": 167.8,
       "currency": "USD",
       "change_pct": 1.8,
-      "volume": 631750,
+      "volume": 701500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1541,7 +1541,7 @@
       "price": 138,
       "currency": "USD",
       "change_pct": 1.02,
-      "volume": 179402,
+      "volume": 294600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1553,7 +1553,7 @@
       "price": 94.84,
       "currency": "USD",
       "change_pct": 0.95,
-      "volume": 562105,
+      "volume": 578700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1577,7 +1577,7 @@
       "price": 11.55,
       "currency": "USD",
       "change_pct": -1.2,
-      "volume": 476583,
+      "volume": 478900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1586,11 +1586,11 @@
       "coingecko_id": "modulr",
       "name": "Modulr",
       "sector": "Token",
-      "price": 2.48,
+      "price": 2.58,
       "currency": "USD",
-      "change_pct": 8.86,
+      "change_pct": -4.06,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -1601,7 +1601,7 @@
       "price": 146.35,
       "currency": "USD",
       "change_pct": 4.26,
-      "volume": 3829532,
+      "volume": 3829700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1613,7 +1613,7 @@
       "price": 146.06,
       "currency": "USD",
       "change_pct": 7.46,
-      "volume": 2440250,
+      "volume": 2476800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1649,7 +1649,7 @@
       "price": 43.72,
       "currency": "USD",
       "change_pct": -1.02,
-      "volume": 7701751,
+      "volume": 7748500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1661,7 +1661,7 @@
       "price": 137.21,
       "currency": "USD",
       "change_pct": 7.46,
-      "volume": 1607607,
+      "volume": 1608400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1682,11 +1682,11 @@
       "coingecko_id": "geodnet",
       "name": "Geodnet",
       "sector": "Token",
-      "price": 0.131393,
+      "price": 0.1274,
       "currency": "USD",
-      "change_pct": -1.62,
+      "change_pct": -1.03,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -1697,7 +1697,7 @@
       "price": 19.17,
       "currency": "USD",
       "change_pct": 2.79,
-      "volume": 699107,
+      "volume": 699100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1709,7 +1709,7 @@
       "price": 95.25,
       "currency": "USD",
       "change_pct": 2.68,
-      "volume": 1147545,
+      "volume": 1147605,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1721,7 +1721,7 @@
       "price": 20.12,
       "currency": "SEK",
       "change_pct": 10.37,
-      "volume": 1206726,
+      "volume": 1211692,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1733,7 +1733,7 @@
       "price": 80.02,
       "currency": "USD",
       "change_pct": -0.01,
-      "volume": 1986784,
+      "volume": 1989000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1745,7 +1745,7 @@
       "price": 291.57,
       "currency": "USD",
       "change_pct": 2.43,
-      "volume": 558857,
+      "volume": 559000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1757,7 +1757,7 @@
       "price": 102.55,
       "currency": "SEK",
       "change_pct": 3.36,
-      "volume": 4250148,
+      "volume": 4434650,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1781,7 +1781,7 @@
       "price": 23.25,
       "currency": "USD",
       "change_pct": -5.26,
-      "volume": 3173962,
+      "volume": 3178100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1793,7 +1793,7 @@
       "price": 88.76,
       "currency": "USD",
       "change_pct": 6.95,
-      "volume": 1735766,
+      "volume": 1735800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1841,7 +1841,7 @@
       "price": 3.38,
       "currency": "USD",
       "change_pct": 2.74,
-      "volume": 3620990,
+      "volume": 3679800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1865,7 +1865,7 @@
       "price": 68.5,
       "currency": "USD",
       "change_pct": 0.0,
-      "volume": 117635848,
+      "volume": 118552900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1877,7 +1877,7 @@
       "price": 125.02,
       "currency": "USD",
       "change_pct": 3.57,
-      "volume": 458811,
+      "volume": 467200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1889,7 +1889,7 @@
       "price": 41.85,
       "currency": "USD",
       "change_pct": -3.59,
-      "volume": 3864312,
+      "volume": 3872300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1901,7 +1901,7 @@
       "price": 469.21,
       "currency": "USD",
       "change_pct": 2.43,
-      "volume": 2696965,
+      "volume": 2698100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1913,7 +1913,7 @@
       "price": 132.23,
       "currency": "USD",
       "change_pct": 2.84,
-      "volume": 390082,
+      "volume": 390278,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1961,7 +1961,7 @@
       "price": 31.82,
       "currency": "EUR",
       "change_pct": 4.46,
-      "volume": 272304,
+      "volume": 275672,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1973,7 +1973,7 @@
       "price": 10.38,
       "currency": "USD",
       "change_pct": 2.87,
-      "volume": 1809691,
+      "volume": 1809900,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -1997,7 +1997,7 @@
       "price": 1791.4399,
       "currency": "USD",
       "change_pct": 3.26,
-      "volume": 717500,
+      "volume": 724800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2009,7 +2009,7 @@
       "price": 81.88,
       "currency": "USD",
       "change_pct": 2.79,
-      "volume": 725540,
+      "volume": 736100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2021,7 +2021,7 @@
       "price": 83.58,
       "currency": "USD",
       "change_pct": -4.93,
-      "volume": 2132907,
+      "volume": 3962700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2045,7 +2045,7 @@
       "price": 70.43,
       "currency": "USD",
       "change_pct": 1.37,
-      "volume": 1080377,
+      "volume": 1081300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2057,7 +2057,7 @@
       "price": 261.4,
       "currency": "USD",
       "change_pct": 3.53,
-      "volume": 343340,
+      "volume": 350500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2069,7 +2069,7 @@
       "price": 350.35,
       "currency": "USD",
       "change_pct": -0.87,
-      "volume": 1267222,
+      "volume": 1267529,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2081,7 +2081,7 @@
       "price": 492.23,
       "currency": "USD",
       "change_pct": -1.4,
-      "volume": 3005805,
+      "volume": 3006500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2093,7 +2093,7 @@
       "price": 592.19,
       "currency": "USD",
       "change_pct": -2.52,
-      "volume": 1405534,
+      "volume": 1697700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2105,7 +2105,7 @@
       "price": 267.6,
       "currency": "USD",
       "change_pct": 2.54,
-      "volume": 8439855,
+      "volume": 8457100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2117,7 +2117,7 @@
       "price": 117.06,
       "currency": "USD",
       "change_pct": 4.63,
-      "volume": 2365205,
+      "volume": 2379100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2129,7 +2129,7 @@
       "price": 27.58,
       "currency": "USD",
       "change_pct": 1.1,
-      "volume": 14442498,
+      "volume": 14571600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2153,7 +2153,7 @@
       "price": 7.87,
       "currency": "USD",
       "change_pct": 0.64,
-      "volume": 5831025,
+      "volume": 5834600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2165,7 +2165,7 @@
       "price": 78.76,
       "currency": "USD",
       "change_pct": 2.46,
-      "volume": 10893479,
+      "volume": 10894700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2201,7 +2201,7 @@
       "price": 278.59,
       "currency": "USD",
       "change_pct": 3.22,
-      "volume": 936454,
+      "volume": 947800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2213,7 +2213,7 @@
       "price": 7.5,
       "currency": "USD",
       "change_pct": -1.7,
-      "volume": 3685163,
+      "volume": 3728500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2225,7 +2225,7 @@
       "price": 322.75,
       "currency": "USD",
       "change_pct": 2.8,
-      "volume": 328309,
+      "volume": 328500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2237,7 +2237,7 @@
       "price": 322.75,
       "currency": "USD",
       "change_pct": 2.8,
-      "volume": 328309,
+      "volume": 328500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2249,7 +2249,7 @@
       "price": 60.99,
       "currency": "USD",
       "change_pct": -2.1,
-      "volume": 5843567,
+      "volume": 6540000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2261,7 +2261,7 @@
       "price": 1468.35,
       "currency": "USD",
       "change_pct": 4.67,
-      "volume": 635378,
+      "volume": 635600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2285,7 +2285,7 @@
       "price": 139.69,
       "currency": "USD",
       "change_pct": 4.74,
-      "volume": 25877991,
+      "volume": 26307300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2297,7 +2297,7 @@
       "price": 181.95,
       "currency": "USD",
       "change_pct": 9.25,
-      "volume": 273047,
+      "volume": 273400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2309,7 +2309,7 @@
       "price": 276.97,
       "currency": "USD",
       "change_pct": 5.95,
-      "volume": 1020344,
+      "volume": 1046100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2321,7 +2321,7 @@
       "price": 455.07,
       "currency": "USD",
       "change_pct": -0.47,
-      "volume": 33217033,
+      "volume": 33300700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2333,7 +2333,7 @@
       "price": 26.27,
       "currency": "USD",
       "change_pct": 12.51,
-      "volume": 4157233,
+      "volume": 4184800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2345,7 +2345,7 @@
       "price": 281.89,
       "currency": "USD",
       "change_pct": 1.88,
-      "volume": 329281,
+      "volume": 386600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2357,7 +2357,7 @@
       "price": 665.26,
       "currency": "USD",
       "change_pct": -1.12,
-      "volume": 744543,
+      "volume": 744812,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2369,7 +2369,7 @@
       "price": 128.85,
       "currency": "USD",
       "change_pct": 2.34,
-      "volume": 325906,
+      "volume": 334200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2381,7 +2381,7 @@
       "price": 201.68,
       "currency": "USD",
       "change_pct": 1.68,
-      "volume": 153662565,
+      "volume": 160324416,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2393,7 +2393,7 @@
       "price": 82.36,
       "currency": "USD",
       "change_pct": 3.26,
-      "volume": 54146,
+      "volume": 54200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2405,7 +2405,7 @@
       "price": 528.76,
       "currency": "USD",
       "change_pct": 2.83,
-      "volume": 235482,
+      "volume": 238300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2417,7 +2417,7 @@
       "price": 12.32,
       "currency": "USD",
       "change_pct": -0.4,
-      "volume": 36534710,
+      "volume": 36610000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2429,7 +2429,7 @@
       "price": 216.03,
       "currency": "USD",
       "change_pct": 1.08,
-      "volume": 4286670,
+      "volume": 4287800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2441,7 +2441,7 @@
       "price": 83.01,
       "currency": "USD",
       "change_pct": 3.85,
-      "volume": 15464303,
+      "volume": 15736700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2450,11 +2450,11 @@
       "coingecko_id": "onocoy-token",
       "name": "Onocoy Token",
       "sector": "Token",
-      "price": 0.02455474,
+      "price": 0.02405782,
       "currency": "USD",
-      "change_pct": 1.17,
+      "change_pct": -1.87,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -2465,7 +2465,7 @@
       "price": 290.76,
       "currency": "USD",
       "change_pct": 8.84,
-      "volume": 1231101,
+      "volume": 1231600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2477,7 +2477,7 @@
       "price": 24.26,
       "currency": "USD",
       "change_pct": 0.37,
-      "volume": 1580847,
+      "volume": 1628400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2486,11 +2486,11 @@
       "coingecko_id": "ovr",
       "name": "Ovr",
       "sector": "Token",
-      "price": 0.04417516,
+      "price": 0.04140151,
       "currency": "USD",
-      "change_pct": 1.48,
+      "change_pct": -6.45,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -2501,7 +2501,7 @@
       "price": 62.8,
       "currency": "SEK",
       "change_pct": 5.9,
-      "volume": 664787,
+      "volume": 666030,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2510,11 +2510,11 @@
       "coingecko_id": "peaq-2",
       "name": "peaq",
       "sector": "Token",
-      "price": 0.018069,
+      "price": 0.01526163,
       "currency": "USD",
-      "change_pct": 15.62,
+      "change_pct": -10.97,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -2525,7 +2525,7 @@
       "price": 112.28,
       "currency": "USD",
       "change_pct": 1.67,
-      "volume": 387900,
+      "volume": 391200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2537,7 +2537,7 @@
       "price": 38.48,
       "currency": "USD",
       "change_pct": -3.53,
-      "volume": 11676106,
+      "volume": 11713700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2549,7 +2549,7 @@
       "price": 48.38,
       "currency": "USD",
       "change_pct": 5.54,
-      "volume": 1118486,
+      "volume": 1133500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2561,7 +2561,7 @@
       "price": 58.65,
       "currency": "USD",
       "change_pct": 4.64,
-      "volume": 764736,
+      "volume": 777500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2573,7 +2573,7 @@
       "price": 25.14,
       "currency": "USD",
       "change_pct": 2.53,
-      "volume": 745213,
+      "volume": 755600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2585,7 +2585,7 @@
       "price": 136.2,
       "currency": "USD",
       "change_pct": 1.29,
-      "volume": 9581736,
+      "volume": 9587400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2597,7 +2597,7 @@
       "price": 81.9,
       "currency": "USD",
       "change_pct": 0.22,
-      "volume": 1085840,
+      "volume": 1085800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2609,7 +2609,7 @@
       "price": 10.34,
       "currency": "USD",
       "change_pct": -7.84,
-      "volume": 22873439,
+      "volume": 24833200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2621,7 +2621,7 @@
       "price": 84.8,
       "currency": "USD",
       "change_pct": 2.25,
-      "volume": 25931674,
+      "volume": 25986800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2633,7 +2633,7 @@
       "price": 126.93,
       "currency": "USD",
       "change_pct": 5.75,
-      "volume": 2107024,
+      "volume": 2107700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2642,11 +2642,11 @@
       "coingecko_id": "robo-token-2",
       "name": "Fabric Protocol",
       "sector": "Token",
-      "price": 0.02285592,
+      "price": 0.01935852,
       "currency": "USD",
-      "change_pct": 7.12,
+      "change_pct": -14.74,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -2657,7 +2657,7 @@
       "price": 415.73,
       "currency": "USD",
       "change_pct": 3.21,
-      "volume": 649953,
+      "volume": 865300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2681,7 +2681,7 @@
       "price": 2.41,
       "currency": "USD",
       "change_pct": 0.84,
-      "volume": 11390619,
+      "volume": 11413500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2693,7 +2693,7 @@
       "price": 205.4,
       "currency": "USD",
       "change_pct": 4.76,
-      "volume": 889483,
+      "volume": 1062300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2717,7 +2717,7 @@
       "price": 6.93,
       "currency": "USD",
       "change_pct": -7.85,
-      "volume": 8746890,
+      "volume": 8789500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2729,7 +2729,7 @@
       "price": 133.21,
       "currency": "USD",
       "change_pct": 0.54,
-      "volume": 5813406,
+      "volume": 5814700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2753,7 +2753,7 @@
       "price": 9.57,
       "currency": "USD",
       "change_pct": 1.27,
-      "volume": 3914522,
+      "volume": 3924000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2801,7 +2801,7 @@
       "price": 5.35,
       "currency": "USD",
       "change_pct": -10.08,
-      "volume": 24663955,
+      "volume": 24934400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2825,7 +2825,7 @@
       "price": 503.63,
       "currency": "USD",
       "change_pct": 7.03,
-      "volume": 441975,
+      "volume": 442100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2837,7 +2837,7 @@
       "price": 32.89,
       "currency": "USD",
       "change_pct": 1.11,
-      "volume": 704839,
+      "volume": 705062,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2849,7 +2849,7 @@
       "price": 212.89,
       "currency": "USD",
       "change_pct": 0.29,
-      "volume": 244477,
+      "volume": 275700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2861,7 +2861,7 @@
       "price": 107.71,
       "currency": "USD",
       "change_pct": 5.14,
-      "volume": 3569843,
+      "volume": 3571000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2873,7 +2873,7 @@
       "price": 449.58,
       "currency": "USD",
       "change_pct": 1.91,
-      "volume": 1717459,
+      "volume": 1718200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2897,7 +2897,7 @@
       "price": 2.93,
       "currency": "USD",
       "change_pct": -4.25,
-      "volume": 8872116,
+      "volume": 8880800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2909,7 +2909,7 @@
       "price": 19.54,
       "currency": "USD",
       "change_pct": -8.31,
-      "volume": 2358277,
+      "volume": 2468400,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2921,7 +2921,7 @@
       "price": 88.8,
       "currency": "USD",
       "change_pct": -6.83,
-      "volume": 2127489,
+      "volume": 2127700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2933,7 +2933,7 @@
       "price": 44.22,
       "currency": "USD",
       "change_pct": 6.37,
-      "volume": 19643228,
+      "volume": 19648100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2969,7 +2969,7 @@
       "price": 58.99,
       "currency": "USD",
       "change_pct": 0.49,
-      "volume": 3189064,
+      "volume": 3256600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2981,7 +2981,7 @@
       "price": 63.17,
       "currency": "USD",
       "change_pct": 4.31,
-      "volume": 2368862,
+      "volume": 2371100,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -2993,7 +2993,7 @@
       "price": 80.22,
       "currency": "USD",
       "change_pct": 1.15,
-      "volume": 748498,
+      "volume": 748600,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3005,7 +3005,7 @@
       "price": 138,
       "currency": "CHF",
       "change_pct": -1.29,
-      "volume": 82060,
+      "volume": 81570,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3017,7 +3017,7 @@
       "price": 380.38,
       "currency": "USD",
       "change_pct": 3.95,
-      "volume": 2421242,
+      "volume": 2422200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3029,7 +3029,7 @@
       "price": 51.8,
       "currency": "USD",
       "change_pct": 2.17,
-      "volume": 237471,
+      "volume": 239800,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3041,7 +3041,7 @@
       "price": 226.45,
       "currency": "USD",
       "change_pct": 5.45,
-      "volume": 2247891,
+      "volume": 2251000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3053,7 +3053,7 @@
       "price": 370.5,
       "currency": "USD",
       "change_pct": 1.97,
-      "volume": 16889382,
+      "volume": 18389700,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3065,7 +3065,7 @@
       "price": 229.82,
       "currency": "USD",
       "change_pct": 3.01,
-      "volume": 7081093,
+      "volume": 7084000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3077,7 +3077,7 @@
       "price": 11.66,
       "currency": "USD",
       "change_pct": 9.79,
-      "volume": 18839071,
+      "volume": 20916500,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3086,11 +3086,11 @@
       "coingecko_id": "virtual-protocol",
       "name": "Virtuals Protocol",
       "sector": "Token",
-      "price": 0.756041,
+      "price": 0.693251,
       "currency": "USD",
-      "change_pct": 2.82,
+      "change_pct": -8.62,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -3101,7 +3101,7 @@
       "price": 31.31,
       "currency": "USD",
       "change_pct": -3.78,
-      "volume": 1323896,
+      "volume": 1581300,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3113,7 +3113,7 @@
       "price": 62.85,
       "currency": "USD",
       "change_pct": 2.65,
-      "volume": 1825401,
+      "volume": 1849000,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3149,7 +3149,7 @@
       "price": 25.56,
       "currency": "USD",
       "change_pct": -3.69,
-      "volume": 2006654,
+      "volume": 2007200,
       "date": "2026-04-17",
       "source": "EODHD"
     },
@@ -3158,11 +3158,11 @@
       "coingecko_id": "robonomics-network",
       "name": "Robonomics Network",
       "sector": "Token",
-      "price": 0.04760636,
+      "price": 0.04670475,
       "currency": "USD",
-      "change_pct": 0.89,
+      "change_pct": -0.45,
       "volume": null,
-      "date": "2026-04-17",
+      "date": "2026-04-19",
       "source": "CoinGecko"
     },
     {
@@ -3173,7 +3173,7 @@
       "price": 234.43,
       "currency": "USD",
       "change_pct": 0.6,
-      "volume": 1069833,
+      "volume": 1069900,
       "date": "2026-04-17",
       "source": "EODHD"
     }
