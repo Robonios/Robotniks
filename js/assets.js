@@ -213,6 +213,15 @@ function sortVal(e,key){
       assetsData.forEach(function(e){var s=SMAP[e.sector]||'?';sc[s]=(sc[s]||0)+1;});
     }
     document.querySelectorAll('#asset-tabs .market-tab').forEach(function(t){var s=t.dataset.sector;t.textContent=s==='all'?'All ('+total+')':(SLBL[s]||s)+' ('+(sc[s]||0)+')';});
+
+    // Honour ?q=TICKER deep-links from the top-bar search. Pre-fills the
+    // in-page asset search box so the table filters on load.
+    try {
+      var qp = new URLSearchParams(location.search).get('q');
+      var searchEl = document.getElementById('asset-search');
+      if (qp && searchEl) { searchEl.value = qp; }
+    } catch (err) {}
+
     renderAssetsTable();
     // Load enrichment data for Intelligence tab
     fetch('data/markets/enrichment_data.json?v='+Date.now())

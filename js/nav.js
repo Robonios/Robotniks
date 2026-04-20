@@ -99,6 +99,233 @@
   `;
   modalDiv.addEventListener('click', function(e) { if (e.target === modalDiv) modalDiv.style.display = 'none'; });
   document.body.appendChild(modalDiv);
+
+  // ─────────────────────────────────────────────────────────────────
+  // Top-bar search
+  // ─────────────────────────────────────────────────────────────────
+  // Client-side substring match across four existing datasets. The
+  // Messari-style command palette (cmd+K, LLM query routing, etc.)
+  // is the separate Q2 "Intelligence Queries" project — intentionally
+  // out of scope here. Keep this stub: load JSON on first keystroke,
+  // cache in memory, rank results per category (Research → Assets →
+  // News → Funding), cap at 10 total.
+  var searchInput = document.querySelector('.top-search');
+  var searchHost = document.querySelector('.top-bar-left');
+  if (searchInput && searchHost) {
+    searchInput.setAttribute('autocomplete', 'off');
+    searchInput.setAttribute('placeholder', 'Search assets, news, research, funding...');
+    searchHost.style.position = 'relative';
+
+    var dropdown = document.createElement('div');
+    dropdown.className = 'top-search-dropdown';
+    dropdown.style.display = 'none';
+    searchHost.appendChild(dropdown);
+
+    // Hardcoded for now — the only published research is the 1Q26 report.
+    var RESEARCH = [{
+      title: '1Q26 State of the Frontier Stack',
+      desc: 'Inaugural quarterly report — semiconductors, robotics, space, critical materials',
+      tags: ['1q26', 'report', 'quarterly', 'frontier stack', 'state of the frontier', 'nvidia', 'waymo', 'rare earth', 'rare earths'],
+      url: 'report-1Q26.html',
+    }];
+
+    var _datasets = null;
+    function loadDatasets() {
+      if (_datasets) return Promise.resolve(_datasets);
+      return Promise.all([
+        fetch('data/markets/robotnik_public_markets.json').then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}),
+        fetch('data/news.json').then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}),
+        fetch('data/funding/rounds.json').then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}),
+      ]).then(function(out){
+        _datasets = { pm: out[0], news: out[1], rounds: out[2] };
+        return _datasets;
+      });
+    }
+
+    function escHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+      });
+    }
+
+    function searchAll(q, ds) {
+      var ql = q.toLowerCase();
+      var out = [];
+
+      // 1. Research (hardcoded)
+      RESEARCH.forEach(function(r){
+        var hay = (r.title + ' ' + r.desc + ' ' + (r.tags || []).join(' ')).toLowerCase();
+        if (hay.indexOf(ql) !== -1) {
+          out.push({
+            category: 'Research',
+            primary: r.title,
+            secondary: r.desc,
+            url: r.url,
+          });
+        }
+      });
+
+      // 2. Assets
+      if (ds.pm && ds.pm.entities) {
+        var assetMatches = [];
+        var tickers = Object.keys(ds.pm.entities);
+        for (var i = 0; i < tickers.length; i++) {
+          var ticker = tickers[i];
+          var ent = ds.pm.entities[ticker];
+          var tl = String(ticker || '').toLowerCase();
+          var nl = String(ent.name || '').toLowerCase();
+          var sl = String(ent.sector || '').toLowerCase();
+          if (tl.indexOf(ql) !== -1 || nl.indexOf(ql) !== -1 || sl.indexOf(ql) !== -1) {
+            // Rank: exact-ticker > ticker-prefix > name-prefix > substring.
+            var rank = 3;
+            if (tl === ql) rank = 0;
+            else if (tl.indexOf(ql) === 0) rank = 1;
+            else if (nl.indexOf(ql) === 0) rank = 2;
+            assetMatches.push({
+              category: 'Assets',
+              primary: ent.name || ticker,
+              secondary: ticker + (ent.sector ? (' · ' + ent.sector) : ''),
+              url: 'assets.html?q=' + encodeURIComponent(ticker),
+              _rank: rank,
+            });
+          }
+        }
+        assetMatches.sort(function(a,b){ return a._rank - b._rank; });
+        out.push.apply(out, assetMatches);
+      }
+
+      // 3. News
+      if (ds.news && Array.isArray(ds.news.items)) {
+        for (var j = 0; j < ds.news.items.length; j++) {
+          var item = ds.news.items[j];
+          var tl2 = String(item.title || '').toLowerCase();
+          var me = String(item.mentioned_entities || '').toLowerCase();
+          var mt = String(item.mentioned_tickers || '').toLowerCase();
+          if (tl2.indexOf(ql) !== -1 || me.indexOf(ql) !== -1 || mt.indexOf(ql) !== -1) {
+            var sec = [item.source, item.date].filter(Boolean).join(' · ');
+            out.push({
+              category: 'News',
+              primary: item.title,
+              secondary: sec,
+              url: item.url || 'news.html',
+              external: !!item.url,
+            });
+          }
+        }
+      }
+
+      // 4. Funding
+      if (ds.rounds && Array.isArray(ds.rounds.rounds)) {
+        for (var k = 0; k < ds.rounds.rounds.length; k++) {
+          var rnd = ds.rounds.rounds[k];
+          var co = String(rnd.company || '').toLowerCase();
+          var lead = String(rnd.lead_investors || '').toLowerCase();
+          var rsec = String(rnd.sector || '').toLowerCase();
+          if (co.indexOf(ql) !== -1 || lead.indexOf(ql) !== -1 || rsec.indexOf(ql) !== -1) {
+            var amt = rnd.amount_m ? ('$' + rnd.amount_m + 'm') : '';
+            var secStr = [amt, rnd.round, rnd.date].filter(Boolean).join(' · ');
+            out.push({
+              category: 'Funding',
+              primary: rnd.company,
+              secondary: secStr,
+              url: 'funding.html',
+            });
+          }
+        }
+      }
+
+      return out.slice(0, 10);
+    }
+
+    var _results = [];
+    var _activeIdx = -1;
+
+    function updateActive() {
+      var nodes = dropdown.querySelectorAll('.search-result');
+      for (var i = 0; i < nodes.length; i++) nodes[i].classList.toggle('is-active', i === _activeIdx);
+      if (_activeIdx >= 0 && nodes[_activeIdx]) nodes[_activeIdx].scrollIntoView({ block: 'nearest' });
+    }
+
+    function renderEmptyState() {
+      dropdown.innerHTML = '<div class="search-empty">Try: NVIDIA, rare earths, Waymo, 1Q26 report</div>';
+      dropdown.style.display = 'block';
+    }
+
+    function renderResults(results) {
+      _results = results;
+      _activeIdx = -1;
+      if (!results.length) {
+        dropdown.innerHTML = '<div class="search-empty">No matches</div>';
+        dropdown.style.display = 'block';
+        return;
+      }
+      var html = '';
+      var lastCat = '';
+      for (var i = 0; i < results.length; i++) {
+        var r = results[i];
+        if (r.category !== lastCat) {
+          html += '<div class="search-group-label">' + escHtml(r.category) + '</div>';
+          lastCat = r.category;
+        }
+        var tgt = r.external ? ' target="_blank" rel="noopener"' : '';
+        html += '<a class="search-result" data-idx="' + i + '" href="' + escHtml(r.url) + '"' + tgt + '>' +
+                '<div class="search-result-primary">' + escHtml(r.primary) + '</div>' +
+                '<div class="search-result-secondary">' + escHtml(r.secondary) + '</div>' +
+                '</a>';
+      }
+      dropdown.innerHTML = html;
+      dropdown.style.display = 'block';
+    }
+
+    function closeDropdown() {
+      dropdown.style.display = 'none';
+      _activeIdx = -1;
+    }
+
+    searchInput.addEventListener('input', function(){
+      var q = searchInput.value.trim();
+      if (!q) { renderEmptyState(); return; }
+      loadDatasets().then(function(ds){
+        // Guard against stale responses if user cleared the field while loading
+        if (searchInput.value.trim() !== q) return;
+        renderResults(searchAll(q, ds));
+      });
+    });
+
+    searchInput.addEventListener('focus', function(){
+      if (!searchInput.value.trim()) renderEmptyState();
+      else if (_results.length) renderResults(_results);
+    });
+
+    searchInput.addEventListener('keydown', function(e){
+      var nodes = dropdown.querySelectorAll('.search-result');
+      var n = nodes.length;
+      if (e.key === 'ArrowDown') {
+        if (!n) return;
+        e.preventDefault();
+        _activeIdx = (_activeIdx + 1) % n;
+        updateActive();
+      } else if (e.key === 'ArrowUp') {
+        if (!n) return;
+        e.preventDefault();
+        _activeIdx = (_activeIdx - 1 + n) % n;
+        updateActive();
+      } else if (e.key === 'Enter') {
+        if (_activeIdx >= 0 && nodes[_activeIdx]) {
+          e.preventDefault();
+          nodes[_activeIdx].click();
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        closeDropdown();
+        searchInput.blur();
+      }
+    });
+
+    document.addEventListener('click', function(e){
+      if (!searchHost.contains(e.target)) closeDropdown();
+    });
+  }
 })();
 
 // Global function to open early access modal

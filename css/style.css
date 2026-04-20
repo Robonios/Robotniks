@@ -227,6 +227,68 @@
   .top-search::placeholder { color: var(--text-muted); }
   .top-search:focus { border-color: var(--yellow); }
 
+  /* ===== TOP-BAR SEARCH DROPDOWN =====
+     Injected by js/nav.js directly inside .top-bar-left. Shows matches
+     from public_markets.json, news.json, rounds.json, and the hardcoded
+     1Q26 report entry. Positioned absolutely below the search input. */
+  .top-search-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: #0E1117;
+    border: 1px solid #252A36;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    z-index: 150;
+    font-family: var(--font);
+  }
+  .top-search-dropdown .search-group-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    padding: 0.6rem 0.75rem 0.3rem;
+  }
+  .top-search-dropdown .search-result {
+    display: block;
+    padding: 0.45rem 0.75rem;
+    text-decoration: none;
+    color: var(--text);
+    border-left: 2px solid transparent;
+    transition: background 0.1s, border-color 0.1s;
+  }
+  .top-search-dropdown .search-result:hover,
+  .top-search-dropdown .search-result.is-active {
+    background: rgba(245,217,33,0.06);
+    border-left-color: var(--yellow);
+  }
+  .top-search-dropdown .search-result-primary {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .top-search-dropdown .search-result-secondary {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .top-search-dropdown .search-empty {
+    padding: 0.75rem;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
   .top-bar-right { display: flex; align-items: center; gap: 1rem; }
 
   /* ===== MAIN CONTENT ===== */
