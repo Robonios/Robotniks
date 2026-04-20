@@ -121,6 +121,8 @@ def main():
                   if isinstance(v, dict) and v.get("status") != "excluded"}
     subsector_map = {k: v.get("subsector") for k, v in reg.items()
                      if isinstance(v, dict) and v.get("status") != "excluded"}
+    value_chain_map = {k: v.get("value_chain") for k, v in reg.items()
+                       if isinstance(v, dict) and v.get("status") != "excluded"}
 
     # USD market cap lookup (already converted by fetch_market_caps.py)
     mcap_usd = {m["ticker"]: m["market_cap_usd"] for m in mcap_json.get("market_caps", [])
@@ -263,12 +265,14 @@ def main():
         # Use USD market cap from market_caps.json (already currency-converted)
         usd_mcap = mcap_usd.get(ticker)
         subsector = subsector_map.get(ticker) or None
+        value_chain = value_chain_map.get(ticker) or None
 
         entity = {
             "ticker": ticker,
             "name": name,
             "sector": sector,
             "subsector": subsector,
+            "value_chain": value_chain,
             "currency": currency,
             # Current price
             "price": current_close,

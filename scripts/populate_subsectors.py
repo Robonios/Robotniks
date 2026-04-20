@@ -207,6 +207,13 @@ MAPPING = {
 
     # Space
     "189300 KS": "Ground Systems & Antennas",   # Intellian — maritime antennas
+
+    # ───── Third-sweep: visible-on-assets entities still unassigned ─────
+    "186A JP": "In-Orbit Services",             # Astroscale — debris removal services
+    "464A JP": "Earth Observation",             # QPS Holdings — SAR EO constellation
+    "290A JP": "Earth Observation",             # Synspective — SAR EO constellation
+    "MRSN FP": "Process Chemicals",             # Mersen — electrical / graphite specialty
+    "4186 JP": "Process Chemicals",             # Tokyo Ohka Kogyo — photoresists
 }
 
 

@@ -141,15 +141,21 @@ function cellHtml(e,key){
     case'vol30d':return fv(e.volume_avg_30d);
     case'ath':return fp(e.ath,e.currency);
     case'fromAth':return fpc(e.pct_from_ath);
-    // Intelligence columns. Every field is sourced from enrichment_data.json
-    // — these are qualitative attributions (tier position, bottleneck risk,
-    // customers, suppliers, notes). Each field falls back to em-dash
-    // individually so a partial enrichment entry still renders cleanly
-    // without throwing on undefined substring calls.
+    // Intelligence columns.
+    //   - vctier  (Value Chain) is a structured taxonomy field sourced
+    //             from entity_registry.json via public_markets.json
+    //             (e.value_chain). Eight-tier supply-chain position:
+    //             Upstream Materials → IP & Design → Capital Equipment
+    //             → Fabrication & Manufacturing → Components &
+    //             Subsystems → System Integration → Deployment &
+    //             Operation → Software & Services.
+    //   - bnrisk / keycust / keysupp / rnotes are qualitative
+    //             attributions sourced from enrichment_data.json and
+    //             em-dash individually when missing.
     case'vctier':case'bnrisk':case'keycust':case'keysupp':case'rnotes':
+      if(key==='vctier'){var vc=e.value_chain;return vc?'<span class="dim">'+vc+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
       var enr=_enrichmentData?_enrichmentData[e.ticker]:null;
       if(!enr)return'<span class="dim" style="opacity:0.4">\u2014</span>';
-      if(key==='vctier'){var vc=enr.value_chain_tier;return vc?'<span class="dim">'+vc+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
       if(key==='bnrisk'){var rc=enr.bottleneck_risk;if(!rc)return'<span class="dim" style="opacity:0.4">\u2014</span>';var cls=rc==='CRITICAL'||rc==='HIGH'?'v-red':rc==='MEDIUM'?'v-green':'dim';return'<span class="'+cls+'">'+rc+'</span>';}
       if(key==='keycust'){var kc=enr.key_customers;return kc?'<span class="dim" style="font-size:8px">'+kc.substring(0,60)+(kc.length>60?'...':'')+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
       if(key==='keysupp'){var ks=enr.key_suppliers;return ks?'<span class="dim" style="font-size:8px">'+ks.substring(0,60)+(ks.length>60?'...':'')+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}

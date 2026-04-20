@@ -1,924 +1,242 @@
 {
   "NVDA": {
-    "value_chain_tier": "Fabless Design",
     "bottleneck_risk": "HIGH",
     "key_customers": "Data centres, robotics (Jetson), autonomous vehicles",
     "key_suppliers": "TSM (foundry), Unimicron/Ibiden (substrates)",
     "robotnik_notes": "The gravitational centre of the frontier stack. NVIDIA's compute silicon enables robotics inference, satellite processing, and autonomous systems. CoWoS packaging capacity is the binding constraint."
   },
   "TSM": {
-    "value_chain_tier": "Manufacturing",
     "bottleneck_risk": "HIGH",
     "key_customers": "NVDA, AVGO, AMD, QCOM, MRVL",
     "key_suppliers": "ASML (EUV), Shin-Etsu/SUMCO (wafers), Linde (gases)",
     "robotnik_notes": "Single most critical node in the frontier stack. Manufactures >90% of advanced logic chips. $165B US investment reshapes geographic risk but creates new Materials demand."
   },
   "AVGO": {
-    "value_chain_tier": "Fabless Design",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "Hyperscalers (custom ASICs), enterprise networking",
     "key_suppliers": "TSM (foundry)",
     "robotnik_notes": "Custom ASIC business with 3 major hyperscaler customers diversifies AI compute beyond GPUs. VMware acquisition adds software layer."
   },
   "ASML": {
-    "value_chain_tier": "Capital Equipment",
     "bottleneck_risk": "CRITICAL",
     "key_customers": "TSM, Samsung, Intel",
     "key_suppliers": "Carl Zeiss (optics), VDL (assembly)",
     "robotnik_notes": "Sole supplier of EUV lithography \u2014 the most critical single-source dependency in the entire frontier stack. No alternative exists. Record EUR 13.2B order backlog."
   },
   "MU": {
-    "value_chain_tier": "Manufacturing",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "NVDA (HBM), data centres",
     "key_suppliers": "Equipment vendors (ASML, AMAT, LRCX)",
     "robotnik_notes": "HBM memory capacity gates AI accelerator production. Revenue tripled to $23.9B on HBM demand. HBM4 in development."
   },
   "AMD": {
-    "value_chain_tier": "Fabless Design",
     "bottleneck_risk": "LOW",
     "key_customers": "Data centres, gaming, embedded",
     "key_suppliers": "TSM (foundry)",
     "robotnik_notes": "MI300X validates multi-vendor AI accelerator demand. Data Center segment exceeded $14B, broadening compute supply for robotics."
   },
   "LRCX": {
-    "value_chain_tier": "Capital Equipment",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "TSM, Samsung, Intel, Micron",
     "key_suppliers": "Specialty component vendors",
     "robotnik_notes": "Etch and deposition equipment essential for advanced node manufacturing. Benefits from every fab expansion globally."
   },
   "AMAT": {
-    "value_chain_tier": "Capital Equipment",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "TSM, Samsung, Intel",
     "key_suppliers": "Specialty component vendors",
     "robotnik_notes": "Gate-all-around and advanced packaging equipment driving growth. Essential for next-gen AI chips for robotics applications."
   },
   "INTC": {
-    "value_chain_tier": "Manufacturing",
     "bottleneck_risk": "LOW",
     "key_customers": "PC OEMs, data centres, government",
     "key_suppliers": "ASML (EUV), materials vendors",
     "robotnik_notes": "Foundry pivot critical for US semiconductor sovereignty. 18A customer wins validate CHIPS Act thesis. If IFS succeeds, reduces Taiwan concentration."
   },
   "KLAC": {
-    "value_chain_tier": "Capital Equipment",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "TSM, Samsung, Intel, Micron",
     "key_suppliers": "Optical component vendors",
     "robotnik_notes": "Process control and metrology \u2014 defect inspection critical for sub-3nm yield management. Benefits from increasing process complexity."
   },
   "SIE GR": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "LOW",
     "key_customers": "Manufacturing sector globally",
     "key_suppliers": "Semiconductor vendors, sensor companies",
     "robotnik_notes": "Factory automation backbone. Siemens EDA + industrial automation spans the full stack from chip design to factory floor."
   },
   "ISRG": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "LOW",
     "key_customers": "Hospitals globally",
     "key_suppliers": "Specialty component vendors, semiconductor (vision)",
     "robotnik_notes": "$8.9B revenue, 20M procedures. da Vinci 5 platform. Razor-and-blade model template for robotics commercialisation. 57% recurring revenue."
   },
   "SU FP": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "Data centres, factories, buildings",
     "key_suppliers": "Semiconductor vendors, materials",
     "robotnik_notes": "Factory and data centre power infrastructure. Enables both semiconductor fab operation and robot deployment environments."
   },
   "ABBN SW": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "LOW",
     "key_customers": "Automotive, electronics, logistics",
     "key_suppliers": "Semiconductor vendors, motor/actuator suppliers",
     "robotnik_notes": "Big Four robot manufacturer. NVIDIA Omniverse integration for digital twin robot programming. Key player in industrial automation."
   },
   "2308 TT": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "Robotics OEMs, industrial automation",
     "key_suppliers": "Semiconductor vendors, materials",
     "robotnik_notes": "Servo drives and power electronics supplier. Critical motion control layer between semiconductor chips and robot actuators."
   },
   "6861 JP": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "Factories globally",
     "key_suppliers": "Semiconductor sensors, optics",
     "robotnik_notes": "Factory automation bellwether with 50%+ margins. Machine vision sensors are the eyes of every automated production line."
   },
   "EMR": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "LOW",
     "key_customers": "Process industries, data centres",
     "key_suppliers": "Semiconductor vendors",
     "robotnik_notes": "Process automation for materials sector. Emerson systems control the chemical plants that produce semiconductor materials."
   },
   "6503 JP": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "LOW",
     "key_customers": "Automotive, semiconductor fabs",
     "key_suppliers": "Motor suppliers, rare earth magnets",
     "robotnik_notes": "Cross-sector: robots + power semiconductors + satellite components. One of few entities spanning all four Robotnik sectors."
   },
   "ROK": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "LOW",
     "key_customers": "North American manufacturers",
     "key_suppliers": "Semiconductor vendors",
     "robotnik_notes": "North American factory automation standard. Connects semiconductor fab equipment with robotic manufacturing systems."
   },
   "6954 JP": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "LOW",
     "key_customers": "Automotive, electronics manufacturers",
     "key_suppliers": "Servo motor components, rare earth magnets",
     "robotnik_notes": "World's largest robot manufacturer (1M+ deployed). $90M Michigan expansion aligns with CHIPS Act reshoring. Rare earth magnet dependency."
   },
   "LMT": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "US DoD, NASA, allied nations",
     "key_suppliers": "Semiconductor vendors, specialty materials",
     "robotnik_notes": "Largest absolute space revenue ($13B/yr). Artemis programme prime. Defence primes provide the institutional demand baseline for the space economy."
   },
   "NOC": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "US DoD, NASA, NRO",
     "key_suppliers": "Semiconductor vendors, propulsion",
     "robotnik_notes": "Space Systems at 24.3% of revenue. Solid rocket motors, MEV in-orbit servicing, B-21 programme."
   },
   "LHX": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "US DoD, intelligence community",
     "key_suppliers": "Semiconductor sensors, specialty optics",
     "robotnik_notes": "Satellite sensor payloads and space domain awareness. SAS segment at 31.6%. Segment reorganisation may improve visibility."
   },
   "012450 KS": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "Korean government, commercial satellite operators",
     "key_suppliers": "Propulsion, avionics",
     "robotnik_notes": "Korean space ambition. Bridges robotics (Hanwha Group industrial automation) and space (launch vehicle development)."
   },
   "HEI": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "Defence primes, airlines, space programmes",
     "key_suppliers": "Specialty metals, electronics",
     "robotnik_notes": "Hidden champion \u2014 niche sole-sourced space and defence parts. Programmatically critical: individual programmes depend on HEICO's specific components."
   },
   "RKLB": {
-    "value_chain_tier": "System Integration",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "NASA, DoD, commercial satellite operators",
     "key_suppliers": "Rutherford engine (in-house), composite structures",
     "robotnik_notes": "Purest New Space play. Vertically integrated: Electron launch + Space Systems + Neutron in development. Revenue $436M (+55% YoY). Dual revenue model."
   },
   "SATS": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "LOW",
     "key_customers": "Enterprise broadband, government",
     "key_suppliers": "Satellite manufacturers, launch providers",
     "robotnik_notes": "Legacy GEO operator navigating LEO era. Hughes broadband business transitioning."
   },
   "ASTS": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "HIGH",
     "key_customers": "Mobile operators (AT&T, Vodafone)",
     "key_suppliers": "Semiconductor vendors (most chip-intensive satellite design)",
     "robotnik_notes": "Direct-to-cell satellite connectivity. $1.5B+ in MOU commitments. Pre-revenue but creating a new space infrastructure category. Most semiconductor-intensive satellite design."
   },
   "PL": {
-    "value_chain_tier": "Deployment & Operation",
     "bottleneck_risk": "LOW",
     "key_customers": "Government, agriculture, insurance",
     "key_suppliers": "Launch providers, semiconductor sensors",
     "robotnik_notes": "Largest EO constellation (~200 satellites). Daily global imaging. Semiconductor content per satellite rising with onboard AI processing."
   },
   "KRMN": {
-    "value_chain_tier": "Components & Subsystems",
     "bottleneck_risk": "LOW",
     "key_customers": "Defence primes, space programmes",
     "key_suppliers": "Specialty materials, precision machining",
     "robotnik_notes": "Precision space component consolidator. Roll-up strategy acquiring niche sole-sourced parts suppliers."
   },
   "LIN": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "LOW",
     "key_customers": "Semiconductor fabs (TSM, Intel, Samsung)",
     "key_suppliers": "Air separation plants, chemical feedstocks",
     "robotnik_notes": "World's largest gas company. Ultra-pure neon for EUV lithography is a critical dependency. Electronics segment growing on fab expansion."
   },
   "AI FP": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "LOW",
     "key_customers": "Semiconductor fabs, chemical plants",
     "key_suppliers": "Air separation, European launch propellants",
     "robotnik_notes": "#2 gas company. European launch propellant supply + fab gases. Dual frontier stack exposure."
   },
   "APD": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "LOW",
     "key_customers": "Semiconductor fabs, hydrogen customers",
     "key_suppliers": "Air separation plants",
     "robotnik_notes": "#3 gas company. Electronics gases for fabs + clean hydrogen for space launch propulsion."
   },
   "MRK GR": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "Semiconductor fabs (photoresist)",
     "key_suppliers": "Specialty chemical feedstocks",
     "robotnik_notes": "EUV photoresist chokepoint. Big 3 photoresist supplier. Japanese suppliers dominate but Merck is the European anchor."
   },
   "BAS GR": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "LOW",
     "key_customers": "Semiconductor, automotive, battery",
     "key_suppliers": "Chemical feedstocks globally",
     "robotnik_notes": "Broadest chemical company. Battery materials division + semiconductor chemicals. Entry point to the materials layer."
   },
   "3037 TT": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "HIGH",
     "key_customers": "TSM (CoWoS substrates), NVDA",
     "key_suppliers": "Copper foil, resin, glass fibre",
     "robotnik_notes": "CoWoS substrate bottleneck \u2014 Q1 star (+130.6%). Advanced packaging substrates are the binding constraint on AI chip production. Sole supplier risk."
   },
   "600111 C1": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "CRITICAL",
     "key_customers": "Magnet manufacturers, motor companies",
     "key_suppliers": "Mining operations (Inner Mongolia)",
     "robotnik_notes": "Geopolitical chokepoint. China's largest rare earth producer. Controls NdFeB magnet precursors essential for every servo motor in every robot."
   },
   "SQM": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "Battery manufacturers, EV companies",
     "key_suppliers": "Atacama brine operations",
     "robotnik_notes": "#2 lithium producer. Atacama brine = lowest-cost lithium source. Battery supply chain for robotics, drones, satellite power."
   },
   "6971 JP": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "LOW",
     "key_customers": "Semiconductor packaging, electronics",
     "key_suppliers": "Ceramic raw materials",
     "robotnik_notes": "Advanced ceramics for IC packages, robot joints, and precision components. Dual semiconductor + robotics exposure."
   },
   "ALB": {
-    "value_chain_tier": "Upstream Materials",
     "bottleneck_risk": "MEDIUM",
     "key_customers": "Battery manufacturers, EV companies",
     "key_suppliers": "Lithium brine/spodumene operations",
     "robotnik_notes": "#1 lithium producer. Geographic diversification (Australia, Chile, US). Battery supply chain for frontier stack mobile systems."
-  },
-  "002008 C2": {
-    "value_chain_tier": "System Integration"
-  },
-  "002050": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "002472": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "002747 C2": {
-    "value_chain_tier": "System Integration"
-  },
-  "002979": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "003021": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "010060 KS": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "090360 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "098460 KS": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "108490 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "1590 TT": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "189300 KS": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "2049": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "2121 HK": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "2252 HK": {
-    "value_chain_tier": "System Integration"
-  },
-  "2395 TT": {
-    "value_chain_tier": "System Integration"
-  },
-  "2431 HK": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "2432 HK": {
-    "value_chain_tier": "System Integration"
-  },
-  "2498 HK": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "277810 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "2802 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "300024 C2": {
-    "value_chain_tier": "System Integration"
-  },
-  "300100": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "300124 C2": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "300757 C2": {
-    "value_chain_tier": "System Integration"
-  },
-  "3401 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "3402 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "3407 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "3436 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "388720 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "4005 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4043 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4062 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4063 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4091 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4112 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4188 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "4208 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "454910 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "455900 KS": {
-    "value_chain_tier": "System Integration"
-  },
-  "474170 KS": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "5384 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "5706 JP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "600111": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "601100": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "603009": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "603662": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6104 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6113 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6134 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6141 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6153 TT": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "6258 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6268 JP": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6273 JP": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6324": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6383 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6481 JP": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6488 TT": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "6506 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6594": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6600 HK": {
-    "value_chain_tier": "System Integration"
-  },
-  "6622 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6645 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6680 HK": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "6723": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "6723 JP": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6841 JP": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "6845 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6857 JP": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "688017": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "688165 C1": {
-    "value_chain_tier": "System Integration"
-  },
-  "688169 C1": {
-    "value_chain_tier": "System Integration"
-  },
-  "688297 C1": {
-    "value_chain_tier": "System Integration"
-  },
-  "6902 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "6914 JP": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "6920 JP": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "8035 JP": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "9348 JP": {
-    "value_chain_tier": "System Integration"
-  },
-  "9660 HK": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "9880 HK": {
-    "value_chain_tier": "System Integration"
-  },
-  "ADI": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "AEIS": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "ALAB": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "ALGM": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "AMBA": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "AMG NA": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "AMKR": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "AOSL": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "ARM": {
-    "value_chain_tier": "IP & EDA"
-  },
-  "ARU AU": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "ASX": {
-    "value_chain_tier": "Packaging & Test"
-  },
-  "ATI": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "ATS CN": {
-    "value_chain_tier": "System Integration"
-  },
-  "AUTO NO": {
-    "value_chain_tier": "System Integration"
-  },
-  "AVAV": {
-    "value_chain_tier": "System Integration"
-  },
-  "AVIO IM": {
-    "value_chain_tier": "System Integration"
-  },
-  "BKSY": {
-    "value_chain_tier": "System Integration"
-  },
-  "BSL GR": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "CAMT": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "CDNS": {
-    "value_chain_tier": "IP & EDA"
-  },
-  "CEVA": {
-    "value_chain_tier": "IP & EDA"
-  },
-  "CGNX": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "CRDO": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "CRS": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "CRUS": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "CSTM FP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "DCO": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "DIOD": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "DUE GR": {
-    "value_chain_tier": "System Integration"
-  },
-  "EH": {
-    "value_chain_tier": "System Integration"
-  },
-  "ENTG": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "ETL FP": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "EXA FP": {
-    "value_chain_tier": "System Integration"
-  },
-  "FLY": {
-    "value_chain_tier": "System Integration"
-  },
-  "FORM": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "G1A GR": {
-    "value_chain_tier": "System Integration"
-  },
-  "GILT": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "GMED": {
-    "value_chain_tier": "System Integration"
-  },
-  "GOMX SS": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "GSAT": {
-    "value_chain_tier": "System Integration"
-  },
-  "HEXAB SS": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "HIAB FH": {
-    "value_chain_tier": "System Integration"
-  },
-  "HSAI": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "HXL": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "IFX GR": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "ILU AU": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "IMI LN": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "INDI": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "INRN SW": {
-    "value_chain_tier": "System Integration"
-  },
-  "IPGP": {
-    "value_chain_tier": "System Integration"
-  },
-  "IRDM": {
-    "value_chain_tier": "System Integration"
-  },
-  "JBTM": {
-    "value_chain_tier": "System Integration"
-  },
-  "JEN GR": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "KALMAR FH": {
-    "value_chain_tier": "System Integration"
-  },
-  "KARN SW": {
-    "value_chain_tier": "System Integration"
-  },
-  "KCR FH": {
-    "value_chain_tier": "System Integration"
-  },
-  "KDK": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "KGX GR": {
-    "value_chain_tier": "System Integration"
-  },
-  "KLIC": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "KRN GR": {
-    "value_chain_tier": "System Integration"
-  },
-  "LASR": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "LECO": {
-    "value_chain_tier": "System Integration"
-  },
-  "LSCC": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "LUNR": {
-    "value_chain_tier": "System Integration"
-  },
-  "LYC AU": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "MBLY": {
-    "value_chain_tier": "System Integration"
-  },
-  "MCHP": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "MDA CN": {
-    "value_chain_tier": "System Integration"
-  },
-  "MELE": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "MKSI": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "MNTS": {
-    "value_chain_tier": "System Integration"
-  },
-  "MOG.A": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "MOG/A": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "MP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "MPWR": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "MRVL": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "MTRN": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "MTSI": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "MXL": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "NDSN": {
-    "value_chain_tier": "System Integration"
-  },
-  "NOVT": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "NVEC": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "NVMI": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "NVTS": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "NXPI": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "ON": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "ONTO": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "OUST": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "OVZON SS": {
-    "value_chain_tier": "System Integration"
-  },
-  "PI": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "PLAB": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "POWI": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "PRCT": {
-    "value_chain_tier": "System Integration"
-  },
-  "QCOM": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "QRVO": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "RDW": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "RMBS": {
-    "value_chain_tier": "IP & EDA"
-  },
-  "RPI LN": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "RR": {
-    "value_chain_tier": "System Integration"
-  },
-  "RRX": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "RSW LN": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "SATL": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "SCC IT": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "SERV": {
-    "value_chain_tier": "System Integration"
-  },
-  "SESG FP": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "SGL GR": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "SHA": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "SIDU": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "SITM": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "SKYT": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "SLAB": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "SMTC": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "SNPS": {
-    "value_chain_tier": "IP & EDA"
-  },
-  "SOI FP": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "SPCE": {
-    "value_chain_tier": "System Integration"
-  },
-  "SPIR": {
-    "value_chain_tier": "System Integration"
-  },
-  "STM": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "STMPA": {
-    "value_chain_tier": "Components & Subsystems"
-  },
-  "SWKS": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "SYM": {
-    "value_chain_tier": "System Integration"
-  },
-  "SYNA": {
-    "value_chain_tier": "Fabless Design"
-  },
-  "TECN SW": {
-    "value_chain_tier": "System Integration"
-  },
-  "TER": {
-    "value_chain_tier": "Capital Equipment"
-  },
-  "TSAT": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "TSEM": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "TXN": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "UMC": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "VOYG": {
-    "value_chain_tier": "System Integration"
-  },
-  "VSAT": {
-    "value_chain_tier": "Deployment & Operation"
-  },
-  "WAF GR": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "WCH GR": {
-    "value_chain_tier": "Upstream Materials"
-  },
-  "WOLF": {
-    "value_chain_tier": "Manufacturing"
-  },
-  "ZBRA": {
-    "value_chain_tier": "System Integration"
   }
 }
