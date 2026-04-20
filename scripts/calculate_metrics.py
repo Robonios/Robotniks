@@ -228,9 +228,15 @@ def main():
                 changes["24h"] = None
                 baseline_dates["24h"] = None
 
-        # Sanity check: cap any change >500% as likely data error
-        for k in changes:
-            if changes[k] is not None and abs(changes[k]) > 500:
+        # Sanity check: cap implausible short-period moves as likely data
+        # errors (a 500%+ move in a single day/week is virtually always
+        # a split or bad tick, not a real return). For long periods we
+        # deliberately NEVER cap — NVDA's 5Y is +1216%, AVGO's is +875%,
+        # and those are the numbers we want to surface, not silently null.
+        SHORT_PERIOD_CAP = 500
+        for k in ("24h", "7d", "30d"):
+            v = changes.get(k)
+            if v is not None and abs(v) > SHORT_PERIOD_CAP:
                 changes[k] = None  # Null out suspicious values
 
         # ATH
