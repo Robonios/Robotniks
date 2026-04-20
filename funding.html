@@ -28,17 +28,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=20260420b"><link rel="stylesheet" href="css/typography.css?v=20260420b">
 <style>
-/* Tighter heading on Funding to match the density of the News page */
-.page-header{margin:20px 0 24px 0}
-.fund-toolbar{display:flex;justify-content:flex-end;margin-bottom:1.25rem}
+/* Tighter heading on Funding to match the density of the News page.
+   Bottom margin reduced (24 → 16) to bring the KPI row closer to the
+   subtitle — previously there was too much breathing room, especially
+   once the thin toolbar row is counted. */
+.page-header{margin:20px 0 16px 0}
+.fund-toolbar{display:flex;justify-content:flex-end;margin-bottom:0.75rem}
 .time-toggle{display:flex;gap:0;border:1px solid #252A36;border-radius:4px;overflow:hidden}
 .time-btn{background:#161B22;border:none;color:#8B92A5;font-family:var(--font);font-size:10px;padding:0.35rem 0.75rem;cursor:pointer;transition:all 0.2s}
 .time-btn:hover{color:#e6e8ed}
 .time-btn.active{background:#F5D921;color:#111318;font-weight:700}
-.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1.25rem}
-.metric-card{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:0.75rem 1rem}
-.metric-label{font-size:9px;color:#5A6178;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.3rem}
-.metric-value{font-size:1.2rem;font-weight:700;color:#e6e8ed}
+/* KPI cards shrunk per UX feedback — three cards + gutter occupy ~70%
+   of content width (left-aligned) instead of stretching full-width with
+   too much dead space. Vertical padding reduced by ~33% to match.
+   Mobile breakpoints below relax max-width so cards use the full column
+   when the grid collapses. */
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1rem;max-width:70%}
+.metric-card{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:0.5rem 0.85rem}
+.metric-label{font-size:9px;color:#5A6178;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.2rem}
+.metric-value{font-size:1.1rem;font-weight:700;color:#e6e8ed}
 .metric-sub{font-size:9px;color:#5A6178;margin-top:0.2rem}
 .metric-change{font-size:9px;margin-left:0.3rem}
 .v-green{color:#22c55e}.v-red{color:#ef4444}
@@ -74,7 +82,7 @@
 .stage-label{width:70px;color:#8B92A5;font-size:9px}
 .stage-bar{height:12px;border-radius:2px;min-width:3px}
 .stage-val{color:#5A6178;font-size:9px}
-@media(max-width:1024px){.fund-layout{grid-template-columns:1fr}.metrics-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1024px){.fund-layout{grid-template-columns:1fr}.metrics-grid{grid-template-columns:repeat(2,1fr);max-width:100%}}
 .top-table th[style*="cursor"]:hover{color:#e6e8ed}
 @media(max-width:600px){.metrics-grid{grid-template-columns:1fr}}
 </style>
