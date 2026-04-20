@@ -30,8 +30,8 @@
 <style>
   /* Full-width layout override — no sidebar on assets page */
   .assets-full { max-width: 100%; padding: 0 1rem; }
-  .assets-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; }
-  .assets-desc { font-size:10px; color:var(--text-dim); margin-top:2px; }
+  /* Dataset metadata caption under the table (count · coverage · last updated) */
+  .table-caption { font-size:11px; color:var(--text-dim); padding:0.75rem 0; border-top:1px solid var(--border); margin-top:0.5rem; }
 
   /* Column group tabs */
   .col-group-tabs { display:flex; gap:2px; margin-bottom:0.5rem; }
@@ -119,13 +119,9 @@
 <div class="assets-full">
 
   <!-- Header -->
-  <div class="page-header assets-header">
-    <div>
-      <div class="section-tag">Frontier Assets</div>
-      <h2 class="page-title" style="font-size:clamp(1rem,2vw,1.3rem);font-weight:700;">Public Market Universe</h2>
-      <div class="page-subtitle assets-desc" id="assets-desc">Frontier technology equities across semiconductors, robotics, space, and materials. Data from EODHD. Fundamentals weekly.</div>
-    </div>
-    <div style="font-size:11px;color:var(--text-dim);" id="assets-summary"></div>
+  <div class="page-header">
+    <div class="page-title">Public Market Universe</div>
+    <div class="page-subtitle" id="assets-desc">Frontier technology equities across semiconductors, robotics, space, and materials. Data from EODHD. Fundamentals weekly.</div>
   </div>
 
   <!-- Filters row -->
@@ -170,6 +166,9 @@
       <button class="chart-range-btn" id="assets-next" onclick="assetsPage(1)" style="margin-left:4px;">Next &gt;</button>
     </div>
   </div>
+
+  <!-- Data summary caption (under table) -->
+  <div id="assets-summary" class="table-caption"></div>
 
   <!-- Glossary -->
   <div class="glossary-section" id="glossary">

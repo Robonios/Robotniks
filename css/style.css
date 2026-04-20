@@ -310,7 +310,7 @@
     display: grid;
     grid-template-columns: 1fr 320px;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     max-width: 1400px;
   }
 
@@ -2389,28 +2389,45 @@
      STANDARDISED PAGE HEADER
      ---------------------------------------------------------
      Single source of truth for every page's title + subtitle
-     block. Wrap the existing header container with .page-header
-     and add .page-title / .page-subtitle alongside each page's
-     native classes (e.g. .intel-title, .fund-title). This rule
-     only overrides COLOUR and SPACING — per the design brief,
-     yellow is reserved for accents, active states, and data
-     highlights, never page titles. Per-page typography
-     (font/size/weight) is preserved via the native class.
+     block. Every page uses the same markup:
+
+       <div class="page-header">
+         <div class="page-title">Title</div>
+         <div class="page-subtitle">Subtitle copy…</div>
+       </div>
+
+     No per-page overrides. No yellow eyebrows — the left-rail
+     nav already indicates which page the user is on. Yellow
+     is reserved for accents, active states, and data
+     highlights, never page titles.
 
      Spacing contract:
-       • 24px between the top search bar and the page heading
+       • 32px between the top search bar and the page heading
        • 8px  between the page heading and the subtitle
-       • 32px between the subtitle and the page's main content
+       • 40px between the subtitle and the page's main content
+
+     Typography contract (identical across every page):
+       • Title:    Space Grotesk, 15px, 700, uppercase, 0.1em
+                   tracking, #FFFFFF
+       • Subtitle: Mulish, 11px, regular, var(--text-muted)
      ========================================================= */
   .page-header {
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin: 32px 0 40px 0;
   }
   .page-header .page-title {
+    font-family: 'Space Grotesk', 'Roboto Mono', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: #FFFFFF;
     margin: 0;
   }
   .page-header .page-subtitle {
+    font-family: 'Mulish', 'Roboto Mono', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
     color: var(--text-muted);
     margin: 8px 0 0 0;
   }
