@@ -1033,6 +1033,35 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // ===== INDEX CHART =====
 let indexChart = null;
 let indexAreaSeries = null;
+
+// Anchor for the Robotnik Composite — the index was rebased to 1,000 on
+// 31-Mar-2025. Rendered on the homepage chart as a subtle muted dot so
+// it doesn't compete with the yellow area line. See _renderIndexBaselineMarker.
+const INDEX_BASELINE_DATE = '2025-03-31';
+const INDEX_BASELINE_LABEL = 'Base: 1,000 on 31 Mar 2025';
+
+function _renderIndexBaselineMarker(chartData) {
+  if (!indexAreaSeries) return;
+  // Only the Composite is rebased to 1,000 on that date — don't plant the
+  // marker on sub-index series.
+  const isComposite = typeof currentIndexSeries === 'undefined' || currentIndexSeries === 'composite';
+  // In percent-change mode every series starts at 0% from the visible range,
+  // so the absolute anchor is meaningless — clear the marker.
+  const inRange = Array.isArray(chartData)
+    && chartData.some(function (d) { return d.time === INDEX_BASELINE_DATE; });
+  if (!isComposite || currentChartMode === 'pct' || !inRange) {
+    indexAreaSeries.setMarkers([]);
+    return;
+  }
+  indexAreaSeries.setMarkers([{
+    time: INDEX_BASELINE_DATE,
+    position: 'inBar',
+    color: '#9CA3AF',
+    shape: 'circle',
+    size: 1,
+    text: INDEX_BASELINE_LABEL,
+  }]);
+}
 let indexChartData = {};
 let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
 let currentIndexSeries = 'composite';
@@ -1278,6 +1307,7 @@ function applyIndexData(data) {
   }
 
   indexAreaSeries.setData(chartData);
+  _renderIndexBaselineMarker(chartData);
   indexChart.timeScale().fitContent();
 
   // Update the main index hero value + % to match selected period
