@@ -198,10 +198,13 @@ footer p {
 }
 
 /* ── Link Styling ── */
-a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more) {
+/* NOTE: .search-dropdown__row and .search-dropdown__try-example are
+   excluded so the search results don't inherit the default yellow link
+   colour — they set their own colours in the scoped dropdown block. */
+a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more):not(.search-dropdown__row):not(.search-dropdown__try-example) {
   color: #F5D921;
   text-decoration: none;
 }
-a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more):hover {
+a:not(.nav-item):not(.btn-y):not(.cta-enterprise):not(.view-all-link):not(.feed-read-more):not(.search-dropdown__row):not(.search-dropdown__try-example):hover {
   text-decoration: underline;
 }

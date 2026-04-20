@@ -117,7 +117,7 @@
     searchHost.style.position = 'relative';
 
     var dropdown = document.createElement('div');
-    dropdown.className = 'top-search-dropdown';
+    dropdown.className = 'search-dropdown';
     dropdown.style.display = 'none';
     searchHost.appendChild(dropdown);
 
@@ -240,37 +240,65 @@
     var _results = [];
     var _activeIdx = -1;
 
-    function updateActive() {
-      var nodes = dropdown.querySelectorAll('.search-result');
-      for (var i = 0; i < nodes.length; i++) nodes[i].classList.toggle('is-active', i === _activeIdx);
-      if (_activeIdx >= 0 && nodes[_activeIdx]) nodes[_activeIdx].scrollIntoView({ block: 'nearest' });
+    function rowNodes() {
+      return dropdown.querySelectorAll('.search-dropdown__row');
     }
 
+    function updateActive() {
+      var nodes = rowNodes();
+      for (var i = 0; i < nodes.length; i++) {
+        nodes[i].classList.toggle('search-dropdown__row--active', i === _activeIdx);
+      }
+      if (_activeIdx >= 0 && nodes[_activeIdx]) {
+        nodes[_activeIdx].scrollIntoView({ block: 'nearest' });
+      }
+    }
+
+    var EMPTY_EXAMPLES = ['NVIDIA', 'rare earths', 'Waymo', '1Q26 report'];
+
     function renderEmptyState() {
-      dropdown.innerHTML = '<div class="search-empty">Try: NVIDIA, rare earths, Waymo, 1Q26 report</div>';
+      var html = '<div class="search-dropdown__empty">' +
+                 '<span class="search-dropdown__try-label">Try:</span>';
+      for (var i = 0; i < EMPTY_EXAMPLES.length; i++) {
+        html += '<a class="search-dropdown__try-example" data-example="' +
+                escHtml(EMPTY_EXAMPLES[i]) + '" href="#">' +
+                escHtml(EMPTY_EXAMPLES[i]) + '</a>';
+      }
+      html += '</div>';
+      dropdown.innerHTML = html;
       dropdown.style.display = 'block';
     }
 
-    function renderResults(results) {
+    function renderResults(results, query) {
       _results = results;
       _activeIdx = -1;
       if (!results.length) {
-        dropdown.innerHTML = '<div class="search-empty">No matches</div>';
+        dropdown.innerHTML = '<div class="search-dropdown__no-results">' +
+          'No results for "' + escHtml(query || '') + '".</div>';
         dropdown.style.display = 'block';
         return;
+      }
+      // Count per category for the header labels.
+      var counts = {};
+      for (var c = 0; c < results.length; c++) {
+        counts[results[c].category] = (counts[results[c].category] || 0) + 1;
       }
       var html = '';
       var lastCat = '';
       for (var i = 0; i < results.length; i++) {
         var r = results[i];
         if (r.category !== lastCat) {
-          html += '<div class="search-group-label">' + escHtml(r.category) + '</div>';
+          html += '<div class="search-dropdown__category">' +
+                  '<span>' + escHtml(r.category) + '</span>' +
+                  '<span class="search-dropdown__category-count">(' + counts[r.category] + ')</span>' +
+                  '</div>';
           lastCat = r.category;
         }
         var tgt = r.external ? ' target="_blank" rel="noopener"' : '';
-        html += '<a class="search-result" data-idx="' + i + '" href="' + escHtml(r.url) + '"' + tgt + '>' +
-                '<div class="search-result-primary">' + escHtml(r.primary) + '</div>' +
-                '<div class="search-result-secondary">' + escHtml(r.secondary) + '</div>' +
+        html += '<a class="search-dropdown__row" data-idx="' + i + '" href="' +
+                escHtml(r.url) + '"' + tgt + '>' +
+                '<div class="search-dropdown__row-primary">' + escHtml(r.primary) + '</div>' +
+                '<div class="search-dropdown__row-secondary">' + escHtml(r.secondary) + '</div>' +
                 '</a>';
       }
       dropdown.innerHTML = html;
@@ -282,23 +310,27 @@
       _activeIdx = -1;
     }
 
+    function runQuery(q) {
+      loadDatasets().then(function(ds){
+        // Guard against stale responses if user kept typing.
+        if (searchInput.value.trim() !== q) return;
+        renderResults(searchAll(q, ds), q);
+      });
+    }
+
     searchInput.addEventListener('input', function(){
       var q = searchInput.value.trim();
       if (!q) { renderEmptyState(); return; }
-      loadDatasets().then(function(ds){
-        // Guard against stale responses if user cleared the field while loading
-        if (searchInput.value.trim() !== q) return;
-        renderResults(searchAll(q, ds));
-      });
+      runQuery(q);
     });
 
     searchInput.addEventListener('focus', function(){
       if (!searchInput.value.trim()) renderEmptyState();
-      else if (_results.length) renderResults(_results);
+      else if (_results.length) renderResults(_results, searchInput.value.trim());
     });
 
     searchInput.addEventListener('keydown', function(e){
-      var nodes = dropdown.querySelectorAll('.search-result');
+      var nodes = rowNodes();
       var n = nodes.length;
       if (e.key === 'ArrowDown') {
         if (!n) return;
@@ -322,8 +354,20 @@
       }
     });
 
+    // Click-outside closes the dropdown.
     document.addEventListener('click', function(e){
       if (!searchHost.contains(e.target)) closeDropdown();
+    });
+
+    // Clicking a "Try:" example fills the input and runs the search.
+    dropdown.addEventListener('click', function(e){
+      var tgt = e.target.closest('.search-dropdown__try-example');
+      if (!tgt) return;
+      e.preventDefault();
+      var val = tgt.dataset.example || tgt.textContent;
+      searchInput.value = val;
+      searchInput.focus();
+      runQuery(val.trim());
     });
   }
 })();
