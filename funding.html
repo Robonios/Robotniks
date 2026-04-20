@@ -38,15 +38,18 @@
 .time-btn{background:#161B22;border:none;color:#8B92A5;font-family:var(--font);font-size:10px;padding:0.35rem 0.75rem;cursor:pointer;transition:all 0.2s}
 .time-btn:hover{color:#e6e8ed}
 .time-btn.active{background:#F5D921;color:#111318;font-weight:700}
-/* KPI cards shrunk per UX feedback — three cards + gutter occupy ~70%
-   of content width (left-aligned) instead of stretching full-width with
-   too much dead space. Vertical padding reduced by ~33% to match.
-   Mobile breakpoints below relax max-width so cards use the full column
-   when the grid collapses. */
-.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1rem;max-width:70%}
-.metric-card{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:0.5rem 0.85rem}
-.metric-label{font-size:9px;color:#5A6178;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.2rem}
-.metric-value{font-size:1.1rem;font-weight:700;color:#e6e8ed}
+/* Summary cards — single row of six across the top of Funding Ops.
+   At ≥1400px wide, all six KPI / context cards sit in one row and use
+   the full content width, eliminating the right-hand dead space from
+   the previous two-rows-of-three layout. Graceful fallbacks below:
+   3 cols under 1400px, 2 cols under 900px, 1 col under 600px. */
+.metrics-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0.6rem;margin-bottom:1rem}
+.metric-card{background:#161B22;border:1px solid #252A36;border-radius:6px;padding:0.5rem 0.75rem;min-width:0}
+.metric-label{font-size:9px;color:#5A6178;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Narrower cards → slightly smaller primary value so long names
+   ("NVIDIA", "Robotics") fit without wrapping. Single line of
+   ellipsis if a value is too long. */
+.metric-value{font-size:1rem;font-weight:700;color:#e6e8ed;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .metric-sub{font-size:9px;color:#5A6178;margin-top:0.2rem}
 .metric-change{font-size:9px;margin-left:0.3rem}
 .v-green{color:#22c55e}.v-red{color:#ef4444}
@@ -82,7 +85,12 @@
 .stage-label{width:70px;color:#8B92A5;font-size:9px}
 .stage-bar{height:12px;border-radius:2px;min-width:3px}
 .stage-val{color:#5A6178;font-size:9px}
-@media(max-width:1024px){.fund-layout{grid-template-columns:1fr}.metrics-grid{grid-template-columns:repeat(2,1fr);max-width:100%}}
+/* Responsive breakpoints for the summary card row.
+   ≥1400px: 6 across (default above). ≥900px: 3 across (2 rows).
+   ≥600px:  2 across (3 rows).            <600px: 1 per row. */
+@media(max-width:1399px){.metrics-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1024px){.fund-layout{grid-template-columns:1fr}}
+@media(max-width:899px){.metrics-grid{grid-template-columns:repeat(2,1fr)}}
 .top-table th[style*="cursor"]:hover{color:#e6e8ed}
 @media(max-width:600px){.metrics-grid{grid-template-columns:1fr}}
 </style>
