@@ -1034,33 +1034,56 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 let indexChart = null;
 let indexAreaSeries = null;
 
-// Anchor for the Robotnik Composite — the index was rebased to 1,000 on
-// 31-Mar-2025. Rendered on the homepage chart as a subtle muted dot so
-// it doesn't compete with the yellow area line. See _renderIndexBaselineMarker.
-const INDEX_BASELINE_DATE = '2025-03-31';
-const INDEX_BASELINE_LABEL = 'Base: 1,000 on 31 Mar 2025';
+// Robotnik Composite anchor: the index was rebased to 1,000 on the
+// inception date below. Displayed as a horizontal dashed reference line
+// across the chart plus a left-edge label. See _updateBaselineReference.
+const ROBOTNIK_INDEX_BASE = 1000;
+const ROBOTNIK_INDEX_INCEPTION = '2025-03-31';
+const ROBOTNIK_INDEX_BASE_LABEL = 'BASE 1,000 · 31 MAR 2025';
 
-function _renderIndexBaselineMarker(chartData) {
-  if (!indexAreaSeries) return;
-  // Only the Composite is rebased to 1,000 on that date — don't plant the
-  // marker on sub-index series.
-  const isComposite = typeof currentIndexSeries === 'undefined' || currentIndexSeries === 'composite';
-  // In percent-change mode every series starts at 0% from the visible range,
-  // so the absolute anchor is meaningless — clear the marker.
-  const inRange = Array.isArray(chartData)
-    && chartData.some(function (d) { return d.time === INDEX_BASELINE_DATE; });
-  if (!isComposite || currentChartMode === 'pct' || !inRange) {
-    indexAreaSeries.setMarkers([]);
-    return;
+// Mutable refs for the line + label so we can hide/recreate on
+// sub-index + mode toggles.
+let _indexBasePriceLine = null;   // LightweightCharts IPriceLine
+let _indexBaseLabelEl   = null;   // absolutely-positioned DOM label
+
+// Called from applyIndexData() after every setData() and again from
+// any chart-event handler that changes layout. Keeps the baseline
+// reference line + left-edge label in sync with the active series
+// and chart mode.
+function _updateBaselineReference() {
+  if (!indexAreaSeries || !indexChart) return;
+
+  const isComposite = currentIndexSeries === 'composite';
+  const isPriceMode = currentChartMode !== 'pct';
+  const shouldShow = isComposite && isPriceMode;
+
+  // ── Dashed price line at y = 1,000 ──
+  if (shouldShow) {
+    if (!_indexBasePriceLine) {
+      _indexBasePriceLine = indexAreaSeries.createPriceLine({
+        price: ROBOTNIK_INDEX_BASE,
+        color: 'rgba(90, 97, 120, 0.6)',   // --text-muted @ 60% opacity
+        lineWidth: 1,
+        lineStyle: LightweightCharts.LineStyle.Dashed,
+        axisLabelVisible: false,           // we draw our own left-edge label
+        title: '',
+      });
+    }
+  } else if (_indexBasePriceLine) {
+    indexAreaSeries.removePriceLine(_indexBasePriceLine);
+    _indexBasePriceLine = null;
   }
-  indexAreaSeries.setMarkers([{
-    time: INDEX_BASELINE_DATE,
-    position: 'inBar',
-    color: '#9CA3AF',
-    shape: 'circle',
-    size: 1,
-    text: INDEX_BASELINE_LABEL,
-  }]);
+
+  // ── Left-edge label, anchored to the 1,000 coordinate ──
+  if (!_indexBaseLabelEl) return;
+  if (!shouldShow) { _indexBaseLabelEl.style.display = 'none'; return; }
+  const y = indexAreaSeries.priceToCoordinate(ROBOTNIK_INDEX_BASE);
+  // priceToCoordinate returns null when 1,000 is outside the current
+  // visible y-axis range (e.g. a tight zoom that doesn't include it).
+  // Per spec: in that case don't force the label to render.
+  if (y == null) { _indexBaseLabelEl.style.display = 'none'; return; }
+  _indexBaseLabelEl.style.display = 'block';
+  _indexBaseLabelEl.style.top = Math.round(y - 10) + 'px';
 }
 let indexChartData = {};
 let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
@@ -1097,11 +1120,11 @@ function initIndexChart() {
       placeholder.style.display = 'none';
       createIndexChart(container, series);
 
-      // Update index widget (applyIndexData will set value+% for 1Y default)
-      // Set base date labels
+      // Update index widget (applyIndexData will set value+% for 1Y default).
+      // The chart-base-label text is now set once at element creation
+      // (the baseline-reference label pinned to y=1,000 on the chart); only
+      // the sidebar explainer keeps the wordier "Base: 1,000.00 on …" form.
       if (data.base_date) {
-        var chartBase = document.getElementById('chart-base-label');
-        if (chartBase) chartBase.textContent = 'Base: 1,000.00 on ' + data.base_date;
         var explainerBase = document.getElementById('explainer-base');
         if (explainerBase) explainerBase.textContent = 'Base: 1,000.00 on ' + data.base_date;
       }
@@ -1190,15 +1213,42 @@ function createIndexChart(container, data) {
   indexAreaSeries = indexChart.addAreaSeries({
     lineColor: '#F5D921', topColor: 'rgba(245,217,33,0.10)', bottomColor: 'rgba(245,217,33,0.02)', lineWidth: 2,
   });
+
+  // Baseline reference label. Positioned absolutely over the plot
+  // area; _updateBaselineReference() sets its `top` to track the y-
+  // coordinate of 1,000 on every setData / resize / range change.
+  // The horizontal reference line itself is drawn via createPriceLine
+  // inside _updateBaselineReference.
+  container.style.position = container.style.position || 'relative';
+  _indexBaseLabelEl = document.createElement('div');
+  _indexBaseLabelEl.id = 'chart-base-label';
+  _indexBaseLabelEl.textContent = ROBOTNIK_INDEX_BASE_LABEL;
+  _indexBaseLabelEl.style.cssText = [
+    'position:absolute',
+    'left:10px',
+    'top:0',
+    'display:none',
+    'z-index:3',
+    'pointer-events:none',
+    'font-family:\'Roboto Mono\', monospace',
+    'font-size:10px',
+    'letter-spacing:0.04em',
+    'color:rgba(90,97,120,0.9)',
+    'background:#161920',           // --bg-raised, matches chart container
+    'padding:2px 6px',
+    'border-radius:2px',
+  ].join(';');
+  container.appendChild(_indexBaseLabelEl);
+
   applyIndexData(data);
-  const ro = new ResizeObserver(() => { indexChart.applyOptions({ width: container.clientWidth }); });
+  const ro = new ResizeObserver(() => {
+    indexChart.applyOptions({ width: container.clientWidth });
+    _updateBaselineReference();
+  });
   ro.observe(container);
 
-  // Add base label inside chart area (bottom-left)
-  var baseLabel = document.createElement('div');
-  baseLabel.id = 'chart-base-label';
-  baseLabel.style.cssText = 'position:absolute;bottom:24px;left:8px;font-size:9px;color:#5A6178;font-family:var(--font);z-index:2;pointer-events:none;';
-  container.appendChild(baseLabel);
+  // Re-anchor the label whenever the visible range shifts (pan / zoom).
+  indexChart.timeScale().subscribeVisibleLogicalRangeChange(_updateBaselineReference);
 
   // ── Crosshair tooltip ──
   var tooltip = document.createElement('div');
@@ -1307,7 +1357,7 @@ function applyIndexData(data) {
   }
 
   indexAreaSeries.setData(chartData);
-  _renderIndexBaselineMarker(chartData);
+  _updateBaselineReference();
   indexChart.timeScale().fitContent();
 
   // Update the main index hero value + % to match selected period
