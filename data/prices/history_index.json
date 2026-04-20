@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-04-20T11:21:02.439792+00:00Z",
-  "count": 315,
+  "fetched_at": "2026-04-20T22:52:09.199396+00:00Z",
+  "count": 316,
   "equity_days_back": 1825,
   "token_days_back": 365,
   "entities": {
@@ -8,409 +8,409 @@
       "name": "Allegro MicroSystems",
       "sector": "Semiconductor",
       "file": "ALGM.json",
-      "days": 30
+      "days": 31
     },
     "AOSL": {
       "name": "Alpha + Omega Semiconductor",
       "sector": "Semiconductor",
       "file": "AOSL.json",
-      "days": 30
+      "days": 31
     },
     "ARM": {
       "name": "ARM Holdings ADR",
       "sector": "Semiconductor",
       "file": "ARM.json",
-      "days": 30
+      "days": 31
     },
     "ASX": {
       "name": "ASE Technology Holding ADR",
       "sector": "Semiconductor",
       "file": "ASX.json",
-      "days": 30
+      "days": 31
     },
     "ALAB": {
       "name": "Astera Labs",
       "sector": "Semiconductor",
       "file": "ALAB.json",
-      "days": 30
+      "days": 31
     },
     "AEIS": {
       "name": "Advanced Energy Industries",
       "sector": "Semiconductor",
       "file": "AEIS.json",
-      "days": 30
+      "days": 31
     },
     "AMKR": {
       "name": "Amkor Technology",
       "sector": "Semiconductor",
       "file": "AMKR.json",
-      "days": 30
+      "days": 31
     },
     "CEVA": {
       "name": "CEVA Inc",
       "sector": "Semiconductor",
       "file": "CEVA.json",
-      "days": 30
+      "days": 31
     },
     "CAMT": {
       "name": "Camtek Ltd",
       "sector": "Semiconductor",
       "file": "CAMT.json",
-      "days": 30
+      "days": 31
     },
     "CRUS": {
       "name": "Cirrus Logic",
       "sector": "Semiconductor",
       "file": "CRUS.json",
-      "days": 30
+      "days": 31
     },
     "DVLT": {
       "name": "DataVault AI",
       "sector": "Semiconductor",
       "file": "DVLT.json",
-      "days": 30
+      "days": 31
     },
     "DIOD": {
       "name": "Diodes Inc",
       "sector": "Semiconductor",
       "file": "DIOD.json",
-      "days": 30
+      "days": 31
     },
     "ENTG": {
       "name": "Entegris",
       "sector": "Semiconductor",
       "file": "ENTG.json",
-      "days": 30
+      "days": 31
     },
     "FSLR": {
       "name": "First Solar",
       "sector": "Semiconductor",
       "file": "FSLR.json",
-      "days": 30
+      "days": 31
     },
     "FORM": {
       "name": "FormFactor",
       "sector": "Semiconductor",
       "file": "FORM.json",
-      "days": 30
+      "days": 31
     },
     "PI": {
       "name": "Impinj",
       "sector": "Semiconductor",
       "file": "PI.json",
-      "days": 30
+      "days": 31
     },
     "INDI": {
       "name": "Indie Semiconductor",
       "sector": "Semiconductor",
       "file": "INDI.json",
-      "days": 30
+      "days": 31
     },
     "INTC": {
       "name": "Intel",
       "sector": "Semiconductor",
       "file": "INTC.json",
-      "days": 30
+      "days": 31
     },
     "AGPXX": {
       "name": "Invesco Govt & Agency Portfolio",
       "sector": "Semiconductor",
       "file": "AGPXX.json",
-      "days": 30
+      "days": 31
     },
     "KOPN": {
       "name": "Kopin Corp",
       "sector": "Semiconductor",
       "file": "KOPN.json",
-      "days": 30
+      "days": 31
     },
     "KLIC": {
       "name": "Kulicke & Soffa Industries",
       "sector": "Semiconductor",
       "file": "KLIC.json",
-      "days": 30
+      "days": 31
     },
     "MTSI": {
       "name": "MACOM Technology Solutions",
       "sector": "Semiconductor",
       "file": "MTSI.json",
-      "days": 30
+      "days": 31
     },
     "MRVL": {
       "name": "Marvell Technology",
       "sector": "Semiconductor",
       "file": "MRVL.json",
-      "days": 30
+      "days": 31
     },
     "MU": {
       "name": "Micron Technology",
       "sector": "Semiconductor",
       "file": "MU.json",
-      "days": 30
+      "days": 31
     },
     "MKSI": {
       "name": "MKS Instruments",
       "sector": "Semiconductor",
       "file": "MKSI.json",
-      "days": 30
+      "days": 31
     },
     "MPWR": {
       "name": "Monolithic Power Systems",
       "sector": "Semiconductor",
       "file": "MPWR.json",
-      "days": 30
+      "days": 31
     },
     "MXL": {
       "name": "MaxLinear",
       "sector": "Semiconductor",
       "file": "MXL.json",
-      "days": 30
+      "days": 31
     },
     "NVTS": {
       "name": "Navitas Semiconductor",
       "sector": "Semiconductor",
       "file": "NVTS.json",
-      "days": 30
+      "days": 31
     },
     "NVEC": {
       "name": "NVE Corp",
       "sector": "Semiconductor",
       "file": "NVEC.json",
-      "days": 30
+      "days": 31
     },
     "PENG": {
       "name": "Penguin Solutions",
       "sector": "Semiconductor",
       "file": "PENG.json",
-      "days": 30
+      "days": 31
     },
     "POWI": {
       "name": "Power Integrations",
       "sector": "Semiconductor",
       "file": "POWI.json",
-      "days": 30
+      "days": 31
     },
     "PLAB": {
       "name": "Photronics",
       "sector": "Semiconductor",
       "file": "PLAB.json",
-      "days": 30
+      "days": 31
     },
     "QRVO": {
       "name": "Qorvo",
       "sector": "Semiconductor",
       "file": "QRVO.json",
-      "days": 30
+      "days": 31
     },
     "RMBS": {
       "name": "Rambus",
       "sector": "Semiconductor",
       "file": "RMBS.json",
-      "days": 30
+      "days": 31
     },
     "RGTI": {
       "name": "Rigetti Computing",
       "sector": "Semiconductor",
       "file": "RGTI.json",
-      "days": 30
+      "days": 31
     },
     "SLAB": {
       "name": "Silicon Laboratories",
       "sector": "Semiconductor",
       "file": "SLAB.json",
-      "days": 30
+      "days": 31
     },
     "SKYT": {
       "name": "SkyWater Technology",
       "sector": "Semiconductor",
       "file": "SKYT.json",
-      "days": 30
+      "days": 31
     },
     "SWKS": {
       "name": "Skyworks Solutions",
       "sector": "Semiconductor",
       "file": "SWKS.json",
-      "days": 30
+      "days": 31
     },
     "SYNA": {
       "name": "Synaptics",
       "sector": "Semiconductor",
       "file": "SYNA.json",
-      "days": 30
+      "days": 31
     },
     "SMTC": {
       "name": "Semtech Corp",
       "sector": "Semiconductor",
       "file": "SMTC.json",
-      "days": 30
+      "days": 31
     },
     "SITM": {
       "name": "SiTime Corp",
       "sector": "Semiconductor",
       "file": "SITM.json",
-      "days": 30
+      "days": 31
     },
     "TSEM": {
       "name": "Tower Semiconductor",
       "sector": "Semiconductor",
       "file": "TSEM.json",
-      "days": 30
+      "days": 31
     },
     "UMC": {
       "name": "United Microelectronics ADR",
       "sector": "Semiconductor",
       "file": "UMC.json",
-      "days": 30
+      "days": 31
     },
     "OLED": {
       "name": "Universal Display Corp",
       "sector": "Semiconductor",
       "file": "OLED.json",
-      "days": 30
+      "days": 31
     },
     "LASR": {
       "name": "nLIGHT",
       "sector": "Semiconductor",
       "file": "LASR.json",
-      "days": 30
+      "days": 31
     },
     "AMD": {
       "name": "Advanced Micro Devices",
       "sector": "Cross-stack",
       "file": "AMD.json",
-      "days": 30
+      "days": 31
     },
     "AMBA": {
       "name": "Ambarella",
       "sector": "Cross-stack",
       "file": "AMBA.json",
-      "days": 30
+      "days": 31
     },
     "ADI": {
       "name": "Analog Devices",
       "sector": "Cross-stack",
       "file": "ADI.json",
-      "days": 30
+      "days": 31
     },
     "AMAT": {
       "name": "Applied Materials",
       "sector": "Cross-stack",
       "file": "AMAT.json",
-      "days": 30
+      "days": 31
     },
     "ASML": {
       "name": "ASML Holding ADR",
       "sector": "Cross-stack",
       "file": "ASML.json",
-      "days": 30
+      "days": 31
     },
     "AVGO": {
       "name": "Broadcom",
       "sector": "Cross-stack",
       "file": "AVGO.json",
-      "days": 30
+      "days": 31
     },
     "CRDO": {
       "name": "Credo Technology Group",
       "sector": "Cross-stack",
       "file": "CRDO.json",
-      "days": 30
+      "days": 31
     },
     "CDNS": {
       "name": "Cadence Design Systems",
       "sector": "Cross-stack",
       "file": "CDNS.json",
-      "days": 30
+      "days": 31
     },
     "KLAC": {
       "name": "KLA Corp",
       "sector": "Cross-stack",
       "file": "KLAC.json",
-      "days": 30
+      "days": 31
     },
     "LRCX": {
       "name": "Lam Research",
       "sector": "Cross-stack",
       "file": "LRCX.json",
-      "days": 30
+      "days": 31
     },
     "LSCC": {
       "name": "Lattice Semiconductor",
       "sector": "Cross-stack",
       "file": "LSCC.json",
-      "days": 30
+      "days": 31
     },
     "MCHP": {
       "name": "Microchip Technology",
       "sector": "Cross-stack",
       "file": "MCHP.json",
-      "days": 30
+      "days": 31
     },
     "NVMI": {
       "name": "Nova Ltd",
       "sector": "Cross-stack",
       "file": "NVMI.json",
-      "days": 30
+      "days": 31
     },
     "NVDA": {
       "name": "NVIDIA",
       "sector": "Cross-stack",
       "file": "NVDA.json",
-      "days": 30
+      "days": 31
     },
     "NXPI": {
       "name": "NXP Semiconductors",
       "sector": "Cross-stack",
       "file": "NXPI.json",
-      "days": 30
+      "days": 31
     },
     "ON": {
       "name": "ON Semiconductor",
       "sector": "Cross-stack",
       "file": "ON.json",
-      "days": 30
+      "days": 31
     },
     "QCOM": {
       "name": "Qualcomm",
       "sector": "Cross-stack",
       "file": "QCOM.json",
-      "days": 30
+      "days": 31
     },
     "STM": {
       "name": "STMicroelectronics ADR",
       "sector": "Cross-stack",
       "file": "STM.json",
-      "days": 30
+      "days": 31
     },
     "SNPS": {
       "name": "Synopsys",
       "sector": "Cross-stack",
       "file": "SNPS.json",
-      "days": 30
+      "days": 31
     },
     "TSM": {
       "name": "TSMC ADR",
       "sector": "Cross-stack",
       "file": "TSM.json",
-      "days": 30
+      "days": 31
     },
     "TER": {
       "name": "Teradyne",
       "sector": "Cross-stack",
       "file": "TER.json",
-      "days": 30
+      "days": 31
     },
     "TXN": {
       "name": "Texas Instruments",
       "sector": "Cross-stack",
       "file": "TXN.json",
-      "days": 30
+      "days": 31
     },
     "ABBN SW": {
       "name": "ABB Ltd",
       "sector": "Robotics",
       "file": "ABBN_SW.json",
-      "days": 29
+      "days": 30
     },
     "2395 TT": {
       "name": "Advantech Co",
@@ -440,7 +440,7 @@
       "name": "AutoStore Holdings",
       "sector": "Robotics",
       "file": "AUTO_NO.json",
-      "days": 28
+      "days": 29
     },
     "688297 C1": {
       "name": "AVIC Chengdu UAS",
@@ -452,7 +452,7 @@
       "name": "Advantest Corp",
       "sector": "Robotics",
       "file": "6857_JP.json",
-      "days": 30
+      "days": 31
     },
     "6113 JP": {
       "name": "Amada Co",
@@ -464,7 +464,7 @@
       "name": "Andritz AG",
       "sector": "Robotics",
       "file": "ANDR_AV.json",
-      "days": 29
+      "days": 30
     },
     "6845 JP": {
       "name": "Azbil Corp",
@@ -482,13 +482,13 @@
       "name": "Basler AG",
       "sector": "Robotics",
       "file": "BSL_GR.json",
-      "days": 29
+      "days": 30
     },
     "6383 JP": {
       "name": "Daifuku Co",
       "sector": "Robotics",
       "file": "6383_JP.json",
-      "days": 30
+      "days": 31
     },
     "6622 JP": {
       "name": "Daihen Corp",
@@ -512,19 +512,19 @@
       "name": "Duerr AG",
       "sector": "Robotics",
       "file": "DUE_GR.json",
-      "days": 29
+      "days": 30
     },
     "6902 JP": {
       "name": "Denso Corp",
       "sector": "Robotics",
       "file": "6902_JP.json",
-      "days": 30
+      "days": 31
     },
     "6141 JP": {
       "name": "DMG Mori Co",
       "sector": "Robotics",
       "file": "6141_JP.json",
-      "days": 29
+      "days": 30
     },
     "688165 C1": {
       "name": "EFORT Intelligent Robot",
@@ -542,13 +542,13 @@
       "name": "Exail Technologies",
       "sector": "Robotics",
       "file": "EXA_FP.json",
-      "days": 29
+      "days": 30
     },
     "6954 JP": {
       "name": "Fanuc Corp",
       "sector": "Robotics",
       "file": "6954_JP.json",
-      "days": 30
+      "days": 31
     },
     "6134 JP": {
       "name": "Fuji Corporation",
@@ -560,7 +560,7 @@
       "name": "GEA Group",
       "sector": "Robotics",
       "file": "G1A_GR.json",
-      "days": 29
+      "days": 30
     },
     "002008 C2": {
       "name": "Han's Laser Technology",
@@ -578,13 +578,13 @@
       "name": "Hexagon AB",
       "sector": "Robotics",
       "file": "HEXAB_SS.json",
-      "days": 29
+      "days": 30
     },
     "HIAB FH": {
       "name": "Hiab Oyj",
       "sector": "Robotics",
       "file": "HIAB_FH.json",
-      "days": 29
+      "days": 30
     },
     "6258 JP": {
       "name": "Hirata Corp",
@@ -620,49 +620,49 @@
       "name": "Infineon Technologies",
       "sector": "Robotics",
       "file": "IFX_GR.json",
-      "days": 29
+      "days": 30
     },
     "IMI LN": {
       "name": "IMI PLC",
       "sector": "Robotics",
       "file": "IMI_LN.json",
-      "days": 29
+      "days": 30
     },
     "INRN SW": {
       "name": "Interroll Holding",
       "sector": "Robotics",
       "file": "INRN_SW.json",
-      "days": 29
+      "days": 30
     },
     "JEN GR": {
       "name": "Jenoptik AG",
       "sector": "Robotics",
       "file": "JEN_GR.json",
-      "days": 29
+      "days": 30
     },
     "KALMAR FH": {
       "name": "Kalmar Oyj",
       "sector": "Robotics",
       "file": "KALMAR_FH.json",
-      "days": 29
+      "days": 30
     },
     "KARN SW": {
       "name": "Kardex Holding",
       "sector": "Robotics",
       "file": "KARN_SW.json",
-      "days": 29
+      "days": 30
     },
     "6861 JP": {
       "name": "Keyence Corp",
       "sector": "Robotics",
       "file": "6861_JP.json",
-      "days": 30
+      "days": 31
     },
     "KGX GR": {
       "name": "Kion Group",
       "sector": "Robotics",
       "file": "KGX_GR.json",
-      "days": 29
+      "days": 30
     },
     "098460 KS": {
       "name": "Koh Young Technology",
@@ -674,19 +674,19 @@
       "name": "Krones AG",
       "sector": "Robotics",
       "file": "KRN_GR.json",
-      "days": 29
+      "days": 30
     },
     "KCR FH": {
       "name": "Konecranes Oyj",
       "sector": "Robotics",
       "file": "KCR_FH.json",
-      "days": 29
+      "days": 30
     },
     "6920 JP": {
       "name": "Lasertec Corp",
       "sector": "Robotics",
       "file": "6920_JP.json",
-      "days": 30
+      "days": 31
     },
     "2431 HK": {
       "name": "MiniEye Technology",
@@ -698,19 +698,19 @@
       "name": "Mitsubishi Electric",
       "sector": "Robotics",
       "file": "6503_JP.json",
-      "days": 30
+      "days": 31
     },
     "6268 JP": {
       "name": "Nabtesco Corp",
       "sector": "Robotics",
       "file": "6268_JP.json",
-      "days": 30
+      "days": 31
     },
     "6645 JP": {
       "name": "Omron Corp",
       "sector": "Robotics",
       "file": "6645_JP.json",
-      "days": 30
+      "days": 31
     },
     "6600 HK": {
       "name": "OneRobotics Shenzhen",
@@ -728,19 +728,19 @@
       "name": "Raspberry Pi Holdings",
       "sector": "Robotics",
       "file": "RPI_LN.json",
-      "days": 29
+      "days": 30
     },
     "6723 JP": {
       "name": "Renesas Electronics",
       "sector": "Robotics",
       "file": "6723_JP.json",
-      "days": 30
+      "days": 31
     },
     "RSW LN": {
       "name": "Renishaw PLC",
       "sector": "Robotics",
       "file": "RSW_LN.json",
-      "days": 29
+      "days": 30
     },
     "2498 HK": {
       "name": "RoboSense Technology",
@@ -770,7 +770,7 @@
       "name": "Schneider Electric",
       "sector": "Robotics",
       "file": "SU_FP.json",
-      "days": 29
+      "days": 30
     },
     "300124 C2": {
       "name": "Shenzhen Inovance Technology",
@@ -794,37 +794,37 @@
       "name": "Siemens AG",
       "sector": "Robotics",
       "file": "SIE_GR.json",
-      "days": 29
+      "days": 30
     },
     "6273 JP": {
       "name": "SMC Corp",
       "sector": "Robotics",
       "file": "6273_JP.json",
-      "days": 30
+      "days": 31
     },
     "TECN SW": {
       "name": "Tecan Group",
       "sector": "Robotics",
       "file": "TECN_SW.json",
-      "days": 29
+      "days": 30
     },
     "6481 JP": {
       "name": "THK Co",
       "sector": "Robotics",
       "file": "6481_JP.json",
-      "days": 30
+      "days": 31
     },
     "FTI": {
       "name": "TechnipFMC",
       "sector": "Robotics",
       "file": "FTI.json",
-      "days": 30
+      "days": 31
     },
     "8035 JP": {
       "name": "Tokyo Electron",
       "sector": "Robotics",
       "file": "8035_JP.json",
-      "days": 30
+      "days": 31
     },
     "9880 HK": {
       "name": "UBTECH Robotics",
@@ -836,7 +836,7 @@
       "name": "Yaskawa Electric",
       "sector": "Robotics",
       "file": "6506_JP.json",
-      "days": 30
+      "days": 31
     },
     "6841 JP": {
       "name": "Yokogawa Electric",
@@ -866,295 +866,295 @@
       "name": "AeroVironment",
       "sector": "Robotics",
       "file": "AVAV.json",
-      "days": 30
+      "days": 31
     },
     "GOOG": {
       "name": "Alphabet",
       "sector": "Robotics",
       "file": "GOOG.json",
-      "days": 30
+      "days": 31
     },
     "AMZN": {
       "name": "Amazon",
       "sector": "Robotics",
       "file": "AMZN.json",
-      "days": 30
+      "days": 31
     },
     "APH": {
       "name": "Amphenol",
       "sector": "Robotics",
       "file": "APH.json",
-      "days": 30
+      "days": 31
     },
     "APTV": {
       "name": "Aptiv PLC",
       "sector": "Robotics",
       "file": "APTV.json",
-      "days": 30
+      "days": 31
     },
     "ATS CN": {
       "name": "ATS Corp",
       "sector": "Robotics",
       "file": "ATS_CN.json",
-      "days": 30
+      "days": 31
     },
     "BIDU": {
       "name": "Baidu ADR",
       "sector": "Robotics",
       "file": "BIDU.json",
-      "days": 30
+      "days": 31
     },
     "BWXT": {
       "name": "BWX Technologies",
       "sector": "Robotics",
       "file": "BWXT.json",
-      "days": 30
+      "days": 31
     },
     "BYDDY": {
       "name": "BYD Co ADR",
       "sector": "Robotics",
       "file": "BYDDY.json",
-      "days": 30
+      "days": 31
     },
     "CCJ": {
       "name": "Cameco Corp",
       "sector": "Robotics",
       "file": "CCJ.json",
-      "days": 30
+      "days": 31
     },
     "CAT": {
       "name": "Caterpillar",
       "sector": "Robotics",
       "file": "CAT.json",
-      "days": 30
+      "days": 31
     },
     "CLS CN": {
       "name": "Celestica",
       "sector": "Robotics",
       "file": "CLS_CN.json",
-      "days": 30
+      "days": 31
     },
     "CGNX": {
       "name": "Cognex",
       "sector": "Robotics",
       "file": "CGNX.json",
-      "days": 30
+      "days": 31
     },
     "COHR": {
       "name": "Coherent Corp",
       "sector": "Robotics",
       "file": "COHR.json",
-      "days": 30
+      "days": 31
     },
     "DASH": {
       "name": "DoorDash",
       "sector": "Robotics",
       "file": "DASH.json",
-      "days": 30
+      "days": 31
     },
     "EH": {
       "name": "EHang Holdings ADR",
       "sector": "Robotics",
       "file": "EH.json",
-      "days": 30
+      "days": 31
     },
     "ESLT": {
       "name": "Elbit Systems",
       "sector": "Robotics",
       "file": "ESLT.json",
-      "days": 30
+      "days": 31
     },
     "EMR": {
       "name": "Emerson Electric",
       "sector": "Robotics",
       "file": "EMR.json",
-      "days": 30
+      "days": 31
     },
     "GMED": {
       "name": "Globus Medical",
       "sector": "Robotics",
       "file": "GMED.json",
-      "days": 30
+      "days": 31
     },
     "HSAI": {
       "name": "Hesai Group",
       "sector": "Robotics",
       "file": "HSAI.json",
-      "days": 30
+      "days": 31
     },
     "LUNR": {
       "name": "Intuitive Machines",
       "sector": "Space",
       "file": "LUNR.json",
-      "days": 30
+      "days": 31
     },
     "ISRG": {
       "name": "Intuitive Surgical",
       "sector": "Robotics",
       "file": "ISRG.json",
-      "days": 30
+      "days": 31
     },
     "IPGP": {
       "name": "IPG Photonics",
       "sector": "Robotics",
       "file": "IPGP.json",
-      "days": 30
+      "days": 31
     },
     "IRDM": {
       "name": "Iridium Communications",
       "sector": "Space",
       "file": "IRDM.json",
-      "days": 30
+      "days": 31
     },
     "JBL": {
       "name": "Jabil",
       "sector": "Robotics",
       "file": "JBL.json",
-      "days": 30
+      "days": 31
     },
     "JBTM": {
       "name": "JBT Marel Corp",
       "sector": "Robotics",
       "file": "JBTM.json",
-      "days": 30
+      "days": 31
     },
     "KAI": {
       "name": "Kadant",
       "sector": "Robotics",
       "file": "KAI.json",
-      "days": 30
+      "days": 31
     },
     "KDK": {
       "name": "Kodiak AI",
       "sector": "Robotics",
       "file": "KDK.json",
-      "days": 30
+      "days": 31
     },
     "KMTUY": {
       "name": "Komatsu ADR",
       "sector": "Robotics",
       "file": "KMTUY.json",
-      "days": 30
+      "days": 31
     },
     "KTOS": {
       "name": "Kratos Defense & Security",
       "sector": "Space",
       "file": "KTOS.json",
-      "days": 30
+      "days": 31
     },
     "LECO": {
       "name": "Lincoln Electric Holdings",
       "sector": "Robotics",
       "file": "LECO.json",
-      "days": 30
+      "days": 31
     },
     "LHX": {
       "name": "L3Harris Technologies",
       "sector": "Space",
       "file": "LHX.json",
-      "days": 30
+      "days": 31
     },
     "MG": {
       "name": "Magna International",
       "sector": "Robotics",
       "file": "MG.json",
-      "days": 30
+      "days": 31
     },
     "MBLY": {
       "name": "Mobileye Global",
       "sector": "Robotics",
       "file": "MBLY.json",
-      "days": 30
+      "days": 31
     },
     "MELE": {
       "name": "Melexis NV",
       "sector": "Robotics",
       "file": "MELE.json",
-      "days": 29
+      "days": 30
     },
     "MOG/A": {
       "name": "Moog Inc Class A",
       "sector": "Robotics",
       "file": "MOG_A.json",
-      "days": 30
+      "days": 31
     },
     "MP": {
       "name": "MP Materials",
       "sector": "Robotics",
       "file": "MP.json",
-      "days": 30
+      "days": 31
     },
     "NDSN": {
       "name": "Nordson Corp",
       "sector": "Robotics",
       "file": "NDSN.json",
-      "days": 30
+      "days": 31
     },
     "NOVT": {
       "name": "Novanta",
       "sector": "Robotics",
       "file": "NOVT.json",
-      "days": 30
+      "days": 31
     },
     "OKLO": {
       "name": "Oklo",
       "sector": "Robotics",
       "file": "OKLO.json",
-      "days": 30
+      "days": 31
     },
     "ONDS": {
       "name": "Ondas Inc",
       "sector": "Robotics",
       "file": "ONDS.json",
-      "days": 30
+      "days": 31
     },
     "ONTO": {
       "name": "Onto Innovation",
       "sector": "Robotics",
       "file": "ONTO.json",
-      "days": 30
+      "days": 31
     },
     "OUST": {
       "name": "Ouster",
       "sector": "Robotics",
       "file": "OUST.json",
-      "days": 30
+      "days": 31
     },
     "PLTR": {
       "name": "Palantir Technologies",
       "sector": "Robotics",
       "file": "PLTR.json",
-      "days": 30
+      "days": 31
     },
     "PRCT": {
       "name": "PROCEPT BioRobotics",
       "sector": "Robotics",
       "file": "PRCT.json",
-      "days": 30
+      "days": 31
     },
     "RBC": {
       "name": "RBC Bearings",
       "sector": "Robotics",
       "file": "RBC.json",
-      "days": 30
+      "days": 31
     },
     "RR": {
       "name": "Richtech Robotics",
       "sector": "Robotics",
       "file": "RR.json",
-      "days": 30
+      "days": 31
     },
     "RRX": {
       "name": "Regal Rexnord",
       "sector": "Robotics",
       "file": "RRX.json",
-      "days": 30
+      "days": 31
     },
     "ROK": {
       "name": "Rockwell Automation",
       "sector": "Robotics",
       "file": "ROK.json",
-      "days": 30
+      "days": 31
     },
     "SHA": {
       "name": "Schaeffler AG",
@@ -1166,67 +1166,67 @@
       "name": "Serve Robotics",
       "sector": "Robotics",
       "file": "SERV.json",
-      "days": 30
+      "days": 31
     },
     "SRTA": {
       "name": "Strata Critical Medical",
       "sector": "Robotics",
       "file": "SRTA.json",
-      "days": 30
+      "days": 31
     },
     "STMPA": {
       "name": "STMicroelectronics NV",
       "sector": "Robotics",
       "file": "STMPA.json",
-      "days": 29
+      "days": 30
     },
     "ST": {
       "name": "Sensata Technologies",
       "sector": "Robotics",
       "file": "ST.json",
-      "days": 30
+      "days": 31
     },
     "SYM": {
       "name": "Symbotic",
       "sector": "Robotics",
       "file": "SYM.json",
-      "days": 30
+      "days": 31
     },
     "TEL": {
       "name": "TE Connectivity",
       "sector": "Robotics",
       "file": "TEL.json",
-      "days": 30
+      "days": 31
     },
     "TDY": {
       "name": "Teledyne Technologies",
       "sector": "Robotics",
       "file": "TDY.json",
-      "days": 30
+      "days": 31
     },
     "TSLA": {
       "name": "Tesla",
       "sector": "Robotics",
       "file": "TSLA.json",
-      "days": 30
+      "days": 31
     },
     "TRMB": {
       "name": "Trimble",
       "sector": "Robotics",
       "file": "TRMB.json",
-      "days": 30
+      "days": 31
     },
     "XPEV": {
       "name": "XPeng ADR",
       "sector": "Robotics",
       "file": "XPEV.json",
-      "days": 30
+      "days": 31
     },
     "ZBRA": {
       "name": "Zebra Technologies",
       "sector": "Robotics",
       "file": "ZBRA.json",
-      "days": 30
+      "days": 31
     },
     "002979": {
       "name": "China Leadshine Technology",
@@ -1262,7 +1262,7 @@
       "name": "Nidec Corp",
       "sector": "Robotics",
       "file": "6594.json",
-      "days": 30
+      "days": 31
     },
     "601689": {
       "name": "Ningbo Tuopu Group",
@@ -1274,7 +1274,7 @@
       "name": "Renesas Electronics",
       "sector": "Robotics",
       "file": "6723.json",
-      "days": 30
+      "days": 31
     },
     "603009": {
       "name": "Shanghai Beite Technology",
@@ -1316,13 +1316,13 @@
       "name": "Animus",
       "sector": "Token",
       "file": "ANIMUS.json",
-      "days": 165
+      "days": 45
     },
     "AUKI": {
       "name": "Auki",
       "sector": "Token",
       "file": "AUKI.json",
-      "days": 365
+      "days": 45
     },
     "ATNM": {
       "name": "Autonoma Network",
@@ -1358,109 +1358,109 @@
       "name": "Forma Robotics",
       "sector": "Token",
       "file": "FORMA.json",
-      "days": 140
+      "days": 45
     },
     "GEOD": {
       "name": "Geodnet",
       "sector": "Token",
       "file": "GEOD.json",
-      "days": 365
+      "days": 45
     },
     "BREW": {
       "name": "Homebrew Robotics Club",
       "sector": "Token",
       "file": "BREW.json",
-      "days": 365
+      "days": 45
     },
     "IOTX": {
       "name": "IoTeX",
       "sector": "Token",
       "file": "IOTX.json",
-      "days": 365
+      "days": 45
     },
     "JOJO": {
       "name": "JojoWorld",
       "sector": "Token",
       "file": "JOJO.json",
-      "days": 190
+      "days": 45
     },
     "KAGE": {
       "name": "KAGE Network",
       "sector": "Token",
       "file": "KAGE.json",
-      "days": 363
+      "days": 42
     },
     "MECHA": {
       "name": "MechaOs",
       "sector": "Token",
       "file": "MECHA.json",
-      "days": 152
+      "days": 19
     },
     "EMDR": {
       "name": "Modulr",
       "sector": "Token",
       "file": "EMDR.json",
-      "days": 206
+      "days": 45
     },
     "NATIX": {
       "name": "NATIX Network",
       "sector": "Token",
       "file": "NATIX.json",
-      "days": 365
+      "days": 45
     },
     "OP": {
       "name": "One Path",
       "sector": "Token",
       "file": "OP.json",
-      "days": 115
+      "days": 37
     },
     "ONO": {
       "name": "Onocoy Token",
       "sector": "Token",
       "file": "ONO.json",
-      "days": 240
+      "days": 45
     },
     "OPAN": {
       "name": "Opanarchy",
       "sector": "Token",
       "file": "OPAN.json",
-      "days": 253
+      "days": 21
     },
     "OPUS": {
       "name": "Opus Genesis",
       "sector": "Token",
       "file": "OPUS.json",
-      "days": 365
+      "days": 45
     },
     "OVR": {
       "name": "Ovr",
       "sector": "Token",
       "file": "OVR.json",
-      "days": 365
+      "days": 45
     },
     "QACE": {
       "name": "Qace Dynamics",
       "sector": "Token",
       "file": "QACE.json",
-      "days": 183
+      "days": 44
     },
     "ROBA": {
       "name": "ROBA",
       "sector": "Token",
       "file": "ROBA.json",
-      "days": 164
+      "days": 45
     },
     "ROVR": {
       "name": "ROVR Network",
       "sector": "Token",
       "file": "ROVR.json",
-      "days": 294
+      "days": 45
     },
     "RICE": {
       "name": "Rice AI",
       "sector": "Token",
       "file": "RICE.json",
-      "days": 216
+      "days": 45
     },
     "ROBCO": {
       "name": "RobCo Network",
@@ -1472,31 +1472,31 @@
       "name": "RoboStack",
       "sector": "Token",
       "file": "ROBOT.json",
-      "days": 306
+      "days": 45
     },
     "XRT": {
       "name": "Robonomics Network",
       "sector": "Token",
       "file": "XRT.json",
-      "days": 365
+      "days": 45
     },
     "RBR": {
       "name": "Robora",
       "sector": "Token",
       "file": "RBR.json",
-      "days": 207
+      "days": 45
     },
     "ROX": {
       "name": "Robotexon",
       "sector": "Token",
       "file": "ROX.json",
-      "days": 170
+      "days": 33
     },
     "ROKO": {
       "name": "Roko Network",
       "sector": "Token",
       "file": "ROKO.json",
-      "days": 365
+      "days": 45
     },
     "SLC": {
       "name": "Silencio",
@@ -1532,7 +1532,7 @@
       "name": "VitaNova",
       "sector": "Token",
       "file": "SHOW.json",
-      "days": 323
+      "days": 45
     },
     "DEUS": {
       "name": "XMAQUINA",
@@ -1544,151 +1544,151 @@
       "name": "peaq",
       "sector": "Token",
       "file": "PEAQ.json",
-      "days": 365
+      "days": 45
     },
     "RKLB": {
       "name": "Rocket Lab USA",
       "sector": "Space",
       "file": "RKLB.json",
-      "days": 30
+      "days": 31
     },
     "ASTS": {
       "name": "AST SpaceMobile",
       "sector": "Space",
       "file": "ASTS.json",
-      "days": 30
+      "days": 31
     },
     "HEI": {
       "name": "HEICO Corp",
       "sector": "Space",
       "file": "HEI.json",
-      "days": 30
+      "days": 31
     },
     "VSAT": {
       "name": "Viasat Inc",
       "sector": "Space",
       "file": "VSAT.json",
-      "days": 30
+      "days": 31
     },
     "PL": {
       "name": "Planet Labs PBC",
       "sector": "Space",
       "file": "PL.json",
-      "days": 30
+      "days": 31
     },
     "RDW": {
       "name": "Redwire Corp",
       "sector": "Space",
       "file": "RDW.json",
-      "days": 30
+      "days": 31
     },
     "SPIR": {
       "name": "Spire Global",
       "sector": "Space",
       "file": "SPIR.json",
-      "days": 30
+      "days": 31
     },
     "BKSY": {
       "name": "BlackSky Technology",
       "sector": "Space",
       "file": "BKSY.json",
-      "days": 30
+      "days": 31
     },
     "GSAT": {
       "name": "Globalstar Inc",
       "sector": "Space",
       "file": "GSAT.json",
-      "days": 30
+      "days": 31
     },
     "TSAT": {
       "name": "Telesat Corp",
       "sector": "Space",
       "file": "TSAT.json",
-      "days": 30
+      "days": 31
     },
     "SATS": {
       "name": "EchoStar Corp",
       "sector": "Space",
       "file": "SATS.json",
-      "days": 30
+      "days": 31
     },
     "BA": {
       "name": "Boeing Co",
       "sector": "Space",
       "file": "BA.json",
-      "days": 30
+      "days": 31
     },
     "LMT": {
       "name": "Lockheed Martin",
       "sector": "Space",
       "file": "LMT.json",
-      "days": 30
+      "days": 31
     },
     "RTX": {
       "name": "RTX Corp",
       "sector": "Space",
       "file": "RTX.json",
-      "days": 30
+      "days": 31
     },
     "NOC": {
       "name": "Northrop Grumman",
       "sector": "Space",
       "file": "NOC.json",
-      "days": 30
+      "days": 31
     },
     "GD": {
       "name": "General Dynamics",
       "sector": "Space",
       "file": "GD.json",
-      "days": 30
+      "days": 31
     },
     "SPCE": {
       "name": "Virgin Galactic",
       "sector": "Space",
       "file": "SPCE.json",
-      "days": 30
+      "days": 31
     },
     "DCO": {
       "name": "Ducommun",
       "sector": "Space",
       "file": "DCO.json",
-      "days": 30
+      "days": 31
     },
     "ESE": {
       "name": "ESCO Technologies",
       "sector": "Space",
       "file": "ESE.json",
-      "days": 30
+      "days": 31
     },
     "ETL FP": {
       "name": "Eutelsat Communications",
       "sector": "Space",
       "file": "ETL_FP.json",
-      "days": 29
+      "days": 30
     },
     "FLY": {
       "name": "Firefly Aerospace",
       "sector": "Space",
       "file": "FLY.json",
-      "days": 30
+      "days": 31
     },
     "GILT": {
       "name": "Gilat Satellite Networks",
       "sector": "Space",
       "file": "GILT.json",
-      "days": 30
+      "days": 31
     },
     "GOGO": {
       "name": "Gogo Inc",
       "sector": "Space",
       "file": "GOGO.json",
-      "days": 30
+      "days": 31
     },
     "GOMX SS": {
       "name": "GomSpace",
       "sector": "Space",
       "file": "GOMX_SS.json",
-      "days": 29
+      "days": 30
     },
     "012450 KS": {
       "name": "Hanwha Aerospace",
@@ -1700,79 +1700,79 @@
       "name": "Hexcel Corp",
       "sector": "Space",
       "file": "HXL.json",
-      "days": 30
+      "days": 31
     },
     "KRMN": {
       "name": "Karman Holdings",
       "sector": "Space",
       "file": "KRMN.json",
-      "days": 30
+      "days": 31
     },
     "MDA CN": {
       "name": "MDA Space",
       "sector": "Space",
       "file": "MDA_CN.json",
-      "days": 30
+      "days": 31
     },
     "MNTS": {
       "name": "Momentus",
       "sector": "Space",
       "file": "MNTS.json",
-      "days": 30
+      "days": 31
     },
     "NN": {
       "name": "NextNav",
       "sector": "Space",
       "file": "NN.json",
-      "days": 30
+      "days": 31
     },
     "OVZON SS": {
       "name": "Ovzon AB",
       "sector": "Space",
       "file": "OVZON_SS.json",
-      "days": 29
+      "days": 30
     },
     "PSN": {
       "name": "Parsons Corp",
       "sector": "Space",
       "file": "PSN.json",
-      "days": 30
+      "days": 31
     },
     "SESG FP": {
       "name": "SES SA",
       "sector": "Space",
       "file": "SESG_FP.json",
-      "days": 29
+      "days": 30
     },
     "SATL": {
       "name": "Satellogic",
       "sector": "Space",
       "file": "SATL.json",
-      "days": 30
+      "days": 31
     },
     "SIDU": {
       "name": "Sidus Space",
       "sector": "Space",
       "file": "SIDU.json",
-      "days": 30
+      "days": 31
     },
     "TTMI": {
       "name": "TTM Technologies",
       "sector": "Space",
       "file": "TTMI.json",
-      "days": 30
+      "days": 31
     },
     "VOYG": {
       "name": "Voyager Technologies",
       "sector": "Space",
       "file": "VOYG.json",
-      "days": 30
+      "days": 31
     },
     "WAF GR": {
       "name": "Siltronic",
       "sector": "Materials",
       "file": "WAF_GR.json",
-      "days": 29
+      "days": 30
     },
     "010060 KS": {
       "name": "OCI Holdings",
@@ -1784,13 +1784,13 @@
       "name": "Wacker Chemie",
       "sector": "Materials",
       "file": "WCH_GR.json",
-      "days": 29
+      "days": 30
     },
     "SOI FP": {
       "name": "Soitec",
       "sector": "Materials",
       "file": "SOI_FP.json",
-      "days": 29
+      "days": 30
     },
     "6153 TT": {
       "name": "Coretronic",
@@ -1802,43 +1802,43 @@
       "name": "Wolfspeed",
       "sector": "Materials",
       "file": "WOLF.json",
-      "days": 30
+      "days": 31
     },
     "LIN": {
       "name": "Linde plc",
       "sector": "Materials",
       "file": "LIN.json",
-      "days": 30
+      "days": 31
     },
     "AI FP": {
       "name": "Air Liquide",
       "sector": "Materials",
       "file": "AI_FP.json",
-      "days": 29
+      "days": 30
     },
     "APD": {
       "name": "Air Products",
       "sector": "Materials",
       "file": "APD.json",
-      "days": 30
+      "days": 31
     },
     "MRK GR": {
       "name": "Merck KGaA",
       "sector": "Materials",
       "file": "MRK_GR.json",
-      "days": 29
+      "days": 30
     },
     "BAS GR": {
       "name": "BASF",
       "sector": "Materials",
       "file": "BAS_GR.json",
-      "days": 29
+      "days": 30
     },
     "MTRN": {
       "name": "Materion Corp",
       "sector": "Materials",
       "file": "MTRN.json",
-      "days": 30
+      "days": 31
     },
     "3037 TT": {
       "name": "Unimicron",
@@ -1850,7 +1850,7 @@
       "name": "Kyocera",
       "sector": "Materials",
       "file": "6971_JP.json",
-      "days": 30
+      "days": 31
     },
     "600111 C1": {
       "name": "Northern Rare Earth",
@@ -1868,31 +1868,37 @@
       "name": "Albemarle Corp",
       "sector": "Materials",
       "file": "ALB.json",
-      "days": 30
+      "days": 31
     },
     "SQM": {
       "name": "Sociedad Quimica y Minera",
       "sector": "Materials",
       "file": "SQM.json",
-      "days": 30
+      "days": 31
     },
     "SGL GR": {
       "name": "SGL Carbon",
       "sector": "Materials",
       "file": "SGL_GR.json",
-      "days": 29
+      "days": 30
     },
     "ATI": {
       "name": "ATI Inc",
       "sector": "Materials",
       "file": "ATI.json",
-      "days": 30
+      "days": 31
     },
     "CRS": {
       "name": "Carpenter Technology",
       "sector": "Materials",
       "file": "CRS.json",
-      "days": 30
+      "days": 31
+    },
+    "189300 KS": {
+      "name": "Intellian Technologies",
+      "sector": "Space",
+      "file": "189300_KS.json",
+      "days": 26
     }
   }
 }
