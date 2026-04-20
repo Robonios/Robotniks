@@ -127,7 +127,15 @@ function cellHtml(e,key){
     case'pb':return fn(e.pb_ratio);
     case'rev':return fm(e.revenue_ttm);
     case'margin':return fmg(e.operating_margin);
-    case'divyld':return e.dividend_yield?fn(e.dividend_yield*100)+'%':'\u2014';
+    case'divyld':
+      // 2-decimal precision + explicit em-dash for non-payers. The
+      // previous 1-decimal format rounded NVDA's 0.02% yield to 0.0%
+      // — misleading users into thinking it was exactly zero. Treat
+      // null and 0 both as "unavailable / non-dividend-paying" and
+      // render the em-dash so the cell is never blank-looking.
+      return (e.dividend_yield==null||e.dividend_yield===0)
+        ?'\u2014'
+        :(e.dividend_yield*100).toFixed(2)+'%';
     case'vol':return fv(e.volume);
     case'vol7d':return fv(e.volume_avg_7d);
     case'vol30d':return fv(e.volume_avg_30d);
