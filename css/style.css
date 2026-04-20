@@ -112,13 +112,19 @@
   }
 
   .sidebar-logo-img {
-    width: 32px; height: 32px;
-    border-radius: 6px;
+    /* Enlarged ~37% (32px → 44px) per UX polish pass. Source asset is
+       376x398 so this is still well below native resolution — no
+       pixelation. A simplified mascot is planned for Q2; at that point
+       we can revisit dimensions and drop the RGBA PNG for an SVG. */
+    width: 44px; height: 44px;
+    border-radius: 8px;
     object-fit: cover;
   }
 
   .sidebar-logo-text {
-    font-size: 11px;
+    /* Wordmark scaled up to match the larger mascot (11px → 15px, +36%).
+       Typography/weight/letterspacing preserved — only size changes. */
+    font-size: 15px;
     font-weight: 700;
     color: var(--yellow);
     letter-spacing: 0.12em;
