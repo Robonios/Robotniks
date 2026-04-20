@@ -51,13 +51,57 @@ def _pct_change(old, new):
     return round((new - old) / old * 100, 2)
 
 
+def _assert_periods_distinct(entities, field_a, field_b, max_match_pct=0.9, tol=0.01):
+    """Fail the pipeline if two return periods produce identical values for
+    more than `max_match_pct` of rows where both are populated.
+
+    A handful of rows matching by coincidence (zero-volume days, halted
+    tickers) is normal. Nearly every row matching means one of:
+      - a render bug reading the same field twice
+      - a fetcher bug writing one value to both fields
+      - stale history that collapses the lookback window
+    Either way, the UI shouldn't silently ship it.
+    """
+    matches = total = 0
+    for r in entities.values():
+        a = r.get(field_a)
+        b = r.get(field_b)
+        if a is None or b is None:
+            continue
+        total += 1
+        if abs(a - b) < tol:
+            matches += 1
+    if total > 10 and matches / total > max_match_pct:
+        raise RuntimeError(
+            "Data integrity check failed: {a} and {b} are identical for "
+            "{m}/{t} entities ({pct:.1f}%). Threshold is {lim:.0%}. "
+            "Likely causes: duplicate field assignment, stale price history, "
+            "or lookup collapse onto the last-close date.".format(
+                a=field_a, b=field_b, m=matches, t=total,
+                pct=matches / total * 100, lim=max_match_pct,
+            )
+        )
+
+
 def _find_price_on_date(series, target, window=5):
-    """Find close price on target date or nearest prior within window days."""
+    """Find close price on target date or nearest prior within window days.
+
+    Returns (price, actual_date) tuple. The actual_date is critical: it lets
+    the caller detect cases where two different periods (e.g. "24h" and "7d")
+    both resolve to the same baseline date — a sign that price history is
+    stale and the returns are degenerate. The caller should null the shorter-
+    overlapping period in that case, otherwise the UI shows identical values
+    for different time windows. See the 7D/30D identical-values bug
+    investigation for the full chain.
+
+    Returns (None, None) if no price is found within the window.
+    """
+    target_dt = datetime.strptime(target, "%Y-%m-%d")
     for offset in range(window + 1):
-        d = (datetime.strptime(target, "%Y-%m-%d") - timedelta(days=offset)).strftime("%Y-%m-%d")
+        d = (target_dt - timedelta(days=offset)).strftime("%Y-%m-%d")
         if d in series:
-            return series[d]
-    return None
+            return series[d], d
+    return None, None
 
 
 def main():
@@ -151,17 +195,38 @@ def main():
         if not history_series:
             no_history += 1
 
-        # Calculate price changes
+        # Calculate price changes — track the baseline date for each period so
+        # we can detect stale-history collapse (two periods resolving to the
+        # same baseline date, which produces identical returns).
         changes = {}
+        baseline_dates = {}
         for period, target_date in targets.items():
-            old_price = _find_price_on_date(history_series, target_date)
+            old_price, old_date = _find_price_on_date(history_series, target_date)
             changes[period] = _pct_change(old_price, current_close)
+            baseline_dates[period] = old_date
 
         # Override 24h: use previous trading day (second-to-last date in history)
         sorted_hist = sorted(history_series.keys())
         if len(sorted_hist) >= 2:
             prev_trading_day = sorted_hist[-2]
             changes["24h"] = _pct_change(history_series[prev_trading_day], current_close)
+            baseline_dates["24h"] = prev_trading_day
+
+        # Null out any period whose baseline date collapses onto a shorter
+        # period's baseline. This happens when price history is stale — the
+        # lookup walks back from the target and lands on the same last-close
+        # date the 24h override uses, producing identical returns for 24h,
+        # 7d, 30d, etc. Preferring None over a misleading duplicate.
+        period_order = ["24h", "7d", "30d", "ytd", "3m", "6m", "1y", "3y", "5y"]
+        for i, period in enumerate(period_order):
+            for shorter in period_order[:i]:
+                if (
+                    baseline_dates.get(period)
+                    and baseline_dates.get(shorter)
+                    and baseline_dates[period] == baseline_dates[shorter]
+                ):
+                    changes[period] = None
+                    break
 
         # Sanity check: cap any change >500% as likely data error
         for k in changes:
@@ -243,6 +308,15 @@ def main():
         }
         results[ticker] = entity
         processed += 1
+
+    # Regression guard: two different return windows should rarely produce
+    # identical values. If they match for >90% of rows, it's almost certainly
+    # a pipeline bug (duplicate field, wrong calculation) or catastrophically
+    # stale history data. Fail loudly so the next run of a refresh workflow
+    # doesn't silently ship garbage to the live page.
+    _assert_periods_distinct(results, "change_7d_pct", "change_24h_pct")
+    _assert_periods_distinct(results, "change_7d_pct", "change_30d_pct")
+    _assert_periods_distinct(results, "change_30d_pct", "change_ytd_pct")
 
     # Save output
     output = {
