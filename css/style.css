@@ -58,23 +58,13 @@
     pointer-events: none;
   }
 
-  /* ===== CRT SCAN LINES ===== */
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 10000;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent 0px,
-      transparent 2px,
-      rgba(0, 0, 0, 0.06) 2px,
-      rgba(0, 0, 0, 0.06) 4px
-    );
-  }
-
   /* ===== CRT VIGNETTE ===== */
+  /* NOTE: the companion CRT scan-line overlay (body::after) was removed
+     per designer feedback — the repeating-linear-gradient landed visibly
+     on top of solid-fill buttons and sector tags as a stripe texture,
+     especially on the yellow "Request Early Access" CTA and sector pills
+     (SEMI / ROBO / SPACE / MATERIALS). Keeping the vignette for
+     atmosphere; the scan lines are gone site-wide. */
   body::before {
     content: '';
     position: fixed;
