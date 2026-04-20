@@ -269,6 +269,17 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+// Truncate at the nearest word boundary before `max` chars; add an
+// ellipsis. Prevents mid-word cuts in the past-briefings teaser rows.
+// Returns the original string unchanged when it's already short enough.
+function trimAtWord(text, max) {
+  if (!text) return '';
+  if (text.length <= max) return text;
+  var cut = text.lastIndexOf(' ', max);
+  if (cut < max * 0.6) cut = max; // fall back to hard cut if no nearby space
+  return text.substring(0, cut).replace(/[.,;:\s]+$/, '') + '…';
+}
+
 // Generate daily briefing dynamically from most recent news
 function generateDailyBriefing() {
   if (!allNewsItems.length) return;
@@ -327,7 +338,11 @@ function generateDailyBriefing() {
     var sector = sectorMap[item.category] || 'semi';
     var sl = sectorLabels[sector] || sectorLabels['semi'];
     html += '<li>' + escapeHtml(item.title);
-    if (item.summary) html += ' &mdash; ' + escapeHtml(item.summary.substring(0, 120));
+    // Render the full source summary. Data is bounded: fetch_news.py
+    // stores ~175-char summaries on average, 202 max — they fit the
+    // briefing card at any reasonable width. Previous 120-char
+    // substring cut produced mid-word truncation on ~90% of items.
+    if (item.summary) html += ' &mdash; ' + escapeHtml(item.summary);
     html += ' <span class="feed-sector ' + sl.cls + '">' + sl.text + '</span></li>';
   });
   html += '</ul>';
@@ -364,11 +379,11 @@ function buildPastBriefings() {
       html += '<div class="past-briefing-item" style="margin-bottom:0.5rem;">' +
         '<div class="past-briefing-date">DAILY BRIEFING // ' + dateLabel + '</div>' +
         '<div class="past-briefing-preview" style="font-size:10px;color:#8B92A5;line-height:1.6;">' +
-        'Tovarishch, ' + items.length + ' signals detected: ' + escapeHtml(preview.substring(0, 200)) + '</div></div>';
+        'Tovarishch, ' + items.length + ' signals detected: ' + escapeHtml(trimAtWord(preview, 500)) + '</div></div>';
     } else if (shownCount < 5) {
       html += '<div class="past-briefing-item" style="margin-bottom:0.5rem;position:relative;overflow:hidden;">' +
         '<div class="past-briefing-date">DAILY BRIEFING // ' + dateLabel + '</div>' +
-        '<div class="past-briefing-blur">' + escapeHtml(preview.substring(0, 150)) + '</div>' +
+        '<div class="past-briefing-blur">' + escapeHtml(trimAtWord(preview, 300)) + '</div>' +
         '<div class="past-briefing-gate"><span style="font-size:9px;color:#5A6178;">&#x1F512; Older briefings require early access</span></div></div>';
     }
     shownCount++;

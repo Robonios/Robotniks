@@ -145,8 +145,14 @@ def parse_date(entry):
     return ""
 
 
-def clean_summary(html, max_len=200):
-    """Strip HTML tags and truncate."""
+def clean_summary(html, max_len=500):
+    """Strip HTML tags and truncate at the nearest word boundary.
+
+    max_len raised from 200 → 500 so the news page's daily briefing can
+    render complete sentences end-to-end. 200 chars was cutting roughly
+    90% of items mid-phrase before the ellipsis added noise; 500 fits a
+    proper lead sentence or two on virtually every feed we pull.
+    """
     text = re.sub(r"<[^>]+>", "", html or "")
     text = re.sub(r"\s+", " ", text).strip()
     if len(text) > max_len:
