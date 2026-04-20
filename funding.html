@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/typography.css">
 <style>
-.fund-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem}
+.fund-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem}
 .fund-title{font-size:15px;font-weight:700;color:#F5D921;letter-spacing:0.1em;text-transform:uppercase}
 .fund-subtitle{font-size:11px;color:#8B92A5;margin-top:0.25rem}
 .time-toggle{display:flex;gap:0;border:1px solid #252A36;border-radius:4px;overflow:hidden}
@@ -86,13 +86,13 @@
 <body data-page="funding">
 <div class="bg-layer"></div>
 <div id="nav-container"></div>
-<div class="main-content" style="padding:1rem;padding-top:60px;max-width:1400px;">
+<div class="main-content" style="padding:1rem;padding-top:48px;max-width:1400px;">
 
 <!-- Header -->
-<div class="fund-header">
+<div class="page-header fund-header">
   <div>
-    <div class="fund-title">Funding Operations</div>
-    <div class="fund-subtitle">Tracking private capital flows across the frontier technology stack</div>
+    <div class="page-title fund-title">Funding Operations</div>
+    <div class="page-subtitle fund-subtitle">Tracking private capital flows across the frontier technology stack</div>
   </div>
   <div class="time-toggle">
     <button class="time-btn active" data-period="3M" onclick="setPeriod(this)">3M</button>

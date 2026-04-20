@@ -891,7 +891,7 @@
 
   /* Coming soon page previews */
   .coming-soon-content { max-width: 640px; margin: 0 auto; text-align: center; padding: 2rem 0; }
-  .coming-soon-content h2 { color: var(--yellow); font-size: clamp(1.2rem,2.5vw,1.6rem); font-weight: 700; margin-bottom: 0.5rem; }
+  .coming-soon-content h2 { color: #FFFFFF; font-size: clamp(1.2rem,2.5vw,1.6rem); font-weight: 700; margin-bottom: 0.5rem; }
   .coming-soon-content .subtitle { color: var(--text-dim); font-size: 11px; margin-bottom: 2rem; }
   .signal-example, .commodity-card {
     background: var(--bg-card);
@@ -995,7 +995,7 @@
     display: grid;
     grid-template-columns: 1fr 280px;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     max-width: 1400px;
     align-items: start;
   }
@@ -1802,7 +1802,7 @@
   /* ===== DOSSIER / THESIS PAGE ===== */
   .dossier {
     max-width: 800px;
-    padding: 1.5rem 2rem 3rem;
+    padding: 0 2rem 3rem;
   }
 
   .dossier-header {
@@ -2384,3 +2384,33 @@
   .data-table tbody tr { cursor: pointer; }
   .data-table tbody tr:hover { background: var(--bg-hover); }
   .data-table tbody tr.chart-active { background: var(--yellow-subtle); border-left: 2px solid var(--yellow); }
+
+  /* =========================================================
+     STANDARDISED PAGE HEADER
+     ---------------------------------------------------------
+     Single source of truth for every page's title + subtitle
+     block. Wrap the existing header container with .page-header
+     and add .page-title / .page-subtitle alongside each page's
+     native classes (e.g. .intel-title, .fund-title). This rule
+     only overrides COLOUR and SPACING — per the design brief,
+     yellow is reserved for accents, active states, and data
+     highlights, never page titles. Per-page typography
+     (font/size/weight) is preserved via the native class.
+
+     Spacing contract:
+       • 24px between the top search bar and the page heading
+       • 8px  between the page heading and the subtitle
+       • 32px between the subtitle and the page's main content
+     ========================================================= */
+  .page-header {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .page-header .page-title {
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .page-header .page-subtitle {
+    color: var(--text-muted);
+    margin: 8px 0 0 0;
+  }
