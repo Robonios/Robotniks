@@ -141,16 +141,19 @@ function cellHtml(e,key){
     case'vol30d':return fv(e.volume_avg_30d);
     case'ath':return fp(e.ath,e.currency);
     case'fromAth':return fpc(e.pct_from_ath);
-    // Intelligence columns
+    // Intelligence columns. Every field is sourced from enrichment_data.json
+    // — these are qualitative attributions (tier position, bottleneck risk,
+    // customers, suppliers, notes). Each field falls back to em-dash
+    // individually so a partial enrichment entry still renders cleanly
+    // without throwing on undefined substring calls.
     case'vctier':case'bnrisk':case'keycust':case'keysupp':case'rnotes':
-      if(!_enrichmentData)return'<span class="dim" style="opacity:0.4">\u2014</span>';
-      var enr=_enrichmentData[e.ticker];
+      var enr=_enrichmentData?_enrichmentData[e.ticker]:null;
       if(!enr)return'<span class="dim" style="opacity:0.4">\u2014</span>';
-      if(key==='vctier')return'<span class="dim">'+enr.value_chain_tier+'</span>';
-      if(key==='bnrisk'){var rc=enr.bottleneck_risk;var cls=rc==='CRITICAL'||rc==='HIGH'?'v-red':rc==='MEDIUM'?'v-green':'dim';return'<span class="'+cls+'">'+rc+'</span>';}
-      if(key==='keycust')return'<span class="dim" style="font-size:8px">'+enr.key_customers.substring(0,60)+(enr.key_customers.length>60?'...':'')+'</span>';
-      if(key==='keysupp')return'<span class="dim" style="font-size:8px">'+enr.key_suppliers.substring(0,60)+(enr.key_suppliers.length>60?'...':'')+'</span>';
-      if(key==='rnotes')return'<span class="dim" style="font-size:8px" title="'+enr.robotnik_notes.replace(/"/g,'&quot;')+'">'+enr.robotnik_notes.substring(0,80)+(enr.robotnik_notes.length>80?'...':'')+'</span>';
+      if(key==='vctier'){var vc=enr.value_chain_tier;return vc?'<span class="dim">'+vc+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
+      if(key==='bnrisk'){var rc=enr.bottleneck_risk;if(!rc)return'<span class="dim" style="opacity:0.4">\u2014</span>';var cls=rc==='CRITICAL'||rc==='HIGH'?'v-red':rc==='MEDIUM'?'v-green':'dim';return'<span class="'+cls+'">'+rc+'</span>';}
+      if(key==='keycust'){var kc=enr.key_customers;return kc?'<span class="dim" style="font-size:8px">'+kc.substring(0,60)+(kc.length>60?'...':'')+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
+      if(key==='keysupp'){var ks=enr.key_suppliers;return ks?'<span class="dim" style="font-size:8px">'+ks.substring(0,60)+(ks.length>60?'...':'')+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
+      if(key==='rnotes'){var rn=enr.robotnik_notes;return rn?'<span class="dim" style="font-size:8px" title="'+rn.replace(/"/g,'&quot;')+'">'+rn.substring(0,80)+(rn.length>80?'...':'')+'</span>':'<span class="dim" style="opacity:0.4">\u2014</span>';}
       return'\u2014';
     default:return'\u2014';
   }
