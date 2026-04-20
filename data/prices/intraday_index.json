@@ -1,75 +1,10 @@
 {
-  "fetched_at": "2026-04-20T18:58:40.361944Z",
+  "fetched_at": "2026-04-20T20:03:18.842923Z",
   "source": "SOXX.US proxy (EODHD 5min intraday)",
   "robotnik_base_close": 2618.63,
   "robotnik_base_date": "2026-04-19",
   "soxx_base_close": 415.71,
   "series_5m": [
-    {
-      "datetime": "2026-04-13 19:00:00",
-      "value": 2461.69,
-      "volume": 39270
-    },
-    {
-      "datetime": "2026-04-13 19:05:00",
-      "value": 2464.24,
-      "volume": 29973
-    },
-    {
-      "datetime": "2026-04-13 19:10:00",
-      "value": 2463.86,
-      "volume": 29733
-    },
-    {
-      "datetime": "2026-04-13 19:15:00",
-      "value": 2468.58,
-      "volume": 47357
-    },
-    {
-      "datetime": "2026-04-13 19:20:00",
-      "value": 2467.39,
-      "volume": 41150
-    },
-    {
-      "datetime": "2026-04-13 19:25:00",
-      "value": 2468.58,
-      "volume": 147109
-    },
-    {
-      "datetime": "2026-04-13 19:30:00",
-      "value": 2470.69,
-      "volume": 124613
-    },
-    {
-      "datetime": "2026-04-13 19:35:00",
-      "value": 2468.08,
-      "volume": 42566
-    },
-    {
-      "datetime": "2026-04-13 19:40:00",
-      "value": 2469.31,
-      "volume": 48447
-    },
-    {
-      "datetime": "2026-04-13 19:45:00",
-      "value": 2471.04,
-      "volume": 46552
-    },
-    {
-      "datetime": "2026-04-13 19:50:00",
-      "value": 2477.72,
-      "volume": 167608
-    },
-    {
-      "datetime": "2026-04-13 19:55:00",
-      "value": 2476.71,
-      "volume": 322551
-    },
-    {
-      "datetime": "2026-04-13 20:00:00",
-      "value": 2477.72,
-      "volume": null
-    },
     {
       "datetime": "2026-04-14 13:30:00",
       "value": 2492.9,
@@ -1652,16 +1587,6 @@
     }
   ],
   "series_1h": [
-    {
-      "datetime": "2026-04-13 19:00:00",
-      "value": 2476.71,
-      "volume": 322551
-    },
-    {
-      "datetime": "2026-04-13 20:00:00",
-      "value": 2477.72,
-      "volume": null
-    },
     {
       "datetime": "2026-04-14 13:00:00",
       "value": 2483.86,
