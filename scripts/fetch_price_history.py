@@ -62,10 +62,14 @@ def fetch_url(url, timeout=20):
         return None
 
 
-def fetch_equity_history(ticker, country):
-    """Fetch daily OHLCV for one equity from EODHD (5 years)."""
+def fetch_equity_history(ticker, country, days_back=EQUITY_DAYS_BACK):
+    """Fetch daily OHLCV for one equity from EODHD.
+
+    days_back defaults to 5 years (full backfill). Pass a smaller window
+    (e.g. 45) for an incremental refresh that only pulls the recent tail.
+    """
     eodhd_ticker = ticker_to_eodhd(ticker, country)
-    from_date = (date.today() - timedelta(days=EQUITY_DAYS_BACK)).isoformat()
+    from_date = (date.today() - timedelta(days=days_back)).isoformat()
     to_date = date.today().isoformat()
 
     url = (
@@ -101,11 +105,11 @@ def fetch_equity_history(ticker, country):
     return series
 
 
-def fetch_token_history(coingecko_id):
-    """Fetch daily prices for one token from CoinGecko (365 days)."""
+def fetch_token_history(coingecko_id, days_back=TOKEN_DAYS_BACK):
+    """Fetch daily prices for one token from CoinGecko (default 365 days)."""
     url = (
         f"https://api.coingecko.com/api/v3/coins/{coingecko_id}"
-        f"/market_chart?vs_currency=usd&days={TOKEN_DAYS_BACK}&interval=daily"
+        f"/market_chart?vs_currency=usd&days={days_back}&interval=daily"
     )
     if COINGECKO_KEY:
         url += f"&x_cg_demo_api_key={COINGECKO_KEY}"
@@ -129,10 +133,30 @@ def fetch_token_history(coingecko_id):
     return sorted(seen.values(), key=lambda x: x["date"])
 
 
-def save_history(ticker, name, sector, series, source):
-    """Save one entity's price history."""
+def save_history(ticker, name, sector, series, source, merge=False):
+    """Save one entity's price history.
+
+    If merge=True and a history file already exists, combine the incoming
+    `series` with the on-disk series (incoming wins on date conflicts — so
+    a refresh can correct a stale or preliminary close). Used by --refresh
+    to apply an incremental tail to a preserved 5-year backfill.
+    """
     safe_ticker = ticker.replace("/", "_").replace(" ", "_")
     path = HISTORY_DIR / f"{safe_ticker}.json"
+
+    if merge and path.exists():
+        try:
+            with open(path) as f:
+                existing = json.load(f)
+            by_date = {p["date"]: p for p in existing.get("series", []) if p.get("date")}
+            for p in series:
+                if p.get("date"):
+                    by_date[p["date"]] = p
+            series = sorted(by_date.values(), key=lambda p: p["date"])
+        except Exception:
+            # If merge fails for any reason, fall through to a clean overwrite.
+            pass
+
     data = {
         "ticker": ticker,
         "name": name,
@@ -175,27 +199,57 @@ def main():
                         help="Only fetch tickers in this sector (e.g., Materials, Token, Semiconductor)")
     parser.add_argument("--backfill", action="store_true",
                         help="Only fetch tickers that don't already have history files")
+    parser.add_argument("--refresh", action="store_true",
+                        help="Incremental refresh: fetch the last ~45 days for every "
+                             "existing ticker and merge into their history files. "
+                             "Use this for the daily pipeline — far cheaper than a "
+                             "full 5-year refetch and keeps history current.")
+    parser.add_argument("--refresh-days", type=int, default=45,
+                        help="How many days of recent history to pull per ticker in "
+                             "--refresh mode (default: 45 — covers ~30 trading days "
+                             "plus buffer for holidays and weekends).")
     args = parser.parse_args()
 
     sector_filter = args.sector
     backfill_only = args.backfill
+    refresh_mode = args.refresh
+    refresh_days = args.refresh_days
+
+    if backfill_only and refresh_mode:
+        parser.error("--backfill and --refresh are mutually exclusive")
+
+    # In refresh mode, fetch short windows and merge with existing files.
+    equity_days = refresh_days if refresh_mode else EQUITY_DAYS_BACK
+    # CoinGecko accepts values up to 365 on the demo plan; keep token refresh
+    # proportionate to the equity one.
+    token_days = refresh_days if refresh_mode else TOKEN_DAYS_BACK
 
     print("Robotnik Price History Fetcher")
     if sector_filter:
         print(f"  Sector filter: {sector_filter}")
     if backfill_only:
         print(f"  Backfill mode: only missing tickers")
+    if refresh_mode:
+        print(f"  Refresh mode: last {refresh_days} days, merging with existing")
     print("=" * 40)
 
     index = {}
     errors = []
 
     def needs_fetch(ticker):
-        """Check if ticker already has a history file (for backfill mode)."""
-        if not backfill_only:
-            return True
+        """Decide whether to fetch this ticker given the current mode.
+
+        - backfill:  only fetch if no history file exists yet
+        - refresh:   only fetch if a history file DOES exist (incremental tail)
+        - default:   always fetch (full 5-year pull — used for full rebuilds)
+        """
         safe = ticker.replace("/", "_").replace(" ", "_")
-        return not (HISTORY_DIR / f"{safe}.json").exists()
+        exists = (HISTORY_DIR / f"{safe}.json").exists()
+        if backfill_only:
+            return not exists
+        if refresh_mode:
+            return exists
+        return True
 
     # ── equities (EODHD) ─────────────────────────────────────────────
     equities = EQUITIES
@@ -206,9 +260,10 @@ def main():
         to_fetch = [(t, n, s, c) for t, n, s, c in equities if needs_fetch(t)]
         print(f"\nEquities: {len(to_fetch)} to fetch (of {len(equities)} in scope)")
         for i, (ticker, name, sector, country) in enumerate(to_fetch):
-            series = fetch_equity_history(ticker, country)
+            series = fetch_equity_history(ticker, country, days_back=equity_days)
             if series and len(series) > 0:
-                safe = save_history(ticker, name, sector, series, "EODHD")
+                safe = save_history(ticker, name, sector, series, "EODHD",
+                                    merge=refresh_mode)
                 index[ticker] = {
                     "name": name, "sector": sector, "file": f"{safe}.json",
                     "days": len(series),
@@ -239,9 +294,10 @@ def main():
         token_errors = 0
         print(f"\nTokens: {len(tokens_to_fetch)} to fetch")
         for i, (ticker, (cg_id, name)) in enumerate(tokens_to_fetch.items()):
-            series = fetch_token_history(cg_id)
+            series = fetch_token_history(cg_id, days_back=token_days)
             if series and len(series) > 0:
-                safe = save_history(ticker, name, "Token", series, "CoinGecko")
+                safe = save_history(ticker, name, "Token", series, "CoinGecko",
+                                    merge=refresh_mode)
                 index[ticker] = {
                     "name": name, "sector": "Token", "file": f"{safe}.json",
                     "days": len(series),
