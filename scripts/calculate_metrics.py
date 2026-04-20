@@ -195,9 +195,10 @@ def main():
         if not history_series:
             no_history += 1
 
-        # Calculate price changes — track the baseline date for each period so
-        # we can detect stale-history collapse (two periods resolving to the
-        # same baseline date, which produces identical returns).
+        # Calculate price changes. Each period uses a target-date lookup that
+        # walks backward by up to `window` days to find the nearest earlier
+        # trading-day close — so "7d" might resolve to 8 days ago over a long
+        # weekend, and that's fine.
         changes = {}
         baseline_dates = {}
         for period, target_date in targets.items():
@@ -205,28 +206,27 @@ def main():
             changes[period] = _pct_change(old_price, current_close)
             baseline_dates[period] = old_date
 
-        # Override 24h: use previous trading day (second-to-last date in history)
+        # Override 24h: the "last available close vs current" interpretation
+        # only makes sense if the last close is actually recent. When price
+        # history is stale (e.g. last close 10 days ago), sorted_hist[-2]
+        # produces a 10-day return labelled "24h" AND collides with the 7d
+        # lookback, making the two columns identical. Gate the override on a
+        # freshness check: the previous trading day must be within 3 days of
+        # yesterday; otherwise 24h is None and the target-based lookup above
+        # stands (which will itself be None if yesterday's close isn't within
+        # its own window).
         sorted_hist = sorted(history_series.keys())
         if len(sorted_hist) >= 2:
             prev_trading_day = sorted_hist[-2]
-            changes["24h"] = _pct_change(history_series[prev_trading_day], current_close)
-            baseline_dates["24h"] = prev_trading_day
-
-        # Null out any period whose baseline date collapses onto a shorter
-        # period's baseline. This happens when price history is stale — the
-        # lookup walks back from the target and lands on the same last-close
-        # date the 24h override uses, producing identical returns for 24h,
-        # 7d, 30d, etc. Preferring None over a misleading duplicate.
-        period_order = ["24h", "7d", "30d", "ytd", "3m", "6m", "1y", "3y", "5y"]
-        for i, period in enumerate(period_order):
-            for shorter in period_order[:i]:
-                if (
-                    baseline_dates.get(period)
-                    and baseline_dates.get(shorter)
-                    and baseline_dates[period] == baseline_dates[shorter]
-                ):
-                    changes[period] = None
-                    break
+            prev_dt = datetime.strptime(prev_trading_day, "%Y-%m-%d").date()
+            yesterday = today - timedelta(days=1)
+            if (yesterday - prev_dt).days <= 3:
+                changes["24h"] = _pct_change(history_series[prev_trading_day], current_close)
+                baseline_dates["24h"] = prev_trading_day
+            else:
+                # Stale history — don't pretend the last-close return is 24h.
+                changes["24h"] = None
+                baseline_dates["24h"] = None
 
         # Sanity check: cap any change >500% as likely data error
         for k in changes:
