@@ -1041,20 +1041,22 @@ let indexAreaSeries = null;
 
 // Robotnik Composite anchor: the index was rebased to 1,000 on the
 // inception date below. Displayed as a horizontal dashed reference line
-// across the chart plus a left-edge label. See _updateBaselineReference.
+// across the chart. The in-chart text annotation has been removed —
+// at mobile/narrow viewports "BASE 1,000 · 31 MAR 2025" pinned to the
+// left edge read as a stray date label near the oldest x-axis tick.
+// The base date is still surfaced in the side explainer widget
+// ("Base: 1,000.00 on 2025-03-31"), so no information is lost.
 const ROBOTNIK_INDEX_BASE = 1000;
 const ROBOTNIK_INDEX_INCEPTION = '2025-03-31';
-const ROBOTNIK_INDEX_BASE_LABEL = 'BASE 1,000 · 31 MAR 2025';
 
-// Mutable refs for the line + label so we can hide/recreate on
-// sub-index + mode toggles.
 let _indexBasePriceLine = null;   // LightweightCharts IPriceLine
-let _indexBaseLabelEl   = null;   // absolutely-positioned DOM label
+// _indexBaseLabelEl kept nulled for forward-compat with callers that
+// still reference it but there is no longer an in-chart label.
+let _indexBaseLabelEl   = null;
 
 // Called from applyIndexData() after every setData() and again from
 // any chart-event handler that changes layout. Keeps the baseline
-// reference line + left-edge label in sync with the active series
-// and chart mode.
+// reference line in sync with the active series and chart mode.
 function _updateBaselineReference() {
   if (!indexAreaSeries || !indexChart) return;
 
@@ -1070,7 +1072,7 @@ function _updateBaselineReference() {
         color: 'rgba(90, 97, 120, 0.6)',   // --text-muted @ 60% opacity
         lineWidth: 1,
         lineStyle: LightweightCharts.LineStyle.Dashed,
-        axisLabelVisible: false,           // we draw our own left-edge label
+        axisLabelVisible: false,
         title: '',
       });
     }
@@ -1078,17 +1080,6 @@ function _updateBaselineReference() {
     indexAreaSeries.removePriceLine(_indexBasePriceLine);
     _indexBasePriceLine = null;
   }
-
-  // ── Left-edge label, anchored to the 1,000 coordinate ──
-  if (!_indexBaseLabelEl) return;
-  if (!shouldShow) { _indexBaseLabelEl.style.display = 'none'; return; }
-  const y = indexAreaSeries.priceToCoordinate(ROBOTNIK_INDEX_BASE);
-  // priceToCoordinate returns null when 1,000 is outside the current
-  // visible y-axis range (e.g. a tight zoom that doesn't include it).
-  // Per spec: in that case don't force the label to render.
-  if (y == null) { _indexBaseLabelEl.style.display = 'none'; return; }
-  _indexBaseLabelEl.style.display = 'block';
-  _indexBaseLabelEl.style.top = Math.round(y - 10) + 'px';
 }
 let indexChartData = {};
 let indexSubMeta = {};       // {key: {current_value, entity_count, ...}}
@@ -1301,32 +1292,7 @@ function createIndexChart(container, data) {
     lineColor: '#F5D921', topColor: 'rgba(245,217,33,0.10)', bottomColor: 'rgba(245,217,33,0.02)', lineWidth: 2,
   });
 
-  // Baseline reference label. Positioned absolutely over the plot
-  // area; _updateBaselineReference() sets its `top` to track the y-
-  // coordinate of 1,000 on every setData / resize / range change.
-  // The horizontal reference line itself is drawn via createPriceLine
-  // inside _updateBaselineReference.
   container.style.position = container.style.position || 'relative';
-  _indexBaseLabelEl = document.createElement('div');
-  _indexBaseLabelEl.id = 'chart-base-label';
-  _indexBaseLabelEl.textContent = ROBOTNIK_INDEX_BASE_LABEL;
-  _indexBaseLabelEl.style.cssText = [
-    'position:absolute',
-    'left:10px',
-    'top:0',
-    'display:none',
-    'z-index:3',
-    'pointer-events:none',
-    'font-family:\'Space Grotesk\', sans-serif',
-    'font-variant-numeric:tabular-nums',
-    'font-size:10px',
-    'letter-spacing:0.04em',
-    'color:rgba(90,97,120,0.9)',
-    'background:#161920',           // --bg-raised, matches chart container
-    'padding:2px 6px',
-    'border-radius:2px',
-  ].join(';');
-  container.appendChild(_indexBaseLabelEl);
 
   applyIndexData(data);
   const ro = new ResizeObserver(() => {
