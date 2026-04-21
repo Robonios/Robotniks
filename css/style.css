@@ -630,15 +630,26 @@
   }
 
   .chart-last-updated {
+    /* Sits in the widget flow directly below the chart, always as a
+       single line regardless of viewport width. white-space:nowrap
+       blocks the mobile-wrap path where "21 Apr 2026, …" dropped onto
+       a second line and read as a stray axis label at the chart's
+       bottom-left corner. width:fit-content + margin-left:auto keeps
+       the element right-aligned without turning the full-width parent
+       into a wrap target. */
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px 6px 0 0;
     font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-weight: 400;
     color: #6B7280;
     opacity: 0.7;
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    padding: 4px 6px 0 0;
     letter-spacing: normal;
     text-transform: none;
   }
