@@ -629,6 +629,20 @@
     flex-wrap: wrap;
   }
 
+  .chart-last-updated {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    text-align: right;
+    margin-top: 0.25rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .chart-last-updated.stale {
+    color: #c77b3a;
+  }
+
   .chart-mode-tabs {
     display: flex;
     gap: 0;

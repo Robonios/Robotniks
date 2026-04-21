@@ -143,6 +143,20 @@ def main():
         print("  Index range: {:.2f} to {:.2f}".format(
             min(b["value"] for b in series_5m), max(b["value"] for b in series_5m)))
     print("\nOutput: {}".format(OUTPUT))
+
+    # Freshness guard: surface a loud warning (and a non-zero exit) when the
+    # fetched tail is older than 36 hours. EODHD's intraday feed has
+    # occasionally returned Friday-only data on a Monday-evening pull; when
+    # that happens the file still writes successfully and the UI silently
+    # renders a stale window. A visible warning in CI logs turns that into
+    # a detectable failure instead of a user-noticed one.
+    if series_5m:
+        latest = datetime.strptime(series_5m[-1]["datetime"], "%Y-%m-%d %H:%M:%S")
+        age_hours = (datetime.utcnow() - latest).total_seconds() / 3600
+        if age_hours > 36:
+            print("  WARNING: latest intraday bar is {:.1f}h old — likely EODHD publish lag".format(age_hours))
+            print("  WARNING: downstream 1D/1W chart views will anchor to this stale tail")
+            sys.exit(2)  # non-zero, but distinct from hard errors (exit 1)
     print("=" * 60)
 
 

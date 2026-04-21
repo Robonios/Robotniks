@@ -1091,6 +1091,8 @@ let currentIndexSeries = 'composite';
 let currentIndexRange = 365;  // days, or 'ytd' — default 1Y
 let currentChartMode = 'price';  // 'price' | 'pct'
 let _intradayCache = null;   // cached intraday_index.json
+let _indexCalculatedAt = null;  // timestamp of last daily index compute
+let _intradayFetchedAt = null;  // timestamp of last intraday fetch
 let compareLines = [];       // [{ticker, series, color, isBenchmark}]
 const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#EC4899', '#8B5CF6'];
 const BENCHMARK_META = {
@@ -1105,6 +1107,19 @@ function initIndexChart() {
   const container = document.getElementById('index-chart-container');
   const placeholder = document.getElementById('chart-placeholder');
   if (!container || typeof LightweightCharts === 'undefined') return;
+
+  // Fetch summary.json in parallel to get the index-compute timestamp —
+  // robotnik_index.json itself only carries `current_date`, which loses
+  // the within-day precision we need to detect pipeline staleness.
+  fetch('data/index/summary.json').then(function(r) {
+    if (!r.ok) return null;
+    return r.json();
+  }).then(function(s) {
+    if (s && s.calculated_at) {
+      _indexCalculatedAt = s.calculated_at;
+      renderFreshnessIndicator();
+    }
+  }).catch(function() {});
 
   fetch('data/index/robotnik_index.json')
     .then(r => { if (!r.ok) throw new Error('No data'); return r.json(); })
@@ -1425,8 +1440,39 @@ async function loadIntradayIndex() {
     var resp = await fetch('data/prices/intraday_index.json?v=' + Date.now());
     if (!resp.ok) return null;
     _intradayCache = await resp.json();
+    _intradayFetchedAt = _intradayCache.fetched_at || null;
     return _filterIntraday(_intradayCache);
   } catch(e) { return null; }
+}
+
+// Pick the right "last updated" timestamp for the currently selected
+// range. 12H/1D/1W are driven by the intraday proxy; longer ranges are
+// driven by the daily index compute. Exposed as a separate helper so
+// setIndexRange and applyIndexData can both call it without duplication.
+function renderFreshnessIndicator() {
+  var el = document.getElementById('chart-last-updated');
+  if (!el) return;
+  var isIntraday = (currentIndexRange !== 'ytd' && currentIndexRange > 0 && currentIndexRange <= 7 && currentIndexSeries === 'composite');
+  var iso = isIntraday ? _intradayFetchedAt : _indexCalculatedAt;
+  if (!iso) { el.textContent = ''; return; }
+  // Tolerate a legacy format where calculate_index.py concatenated an
+  // extra 'Z' onto an already-offset-aware isoformat() string (yielding
+  // "…+00:00Z"). new Date() refuses to parse that, so strip a trailing
+  // Z when one is already preceded by a numeric offset.
+  var normalised = iso.replace(/([+-]\d\d:?\d\d)Z$/, '$1');
+  var d = new Date(normalised);
+  if (isNaN(d.getTime())) { el.textContent = ''; return; }
+  var ageHours = (Date.now() - d.getTime()) / 3600000;
+  // 36h is generous: EOD data pulled weekday 22:00 UTC should never be
+  // older than the most recent weekday + weekend carry. Anything older
+  // signals a pipeline problem worth surfacing in the UI.
+  var stale = ageHours > 36;
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var pad = function(n) { return n < 10 ? '0' + n : '' + n; };
+  var label = 'Last updated: ' + d.getUTCDate() + ' ' + months[d.getUTCMonth()] + ' ' + d.getUTCFullYear()
+            + ', ' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ' GMT';
+  el.textContent = label;
+  el.classList.toggle('stale', stale);
 }
 
 function _filterIntraday(data) {
@@ -1434,18 +1480,28 @@ function _filterIntraday(data) {
   var series = currentIndexRange <= 1 ? data.series_5m : data.series_1h;
   if (!series || !series.length) return null;
 
-  // Filter by time window (use generous window to catch edge cases)
-  var now = new Date();
-  var hoursBack = currentIndexRange <= 0.5 ? 14 : currentIndexRange <= 1 ? 30 : 192; // extra margin
-  var cutoff = new Date(now.getTime() - hoursBack * 3600000);
+  // Anchor the window to the LATEST bar, not wall-clock `now`. If the
+  // intraday feed stalls (EODHD publish delay, missed cron), anchoring
+  // to `now` makes the filter return zero and silently fall back to an
+  // arbitrary tail, producing a stale window that looks like today. By
+  // anchoring to the latest bar we always show the correct recency
+  // semantics relative to the data we actually have — and the separate
+  // "Last updated" indicator surfaces the staleness to the reader.
+  var lastBarMs = new Date(series[series.length - 1].datetime.replace(' ', 'T') + 'Z').getTime();
+  // 1D => ~1 trading session (30h covers a session plus overnight gap);
+  // 1W => 5 trading days (7 calendar days / 168h covers weekend gaps);
+  // 12H => intraday half-day.
+  var hoursBack = currentIndexRange <= 0.5 ? 14 : currentIndexRange <= 1 ? 30 : 168;
+  var cutoff = lastBarMs - hoursBack * 3600000;
 
   var filtered = series.filter(function(pt) {
-    return new Date(pt.datetime.replace(' ', 'T') + 'Z') >= cutoff;
+    return new Date(pt.datetime.replace(' ', 'T') + 'Z').getTime() >= cutoff;
   });
 
-  // Fallback: if too few points, use last N from series
+  // Defensive fallback: if the series is too sparse (e.g. a holiday-
+  // shortened week), use a last-N-bars cap instead of returning nothing.
   if (filtered.length < 3) {
-    var n = currentIndexRange <= 0.5 ? 72 : currentIndexRange <= 1 ? 144 : series.length;
+    var n = currentIndexRange <= 0.5 ? 72 : currentIndexRange <= 1 ? 78 : series.length;
     filtered = series.slice(-n);
   }
 
@@ -1464,6 +1520,7 @@ function setIndexRange(btn) {
   btn.classList.add('active');
   var rv = btn.dataset.range;
   currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseFloat(rv) || 0);
+  renderFreshnessIndicator();
 
   // For 12H, 1D, 1W: load intraday data (SOXX proxy)
   if (currentIndexRange <= 7 && currentIndexRange > 0 && currentIndexSeries === 'composite') {
@@ -1475,6 +1532,7 @@ function setIndexRange(btn) {
         var data = indexChartData[currentIndexSeries];
         if (data) applyIndexData(data);
       }
+      renderFreshnessIndicator();
     });
     // Also re-render market table for range-synced %
     renderMarketTable();
@@ -1496,6 +1554,7 @@ function setIndexSeries(btn) {
   btn.classList.add('active');
   currentIndexSeries = btn.dataset.idx;
   var data = indexChartData[currentIndexSeries];
+  renderFreshnessIndicator();
   // Update title
   var titleEl = document.getElementById('chart-title');
   var labels = { composite:'Robotnik Index', semi:'Semi Index', robotics:'Robotics Index', space:'Space Index', materials:'Materials Index' };
