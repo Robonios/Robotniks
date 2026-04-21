@@ -1246,7 +1246,15 @@ function createIndexChart(container, data) {
       // formatter turns them back into calendar dates or intraday
       // HH:MM labels at tick time.
       tickMarkFormatter: function(time) {
-        var orig = _chartTimeMap[time];
+        // Lightweight Charts occasionally calls with a fractional index
+        // at the visible-range edges. Clamp+floor before reverse-lookup
+        // and explicitly drop anything outside the data array so we
+        // never render a stray edge label (earlier this path could hit
+        // Date.now fallbacks in some toolchains).
+        if (typeof time !== 'number' || !isFinite(time)) return '';
+        var idx = Math.floor(time);
+        if (idx < 0 || idx >= _chartTimeMap.length) return '';
+        var orig = _chartTimeMap[idx];
         if (orig === undefined || orig === null) return '';
         var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
         if (_chartTimeIsIntraday) {
@@ -1272,7 +1280,10 @@ function createIndexChart(container, data) {
     },
     localization: {
       timeFormatter: function(time) {
-        var orig = _chartTimeMap[time];
+        if (typeof time !== 'number' || !isFinite(time)) return '';
+        var idx = Math.floor(time);
+        if (idx < 0 || idx >= _chartTimeMap.length) return '';
+        var orig = _chartTimeMap[idx];
         if (orig === undefined || orig === null) return '';
         if (_chartTimeIsIntraday) {
           var d = new Date(orig * 1000);
