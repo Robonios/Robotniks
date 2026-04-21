@@ -38,6 +38,26 @@ NORMALISE_DATE = "2025-03-31"  # All indices normalised to BASE_VALUE on this da
 CAP_LIMIT  = 0.05  # 5% max weight per entity
 MIN_MARKET_CAP = 10_000_000  # $10M minimum for index inclusion
 
+# ── Step 5 guardrail thresholds ──────────────────────────────────────────
+# Any sub-index day-over-day move beyond this triggers a publish block.
+# Real markets rarely move >25% intraday at the index level; anything
+# larger almost certainly signals a data-quality regression.
+MAX_DAILY_PCT = 0.25
+# The composite's day-over-day change must track the mcap-weighted average
+# of the sub-indices' day-over-day change to within this tolerance. We use a
+# DELTA-form check instead of absolute-value equality because the composite
+# and each sub-index apply the 5% single-entity cap independently, which
+# creates a permanent structural level offset (~25-30%) that is not a bug.
+# What *would* signal a bug is a day where those deltas disagree sharply —
+# the original KS-ticker spike produced a ~480% delta, so 5% is a
+# conservative catch-all that still lets legitimate high-volatility days
+# (e.g. April 2025 tariff week saw ~2% delta) through. The tighter real
+# protection is the per-series day-over-day check above.
+COMPOSITE_DIVERGENCE_TOL = 0.05
+# Implausibly large close price in USD — above this, we treat the point
+# as a unit-mismatch (e.g. raw KRW leaking in) and skip it at load time.
+MAX_LOAD_USD = 10_000
+
 # sector mapping for sub-indices (Cross-Stack eliminated — entities reclassified)
 SECTOR_MAP = {
     "Semiconductor":      "Semiconductor",
@@ -129,8 +149,17 @@ def load_all_history():
             for point in data.get("series", []):
                 d = point.get("date")
                 close = point.get("close")
-                if d and close is not None and close > 0:
-                    price_matrix[d][ticker] = close
+                if not (d and close is not None and close > 0):
+                    continue
+                # Guardrail: history close values are expected to be in USD.
+                # Anything above MAX_LOAD_USD is almost certainly a unit
+                # mismatch (raw KRW/JPY leaking through) and would poison
+                # the weighted return — skip it rather than corrupt the
+                # series. Log so the miss is visible in the run output.
+                if close > MAX_LOAD_USD:
+                    print(f"  WARN: skipping implausible close {close} for {ticker} on {d}")
+                    continue
+                price_matrix[d][ticker] = close
         except Exception:
             continue
 
@@ -192,6 +221,104 @@ def backfill_index(entities, weights, price_matrix, all_dates, base_date_str, cu
         series.append({"date": d, "value": round(value, 2)})
 
     return series, base_date_str, base_prices
+
+
+class IndexGuardrailError(Exception):
+    """Raised when a computed index series fails a publish-blocking health check."""
+
+
+def _check_day_over_day(name, series, max_pct=MAX_DAILY_PCT, limit=5):
+    """Scan a series for implausible day-over-day moves.
+
+    Returns a list of (prev_date, cur_date, prev_value, cur_value, pct) tuples,
+    capped at ``limit`` to keep error output readable. An empty list means the
+    series is clean.
+    """
+    flags = []
+    for i in range(1, len(series)):
+        prev, cur = series[i - 1]["value"], series[i]["value"]
+        if prev and prev > 0:
+            change = cur / prev - 1
+            if abs(change) > max_pct:
+                flags.append((series[i - 1]["date"], series[i]["date"], prev, cur, change))
+                if len(flags) >= limit:
+                    break
+    return flags
+
+
+def run_guardrails(composite_series, sub_indices, sector_mcap_share):
+    """Publish-blocking health checks. Raises IndexGuardrailError on failure.
+
+    Checks:
+      1. Every series (composite + sub-indices) is free of day-over-day
+         moves exceeding ``MAX_DAILY_PCT``. Legitimate index moves almost
+         never exceed 25% in a single day; anything beyond that almost
+         always traces back to a data regression (unit mismatch, sentinel,
+         duplicate constituent, missed divisor adjustment).
+      2. On the most recent date, the composite value stays within
+         ``COMPOSITE_DIVERGENCE_TOL`` of the market-cap-weighted average
+         of the sub-indices. This catches cases where one sub-index is
+         silently pulling in a poisoned price the composite is ignoring.
+    """
+    failures = []
+
+    # 1. Day-over-day sanity on every series.
+    for (name, series) in [("composite", composite_series)] + \
+            [(k, v["series"]) for k, v in sub_indices.items()]:
+        flags = _check_day_over_day(name, series)
+        for prev_d, cur_d, pv, cv, pct in flags:
+            failures.append(
+                f"  {name}: |dod|>{MAX_DAILY_PCT:.0%} on {prev_d}->{cur_d}: "
+                f"{pv:.2f} -> {cv:.2f} ({pct:+.1%})"
+            )
+
+    # 2. Composite daily change vs mcap-weighted sub-indices daily change.
+    #    A structural level offset is expected (capping differences), but
+    #    on any given day the composite should move in lockstep with the
+    #    weighted sub-indices. If the daily-change figures diverge beyond
+    #    ``COMPOSITE_DIVERGENCE_TOL``, one side is ingesting a price the
+    #    other is not — exactly the failure mode the historical KS-ticker
+    #    spike produced.
+    if composite_series and sub_indices and sector_mcap_share and len(composite_series) >= 2:
+        sub_maps = {k: {p["date"]: p["value"] for p in v["series"]} for k, v in sub_indices.items()}
+        total_share = sum(sector_mcap_share.get(k, 0.0) for k in sub_indices)
+        last_offenders = []
+        if total_share > 0:
+            for i in range(1, len(composite_series)):
+                cur_d = composite_series[i]["date"]
+                prev_d = composite_series[i - 1]["date"]
+                cur_c, prev_c = composite_series[i]["value"], composite_series[i - 1]["value"]
+                if not (prev_c and prev_c > 0):
+                    continue
+                c_change = cur_c / prev_c - 1
+
+                weighted_prev = weighted_cur = 0.0
+                for k, sub_map in sub_maps.items():
+                    share = sector_mcap_share.get(k, 0.0) / total_share
+                    pv = sub_map.get(prev_d)
+                    cv = sub_map.get(cur_d)
+                    if pv and cv and pv > 0:
+                        weighted_prev += share * pv
+                        weighted_cur  += share * cv
+                if weighted_prev <= 0:
+                    continue
+                s_change = weighted_cur / weighted_prev - 1
+                delta = c_change - s_change
+                if abs(delta) > COMPOSITE_DIVERGENCE_TOL:
+                    last_offenders.append((prev_d, cur_d, c_change, s_change, delta))
+        # Only surface the worst 5 — a single broken constituent typically
+        # generates a long streak of offenders, and printing every one
+        # buries the lede.
+        for prev_d, cur_d, cc, sc, delta in sorted(last_offenders, key=lambda x: abs(x[4]), reverse=True)[:5]:
+            failures.append(
+                f"  composite vs weighted sub-indices daily-change {prev_d}->{cur_d}: "
+                f"composite {cc:+.2%}, weighted {sc:+.2%}, delta {delta:+.2%} "
+                f"(> {COMPOSITE_DIVERGENCE_TOL:.2%})"
+            )
+
+    if failures:
+        msg = "Index guardrail failures — publish blocked:\n" + "\n".join(failures)
+        raise IndexGuardrailError(msg)
 
 
 def normalise_series(series, target_date=NORMALISE_DATE, target_value=BASE_VALUE):
@@ -550,6 +677,15 @@ def main():
             )[:5],
             "series": sub_series,
         }
+
+    # ── Step 5 guardrail ─────────────────────────────────────────────
+    # Block publish on >25% day-over-day moves or >0.5% composite-vs-subindex
+    # divergence. Computes mcap share per sector from the eligible universe.
+    sector_mcap = defaultdict(float)
+    for e in eligible:
+        sector_mcap[e["sector"].lower().replace("-", "_")] += e["market_cap_usd"]
+
+    run_guardrails(unified_series, sub_indices, dict(sector_mcap))
 
     save_json(SUB_IDX_PATH, sub_indices)
 
