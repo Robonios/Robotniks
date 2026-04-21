@@ -204,11 +204,16 @@ function updateMarketOverview() {
   var mcapEl = document.getElementById('ov-mcap');
   if (mcapEl) mcapEl.textContent = totalMcap >= 1e12 ? '$' + (totalMcap / 1e12).toFixed(2) + 'T' : totalMcap >= 1e9 ? '$' + (totalMcap / 1e9).toFixed(0) + 'B' : '--';
 
-  // Tracked count — use same number for both Universe and Live Data
+  // Tracked count — use same number for both Universe and Live Data,
+  // plus the "Tracks N frontier technology equities" count in the
+  // Robotnik Index description widget. All three must match the
+  // Frontier Assets "All (N)" pill, which is also uniqueCompanies.length.
   var countEl = document.getElementById('ov-count');
   if (countEl) countEl.textContent = String(uniqueCompanies.length);
   var univEl = document.getElementById('ov-universe');
   if (univEl) univEl.textContent = String(uniqueCompanies.length);
+  var explCountEl = document.getElementById('explainer-count');
+  if (explCountEl) explCountEl.textContent = String(uniqueCompanies.length);
 
   // Find top gainer, top loser, largest
   var largest = uniqueCompanies[0]; // already sorted by mcap
@@ -1093,6 +1098,16 @@ let currentChartMode = 'price';  // 'price' | 'pct'
 let _intradayCache = null;   // cached intraday_index.json
 let _indexCalculatedAt = null;  // timestamp of last daily index compute
 let _intradayFetchedAt = null;  // timestamp of last intraday fetch
+// Maps the sequential integer "time" we pass to Lightweight Charts back to
+// the original ISO date (or "YYYY-MM-DD HH:MM:SS" for intraday). We re-
+// index time because the library renders gaps proportional to calendar
+// distance by default — so weekends and holidays in a daily series, or
+// the Fri-20:00→Mon-13:30 gap in a 1W intraday series, show up as dead
+// empty segments on the axis. Sequential integers collapse those gaps;
+// the tick formatter and crosshair formatter read this map to display the
+// real date/time without anyone on the reading side knowing.
+let _chartTimeMap = [];
+let _chartTimeIsIntraday = false;
 let compareLines = [];       // [{ticker, series, color, isBenchmark}]
 const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#EC4899', '#8B5CF6'];
 const BENCHMARK_META = {
@@ -1217,10 +1232,54 @@ function initIndexChart() {
 function createIndexChart(container, data) {
   indexChart = LightweightCharts.createChart(container, {
     width: container.clientWidth, height: 270,
-    layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#8B92A5', fontFamily: "'Roboto Mono', monospace", fontSize: 10 },
+    layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#8B92A5', fontFamily: "'Space Grotesk', sans-serif", fontSize: 10 },
     grid: { vertLines: { color: '#1E2330' }, horzLines: { color: '#1E2330' } },
     crosshair: { vertLine: { color: '#F5D921', width: 1, style: 2 }, horzLine: { color: '#F5D921', width: 1, style: 2 } },
-    timeScale: { borderColor: '#1E2330', timeVisible: false },
+    timeScale: {
+      borderColor: '#1E2330',
+      timeVisible: false,
+      // Sequential-integer time values — see _chartTimeMap above. The
+      // formatter turns them back into calendar dates or intraday
+      // HH:MM labels at tick time.
+      tickMarkFormatter: function(time) {
+        var orig = _chartTimeMap[time];
+        if (orig === undefined || orig === null) return '';
+        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        if (_chartTimeIsIntraday) {
+          // orig is a unix second count — show HH:MM, but on the first
+          // tick of a new trading day show "DD Mon" instead so multi-
+          // day intraday views (1W) don't just repeat "13:00 17:00" on
+          // every session.
+          var d = new Date(orig * 1000);
+          var pad = function(n) { return n < 10 ? '0' + n : '' + n; };
+          var hm = pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes());
+          var prev = time > 0 ? _chartTimeMap[time - 1] : null;
+          if (typeof prev === 'number') {
+            var prevDate = new Date(prev * 1000);
+            if (prevDate.getUTCDate() !== d.getUTCDate() || prevDate.getUTCMonth() !== d.getUTCMonth()) {
+              return d.getUTCDate() + ' ' + months[d.getUTCMonth()];
+            }
+          }
+          return hm;
+        }
+        // Daily — "YYYY-MM-DD"
+        var dd = new Date(orig + 'T00:00:00Z');
+        if (isNaN(dd.getTime())) return orig;
+        return dd.getUTCDate() + ' ' + months[dd.getUTCMonth()];
+      },
+    },
+    localization: {
+      timeFormatter: function(time) {
+        var orig = _chartTimeMap[time];
+        if (orig === undefined || orig === null) return '';
+        if (_chartTimeIsIntraday) {
+          var d = new Date(orig * 1000);
+          return d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
+                 d.toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',timeZoneName:'short'});
+        }
+        return orig;
+      },
+    },
     rightPriceScale: { borderColor: '#1E2330' },
     handleScroll: { mouseWheel: false, pressedMouseMove: false, horzTouchDrag: false, vertTouchDrag: false },
     handleScale: { mouseWheel: false, pinch: false, axisPressedMouseMove: false, axisDoubleClickReset: false },
@@ -1245,7 +1304,8 @@ function createIndexChart(container, data) {
     'display:none',
     'z-index:3',
     'pointer-events:none',
-    'font-family:\'Roboto Mono\', monospace',
+    'font-family:\'Space Grotesk\', sans-serif',
+    'font-variant-numeric:tabular-nums',
     'font-size:10px',
     'letter-spacing:0.04em',
     'color:rgba(90,97,120,0.9)',
@@ -1277,18 +1337,20 @@ function createIndexChart(container, data) {
       return;
     }
 
-    // Format time
+    // Format time — param.time is a sequential index into
+    // _chartTimeMap (see applyIndexData). The map holds either a unix
+    // second count (intraday) or a "YYYY-MM-DD" date string (daily).
     var timeStr = '';
-    if (typeof param.time === 'number') {
-      // Unix timestamp (intraday)
-      var d = new Date(param.time * 1000);
-      timeStr = d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
-                d.toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',timeZoneName:'short'});
-    } else if (typeof param.time === 'string') {
-      timeStr = param.time;
-    } else {
-      // Business day object
-      timeStr = param.time.year + '-' + String(param.time.month).padStart(2,'0') + '-' + String(param.time.day).padStart(2,'0');
+    var orig = (typeof param.time === 'number') ? _chartTimeMap[param.time] : param.time;
+    if (typeof orig === 'number') {
+      var ddn = new Date(orig * 1000);
+      timeStr = ddn.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
+                ddn.toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',timeZoneName:'short'});
+    } else if (typeof orig === 'string') {
+      var dd2 = new Date(orig + 'T00:00:00Z');
+      timeStr = isNaN(dd2.getTime())
+        ? orig
+        : dd2.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'});
     }
 
     var html = '<div style="color:var(--text-dim);margin-bottom:3px;">' + timeStr + '</div>';
@@ -1328,6 +1390,27 @@ function createIndexChart(container, data) {
   });
 }
 
+// Keep weekdays only. Tokens (CoinGecko) trade 24/7 and the index
+// carries equity closes forward across Sat/Sun, producing flat dead
+// segments on the chart. Stripping Sat/Sun lets the axis collapse to
+// trading days only. Market holidays where all equities are closed
+// are rare and sometimes still have a token-driven tick, so we don't
+// try to detect them — the residual one-day flats they'd produce are
+// within visual noise. Today is never pruned even if the value is
+// provisional.
+function pruneNonTradingDays(arr) {
+  if (!arr || !arr.length) return arr || [];
+  var todayKey = new Date().toISOString().slice(0, 10);
+  return arr.filter(function(d) {
+    var key = (d.time || d.date || '');
+    if (!key || key === todayKey) return true;
+    var dt = new Date(key);
+    if (isNaN(dt.getTime())) return true;
+    var dow = dt.getUTCDay();
+    return dow !== 0 && dow !== 6;
+  });
+}
+
 function getFilteredData(data) {
   if (!data || !data.length) return [];
   let filtered = data;
@@ -1337,7 +1420,8 @@ function getFilteredData(data) {
     filtered = data.filter(d => (d.time || d.date) >= cutoffStr);
   } else if (currentIndexRange > 0) {
     var cutoff = new Date();
-    // For sub-day ranges (12H=0.5, 1D=1), show last few trading days since we only have daily data
+    // For the 1D sub-day range show a few trading days of daily data as
+    // fallback (the real 1D view uses the intraday SOXX proxy).
     var days = currentIndexRange < 2 ? 3 : Math.ceil(currentIndexRange);
     cutoff.setDate(cutoff.getDate() - days);
     var cutoffStr2 = cutoff.toISOString().slice(0, 10);
@@ -1348,7 +1432,7 @@ function getFilteredData(data) {
 
 function getRangeLabel() {
   if (currentIndexRange === 'ytd') return 'YTD';
-  var labels = {0.5:'12H',1:'1D',7:'1W',30:'1M',90:'3M',365:'1Y',1095:'3Y',1825:'5Y',0:'ALL'};
+  var labels = {1:'1D',7:'1W',30:'1M',90:'3M',365:'1Y',1095:'3Y',1825:'5Y',0:'ALL'};
   return labels[currentIndexRange] || currentIndexRange + 'D';
 }
 
@@ -1357,17 +1441,35 @@ function applyIndexData(data) {
   var filtered = getFilteredData(data);
   var chartData;
 
+  // Build the re-indexed time map so the axis and crosshair can display
+  // real calendar dates/times even though Lightweight Charts is given
+  // sequential integer timestamps. This re-indexing is what collapses
+  // weekends/holidays (daily) and the Fri-20:00→Mon-13:30 gap (intraday).
+  //
+  // Intraday data arrives from _filterIntraday() with `time` as a unix
+  // second count (number). Daily data arrives with `time` / `date` as a
+  // "YYYY-MM-DD" string. We key the map by the original value so the
+  // tick/crosshair formatters can reverse-lookup the real date or
+  // timestamp when rendering labels.
+  var timeKey = function(d) { return d.time !== undefined ? d.time : d.date; };
+  var first = filtered.length ? timeKey(filtered[0]) : '';
+  _chartTimeIsIntraday = typeof first === 'number';
+  if (!_chartTimeIsIntraday) {
+    filtered = pruneNonTradingDays(filtered);
+  }
+  _chartTimeMap = filtered.map(function(d) { return timeKey(d); });
+
   if (currentChartMode === 'pct') {
     // Rebase to 0% from start of visible range
     var baseVal = filtered[0].value || filtered[0].close || 1;
-    chartData = filtered.map(function(d) {
+    chartData = filtered.map(function(d, i) {
       var v = d.value || d.close || 0;
-      return { time: d.time || d.date, value: parseFloat(((v - baseVal) / baseVal * 100).toFixed(2)) };
+      return { time: i, value: parseFloat(((v - baseVal) / baseVal * 100).toFixed(2)) };
     });
     // Update Y-axis format for percentage
     indexAreaSeries.applyOptions({ priceFormat: { type: 'custom', formatter: function(v) { return (v >= 0 ? '+' : '') + v.toFixed(1) + '%'; } } });
   } else {
-    chartData = filtered.map(function(d) { return { time: d.time || d.date, value: d.value || d.close }; });
+    chartData = filtered.map(function(d, i) { return { time: i, value: d.value || d.close }; });
     indexAreaSeries.applyOptions({ priceFormat: { type: 'price', precision: 2, minMove: 0.01 } });
   }
 
@@ -1446,7 +1548,7 @@ async function loadIntradayIndex() {
 }
 
 // Pick the right "last updated" timestamp for the currently selected
-// range. 12H/1D/1W are driven by the intraday proxy; longer ranges are
+// range. 1D and 1W are driven by the intraday proxy; longer ranges are
 // driven by the daily index compute. Exposed as a separate helper so
 // setIndexRange and applyIndexData can both call it without duplication.
 function renderFreshnessIndicator() {
@@ -1476,7 +1578,7 @@ function renderFreshnessIndicator() {
 }
 
 function _filterIntraday(data) {
-  // Pick series based on range: 12H/1D = 5min, 1W = 1h
+  // Pick series based on range: 1D = 5min, 1W = 1h.
   var series = currentIndexRange <= 1 ? data.series_5m : data.series_1h;
   if (!series || !series.length) return null;
 
@@ -1489,9 +1591,8 @@ function _filterIntraday(data) {
   // "Last updated" indicator surfaces the staleness to the reader.
   var lastBarMs = new Date(series[series.length - 1].datetime.replace(' ', 'T') + 'Z').getTime();
   // 1D => ~1 trading session (30h covers a session plus overnight gap);
-  // 1W => 5 trading days (7 calendar days / 168h covers weekend gaps);
-  // 12H => intraday half-day.
-  var hoursBack = currentIndexRange <= 0.5 ? 14 : currentIndexRange <= 1 ? 30 : 168;
+  // 1W => 5 trading days (7 calendar days / 168h covers weekend gaps).
+  var hoursBack = currentIndexRange <= 1 ? 30 : 168;
   var cutoff = lastBarMs - hoursBack * 3600000;
 
   var filtered = series.filter(function(pt) {
@@ -1501,7 +1602,7 @@ function _filterIntraday(data) {
   // Defensive fallback: if the series is too sparse (e.g. a holiday-
   // shortened week), use a last-N-bars cap instead of returning nothing.
   if (filtered.length < 3) {
-    var n = currentIndexRange <= 0.5 ? 72 : currentIndexRange <= 1 ? 78 : series.length;
+    var n = currentIndexRange <= 1 ? 78 : series.length;
     filtered = series.slice(-n);
   }
 
@@ -1522,7 +1623,7 @@ function setIndexRange(btn) {
   currentIndexRange = (rv === 'ytd') ? 'ytd' : (parseFloat(rv) || 0);
   renderFreshnessIndicator();
 
-  // For 12H, 1D, 1W: load intraday data (SOXX proxy)
+  // For 1D and 1W: load intraday data (SOXX proxy)
   if (currentIndexRange <= 7 && currentIndexRange > 0 && currentIndexSeries === 'composite') {
     loadIntradayIndex().then(function(intradayData) {
       if (intradayData) {
@@ -1735,6 +1836,12 @@ function refreshCompareLines() {
   var idxData = indexChartData[currentIndexSeries] || [];
   var filtered = getFilteredData(idxData);
 
+  // Build a lookup from original date -> integer index used by the main
+  // chart. Compare lines must share this index so they overlay correctly
+  // on the re-indexed (non-trading-day-compressed) time axis.
+  var timeIndex = {};
+  for (var j = 0; j < _chartTimeMap.length; j++) timeIndex[_chartTimeMap[j]] = j;
+
   for (var i = 0; i < compareLines.length; i++) {
     var cl = compareLines[i];
     var compAll = cl.series.map(function(d) { return { time: d.date, value: d.close || d.price || d.value }; });
@@ -1749,15 +1856,17 @@ function refreshCompareLines() {
       if (compFiltered.length > 0) {
         var pctBase = compFiltered[0].value || 1;
         finalData = compFiltered.map(function(d) {
-          return { time: d.time, value: parseFloat(((d.value - pctBase) / pctBase * 100).toFixed(2)) };
-        });
+          return { time: timeIndex[d.time], value: parseFloat(((d.value - pctBase) / pctBase * 100).toFixed(2)) };
+        }).filter(function(d) { return d.time !== undefined; });
       } else {
         finalData = [];
       }
     } else if (cl.isBenchmark) {
       // Price mode: benchmarks are already rebased to 1,000 on 2025-03-31
       // (same scale as Robotnik Composite), plot raw values directly.
-      finalData = compFiltered;
+      finalData = compFiltered
+        .map(function(d) { return { time: timeIndex[d.time], value: d.value }; })
+        .filter(function(d) { return d.time !== undefined; });
     } else {
       // Price mode, regular asset comparison: scale to index start value
       // so both lines begin at the same visible point.
@@ -1765,8 +1874,8 @@ function refreshCompareLines() {
         var idxBase = filtered[0].value || filtered[0].close || 1;
         var compBase = compFiltered[0].value || 1;
         finalData = compFiltered.map(function(d) {
-          return { time: d.time, value: idxBase * (d.value / compBase) };
-        });
+          return { time: timeIndex[d.time], value: idxBase * (d.value / compBase) };
+        }).filter(function(d) { return d.time !== undefined; });
       } else {
         finalData = [];
       }

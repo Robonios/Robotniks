@@ -1,7 +1,9 @@
 /* ============================================
    ROBOTNIK TYPOGRAPHY & READABILITY SYSTEM
    ============================================
-   Fonts: Space Grotesk (headings), Mulish (body), Space Mono (numbers)
+   Fonts: Space Grotesk (headings + numbers), Mulish (body)
+   Numbers use Space Grotesk with font-variant-numeric: tabular-nums,
+   which keeps column alignment without requiring a monospace family.
    Loaded via Google Fonts in HTML <head>
    ============================================ */
 
@@ -67,28 +69,40 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
 }
 
-/* ── Numbers — Space Mono ── */
+/* ── Numbers — Space Grotesk with tabular-nums ── */
 .index-value,
 .sub-index-val,
 .overview-val,
 .metric-val,
 .ticker,
 .ticker-cell {
-  font-family: 'Space Mono', 'Roboto Mono', monospace;
+  font-family: 'Space Grotesk', 'Mulish', sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Percentage badges */
 .v-green, .v-red,
 .index-change,
 .sub-index-chg span {
-  font-family: 'Space Mono', 'Roboto Mono', monospace;
+  font-family: 'Space Grotesk', 'Mulish', sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
-/* Table numeric cells — prices, percentages, market caps */
+/* Table numeric cells — prices, percentages, market caps.
+   tabular-nums keeps digits on a uniform grid so columns still align
+   vertically even though Space Grotesk is a proportional family. */
+.market-table td.r,
+.assets-table td.r,
+.top-table td.r,
+.market-table td,
+.assets-table td,
+.top-table td {
+  font-variant-numeric: tabular-nums;
+}
 .market-table td.r,
 .assets-table td.r,
 .top-table td.r {
-  font-family: 'Space Mono', 'Roboto Mono', monospace;
+  font-family: 'Space Grotesk', 'Mulish', sans-serif;
 }
 
 /* Chart axis labels */

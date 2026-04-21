@@ -630,17 +630,21 @@
   }
 
   .chart-last-updated {
+    font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-weight: 400;
-    color: var(--text-muted);
+    color: #6B7280;
+    opacity: 0.7;
     text-align: right;
-    margin-top: 0.25rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    padding: 4px 6px 0 0;
+    letter-spacing: normal;
+    text-transform: none;
   }
 
   .chart-last-updated.stale {
     color: #c77b3a;
+    opacity: 1;
+    font-weight: 500;
   }
 
   .chart-mode-tabs {

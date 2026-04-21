@@ -295,7 +295,7 @@ function renderSectorChart(p){
       var v=vals[i];
       var pct=total>0?(v/total*100).toFixed(0)+'%':'0%';
       var color=sectorColors[s];
-      return '<span style="display:inline-flex;align-items:center;margin-right:10px;margin-bottom:4px;font-size:9px;font-family:Roboto Mono,monospace;color:#E6E8ED;">'
+      return '<span style="display:inline-flex;align-items:center;margin-right:10px;margin-bottom:4px;font-size:9px;font-family:\'Space Grotesk\',sans-serif;font-variant-numeric:tabular-nums;color:#E6E8ED;">'
         +'<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+color+';margin-right:5px;flex-shrink:0;"><\/span>'
         +esc(s)+' '+pct+' ('+fmtM(v)+')<\/span>';
     }).join('');
