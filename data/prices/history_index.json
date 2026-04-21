@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-20T22:52:09.199396+00:00Z",
+  "fetched_at": "2026-04-21T22:43:11.412017+00:00Z",
   "count": 316,
   "equity_days_back": 1825,
   "token_days_back": 365,
@@ -416,7 +416,7 @@
       "name": "Advantech Co",
       "sector": "Robotics",
       "file": "2395_TT.json",
-      "days": 29
+      "days": 30
     },
     "2121 HK": {
       "name": "AInnovation Technology",
@@ -428,7 +428,7 @@
       "name": "Airtac International",
       "sector": "Robotics",
       "file": "1590_TT.json",
-      "days": 29
+      "days": 30
     },
     "455900 KS": {
       "name": "Angel Robotics",
@@ -500,7 +500,7 @@
       "name": "Delta Electronics",
       "sector": "Robotics",
       "file": "2308_TT.json",
-      "days": 29
+      "days": 30
     },
     "454910 KS": {
       "name": "Doosan Robotics",
@@ -596,13 +596,13 @@
       "name": "Hiwin Technologies",
       "sector": "Robotics",
       "file": "2049.json",
-      "days": 29
+      "days": 30
     },
     "2317 TT": {
       "name": "Hon Hai Precision (Foxconn)",
       "sector": "Robotics",
       "file": "2317_TT.json",
-      "days": 29
+      "days": 30
     },
     "9660 HK": {
       "name": "Horizon Robotics",
@@ -704,7 +704,7 @@
       "name": "Nabtesco Corp",
       "sector": "Robotics",
       "file": "6268_JP.json",
-      "days": 31
+      "days": 30
     },
     "6645 JP": {
       "name": "Omron Corp",
@@ -776,7 +776,7 @@
       "name": "Shenzhen Inovance Technology",
       "sector": "Robotics",
       "file": "300124_C2.json",
-      "days": 30
+      "days": 31
     },
     "6104 JP": {
       "name": "Shibaura Machine Co",
@@ -788,7 +788,7 @@
       "name": "Siasun Robot & Automation",
       "sector": "Robotics",
       "file": "300024_C2.json",
-      "days": 30
+      "days": 31
     },
     "SIE GR": {
       "name": "Siemens AG",
@@ -842,7 +842,7 @@
       "name": "Yokogawa Electric",
       "sector": "Robotics",
       "file": "6841_JP.json",
-      "days": 10
+      "days": 11
     },
     "388720 KS": {
       "name": "Yuil Robotics",
@@ -1328,7 +1328,7 @@
       "name": "Autonoma Network",
       "sector": "Token",
       "file": "ATNM.json",
-      "days": 35
+      "days": 34
     },
     "CODEC": {
       "name": "Codec Flow",
@@ -1394,7 +1394,7 @@
       "name": "MechaOs",
       "sector": "Token",
       "file": "MECHA.json",
-      "days": 19
+      "days": 18
     },
     "EMDR": {
       "name": "Modulr",
@@ -1412,7 +1412,7 @@
       "name": "One Path",
       "sector": "Token",
       "file": "OP.json",
-      "days": 37
+      "days": 38
     },
     "ONO": {
       "name": "Onocoy Token",
@@ -1424,7 +1424,7 @@
       "name": "Opanarchy",
       "sector": "Token",
       "file": "OPAN.json",
-      "days": 21
+      "days": 20
     },
     "OPUS": {
       "name": "Opus Genesis",
@@ -1694,7 +1694,7 @@
       "name": "Hanwha Aerospace",
       "sector": "Space",
       "file": "012450_KS.json",
-      "days": 32
+      "days": 61
     },
     "HXL": {
       "name": "Hexcel Corp",
@@ -1796,7 +1796,7 @@
       "name": "Coretronic",
       "sector": "Materials",
       "file": "6153_TT.json",
-      "days": 29
+      "days": 30
     },
     "WOLF": {
       "name": "Wolfspeed",
@@ -1898,7 +1898,7 @@
       "name": "Intellian Technologies",
       "sector": "Space",
       "file": "189300_KS.json",
-      "days": 26
+      "days": 27
     }
   }
 }

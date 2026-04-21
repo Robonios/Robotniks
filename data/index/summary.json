@@ -1,16 +1,16 @@
 {
-  "calculated_at": "2026-04-21T07:01:58.106919+00:00Z",
+  "calculated_at": "2026-04-21T22:43:14.551034+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2609.06,
-    "daily_change_pct": -7.17,
+    "value": 2623.25,
+    "daily_change_pct": -7.05,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2609.06,
+    "value": 2623.25,
     "base_date": "2021-04-22",
     "base_value": 1000.0,
     "entities": 233
@@ -18,22 +18,22 @@
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2329.83,
+      "value": 2330.67,
       "entities": 59
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1946.85,
+      "value": 1954.34,
       "entities": 105
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2447.49,
+      "value": 2384.77,
       "entities": 33
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2114.14,
+      "value": 2110.24,
       "entities": 36
     }
   },
@@ -42,71 +42,71 @@
       "ticker": "NVDA",
       "name": "NVIDIA",
       "sector": "Semiconductor",
-      "market_cap_usd": 4911068086272,
+      "market_cap_usd": 4858083540992,
       "weight_pct": 5.0
     },
     {
       "ticker": "TSM",
       "name": "TSMC ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 1899467243520,
+      "market_cap_usd": 1909010071552,
       "weight_pct": 5.0
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom",
       "sector": "Semiconductor",
-      "market_cap_usd": 1894755205120,
+      "market_cap_usd": 1906798100480,
       "weight_pct": 5.0
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 579760553984,
+      "market_cap_usd": 572877242368,
       "weight_pct": 5.0
     },
     {
       "ticker": "MU",
       "name": "Micron Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 505698516992,
+      "market_cap_usd": 506781106176,
       "weight_pct": 5.0
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
       "sector": "Semiconductor",
-      "market_cap_usd": 448281477120,
-      "weight_pct": 4.635
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research",
-      "sector": "Semiconductor",
-      "market_cap_usd": 330536845312,
-      "weight_pct": 3.4176
+      "market_cap_usd": 463835561984,
+      "weight_pct": 4.7961
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
-      "market_cap_usd": 329880371200,
-      "weight_pct": 3.4108
+      "market_cap_usd": 332692160512,
+      "weight_pct": 3.4401
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "sector": "Semiconductor",
+      "market_cap_usd": 324520443904,
+      "weight_pct": 3.3556
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
-      "market_cap_usd": 310793502720,
-      "weight_pct": 3.2134
+      "market_cap_usd": 312944164864,
+      "weight_pct": 3.2359
     },
     {
       "ticker": "KLAC",
       "name": "KLA Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 237205209088,
-      "weight_pct": 2.4526
+      "market_cap_usd": 234583932928,
+      "weight_pct": 2.4256
     }
   ]
 }
