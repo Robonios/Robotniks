@@ -1108,6 +1108,10 @@ let _intradayFetchedAt = null;  // timestamp of last intraday fetch
 // real date/time without anyone on the reading side knowing.
 let _chartTimeMap = [];
 let _chartTimeIsIntraday = false;
+// True when the visible intraday series spans more than one calendar
+// date (1W). Drives tickMarkFormatter between "HH:MM throughout"
+// (single-day 1D) and "DD Mon per tick" (multi-day).
+let _chartTimeSpansMultipleDays = false;
 let compareLines = [];       // [{ticker, series, color, isBenchmark}]
 const COMPARE_COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#EC4899', '#8B5CF6'];
 const BENCHMARK_META = {
@@ -1246,21 +1250,19 @@ function createIndexChart(container, data) {
         if (orig === undefined || orig === null) return '';
         var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
         if (_chartTimeIsIntraday) {
-          // orig is a unix second count — show HH:MM, but on the first
-          // tick of a new trading day show "DD Mon" instead so multi-
-          // day intraday views (1W) don't just repeat "13:00 17:00" on
-          // every session.
           var d = new Date(orig * 1000);
           var pad = function(n) { return n < 10 ? '0' + n : '' + n; };
-          var hm = pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes());
-          var prev = time > 0 ? _chartTimeMap[time - 1] : null;
-          if (typeof prev === 'number') {
-            var prevDate = new Date(prev * 1000);
-            if (prevDate.getUTCDate() !== d.getUTCDate() || prevDate.getUTCMonth() !== d.getUTCMonth()) {
-              return d.getUTCDate() + ' ' + months[d.getUTCMonth()];
-            }
+          // Multi-day intraday (1W): every bar returns its date, so
+          // whichever tick position Lightweight Charts picks produces
+          // a "DD Mon" label. Adjacent ticks that collapse to the same
+          // date are harmless — the library suppresses overlapping
+          // labels automatically. Single-day intraday (1D): return
+          // HH:MM throughout since the date is redundant and the axis
+          // reads as a chronological session.
+          if (_chartTimeSpansMultipleDays) {
+            return d.getUTCDate() + ' ' + months[d.getUTCMonth()];
           }
-          return hm;
+          return pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes());
         }
         // Daily — "YYYY-MM-DD"
         var dd = new Date(orig + 'T00:00:00Z');
@@ -1458,6 +1460,16 @@ function applyIndexData(data) {
     filtered = pruneNonTradingDays(filtered);
   }
   _chartTimeMap = filtered.map(function(d) { return timeKey(d); });
+  if (_chartTimeIsIntraday && _chartTimeMap.length > 1) {
+    var firstDate = new Date(_chartTimeMap[0] * 1000);
+    var lastDate = new Date(_chartTimeMap[_chartTimeMap.length - 1] * 1000);
+    _chartTimeSpansMultipleDays =
+      firstDate.getUTCDate() !== lastDate.getUTCDate() ||
+      firstDate.getUTCMonth() !== lastDate.getUTCMonth() ||
+      firstDate.getUTCFullYear() !== lastDate.getUTCFullYear();
+  } else {
+    _chartTimeSpansMultipleDays = false;
+  }
 
   if (currentChartMode === 'pct') {
     // Rebase to 0% from start of visible range
