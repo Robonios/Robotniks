@@ -128,9 +128,9 @@
       </div>
       <div class="intel-filter-group" data-filter="time">
         <button class="intel-filter-btn active" data-val="24h" onclick="setIntelFilter('time',this)">24h</button>
-        <button class="intel-filter-btn premium-filter" data-val="7d" onclick="setIntelFilter('time',this)">7d &#x1F512;</button>
-        <button class="intel-filter-btn premium-filter" data-val="30d" onclick="setIntelFilter('time',this)">30d &#x1F512;</button>
-        <button class="intel-filter-btn premium-filter" data-val="archive" onclick="setIntelFilter('time',this)">Archive &#x1F512;</button>
+        <button class="intel-filter-btn premium-filter" data-val="7d" onclick="setIntelFilter('time',this)">7d</button>
+        <button class="intel-filter-btn premium-filter" data-val="30d" onclick="setIntelFilter('time',this)">30d</button>
+        <button class="intel-filter-btn premium-filter" data-val="archive" onclick="setIntelFilter('time',this)">Archive</button>
       </div>
     </div>
 
@@ -384,7 +384,7 @@ function buildPastBriefings() {
       html += '<div class="past-briefing-item" style="margin-bottom:0.5rem;position:relative;overflow:hidden;">' +
         '<div class="past-briefing-date">DAILY BRIEFING // ' + dateLabel + '</div>' +
         '<div class="past-briefing-blur">' + escapeHtml(trimAtWord(preview, 300)) + '</div>' +
-        '<div class="past-briefing-gate"><span style="font-size:9px;color:#5A6178;">&#x1F512; Older briefings require early access</span></div></div>';
+        '<div class="past-briefing-gate"><span style="font-size:9px;color:#5A6178;">Older briefings require early access</span></div></div>';
     }
     shownCount++;
   });
