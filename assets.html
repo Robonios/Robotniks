@@ -26,7 +26,7 @@
 <meta name="theme-color" content="#F5D921">
 <link rel="canonical" href="https://robotnik.world/assets.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20260420b"><link rel="stylesheet" href="css/typography.css?v=20260420b">
+<link rel="stylesheet" href="css/style.css?v=20260422d"><link rel="stylesheet" href="css/typography.css?v=20260422d">
 <style>
   /* Full-width layout override — no sidebar on assets page */
   .assets-full { max-width: 100%; padding: 0 1rem; }
@@ -157,14 +157,12 @@
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div style="padding:0.5rem 0;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--text-dim);">
+  <!-- Pagination. Numbered page buttons rendered by renderAssetsTable;
+       page 1 navigates normally, pages 2+ are styled with a yellow
+       accent and trigger openEarlyAccess() instead of navigating. -->
+  <div style="padding:0.5rem 0;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--text-dim);gap:0.5rem;flex-wrap:wrap;">
     <span id="assets-showing">Showing 0</span>
-    <div>
-      <button class="chart-range-btn" id="assets-prev" onclick="assetsPage(-1)" style="margin-right:4px;">&lt; Prev</button>
-      <span id="assets-page-info">Page 1</span>
-      <button class="chart-range-btn" id="assets-next" onclick="assetsPage(1)" style="margin-left:4px;">Next &gt;</button>
-    </div>
+    <div id="assets-pager" style="display:flex;align-items:center;gap:4px;"></div>
   </div>
 
   <!-- Data summary caption (under table) -->
@@ -291,6 +289,6 @@
 </div>
 
 <script src="js/nav.js?v=20260422c"></script>
-<script src="js/assets.js?v=20260420c"></script>
+<script src="js/assets.js?v=20260422a"></script>
 </body>
 </html>

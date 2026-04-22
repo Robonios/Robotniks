@@ -735,6 +735,49 @@
     pointer-events: none;
   }
 
+  /* Pagination page-number buttons in Frontier Assets. The .gated
+     variant marks pages 2+ that open the early-access popup rather
+     than navigating — subtle yellow accent signals depth without
+     shouting. */
+  .pager-btn {
+    background: transparent;
+    border: 1px solid #1E2330;
+    color: var(--text-muted);
+    font-family: 'Space Grotesk', sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-size: 10px;
+    padding: 0.3rem 0.55rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s;
+    min-width: 28px;
+    text-align: center;
+  }
+  .pager-btn:hover {
+    color: var(--text);
+    border-color: var(--border-light);
+  }
+  .pager-btn.active {
+    background: var(--yellow-subtle);
+    border-color: var(--yellow-dim);
+    color: var(--yellow);
+    cursor: default;
+  }
+  .pager-btn.gated {
+    color: rgba(245, 217, 33, 0.55);
+    border-color: rgba(245, 217, 33, 0.18);
+  }
+  .pager-btn.gated:hover {
+    color: var(--yellow);
+    border-color: rgba(245, 217, 33, 0.45);
+  }
+  .pager-ellipsis {
+    color: var(--text-dim);
+    font-size: 10px;
+    padding: 0 2px;
+    user-select: none;
+  }
+
   .chart-compare-btn {
     background: transparent;
     border: 1px dashed var(--border-light);

@@ -321,10 +321,32 @@ function exportAssetsCSV(){
   URL.revokeObjectURL(url);
 }
 
+// Page navigation. Only page 1 is navigable — everything past that
+// triggers the early-access popup. Page 1 renders normally, so Prev
+// buttons (no-op from page 1) and Next (would go to page 2) both
+// route through this gate.
 function assetsPage(d){
-  var mx=Math.ceil(assetsFiltered.length/assetsPerPage)-1;
-  assetsCurrentPage=Math.max(0,Math.min(mx,assetsCurrentPage+d));
-  renderAssetsTable();
+  var target=assetsCurrentPage+d;
+  if(target===0){
+    renderAssetsTable();
+    return;
+  }
+  // Anything off page 1 is gated.
+  if(typeof openEarlyAccess==='function')openEarlyAccess();
+}
+
+// Called by numbered page buttons. Index is 0-based to match
+// assetsCurrentPage semantics. Page 1 (index 0) is free; everything
+// else opens the early-access popup. The user stays on page 1.
+function assetsGoToPage(idx){
+  if(idx===0){
+    if(assetsCurrentPage!==0){
+      assetsCurrentPage=0;
+      renderAssetsTable();
+    }
+    return;
+  }
+  if(typeof openEarlyAccess==='function')openEarlyAccess();
 }
 
 function renderAssetsTable(){
@@ -389,10 +411,42 @@ function renderAssetsTable(){
   }
   tbody.innerHTML=rows||'<tr><td colspan="'+(5+cols.length)+'" style="text-align:center;padding:2rem;color:var(--text-dim);">No data</td></tr>';
 
-  // Pagination
-  var tp=Math.ceil(assetsFiltered.length/assetsPerPage);
+  // Pagination — numbered page buttons. Page 1 renders normally,
+  // pages 2+ get the .gated visual and trigger openEarlyAccess() on
+  // click. The "Page N of M" summary is kept at the right-hand side
+  // so the reader still sees the current-position readout.
+  var tp=Math.max(1,Math.ceil(assetsFiltered.length/assetsPerPage));
   document.getElementById('assets-showing').textContent='Showing '+(assetsFiltered.length?start+1:0)+'\u2013'+Math.min(start+assetsPerPage,assetsFiltered.length)+' of '+assetsFiltered.length;
-  document.getElementById('assets-page-info').textContent='Page '+(assetsCurrentPage+1)+' of '+Math.max(tp,1);
-  document.getElementById('assets-prev').disabled=assetsCurrentPage===0;
-  document.getElementById('assets-next').disabled=assetsCurrentPage>=tp-1;
+  var pager=document.getElementById('assets-pager');
+  if(pager){
+    var parts=[];
+    // Condense long pager runs with an ellipsis, but always include:
+    // page 1, the last page, and a neighbourhood around the current
+    // page. For our basket depths (~5-6 pages) this usually just
+    // renders every page number without collapsing.
+    var shown={};
+    function add(n){shown[n]=1;}
+    add(0);add(tp-1);
+    for(var d=-1;d<=1;d++){var n=assetsCurrentPage+d;if(n>=0&&n<tp)add(n);}
+    // If there are fewer than 8 pages total, show them all.
+    if(tp<=8){for(var i=0;i<tp;i++)add(i);}
+    var pages=Object.keys(shown).map(Number).sort(function(a,b){return a-b;});
+    var last=-1;
+    for(var j=0;j<pages.length;j++){
+      var p=pages[j];
+      if(last>=0&&p-last>1){
+        parts.push('<span class="pager-ellipsis">&hellip;</span>');
+      }
+      var isActive=(p===assetsCurrentPage);
+      var isGated=(p>0);
+      var cls='pager-btn'+(isActive?' active':'')+(isGated?' gated':'');
+      var onclick='onclick="assetsGoToPage('+p+')"';
+      var label=(p+1);
+      parts.push('<button type="button" class="'+cls+'" '+onclick+' aria-label="Page '+label+(isGated?' (early access required)':'')+'">'+label+'</button>');
+      last=p;
+    }
+    // Summary text — "Page N of M" preserved.
+    parts.push('<span style="margin-left:0.5rem;color:var(--text-dim);">Page '+(assetsCurrentPage+1)+' of '+tp+'</span>');
+    pager.innerHTML=parts.join('');
+  }
 }
