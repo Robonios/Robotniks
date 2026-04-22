@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-22T20:29:10.507410Z",
+  "fetched_at": "2026-04-22T21:27:32.360034Z",
   "source": "EODHD Real-Time (15-min delayed)",
   "count": 259,
   "is_live": true,
@@ -11,24 +11,24 @@
       "open": 42.29,
       "high": 42.6,
       "low": 40.9349,
-      "volume": 1713982,
-      "prev_close": 42.27,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776888000
+      "volume": 1716094,
+      "prev_close": 41.28,
+      "change": 0.99,
+      "change_pct": 2.3983,
+      "timestamp": 1776888900
     },
     "AOSL": {
       "ticker": "AOSL",
       "eodhd_symbol": "AOSL.US",
       "price": 40.68,
-      "open": 41.5,
-      "high": 45.14,
-      "low": 38.27,
-      "volume": 2037645,
+      "open": 41.25,
+      "high": 45.22,
+      "low": 38.255,
+      "volume": 2038500,
       "prev_close": 39.12,
       "change": 1.56,
       "change_pct": 3.9877,
-      "timestamp": 1776888720
+      "timestamp": 1776889680
     },
     "ARM": {
       "ticker": "ARM",
@@ -37,11 +37,11 @@
       "open": 180,
       "high": 196.66,
       "low": 178.475,
-      "volume": 13821848,
+      "volume": 13844230,
       "prev_close": 175.49,
       "change": 21.08,
       "change_pct": 12.0121,
-      "timestamp": 1776888780
+      "timestamp": 1776889740
     },
     "ASX": {
       "ticker": "ASX",
@@ -50,11 +50,11 @@
       "open": 29.63,
       "high": 30.09,
       "low": 29.47,
-      "volume": 5703281,
-      "prev_close": 29.95,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776888000
+      "volume": 7114757,
+      "prev_close": 29.6,
+      "change": 0.35,
+      "change_pct": 1.1824,
+      "timestamp": 1776888900
     },
     "ALAB": {
       "ticker": "ALAB",
@@ -63,11 +63,11 @@
       "open": 199.065,
       "high": 200.21,
       "low": 187.24,
-      "volume": 6106870,
+      "volume": 6114364,
       "prev_close": 191.97,
       "change": 2.09,
       "change_pct": 1.0887,
-      "timestamp": 1776888720
+      "timestamp": 1776889680
     },
     "AEIS": {
       "ticker": "AEIS",
@@ -89,11 +89,11 @@
       "open": 72,
       "high": 72.97,
       "low": 70.49,
-      "volume": 3562911,
+      "volume": 3563641,
       "prev_close": 70.21,
       "change": 2.04,
       "change_pct": 2.9056,
-      "timestamp": 1776888480
+      "timestamp": 1776889440
     },
     "CEVA": {
       "ticker": "CEVA",
@@ -114,8 +114,8 @@
       "price": 185.88,
       "open": 191.82,
       "high": 192.26,
-      "low": 183.425,
-      "volume": 222623,
+      "low": 183.16,
+      "volume": 222625,
       "prev_close": 187.71,
       "change": -1.83,
       "change_pct": -0.9749,
@@ -128,10 +128,10 @@
       "open": 171.59,
       "high": 172.9999,
       "low": 167.845,
-      "volume": 588654,
-      "prev_close": 169.89,
-      "change": 0,
-      "change_pct": 0,
+      "volume": 595107,
+      "prev_close": 169.77,
+      "change": 0.12,
+      "change_pct": 0.0707,
       "timestamp": 1776888000
     },
     "DIOD": {
@@ -141,11 +141,11 @@
       "open": 99.05,
       "high": 99.8,
       "low": 96.37,
-      "volume": 639671,
+      "volume": 640229,
       "prev_close": 97,
       "change": 0.7,
       "change_pct": 0.7216,
-      "timestamp": 1776888540
+      "timestamp": 1776889080
     },
     "ENTG": {
       "ticker": "ENTG",
@@ -154,10 +154,10 @@
       "open": 151.21,
       "high": 151.994,
       "low": 146.48,
-      "volume": 2530623,
-      "prev_close": 147.93,
-      "change": 0,
-      "change_pct": 0,
+      "volume": 2636723,
+      "prev_close": 146.99,
+      "change": 0.94,
+      "change_pct": 0.6395,
       "timestamp": 1776888000
     },
     "FORM": {
@@ -167,11 +167,11 @@
       "open": 143.27,
       "high": 146.43,
       "low": 141.2501,
-      "volume": 1271316,
-      "prev_close": 146.18,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776888000
+      "volume": 1286103,
+      "prev_close": 142.04,
+      "change": 4.14,
+      "change_pct": 2.9147,
+      "timestamp": 1776889260
     },
     "PI": {
       "ticker": "PI",
@@ -180,7 +180,7 @@
       "open": 120.9,
       "high": 125.02,
       "low": 120.9,
-      "volume": 509811,
+      "volume": 509813,
       "prev_close": 118.32,
       "change": 3.95,
       "change_pct": 3.3384,
@@ -193,11 +193,11 @@
       "open": 3.43,
       "high": 3.48,
       "low": 3.31,
-      "volume": 2730480,
+      "volume": 2730659,
       "prev_close": 3.38,
       "change": 0.02,
       "change_pct": 0.5917,
-      "timestamp": 1776888780
+      "timestamp": 1776889380
     },
     "INTC": {
       "ticker": "INTC",
@@ -206,11 +206,11 @@
       "open": 67.935,
       "high": 68.77,
       "low": 64.98,
-      "volume": 86116035,
+      "volume": 86278093,
       "prev_close": 66.26,
       "change": -0.99,
       "change_pct": -1.4941,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "KLIC": {
       "ticker": "KLIC",
@@ -219,7 +219,7 @@
       "open": 85.63,
       "high": 86.17,
       "low": 83.68,
-      "volume": 505455,
+      "volume": 505505,
       "prev_close": 83.92,
       "change": 1.28,
       "change_pct": 1.5253,
@@ -232,7 +232,7 @@
       "open": 289.46,
       "high": 289.68,
       "low": 274.11,
-      "volume": 1481557,
+      "volume": 1481579,
       "prev_close": 285.71,
       "change": -8.71,
       "change_pct": -3.0485,
@@ -241,15 +241,15 @@
     "MRVL": {
       "ticker": "MRVL",
       "eodhd_symbol": "MRVL.US",
-      "price": 157.307,
+      "price": 157.32,
       "open": 153.66,
       "high": 158.69,
       "low": 151.09,
-      "volume": 30242995,
+      "volume": 30302932,
       "prev_close": 151.31,
-      "change": 5.997,
-      "change_pct": 3.9634,
-      "timestamp": 1776888780
+      "change": 6.01,
+      "change_pct": 3.972,
+      "timestamp": 1776889740
     },
     "MU": {
       "ticker": "MU",
@@ -258,24 +258,24 @@
       "open": 462.93,
       "high": 491.98,
       "low": 458.56,
-      "volume": 45358599,
+      "volume": 45431661,
       "prev_close": 449.38,
       "change": 38.1,
       "change_pct": 8.4783,
-      "timestamp": 1776888780
+      "timestamp": 1776889740
     },
     "MKSI": {
       "ticker": "MKSI",
       "eodhd_symbol": "MKSI.US",
       "price": 278.45,
       "open": 280.97,
-      "high": 281.975,
+      "high": 282.62,
       "low": 266.845,
-      "volume": 1659302,
-      "prev_close": 278.45,
-      "change": 0,
-      "change_pct": 0,
-      "timestamp": 1776888000
+      "volume": 1689447,
+      "prev_close": 273.77,
+      "change": 4.68,
+      "change_pct": 1.7095,
+      "timestamp": 1776889260
     },
     "MPWR": {
       "ticker": "MPWR",
@@ -284,24 +284,24 @@
       "open": 1545.06,
       "high": 1560.0883,
       "low": 1519.21,
-      "volume": 536617,
+      "volume": 537059,
       "prev_close": 1527.95,
       "change": -5.91,
       "change_pct": -0.3868,
-      "timestamp": 1776888000
+      "timestamp": 1776889440
     },
     "MXL": {
       "ticker": "MXL",
       "eodhd_symbol": "MXL.US",
       "price": 33.89,
-      "open": 34.03,
+      "open": 34,
       "high": 35.24,
-      "low": 32.53,
-      "volume": 4461129,
+      "low": 32.52,
+      "volume": 4462240,
       "prev_close": 33.7,
       "change": 0.19,
       "change_pct": 0.5638,
-      "timestamp": 1776888540
+      "timestamp": 1776889200
     },
     "NVTS": {
       "ticker": "NVTS",
@@ -310,11 +310,11 @@
       "open": 16.125,
       "high": 18.67,
       "low": 16.01,
-      "volume": 82578402,
+      "volume": 82765215,
       "prev_close": 15.33,
       "change": 3.14,
       "change_pct": 20.4827,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "NVEC": {
       "ticker": "NVEC",
@@ -336,11 +336,11 @@
       "open": 69.89,
       "high": 76.22,
       "low": 69.5001,
-      "volume": 2689019,
+      "volume": 2691833,
       "prev_close": 67.37,
       "change": 4.36,
       "change_pct": 6.4717,
-      "timestamp": 1776888000
+      "timestamp": 1776889740
     },
     "PLAB": {
       "ticker": "PLAB",
@@ -348,8 +348,8 @@
       "price": 50.07,
       "open": 50.32,
       "high": 51.05,
-      "low": 48.43,
-      "volume": 868044,
+      "low": 48.4284,
+      "volume": 868056,
       "prev_close": 49.54,
       "change": 0.53,
       "change_pct": 1.0698,
@@ -362,7 +362,7 @@
       "open": 85.44,
       "high": 85.8,
       "low": 84.38,
-      "volume": 1006476,
+      "volume": 1006487,
       "prev_close": 83.09,
       "change": 1.89,
       "change_pct": 2.2746,
@@ -373,9 +373,9 @@
       "eodhd_symbol": "RMBS.US",
       "price": 131.55,
       "open": 132.41,
-      "high": 134.04,
+      "high": 134.2,
       "low": 127.33,
-      "volume": 1714485,
+      "volume": 1714653,
       "prev_close": 130.45,
       "change": 1.1,
       "change_pct": 0.8432,
@@ -386,7 +386,7 @@
       "eodhd_symbol": "SLAB.US",
       "price": 214.23,
       "open": 215.66,
-      "high": 215.97,
+      "high": 216.55,
       "low": 214,
       "volume": 412631,
       "prev_close": 214.53,
@@ -398,10 +398,10 @@
       "ticker": "SKYT",
       "eodhd_symbol": "SKYT.US",
       "price": 34.29,
-      "open": 33.84,
+      "open": 33.82,
       "high": 34.4,
       "low": 33.52,
-      "volume": 888819,
+      "volume": 888875,
       "prev_close": 33.58,
       "change": 0.71,
       "change_pct": 2.1144,
@@ -414,11 +414,11 @@
       "open": 61.59,
       "high": 62.105,
       "low": 61.3,
-      "volume": 2719563,
+      "volume": 2724834,
       "prev_close": 59.94,
       "change": 1.83,
       "change_pct": 3.0531,
-      "timestamp": 1776888240
+      "timestamp": 1776889440
     },
     "SYNA": {
       "ticker": "SYNA",
@@ -427,11 +427,11 @@
       "open": 88.14,
       "high": 88.7499,
       "low": 82.8201,
-      "volume": 676939,
+      "volume": 677367,
       "prev_close": 86.83,
       "change": -2.17,
       "change_pct": -2.4991,
-      "timestamp": 1776888000
+      "timestamp": 1776889080
     },
     "SMTC": {
       "ticker": "SMTC",
@@ -440,7 +440,7 @@
       "open": 105.93,
       "high": 106,
       "low": 100.39,
-      "volume": 2127616,
+      "volume": 2127652,
       "prev_close": 103.48,
       "change": 0,
       "change_pct": 0,
@@ -452,8 +452,8 @@
       "price": 524.51,
       "open": 536.05,
       "high": 543.87,
-      "low": 518.515,
-      "volume": 295384,
+      "low": 518.3,
+      "volume": 295385,
       "prev_close": 523.57,
       "change": 0.94,
       "change_pct": 0.1795,
@@ -466,36 +466,36 @@
       "open": 221.41,
       "high": 222.8,
       "low": 201.4952,
-      "volume": 4020912,
+      "volume": 4023314,
       "prev_close": 216.72,
       "change": -10.62,
       "change_pct": -4.9003,
-      "timestamp": 1776888840
+      "timestamp": 1776889680
     },
     "UMC": {
       "ticker": "UMC",
       "eodhd_symbol": "UMC.US",
-      "price": 12.72,
+      "price": 12.71,
       "open": 12.63,
-      "high": 12.74,
+      "high": 12.82,
       "low": 12.58,
-      "volume": 10036542,
+      "volume": 10040740,
       "prev_close": 12.33,
-      "change": 0.39,
-      "change_pct": 3.163,
-      "timestamp": 1776888240
+      "change": 0.38,
+      "change_pct": 3.0819,
+      "timestamp": 1776889380
     },
     "LASR": {
       "ticker": "LASR",
       "eodhd_symbol": "LASR.US",
       "price": 71.98,
-      "open": 73,
-      "high": 74.0799,
+      "open": 72.98,
+      "high": 74.084,
       "low": 68.8,
-      "volume": 815751,
-      "prev_close": 71.98,
-      "change": 0,
-      "change_pct": 0,
+      "volume": 826506,
+      "prev_close": 72.22,
+      "change": -0.24,
+      "change_pct": -0.3323,
       "timestamp": 1776888000
     },
     "AMD": {
@@ -505,11 +505,11 @@
       "open": 291.215,
       "high": 304.25,
       "low": 286.14,
-      "volume": 48691695,
+      "volume": 48758774,
       "prev_close": 284.49,
       "change": 18.97,
       "change_pct": 6.6681,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "AMBA": {
       "ticker": "AMBA",
@@ -518,24 +518,24 @@
       "open": 60.63,
       "high": 61.5,
       "low": 60,
-      "volume": 505305,
+      "volume": 505555,
       "prev_close": 59.98,
       "change": 1.3,
       "change_pct": 2.1674,
-      "timestamp": 1776888600
+      "timestamp": 1776889080
     },
     "ADI": {
       "ticker": "ADI",
       "eodhd_symbol": "ADI.US",
       "price": 381.42,
-      "open": 380.94,
+      "open": 380.81,
       "high": 383.6,
       "low": 378.25,
-      "volume": 2479561,
+      "volume": 2485102,
       "prev_close": 375.27,
       "change": 6.15,
       "change_pct": 1.6388,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "AMAT": {
       "ticker": "AMAT",
@@ -544,11 +544,11 @@
       "open": 399.87,
       "high": 404.08,
       "low": 391.26,
-      "volume": 5200124,
+      "volume": 5217246,
       "prev_close": 394.33,
       "change": 9.15,
       "change_pct": 2.3204,
-      "timestamp": 1776888780
+      "timestamp": 1776889680
     },
     "ASML": {
       "ticker": "ASML",
@@ -557,11 +557,11 @@
       "open": 1477,
       "high": 1477,
       "low": 1378.3,
-      "volume": 2595060,
+      "volume": 2599207,
       "prev_close": 1458.97,
       "change": -15.31,
       "change_pct": -1.0494,
-      "timestamp": 1776888780
+      "timestamp": 1776889560
     },
     "AVGO": {
       "ticker": "AVGO",
@@ -570,11 +570,11 @@
       "open": 406.98,
       "high": 423.2,
       "low": 404.86,
-      "volume": 23555479,
+      "volume": 23594345,
       "prev_close": 402.17,
       "change": 20.48,
       "change_pct": 5.0924,
-      "timestamp": 1776888840
+      "timestamp": 1776889680
     },
     "CRDO": {
       "ticker": "CRDO",
@@ -583,11 +583,11 @@
       "open": 186.62,
       "high": 191.84,
       "low": 183.62,
-      "volume": 7303246,
+      "volume": 7309239,
       "prev_close": 183.32,
       "change": 6.17,
       "change_pct": 3.3657,
-      "timestamp": 1776888780
+      "timestamp": 1776889620
     },
     "CDNS": {
       "ticker": "CDNS",
@@ -596,11 +596,11 @@
       "open": 332.85,
       "high": 334,
       "low": 327.69,
-      "volume": 2192059,
+      "volume": 2199335,
       "prev_close": 325.84,
       "change": 5.77,
       "change_pct": 1.7708,
-      "timestamp": 1776888780
+      "timestamp": 1776889260
     },
     "KLAC": {
       "ticker": "KLAC",
@@ -609,11 +609,11 @@
       "open": 1812.99,
       "high": 1814.34,
       "low": 1776.64,
-      "volume": 666575,
+      "volume": 667818,
       "prev_close": 1785.37,
       "change": 26.69,
       "change_pct": 1.4949,
-      "timestamp": 1776888840
+      "timestamp": 1776889560
     },
     "LRCX": {
       "ticker": "LRCX",
@@ -622,11 +622,11 @@
       "open": 261.71,
       "high": 266.14,
       "low": 257.4,
-      "volume": 9372846,
+      "volume": 9492317,
       "prev_close": 258.37,
       "change": 7.18,
       "change_pct": 2.779,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "LSCC": {
       "ticker": "LSCC",
@@ -635,7 +635,7 @@
       "open": 120,
       "high": 120.88,
       "low": 114.214,
-      "volume": 1722647,
+      "volume": 1722712,
       "prev_close": 117.05,
       "change": -1.46,
       "change_pct": -1.2473,
@@ -648,20 +648,20 @@
       "open": 82.47,
       "high": 82.895,
       "low": 81.09,
-      "volume": 8746410,
+      "volume": 8832651,
       "prev_close": 80.93,
       "change": 1.55,
       "change_pct": 1.9152,
-      "timestamp": 1776888780
+      "timestamp": 1776889680
     },
     "NVMI": {
       "ticker": "NVMI",
       "eodhd_symbol": "NVMI.US",
       "price": 521.12,
-      "open": 535,
+      "open": 535.3,
       "high": 535.3,
       "low": 510.0695,
-      "volume": 399473,
+      "volume": 399478,
       "prev_close": 527.75,
       "change": -6.63,
       "change_pct": -1.2563,
@@ -674,11 +674,11 @@
       "open": 200.99,
       "high": 202.5,
       "low": 199,
-      "volume": 106411554,
+      "volume": 106592441,
       "prev_close": 199.88,
       "change": 2.62,
       "change_pct": 1.3108,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "NXPI": {
       "ticker": "NXPI",
@@ -687,11 +687,11 @@
       "open": 228.5,
       "high": 228.94,
       "low": 224.79,
-      "volume": 2547745,
+      "volume": 2553293,
       "prev_close": 224.5,
       "change": 1.25,
       "change_pct": 0.5568,
-      "timestamp": 1776888720
+      "timestamp": 1776889620
     },
     "ON": {
       "ticker": "ON",
@@ -700,11 +700,11 @@
       "open": 88.72,
       "high": 89.6933,
       "low": 87.02,
-      "volume": 11312604,
+      "volume": 11353586,
       "prev_close": 86.91,
       "change": 2.08,
       "change_pct": 2.3933,
-      "timestamp": 1776888840
+      "timestamp": 1776889680
     },
     "QCOM": {
       "ticker": "QCOM",
@@ -713,11 +713,11 @@
       "open": 136.64,
       "high": 137.49,
       "low": 135.55,
-      "volume": 9409859,
+      "volume": 9412282,
       "prev_close": 135.56,
       "change": 0.51,
       "change_pct": 0.3762,
-      "timestamp": 1776888780
+      "timestamp": 1776889620
     },
     "STM": {
       "ticker": "STM",
@@ -726,11 +726,11 @@
       "open": 44.69,
       "high": 44.98,
       "low": 43.89,
-      "volume": 16311269,
+      "volume": 16343670,
       "prev_close": 44.3,
       "change": 0.56,
       "change_pct": 1.2641,
-      "timestamp": 1776888780
+      "timestamp": 1776889620
     },
     "SNPS": {
       "ticker": "SNPS",
@@ -739,11 +739,11 @@
       "open": 470.9,
       "high": 478.72,
       "low": 470.9,
-      "volume": 1420998,
+      "volume": 1422947,
       "prev_close": 467.58,
       "change": 9.68,
       "change_pct": 2.0702,
-      "timestamp": 1776888840
+      "timestamp": 1776889620
     },
     "TSM": {
       "ticker": "TSM",
@@ -752,11 +752,11 @@
       "open": 371.78,
       "high": 387.91,
       "low": 370.64,
-      "volume": 16114825,
+      "volume": 16184669,
       "prev_close": 368.08,
       "change": 19.36,
       "change_pct": 5.2597,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "TER": {
       "ticker": "TER",
@@ -765,7 +765,7 @@
       "open": 388.895,
       "high": 390.8,
       "low": 376.35,
-      "volume": 2218770,
+      "volume": 2219881,
       "prev_close": 379.93,
       "change": 5.25,
       "change_pct": 1.3818,
@@ -778,11 +778,11 @@
       "open": 236.405,
       "high": 238.8,
       "low": 234.49,
-      "volume": 10697272,
+      "volume": 10895491,
       "prev_close": 233.15,
       "change": 3.16,
       "change_pct": 1.3554,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "ABBN SW": {
       "ticker": "ABBN SW",
@@ -1428,11 +1428,11 @@
       "open": 9.81,
       "high": 11,
       "low": 9.5,
-      "volume": 1208050,
+      "volume": 1210801,
       "prev_close": 9.5,
       "change": 1.49,
       "change_pct": 15.6842,
-      "timestamp": 1776888540
+      "timestamp": 1776889320
     },
     "277810 KS": {
       "ticker": "277810 KS",
@@ -1740,11 +1740,11 @@
       "open": 216.76,
       "high": 219.2,
       "low": 206.28,
-      "volume": 1297618,
+      "volume": 1298718,
       "prev_close": 210.07,
       "change": 0.03,
       "change_pct": 0.0143,
-      "timestamp": 1776888900
+      "timestamp": 1776889380
     },
     "ATS CN": {
       "ticker": "ATS CN",
@@ -1766,7 +1766,7 @@
       "open": 54.815,
       "high": 54.815,
       "low": 53.37,
-      "volume": 1047006,
+      "volume": 1047008,
       "prev_close": 53.72,
       "change": 0.31,
       "change_pct": 0.5771,
@@ -1792,17 +1792,17 @@
       "open": 146.35,
       "high": 147.03,
       "low": 142.55,
-      "volume": 2258220,
+      "volume": 2258478,
       "prev_close": 144.83,
       "change": -2.06,
       "change_pct": -1.4224,
-      "timestamp": 1776888000
+      "timestamp": 1776889500
     },
     "GMED": {
       "ticker": "GMED",
       "eodhd_symbol": "GMED.US",
       "price": 95,
-      "open": 94.3,
+      "open": 94.46,
       "high": 96.7,
       "low": 94.01,
       "volume": 754326,
@@ -1816,9 +1816,9 @@
       "eodhd_symbol": "HSAI.US",
       "price": 21.63,
       "open": 22.08,
-      "high": 22.315,
-      "low": 21.23,
-      "volume": 3266097,
+      "high": 22.46,
+      "low": 21.22,
+      "volume": 3266098,
       "prev_close": 21.38,
       "change": 0.25,
       "change_pct": 1.1693,
@@ -1831,11 +1831,11 @@
       "open": 29.32,
       "high": 31.15,
       "low": 28.78,
-      "volume": 14003016,
+      "volume": 14018079,
       "prev_close": 27.82,
       "change": 2.12,
       "change_pct": 7.6204,
-      "timestamp": 1776888900
+      "timestamp": 1776889680
     },
     "ISRG": {
       "ticker": "ISRG",
@@ -1844,11 +1844,11 @@
       "open": 461.36,
       "high": 491.15,
       "low": 460.01,
-      "volume": 4391416,
+      "volume": 4393424,
       "prev_close": 451.29,
       "change": 32.33,
       "change_pct": 7.1639,
-      "timestamp": 1776888840
+      "timestamp": 1776889680
     },
     "IPGP": {
       "ticker": "IPGP",
@@ -1867,26 +1867,26 @@
       "ticker": "IRDM",
       "eodhd_symbol": "IRDM.US",
       "price": 40.4,
-      "open": 43.325,
+      "open": 43.35,
       "high": 44.11,
       "low": 40.1401,
-      "volume": 4484084,
+      "volume": 4505137,
       "prev_close": 42.93,
       "change": -2.53,
       "change_pct": -5.8933,
-      "timestamp": 1776888720
+      "timestamp": 1776889680
     },
     "JBTM": {
       "ticker": "JBTM",
       "eodhd_symbol": "JBTM.US",
-      "price": 131.37,
+      "price": 131.36,
       "open": 133.42,
       "high": 133.87,
       "low": 130.67,
-      "volume": 351040,
+      "volume": 351055,
       "prev_close": 132.63,
-      "change": -1.26,
-      "change_pct": -0.95,
+      "change": -1.27,
+      "change_pct": -0.9576,
       "timestamp": 1776888000
     },
     "KDK": {
@@ -1896,11 +1896,11 @@
       "open": 9.81,
       "high": 9.93,
       "low": 9.22,
-      "volume": 649129,
+      "volume": 701341,
       "prev_close": 9.79,
       "change": -0.49,
       "change_pct": -5.0051,
-      "timestamp": 1776888480
+      "timestamp": 1776889620
     },
     "LECO": {
       "ticker": "LECO",
@@ -1922,11 +1922,11 @@
       "open": 343.33,
       "high": 344.2,
       "low": 329.88,
-      "volume": 2156341,
+      "volume": 2156656,
       "prev_close": 340.3,
       "change": -8.64,
       "change_pct": -2.5389,
-      "timestamp": 1776888540
+      "timestamp": 1776889440
     },
     "MBLY": {
       "ticker": "MBLY",
@@ -1935,11 +1935,11 @@
       "open": 8,
       "high": 8.1,
       "low": 7.795,
-      "volume": 5901887,
+      "volume": 5903036,
       "prev_close": 7.87,
       "change": 0.03,
       "change_pct": 0.3812,
-      "timestamp": 1776888480
+      "timestamp": 1776889320
     },
     "MELE": {
       "ticker": "MELE",
@@ -1974,11 +1974,11 @@
       "open": 67.96,
       "high": 69.43,
       "low": 65.575,
-      "volume": 6039444,
+      "volume": 6044252,
       "prev_close": 65.76,
       "change": 3.43,
       "change_pct": 5.2159,
-      "timestamp": 1776888900
+      "timestamp": 1776889680
     },
     "NDSN": {
       "ticker": "NDSN",
@@ -1987,7 +1987,7 @@
       "open": 283.51,
       "high": 283.52,
       "low": 278.48,
-      "volume": 222748,
+      "volume": 222794,
       "prev_close": 282.72,
       "change": -3.27,
       "change_pct": -1.1566,
@@ -2000,7 +2000,7 @@
       "open": 133.49,
       "high": 135.46,
       "low": 131.13,
-      "volume": 345040,
+      "volume": 345095,
       "prev_close": 132.4,
       "change": 0.79,
       "change_pct": 0.5967,
@@ -2010,10 +2010,10 @@
       "ticker": "ONTO",
       "eodhd_symbol": "ONTO.US",
       "price": 297.34,
-      "open": 297.425,
+      "open": 297.56,
       "high": 298.609,
-      "low": 288.34,
-      "volume": 884658,
+      "low": 288,
+      "volume": 885014,
       "prev_close": 290.11,
       "change": 7.23,
       "change_pct": 2.4922,
@@ -2026,11 +2026,11 @@
       "open": 28.68,
       "high": 30,
       "low": 27.06,
-      "volume": 2486090,
+      "volume": 2493681,
       "prev_close": 27.61,
       "change": 0.15,
       "change_pct": 0.5433,
-      "timestamp": 1776888900
+      "timestamp": 1776889680
     },
     "PRCT": {
       "ticker": "PRCT",
@@ -2052,36 +2052,36 @@
       "open": 2.59,
       "high": 2.82,
       "low": 2.55,
-      "volume": 13710363,
+      "volume": 13763664,
       "prev_close": 2.53,
       "change": 0.24,
       "change_pct": 9.4862,
-      "timestamp": 1776888780
+      "timestamp": 1776889740
     },
     "RRX": {
       "ticker": "RRX",
       "eodhd_symbol": "RRX.US",
-      "price": 211.08,
-      "open": 214.855,
-      "high": 216.94,
-      "low": 210.63,
-      "volume": 1886303,
+      "price": 211.14,
+      "open": 212.75,
+      "high": 217.05,
+      "low": 210.62,
+      "volume": 1886332,
       "prev_close": 209.76,
-      "change": 1.32,
-      "change_pct": 0.6293,
+      "change": 1.38,
+      "change_pct": 0.6579,
       "timestamp": 1776888000
     },
     "ROK": {
       "ticker": "ROK",
       "eodhd_symbol": "ROK.US",
-      "price": 407.272,
-      "open": 415.1278,
+      "price": 407.02,
+      "open": 413.8,
       "high": 415.1278,
       "low": 404.63,
-      "volume": 404586,
+      "volume": 405117,
       "prev_close": 410.04,
-      "change": -2.768,
-      "change_pct": -0.6751,
+      "change": -3.02,
+      "change_pct": -0.7365,
       "timestamp": 1776888000
     },
     "SHA": {
@@ -2104,11 +2104,11 @@
       "open": 10.11,
       "high": 10.33,
       "low": 9.685,
-      "volume": 3541157,
+      "volume": 3556712,
       "prev_close": 9.74,
       "change": 0.08,
       "change_pct": 0.8214,
-      "timestamp": 1776888720
+      "timestamp": 1776889740
     },
     "STMPA": {
       "ticker": "STMPA",
@@ -2130,11 +2130,11 @@
       "open": 64.33,
       "high": 64.8604,
       "low": 61.81,
-      "volume": 863905,
+      "volume": 864305,
       "prev_close": 62.96,
       "change": 0.26,
       "change_pct": 0.413,
-      "timestamp": 1776888840
+      "timestamp": 1776889560
     },
     "ZBRA": {
       "ticker": "ZBRA",
@@ -2143,11 +2143,11 @@
       "open": 239.63,
       "high": 240.7,
       "low": 229.86,
-      "volume": 706576,
+      "volume": 706691,
       "prev_close": 236.67,
       "change": -5.57,
       "change_pct": -2.3535,
-      "timestamp": 1776888000
+      "timestamp": 1776889080
     },
     "002979": {
       "ticker": "002979",
@@ -2312,11 +2312,11 @@
       "open": 90.465,
       "high": 93.1,
       "low": 87.76,
-      "volume": 21332650,
+      "volume": 21352238,
       "prev_close": 86.64,
       "change": 3.4,
       "change_pct": 3.9243,
-      "timestamp": 1776888900
+      "timestamp": 1776889680
     },
     "ASTS": {
       "ticker": "ASTS",
@@ -2325,11 +2325,11 @@
       "open": 84.66,
       "high": 87.78,
       "low": 82.74,
-      "volume": 21895651,
+      "volume": 21925773,
       "prev_close": 80.01,
       "change": 4.65,
       "change_pct": 5.8118,
-      "timestamp": 1776888900
+      "timestamp": 1776889740
     },
     "HEI": {
       "ticker": "HEI",
@@ -2338,11 +2338,11 @@
       "open": 278.74,
       "high": 279.6119,
       "low": 264.51,
-      "volume": 907351,
+      "volume": 907443,
       "prev_close": 276.02,
       "change": -7.45,
       "change_pct": -2.6991,
-      "timestamp": 1776888600
+      "timestamp": 1776888960
     },
     "VSAT": {
       "ticker": "VSAT",
@@ -2351,7 +2351,7 @@
       "open": 63.85,
       "high": 64.87,
       "low": 61.09,
-      "volume": 1203379,
+      "volume": 1203437,
       "prev_close": 62.53,
       "change": 0.55,
       "change_pct": 0.8796,
@@ -2360,15 +2360,15 @@
     "PL": {
       "ticker": "PL",
       "eodhd_symbol": "PL.US",
-      "price": 39.505,
-      "open": 39.39,
-      "high": 41.7099,
+      "price": 39.47,
+      "open": 39.5,
+      "high": 41.71,
       "low": 38.28,
-      "volume": 12054481,
+      "volume": 12060201,
       "prev_close": 38.03,
-      "change": 1.475,
-      "change_pct": 3.8785,
-      "timestamp": 1776888840
+      "change": 1.44,
+      "change_pct": 3.7865,
+      "timestamp": 1776889740
     },
     "RDW": {
       "ticker": "RDW",
@@ -2377,11 +2377,11 @@
       "open": 10.73,
       "high": 12.3,
       "low": 10.73,
-      "volume": 45870595,
+      "volume": 46582597,
       "prev_close": 10.31,
       "change": 1.62,
       "change_pct": 15.7129,
-      "timestamp": 1776888900
+      "timestamp": 1776889740
     },
     "SPIR": {
       "ticker": "SPIR",
@@ -2390,11 +2390,11 @@
       "open": 19.31,
       "high": 20.48,
       "low": 18.1601,
-      "volume": 2166229,
+      "volume": 2167449,
       "prev_close": 18.74,
       "change": -0.47,
       "change_pct": -2.508,
-      "timestamp": 1776888720
+      "timestamp": 1776889740
     },
     "BKSY": {
       "ticker": "BKSY",
@@ -2403,11 +2403,11 @@
       "open": 40.75,
       "high": 42.75,
       "low": 38.9456,
-      "volume": 1625411,
+      "volume": 1625855,
       "prev_close": 38.94,
       "change": 1.72,
       "change_pct": 4.4171,
-      "timestamp": 1776888540
+      "timestamp": 1776889440
     },
     "GSAT": {
       "ticker": "GSAT",
@@ -2416,11 +2416,11 @@
       "open": 80.67,
       "high": 81.36,
       "low": 80.0685,
-      "volume": 1657137,
+      "volume": 1657666,
       "prev_close": 80.35,
       "change": 0.99,
       "change_pct": 1.2321,
-      "timestamp": 1776888780
+      "timestamp": 1776889020
     },
     "TSAT": {
       "ticker": "TSAT",
@@ -2442,11 +2442,11 @@
       "open": 126.765,
       "high": 127.3808,
       "low": 119.68,
-      "volume": 7486479,
+      "volume": 7543102,
       "prev_close": 123.86,
       "change": -1.5,
       "change_pct": -1.211,
-      "timestamp": 1776888960
+      "timestamp": 1776889740
     },
     "LMT": {
       "ticker": "LMT",
@@ -2455,11 +2455,11 @@
       "open": 575.88,
       "high": 576.07,
       "low": 550.19,
-      "volume": 2231794,
+      "volume": 2233079,
       "prev_close": 571.95,
       "change": -16.52,
       "change_pct": -2.8884,
-      "timestamp": 1776888960
+      "timestamp": 1776889680
     },
     "NOC": {
       "ticker": "NOC",
@@ -2468,11 +2468,11 @@
       "open": 611.1,
       "high": 615,
       "low": 583.5,
-      "volume": 1299971,
+      "volume": 1301041,
       "prev_close": 611.13,
       "change": -21.51,
       "change_pct": -3.5197,
-      "timestamp": 1776888600
+      "timestamp": 1776889560
     },
     "SPCE": {
       "ticker": "SPCE",
@@ -2481,11 +2481,11 @@
       "open": 2.98,
       "high": 3.09,
       "low": 2.86,
-      "volume": 10571201,
+      "volume": 10574433,
       "prev_close": 2.92,
       "change": -0.02,
       "change_pct": -0.6849,
-      "timestamp": 1776888540
+      "timestamp": 1776889740
     },
     "AVIO IM": {
       "ticker": "AVIO IM",
@@ -2503,14 +2503,14 @@
     "DCO": {
       "ticker": "DCO",
       "eodhd_symbol": "DCO.US",
-      "price": 136.659,
-      "open": 142.31,
-      "high": 142.31,
+      "price": 136.73,
+      "open": 143.41,
+      "high": 143.41,
       "low": 136.04,
       "volume": 159453,
       "prev_close": 141.48,
-      "change": -4.821,
-      "change_pct": -3.4075,
+      "change": -4.75,
+      "change_pct": -3.3574,
       "timestamp": 1776888000
     },
     "ETL FP": {
@@ -2531,20 +2531,20 @@
       "eodhd_symbol": "FLY.US",
       "price": 41.45,
       "open": 43.45,
-      "high": 45.71,
-      "low": 39.2206,
-      "volume": 6796173,
+      "high": 45.75,
+      "low": 39.22,
+      "volume": 6802534,
       "prev_close": 42.09,
       "change": -0.64,
       "change_pct": -1.5206,
-      "timestamp": 1776888840
+      "timestamp": 1776889680
     },
     "GILT": {
       "ticker": "GILT",
       "eodhd_symbol": "GILT.US",
       "price": 17.63,
       "open": 18.2,
-      "high": 18.6,
+      "high": 18.64,
       "low": 17.06,
       "volume": 730287,
       "prev_close": 17.92,
@@ -2585,11 +2585,11 @@
       "open": 88.7,
       "high": 89.58,
       "low": 85.775,
-      "volume": 2072450,
+      "volume": 2073931,
       "prev_close": 87.18,
       "change": -0.03,
       "change_pct": -0.0344,
-      "timestamp": 1776888900
+      "timestamp": 1776889500
     },
     "189300 KS": {
       "ticker": "189300 KS",
@@ -2607,15 +2607,15 @@
     "KRMN": {
       "ticker": "KRMN",
       "eodhd_symbol": "KRMN.US",
-      "price": 82.1,
-      "open": 84.8,
+      "price": 82.11,
+      "open": 84.45,
       "high": 86.57,
       "low": 80.02,
-      "volume": 1011384,
+      "volume": 1012151,
       "prev_close": 82.06,
-      "change": 0.04,
-      "change_pct": 0.0487,
-      "timestamp": 1776888000
+      "change": 0.05,
+      "change_pct": 0.0609,
+      "timestamp": 1776889680
     },
     "474170 KS": {
       "ticker": "474170 KS",
@@ -2650,11 +2650,11 @@
       "open": 5.77,
       "high": 6.151,
       "low": 5.25,
-      "volume": 1484882,
+      "volume": 1492515,
       "prev_close": 5.68,
       "change": -0.13,
       "change_pct": -2.2887,
-      "timestamp": 1776888840
+      "timestamp": 1776889500
     },
     "MOG.A": {
       "ticker": "MOG.A",
@@ -2702,11 +2702,11 @@
       "open": 7.44,
       "high": 8.35,
       "low": 6.94,
-      "volume": 16109294,
+      "volume": 16114580,
       "prev_close": 7.21,
       "change": 0.03,
       "change_pct": 0.4161,
-      "timestamp": 1776888840
+      "timestamp": 1776889740
     },
     "SIDU": {
       "ticker": "SIDU",
@@ -2715,11 +2715,11 @@
       "open": 4.03,
       "high": 4.41,
       "low": 3.9201,
-      "volume": 24998562,
+      "volume": 25011175,
       "prev_close": 3.75,
       "change": 0.305,
       "change_pct": 8.1333,
-      "timestamp": 1776888960
+      "timestamp": 1776889680
     },
     "SCC IT": {
       "ticker": "SCC IT",
@@ -2741,7 +2741,7 @@
       "open": 32.14,
       "high": 32.68,
       "low": 30.9301,
-      "volume": 1133840,
+      "volume": 1401545,
       "prev_close": 31.09,
       "change": 0.72,
       "change_pct": 2.3159,
@@ -2881,14 +2881,14 @@
       "ticker": "WOLF",
       "eodhd_symbol": "WOLF.US",
       "price": 27.75,
-      "open": 26.74,
+      "open": 26.49,
       "high": 29.45,
       "low": 25.8308,
-      "volume": 7952112,
+      "volume": 8991605,
       "prev_close": 24.7,
       "change": 3.05,
       "change_pct": 12.3482,
-      "timestamp": 1776888960
+      "timestamp": 1776889740
     },
     "LIN": {
       "ticker": "LIN",
@@ -2897,7 +2897,7 @@
       "open": 496.46,
       "high": 501.23,
       "low": 493.935,
-      "volume": 1521252,
+      "volume": 1523213,
       "prev_close": 494.84,
       "change": -0.22,
       "change_pct": -0.0445,
@@ -2923,7 +2923,7 @@
       "open": 296.3,
       "high": 297.51,
       "low": 294.3675,
-      "volume": 898012,
+      "volume": 898361,
       "prev_close": 294.78,
       "change": 1.98,
       "change_pct": 0.6717,
@@ -3015,9 +3015,9 @@
       "high": 19.16,
       "low": 19.14,
       "volume": 2209,
-      "prev_close": 19.29,
-      "change": -0.14,
-      "change_pct": -0.7258,
+      "prev_close": 19.28,
+      "change": -0.13,
+      "change_pct": -0.6743,
       "timestamp": 1776887880
     },
     "5384 JP": {
@@ -3049,14 +3049,14 @@
     "MTRN": {
       "ticker": "MTRN",
       "eodhd_symbol": "MTRN.US",
-      "price": 179.21,
+      "price": 179.31,
       "open": 182.09,
-      "high": 182.09,
+      "high": 182.26,
       "low": 177.355,
       "volume": 194686,
       "prev_close": 178.36,
-      "change": 0.85,
-      "change_pct": 0.4766,
+      "change": 0.95,
+      "change_pct": 0.5326,
       "timestamp": 1776888000
     },
     "4062 JP": {
@@ -3179,15 +3179,15 @@
     "ALB": {
       "ticker": "ALB",
       "eodhd_symbol": "ALB.US",
-      "price": 194.21,
-      "open": 199.9,
+      "price": 194.22,
+      "open": 200,
       "high": 201.671,
       "low": 188.535,
-      "volume": 1788629,
+      "volume": 1791299,
       "prev_close": 198.42,
-      "change": -4.21,
-      "change_pct": -2.1218,
-      "timestamp": 1776888540
+      "change": -4.2,
+      "change_pct": -2.1167,
+      "timestamp": 1776889740
     },
     "SQM": {
       "ticker": "SQM",
@@ -3196,11 +3196,11 @@
       "open": 88.37,
       "high": 88.55,
       "low": 85.78,
-      "volume": 845099,
+      "volume": 845578,
       "prev_close": 87.22,
       "change": -0.27,
       "change_pct": -0.3096,
-      "timestamp": 1776888120
+      "timestamp": 1776889380
     },
     "AMG NA": {
       "ticker": "AMG NA",
@@ -3223,9 +3223,9 @@
       "high": 14.13,
       "low": 14.07,
       "volume": 32233,
-      "prev_close": 14.18,
-      "change": -0.07,
-      "change_pct": -0.4937,
+      "prev_close": 14.14,
+      "change": -0.03,
+      "change_pct": -0.2122,
       "timestamp": 1776887760
     },
     "3401 JP": {
@@ -3274,7 +3274,7 @@
       "open": 160.96,
       "high": 161.39,
       "low": 148.04,
-      "volume": 2278161,
+      "volume": 2280087,
       "prev_close": 158.95,
       "change": -5.65,
       "change_pct": -3.5546,
@@ -3287,7 +3287,7 @@
       "open": 450.63,
       "high": 450.63,
       "low": 416.09,
-      "volume": 1143523,
+      "volume": 1143528,
       "prev_close": 438.88,
       "change": -14.97,
       "change_pct": -3.411,
@@ -3324,7 +3324,7 @@
       "eodhd_symbol": "SPY.US",
       "price": 711.21,
       "change_pct": 1.0127,
-      "timestamp": 1776888960,
+      "timestamp": 1776889740,
       "is_benchmark": true
     },
     "BM_QQQ": {
@@ -3332,7 +3332,7 @@
       "eodhd_symbol": "QQQ.US",
       "price": 655.11,
       "change_pct": 1.6731,
-      "timestamp": 1776888960,
+      "timestamp": 1776889740,
       "is_benchmark": true
     },
     "BM_SOXX": {
@@ -3340,14 +3340,14 @@
       "eodhd_symbol": "SOXX.US",
       "price": 431.77,
       "change_pct": 2.6313,
-      "timestamp": 1776888900,
+      "timestamp": 1776889560,
       "is_benchmark": true
     },
     "BM_ROBO": {
       "ticker": "ROBO",
       "eodhd_symbol": "ROBO.US",
-      "price": 79.44,
-      "change_pct": 1.249,
+      "price": 79.53,
+      "change_pct": 1.3638,
       "timestamp": 1776888180,
       "is_benchmark": true
     }
