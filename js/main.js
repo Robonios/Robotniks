@@ -1099,6 +1099,7 @@ let _intradayFetchedAt = null;  // timestamp of last intraday fetch
 // real date/time without anyone on the reading side knowing.
 let _chartTimeMap = [];
 let _chartTimeIsIntraday = false;
+let _chartTimeSpansMultipleYears = false;
 // True when the visible intraday series spans more than one calendar
 // date (1W). Drives tickMarkFormatter between "HH:MM throughout"
 // (single-day 1D) and "DD Mon per tick" (multi-day).
@@ -1263,7 +1264,18 @@ function createIndexChart(container, data) {
           }
           return pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes());
         }
-        // Daily — "YYYY-MM-DD"
+        // Daily — "YYYY-MM-DD". On views that span multiple calendar
+        // years (1Y, 3Y, 5Y), Lightweight Charts often picks idx=0 as
+        // its first tick position. For a 1Y view, idx=0 is the bar
+        // exactly one year ago, which happens to share today's day
+        // and month — the label reads as today even though it's last
+        // year. Suppress the idx=0 tick on those views so the
+        // leftmost rendered label is a later, unambiguous bar. LC
+        // picks enough other tick positions that the axis stays
+        // readable. (Single- or short-range views are unaffected
+        // because they don't roll the date boundary in a confusing
+        // way.)
+        if (idx === 0 && _chartTimeSpansMultipleYears) return '';
         var dd = new Date(orig + 'T00:00:00Z');
         if (isNaN(dd.getTime())) return orig;
         return dd.getUTCDate() + ' ' + months[dd.getUTCMonth()];
@@ -1437,6 +1449,26 @@ function applyIndexData(data) {
     filtered = pruneNonTradingDays(filtered);
   }
   _chartTimeMap = filtered.map(function(d) { return timeKey(d); });
+
+  // Detect whether the visible range spans multiple calendar years. On
+  // a 1Y view the oldest bar is exactly 365 days old, so its day-of-
+  // month matches today's — a label of just "22 Apr" at the leftmost
+  // position reads as today even though it's last year. On year-
+  // spanning views we suppress the leftmost tick (idx=0) so the
+  // leftmost rendered label is a later, unambiguous bar.
+  _chartTimeSpansMultipleYears = false;
+  if (_chartTimeMap.length >= 2) {
+    var firstVal = _chartTimeMap[0], lastVal = _chartTimeMap[_chartTimeMap.length - 1];
+    var firstYear, lastYear;
+    if (_chartTimeIsIntraday) {
+      firstYear = new Date(firstVal * 1000).getUTCFullYear();
+      lastYear = new Date(lastVal * 1000).getUTCFullYear();
+    } else {
+      firstYear = parseInt(firstVal.slice(0, 4), 10);
+      lastYear = parseInt(lastVal.slice(0, 4), 10);
+    }
+    _chartTimeSpansMultipleYears = firstYear !== lastYear;
+  }
   if (_chartTimeIsIntraday && _chartTimeMap.length > 1) {
     var firstDate = new Date(_chartTimeMap[0] * 1000);
     var lastDate = new Date(_chartTimeMap[_chartTimeMap.length - 1] * 1000);
