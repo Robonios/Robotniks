@@ -20,7 +20,7 @@ import json
 import hashlib
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from config import NEWS_JSON, NEWS_ARCHIVE_JSON
 from archive_utils import archive_and_filter
@@ -294,6 +294,11 @@ def main():
 
     output = {
         "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        # Machine-readable fetch timestamp consumed by the News page's
+        # "Feed updated HH:MM GMT" caption. `updated` above is kept in
+        # its original human-readable form for anyone already reading
+        # the file by hand.
+        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": "RSS Aggregation",
         "count": len(current_items),
         "items": current_items,

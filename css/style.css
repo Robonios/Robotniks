@@ -660,6 +660,36 @@
     font-weight: 500;
   }
 
+  /* News feed-freshness caption. Same visual language as
+     .chart-last-updated — the two indicators are semantically
+     identical (last-write timestamp from a pipeline), so keeping
+     them consistent helps the reader. */
+  .news-feed-updated {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px 0 0 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #6B7280;
+    opacity: 0.7;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+  .news-feed-updated.stale {
+    color: #c77b3a;
+    opacity: 1;
+    font-weight: 500;
+  }
+  .news-feed-updated:empty {
+    display: none;
+  }
+
   .chart-mode-tabs {
     display: flex;
     gap: 0;

@@ -26,7 +26,7 @@
 <meta name="theme-color" content="#F5D921">
 <link rel="canonical" href="https://robotnik.world/news.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20260422d"><link rel="stylesheet" href="css/typography.css?v=20260422d">
+<link rel="stylesheet" href="css/style.css?v=20260422e"><link rel="stylesheet" href="css/typography.css?v=20260422e">
 <style>
 .briefing-card { background:#161B22; border-left:3px solid #F5D921; border-radius:0 6px 6px 0; padding:1rem 1.25rem; margin-bottom:0.5rem; }
 .briefing-header { font-size:11px; font-weight:700; color:#F5D921; letter-spacing:0.08em; margin-bottom:0.75rem; }
@@ -103,10 +103,15 @@
 
     <!-- 2. Daily Briefing (fully public) -->
     <div class="briefing-card">
-      <div class="briefing-header">DAILY BRIEFING // <span id="briefing-date"></span></div>
+      <div class="briefing-header">FRONTIER HEADLINES // <span id="briefing-date"></span></div>
       <div class="briefing-body" id="daily-briefing-body">
         <p style="color:#5A6178;font-size:10px;">Generating briefing from latest signals<span class="animated-dots"></span></p>
       </div>
+      <!-- Feed-freshness caption. Populated from news.json.fetched_at
+           in loadNewsFeed; suppressed if that field is missing (older
+           news.json pre-dates the field). Styling mirrors the chart's
+           #chart-last-updated indicator on the home page. -->
+      <div class="news-feed-updated" id="news-feed-updated"></div>
     </div>
 
     <!-- Past Briefings -->
@@ -400,6 +405,7 @@ async function loadNewsFeed() {
     var data = await resp.json();
     allNewsItems = data.items || [];
     displayedCount = 0;
+    renderFeedFreshness(data.fetched_at);
     generateDailyBriefing();
     buildPastBriefings();
     renderFeedItems();
@@ -408,6 +414,26 @@ async function loadNewsFeed() {
     document.getElementById('live-feed').innerHTML =
       '<div style="text-align:center;padding:2rem;color:#5A6178;font-size:11px;">Newsfeed offline &mdash; data pipeline connecting</div>';
   }
+}
+
+// Render the "Feed updated HH:MM GMT" caption below the briefing. Mirrors
+// the home page's chart-freshness indicator: dim-grey default, orange +
+// weight 500 when >36h stale. Suppressed entirely if fetched_at is
+// missing (pre-existing news.json files don't carry the field).
+function renderFeedFreshness(iso) {
+  var el = document.getElementById('news-feed-updated');
+  if (!el) return;
+  if (!iso) { el.textContent = ''; el.classList.remove('stale'); return; }
+  // Tolerate the legacy "+00:00Z" double-suffix same way the home page
+  // freshness indicator does.
+  var normalised = String(iso).replace(/([+-]\d\d:?\d\d)Z$/, '$1');
+  var d = new Date(normalised);
+  if (isNaN(d.getTime())) { el.textContent = ''; el.classList.remove('stale'); return; }
+  var ageHours = (Date.now() - d.getTime()) / 3600000;
+  var stale = ageHours > 36;
+  var pad = function(n) { return n < 10 ? '0' + n : '' + n; };
+  el.textContent = 'Feed updated ' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ' GMT';
+  el.classList.toggle('stale', stale);
 }
 
 function renderFeedItems() {
