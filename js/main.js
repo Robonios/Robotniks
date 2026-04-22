@@ -168,6 +168,13 @@ async function loadPriceData() {
       // Sort by market cap desc (entities without mcap go to bottom)
       uniqueCompanies.sort((a, b) => (b.mcap || 0) - (a.mcap || 0));
 
+      // Expose the price-feed timestamp for updateMarketOverview's
+      // "Last Updated" row. Was previously set to new Date() at render
+      // time, which made the sidebar disagree with the chart's
+      // Last-updated indicator (the chart reads summary.json's
+      // calculated_at, the sidebar was reading wall-clock "now").
+      window._priceFetchedAt = priceData.fetched_at || null;
+
       // Update timestamp note
       const note = document.getElementById('market-note');
       if (note) {
@@ -257,13 +264,16 @@ function updateMarketOverview() {
     loserEl.innerHTML = '<a href="assets.html" style="color:inherit;text-decoration:none;' + nameStyle + '" title="' + loser.name + ' (' + loser.ticker + ')">' + loser.name + '</a> <span class="v-red">' + loser.change.toFixed(2) + '%</span>';
   }
 
-  // Last updated timestamp
+  // Last updated timestamp — reflect when the price data was fetched,
+  // not when the page was rendered. Falls back to "—" if we couldn't
+  // find a fetched_at in all_prices.json.
   var updatedEl = document.getElementById('ov-updated');
   if (updatedEl) {
-    // Try to get the updated field from price data
     try {
-      updatedEl.textContent = fmtDateRobotnik(new Date());
-    } catch(e) {}
+      updatedEl.textContent = window._priceFetchedAt
+        ? fmtDateRobotnik(window._priceFetchedAt)
+        : '—';
+    } catch(e) { updatedEl.textContent = '—'; }
   }
 }
 
