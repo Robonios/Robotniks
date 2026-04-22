@@ -66,39 +66,134 @@
   document.getElementById('nav-container').innerHTML = sidebar + topBar;
 
   // Early Access modal (shared across all pages)
+  // Submissions POST to a Google Apps Script web app bound to a
+  // private Sheet in Robert's Workspace. See scripts/apps-script.gs
+  // for the server side. The URL below is set after deployment.
+  var EARLY_ACCESS_URL = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYED_APPS_SCRIPT_URL/exec';
   var modalDiv = document.createElement('div');
   modalDiv.id = 'early-access-modal';
-  modalDiv.style.cssText = 'display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;';
-  modalDiv.innerHTML = `
-    <div style="background:#0A0A0F;border:1px solid #333;border-radius:8px;padding:2rem 2.5rem;max-width:460px;width:90%;position:relative;font-family:var(--font);">
-      <button onclick="document.getElementById('early-access-modal').style.display='none'" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#888;font-size:18px;cursor:pointer;">&#10005;</button>
-      <h3 style="color:#F5D921;font-size:12px;letter-spacing:0.1em;margin:0 0 0.75rem;">REQUEST EARLY ACCESS</h3>
-      <p style="color:#8B92A5;font-size:10px;line-height:1.6;margin-bottom:1.25rem;">
-        Join the Robotnik early access programme. Enterprise operatives receive the full Intelligence data layer, funding database, news archive, data export, and priority access to Portfolio Intelligence, Frontier Signals, and Commodities as they launch.
-      </p>
-      <div id="mailchimp-form-container">
-        <form action="https://formspree.io/f/placeholder" method="POST" style="display:flex;flex-direction:column;gap:0.5rem;" onsubmit="this.querySelector('[type=submit]').textContent='Submitted!';this.querySelector('[type=submit]').disabled=true;">
-          <input type="email" name="email" placeholder="Email address *" required style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
-          <input type="text" name="name" placeholder="Name *" required style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
-          <input type="text" name="company" placeholder="Company / Organisation" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
-          <input type="url" name="linkedin" placeholder="LinkedIn profile URL" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:var(--font);font-size:10px;">
-          <select name="source" style="width:100%;padding:0.5rem;background:#111;border:1px solid #333;color:#8B92A5;border-radius:3px;font-family:var(--font);font-size:10px;">
-            <option value="">How did you hear about Robotnik?</option>
-            <option value="linkedin">LinkedIn</option>
-            <option value="twitter">Twitter / X</option>
-            <option value="referral">Referral</option>
-            <option value="search">Search</option>
-            <option value="report">1Q26 Report</option>
-            <option value="other">Other</option>
-          </select>
-          <button type="submit" style="width:100%;margin-top:0.5rem;padding:0.6rem;background:#F5D921;color:#0A0A0F;font-family:var(--font);font-weight:700;font-size:10px;letter-spacing:0.06em;border:none;border-radius:3px;cursor:pointer;">Submit Request &rarr;</button>
-        </form>
-        <p style="color:#5A6178;font-size:8px;margin-top:0.5rem;text-align:center;">Mailchimp integration pending. Form submissions are temporarily collected via email.</p>
-      </div>
-    </div>
-  `;
-  modalDiv.addEventListener('click', function(e) { if (e.target === modalDiv) modalDiv.style.display = 'none'; });
+  modalDiv.style.cssText = 'display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.8);align-items:flex-start;justify-content:center;overflow-y:auto;padding:3rem 1rem;';
+  var inputStyle = "width:100%;padding:0.55rem 0.65rem;background:#111;border:1px solid #333;color:#E0E0E0;border-radius:3px;font-family:'Mulish',sans-serif;font-size:12px;box-sizing:border-box;";
+  var labelStyle = "display:block;color:#8B92A5;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.25rem;font-family:'Space Grotesk',sans-serif;";
+  var reqDot = '<span style="color:#F5D921;margin-left:3px;">*</span>';
+  modalDiv.innerHTML = '' +
+    '<div style="background:#0A0A0F;border:1px solid #333;border-radius:8px;padding:1.75rem 2rem 1.5rem;max-width:520px;width:100%;position:relative;font-family:\'Mulish\',sans-serif;margin:auto;">' +
+      '<button type="button" id="ea-close-btn" aria-label="Close" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#888;font-size:18px;cursor:pointer;line-height:1;">&#10005;</button>' +
+      '<h3 style="color:#F5D921;font-size:12px;letter-spacing:0.1em;margin:0 0 0.5rem;font-family:\'Space Grotesk\',sans-serif;">REQUEST EARLY ACCESS</h3>' +
+      '<p style="color:#8B92A5;font-size:11px;line-height:1.55;margin:0 0 1.25rem;">' +
+        'Join the Robotnik early access programme. Enterprise operatives receive the full Intelligence data layer, funding database, news archive, data export, and priority access to Portfolio Intelligence, Frontier Signals, and Commodities as they launch.' +
+      '</p>' +
+      '<form id="early-access-form" novalidate style="display:flex;flex-direction:column;gap:0.9rem;">' +
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">' +
+          '<div><label style="' + labelStyle + '" for="ea-name">Full name' + reqDot + '</label>' +
+            '<input type="text" id="ea-name" name="name" required autocomplete="name" style="' + inputStyle + '"></div>' +
+          '<div><label style="' + labelStyle + '" for="ea-email">Work email' + reqDot + '</label>' +
+            '<input type="email" id="ea-email" name="email" required autocomplete="email" style="' + inputStyle + '"></div>' +
+          '<div><label style="' + labelStyle + '" for="ea-org">Organisation' + reqDot + '</label>' +
+            '<input type="text" id="ea-org" name="organisation" required autocomplete="organization" placeholder="Company, firm, or institution" style="' + inputStyle + '"></div>' +
+          '<div><label style="' + labelStyle + '" for="ea-role">Role' + reqDot + '</label>' +
+            '<input type="text" id="ea-role" name="role" required autocomplete="organization-title" placeholder="Your job title" style="' + inputStyle + '"></div>' +
+        '</div>' +
+        '<div><label style="' + labelStyle + '" for="ea-linkedin">LinkedIn profile' + reqDot + '</label>' +
+          '<input type="url" id="ea-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourname" style="' + inputStyle + '"></div>' +
+        '<div><label style="' + labelStyle + '" for="ea-usecase">What would you use Robotnik for?' + reqDot + '</label>' +
+          '<textarea id="ea-usecase" name="use_case" required rows="4" placeholder="Briefly describe how Robotnik would support your work. What sectors are you most interested in? What types of analysis do you need?" style="' + inputStyle + 'resize:vertical;min-height:84px;line-height:1.5;"></textarea></div>' +
+        '<div><label style="' + labelStyle + '" for="ea-heard">How did you hear about Robotnik?' + reqDot + '</label>' +
+          '<select id="ea-heard" name="how_did_you_hear" required style="' + inputStyle + 'appearance:none;">' +
+            '<option value="" disabled selected hidden>Select one</option>' +
+            '<option value="LinkedIn">LinkedIn</option>' +
+            '<option value="Twitter/X">Twitter / X</option>' +
+            '<option value="Referral">Referral</option>' +
+            '<option value="Search">Search</option>' +
+            '<option value="News article">News article</option>' +
+            '<option value="Other">Other</option>' +
+          '</select></div>' +
+        '<input type="hidden" name="source_page" id="ea-source-page">' +
+        '<div id="ea-error" role="alert" style="display:none;color:#ef4444;font-size:11px;line-height:1.4;"></div>' +
+        '<button type="submit" id="ea-submit-btn" style="margin-top:0.25rem;padding:0.7rem;background:#F5D921;color:#0A0A0F;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.08em;border:none;border-radius:3px;cursor:pointer;text-transform:uppercase;">Request Early Access</button>' +
+      '</form>' +
+      '<div id="ea-success" style="display:none;padding:1rem 0 0.25rem;">' +
+        '<p style="color:#22c55e;font-size:13px;font-weight:600;margin:0 0 0.5rem;">Thank you for your interest.</p>' +
+        '<p style="color:#8B92A5;font-size:11px;line-height:1.5;margin:0;">Robert will be in touch shortly.</p>' +
+      '</div>' +
+      '<p style="color:#5A6178;font-size:9px;line-height:1.5;margin:1rem 0 0;">' +
+        'Submissions are stored in Robert\'s Google Workspace solely to respond to your enquiry. No IP address or cookies are logged.' +
+      '</p>' +
+    '</div>';
   document.body.appendChild(modalDiv);
+
+  document.getElementById('ea-close-btn').addEventListener('click', function() {
+    modalDiv.style.display = 'none';
+  });
+  modalDiv.addEventListener('click', function(e) { if (e.target === modalDiv) modalDiv.style.display = 'none'; });
+
+  var form = document.getElementById('early-access-form');
+  var submitBtn = document.getElementById('ea-submit-btn');
+  var errorBox = document.getElementById('ea-error');
+  var successBox = document.getElementById('ea-success');
+
+  form.addEventListener('submit', function(ev) {
+    ev.preventDefault();
+    errorBox.style.display = 'none';
+    errorBox.textContent = '';
+    // Browser-native validation for required + email format first.
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    var data = {
+      name:             document.getElementById('ea-name').value.trim(),
+      email:            document.getElementById('ea-email').value.trim(),
+      organisation:     document.getElementById('ea-org').value.trim(),
+      role:             document.getElementById('ea-role').value.trim(),
+      linkedin:         document.getElementById('ea-linkedin').value.trim(),
+      use_case:         document.getElementById('ea-usecase').value.trim(),
+      how_did_you_hear: document.getElementById('ea-heard').value,
+      source_page:      window.location.pathname || '/',
+      user_agent:       (navigator && navigator.userAgent) || '',
+    };
+    submitBtn.disabled = true;
+    var originalLabel = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting…';
+    // Content-Type text/plain keeps the POST a CORS-simple request so
+    // Apps Script can respond without a preflight. The server still
+    // reads JSON from postData.contents.
+    fetch(EARLY_ACCESS_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(data),
+    }).then(function(resp) {
+      return resp.json().catch(function() { return { status: 'error', message: 'Unreadable response' }; });
+    }).then(function(result) {
+      if (result && result.status === 'ok') {
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+        setTimeout(function() {
+          modalDiv.style.display = 'none';
+          // Reset for a subsequent open: show form again, clear fields.
+          setTimeout(function() {
+            form.reset();
+            form.style.display = 'flex';
+            successBox.style.display = 'none';
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalLabel;
+          }, 400);
+        }, 3000);
+      } else {
+        var msg = (result && result.message) ? result.message :
+                  'Something went wrong. Please try again, or email robert@robotnik.world directly.';
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      }
+    }).catch(function() {
+      errorBox.textContent = 'Something went wrong. Please try again, or email robert@robotnik.world directly.';
+      errorBox.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
+    });
+  });
 
   // ─────────────────────────────────────────────────────────────────
   // Top-bar search
@@ -375,5 +470,15 @@
 // Global function to open early access modal
 function openEarlyAccess() {
   var m = document.getElementById('early-access-modal');
-  if (m) m.style.display = 'flex';
+  if (!m) return;
+  // Refresh the source_page hidden field in case the user navigated
+  // between pages since the nav rendered.
+  var sp = document.getElementById('ea-source-page');
+  if (sp) sp.value = window.location.pathname || '/';
+  m.style.display = 'flex';
+  // Focus the first input for keyboard users.
+  setTimeout(function() {
+    var first = document.getElementById('ea-name');
+    if (first) first.focus();
+  }, 50);
 }
