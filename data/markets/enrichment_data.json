@@ -238,5 +238,59 @@
     "key_customers": "Battery manufacturers, EV companies",
     "key_suppliers": "Lithium brine/spodumene operations",
     "robotnik_notes": "#1 lithium producer. Geographic diversification (Australia, Chile, US). Battery supply chain for frontier stack mobile systems."
+  },
+  "TXN": {
+    "bottleneck_risk": "LOW"
+  },
+  "IFX GR": {
+    "bottleneck_risk": "LOW"
+  },
+  "NXPI": {
+    "bottleneck_risk": "LOW"
+  },
+  "MCHP": {
+    "bottleneck_risk": "LOW"
+  },
+  "ARM": {
+    "bottleneck_risk": "HIGH"
+  },
+  "CDNS": {
+    "bottleneck_risk": "HIGH"
+  },
+  "SNPS": {
+    "bottleneck_risk": "HIGH"
+  },
+  "QCOM": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "MRVL": {
+    "bottleneck_risk": "LOW"
+  },
+  "8035 JP": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "6857 JP": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "TER": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "ASX": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "4063 JP": {
+    "bottleneck_risk": "MEDIUM"
+  },
+  "ADI": {
+    "bottleneck_risk": "LOW"
+  },
+  "MPWR": {
+    "bottleneck_risk": "LOW"
+  },
+  "STMPA": {
+    "bottleneck_risk": "LOW"
+  },
+  "SYM": {
+    "bottleneck_risk": "LOW"
   }
 }
