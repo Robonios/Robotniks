@@ -490,148 +490,32 @@ def main():
     }
     save_json(WEIGHTS_PATH, weights_output)
 
-    # ── DYNAMIC COMPOSITION: two index series ────────────────────────
-    # 1. Full basket (equities + tokens): ~1Y of data
-    # 2. Equities only: ~5Y of data (tokens excluded — no long history)
-    # The frontend picks the appropriate series based on selected range.
-
+    # ── Sub-index base date (shared) ────────────────────────────────
+    # We anchor every sub-index to the earliest date with >= 30%
+    # constituent coverage, give or take ~5 years back, then normalise
+    # each series to 1000 on NORMALISE_DATE (2025-03-31).
     from datetime import timedelta
-
-    # Split eligible entities into equities and tokens
-    equities_only = [e for e in eligible if e["sector"] != "Token"]
-    equities_weights = compute_capped_weights(equities_only)
-
-    print(f"  Full basket: {len(eligible)} entities (equities + tokens)")
-    print(f"  Equities only: {len(equities_only)} entities")
-
-    # --- Full basket (1Y) base date ---
-    full_base_str = all_dates[0] if all_dates else today_str
-    if all_dates:
-        target_1y = (datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=365)).strftime("%Y-%m-%d")
-        min_coverage_full = len(eligible) * 0.3
-        for d in all_dates:
-            if d >= target_1y:
-                day_cov = sum(1 for t in weights if t in price_matrix.get(d, {}))
-                if day_cov >= min_coverage_full:
-                    full_base_str = d
-                    break
-
-    # --- Equities-only (5Y) base date ---
-    eq_base_str = all_dates[0] if all_dates else today_str
+    sub_base_str = all_dates[0] if all_dates else today_str
     if all_dates:
         target_5y = (datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=1825)).strftime("%Y-%m-%d")
-        min_coverage_eq = len(equities_only) * 0.3
+        min_coverage_sub = len(eligible) * 0.3
         for d in all_dates:
             if d >= target_5y:
-                day_cov = sum(1 for t in equities_weights if t in price_matrix.get(d, {}))
-                if day_cov >= min_coverage_eq:
-                    eq_base_str = d
+                day_cov = sum(1 for t in weights if t in price_matrix.get(d, {}))
+                if day_cov >= min_coverage_sub:
+                    sub_base_str = d
                     break
+    print(f"  Sub-index base date: {sub_base_str}")
 
-    print(f"  Full basket base date: {full_base_str}")
-    print(f"  Equities-only base date: {eq_base_str}")
-
-    # --- Backfill and produce a SINGLE unified series ---
-    # Strategy: compute full-basket (equities+tokens) from its start date,
-    # compute equities-only from its earlier start date, then splice them
-    # into one continuous series. Use the full-basket for all dates where
-    # it exists; prepend equities-only history (rescaled) for earlier dates.
-    # Normalise the unified series ONCE so 2025-03-31 = 1000.00.
-    if all_dates and price_matrix:
-        # Full basket series (~1Y)
-        composite_series, actual_base_date, base_prices = backfill_index(
-            eligible, weights, price_matrix, all_dates, full_base_str
-        )
-        print(f"  Full basket series: {len(composite_series)} data points")
-
-        # Equities-only series (~5Y)
-        eq_series_raw, eq_actual_base, eq_base_prices = backfill_index(
-            equities_only, equities_weights, price_matrix, all_dates, eq_base_str
-        )
-        print(f"  Equities-only series: {len(eq_series_raw)} data points")
-
-        # Splice: use equities-only for dates BEFORE the full basket starts,
-        # scaled so the splice point is seamless.
-        full_start_date = composite_series[0]["date"] if composite_series else today_str
-        full_start_value = composite_series[0]["value"] if composite_series else BASE_VALUE
-
-        # Find equities-only value at the splice date
-        eq_at_splice = None
-        for pt in eq_series_raw:
-            if pt["date"] >= full_start_date:
-                eq_at_splice = pt["value"]
-                break
-        if eq_at_splice and eq_at_splice > 0:
-            splice_factor = full_start_value / eq_at_splice
-        else:
-            splice_factor = 1.0
-
-        # Build unified series: rescaled eq history + full basket
-        unified_series = []
-        for pt in eq_series_raw:
-            if pt["date"] < full_start_date:
-                unified_series.append({"date": pt["date"], "value": round(pt["value"] * splice_factor, 2)})
-        unified_series.extend(composite_series)
-
-        # Normalise the entire unified series once: value on NORMALISE_DATE = 1000.00
-        unified_series, norm_date, norm_factor = normalise_series(unified_series)
-        composite_value = unified_series[-1]["value"] if unified_series else BASE_VALUE
-        print(f"  Unified series: {len(unified_series)} data points (spliced at {full_start_date})")
-        print(f"  Normalised to {BASE_VALUE:.2f} on {norm_date} (factor: {norm_factor:.6f})")
-
-        # For backwards compat, set eq_series = the same unified series
-        eq_series = unified_series
-        eq_value = composite_value
-    else:
-        unified_series = [{"date": today_str, "value": BASE_VALUE}]
-        composite_series = unified_series
-        composite_value = BASE_VALUE
-        actual_base_date = today_str
-        base_prices = prices_by_ticker
-        eq_series = unified_series
-        eq_value = BASE_VALUE
-        eq_actual_base = today_str
-        eq_base_prices = prices_by_ticker
-
-    # ── base_date.json ───────────────────────────────────────────────
-    base_data = {
-        "base_date": NORMALISE_DATE,
-        "base_value": BASE_VALUE,
-        "raw_base_date": actual_base_date,
-        "normalise_date": NORMALISE_DATE,
-        "base_prices": base_prices,
-        "base_weights": weights,
-        "entity_count": len(eligible),
-        "equities_only_base_date": eq_actual_base,
-        "equities_only_entity_count": len(equities_only),
-    }
-    save_json(BASE_DATE_PATH, base_data)
-
-    # ── robotnik_index.json ──────────────────────────────────────────
-    # Use the unified series for BOTH the main series and equities_only
-    # (they are now identical — one continuous normalised series)
-    index_output = {
-        "name": "Robotnik Composite Index",
-        "base_date": NORMALISE_DATE,
-        "base_value": BASE_VALUE,
-        "current_value": composite_value,
-        "current_date": today_str,
-        "entity_count": len(eligible),
-        "series": unified_series,
-        # equities_only kept for backwards compat — same unified series
-        "equities_only": {
-            "base_date": NORMALISE_DATE,
-            "base_value": BASE_VALUE,
-            "current_value": composite_value,
-            "entity_count": len(equities_only),
-            "series": unified_series,
-        },
-    }
-    save_json(INDEX_PATH, index_output)
-
-    # ── sub-indices (with backfill) ──────────────────────────────────
+    # ── Compute sub-indices first ───────────────────────────────────
+    # Per Option A (2026-04-22 methodology revision), the Composite is
+    # defined as a market-cap-weighted combination of the four sub-
+    # indices, NOT as an independently capped 233-constituent basket.
+    # So we build the sub-indices first, then derive Composite from
+    # them below. See METHODOLOGY NOTE in the README/Appendix A.
     sub_sectors = ["Semiconductor", "Robotics", "Space", "Materials", "Token"]
     sub_indices = {}
+    sub_series_by_sector = {}  # canonical key ("semiconductor", …) -> list[{date, value}]
 
     for sector in sub_sectors:
         sector_entities = [e for e in eligible if e["sector"] == sector]
@@ -640,13 +524,12 @@ def main():
 
         sector_weights = compute_capped_weights(sector_entities)
 
-        # Backfill sub-index using the same equities-only approach as the composite
         if all_dates and price_matrix:
-            # Use equities-only base date to get 5Y of history
             sub_series_raw, _, _ = backfill_index(
-                sector_entities, sector_weights, price_matrix, all_dates, eq_base_str
+                sector_entities, sector_weights, price_matrix, all_dates, sub_base_str
             )
-            # Sanity check: cap any single-day value at 20x the median to catch currency errors
+            # Sanity cap at 20x median per day to catch stray currency/
+            # unit-mismatch artefacts from individual constituents.
             if sub_series_raw:
                 vals = [pt["value"] for pt in sub_series_raw if pt["value"] > 0]
                 if vals:
@@ -656,7 +539,6 @@ def main():
                         if pt["value"] > cap:
                             pt["value"] = cap
             sub_series = sub_series_raw
-            # Normalise sub-index to BASE_VALUE on NORMALISE_DATE
             sub_series, sub_norm_date, sub_norm_factor = normalise_series(sub_series)
             sector_value = sub_series[-1]["value"] if sub_series else BASE_VALUE
             print(f"    {sector}: normalised on {sub_norm_date} (factor: {sub_norm_factor:.6f})")
@@ -677,6 +559,150 @@ def main():
             )[:5],
             "series": sub_series,
         }
+        sub_series_by_sector[sub_key] = sub_series
+
+    # Composite is the weighted combination of the four equity sub-
+    # indices: Semi, Robotics, Space, Materials. Token sub-index is
+    # reported separately but is NOT part of the Composite (tokens
+    # were already excluded from `eligible` upstream).
+    COMPOSITE_SECTORS = ["semiconductor", "robotics", "space", "materials"]
+
+    # ── Composite: weighted average of sub-indices (Option A) ───────
+    # On each date:
+    #   sector_mcap(t) = Σ_i (current_shares_i × price_i(t))
+    #                  = Σ_i (current_mcap_i × price_i(t) / price_i_current)
+    #   share(t)       = sector_mcap(t) / total_mcap(t)
+    #   composite(t)   = Σ_sectors share(t) × sub_index(t)
+    #
+    # "current_shares" uses current mcap / current price as a proxy
+    # (share count is roughly stable over a ~1 year horizon; we don't
+    # have historical shares-outstanding data). Missing prices on a
+    # given day contribute zero to their sector's mcap.
+    shares_by_ticker = {}
+    for e in eligible:
+        cur_p = prices_by_ticker.get(e["ticker"])
+        mcap = e.get("market_cap_usd") or 0
+        if cur_p and cur_p > 0 and mcap > 0:
+            shares_by_ticker[e["ticker"]] = mcap / cur_p
+    sector_of = {e["ticker"]: e["sector"].lower() for e in eligible}
+
+    # For each date in the sub-index series, build sector mcap shares
+    # and combine. Use the union of dates across all sub-indices.
+    composite_dates = set()
+    for s in sub_series_by_sector.values():
+        composite_dates.update(pt["date"] for pt in s)
+    composite_dates = sorted(composite_dates)
+
+    # Date-indexed lookup on each sub-series for fast combination.
+    sub_by_date = {
+        k: {pt["date"]: pt["value"] for pt in s}
+        for k, s in sub_series_by_sector.items()
+    }
+
+    # Price carry-forward so a ticker that's missing on a given day
+    # still contributes its last-known price to sector mcap. Same
+    # behaviour as backfill_index() uses for index computation.
+    last_known_price = {}
+    composite_pts = []
+    for d in composite_dates:
+        for t, p in price_matrix.get(d, {}).items():
+            last_known_price[t] = p
+        sector_mcap = {k: 0.0 for k in COMPOSITE_SECTORS}
+        for t, shares in shares_by_ticker.items():
+            sec = sector_of.get(t)
+            if sec not in sector_mcap:
+                continue
+            p = last_known_price.get(t)
+            if p is None or p <= 0:
+                continue
+            sector_mcap[sec] += shares * p
+        total = sum(sector_mcap.values())
+        if total <= 0:
+            continue
+        composite_value_t = 0.0
+        contributing = 0
+        for k in COMPOSITE_SECTORS:
+            share = sector_mcap[k] / total
+            sub_val = sub_by_date.get(k, {}).get(d)
+            if sub_val is None:
+                continue
+            composite_value_t += share * sub_val
+            contributing += 1
+        if contributing == 0:
+            continue
+        composite_pts.append({"date": d, "value": round(composite_value_t, 2)})
+
+    unified_series = composite_pts
+    # Renormalise defensively: sub-indices are each 1000 on 2025-03-31
+    # already, so Σ share × 1000 = 1000 structurally. This is a belt-
+    # and-braces pass to correct sub-unit rounding.
+    if unified_series:
+        unified_series, norm_date, norm_factor = normalise_series(unified_series)
+        print(f"  Composite: normalised on {norm_date} (factor: {norm_factor:.6f})")
+    composite_value = unified_series[-1]["value"] if unified_series else BASE_VALUE
+    composite_series = unified_series
+    actual_base_date = NORMALISE_DATE
+    base_prices = {t: prices_by_ticker[t] for t in shares_by_ticker if t in prices_by_ticker}
+    eq_series = unified_series
+    eq_value = composite_value
+    eq_actual_base = NORMALISE_DATE
+    equities_only = eligible  # tokens already excluded from eligible
+    equities_weights = weights
+
+    # ── Runtime assertion: composite ∈ [min(sub), max(sub)] on every date ──
+    # If this ever fires the build MUST abort — publishing a Composite
+    # outside the sub-index range would recreate the very bug Option A
+    # was introduced to eliminate.
+    breaches = []
+    for pt in unified_series:
+        d = pt["date"]
+        sub_vals = [sub_by_date[k][d] for k in COMPOSITE_SECTORS if d in sub_by_date.get(k, {})]
+        if not sub_vals:
+            continue
+        lo, hi = min(sub_vals), max(sub_vals)
+        # 0.01 tolerance for sub-unit rounding after normalise_series.
+        if pt["value"] < lo - 0.01 or pt["value"] > hi + 0.01:
+            breaches.append((d, pt["value"], lo, hi))
+    if breaches:
+        msg = "Composite violated min(sub) <= composite <= max(sub) on {} date(s):\n".format(len(breaches))
+        for d, v, lo, hi in breaches[:10]:
+            msg += "  {}: composite={:.2f}, sub range=[{:.2f}, {:.2f}]\n".format(d, v, lo, hi)
+        raise RuntimeError(msg)
+
+    # ── base_date.json ───────────────────────────────────────────────
+    base_data = {
+        "base_date": NORMALISE_DATE,
+        "base_value": BASE_VALUE,
+        "raw_base_date": actual_base_date,
+        "normalise_date": NORMALISE_DATE,
+        "base_prices": base_prices,
+        "base_weights": weights,
+        "entity_count": len(eligible),
+        "equities_only_base_date": eq_actual_base,
+        "equities_only_entity_count": len(equities_only),
+        "composite_method": "weighted_average_of_sub_indices (Option A, 2026-04-22)",
+    }
+    save_json(BASE_DATE_PATH, base_data)
+
+    # ── robotnik_index.json ──────────────────────────────────────────
+    index_output = {
+        "name": "Robotnik Composite Index",
+        "base_date": NORMALISE_DATE,
+        "base_value": BASE_VALUE,
+        "current_value": composite_value,
+        "current_date": today_str,
+        "entity_count": len(eligible),
+        "method": "weighted_average_of_sub_indices",
+        "series": unified_series,
+        "equities_only": {
+            "base_date": NORMALISE_DATE,
+            "base_value": BASE_VALUE,
+            "current_value": composite_value,
+            "entity_count": len(equities_only),
+            "series": unified_series,
+        },
+    }
+    save_json(INDEX_PATH, index_output)
 
     # ── Step 5 guardrail ─────────────────────────────────────────────
     # Block publish on >25% day-over-day moves or >0.5% composite-vs-subindex

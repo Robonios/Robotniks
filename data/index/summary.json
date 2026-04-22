@@ -1,39 +1,39 @@
 {
-  "calculated_at": "2026-04-21T22:43:14.551034+00:00Z",
+  "calculated_at": "2026-04-22T17:35:26.640447+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2623.25,
-    "daily_change_pct": -7.05,
+    "value": 2267.3,
+    "daily_change_pct": 0.01,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2623.25,
-    "base_date": "2021-04-22",
+    "value": 2267.3,
+    "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
   },
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2330.67,
+      "value": 2330.55,
       "entities": 59
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 1954.34,
+      "value": 1952.14,
       "entities": 105
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2384.77,
+      "value": 2375.31,
       "entities": 33
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2110.24,
+      "value": 2086.31,
       "entities": 36
     }
   },
