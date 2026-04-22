@@ -69,7 +69,7 @@
   // Submissions POST to a Google Apps Script web app bound to a
   // private Sheet in Robert's Workspace. See scripts/apps-script.gs
   // for the server side. The URL below is set after deployment.
-  var EARLY_ACCESS_URL = 'https://script.google.com/macros/s/AKfycbxrmyna4ai5UZBhOn4lg0ClzW57KJBY2Hj-SQ6NlCl8K-jN4dof3RR8f195R2NWUFo6YQ/exec';
+  var EARLY_ACCESS_URL = 'https://script.google.com/macros/s/AKfycbwwfRNzBJ-Nv607kbjhadO7g68x5jO2typxdP5tQ7lluZYTaB9CZ43HZbc2F6SXctRD5w/exec';
   var modalDiv = document.createElement('div');
   modalDiv.id = 'early-access-modal';
   modalDiv.style.cssText = 'display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.8);align-items:flex-start;justify-content:center;overflow-y:auto;padding:3rem 1rem;';
