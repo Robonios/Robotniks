@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-24T20:40:18.875601Z",
+  "fetched_at": "2026-04-24T22:46:02.519804Z",
   "source": "EODHD Real-Time (15-min delayed)",
   "count": 259,
   "is_live": true,
@@ -24,11 +24,11 @@
       "open": 43.11,
       "high": 45.9699,
       "low": 40.9,
-      "volume": 1606854,
+      "volume": 1608855,
       "prev_close": 39.88,
       "change": 4.57,
       "change_pct": 11.4594,
-      "timestamp": 1777062240
+      "timestamp": 1777062360
     },
     "ARM": {
       "ticker": "ARM",
@@ -37,11 +37,11 @@
       "open": 221.96,
       "high": 237.68,
       "low": 218.375,
-      "volume": 20385444,
+      "volume": 20392340,
       "prev_close": 204.61,
       "change": 30.2,
       "change_pct": 14.7598,
-      "timestamp": 1777062180
+      "timestamp": 1777062540
     },
     "ASX": {
       "ticker": "ASX",
@@ -50,7 +50,7 @@
       "open": 31.48,
       "high": 32.31,
       "low": 31.47,
-      "volume": 10786086,
+      "volume": 10786105,
       "prev_close": 29.81,
       "change": 2.19,
       "change_pct": 7.3465,
@@ -63,11 +63,11 @@
       "open": 203.24,
       "high": 214.2374,
       "low": 202.615,
-      "volume": 6636147,
+      "volume": 6636637,
       "prev_close": 197.54,
       "change": 15.3,
       "change_pct": 7.7453,
-      "timestamp": 1777062000
+      "timestamp": 1777062240
     },
     "AEIS": {
       "ticker": "AEIS",
@@ -76,7 +76,7 @@
       "open": 387.65,
       "high": 396.9599,
       "low": 383.43,
-      "volume": 964013,
+      "volume": 964014,
       "prev_close": 382.47,
       "change": 4.77,
       "change_pct": 1.2472,
@@ -89,11 +89,11 @@
       "open": 77.755,
       "high": 79.21,
       "low": 74.5801,
-      "volume": 5279776,
+      "volume": 5280381,
       "prev_close": 72.91,
       "change": 5.19,
       "change_pct": 7.1184,
-      "timestamp": 1777062300
+      "timestamp": 1777062360
     },
     "CEVA": {
       "ticker": "CEVA",
@@ -102,7 +102,7 @@
       "open": 25.56,
       "high": 29.185,
       "low": 25.56,
-      "volume": 1580526,
+      "volume": 1580552,
       "prev_close": 24.64,
       "change": 4.23,
       "change_pct": 17.1672,
@@ -154,7 +154,7 @@
       "open": 153.92,
       "high": 159.15,
       "low": 151.17,
-      "volume": 4314000,
+      "volume": 4314022,
       "prev_close": 149.33,
       "change": 6.65,
       "change_pct": 4.4532,
@@ -167,7 +167,7 @@
       "open": 153.22,
       "high": 159.09,
       "low": 147.13,
-      "volume": 1684006,
+      "volume": 1684007,
       "prev_close": 148.37,
       "change": 6.71,
       "change_pct": 4.5225,
@@ -193,7 +193,7 @@
       "open": 3.7,
       "high": 3.975,
       "low": 3.61,
-      "volume": 11132781,
+      "volume": 11132801,
       "prev_close": 3.43,
       "change": 0.23,
       "change_pct": 6.7055,
@@ -206,11 +206,11 @@
       "open": 82.2,
       "high": 85.22,
       "low": 79.62,
-      "volume": 279333560,
+      "volume": 279435865,
       "prev_close": 66.78,
       "change": 15.76,
       "change_pct": 23.5999,
-      "timestamp": 1777062300
+      "timestamp": 1777062540
     },
     "KLIC": {
       "ticker": "KLIC",
@@ -219,11 +219,11 @@
       "open": 89.57,
       "high": 89.59,
       "low": 86.37,
-      "volume": 752044,
+      "volume": 752149,
       "prev_close": 84.66,
       "change": 3.05,
       "change_pct": 3.6026,
-      "timestamp": 1777061760
+      "timestamp": 1777062480
     },
     "MTSI": {
       "ticker": "MTSI",
@@ -245,11 +245,11 @@
       "open": 169.865,
       "high": 170.84,
       "low": 158.51,
-      "volume": 37437754,
+      "volume": 37456373,
       "prev_close": 165.56,
       "change": -1.25,
       "change_pct": -0.755,
-      "timestamp": 1777062240
+      "timestamp": 1777062540
     },
     "MU": {
       "ticker": "MU",
@@ -258,11 +258,11 @@
       "open": 495.915,
       "high": 506.99,
       "low": 489.36,
-      "volume": 35205495,
+      "volume": 35212943,
       "prev_close": 481.72,
       "change": 15,
       "change_pct": 3.1138,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "MKSI": {
       "ticker": "MKSI",
@@ -271,7 +271,7 @@
       "open": 290,
       "high": 294.05,
       "low": 279.38,
-      "volume": 814002,
+      "volume": 814003,
       "prev_close": 280.56,
       "change": 0.42,
       "change_pct": 0.1497,
@@ -284,7 +284,7 @@
       "open": 1626.33,
       "high": 1661.79,
       "low": 1595.9,
-      "volume": 691445,
+      "volume": 691446,
       "prev_close": 1592.17,
       "change": 39.89,
       "change_pct": 2.5054,
@@ -297,11 +297,11 @@
       "open": 54,
       "high": 63.52,
       "low": 53.7,
-      "volume": 28776617,
+      "volume": 28779274,
       "prev_close": 34.25,
       "change": 26.07,
       "change_pct": 76.1168,
-      "timestamp": 1777062300
+      "timestamp": 1777062540
     },
     "NVTS": {
       "ticker": "NVTS",
@@ -310,11 +310,11 @@
       "open": 19.12,
       "high": 19.79,
       "low": 16.9,
-      "volume": 46600816,
+      "volume": 46603590,
       "prev_close": 18.51,
       "change": -1.23,
       "change_pct": -6.6451,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "NVEC": {
       "ticker": "NVEC",
@@ -336,7 +336,7 @@
       "open": 74.99,
       "high": 75.5,
       "low": 72.745,
-      "volume": 1218392,
+      "volume": 1218417,
       "prev_close": 72.63,
       "change": 0.91,
       "change_pct": 1.2529,
@@ -375,7 +375,7 @@
       "open": 149.67,
       "high": 161.8,
       "low": 147.2,
-      "volume": 4498743,
+      "volume": 4498761,
       "prev_close": 138.5,
       "change": 19.9,
       "change_pct": 14.3682,
@@ -401,7 +401,7 @@
       "open": 33.46,
       "high": 33.98,
       "low": 32.87,
-      "volume": 981087,
+      "volume": 981147,
       "prev_close": 33.42,
       "change": 0.16,
       "change_pct": 0.4788,
@@ -414,7 +414,7 @@
       "open": 62.83,
       "high": 63.85,
       "low": 61.81,
-      "volume": 4043054,
+      "volume": 4043219,
       "prev_close": 61.55,
       "change": 2.1,
       "change_pct": 3.4119,
@@ -440,7 +440,7 @@
       "open": 109,
       "high": 113.05,
       "low": 105.21,
-      "volume": 2654979,
+      "volume": 2655021,
       "prev_close": 105.34,
       "change": 4.45,
       "change_pct": 4.2244,
@@ -466,7 +466,7 @@
       "open": 203,
       "high": 207.48,
       "low": 192.52,
-      "volume": 3146668,
+      "volume": 3146669,
       "prev_close": 201.27,
       "change": -0.73,
       "change_pct": -0.3627,
@@ -492,7 +492,7 @@
       "open": 75,
       "high": 80.27,
       "low": 74.9,
-      "volume": 1309649,
+      "volume": 1309654,
       "prev_close": 74.2,
       "change": 1.59,
       "change_pct": 2.1429,
@@ -505,11 +505,11 @@
       "open": 336.755,
       "high": 352.99,
       "low": 334.54,
-      "volume": 81016678,
+      "volume": 81037623,
       "prev_close": 305.33,
       "change": 42.48,
       "change_pct": 13.9128,
-      "timestamp": 1777062240
+      "timestamp": 1777062540
     },
     "AMBA": {
       "ticker": "AMBA",
@@ -531,7 +531,7 @@
       "open": 404.07,
       "high": 406.3,
       "low": 398.255,
-      "volume": 4502532,
+      "volume": 4503882,
       "prev_close": 403.88,
       "change": -4.31,
       "change_pct": -1.0671,
@@ -544,7 +544,7 @@
       "open": 412.5,
       "high": 420.4999,
       "low": 410.31,
-      "volume": 6121239,
+      "volume": 6121280,
       "prev_close": 403.91,
       "change": 13.13,
       "change_pct": 3.2507,
@@ -557,7 +557,7 @@
       "open": 1459.53,
       "high": 1472.65,
       "low": 1441.69,
-      "volume": 1748822,
+      "volume": 1749324,
       "prev_close": 1417.8,
       "change": 39.9,
       "change_pct": 2.8142,
@@ -570,11 +570,11 @@
       "open": 424.98,
       "high": 425,
       "low": 408.86,
-      "volume": 22395768,
+      "volume": 22408490,
       "prev_close": 419.94,
       "change": 2.82,
       "change_pct": 0.6715,
-      "timestamp": 1777062300
+      "timestamp": 1777062540
     },
     "CRDO": {
       "ticker": "CRDO",
@@ -583,7 +583,7 @@
       "open": 188.75,
       "high": 198.97,
       "low": 186.57,
-      "volume": 6577217,
+      "volume": 6577381,
       "prev_close": 185.54,
       "change": 9.5,
       "change_pct": 5.1202,
@@ -596,7 +596,7 @@
       "open": 320.08,
       "high": 334.81,
       "low": 319.37,
-      "volume": 3290650,
+      "volume": 3307153,
       "prev_close": 314.33,
       "change": 18.56,
       "change_pct": 5.9046,
@@ -609,7 +609,7 @@
       "open": 1852.78,
       "high": 1939.36,
       "low": 1844.715,
-      "volume": 1136832,
+      "volume": 1137036,
       "prev_close": 1815.43,
       "change": 119.57,
       "change_pct": 6.5863,
@@ -622,11 +622,11 @@
       "open": 267.5,
       "high": 275.84,
       "low": 266.88,
-      "volume": 12027432,
+      "volume": 12031295,
       "prev_close": 258.56,
       "change": 9.22,
       "change_pct": 3.5659,
-      "timestamp": 1777062180
+      "timestamp": 1777062420
     },
     "LSCC": {
       "ticker": "LSCC",
@@ -635,7 +635,7 @@
       "open": 125.43,
       "high": 126.349,
       "low": 119.715,
-      "volume": 3327672,
+      "volume": 3327673,
       "prev_close": 118.01,
       "change": 4.79,
       "change_pct": 4.059,
@@ -648,7 +648,7 @@
       "open": 91.11,
       "high": 91.5,
       "low": 87.91,
-      "volume": 11187791,
+      "volume": 11187837,
       "prev_close": 90.64,
       "change": -1.2,
       "change_pct": -1.3239,
@@ -661,7 +661,7 @@
       "open": 530.41,
       "high": 550,
       "low": 520.705,
-      "volume": 379857,
+      "volume": 379858,
       "prev_close": 522.91,
       "change": 20.04,
       "change_pct": 3.8324,
@@ -674,11 +674,11 @@
       "open": 199.96,
       "high": 210.95,
       "low": 199.81,
-      "volume": 213078014,
+      "volume": 213217691,
       "prev_close": 199.64,
       "change": 8.63,
       "change_pct": 4.3228,
-      "timestamp": 1777062240
+      "timestamp": 1777062540
     },
     "NXPI": {
       "ticker": "NXPI",
@@ -687,7 +687,7 @@
       "open": 244.34,
       "high": 245.2,
       "low": 240.66,
-      "volume": 3552462,
+      "volume": 3555365,
       "prev_close": 241.16,
       "change": 2.88,
       "change_pct": 1.1942,
@@ -700,11 +700,11 @@
       "open": 99.225,
       "high": 100.3,
       "low": 95.95,
-      "volume": 13230120,
+      "volume": 13231135,
       "prev_close": 97.78,
       "change": 0.62,
       "change_pct": 0.6341,
-      "timestamp": 1777061940
+      "timestamp": 1777062360
     },
     "QCOM": {
       "ticker": "QCOM",
@@ -713,11 +713,11 @@
       "open": 145.61,
       "high": 151.5399,
       "low": 143.58,
-      "volume": 29308037,
+      "volume": 29310413,
       "prev_close": 133.95,
       "change": 14.9,
       "change_pct": 11.1236,
-      "timestamp": 1777062300
+      "timestamp": 1777062480
     },
     "STM": {
       "ticker": "STM",
@@ -726,11 +726,11 @@
       "open": 51.59,
       "high": 51.6,
       "low": 49.77,
-      "volume": 13326914,
+      "volume": 13332509,
       "prev_close": 49.71,
       "change": 0.76,
       "change_pct": 1.5289,
-      "timestamp": 1777062000
+      "timestamp": 1777062480
     },
     "SNPS": {
       "ticker": "SNPS",
@@ -739,7 +739,7 @@
       "open": 469.38,
       "high": 502.28,
       "low": 469.19,
-      "volume": 2871947,
+      "volume": 2872382,
       "prev_close": 456.85,
       "change": 43.97,
       "change_pct": 9.6246,
@@ -752,11 +752,11 @@
       "open": 396.14,
       "high": 409.49,
       "low": 393.85,
-      "volume": 21493948,
+      "volume": 21520103,
       "prev_close": 382.66,
       "change": 19.8,
       "change_pct": 5.1743,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "TER": {
       "ticker": "TER",
@@ -765,7 +765,7 @@
       "open": 408.83,
       "high": 422.11,
       "low": 401.1401,
-      "volume": 3215205,
+      "volume": 3215520,
       "prev_close": 400.99,
       "change": 17.09,
       "change_pct": 4.262,
@@ -778,11 +778,11 @@
       "open": 287.83,
       "high": 287.83,
       "low": 272.01,
-      "volume": 13923443,
+      "volume": 13928355,
       "prev_close": 282.23,
       "change": -5.09,
       "change_pct": -1.8035,
-      "timestamp": 1777062060
+      "timestamp": 1777062300
     },
     "ABBN SW": {
       "ticker": "ABBN SW",
@@ -1013,9 +1013,9 @@
       "high": 11.68,
       "low": 11.6,
       "volume": 2991,
-      "prev_close": 11.77,
-      "change": -0.09,
-      "change_pct": -0.7647,
+      "prev_close": 11.75,
+      "change": -0.07,
+      "change_pct": -0.5957,
       "timestamp": 1777060200
     },
     "6141 JP": {
@@ -1403,9 +1403,9 @@
       "high": 32.11,
       "low": 31.99,
       "volume": 19649,
-      "prev_close": 31.93,
-      "change": 0.17,
-      "change_pct": 0.5324,
+      "prev_close": 31.88,
+      "change": 0.22,
+      "change_pct": 0.6901,
       "timestamp": 1777060680
     },
     "6600 HK": {
@@ -1468,9 +1468,9 @@
       "high": 9.89,
       "low": 9.72,
       "volume": 28419,
-      "prev_close": 10.27,
-      "change": -0.45,
-      "change_pct": -4.3817,
+      "prev_close": 10.28,
+      "change": -0.46,
+      "change_pct": -4.4747,
       "timestamp": 1777060680
     },
     "RSW LN": {
@@ -1676,9 +1676,9 @@
       "high": 65.17,
       "low": 64.725,
       "volume": 997,
-      "prev_close": 64.19,
-      "change": 0.98,
-      "change_pct": 1.5267,
+      "prev_close": 64.54,
+      "change": 0.63,
+      "change_pct": 0.9761,
       "timestamp": 1777060320
     },
     "6841 JP": {
@@ -1740,7 +1740,7 @@
       "open": 203.77,
       "high": 203.84,
       "low": 195.32,
-      "volume": 852178,
+      "volume": 852194,
       "prev_close": 201.91,
       "change": -5.63,
       "change_pct": -2.7884,
@@ -1792,7 +1792,7 @@
       "open": 142.37,
       "high": 142.48,
       "low": 140.2079,
-      "volume": 2451057,
+      "volume": 2451062,
       "prev_close": 142.44,
       "change": -1.09,
       "change_pct": -0.7652,
@@ -1831,11 +1831,11 @@
       "open": 28.68,
       "high": 28.68,
       "low": 25.0201,
-      "volume": 12355735,
+      "volume": 12356472,
       "prev_close": 27.56,
       "change": -2.03,
       "change_pct": -7.3657,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "ISRG": {
       "ticker": "ISRG",
@@ -1844,7 +1844,7 @@
       "open": 480.75,
       "high": 482.84,
       "low": 471,
-      "volume": 2648566,
+      "volume": 2649010,
       "prev_close": 478.82,
       "change": 3.4,
       "change_pct": 0.7101,
@@ -1870,7 +1870,7 @@
       "open": 38.21,
       "high": 39.71,
       "low": 36.83,
-      "volume": 3367390,
+      "volume": 3367442,
       "prev_close": 40.93,
       "change": -1.97,
       "change_pct": -4.8131,
@@ -1896,7 +1896,7 @@
       "open": 8.88,
       "high": 8.9699,
       "low": 8.6508,
-      "volume": 355453,
+      "volume": 355454,
       "prev_close": 8.88,
       "change": -0.13,
       "change_pct": -1.464,
@@ -1922,7 +1922,7 @@
       "open": 328.82,
       "high": 328.82,
       "low": 314.75,
-      "volume": 2265707,
+      "volume": 2265714,
       "prev_close": 330.22,
       "change": -12.71,
       "change_pct": -3.8489,
@@ -1935,11 +1935,11 @@
       "open": 8.86,
       "high": 9.49,
       "low": 8.795,
-      "volume": 13848680,
+      "volume": 13849739,
       "prev_close": 8.7,
       "change": 0.53,
       "change_pct": 6.092,
-      "timestamp": 1777061760
+      "timestamp": 1777062360
     },
     "MELE": {
       "ticker": "MELE",
@@ -1974,11 +1974,11 @@
       "open": 65.15,
       "high": 65.24,
       "low": 60.58,
-      "volume": 5256009,
+      "volume": 5256346,
       "prev_close": 63.32,
       "change": -2.59,
       "change_pct": -4.0903,
-      "timestamp": 1777061820
+      "timestamp": 1777062420
     },
     "NDSN": {
       "ticker": "NDSN",
@@ -2013,7 +2013,7 @@
       "open": 303.99,
       "high": 316,
       "low": 297.74,
-      "volume": 1110098,
+      "volume": 1110111,
       "prev_close": 292.31,
       "change": 15.55,
       "change_pct": 5.3197,
@@ -2026,11 +2026,11 @@
       "open": 27.47,
       "high": 29.45,
       "low": 27.15,
-      "volume": 2928013,
+      "volume": 2929101,
       "prev_close": 26.41,
       "change": 1.81,
       "change_pct": 6.8535,
-      "timestamp": 1777061940
+      "timestamp": 1777062300
     },
     "PRCT": {
       "ticker": "PRCT",
@@ -2052,11 +2052,11 @@
       "open": 2.61,
       "high": 2.62,
       "low": 2.43,
-      "volume": 5849414,
+      "volume": 5850960,
       "prev_close": 2.56,
       "change": -0.1,
       "change_pct": -3.9063,
-      "timestamp": 1777062120
+      "timestamp": 1777062480
     },
     "RRX": {
       "ticker": "RRX",
@@ -2078,7 +2078,7 @@
       "open": 407.5,
       "high": 408.69,
       "low": 399.06,
-      "volume": 880549,
+      "volume": 880745,
       "prev_close": 408.91,
       "change": -7.73,
       "change_pct": -1.8904,
@@ -2104,11 +2104,11 @@
       "open": 9.38,
       "high": 9.53,
       "low": 9.15,
-      "volume": 2549986,
+      "volume": 2550416,
       "prev_close": 9.32,
       "change": -0.1,
       "change_pct": -1.073,
-      "timestamp": 1777062300
+      "timestamp": 1777062420
     },
     "STMPA": {
       "ticker": "STMPA",
@@ -2130,11 +2130,11 @@
       "open": 63.555,
       "high": 63.99,
       "low": 59.19,
-      "volume": 1499816,
+      "volume": 1500380,
       "prev_close": 62.51,
       "change": -3.12,
       "change_pct": -4.9912,
-      "timestamp": 1777061700
+      "timestamp": 1777062480
     },
     "ZBRA": {
       "ticker": "ZBRA",
@@ -2235,9 +2235,9 @@
       "high": 9.89,
       "low": 9.72,
       "volume": 28419,
-      "prev_close": 10.27,
-      "change": -0.45,
-      "change_pct": -4.3817,
+      "prev_close": 10.28,
+      "change": -0.46,
+      "change_pct": -4.4747,
       "timestamp": 1777060680
     },
     "603009": {
@@ -2312,11 +2312,11 @@
       "open": 86.34,
       "high": 86.4099,
       "low": 79.08,
-      "volume": 21867545,
+      "volume": 21879430,
       "prev_close": 84.6,
       "change": -4.92,
       "change_pct": -5.8156,
-      "timestamp": 1777062300
+      "timestamp": 1777062540
     },
     "ASTS": {
       "ticker": "ASTS",
@@ -2325,11 +2325,11 @@
       "open": 79,
       "high": 79.6,
       "low": 75.95,
-      "volume": 11739283,
+      "volume": 11745475,
       "prev_close": 78.75,
       "change": -2.35,
       "change_pct": -2.9841,
-      "timestamp": 1777062300
+      "timestamp": 1777062540
     },
     "HEI": {
       "ticker": "HEI",
@@ -2364,11 +2364,11 @@
       "open": 39.11,
       "high": 39.5,
       "low": 35.13,
-      "volume": 10407679,
+      "volume": 10408331,
       "prev_close": 38.29,
       "change": -2.85,
       "change_pct": -7.4432,
-      "timestamp": 1777062240
+      "timestamp": 1777062360
     },
     "RDW": {
       "ticker": "RDW",
@@ -2377,11 +2377,11 @@
       "open": 10.28,
       "high": 10.29,
       "low": 9.53,
-      "volume": 25877828,
+      "volume": 25881611,
       "prev_close": 10.04,
       "change": -0.36,
       "change_pct": -3.5857,
-      "timestamp": 1777062240
+      "timestamp": 1777062540
     },
     "SPIR": {
       "ticker": "SPIR",
@@ -2390,7 +2390,7 @@
       "open": 17.5,
       "high": 18.08,
       "low": 16.23,
-      "volume": 1670734,
+      "volume": 1670735,
       "prev_close": 17.54,
       "change": -1.03,
       "change_pct": -5.8723,
@@ -2403,7 +2403,7 @@
       "open": 38.9,
       "high": 39.005,
       "low": 33.5701,
-      "volume": 1745112,
+      "volume": 1745173,
       "prev_close": 38.44,
       "change": -4.61,
       "change_pct": -11.9927,
@@ -2416,7 +2416,7 @@
       "open": 81.9,
       "high": 82.1,
       "low": 81.1701,
-      "volume": 1311754,
+      "volume": 1311780,
       "prev_close": 81.29,
       "change": 0.52,
       "change_pct": 0.6397,
@@ -2442,11 +2442,11 @@
       "open": 122.08,
       "high": 122.08,
       "low": 116.32,
-      "volume": 6238324,
+      "volume": 6238513,
       "prev_close": 121.52,
       "change": -4.02,
       "change_pct": -3.3081,
-      "timestamp": 1777062060
+      "timestamp": 1777062420
     },
     "LMT": {
       "ticker": "LMT",
@@ -2455,11 +2455,11 @@
       "open": 525,
       "high": 526.8,
       "low": 503.6003,
-      "volume": 3079766,
+      "volume": 3080117,
       "prev_close": 529.79,
       "change": -16.34,
       "change_pct": -3.0842,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "NOC": {
       "ticker": "NOC",
@@ -2468,7 +2468,7 @@
       "open": 582.32,
       "high": 582.78,
       "low": 569,
-      "volume": 1021107,
+      "volume": 1021115,
       "prev_close": 587.66,
       "change": -12.55,
       "change_pct": -2.1356,
@@ -2481,11 +2481,11 @@
       "open": 2.72,
       "high": 2.7298,
       "low": 2.55,
-      "volume": 10821768,
+      "volume": 10822026,
       "prev_close": 2.71,
       "change": -0.13,
       "change_pct": -4.797,
-      "timestamp": 1777062120
+      "timestamp": 1777062480
     },
     "AVIO IM": {
       "ticker": "AVIO IM",
@@ -2495,9 +2495,9 @@
       "high": 34.68,
       "low": 32.02,
       "volume": 0,
-      "prev_close": 34.78,
-      "change": -2.07,
-      "change_pct": -5.9517,
+      "prev_close": 34.6,
+      "change": -1.89,
+      "change_pct": -5.4624,
       "timestamp": 1777060500
     },
     "DCO": {
@@ -2533,11 +2533,11 @@
       "open": 39.18,
       "high": 39.31,
       "low": 35,
-      "volume": 4931601,
+      "volume": 4932537,
       "prev_close": 38.54,
       "change": -3.41,
       "change_pct": -8.848,
-      "timestamp": 1777062180
+      "timestamp": 1777062540
     },
     "GILT": {
       "ticker": "GILT",
@@ -2702,11 +2702,11 @@
       "open": 6.93,
       "high": 7,
       "low": 6.02,
-      "volume": 7819026,
+      "volume": 7824379,
       "prev_close": 6.81,
       "change": -0.64,
       "change_pct": -9.3979,
-      "timestamp": 1777062240
+      "timestamp": 1777062540
     },
     "SIDU": {
       "ticker": "SIDU",
@@ -2715,11 +2715,11 @@
       "open": 3.73,
       "high": 3.76,
       "low": 3.1802,
-      "volume": 22529227,
+      "volume": 22530106,
       "prev_close": 3.71,
       "change": -0.29,
       "change_pct": -7.8167,
-      "timestamp": 1777062240
+      "timestamp": 1777062480
     },
     "SCC IT": {
       "ticker": "SCC IT",
@@ -2741,11 +2741,11 @@
       "open": 30.47,
       "high": 30.69,
       "low": 28.44,
-      "volume": 804406,
+      "volume": 804606,
       "prev_close": 30.12,
       "change": -1.44,
       "change_pct": -4.7809,
-      "timestamp": 1777061460
+      "timestamp": 1777062540
     },
     "9348 JP": {
       "ticker": "9348 JP",
@@ -2884,7 +2884,7 @@
       "open": 29.1,
       "high": 32.77,
       "low": 29.1,
-      "volume": 8385464,
+      "volume": 8385510,
       "prev_close": 27.55,
       "change": 3.68,
       "change_pct": 13.3575,
@@ -2897,7 +2897,7 @@
       "open": 507.22,
       "high": 510.65,
       "low": 501.755,
-      "volume": 1453889,
+      "volume": 1453897,
       "prev_close": 508.06,
       "change": 2.24,
       "change_pct": 0.4409,
@@ -2989,9 +2989,9 @@
       "high": 15.31,
       "low": 15.12,
       "volume": 15670,
-      "prev_close": 15.06,
-      "change": 0.15,
-      "change_pct": 0.996,
+      "prev_close": 15.1,
+      "change": 0.11,
+      "change_pct": 0.7285,
       "timestamp": 1777060380
     },
     "4208 JP": {
@@ -3015,9 +3015,9 @@
       "high": 19.18,
       "low": 19.05,
       "volume": 9137,
-      "prev_close": 19.09,
-      "change": 0.05,
-      "change_pct": 0.2619,
+      "prev_close": 19.06,
+      "change": 0.08,
+      "change_pct": 0.4197,
       "timestamp": 1777060680
     },
     "5384 JP": {
@@ -3223,9 +3223,9 @@
       "high": 13.9,
       "low": 13.87,
       "volume": 5535,
-      "prev_close": 13.84,
-      "change": 0.04,
-      "change_pct": 0.289,
+      "prev_close": 13.81,
+      "change": 0.07,
+      "change_pct": 0.5069,
       "timestamp": 1777060680
     },
     "3401 JP": {
@@ -3274,7 +3274,7 @@
       "open": 153.75,
       "high": 155.37,
       "low": 149.72,
-      "volume": 2002319,
+      "volume": 2002324,
       "prev_close": 154.05,
       "change": 0.21,
       "change_pct": 0.1363,
@@ -3324,7 +3324,7 @@
       "eodhd_symbol": "SPY.US",
       "price": 713.94,
       "change_pct": 0.7749,
-      "timestamp": 1777062300,
+      "timestamp": 1777062540,
       "is_benchmark": true
     },
     "BM_QQQ": {
@@ -3332,7 +3332,7 @@
       "eodhd_symbol": "QQQ.US",
       "price": 663.88,
       "change_pct": 1.9127,
-      "timestamp": 1777062300,
+      "timestamp": 1777062540,
       "is_benchmark": true
     },
     "BM_SOXX": {
