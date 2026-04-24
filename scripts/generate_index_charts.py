@@ -237,7 +237,10 @@ def fig3_subindex_comparison():
     start = _as_dt("2025-12-31")
     end   = _as_dt("2026-03-31")
 
-    comp = rebase_to(slice_between(load_composite(), start, end), start)
+    # Fig 3 shows ONLY the four sub-indices (Composite is the subject
+    # of Figs 1 and 2). Keeps the sector-performance comparison clean
+    # without a yellow hero line that visually dominates the panel
+    # Robert is using for sector attribution.
     subs = {
         k: rebase_to(slice_between(load_sub(k), start, end), start)
         for k in ("semiconductor", "robotics", "space", "materials")
@@ -253,16 +256,16 @@ def fig3_subindex_comparison():
     fig, ax = plt.subplots(figsize=SIZE)
     ax.axhline(100, **base_ref_kw())
 
-    # Plot sub-indices first so the Composite hero sits on top.
     for key in ("semiconductor", "robotics", "space", "materials"):
         s = subs[key]
         xs = [d for d, _ in s]
         ys = [v for _, v in s]
-        ax.plot(xs, ys, **secondary_kw(PALETTE.subindices[key], label=labels[key]))
-
-    cxs = [d for d, _ in comp]
-    cys = [v for _, v in comp]
-    ax.plot(cxs, cys, **composite_kw(label="Robotnik Composite"))
+        # Lift sub-index weight a notch — no hero line sitting on top
+        # of them any more, so they can carry the whole chart's visual
+        # emphasis at 2.0pt rather than the 1.5pt secondary default.
+        kw = secondary_kw(PALETTE.subindices[key], label=labels[key])
+        kw["linewidth"] = 2.0
+        ax.plot(xs, ys, **kw)
 
     ax.set_title("Robotnik Sub-Indices — Q1 2026 Performance",
                  fontproperties=title_font())
@@ -279,9 +282,7 @@ def fig3_subindex_comparison():
 
     fig.tight_layout(rect=[0, 0, 1, 0.90])
 
-    closes = {"Robotnik Composite": comp[-1][1]}
-    for k in subs:
-        closes[labels[k]] = subs[k][-1][1]
+    closes = {labels[k]: subs[k][-1][1] for k in subs}
     return fig, closes
 
 
