@@ -59,67 +59,109 @@ for p in (OUT_PRINT, OUT_SOCIAL):
 # spec. A separate thin arrow runs upward from Robotics to
 # Semiconductors to show the feedback loop (fab automation).
 
+DARK_NAVY = "#1A1A2E"
+
 # Each band: (key, header, color, columns)
-# columns: list of (column title, [entity lines])
+# columns: list of (column title, [entity lines], optional kwargs)
+# The optional 4th element is a dict with style flags — currently only
+# {"dashed": True, "private": True} is supported and applies to the
+# Humanoid column to mark its private constituents.
+#
+# Bands ordered TOP TO BOTTOM. The stack reads from Space (deployment
+# endpoint, top) down to Materials & Inputs (upstream origin, bottom).
+# Conceptual flow is from bottom up — every arrow on the right gutter
+# points upward.
 BANDS = [
-    ("materials", "MATERIALS & INPUTS", PALETTE.subindices["materials"], [
-        ("Rare Earths",       ["Northern Rare Earth", "MP Materials", "Lynas"]),
-        ("Silicon Wafers",    ["Shin-Etsu", "SUMCO"]),
-        ("Industrial Gases",  ["Linde", "Air Liquide"]),
-        ("ABF Substrates",    ["Unimicron", "Ibiden"]),
-    ]),
-    ("semiconductor", "SEMICONDUCTORS", PALETTE.subindices["semiconductor"], [
-        ("Fabless Design",    ["NVIDIA", "Broadcom", "AMD"]),
-        ("Foundry",           ["TSMC", "Intel"]),
-        ("Equipment",         ["ASML", "Applied Materials", "Lam Research"]),
-        ("Memory",            ["Micron", "SK Hynix", "Samsung"]),
+    ("space", "SPACE", PALETTE.subindices["space"], [
+        ("Prime Contractors",     ["Lockheed Martin", "Northrop Grumman"], {}),
+        ("Launch",                ["Rocket Lab", "Arianespace"], {}),
+        ("Satellite Services",    ["AST SpaceMobile", "Planet Labs", "Satellogic"], {}),
+        ("Components & Materials", ["Hexcel", "Toray", "Moog"], {}),
     ]),
     ("robotics", "ROBOTICS", PALETTE.subindices["robotics"], [
-        ("Motion Control",    ["Fanuc", "Yaskawa", "Nidec"]),
-        ("Industrial Auto",   ["Siemens", "ABB", "Keyence"]),
-        ("Humanoid (Private)", ["Figure", "1X", "Agility"]),
-        ("Surgical",          ["Intuitive Surgical"]),
+        ("Motion Control",   ["Fanuc", "Yaskawa", "Nidec"], {}),
+        ("Industrial Auto",  ["Siemens", "ABB", "Keyence"], {}),
+        ("Humanoid",         ["Figure", "1X", "Agility"], {"dashed": True, "private": True}),
+        ("Surgical",         ["Intuitive Surgical"], {}),
     ]),
-    ("space", "SPACE", PALETTE.subindices["space"], [
-        ("Prime Contractors", ["Lockheed Martin", "Northrop Grumman"]),
-        ("Launch",            ["Rocket Lab", "Arianespace"]),
-        ("Satellite Services", ["AST SpaceMobile", "Planet Labs", "Satellogic"]),
+    ("semiconductor", "SEMICONDUCTORS", PALETTE.subindices["semiconductor"], [
+        ("Fabless Design",   ["NVIDIA", "Broadcom", "AMD"], {}),
+        ("Foundry",          ["TSMC", "Intel"], {}),
+        ("Equipment",        ["ASML", "Applied Materials", "Lam Research"], {}),
+        ("Memory",           ["Micron", "SK Hynix", "Samsung"], {}),
+    ]),
+    ("materials", "MATERIALS & INPUTS", PALETTE.subindices["materials"], [
+        ("Rare Earths",      ["Northern Rare Earth", "MP Materials", "Lynas"], {}),
+        ("Silicon Wafers",   ["Shin-Etsu", "SUMCO"], {}),
+        ("Industrial Gases", ["Linde", "Air Liquide"], {}),
+        ("ABF Substrates",   ["Unimicron", "Ibiden"], {}),
     ]),
 ]
 
-# Flow labels grouped by (from-band, to-band) to keep the diagram
-# readable. Spec lists 9 specific flows; groups 1-3 collapse the four
-# Materials→Semi flows into a single interface label block, which
-# stays true to the data but avoids a thicket of crossing arrows.
+# Inter-band annotations. Placed in the gap ABOVE the receiving layer,
+# describing what the lower layer sends upward.
+# (gap_below_band_index, label_text)
+INTER_BAND_ANNOTATIONS = [
+    (1, "CMP polishing · 300mm wafers · Ultra-pure neon · CoWoS packaging"),
+    # gap above Semiconductors — Materials supplies these
+    (0, "Edge AI chips, power management, motor control MCUs"),
+    # gap above Robotics — Semiconductors supplies these (also Space, see arrow)
+]
+# Index meanings (top-down):
+#   0 = Space, 1 = Robotics, 2 = Semiconductors, 3 = Materials.
+# Annotation index is the band INDEX whose gap-above is being labelled.
+# So (1, …) labels the gap above ROBOTICS (between Robotics and Semis).
+# And (0, …) labels the gap above SPACE? No — Space is on top, no gap
+# above. We want the gap ABOVE Robotics? Actually re-read.
+#
+# The semantic is "what flows up". "Edge AI" flows from Semis up to
+# Robotics, so it's labelled in the gap between Semis and Robotics.
+# That's the gap ABOVE Semis (band 2) which is the same gap as the
+# one BELOW Robotics (band 1). I'll use the convention "index of the
+# RECEIVING band" = put the label in the gap above the receiver.
+#
+# Therefore:
+#   - "Edge AI chips…": between Semis (sender, below) and Robotics
+#     (receiver, above). Label sits in the gap with index = receiver
+#     index = 1 (Robotics).
+#   - "CMP polishing…": between Materials (sender, bottom) and Semis
+#     (receiver, above Materials). Label sits in the gap with index =
+#     receiver index = 2 (Semis).
+INTER_BAND_ANNOTATIONS = [
+    (1, "Edge AI chips, power management, motor control MCUs"),
+    (2, "CMP polishing · 300mm wafers · Ultra-pure neon · CoWoS packaging"),
+]
+
+# Cross-layer arrows. All flow upward (sender below → receiver above)
+# except the feedback loop (Robotics → Semis, which is downward in the
+# inverted stack).
+# (sender_band_idx, receiver_band_idx, label, kind, x_offset)
+# Right gutter: yellow upward demand. Left gutter: dark-navy downward feedback.
 FLOWS = [
-    # (from band index, to band index, [labels], direction, gutter_offset)
-    # Adjacent-band flows get a single compact label string joined with
-    # " · " so the arrow doesn't drag a vertically-stacked label column
-    # into the narrow inter-band gap. Skip / feedback flows stay
-    # unlabelled on the diagram and carry their description in the
-    # caption panel below.
-    (0, 1, ["CMP polishing · 300mm wafers · Ultra-pure neon · CoWoS packaging"],
-     "down", 0.0),
-    (1, 2, ["Edge AI chips, power management"], "down", 0.0),
-    (0, 2, ["NdFeB magnets for servo motors"],    "down-skip", 0.00),
-    (0, 3, ["NdFeB magnets for reaction wheels"], "down-skip", 0.025),
-    (1, 3, ["On-board processors, direct-to-device"], "down-skip", -0.025),
-    (2, 1, ["Fab automation (feedback)"],         "up", 0.0),
+    # Materials (3) → Robotics (1): yellow, right gutter, up
+    (3, 1, "NdFeB magnets for servo motors",      "right-up", 0.000),
+    # Materials (3) → Space (0): yellow, right gutter (further out), up
+    (3, 0, "NdFeB magnets for reaction wheels",   "right-up", 0.030),
+    # Semiconductors (2) → Space (0): yellow, right gutter (innermost), up
+    (2, 0, "On-board processors, direct-to-device", "right-up", -0.030),
+    # Robotics (1) → Semiconductors (2): dark navy, left gutter, DOWN
+    # (Robotics now sits above Semis in the inverted stack)
+    (1, 2, "Fab automation (feedback)", "left-down", 0.0),
 ]
 
 
 def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
     """Render the dependency chain at a given figure size.
 
-    Layout in figure-axes coordinates:
-      - Top strip (y > 0.92) — title + subtitle.
-      - 4 sector bands each comprise a header strip above a box row.
-      - Between adjacent bands is a flow band with the primary
-        (adjacent) dependency arrow + labels.
-      - Skip-flow and feedback arrows are drawn in the left/right
-        gutters as unlabelled visual indicators. Their textual
-        descriptions live in a small caption panel under the stack
-        — keeps the diagram clean at small sizes.
+    Layout (top to bottom):
+      Title -- subtitle -- four bands (Space/Robotics/Semis/Materials)
+      with header strips, body boxes, and inter-band annotations in
+      the gaps. Cross-layer arrows route in the left/right gutters.
+      Legend at the bottom.
+
+    Bands are ordered top-down so the stack reads visually from
+    deployment (Space, top) to upstream origin (Materials, bottom).
+    Conceptual demand flows upward.
     """
     fig = plt.figure(figsize=figsize)
     ax = fig.add_subplot(111)
@@ -127,25 +169,25 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    fig.text(0.5, 0.968, "The Frontier Technology Stack",
+    # Title + subtitle. Extra spacing between the two so they breathe.
+    fig.text(0.5, 0.972, "The Frontier Technology Stack",
              ha="center", va="top",
              fontproperties=title_font(size=18 * fontscale),
              color=PALETTE.ink)
-    fig.text(0.5, 0.933,
+    fig.text(0.5, 0.927,
              "Dependency flows across four sectors. Disruption in any layer propagates through the rest.",
              ha="center", va="top",
              fontproperties=subtitle_font(size=10 * fontscale),
              color=PALETTE.axis)
 
-    # Leave an 8%-tall caption panel at the bottom for the skip /
-    # feedback descriptions. Everything above bottom_y is the stack.
-    x_left, x_right = 0.09, 0.91
-    top_y = 0.895
-    caption_h = 0.12
-    bottom_y = 0.03 + caption_h
+    # Reserve a legend strip at the bottom (was a caption panel).
+    x_left, x_right = 0.10, 0.90
+    top_y = 0.86               # extra top margin so subtitle never clips into bands
+    legend_h = 0.07
+    bottom_y = 0.04 + legend_h
 
-    header_h = 0.028            # per-band header strip
-    flow_h   = 0.055            # between-band gap carrying labels
+    header_h = 0.030
+    flow_h   = 0.058
     n_bands  = len(BANDS)
     band_h   = (top_y - bottom_y - n_bands * header_h - (n_bands - 1) * flow_h) / n_bands
 
@@ -158,7 +200,8 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
         band_bottom   = band_top - band_h
         bands_geom.append((band_top, band_bottom, header_top))
 
-        # Header strip — solid sector colour with white text
+        # Header strip — solid sector colour with DARK NAVY text for
+        # contrast (white was hard to read on green / salmon).
         header_rect = FancyBboxPatch(
             (x_left, header_bottom), x_right - x_left, header_h,
             boxstyle="round,pad=0.001,rounding_size=0.007",
@@ -169,7 +212,7 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
         ax.text(x_left + 0.015, header_bottom + header_h / 2, header,
                 ha="left", va="center",
                 fontsize=10.5 * fontscale, fontweight="bold",
-                color="white", family="Space Grotesk",
+                color=DARK_NAVY, family="Space Grotesk",
                 transform=ax.transAxes, zorder=3)
 
         # Band body — soft tint background
@@ -181,43 +224,83 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
         )
         ax.add_patch(body_rect)
 
-        # Columns
+        # Columns. Internal padding bumped from 0.008 → 0.014 so text
+        # doesn't squash against the column-box border.
         n = len(columns)
-        total = (x_right - x_left) - 0.02          # 0.01 side padding each side
-        gap   = 0.012
+        side_pad = 0.012
+        gap = 0.012
+        total = (x_right - x_left) - 2 * side_pad
         col_w = (total - gap * (n - 1)) / n
-        for ci, (col_title, entities) in enumerate(columns):
-            x = x_left + 0.01 + ci * (col_w + gap)
-            col_box = FancyBboxPatch(
-                (x, band_bottom + 0.008), col_w, (band_top - band_bottom) - 0.016,
+        for ci, col_def in enumerate(columns):
+            col_title, entities, *rest = col_def
+            kwargs = rest[0] if rest else {}
+            dashed = kwargs.get("dashed", False)
+            private = kwargs.get("private", False)
+
+            x = x_left + side_pad + ci * (col_w + gap)
+            box_kw = dict(
                 boxstyle="round,pad=0.001,rounding_size=0.006",
-                linewidth=0.9, edgecolor=color, facecolor="white", zorder=2,
+                linewidth=1.0, edgecolor=color, facecolor="white", zorder=2,
                 transform=ax.transAxes,
             )
+            if dashed:
+                box_kw["linestyle"] = (0, (3, 2))
+            col_box = FancyBboxPatch(
+                (x, band_bottom + 0.012), col_w, (band_top - band_bottom) - 0.024,
+                **box_kw,
+            )
             ax.add_patch(col_box)
-            # Column title
-            ax.text(x + col_w / 2, band_top - 0.014, col_title,
+            # Column title — sits with comfortable headroom from the box top.
+            ax.text(x + col_w / 2, band_top - 0.020, col_title,
                     ha="center", va="top",
                     fontsize=8.5 * fontscale, fontweight="bold",
                     color=PALETTE.ink, family="Space Grotesk",
                     transform=ax.transAxes, zorder=3)
-            # Entities — start with enough gap below the title baseline.
-            line_h = 0.019 * fontscale
+            # Entity lines, taller line-height for breathing room.
+            line_h = 0.020 * fontscale
+            entity_start = band_top - 0.054
             for ei, ent in enumerate(entities):
                 ax.text(x + col_w / 2,
-                        band_top - 0.048 - ei * line_h,
-                        ent,
+                        entity_start - ei * line_h, ent,
                         ha="center", va="top",
                         fontsize=7.5 * fontscale, color=PALETTE.axis,
                         family="Mulish",
                         transform=ax.transAxes, zorder=3)
+            # Private indicator: small italic "private" tag below the
+            # entity list. Mulish doesn't ship the ● BLACK CIRCLE glyph
+            # so we keep it text-only.
+            if private:
+                priv_y = entity_start - len(entities) * line_h - 0.005
+                ax.text(x + col_w / 2, priv_y, "private",
+                        ha="center", va="top",
+                        fontsize=6.8 * fontscale, color=PALETTE.axis,
+                        family="Mulish", style="italic",
+                        transform=ax.transAxes, zorder=3)
 
         y_cursor = band_bottom - flow_h
 
-    # Draw flows.
-    def arrow(x0, y0, x1, y1, color, lw, style="-|>", rad=0, zorder=4, dashed=False):
+    # Inter-band annotations — italic grey, centred in the gap above
+    # the receiver band. Describes what the lower (sender) band sends
+    # upward.
+    for receiver_idx, label in INTER_BAND_ANNOTATIONS:
+        receiver_band_bottom = bands_geom[receiver_idx][1]
+        # The gap below this receiver, between this band and the next
+        # band below. The lower band's HEADER top is at receiver_band_bottom
+        # - flow_h. Place label in the middle of that flow_h gap.
+        if receiver_idx + 1 < len(bands_geom):
+            lower_header_top = bands_geom[receiver_idx + 1][2]
+            mid_y = (receiver_band_bottom + lower_header_top) / 2
+            ax.text(0.5, mid_y, label,
+                    ha="center", va="center", style="italic",
+                    fontsize=8.2 * fontscale, color=PALETTE.axis,
+                    family="Mulish",
+                    transform=ax.transAxes, zorder=5)
+
+    # Cross-layer arrows. Helper supports both gutters and arbitrary
+    # endpoints with curve.
+    def arrow(x0, y0, x1, y1, color, lw, rad=0, zorder=4, dashed=False):
         kw = dict(
-            arrowstyle=style, mutation_scale=14 * fontscale,
+            arrowstyle="-|>", mutation_scale=14 * fontscale,
             color=color, linewidth=lw,
             transform=ax.transAxes, zorder=zorder,
         )
@@ -227,98 +310,72 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
             kw["linestyle"] = (0, (3, 2))
         ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), **kw))
 
-    # Adjacent flows (down arrows in each inter-band gap). One joined
-    # label per flow — centred above the arrow so it doesn't run off
-    # the right edge.
-    for src, dst, labels, kind, _offset in FLOWS:
-        if kind != "down":
+    # Right gutter: yellow demand-flow arrows, going UP. Three arrows
+    # at slightly different x positions so they don't fully overlap.
+    # Thickened from 1.4 → 2.0 so they're clearly visible at small
+    # output sizes; arrowheads scaled up to match.
+    right_base = 0.935
+    for src, dst, lbl, kind, offset in FLOWS:
+        if kind != "right-up":
             continue
-        src_bottom = bands_geom[src][1]
-        dst_header_top = bands_geom[dst][2]
-        ax_x = 0.50
-        arrow(ax_x, src_bottom - 0.002, ax_x, dst_header_top + 0.002,
-              PALETTE.composite, 1.8)
-        gap_top = src_bottom
-        gap_bot = dst_header_top
-        lines_y_center = (gap_top + gap_bot) / 2
-        for li, lbl in enumerate(labels):
-            y = lines_y_center + (li - (len(labels) - 1) / 2) * (0.014 * fontscale)
-            ax.text(ax_x, y, lbl,
-                    ha="center", va="center", style="italic",
-                    fontsize=8 * fontscale, color=PALETTE.axis,
-                    family="Mulish",
-                    bbox=dict(boxstyle="round,pad=0.25",
-                              facecolor="white", edgecolor="none"),
-                    transform=ax.transAxes, zorder=5)
+        src_top = bands_geom[src][0]
+        dst_bot = bands_geom[dst][1]
+        gx = right_base + offset
+        arrow(gx, src_top, gx, dst_bot,
+              PALETTE.composite, 2.2, rad=-0.18)
 
-    # Skip flows — drawn as unlabelled thin arrows in the right gutter.
-    # Labels go in the caption panel below the diagram.
-    right_gutter_base = 0.945
-    for src, dst, labels, kind, offset in FLOWS:
-        if kind != "down-skip":
+    # Left gutter: dark-navy feedback arrow, going DOWN. Made
+    # noticeably thicker so it doesn't disappear in print.
+    left_x = 0.065
+    for src, dst, lbl, kind, _offset in FLOWS:
+        if kind != "left-down":
             continue
-        src_bottom = bands_geom[src][1]
-        dst_header_top = bands_geom[dst][2]
-        gutter_x = right_gutter_base + offset
-        arrow(gutter_x, src_bottom, gutter_x, dst_header_top,
-              PALETTE.composite, 1.1, rad=-0.22)
+        src_bot = bands_geom[src][1]
+        dst_top = bands_geom[dst][0]
+        arrow(left_x, src_bot, left_x, dst_top,
+              DARK_NAVY, 1.8, rad=-0.18)
 
-    # Feedback flow — unlabelled dashed arrow in the left gutter;
-    # described in the caption panel.
-    left_gutter = 0.055
-    for src, dst, labels, kind, _offset in FLOWS:
-        if kind != "up":
-            continue
-        src_top    = bands_geom[src][2]
-        dst_bottom = bands_geom[dst][1]
-        arrow(left_gutter, src_top, left_gutter, dst_bottom,
-              PALETTE.axis, 0.9, rad=0.25, dashed=True)
-
-    # Caption panel — explains the skip flows + feedback loop using
-    # coloured markers that match the arrows. Two columns to keep the
-    # block compact.
-    panel_top = bottom_y - 0.012
-    panel_h   = caption_h - 0.015
-    panel_x0, panel_x1 = x_left, x_right
-    panel_rect = FancyBboxPatch(
-        (panel_x0, panel_top - panel_h), panel_x1 - panel_x0, panel_h,
+    # Legend strip at the bottom — arrow icons matching the chart.
+    legend_top = bottom_y - 0.012
+    legend_bot = 0.04
+    legend_rect = FancyBboxPatch(
+        (x_left, legend_bot), x_right - x_left, legend_top - legend_bot,
         boxstyle="round,pad=0.002,rounding_size=0.006",
-        linewidth=0.8, edgecolor=PALETTE.grid, facecolor="#FAFBFC",
+        linewidth=0.6, edgecolor=PALETTE.grid, facecolor="#FAFBFC",
         zorder=1, transform=ax.transAxes,
     )
-    ax.add_patch(panel_rect)
+    ax.add_patch(legend_rect)
 
-    # Caption entries: (colour, label, description)
-    caption_entries = [
-        (PALETTE.composite, "Materials → Robotics",
-         "NdFeB magnets for servo motors"),
-        (PALETTE.composite, "Materials → Space",
-         "NdFeB magnets for reaction wheels"),
-        (PALETTE.composite, "Semiconductors → Space",
-         "On-board processors, direct-to-device"),
-        (PALETTE.axis,      "Robotics → Semiconductors (feedback)",
-         "Fab automation"),
+    legend_entries = [
+        (PALETTE.composite, "Materials → Robotics",      "NdFeB magnets for servo motors"),
+        (PALETTE.composite, "Materials → Space",         "NdFeB magnets for reaction wheels"),
+        (PALETTE.composite, "Semiconductors → Space",    "On-board processors, direct-to-device"),
+        (DARK_NAVY,         "Robotics → Semiconductors", "Fab automation (feedback)"),
     ]
-    # Two-column layout inside the panel
     rows_per_col = 2
-    col_w = (panel_x1 - panel_x0 - 0.03) / 2
-    row_h = panel_h / rows_per_col
-    for i, (col, title, desc) in enumerate(caption_entries):
+    panel_inner_h = legend_top - legend_bot
+    col_w = (x_right - x_left - 0.03) / 2
+    row_h = panel_inner_h / rows_per_col
+    for i, (col, title, desc) in enumerate(legend_entries):
         c = i // rows_per_col
         r = i % rows_per_col
-        cx = panel_x0 + 0.015 + c * (col_w + 0.015)
-        cy = panel_top - 0.015 - r * row_h
-        # Small coloured swatch (circle)
-        ax.scatter([cx], [cy], s=40 * fontscale, color=col,
-                   zorder=3, transform=ax.transAxes)
-        ax.text(cx + 0.012, cy, title,
+        cx = x_left + 0.015 + c * (col_w + 0.015)
+        cy = legend_top - 0.014 - r * row_h
+        # Arrow icon — coloured marker mirroring the chart arrow
+        ax.text(cx, cy, "→",
+                ha="left", va="center",
+                fontsize=12 * fontscale, fontweight="bold",
+                color=col, family="Space Grotesk",
+                transform=ax.transAxes, zorder=3)
+        # Title in dark ink (was previously coloured, which read faint)
+        ax.text(cx + 0.018, cy, title,
                 ha="left", va="center",
                 fontsize=8.5 * fontscale, fontweight="bold",
-                color=PALETTE.ink, family="Space Grotesk",
+                color=DARK_NAVY, family="Space Grotesk",
                 transform=ax.transAxes, zorder=3)
-        ax.text(cx + 0.012, cy - 0.024 * fontscale, desc,
+        ax.text(cx + 0.018, cy - 0.020 * fontscale, desc,
                 ha="left", va="center",
-                fontsize=8 * fontscale, color=PALETTE.axis,
+                fontsize=7.8 * fontscale, color=PALETTE.axis,
                 family="Mulish", style="italic",
                 transform=ax.transAxes, zorder=3)
 
@@ -419,7 +476,7 @@ def _draw_divergence(figsize, fontscale=1.0):
     ax2.bar(bar_x, bar_y, width=bar_w_days, align="center",
             color=PALETTE.subindices["robotics"], alpha=0.55, zorder=1,
             edgecolor=PALETTE.subindices["robotics"], linewidth=0.6,
-            label="Quarterly private robotics funding ($bn)")
+            label="Quarterly private robotics funding ($b)")
 
     # Quarter boundary vertical rules (subtle)
     for qd in (date(2025, 6, 30), date(2025, 9, 30), date(2025, 12, 31)):
@@ -427,7 +484,7 @@ def _draw_divergence(figsize, fontscale=1.0):
 
     # Axis labels + ticks
     ax1.set_ylabel("Sub-index value (rebased to 100)", fontsize=10 * fontscale)
-    ax2.set_ylabel("Private funding ($ billions)", fontsize=10 * fontscale,
+    ax2.set_ylabel("Private funding ($b)", fontsize=10 * fontscale,
                    color=PALETTE.axis)
     ax1.xaxis.set_major_locator(mdates.MonthLocator(interval=2))
     ax1.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
@@ -440,50 +497,86 @@ def _draw_divergence(figsize, fontscale=1.0):
     # Hide right-axis gridlines (only left axis carries them)
     ax2.grid(False)
 
-    # Annotate the 3 smaller bars with quarter + $ amount (the 1Q26
-    # bar gets its own bold callout below, so we skip it here to
-    # avoid the redundant "1Q26 $31.5bn" stacking on top).
-    for (m, a, lbl) in bars[:-1]:
+    # Bar labels — consistent convention: "QyYY  $X.Xb" just above
+    # each bar's top edge, including the Q1 2026 bar (the magnitude
+    # callout below adds the "9× prior quarter" context separately).
+    for (m, a, lbl) in bars:
         ax2.text(m, a + max(bar_y) * 0.03,
-                 f"{lbl}  ${a:.1f}bn",
+                 f"{lbl}  ${a:.1f}b",
                  ha="center", va="bottom",
                  fontsize=8.5 * fontscale, color=PALETTE.axis,
                  family="Mulish")
 
-    # 1Q26 bold callout — sits clearly above the bar with enough
-    # headroom so the semi-transparent bar green doesn't bleed
-    # through the lettering.
-    q1 = bars[-1]
-    ax2.text(q1[0], q1[1] + max(bar_y) * 0.15,
-             f"Q1 2026\n${q1[1]:.1f}bn private capital",
-             ha="center", va="bottom",
-             fontsize=10 * fontscale, fontweight="bold",
-             color=PALETTE.ink, zorder=10)
+    # Compute the 12-month return from the rebased line so the
+    # annotation matches the data — the spec's +5.3% figure was
+    # carried over from a stale state. Use the actual value.
+    if robotics:
+        line_return_pct = (robotics[-1][1] / robotics[0][1] - 1) * 100
+    else:
+        line_return_pct = 0.0
 
-    # Robotics end-of-year annotation — pulled well to the LEFT of the
-    # Q1 bar so the yellow line label doesn't collide with the bar's
-    # bold callout. Single line, anchored at the line's end point via
-    # the small indicator dot.
+    # The two callouts must not overlap each other. Place the public
+    # sub-index callout to the LEFT of the Q1 bar (above the line's
+    # rising right-side path) and the Q1 bar callout DIRECTLY above
+    # the Q1 bar. Both use thin grey leaders — never the line styling
+    # (which would read as a trend, not a callout).
+    from datetime import timedelta
+    q1 = bars[-1]
+    # Multiplier vs the immediately preceding quarter (4Q25), per spec.
+    prior_q = bars[-2][1] if len(bars) > 1 else q1[1]
+    multiplier = q1[1] / prior_q if prior_q > 0 else 0
+
+    # Public sub-index callout — anchored over the line at ~mid-Jan,
+    # well left of the Q1 bar so the two callouts share no horizontal
+    # space.
     if robotics:
         end_d, end_v = robotics[-1]
-        from datetime import timedelta
-        ax1.annotate("Public Robotics: +5.3% over 12 months",
-                     xy=(end_d - timedelta(days=10), end_v),
-                     xytext=(end_d - timedelta(days=120), end_v + 18),
-                     ha="center", va="bottom",
-                     fontsize=9.5 * fontscale, fontweight="bold",
+        # Lookup the value at the callout anchor date so the leader
+        # touches the actual line, not floating space.
+        anchor_d = date(2026, 1, 15)
+        anchor_v = end_v
+        for d, v in robotics:
+            if d <= anchor_d:
+                anchor_v = v
+            else:
+                break
+        # Label sits well above the line at the upper-left of the chart
+        line_max = max(v for _, v in robotics)
+        callout_y = line_max + (line_max - 100) * 0.06
+        ax1.annotate(f"Public sub-index +{line_return_pct:.0f}% 12m",
+                     xy=(anchor_d, anchor_v),
+                     xytext=(date(2025, 8, 15), callout_y),
+                     ha="left", va="bottom",
+                     fontsize=10 * fontscale, fontweight="bold",
                      color=PALETTE.ink,
-                     arrowprops=dict(arrowstyle="-", color=PALETTE.axis, lw=0.8,
-                                     shrinkA=2, shrinkB=4))
+                     arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
+                                     shrinkA=2, shrinkB=4),
+                     zorder=10)
 
-    # Divergence callout — one italic line placed at mid-right so it
-    # labels the visible gap between bar height and line level.
-    fig.text(0.60, 0.34,
-             "The divergence: private conviction ahead of public pricing",
-             ha="center", va="center",
-             fontsize=9 * fontscale, fontweight="bold",
-             color=PALETTE.axis, style="italic",
-             family="Mulish")
+    # Q1 2026 bar callout — directly above the bar with a vertical
+    # leader. Stays in its own air column so it can never collide
+    # with the sub-index callout.
+    # Avoid repeating "$31.5b" — that figure is already on the bar
+    # label. Callout adds the magnitude commentary only.
+    callout_q1_y = q1[1] + max(bar_y) * 0.22
+    ax2.annotate(f"{multiplier:.0f}× prior quarter",
+                 xy=(q1[0], q1[1]),
+                 xytext=(q1[0], callout_q1_y),
+                 ha="center", va="bottom",
+                 fontsize=10 * fontscale, fontweight="bold",
+                 color=PALETTE.ink,
+                 arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
+                                 shrinkA=2, shrinkB=4),
+                 zorder=10)
+
+    # Baseline label on the rebase=100 dashed reference line — sits at
+    # the LEFT of the chart on the line itself, well clear of the
+    # right-axis ticks.
+    ax1.text(date(2025, 5, 5), 100, "rebase = 100",
+             ha="left", va="bottom",
+             fontsize=8 * fontscale, color="#9CA3AF",
+             style="italic", family="Mulish",
+             zorder=3)
 
     # Legend — combine handles from both axes
     h1, l1 = ax1.get_legend_handles_labels()
