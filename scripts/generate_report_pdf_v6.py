@@ -214,12 +214,12 @@ FIGURE_PLACEMENTS = {
     },
     "sec4_fig4": {
         "image": CHARTS / "chart_funding_trends.png",
-        "caption": "Figure 4: Frontier Stack Monthly Funding, April 2025 – March 2026. "
+        "caption": "Frontier Stack Monthly Funding, April 2025 – March 2026. "
                    "Stacked by sector.",
     },
     "sec4_fig5": {
         "image": CHARTS / "chart_q1_funding_breakdown.png",
-        "caption": "Figure 5: Q1 2026 Funding by Sector — $46.0bn across 91 rounds.",
+        "caption": "Q1 2026 Funding by Sector — $46.0bn across 91 rounds.",
     },
 }
 

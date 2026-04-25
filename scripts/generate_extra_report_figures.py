@@ -377,24 +377,20 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
     # border itself.
     anchor_x = x_right + 0.005
 
-    # rad sign convention: for an UP arrow (start below end, a > b
-    # in axes y but in matplotlib y-up coords start_y < end_y), a
-    # NEGATIVE rad bows the curve to the right of the straight line.
-    # For a DOWN arrow (start above end), POSITIVE rad bows right.
-    # Magnitudes calibrated so each arrow's apex sits at a distinct
-    # x position increasing outward (~30, ~60, ~75, ~100 px from
-    # banner edge at print scale).
-    # rad values calibrated so each arrow's apex sits at a distinct x
-    # offset from the banner edge — A closest, D furthest. For a
-    # vertical-line bezier the apex distance ≈ |rad| × span / 2, so
-    # arrows with short spans (A and D) need bigger rad to bow out
-    # the same absolute distance as arrows with long spans (B, C).
+    # Sign convention (verified against rendered output): for a
+    # vertical-line bezier on matplotlib's arc3, NEGATIVE rad bows
+    # the curve to the right when going up, and POSITIVE rad bows
+    # right when going down. We want all four arrows to curve INTO
+    # THE EMPTY RIGHT GUTTER (away from the rightmost column boxes),
+    # so upward arrows (A/B/C) use NEGATIVE rad and the downward
+    # feedback (D) uses POSITIVE rad. Magnitudes calibrated so each
+    # arrow's apex sits at a distinct x offset from the banner edge.
     arrow_specs = [
         # (src, dst, color, rad)
-        (3, 1, PALETTE.composite, -0.22),  # A: Materials → Robotics (short span, small bow)
-        (3, 0, PALETTE.composite, -0.26),  # B: Materials → Space (longest span, medium bow)
-        (2, 0, PALETTE.composite, -0.55),  # C: Semis → Space (medium span, bigger bow)
-        (1, 2, DARK_NAVY,         +1.30),  # D: Robotics → Semis feedback (DOWN, shortest span — biggest rad)
+        (3, 1, PALETTE.composite, +0.22),  # A: Materials → Robotics (up, right bow)
+        (3, 0, PALETTE.composite, +0.26),  # B: Materials → Space (up, right bow)
+        (2, 0, PALETTE.composite, +0.55),  # C: Semis → Space (up, right bow)
+        (1, 2, DARK_NAVY,         -1.30),  # D: Robotics → Semis feedback (down, right bow)
     ]
     for src, dst, col, rad in arrow_specs:
         y_start = banner_mid_y(src)

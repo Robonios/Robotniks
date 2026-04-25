@@ -116,7 +116,7 @@ def donut_chart(rounds, out_path):
     )
 
     # Title + subtitle — Space Grotesk
-    fig.suptitle("Figure 4 — Q1 2026 Funding by Sector",
+    fig.suptitle("Q1 2026 Funding by Sector",
                  x=0.5, y=0.96, ha="center",
                  fontproperties=title_font(size=13),
                  color=PALETTE.ink)
@@ -196,7 +196,7 @@ def monthly_stacked_bars(rounds, out_path):
     ax.set_xlim(-0.7, len(months) - 0.3)
 
     # Titles — Space Grotesk
-    fig.suptitle("Figure 5 — Frontier Stack Monthly Funding, 2025–2026",
+    fig.suptitle("Frontier Stack Monthly Funding, 2025–2026",
                  x=0.5, y=0.96, ha="center",
                  fontproperties=title_font(size=13),
                  color=PALETTE.ink)
