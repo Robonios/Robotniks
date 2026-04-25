@@ -523,13 +523,16 @@ def _draw_divergence(figsize, fontscale=1.0):
     bars     = _load_quarterly_funding()
 
     fig, ax1 = plt.subplots(figsize=figsize)
-    # Title + subtitle (drawn as fig.text to match Figures 1-3)
-    fig.text(0.5, 0.965, "The Public-Private Divergence in Robotics",
+    # Title + subtitle. Reframed under Option A: the public sub-index
+    # rose materially in the same window as the private-capital surge,
+    # so the chart is a "both rising" story with the magnitude
+    # contrast (9× quarterly capital deployment) doing the lifting.
+    fig.text(0.5, 0.965, "Capital floods into public and private robotics",
              ha="center", va="top",
              fontproperties=title_font(size=14 * fontscale),
              color=PALETTE.ink)
     fig.text(0.5, 0.920,
-             "Private capital deployment vs public sub-index performance, April 2025 – March 2026",
+             "Public sub-index returns vs private funding deployment, April 2025 – March 2026",
              ha="center", va="top",
              fontproperties=subtitle_font(size=10 * fontscale),
              color=PALETTE.axis)
@@ -565,10 +568,17 @@ def _draw_divergence(figsize, fontscale=1.0):
     ax1.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
     ax1.set_xlim(date(2025, 3, 31), date(2026, 3, 31))
 
-    # Right-axis limit leaves headroom so the 1Q26 bar label fits
-    # above the bar with the callout text clearly clear of the bar
-    # top.
-    ax2.set_ylim(0, max(max(bar_y) * 1.55, 5))
+    # Right-axis limit gives enough headroom for the "9× prior
+    # quarter" callout to sit above the LEFT-axis line peak in clear
+    # whitespace. Explicit yticks at clean 10-step values so the top
+    # tick label reads as a plain integer — the previous draft's
+    # default formatter combined with the spine cap rendered the
+    # topmost tick as "- 40" (the dash being the tick mark).
+    ax2.set_ylim(0, max(max(bar_y) * 1.85, 5))
+    ax2.set_yticks([0, 10, 20, 30, 40])
+    # Tick direction inward so tick marks don't read as a leading
+    # dash on the labels.
+    ax2.tick_params(axis="y", direction="in", length=3)
     # Hide right-axis gridlines (only left axis carries them)
     ax2.grid(False)
 
@@ -590,65 +600,68 @@ def _draw_divergence(figsize, fontscale=1.0):
     else:
         line_return_pct = 0.0
 
-    # The two callouts must not overlap each other. Place the public
-    # sub-index callout to the LEFT of the Q1 bar (above the line's
-    # rising right-side path) and the Q1 bar callout DIRECTLY above
-    # the Q1 bar. Both use thin grey leaders — never the line styling
-    # (which would read as a trend, not a callout).
+    # Two callouts in non-overlapping air columns:
+    #   - Public sub-index callout: anchors its leader at the line's
+    #     final point (March 2026), label sits above the line on the
+    #     left side of the chart.
+    #   - "9× prior quarter" callout: sits well ABOVE the line's peak
+    #     (line peaks ~187 around late Feb), in clear whitespace, with
+    #     a leader to the Q1 bar top. Does not overlap the line.
     from datetime import timedelta
     q1 = bars[-1]
-    # Multiplier vs the immediately preceding quarter (4Q25), per spec.
     prior_q = bars[-2][1] if len(bars) > 1 else q1[1]
     multiplier = q1[1] / prior_q if prior_q > 0 else 0
 
-    # Public sub-index callout — anchored over the line at ~mid-Jan,
-    # well left of the Q1 bar so the two callouts share no horizontal
-    # space.
+    # Public sub-index callout — label placed ABOVE the line's PEAK
+    # at the right edge of the chart, with a short, mostly-vertical
+    # leader down to the line's actual endpoint (March 2026).
     if robotics:
         end_d, end_v = robotics[-1]
-        # Lookup the value at the callout anchor date so the leader
-        # touches the actual line, not floating space.
-        anchor_d = date(2026, 1, 15)
-        anchor_v = end_v
-        for d, v in robotics:
-            if d <= anchor_d:
-                anchor_v = v
-            else:
-                break
-        # Label sits well above the line at the upper-left of the chart
-        line_max = max(v for _, v in robotics)
-        callout_y = line_max + (line_max - 100) * 0.06
+        line_max_top = max(v for _, v in robotics)
         ax1.annotate(f"Public sub-index +{line_return_pct:.0f}% 12m",
-                     xy=(anchor_d, anchor_v),
-                     xytext=(date(2025, 8, 15), callout_y),
-                     ha="left", va="bottom",
+                     xy=(end_d, end_v),
+                     xytext=(end_d, line_max_top + 30),
+                     ha="right", va="bottom",
                      fontsize=10 * fontscale, fontweight="bold",
                      color=PALETTE.ink,
                      arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
                                      shrinkA=2, shrinkB=4),
                      zorder=10)
 
-    # Q1 2026 bar callout — directly above the bar with a vertical
-    # leader. Stays in its own air column so it can never collide
-    # with the sub-index callout.
-    # Avoid repeating "$31.5b" — that figure is already on the bar
-    # label. Callout adds the magnitude commentary only.
-    callout_q1_y = q1[1] + max(bar_y) * 0.22
+    # Set both axis ylims explicitly so the geometry is predictable:
+    #   ax1 (line, left axis): 85 → line_max + 40, leaving clear
+    #                          whitespace above the line peak.
+    #   ax2 (bars, right axis): 0 → max_bar * 2.5, pulling the bars
+    #                           into the lower 40% of the chart so
+    #                           the upper-right air column is free
+    #                           for the 9× callout.
+    if robotics:
+        line_max = max(v for _, v in robotics)
+        ax1.set_ylim(85, line_max + 40)
+    bar_max_visible = max(bar_y) * 2.5
+    ax2.set_ylim(0, bar_max_visible)
+
+    # "9× prior quarter" callout sits in the upper-right air column.
+    # Coordinates on ax2 (bars). At ax2 y = bar_max_visible * 0.92
+    # the callout is in the top 8% of the chart, well above the line
+    # peak which lives in the upper-third in ax1's range.
+    callout_q1_y = bar_max_visible * 0.92
     ax2.annotate(f"{multiplier:.0f}× prior quarter",
                  xy=(q1[0], q1[1]),
                  xytext=(q1[0], callout_q1_y),
-                 ha="center", va="bottom",
+                 ha="center", va="top",
                  fontsize=10 * fontscale, fontweight="bold",
                  color=PALETTE.ink,
                  arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
                                  shrinkA=2, shrinkB=4),
                  zorder=10)
 
-    # Baseline label on the rebase=100 dashed reference line — sits at
-    # the LEFT of the chart on the line itself, well clear of the
-    # right-axis ticks.
-    ax1.text(date(2025, 5, 5), 100, "rebase = 100",
-             ha="left", va="bottom",
+    # Baseline label — right side, just above the dashed line. The
+    # Q1 bar would otherwise sit on top of it; with bar ylim now
+    # 0→79ish the bar top is well below 100 visually so the label
+    # at left-axis y=102 is clear.
+    ax1.text(date(2026, 3, 28), 102, "rebase = 100",
+             ha="right", va="bottom",
              fontsize=8 * fontscale, color="#9CA3AF",
              style="italic", family="Mulish",
              zorder=3)
