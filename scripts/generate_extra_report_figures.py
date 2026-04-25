@@ -359,31 +359,47 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
             kw["linestyle"] = (0, (3, 2))
         ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), **kw))
 
-    # Right gutter: four CLEARLY DISTINCT arrows. Per spec, the
-    # innermost arrow (closest to figure edge) is A; D is outermost.
+    # Cross-layer arrows. Each arrow is anchored at the right edge of
+    # its source banner (tail) and the right edge of its destination
+    # banner (head) — the arrowhead literally touches the destination
+    # banner. Different rad values produce different rightward bow
+    # extents so the four arrows live in their own visual lanes.
     #
-    #   x = 0.965 → Arrow A: Materials → Robotics (yellow, up)
-    #   x = 0.935 → Arrow B: Materials → Space     (yellow, up)
-    #   x = 0.905 → Arrow C: Semis → Space         (yellow, up)
-    #   x = 0.875 → Arrow D: Robotics → Semis      (DARK NAVY, down)
+    # bands_geom rows store (band_body_top, band_body_bottom,
+    # header_top); banner mid-y = (header_top + (header_top - header_h)) / 2.
+    def banner_mid_y(idx):
+        header_top = bands_geom[idx][2]
+        return header_top - header_h / 2
+
+    # Tail/head sit just outside the right edge of the banner so the
+    # arrow visibly originates from the banner border, with a small
+    # outward offset (0.005) to avoid drawing on top of the banner
+    # border itself.
+    anchor_x = x_right + 0.005
+
+    # rad sign convention: for an UP arrow (start below end, a > b
+    # in axes y but in matplotlib y-up coords start_y < end_y), a
+    # NEGATIVE rad bows the curve to the right of the straight line.
+    # For a DOWN arrow (start above end), POSITIVE rad bows right.
+    # Magnitudes calibrated so each arrow's apex sits at a distinct
+    # x position increasing outward (~30, ~60, ~75, ~100 px from
+    # banner edge at print scale).
+    # rad values calibrated so each arrow's apex sits at a distinct x
+    # offset from the banner edge — A closest, D furthest. For a
+    # vertical-line bezier the apex distance ≈ |rad| × span / 2, so
+    # arrows with short spans (A and D) need bigger rad to bow out
+    # the same absolute distance as arrows with long spans (B, C).
     arrow_specs = [
-        # (src band idx, dst band idx, x, color, rad)
-        (3, 1, 0.965, PALETTE.composite, -0.18),  # Arrow A
-        (3, 0, 0.935, PALETTE.composite, -0.18),  # Arrow B
-        (2, 0, 0.905, PALETTE.composite, -0.18),  # Arrow C
-        (1, 2, 0.875, DARK_NAVY,         -0.18),  # Arrow D (feedback, DOWN)
+        # (src, dst, color, rad)
+        (3, 1, PALETTE.composite, -0.22),  # A: Materials → Robotics (short span, small bow)
+        (3, 0, PALETTE.composite, -0.26),  # B: Materials → Space (longest span, medium bow)
+        (2, 0, PALETTE.composite, -0.55),  # C: Semis → Space (medium span, bigger bow)
+        (1, 2, DARK_NAVY,         +1.30),  # D: Robotics → Semis feedback (DOWN, shortest span — biggest rad)
     ]
-    for src, dst, gx, col, rad in arrow_specs:
-        if src > dst:
-            # Going UP: from sender body top up to receiver body bottom.
-            y_start = bands_geom[src][0]
-            y_end   = bands_geom[dst][1]
-        else:
-            # Going DOWN (feedback): from sender body bottom down to
-            # receiver body top.
-            y_start = bands_geom[src][1]
-            y_end   = bands_geom[dst][0]
-        arrow(gx, y_start, gx, y_end, col, 2.2, rad=rad)
+    for src, dst, col, rad in arrow_specs:
+        y_start = banner_mid_y(src)
+        y_end   = banner_mid_y(dst)
+        arrow(anchor_x, y_start, anchor_x, y_end, col, 2.2, rad=rad)
 
     # Legend at the bottom — clean 2×2 grid, generous spacing.
     # Two columns separated by a clear horizontal gap; each cell
@@ -582,11 +598,24 @@ def _draw_divergence(figsize, fontscale=1.0):
     # Hide right-axis gridlines (only left axis carries them)
     ax2.grid(False)
 
-    # Bar labels — consistent convention: "QyYY  $X.Xb" just above
-    # each bar's top edge, including the Q1 2026 bar (the magnitude
-    # callout below adds the "9× prior quarter" context separately).
-    for (m, a, lbl) in bars:
-        ax2.text(m, a + max(bar_y) * 0.03,
+    # Bar labels — every label sits clearly ABOVE the rebase=100
+    # dashed baseline. For the small bars (2Q25/3Q25/4Q25) where the
+    # bar top is below the baseline, the label is anchored at a
+    # minimum-y so it stays clear of the dashed line. For the 1Q26
+    # bar, we DON'T render a standalone "$31.5b" label — that is
+    # combined with the "9× prior quarter" callout below, so the
+    # 1Q26 figure isn't repeated.
+    #
+    # Min-label-y is chosen in ax2 units to sit ~3 axes-y units above
+    # the baseline visually. ax1 ylim (85, 200) and ax2 ylim
+    # (0, max_bar*2.5) share the chart vertical, so visual y=100 on
+    # ax1 == visual y = max_bar*2.5 * (100-85)/(200-85) on ax2.
+    bar_max_visible_for_labels = max(bar_y) * 2.5
+    baseline_visual_frac = (100 - 85) / (200 - 85)  # 15/115 ≈ 0.130
+    label_min_y = bar_max_visible_for_labels * (baseline_visual_frac + 0.03)
+    for (m, a, lbl) in bars[:-1]:   # all bars except 1Q26
+        label_y = max(label_min_y, a + max(bar_y) * 0.06)
+        ax2.text(m, label_y,
                  f"{lbl}  ${a:.1f}b",
                  ha="center", va="bottom",
                  fontsize=8.5 * fontscale, color=PALETTE.axis,
@@ -612,57 +641,58 @@ def _draw_divergence(figsize, fontscale=1.0):
     prior_q = bars[-2][1] if len(bars) > 1 else q1[1]
     multiplier = q1[1] / prior_q if prior_q > 0 else 0
 
-    # Public sub-index callout — label placed ABOVE the line's PEAK
-    # at the right edge of the chart, with a short, mostly-vertical
-    # leader down to the line's actual endpoint (March 2026).
-    if robotics:
-        end_d, end_v = robotics[-1]
-        line_max_top = max(v for _, v in robotics)
-        ax1.annotate(f"Public sub-index +{line_return_pct:.0f}% 12m",
-                     xy=(end_d, end_v),
-                     xytext=(end_d, line_max_top + 30),
-                     ha="right", va="bottom",
-                     fontsize=10 * fontscale, fontweight="bold",
-                     color=PALETTE.ink,
-                     arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
-                                     shrinkA=2, shrinkB=4),
-                     zorder=10)
-
-    # Set both axis ylims explicitly so the geometry is predictable:
-    #   ax1 (line, left axis): 85 → line_max + 40, leaving clear
-    #                          whitespace above the line peak.
+    # Pin both axis ylims first so subsequent placements are predictable.
+    #   ax1 (line, left axis): 85 → 200. Tighter than before; the line
+    #                          peaks at ~187 so 200 gives a clean ~13
+    #                          unit ceiling without wasted space.
     #   ax2 (bars, right axis): 0 → max_bar * 2.5, pulling the bars
-    #                           into the lower 40% of the chart so
-    #                           the upper-right air column is free
-    #                           for the 9× callout.
-    if robotics:
-        line_max = max(v for _, v in robotics)
-        ax1.set_ylim(85, line_max + 40)
+    #                          into the lower portion so the upper
+    #                          air column stays clear for callouts.
+    ax1.set_ylim(85, 200)
     bar_max_visible = max(bar_y) * 2.5
     ax2.set_ylim(0, bar_max_visible)
 
-    # "9× prior quarter" callout sits in the upper-right air column.
-    # Coordinates on ax2 (bars). At ax2 y = bar_max_visible * 0.92
-    # the callout is in the top 8% of the chart, well above the line
-    # peak which lives in the upper-third in ax1's range.
-    callout_q1_y = bar_max_visible * 0.92
-    ax2.annotate(f"{multiplier:.0f}× prior quarter",
+    # ── Callout A: Public sub-index +59% 12m ────────────────────────
+    # Label sits at the upper right at ax1 y≈196 (just below ceiling).
+    # Leader: a tiny dot at the line endpoint plus a short straight
+    # vertical leader from below the text down to the dot. Avoids any
+    # curved path that could cross the line itself.
+    if robotics:
+        end_d, end_v = robotics[-1]
+        # Small marker dot AT the line endpoint
+        ax1.scatter([end_d], [end_v], s=18, color="#6B7280",
+                    zorder=11, clip_on=False)
+        # Short vertical leader from text bottom to the dot
+        ax1.annotate(f"Public sub-index +{line_return_pct:.0f}% 12m",
+                     xy=(end_d, end_v + 1),
+                     xytext=(end_d, 196),
+                     ha="right", va="top",
+                     fontsize=10 * fontscale, fontweight="bold",
+                     color=PALETTE.ink,
+                     arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
+                                     shrinkA=4, shrinkB=4),
+                     zorder=10)
+
+    # ── Callout B: 1Q26: $31.5b — 9× prior quarter ───────────────────
+    # Combined label so the bar is documented in ONE place. Sits just
+    # above the 1Q26 bar with a short vertical leader to the bar top.
+    callout_q1_y = q1[1] + max(bar_y) * 0.18
+    ax2.annotate(f"1Q26: ${q1[1]:.1f}b — {multiplier:.0f}× prior quarter",
                  xy=(q1[0], q1[1]),
                  xytext=(q1[0], callout_q1_y),
-                 ha="center", va="top",
+                 ha="center", va="bottom",
                  fontsize=10 * fontscale, fontweight="bold",
                  color=PALETTE.ink,
                  arrowprops=dict(arrowstyle="-", color="#9CA3AF", lw=0.5,
                                  shrinkA=2, shrinkB=4),
                  zorder=10)
 
-    # Baseline label — right side, just above the dashed line. The
-    # Q1 bar would otherwise sit on top of it; with bar ylim now
-    # 0→79ish the bar top is well below 100 visually so the label
-    # at left-axis y=102 is clear.
-    ax1.text(date(2026, 3, 28), 102, "rebase = 100",
+    # Baseline label — italic light-grey, sitting JUST ABOVE the
+    # dashed reference line on the right, with a small gap so the
+    # text doesn't appear to underline through the dashed strokes.
+    ax1.text(date(2026, 3, 28), 103, "rebase = 100",
              ha="right", va="bottom",
-             fontsize=8 * fontscale, color="#9CA3AF",
+             fontsize=8 * fontscale, color="#888888",
              style="italic", family="Mulish",
              zorder=3)
 
