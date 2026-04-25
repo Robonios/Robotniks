@@ -251,7 +251,7 @@ function renderCard(item) {
         ' <span class="feed-sector ' + sl.cls + '">' + sl.text + '</span>' +
       '</div>' +
       '<div class="feed-expand" style="display:none;">' +
-        (summary ? '<p class="feed-excerpt">' + escapeHtml(summary) + '</p>' : '') +
+        (summary ? '<p class="feed-excerpt">' + escapeHtml(ensureTerminalPunct(summary)) + '</p>' : '') +
         '<a href="' + escapeHtml(item.url) + '" class="feed-read-more" target="_blank" rel="noopener">Read original &rarr;</a>' +
         '<div class="feed-analysis-gate">' +
           '<div class="feed-analysis-locked">' +
@@ -272,6 +272,20 @@ function escapeHtml(str) {
   var div = document.createElement('div');
   div.textContent = str || '';
   return div.innerHTML;
+}
+
+// Ensure a summary blurb ends in terminal punctuation. Upstream RSS
+// feeds frequently hand us summaries truncated mid-sentence, which
+// renders as a briefing row hanging without a full stop. If the text
+// already ends with . ! ? … or "..." we leave it; otherwise we append
+// "…" since unpunctuated tails are almost always truncation artefacts.
+function ensureTerminalPunct(text) {
+  if (!text) return '';
+  var s = String(text).replace(/\s+$/, '');
+  if (!s) return '';
+  if (/[.!?…]$/.test(s)) return s;
+  if (s.slice(-3) === '...') return s;
+  return s + '…';
 }
 
 // Truncate at the nearest word boundary before `max` chars; add an
@@ -347,7 +361,7 @@ function generateDailyBriefing() {
     // stores ~175-char summaries on average, 202 max — they fit the
     // briefing card at any reasonable width. Previous 120-char
     // substring cut produced mid-word truncation on ~90% of items.
-    if (item.summary) html += ' &mdash; ' + escapeHtml(item.summary);
+    if (item.summary) html += ' &mdash; ' + escapeHtml(ensureTerminalPunct(item.summary));
     html += ' <span class="feed-sector ' + sl.cls + '">' + sl.text + '</span></li>';
   });
   html += '</ul>';

@@ -1620,11 +1620,20 @@ function _filterIntraday(data) {
   // anchoring to the latest bar we always show the correct recency
   // semantics relative to the data we actually have — and the separate
   // "Last updated" indicator surfaces the staleness to the reader.
-  var lastBarMs = new Date(series[series.length - 1].datetime.replace(' ', 'T') + 'Z').getTime();
-  // 1D => ~1 trading session (30h covers a session plus overnight gap);
-  // 1W => 5 trading days (7 calendar days / 168h covers weekend gaps).
-  var hoursBack = currentIndexRange <= 1 ? 30 : 168;
-  var cutoff = lastBarMs - hoursBack * 3600000;
+  var lastBar = new Date(series[series.length - 1].datetime.replace(' ', 'T') + 'Z');
+  var lastBarMs = lastBar.getTime();
+  var cutoff;
+  if (currentIndexRange <= 1) {
+    // 1D => bars on the SAME calendar date as the latest bar. A fixed
+    // hours-back window (e.g. 30h) crossed the date boundary, which
+    // pushed the time-axis formatter into multi-day "DD Mon" mode
+    // instead of intra-day "HH:MM". Filtering by calendar date keeps
+    // the view to a single session and the formatter shows time of day.
+    cutoff = Date.UTC(lastBar.getUTCFullYear(), lastBar.getUTCMonth(), lastBar.getUTCDate());
+  } else {
+    // 1W => 5 trading days (7 calendar days / 168h covers weekend gaps).
+    cutoff = lastBarMs - 168 * 3600000;
+  }
 
   var filtered = series.filter(function(pt) {
     return new Date(pt.datetime.replace(' ', 'T') + 'Z').getTime() >= cutoff;

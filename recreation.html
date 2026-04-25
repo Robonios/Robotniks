@@ -699,79 +699,6 @@ body::before {
   border-bottom: 1px solid var(--border) !important;
 }
 
-/* ===== EMAIL SECTION ===== */
-.email-section {
-  max-width: 600px;
-  margin: 3rem auto 0;
-  padding: 2.5rem 1.5rem;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-}
-
-.email-section h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--yellow);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
-}
-
-.email-section > p {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.email-form {
-  display: flex;
-  gap: 0.5rem;
-  max-width: 380px;
-  margin: 0 auto;
-}
-
-.email-form input {
-  flex: 1;
-  font-family: var(--font);
-  font-size: 0.65rem;
-  padding: 0.55rem 0.75rem;
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
-  background: var(--bg-card);
-  color: var(--text);
-  outline: none;
-}
-.email-form input::placeholder { color: var(--text-muted); }
-.email-form input:focus { border-color: var(--yellow); }
-
-.email-form button {
-  font-family: var(--font);
-  font-size: 0.6rem;
-  font-weight: 700;
-  padding: 0.55rem 0.85rem;
-  background: var(--yellow);
-  color: #111;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s;
-  white-space: nowrap;
-  letter-spacing: 0.02em;
-}
-.email-form button:hover { background: var(--yellow-dim); }
-
-#email-msg {
-  font-size: 0.6rem;
-  margin-top: 0.75rem;
-}
-
 /* ===== FOOTER ===== */
 .site-footer {
   max-width: 600px;
@@ -841,8 +768,6 @@ body::before {
   .mobile-controls { display: flex !important; order: 4; }
   #game-canvas { width: 100%; height: auto; }
   .diff-buttons { flex-direction: column; }
-  .email-form { flex-direction: column; }
-  .email-section { margin-left: 1rem; margin-right: 1rem; }
   .leaderboard-section { margin-left: 1rem; margin-right: 1rem; }
   .mission-briefing { padding: 1.5rem 1rem 2rem; }
 }
@@ -1010,23 +935,6 @@ body::before {
     <tbody id="lb-body"></tbody>
   </table>
   <div style="font-size:9px;color:#5A6178;margin-top:0.75rem;text-align:center;">Scores saved locally, tovarishch. Centralised leaderboard transmissions pending.</div>
-</section>
-
-<!-- EMAIL CAPTURE -->
-<section class="email-section">
-  <h2>JOIN THE MISSION</h2>
-  <p>Robotnik is approaching Earth. Be the first to receive transmissions when systems come online.</p>
-  <form id="mc-form" action="https://outlook.us19.list-manage.com/subscribe/post?u=fa87fe8cce831e8f9918395c8&amp;id=1943629238&amp;f_id=00aee8e4f0" method="post" target="_blank">
-    <div class="email-form">
-      <input type="email" name="EMAIL" id="mission-email" placeholder="callsign@station.com" required>
-      <button type="submit" id="btn-email">Commence transmission</button>
-    </div>
-    <!-- Honeypot anti-bot field -->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-      <input type="text" name="b_fa87fe8cce831e8f9918395c8_1943629238" tabindex="-1" value="">
-    </div>
-  </form>
-  <p id="email-msg" style="display:none"></p>
 </section>
 
 <!-- FOOTER -->
@@ -1602,23 +1510,6 @@ canvas.addEventListener('touchend', e => {
     else if (dy < -30) hardDrop();
   }
 }, {passive:false});
-
-// ===== EMAIL CAPTURE (Mailchimp) =====
-document.getElementById('mc-form').addEventListener('submit', (e) => {
-  const email = document.getElementById('mission-email').value;
-  const msg = document.getElementById('email-msg');
-  if (email && email.includes('@')) {
-    msg.style.display = 'block';
-    msg.style.color = '#22c55e';
-    msg.textContent = "Welcome aboard, tovarishch. Robotnik will transmit shortly.";
-    // Form submits to Mailchimp via default action (target="_blank")
-  } else {
-    e.preventDefault();
-    msg.style.display = 'block';
-    msg.style.color = '#ef4444';
-    msg.textContent = 'Communication line not recognized. Please verify coordinates.';
-  }
-});
 
 // ===== UI EVENT WIRING =====
 document.getElementById('btn-astro').addEventListener('click', ()=>startGame('Astronaut'));
