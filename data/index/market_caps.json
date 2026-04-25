@@ -1,2509 +1,2509 @@
 {
-  "fetched_at": "2026-04-23T22:45:24.631248Z",
+  "fetched_at": "2026-04-24T22:41:23.293466Z",
   "count": 322,
   "market_caps": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA",
       "sector": "Cross-stack",
-      "market_cap_usd": 4852250312704,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 5062002737152,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "GOOG",
       "name": "Alphabet",
       "sector": "Robotics",
-      "market_cap_usd": 4085761966080,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 4141045252096,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AMZN",
       "name": "Amazon",
       "sector": "Robotics",
-      "market_cap_usd": 2743194615808,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom",
-      "sector": "Cross-stack",
-      "market_cap_usd": 1988276649984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2839014801408,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TSM",
       "name": "TSMC ADR",
       "sector": "Cross-stack",
-      "market_cap_usd": 1984627998720,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2087318585344,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Cross-stack",
+      "market_cap_usd": 2001628430336,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TSLA",
       "name": "Tesla",
       "sector": "Robotics",
-      "market_cap_usd": 1402358857728,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML Holding ADR",
-      "sector": "Cross-stack",
-      "market_cap_usd": 546445197312,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology",
-      "sector": "Semiconductor",
-      "market_cap_usd": 543252021248,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1413278859264,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
       "sector": "Cross-stack",
-      "market_cap_usd": 497813323776,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 567073177600,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar",
-      "sector": "Robotics",
-      "market_cap_usd": 388626579456,
-      "date_fetched": "2026-04-23",
+      "ticker": "ASML",
+      "name": "ASML Holding ADR",
+      "sector": "Cross-stack",
+      "market_cap_usd": 561823285248,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies",
-      "sector": "Robotics",
-      "market_cap_usd": 338589548544,
-      "date_fetched": "2026-04-23",
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "Semiconductor",
+      "market_cap_usd": 560168042496,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
-      "market_cap_usd": 335303081984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 414434197504,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
+      "sector": "Robotics",
+      "market_cap_usd": 386556035072,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 342224863232,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Cross-stack",
-      "market_cap_usd": 324759093248,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 334869331968,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Cross-stack",
-      "market_cap_usd": 320546963456,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "TXN",
-      "name": "Texas Instruments",
-      "sector": "Cross-stack",
-      "market_cap_usd": 256960086016,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "RTX",
-      "name": "RTX Corp",
-      "sector": "Space",
-      "market_cap_usd": 241460330496,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 330967056384,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "KLAC",
       "name": "KLA Corp",
       "sector": "Cross-stack",
-      "market_cap_usd": 238533591040,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 254244175872,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "LIN",
-      "name": "Linde plc",
-      "sector": "Materials",
-      "market_cap_usd": 235432034304,
-      "date_fetched": "2026-04-23",
+      "ticker": "TXN",
+      "name": "Texas Instruments",
+      "sector": "Cross-stack",
+      "market_cap_usd": 252197421056,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ARM",
       "name": "ARM Holdings ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 217295536128,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 249367887872,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "market_cap_usd": 236470026240,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "sector": "Space",
+      "market_cap_usd": 234673045504,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SIE GR",
       "name": "Siemens AG",
       "sector": "Robotics",
-      "market_cap_usd": 217009608681,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 217428382621,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ADI",
       "name": "Analog Devices",
       "sector": "Cross-stack",
-      "market_cap_usd": 197175902208,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 195071737856,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "APH",
       "name": "Amphenol",
       "sector": "Robotics",
-      "market_cap_usd": 184635883520,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 184058068992,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "BA",
       "name": "Boeing Co",
       "sector": "Space",
-      "market_cap_usd": 184490721280,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 183233003520,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SU FP",
       "name": "Schneider Electric",
       "sector": "Robotics",
-      "market_cap_usd": 180523083050,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 181852355034,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ABBN SW",
       "name": "ABB Ltd",
       "sector": "Robotics",
-      "market_cap_usd": 180251270131,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical",
-      "sector": "Robotics",
-      "market_cap_usd": 170062348288,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 180190154942,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2308 TT",
       "name": "Delta Electronics",
       "sector": "Robotics",
-      "market_cap_usd": 163041237047,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 171396396914,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology",
-      "sector": "Semiconductor",
-      "market_cap_usd": 144775299072,
-      "date_fetched": "2026-04-23",
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "sector": "Robotics",
+      "market_cap_usd": 170784407552,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "QCOM",
       "name": "Qualcomm",
       "sector": "Cross-stack",
-      "market_cap_usd": 143064645632,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 158978523136,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "8035 JP",
-      "name": "Tokyo Electron",
-      "sector": "Robotics",
-      "market_cap_usd": 130093396294,
-      "date_fetched": "2026-04-23",
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "Semiconductor",
+      "market_cap_usd": 143682224128,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6857 JP",
       "name": "Advantest Corp",
       "sector": "Robotics",
-      "market_cap_usd": 126748663514,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 134053751308,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "8035 JP",
+      "name": "Tokyo Electron",
+      "sector": "Robotics",
+      "market_cap_usd": 131454689932,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AI FP",
       "name": "Air Liquide",
       "sector": "Materials",
-      "market_cap_usd": 126722164924,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 127461720016,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
       "sector": "Space",
-      "market_cap_usd": 122096517120,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 118330777600,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "BYDDY",
       "name": "BYD Co ADR",
       "sector": "Robotics",
-      "market_cap_usd": 119891140608,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 118158876672,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2317 TT",
       "name": "Hon Hai Precision (Foxconn)",
       "sector": "Robotics",
-      "market_cap_usd": 99591577013,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 98347907473,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6861 JP",
       "name": "Keyence Corp",
       "sector": "Robotics",
-      "market_cap_usd": 96386834835,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 96168048121,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SNPS",
       "name": "Synopsys",
       "sector": "Cross-stack",
-      "market_cap_usd": 87515111424,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 95938101248,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CDNS",
       "name": "Cadence Design Systems",
       "sector": "Cross-stack",
-      "market_cap_usd": 86784016384,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 91908292608,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "GD",
       "name": "General Dynamics",
       "sector": "Space",
-      "market_cap_usd": 86321283072,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman",
-      "sector": "Space",
-      "market_cap_usd": 83467386880,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 84831625216,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "IFX GR",
       "name": "Infineon Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 81202980377,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 82681603726,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "EMR",
-      "name": "Emerson Electric",
-      "sector": "Robotics",
-      "market_cap_usd": 80051281920,
-      "date_fetched": "2026-04-23",
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "sector": "Space",
+      "market_cap_usd": 81684865024,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MPWR",
       "name": "Monolithic Power Systems",
       "sector": "Semiconductor",
-      "market_cap_usd": 78204207104,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 80163528704,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "sector": "Robotics",
+      "market_cap_usd": 79438700544,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "4063 JP",
       "name": "Shin-Etsu Chemical",
       "sector": "Materials",
-      "market_cap_usd": 77476847971,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash",
-      "sector": "Robotics",
-      "market_cap_usd": 77127114752,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 78867717606,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6503 JP",
       "name": "Mitsubishi Electric",
       "sector": "Robotics",
-      "market_cap_usd": 75356912512,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 77046468774,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "APD",
-      "name": "Air Products",
-      "sector": "Materials",
-      "market_cap_usd": 67609493504,
-      "date_fetched": "2026-04-23",
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "sector": "Robotics",
+      "market_cap_usd": 77031251968,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ASX",
       "name": "ASE Technology Holding ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 65296662528,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 70093701120,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "TEL",
-      "name": "TE Connectivity",
-      "sector": "Robotics",
-      "market_cap_usd": 63889440768,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 63308873728,
-      "date_fetched": "2026-04-23",
+      "ticker": "APD",
+      "name": "Air Products",
+      "sector": "Materials",
+      "market_cap_usd": 67188678656,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TER",
       "name": "Teradyne",
       "sector": "Cross-stack",
-      "market_cap_usd": 62778761216,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 65454362624,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies",
-      "sector": "Space",
-      "market_cap_usd": 61680435200,
-      "date_fetched": "2026-04-23",
+      "ticker": "COHR",
+      "name": "Coherent Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 63010775040,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "sector": "Robotics",
+      "market_cap_usd": 62991536128,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "NXPI",
       "name": "NXP Semiconductors",
       "sector": "Cross-stack",
-      "market_cap_usd": 60939407360,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 61667160064,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies",
+      "sector": "Space",
+      "market_cap_usd": 59306389504,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MRK GR",
       "name": "Merck KGaA",
       "sector": "Materials",
-      "market_cap_usd": 56945487400,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 57049303128,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "BAS GR",
       "name": "BASF",
       "sector": "Materials",
-      "market_cap_usd": 56067564520,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 56328036325,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CCJ",
       "name": "Cameco Corp",
       "sector": "Robotics",
-      "market_cap_usd": 53940760576,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 53200355328,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "012450 KS",
       "name": "Hanwha Aerospace",
       "sector": "Space",
-      "market_cap_usd": 49492364389,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 50984596603,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MCHP",
       "name": "Microchip Technology",
       "sector": "Cross-stack",
-      "market_cap_usd": 49048518656,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab USA",
-      "sector": "Space",
-      "market_cap_usd": 48902545408,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ROK",
-      "name": "Rockwell Automation",
-      "sector": "Robotics",
-      "market_cap_usd": 45975052288,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 48399159296,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CLS CN",
       "name": "Celestica",
       "sector": "Robotics",
-      "market_cap_usd": 45118349368,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 47189693162,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab USA",
+      "sector": "Space",
+      "market_cap_usd": 46058569728,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "sector": "Robotics",
+      "market_cap_usd": 45105942528,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "STMPA",
       "name": "STMicroelectronics NV",
       "sector": "Robotics",
-      "market_cap_usd": 44180664320,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 44857438208,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "BIDU",
       "name": "Baidu ADR",
       "sector": "Robotics",
-      "market_cap_usd": 41350905856,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ESLT",
-      "name": "Elbit Systems",
-      "sector": "Robotics",
-      "market_cap_usd": 39752216576,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KMTUY",
-      "name": "Komatsu ADR",
-      "sector": "Robotics",
-      "market_cap_usd": 39206612992,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor",
-      "sector": "Cross-stack",
-      "market_cap_usd": 38459547648,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SYM",
-      "name": "Symbotic",
-      "sector": "Robotics",
-      "market_cap_usd": 37648257024,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "HEI",
-      "name": "HEICO Corp",
-      "sector": "Space",
-      "market_cap_usd": 37494173696,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6723",
-      "name": "Renesas Electronics",
-      "sector": "Robotics",
-      "market_cap_usd": 37470048988,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6954 JP",
-      "name": "Fanuc Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 37045644307,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 43793924096,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "3037 TT",
       "name": "Unimicron",
       "sector": "Materials",
-      "market_cap_usd": 36336981369,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 39554497529,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "JBL",
-      "name": "Jabil",
+      "ticker": "KMTUY",
+      "name": "Komatsu ADR",
       "sector": "Robotics",
-      "market_cap_usd": 35715805184,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 38963318784,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "SATS",
-      "name": "EchoStar Corp",
-      "sector": "Space",
-      "market_cap_usd": 35104194560,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group",
+      "ticker": "ON",
+      "name": "ON Semiconductor",
       "sector": "Cross-stack",
-      "market_cap_usd": 34222839808,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 38703411200,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ESLT",
+      "name": "Elbit Systems",
+      "sector": "Robotics",
+      "market_cap_usd": 38335324160,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "HEI",
+      "name": "HEICO Corp",
+      "sector": "Space",
+      "market_cap_usd": 36838440960,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6954 JP",
+      "name": "Fanuc Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 36639251838,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ALAB",
       "name": "Astera Labs",
       "sector": "Semiconductor",
-      "market_cap_usd": 33624170496,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 36228452352,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "JBL",
+      "name": "Jabil",
+      "sector": "Robotics",
+      "market_cap_usd": 36044972032,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group",
+      "sector": "Cross-stack",
+      "market_cap_usd": 35975114752,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic",
+      "sector": "Robotics",
+      "market_cap_usd": 35769159680,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6723",
+      "name": "Renesas Electronics",
+      "sector": "Robotics",
+      "market_cap_usd": 35747047740,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SATS",
+      "name": "EchoStar Corp",
+      "sector": "Space",
+      "market_cap_usd": 33942915072,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6902 JP",
       "name": "Denso Corp",
       "sector": "Robotics",
-      "market_cap_usd": 31887244341,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "HEXAB SS",
-      "name": "Hexagon AB",
-      "sector": "Robotics",
-      "market_cap_usd": 30462830900,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 31560045100,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "UMC",
       "name": "United Microelectronics ADR",
       "sector": "Semiconductor",
-      "market_cap_usd": 30188457984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 30892855296,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TDY",
       "name": "Teledyne Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 30187290624,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 30045095936,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "FTI",
       "name": "TechnipFMC",
       "sector": "Robotics",
-      "market_cap_usd": 28973195264,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 29901105152,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "002050",
-      "name": "Zhejiang Sanhua Intelligent",
+      "ticker": "HEXAB SS",
+      "name": "Hexagon AB",
       "sector": "Robotics",
-      "market_cap_usd": 27841754899,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 29789157323,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2802 JP",
       "name": "Ajinomoto Co",
       "sector": "Materials",
-      "market_cap_usd": 27546863091,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 28621069968,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6273 JP",
       "name": "SMC Corp",
       "sector": "Robotics",
-      "market_cap_usd": 27489236095,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 27925224216,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "002050",
+      "name": "Zhejiang Sanhua Intelligent",
+      "sector": "Robotics",
+      "market_cap_usd": 27665994788,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "300124 C2",
       "name": "Shenzhen Inovance Technology",
       "sector": "Robotics",
-      "market_cap_usd": 25916095463,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "600111 C1",
-      "name": "Northern Rare Earth",
-      "sector": "Materials",
-      "market_cap_usd": 24977875951,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 25644886000,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SQM",
       "name": "Sociedad Quimica y Minera",
       "sector": "Materials",
-      "market_cap_usd": 24407750656,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 25361782784,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6920 JP",
       "name": "Lasertec Corp",
       "sector": "Robotics",
-      "market_cap_usd": 24357836627,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 25347908225,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "600111 C1",
+      "name": "Northern Rare Earth",
+      "sector": "Materials",
+      "market_cap_usd": 24984013057,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TSEM",
       "name": "Tower Semiconductor",
       "sector": "Semiconductor",
-      "market_cap_usd": 23948920832,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile",
-      "sector": "Space",
-      "market_cap_usd": 23045165056,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle Corp",
-      "sector": "Materials",
-      "market_cap_usd": 22768672768,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 23862059008,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ENTG",
       "name": "Entegris",
       "sector": "Semiconductor",
-      "market_cap_usd": 22735327232,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 23747782656,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6971 JP",
       "name": "Kyocera",
       "sector": "Materials",
-      "market_cap_usd": 22252222971,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 22406973589,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "MTSI",
-      "name": "MACOM Technology Solutions",
-      "sector": "Semiconductor",
-      "market_cap_usd": 21333403648,
-      "date_fetched": "2026-04-23",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "sector": "Space",
+      "market_cap_usd": 22357469184,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "CRS",
-      "name": "Carpenter Technology",
+      "ticker": "ALB",
+      "name": "Albemarle Corp",
       "sector": "Materials",
-      "market_cap_usd": 21255700480,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ATI",
-      "name": "ATI Inc",
-      "sector": "Materials",
-      "market_cap_usd": 21095038976,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "FSLR",
-      "name": "First Solar",
-      "sector": "Semiconductor",
-      "market_cap_usd": 21080764416,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies",
-      "sector": "Robotics",
-      "market_cap_usd": 20659402752,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "601100",
-      "name": "Jiangsu Hengli Hydraulic",
-      "sector": "Robotics",
-      "market_cap_usd": 19687506389,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 22201636864,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "4062 JP",
       "name": "Ibiden",
       "sector": "Materials",
-      "market_cap_usd": 19470150748,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 21977514978,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "RBC",
-      "name": "RBC Bearings",
-      "sector": "Robotics",
-      "market_cap_usd": 19015327744,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MKSI",
-      "name": "MKS Instruments",
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions",
       "sector": "Semiconductor",
-      "market_cap_usd": 18887774208,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 21576443904,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "CRS",
+      "name": "Carpenter Technology",
+      "sector": "Materials",
+      "market_cap_usd": 21296551936,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ATI",
+      "name": "ATI Inc",
+      "sector": "Materials",
+      "market_cap_usd": 21123792896,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar",
+      "sector": "Semiconductor",
+      "market_cap_usd": 20819658752,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 20443199488,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AMKR",
       "name": "Amkor Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 18067918848,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 19354056704,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "601100",
+      "name": "Jiangsu Hengli Hydraulic",
+      "sector": "Robotics",
+      "market_cap_usd": 18997938665,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "MKSI",
+      "name": "MKS Instruments",
+      "sector": "Semiconductor",
+      "market_cap_usd": 18916050944,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RBC",
+      "name": "RBC Bearings",
+      "sector": "Robotics",
+      "market_cap_usd": 18639693824,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6594",
       "name": "Nidec Corp",
       "sector": "Robotics",
-      "market_cap_usd": 17198128410,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 17734267521,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "NVMI",
       "name": "Nova Ltd",
       "sector": "Cross-stack",
-      "market_cap_usd": 16619632640,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor",
-      "sector": "Cross-stack",
-      "market_cap_usd": 16151960576,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "NDSN",
-      "name": "Nordson Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 15833058304,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "002008 C2",
-      "name": "Han's Laser Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 15627705894,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "TRMB",
-      "name": "Trimble",
-      "sector": "Robotics",
-      "market_cap_usd": 15559229440,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "XPEV",
-      "name": "XPeng ADR",
-      "sector": "Robotics",
-      "market_cap_usd": 15196436480,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "4091 JP",
-      "name": "Nippon Sanso",
-      "sector": "Materials",
-      "market_cap_usd": 15178263370,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "APTV",
-      "name": "Aptiv PLC",
-      "sector": "Robotics",
-      "market_cap_usd": 15171734528,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 17256564736,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "RMBS",
       "name": "Rambus",
       "sector": "Semiconductor",
-      "market_cap_usd": 14980073472,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 17132444672,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "601689",
-      "name": "Ningbo Tuopu Group",
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor",
+      "sector": "Cross-stack",
+      "market_cap_usd": 16807565312,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "XPEV",
+      "name": "XPeng ADR",
       "sector": "Robotics",
-      "market_cap_usd": 14759698378,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15922806784,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "SITM",
-      "name": "SiTime Corp",
-      "sector": "Semiconductor",
-      "market_cap_usd": 14680068096,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6383 JP",
-      "name": "Daifuku Co",
+      "ticker": "NDSN",
+      "name": "Nordson Corp",
       "sector": "Robotics",
-      "market_cap_usd": 14602390642,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15751056384,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "AEIS",
-      "name": "Advanced Energy Industries",
-      "sector": "Semiconductor",
-      "market_cap_usd": 14544420864,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ONTO",
-      "name": "Onto Innovation",
+      "ticker": "TRMB",
+      "name": "Trimble",
       "sector": "Robotics",
-      "market_cap_usd": 14540541952,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "LECO",
-      "name": "Lincoln Electric Holdings",
-      "sector": "Robotics",
-      "market_cap_usd": 14427969536,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "RRX",
-      "name": "Regal Rexnord",
-      "sector": "Robotics",
-      "market_cap_usd": 14209732608,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "9660 HK",
-      "name": "Horizon Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 13942569662,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15631175680,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TTMI",
       "name": "TTM Technologies",
       "sector": "Space",
-      "market_cap_usd": 13809065984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15473672192,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo",
+      "ticker": "4091 JP",
+      "name": "Nippon Sanso",
+      "sector": "Materials",
+      "market_cap_usd": 15457821650,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "002008 C2",
+      "name": "Han's Laser Technology",
       "sector": "Robotics",
-      "market_cap_usd": 13297910784,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15433355650,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "PL",
-      "name": "Planet Labs PBC",
-      "sector": "Space",
-      "market_cap_usd": 13254046720,
-      "date_fetched": "2026-04-23",
+      "ticker": "ONTO",
+      "name": "Onto Innovation",
+      "sector": "Robotics",
+      "market_cap_usd": 15314054144,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv PLC",
+      "sector": "Robotics",
+      "market_cap_usd": 15093878784,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SITM",
+      "name": "SiTime Corp",
+      "sector": "Semiconductor",
+      "market_cap_usd": 15053054976,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6383 JP",
+      "name": "Daifuku Co",
+      "sector": "Robotics",
+      "market_cap_usd": 14772278508,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "AEIS",
+      "name": "Advanced Energy Industries",
+      "sector": "Semiconductor",
+      "market_cap_usd": 14725812224,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "601689",
+      "name": "Ningbo Tuopu Group",
+      "sector": "Robotics",
+      "market_cap_usd": 14430690762,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "9660 HK",
+      "name": "Horizon Robotics",
+      "sector": "Robotics",
+      "market_cap_usd": 14274427518,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "LECO",
+      "name": "Lincoln Electric Holdings",
+      "sector": "Robotics",
+      "market_cap_usd": 14254177280,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RRX",
+      "name": "Regal Rexnord",
+      "sector": "Robotics",
+      "market_cap_usd": 14128523264,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "5706 JP",
       "name": "Mitsui Mining",
       "sector": "Materials",
-      "market_cap_usd": 13194365343,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 13881953296,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "3407 JP",
       "name": "Asahi Kasei",
       "sector": "Materials",
-      "market_cap_usd": 12965520985,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 12999724401,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "GMED",
       "name": "Globus Medical",
       "sector": "Robotics",
-      "market_cap_usd": 12765182976,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 12831458304,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo",
+      "sector": "Robotics",
+      "market_cap_usd": 12348308480,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "300757 C2",
       "name": "Robotechnik Intelligent",
       "sector": "Robotics",
-      "market_cap_usd": 12668034977,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 12295364494,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "KTOS",
-      "name": "Kratos Defense & Security",
+      "ticker": "PL",
+      "name": "Planet Labs PBC",
       "sector": "Space",
-      "market_cap_usd": 12280969216,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 12267521024,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "FORM",
       "name": "FormFactor",
       "sector": "Semiconductor",
-      "market_cap_usd": 11566099456,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 12089175040,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KTOS",
+      "name": "Kratos Defense & Security",
+      "sector": "Space",
+      "market_cap_usd": 11482481664,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "G1A GR",
       "name": "GEA Group",
       "sector": "Robotics",
-      "market_cap_usd": 11424442775,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MP",
-      "name": "MP Materials",
-      "sector": "Robotics",
-      "market_cap_usd": 11249903616,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 11479448439,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ZBRA",
       "name": "Zebra Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 11160121344,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 11201442816,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "MP",
+      "name": "MP Materials",
+      "sector": "Robotics",
+      "market_cap_usd": 10789744640,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "GSAT",
       "name": "Globalstar Inc",
       "sector": "Space",
-      "market_cap_usd": 10437581824,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "AVAV",
-      "name": "AeroVironment",
-      "sector": "Robotics",
-      "market_cap_usd": 10217670656,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "3402 JP",
-      "name": "Toray Industries",
-      "sector": "Materials",
-      "market_cap_usd": 10204091036,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KRMN",
-      "name": "Karman Holdings",
-      "sector": "Space",
-      "market_cap_usd": 10151514112,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 10504348672,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SMTC",
       "name": "Semtech Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 9808681984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 10223041536,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "2395 TT",
-      "name": "Advantech Co",
+      "ticker": "3402 JP",
+      "name": "Toray Industries",
+      "sector": "Materials",
+      "market_cap_usd": 10209273361,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment",
       "sector": "Robotics",
-      "market_cap_usd": 9785018295,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 9932763136,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MOG/A",
       "name": "Moog Inc Class A",
       "sector": "Robotics",
-      "market_cap_usd": 9708021760,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 9927244800,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "2395 TT",
+      "name": "Advantech Co",
+      "sector": "Robotics",
+      "market_cap_usd": 9746679035,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SWKS",
       "name": "Skyworks Solutions",
       "sector": "Semiconductor",
-      "market_cap_usd": 9257487360,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 9573340160,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CAMT",
       "name": "Camtek Ltd",
       "sector": "Semiconductor",
-      "market_cap_usd": 9118406656,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 9449367552,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KRMN",
+      "name": "Karman Holdings",
+      "sector": "Space",
+      "market_cap_usd": 9305996288,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CGNX",
       "name": "Cognex",
       "sector": "Robotics",
-      "market_cap_usd": 9035449344,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 9062171648,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CRUS",
       "name": "Cirrus Logic",
       "sector": "Semiconductor",
-      "market_cap_usd": 8814586880,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8883956736,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "1590 TT",
       "name": "Airtac International",
       "sector": "Robotics",
-      "market_cap_usd": 8749406137,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "VSAT",
-      "name": "Viasat Inc",
-      "sector": "Space",
-      "market_cap_usd": 8500329984,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8649473585,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "KCR FH",
       "name": "Konecranes Oyj",
       "sector": "Robotics",
-      "market_cap_usd": 8450138784,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8532625428,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Space",
+      "market_cap_usd": 8420189184,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6841 JP",
       "name": "Yokogawa Electric",
       "sector": "Robotics",
-      "market_cap_usd": 8416896614,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8412366133,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6506 JP",
       "name": "Yaskawa Electric",
       "sector": "Robotics",
-      "market_cap_usd": 8365659850,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8383354462,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ESE",
       "name": "ESCO Technologies",
       "sector": "Space",
-      "market_cap_usd": 8259983360,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8287704064,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ALGM",
       "name": "Allegro MicroSystems",
       "sector": "Semiconductor",
-      "market_cap_usd": 8080534528,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ANDR AV",
-      "name": "Andritz AG",
-      "sector": "Robotics",
-      "market_cap_usd": 8018603289,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8176886272,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "QRVO",
       "name": "Qorvo",
       "sector": "Semiconductor",
-      "market_cap_usd": 7847536128,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 8139558912,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ANDR AV",
+      "name": "Andritz AG",
+      "sector": "Robotics",
+      "market_cap_usd": 7883111271,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "4188 JP",
       "name": "Mitsubishi Chemical",
       "sector": "Materials",
-      "market_cap_usd": 7798243963,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 7771065646,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MBLY",
       "name": "Mobileye Global",
       "sector": "Robotics",
-      "market_cap_usd": 7320018944,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KGX GR",
-      "name": "Kion Group",
-      "sector": "Robotics",
-      "market_cap_usd": 7099589942,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 7765950976,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SLAB",
       "name": "Silicon Laboratories",
       "sector": "Semiconductor",
-      "market_cap_usd": 7072384512,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "HXL",
-      "name": "Hexcel Corp",
-      "sector": "Space",
-      "market_cap_usd": 6928486400,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "JBTM",
-      "name": "JBT Marel Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 6813358592,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "9880 HK",
-      "name": "UBTECH Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 6735843006,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 7104693760,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "4186 JP",
       "name": "Tokyo Ohka Kogyo",
       "sector": "Materials",
-      "market_cap_usd": 6675437989,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 6823274423,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "JBTM",
+      "name": "JBT Marel Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 6775362560,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "9880 HK",
+      "name": "UBTECH Robotics",
+      "sector": "Robotics",
+      "market_cap_usd": 6746542893,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "HXL",
+      "name": "Hexcel Corp",
+      "sector": "Space",
+      "market_cap_usd": 6742435840,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KGX GR",
+      "name": "Kion Group",
+      "sector": "Robotics",
+      "market_cap_usd": 6670019469,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6680 HK",
       "name": "China Rare Earth Resources",
       "sector": "Materials",
-      "market_cap_usd": 6589363489,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 6356705897,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6645 JP",
       "name": "Omron Corp",
       "sector": "Robotics",
-      "market_cap_usd": 6319958114,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "FLY",
-      "name": "Firefly Aerospace",
-      "sector": "Space",
-      "market_cap_usd": 6170493440,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 6285174438,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "ST",
       "name": "Sensata Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 6103169536,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 6078383104,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "WCH GR",
       "name": "Wacker Chemie",
       "sector": "Materials",
-      "market_cap_usd": 5908381121,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing",
-      "sector": "Semiconductor",
-      "market_cap_usd": 5600058880,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 5796588160,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "PSN",
       "name": "Parsons Corp",
       "sector": "Space",
-      "market_cap_usd": 5546405888,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 5719764480,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "FLY",
+      "name": "Firefly Aerospace",
+      "sector": "Space",
+      "market_cap_usd": 5624531456,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "sector": "Semiconductor",
+      "market_cap_usd": 5517021184,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "688017",
       "name": "Leader Harmonious Drive Systems",
       "sector": "Robotics",
-      "market_cap_usd": 5473178798,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "IPGP",
-      "name": "IPG Photonics",
-      "sector": "Robotics",
-      "market_cap_usd": 5244303872,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "4005 JP",
-      "name": "Sumitomo Chemical",
-      "sector": "Materials",
-      "market_cap_usd": 5187948842,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
-      "sector": "Robotics",
-      "market_cap_usd": 5084190208,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6113 JP",
-      "name": "Amada Co",
-      "sector": "Robotics",
-      "market_cap_usd": 4871855157,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "NOVT",
-      "name": "Novanta",
-      "sector": "Robotics",
-      "market_cap_usd": 4746654720,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "3436 JP",
-      "name": "SUMCO Corp",
-      "sector": "Materials",
-      "market_cap_usd": 4736526018,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "002472",
-      "name": "Zhejiang Shuanghuan Driveline",
-      "sector": "Robotics",
-      "market_cap_usd": 4733635533,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KRN GR",
-      "name": "Krones AG",
-      "sector": "Robotics",
-      "market_cap_usd": 4690029419,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "688297 C1",
-      "name": "AVIC Chengdu UAS",
-      "sector": "Robotics",
-      "market_cap_usd": 4673723095,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "DIOD",
-      "name": "Diodes Inc",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4619059200,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "OLED",
-      "name": "Universal Display Corp",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4605270016,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MDA CN",
-      "name": "MDA Space",
-      "sector": "Space",
-      "market_cap_usd": 4527804997,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "688169 C1",
-      "name": "Beijing Roborock Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 4484773910,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6845 JP",
-      "name": "Azbil Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 4472496806,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SOI FP",
-      "name": "Soitec",
-      "sector": "Materials",
-      "market_cap_usd": 4447505408,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KLIC",
-      "name": "Kulicke & Soffa Industries",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4430479360,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines",
-      "sector": "Space",
-      "market_cap_usd": 4392307712,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "2252 HK",
-      "name": "Shanghai MicroPort MedBot",
-      "sector": "Robotics",
-      "market_cap_usd": 4371717667,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "AUTO NO",
-      "name": "AutoStore Holdings",
-      "sector": "Robotics",
-      "market_cap_usd": 4356039786,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "IRDM",
-      "name": "Iridium Communications",
-      "sector": "Space",
-      "market_cap_usd": 4327036928,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "NVTS",
-      "name": "Navitas Semiconductor",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4271974144,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "LASR",
-      "name": "nLIGHT",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4139715840,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "010060 KS",
-      "name": "OCI Holdings",
-      "sector": "Materials",
-      "market_cap_usd": 4058390209,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "POWI",
-      "name": "Power Integrations",
-      "sector": "Semiconductor",
-      "market_cap_usd": 4045779968,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "454910 KS",
-      "name": "Doosan Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 4030108322,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ETL FP",
-      "name": "Eutelsat Communications",
-      "sector": "Space",
-      "market_cap_usd": 3979228004,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KAI",
-      "name": "Kadant",
-      "sector": "Robotics",
-      "market_cap_usd": 3856185344,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "003021",
-      "name": "Shenzhen Zhaowei Machinery",
-      "sector": "Robotics",
-      "market_cap_usd": 3822468942,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6481 JP",
-      "name": "THK Co",
-      "sector": "Robotics",
-      "market_cap_usd": 3821854007,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MTRN",
-      "name": "Materion Corp",
-      "sector": "Materials",
-      "market_cap_usd": 3811845120,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "PI",
-      "name": "Impinj",
-      "sector": "Semiconductor",
-      "market_cap_usd": 3655917824,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KALMAR FH",
-      "name": "Kalmar Oyj",
-      "sector": "Robotics",
-      "market_cap_usd": 3525092991,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "HIAB FH",
-      "name": "Hiab Oyj",
-      "sector": "Robotics",
-      "market_cap_usd": 3417867147,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "300024 C2",
-      "name": "Siasun Robot & Automation",
-      "sector": "Robotics",
-      "market_cap_usd": 3390207582,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "2049",
-      "name": "Hiwin Technologies",
-      "sector": "Robotics",
-      "market_cap_usd": 3387074294,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6268 JP",
-      "name": "Nabtesco Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 3384167803,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SESG FP",
-      "name": "SES SA",
-      "sector": "Space",
-      "market_cap_usd": 3322798534,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SYNA",
-      "name": "Synaptics",
-      "sector": "Semiconductor",
-      "market_cap_usd": 3312206592,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "ATS CN",
-      "name": "ATS Corp",
-      "sector": "Robotics",
-      "market_cap_usd": 3301556051,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "HSAI",
-      "name": "Hesai Group",
-      "sector": "Robotics",
-      "market_cap_usd": 3299986432,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "MELE",
-      "name": "Melexis NV",
-      "sector": "Robotics",
-      "market_cap_usd": 3159842493,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6134 JP",
-      "name": "Fuji Corporation",
-      "sector": "Robotics",
-      "market_cap_usd": 3145486131,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "6600 HK",
-      "name": "OneRobotics Shenzhen",
-      "sector": "Robotics",
-      "market_cap_usd": 3116118846,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 5505214159,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MXL",
       "name": "MaxLinear",
       "sector": "Semiconductor",
-      "market_cap_usd": 3066375680,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 5400402432,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "IPGP",
+      "name": "IPG Photonics",
+      "sector": "Robotics",
+      "market_cap_usd": 5286323200,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "4005 JP",
+      "name": "Sumitomo Chemical",
+      "sector": "Materials",
+      "market_cap_usd": 5203014518,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
+      "sector": "Robotics",
+      "market_cap_usd": 5089013760,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6113 JP",
+      "name": "Amada Co",
+      "sector": "Robotics",
+      "market_cap_usd": 4928908234,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "3436 JP",
+      "name": "SUMCO Corp",
+      "sector": "Materials",
+      "market_cap_usd": 4920859217,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "010060 KS",
+      "name": "OCI Holdings",
+      "sector": "Materials",
+      "market_cap_usd": 4856243232,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "DIOD",
+      "name": "Diodes Inc",
+      "sector": "Semiconductor",
+      "market_cap_usd": 4803085312,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "NOVT",
+      "name": "Novanta",
+      "sector": "Robotics",
+      "market_cap_usd": 4785193472,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SOI FP",
+      "name": "Soitec",
+      "sector": "Materials",
+      "market_cap_usd": 4714800526,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "OLED",
+      "name": "Universal Display Corp",
+      "sector": "Semiconductor",
+      "market_cap_usd": 4664142848,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KRN GR",
+      "name": "Krones AG",
+      "sector": "Robotics",
+      "market_cap_usd": 4638194746,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KLIC",
+      "name": "Kulicke & Soffa Industries",
+      "sector": "Semiconductor",
+      "market_cap_usd": 4590093824,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "002472",
+      "name": "Zhejiang Shuanghuan Driveline",
+      "sector": "Robotics",
+      "market_cap_usd": 4552772820,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "688297 C1",
+      "name": "AVIC Chengdu UAS",
+      "sector": "Robotics",
+      "market_cap_usd": 4536603406,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6845 JP",
+      "name": "Azbil Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 4454172924,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "MDA CN",
+      "name": "MDA Space",
+      "sector": "Space",
+      "market_cap_usd": 4434253694,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "688169 C1",
+      "name": "Beijing Roborock Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 4375551940,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "AUTO NO",
+      "name": "AutoStore Holdings",
+      "sector": "Robotics",
+      "market_cap_usd": 4265401540,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "2252 HK",
+      "name": "Shanghai MicroPort MedBot",
+      "sector": "Robotics",
+      "market_cap_usd": 4265013355,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "LASR",
+      "name": "nLIGHT",
+      "sector": "Semiconductor",
+      "market_cap_usd": 4228424192,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "454910 KS",
+      "name": "Doosan Robotics",
+      "sector": "Robotics",
+      "market_cap_usd": 4131597743,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "IRDM",
+      "name": "Iridium Communications",
+      "sector": "Space",
+      "market_cap_usd": 4119152896,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "POWI",
+      "name": "Power Integrations",
+      "sector": "Semiconductor",
+      "market_cap_usd": 4096470784,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "sector": "Space",
+      "market_cap_usd": 4068781568,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor",
+      "sector": "Semiconductor",
+      "market_cap_usd": 3988099072,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "MTRN",
+      "name": "Materion Corp",
+      "sector": "Materials",
+      "market_cap_usd": 3866760704,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ETL FP",
+      "name": "Eutelsat Communications",
+      "sector": "Space",
+      "market_cap_usd": 3857844715,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6481 JP",
+      "name": "THK Co",
+      "sector": "Robotics",
+      "market_cap_usd": 3832791996,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "003021",
+      "name": "Shenzhen Zhaowei Machinery",
+      "sector": "Robotics",
+      "market_cap_usd": 3768409260,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "PI",
+      "name": "Impinj",
+      "sector": "Semiconductor",
+      "market_cap_usd": 3746008320,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "HIAB FH",
+      "name": "Hiab Oyj",
+      "sector": "Robotics",
+      "market_cap_usd": 3743413493,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KAI",
+      "name": "Kadant",
+      "sector": "Robotics",
+      "market_cap_usd": 3693001984,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SYNA",
+      "name": "Synaptics",
+      "sector": "Semiconductor",
+      "market_cap_usd": 3659608064,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "KALMAR FH",
+      "name": "Kalmar Oyj",
+      "sector": "Robotics",
+      "market_cap_usd": 3549802383,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "HSAI",
+      "name": "Hesai Group",
+      "sector": "Robotics",
+      "market_cap_usd": 3510556928,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6268 JP",
+      "name": "Nabtesco Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 3447880000,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "2049",
+      "name": "Hiwin Technologies",
+      "sector": "Robotics",
+      "market_cap_usd": 3302000993,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SESG FP",
+      "name": "SES SA",
+      "sector": "Space",
+      "market_cap_usd": 3293724631,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "300024 C2",
+      "name": "Siasun Robot & Automation",
+      "sector": "Robotics",
+      "market_cap_usd": 3289098344,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "MELE",
+      "name": "Melexis NV",
+      "sector": "Robotics",
+      "market_cap_usd": 3241416337,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "6134 JP",
+      "name": "Fuji Corporation",
+      "sector": "Robotics",
+      "market_cap_usd": 3240481145,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "ATS CN",
+      "name": "ATS Corp",
+      "sector": "Robotics",
+      "market_cap_usd": 3204024520,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "PLAB",
       "name": "Photronics",
       "sector": "Semiconductor",
-      "market_cap_usd": 2976623360,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 3082173440,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "002747 C2",
-      "name": "Estun Automation",
+      "ticker": "6600 HK",
+      "name": "OneRobotics Shenzhen",
       "sector": "Robotics",
-      "market_cap_usd": 2959190535,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KARN SW",
-      "name": "Kardex Holding",
-      "sector": "Robotics",
-      "market_cap_usd": 2747660007,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 3034585434,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AMBA",
       "name": "Ambarella",
       "sector": "Cross-stack",
-      "market_cap_usd": 2686009856,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2928162560,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "6324",
-      "name": "Harmonic Drive Systems",
+      "ticker": "002747 C2",
+      "name": "Estun Automation",
       "sector": "Robotics",
-      "market_cap_usd": 2531149923,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2919507962,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "300100",
-      "name": "Shuanglin Co",
+      "ticker": "KARN SW",
+      "name": "Kardex Holding",
       "sector": "Robotics",
-      "market_cap_usd": 2512350283,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2719575701,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "WAF GR",
       "name": "Siltronic",
       "sector": "Materials",
-      "market_cap_usd": 2486265362,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2601430436,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "EXA FP",
-      "name": "Exail Technologies",
+      "ticker": "6324",
+      "name": "Harmonic Drive Systems",
       "sector": "Robotics",
-      "market_cap_usd": 2485745732,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2492435445,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "300100",
+      "name": "Shuanglin Co",
+      "sector": "Robotics",
+      "market_cap_usd": 2489465417,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "TSAT",
       "name": "Telesat Corp",
       "sector": "Space",
-      "market_cap_usd": 2467435776,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "603009",
-      "name": "Shanghai Beite Technology",
-      "sector": "Robotics",
-      "market_cap_usd": 2446119667,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2432747776,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "NN",
       "name": "NextNav",
       "sector": "Space",
-      "market_cap_usd": 2437625088,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2409059072,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "603662",
-      "name": "Keli Sensing Technology",
+      "ticker": "EXA FP",
+      "name": "Exail Technologies",
       "sector": "Robotics",
-      "market_cap_usd": 2305310407,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2378189006,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "603009",
+      "name": "Shanghai Beite Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 2355921161,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6141 JP",
       "name": "DMG Mori Co",
       "sector": "Robotics",
-      "market_cap_usd": 2297806919,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2342016632,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "603662",
+      "name": "Keli Sensing Technology",
+      "sector": "Robotics",
+      "market_cap_usd": 2292933042,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "JEN GR",
       "name": "Jenoptik AG",
       "sector": "Robotics",
-      "market_cap_usd": 2270790870,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2264556884,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "DCO",
       "name": "Ducommun",
       "sector": "Space",
-      "market_cap_usd": 2145531392,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "TECN SW",
-      "name": "Tecan Group",
-      "sector": "Robotics",
-      "market_cap_usd": 2057424437,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2089330304,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2498 HK",
       "name": "RoboSense Technology",
       "sector": "Robotics",
-      "market_cap_usd": 2045023855,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2062452336,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6622 JP",
       "name": "Daihen Corp",
       "sector": "Robotics",
-      "market_cap_usd": 2028056988,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2059409912,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "RDW",
-      "name": "Redwire Corp",
-      "sector": "Space",
-      "market_cap_usd": 1997143936,
-      "date_fetched": "2026-04-23",
+      "ticker": "TECN SW",
+      "name": "Tecan Group",
+      "sector": "Robotics",
+      "market_cap_usd": 2004083087,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "002979",
       "name": "China Leadshine Technology",
       "sector": "Robotics",
-      "market_cap_usd": 1926128866,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1948715701,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire Corp",
+      "sector": "Space",
+      "market_cap_usd": 1925533312,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "3401 JP",
       "name": "Teijin Ltd",
       "sector": "Materials",
-      "market_cap_usd": 1855945437,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1867496439,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2432 HK",
       "name": "Shenzhen Dobot Corp",
       "sector": "Robotics",
-      "market_cap_usd": 1800895118,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "VOYG",
-      "name": "Voyager Technologies",
-      "sector": "Space",
-      "market_cap_usd": 1781549952,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "INRN SW",
-      "name": "Interroll Holding",
-      "sector": "Robotics",
-      "market_cap_usd": 1773349414,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "DUE GR",
-      "name": "Duerr AG",
-      "sector": "Robotics",
-      "market_cap_usd": 1771508441,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "4043 JP",
-      "name": "Tokuyama Corp",
-      "sector": "Materials",
-      "market_cap_usd": 1687598694,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1802566364,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "OUST",
       "name": "Ouster",
       "sector": "Robotics",
-      "market_cap_usd": 1658653440,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1772328576,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "INRN SW",
+      "name": "Interroll Holding",
+      "sector": "Robotics",
+      "market_cap_usd": 1760412434,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "DUE GR",
+      "name": "Duerr AG",
+      "sector": "Robotics",
+      "market_cap_usd": 1736543818,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "4043 JP",
+      "name": "Tokuyama Corp",
+      "sector": "Materials",
+      "market_cap_usd": 1708203922,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "VOYG",
+      "name": "Voyager Technologies",
+      "sector": "Space",
+      "market_cap_usd": 1696376192,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SKYT",
       "name": "SkyWater Technology",
       "sector": "Semiconductor",
-      "market_cap_usd": 1625070464,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "KDK",
-      "name": "Kodiak AI",
-      "sector": "Robotics",
-      "market_cap_usd": 1565591808,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1632850688,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "PENG",
       "name": "Penguin Solutions",
       "sector": "Semiconductor",
-      "market_cap_usd": 1451185920,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1613071232,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "4208 JP",
-      "name": "UBE Corp",
-      "sector": "Materials",
-      "market_cap_usd": 1428808123,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "BKSY",
-      "name": "BlackSky Technology",
-      "sector": "Space",
-      "market_cap_usd": 1426470784,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "PRCT",
-      "name": "PROCEPT BioRobotics",
+      "ticker": "KDK",
+      "name": "Kodiak AI",
       "sector": "Robotics",
-      "market_cap_usd": 1366898304,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "5384 JP",
-      "name": "Fujimi Inc",
-      "sector": "Materials",
-      "market_cap_usd": 1361953208,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1542672000,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "WOLF",
       "name": "Wolfspeed",
       "sector": "Materials",
-      "market_cap_usd": 1331729536,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1509615744,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "GILT",
-      "name": "Gilat Satellite Networks",
-      "sector": "Space",
-      "market_cap_usd": 1331307392,
-      "date_fetched": "2026-04-23",
+      "ticker": "4208 JP",
+      "name": "UBE Corp",
+      "sector": "Materials",
+      "market_cap_usd": 1433340511,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "688165 C1",
-      "name": "EFORT Intelligent Robot",
+      "ticker": "5384 JP",
+      "name": "Fujimi Inc",
+      "sector": "Materials",
+      "market_cap_usd": 1391637417,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "PRCT",
+      "name": "PROCEPT BioRobotics",
       "sector": "Robotics",
-      "market_cap_usd": 1281229573,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "186A JP",
-      "name": "Astroscale Holdings",
-      "sector": "Space",
-      "market_cap_usd": 1196796349,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1386313472,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "AOSL",
       "name": "Alpha + Omega Semiconductor",
       "sector": "Semiconductor",
-      "market_cap_usd": 1186861696,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1322868608,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "GILT",
+      "name": "Gilat Satellite Networks",
+      "sector": "Space",
+      "market_cap_usd": 1314703872,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "688165 C1",
+      "name": "EFORT Intelligent Robot",
+      "sector": "Robotics",
+      "market_cap_usd": 1266397093,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "BKSY",
+      "name": "BlackSky Technology",
+      "sector": "Space",
+      "market_cap_usd": 1255398400,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "186A JP",
+      "name": "Astroscale Holdings",
+      "sector": "Space",
+      "market_cap_usd": 1126344064,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "290A JP",
       "name": "Synspective",
       "sector": "Space",
-      "market_cap_usd": 1133809243,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SATL",
-      "name": "Satellogic",
-      "sector": "Space",
-      "market_cap_usd": 974229312,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1100837103,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "464A JP",
       "name": "QPS Holdings",
       "sector": "Space",
-      "market_cap_usd": 900710202,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 902091384,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "EH",
-      "name": "EHang Holdings ADR",
-      "sector": "Robotics",
-      "market_cap_usd": 746482944,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "INDI",
-      "name": "Indie Semiconductor",
-      "sector": "Semiconductor",
-      "market_cap_usd": 722659200,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "OVZON SS",
-      "name": "Ovzon AB",
+      "ticker": "SATL",
+      "name": "Satellogic",
       "sector": "Space",
-      "market_cap_usd": 709112619,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "SERV",
-      "name": "Serve Robotics",
-      "sector": "Robotics",
-      "market_cap_usd": 705432448,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 882671808,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "CEVA",
       "name": "CEVA Inc",
       "sector": "Semiconductor",
-      "market_cap_usd": 686454784,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 804299968,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "SPIR",
-      "name": "Spire Global",
-      "sector": "Space",
-      "market_cap_usd": 675361216,
-      "date_fetched": "2026-04-23",
+      "ticker": "INDI",
+      "name": "Indie Semiconductor",
+      "sector": "Semiconductor",
+      "market_cap_usd": 771117376,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
-      "ticker": "BSL GR",
-      "name": "Basler AG",
+      "ticker": "EH",
+      "name": "EHang Holdings ADR",
       "sector": "Robotics",
-      "market_cap_usd": 641908465,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 734965376,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "OVZON SS",
+      "name": "Ovzon AB",
+      "sector": "Space",
+      "market_cap_usd": 703956835,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SERV",
+      "name": "Serve Robotics",
+      "sector": "Robotics",
+      "market_cap_usd": 697863424,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SGL GR",
       "name": "SGL Carbon",
       "sector": "Materials",
-      "market_cap_usd": 631006845,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 658812318,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "KOPN",
       "name": "Kopin Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 628423168,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 658687232,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6914 JP",
       "name": "Optex Group",
       "sector": "Robotics",
-      "market_cap_usd": 621181639,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 639607054,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "BSL GR",
+      "name": "Basler AG",
+      "sector": "Robotics",
+      "market_cap_usd": 638893068,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "SPIR",
+      "name": "Spire Global",
+      "sector": "Space",
+      "market_cap_usd": 636126400,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6104 JP",
       "name": "Shibaura Machine Co",
       "sector": "Robotics",
-      "market_cap_usd": 618195554,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 618139306,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MG",
       "name": "Magna International",
       "sector": "Robotics",
-      "market_cap_usd": 599744448,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "GOGO",
-      "name": "Gogo Inc",
-      "sector": "Space",
-      "market_cap_usd": 586935232,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 601653440,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6258 JP",
       "name": "Hirata Corp",
       "sector": "Robotics",
-      "market_cap_usd": 578184478,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 580480977,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "RR",
       "name": "Richtech Robotics",
       "sector": "Robotics",
-      "market_cap_usd": 572405696,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 550046080,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "GOGO",
+      "name": "Gogo Inc",
+      "sector": "Space",
+      "market_cap_usd": 546363648,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2431 HK",
       "name": "MiniEye Technology",
       "sector": "Robotics",
-      "market_cap_usd": 528667115,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 517970531,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "VIRTUAL",
       "name": "Virtuals Protocol",
       "sector": "Token",
-      "market_cap_usd": 459569088.41807806,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 460899646.2328847,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "DVLT",
       "name": "DataVault AI",
       "sector": "Semiconductor",
-      "market_cap_usd": 453728096,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 448260768,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "9348 JP",
       "name": "ispace Inc",
       "sector": "Space",
-      "market_cap_usd": 441163807,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 436678418,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SRTA",
       "name": "Strata Critical Medical",
       "sector": "Robotics",
-      "market_cap_usd": 411486240,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 425317696,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "NVEC",
       "name": "NVE Corp",
       "sector": "Semiconductor",
-      "market_cap_usd": 378798528,
-      "date_fetched": "2026-04-23",
-      "source": "Yahoo Finance"
-    },
-    {
-      "ticker": "GOMX SS",
-      "name": "GomSpace",
-      "sector": "Space",
-      "market_cap_usd": 377164143,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 397470016,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "6153 TT",
       "name": "Coretronic",
       "sector": "Materials",
-      "market_cap_usd": 374103511,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 375269353,
+      "date_fetched": "2026-04-24",
+      "source": "Yahoo Finance"
+    },
+    {
+      "ticker": "GOMX SS",
+      "name": "GomSpace",
+      "sector": "Space",
+      "market_cap_usd": 341003040,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SIDU",
       "name": "Sidus Space",
       "sector": "Space",
-      "market_cap_usd": 291721152,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 268918176,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "2121 HK",
       "name": "AInnovation Technology",
       "sector": "Robotics",
-      "market_cap_usd": 276613432,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 268208577,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "SPCE",
       "name": "Virgin Galactic",
       "sector": "Space",
-      "market_cap_usd": 255867904,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 243593792,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "4112 JP",
       "name": "Daicel Corp",
       "sector": "Materials",
-      "market_cap_usd": 223896129,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 227707595,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "1274 HK",
       "name": "iMotion Automotive",
       "sector": "Robotics",
-      "market_cap_usd": 126902905,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 126208462,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "IMI LN",
       "name": "IMI PLC",
       "sector": "Robotics",
-      "market_cap_usd": 92778559,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 93854772,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "GEOD",
       "name": "Geodnet",
       "sector": "Token",
-      "market_cap_usd": 53268128.40791944,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 56831836.753832534,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ROBO",
       "name": "Fabric Protocol",
       "sector": "Token",
-      "market_cap_usd": 46360105.70018505,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 54882014.74533083,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "IOTX",
       "name": "IoTeX",
       "sector": "Token",
-      "market_cap_usd": 45446477.10098688,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 45706232.738744974,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "RSW LN",
       "name": "Renishaw PLC",
       "sector": "Robotics",
-      "market_cap_usd": 44670233,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 43818460,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "MNTS",
       "name": "Momentus",
       "sector": "Space",
-      "market_cap_usd": 34855232,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 34978832,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "PEAQ",
       "name": "peaq",
       "sector": "Token",
-      "market_cap_usd": 32291680.21863787,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 32689822.04623067,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "AUKI",
       "name": "Auki",
       "sector": "Token",
-      "market_cap_usd": 25114667.017430697,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 24436717.398668673,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "RPI LN",
       "name": "Raspberry Pi Holdings",
       "sector": "Robotics",
-      "market_cap_usd": 15675861,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 15592871,
+      "date_fetched": "2026-04-24",
       "source": "Yahoo Finance"
     },
     {
       "ticker": "OVR",
       "name": "Ovr",
       "sector": "Token",
-      "market_cap_usd": 3785128.649448162,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 3802314.550408713,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "NATIX",
       "name": "NATIX Network",
       "sector": "Token",
-      "market_cap_usd": 3211582.2975416416,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 3157994.513820075,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "VADER",
       "name": "Vader",
       "sector": "Token",
-      "market_cap_usd": 2536840.2134915823,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2494001.8916536462,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "EMDR",
       "name": "Modulr",
       "sector": "Token",
-      "market_cap_usd": 2387936.0205519455,
-      "date_fetched": "2026-04-23",
-      "source": "CoinGecko"
-    },
-    {
-      "ticker": "ONO",
-      "name": "Onocoy Token",
-      "sector": "Token",
-      "market_cap_usd": 1756475.1393750662,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 2426361.396050414,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "CODEC",
       "name": "Codec Flow",
       "sector": "Token",
-      "market_cap_usd": 1667536.893427811,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1788682.652323413,
+      "date_fetched": "2026-04-24",
+      "source": "CoinGecko"
+    },
+    {
+      "ticker": "ONO",
+      "name": "Onocoy Token",
+      "sector": "Token",
+      "market_cap_usd": 1771494.8884005512,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "OPUS",
       "name": "Opus Genesis",
       "sector": "Token",
-      "market_cap_usd": 1629282.4057023986,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1690988.8385683936,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "RICE",
       "name": "Rice AI",
       "sector": "Token",
-      "market_cap_usd": 1623581.5357595596,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 1687261.504242566,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "BREW",
       "name": "Homebrew Robotics Club",
       "sector": "Token",
-      "market_cap_usd": 1096603.4964778377,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 966028.419421976,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "SLC",
       "name": "Silencio",
       "sector": "Token",
-      "market_cap_usd": 917434.8684317606,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 926084.8243066136,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ROKO",
       "name": "Roko Network",
       "sector": "Token",
-      "market_cap_usd": 754323.7785936655,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 734876.8281916233,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "$CPT",
       "name": "Empulser Enterprises",
       "sector": "Token",
-      "market_cap_usd": 645117.0390070878,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 617301.7851886892,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "JOJO",
       "name": "JojoWorld",
       "sector": "Token",
-      "market_cap_usd": 498486.86183187686,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 454072.1206599625,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ROVR",
       "name": "ROVR Network",
       "sector": "Token",
-      "market_cap_usd": 418503.6625770853,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 386703.17770901613,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "SHOW",
       "name": "VitaNova",
       "sector": "Token",
-      "market_cap_usd": 145492.8620867869,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 147438.0088095787,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ROBOT",
       "name": "RoboStack",
       "sector": "Token",
-      "market_cap_usd": 141593.52474451563,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 142884.81434766864,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "XRT",
       "name": "Robonomics Network",
       "sector": "Token",
-      "market_cap_usd": 122442.73986157824,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 122682.42193314072,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ROBA",
       "name": "ROBA",
       "sector": "Token",
-      "market_cap_usd": 118457.1715555096,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 118532.0537128,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "RBR",
       "name": "Robora",
       "sector": "Token",
-      "market_cap_usd": 71779.68609694931,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 69024.61973359848,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "SMPL",
       "name": "Simple AI",
       "sector": "Token",
-      "market_cap_usd": 67918.14088497678,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 65979.98865479886,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "FORMA",
       "name": "Forma Robotics",
       "sector": "Token",
-      "market_cap_usd": 42690.68915593293,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 41928.70466903734,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "OP",
       "name": "One Path",
       "sector": "Token",
-      "market_cap_usd": 40988.86528402965,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 41534.73869505739,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2511,15 +2511,15 @@
       "name": "Robotexon",
       "sector": "Token",
       "market_cap_usd": 31397.61595551254,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "SPAWN",
       "name": "Spawn",
       "sector": "Token",
-      "market_cap_usd": 24889.21385912956,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 25199.458440065453,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2527,15 +2527,15 @@
       "name": "KAGE Network",
       "sector": "Token",
       "market_cap_usd": 21573.51529054859,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ANIMUS",
       "name": "Animus",
       "sector": "Token",
-      "market_cap_usd": 16306.76551967131,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 16126.48435084987,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2543,7 +2543,7 @@
       "name": "Qace Dynamics",
       "sector": "Token",
       "market_cap_usd": 15277.27102670934,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2551,7 +2551,7 @@
       "name": "MechaOs",
       "sector": "Token",
       "market_cap_usd": 6887.198774526272,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2559,7 +2559,7 @@
       "name": "DEEPTICS",
       "sector": "Token",
       "market_cap_usd": 4668.82989608642,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
@@ -2567,15 +2567,15 @@
       "name": "Opanarchy",
       "sector": "Token",
       "market_cap_usd": 4307.01102167716,
-      "date_fetched": "2026-04-23",
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     },
     {
       "ticker": "ATNM",
       "name": "Autonoma Network",
       "sector": "Token",
-      "market_cap_usd": 4235.652043431297,
-      "date_fetched": "2026-04-23",
+      "market_cap_usd": 4282.590739507555,
+      "date_fetched": "2026-04-24",
       "source": "CoinGecko"
     }
   ]
