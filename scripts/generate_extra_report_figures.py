@@ -153,43 +153,75 @@ FLOWS = [
 def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
     """Render the dependency chain at a given figure size.
 
-    Layout (top to bottom):
-      Title -- subtitle -- four bands (Space/Robotics/Semis/Materials)
-      with header strips, body boxes, and inter-band annotations in
-      the gaps. Cross-layer arrows route in the left/right gutters.
-      Legend at the bottom.
-
-    Bands are ordered top-down so the stack reads visually from
-    deployment (Space, top) to upstream origin (Materials, bottom).
-    Conceptual demand flows upward.
+    Geometry decisions in this rebuild:
+      - Bands are ordered top-down: SPACE / ROBOTICS / SEMIS / MATERIALS.
+      - Every column box has the SAME height across the entire chart
+        (visual rhythm). The height is sized for the worst-case
+        content: title + private indicator + 3 entity lines + padding.
+      - Boxes with fewer entities centre their content vertically
+        within the box, instead of clustering at the top.
+      - Right gutter carries FOUR clearly-separated arrows
+        (Materials→Robotics, Materials→Space, Semis→Space, and the
+        Robotics→Semiconductors feedback in dark navy at the
+        outermost offset).
+      - No left-side arrow.
+      - Legend at the bottom is a clean 2×2 grid; description text
+        indents under the title text, not under the arrow icon.
     """
     fig = plt.figure(figsize=figsize)
     ax = fig.add_subplot(111)
+    # Force the axes to fill the entire figure — default subplot
+    # margins were eating ~23% of the canvas, which compressed every
+    # box vertically and made text overflow at the bottom.
+    ax.set_position([0, 0, 1, 1])
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    # Title + subtitle. Extra spacing between the two so they breathe.
-    fig.text(0.5, 0.972, "The Frontier Technology Stack",
-             ha="center", va="top",
-             fontproperties=title_font(size=18 * fontscale),
-             color=PALETTE.ink)
-    fig.text(0.5, 0.927,
-             "Dependency flows across four sectors. Disruption in any layer propagates through the rest.",
-             ha="center", va="top",
-             fontproperties=subtitle_font(size=10 * fontscale),
-             color=PALETTE.axis)
+    # Title + subtitle in AXES coords (since the axes now fills the
+    # whole figure, axes coords == figure coords). Keeping them on
+    # the same coordinate system as the bands means the subtitle
+    # can't drift into a band header on resize / tight-bbox crop.
+    ax.text(0.5, 0.97, "The Frontier Technology Stack",
+            ha="center", va="top",
+            fontproperties=title_font(size=18 * fontscale),
+            color=PALETTE.ink, transform=ax.transAxes, zorder=10)
+    ax.text(0.5, 0.93,
+            "Dependency flows across four sectors. Disruption in any layer propagates through the rest.",
+            ha="center", va="top",
+            fontproperties=subtitle_font(size=10 * fontscale),
+            color=PALETTE.axis, transform=ax.transAxes, zorder=10)
 
-    # Reserve a legend strip at the bottom (was a caption panel).
-    x_left, x_right = 0.10, 0.90
-    top_y = 0.86               # extra top margin so subtitle never clips into bands
-    legend_h = 0.07
-    bottom_y = 0.04 + legend_h
+    # Inner band area (x). Right edge pulled in to x=0.84 to leave a
+    # ~16% gutter for the FOUR cleanly-separated arrows.
+    x_left, x_right = 0.08, 0.84
+    # Top of stack — sits below the subtitle with a small clearance.
+    top_y    = 0.885
+    # Legend area at the bottom.
+    legend_top    = 0.165
+    legend_bottom = 0.025
+    bottom_y = legend_top + 0.010
 
-    header_h = 0.030
-    flow_h   = 0.058
+    header_h = 0.024
+    flow_h   = 0.038
     n_bands  = len(BANDS)
     band_h   = (top_y - bottom_y - n_bands * header_h - (n_bands - 1) * flow_h) / n_bands
+
+    # Pre-compute the global content layout used by every column box.
+    # Every box has the SAME height; content vertically centres within
+    # that height. Worst-case content: title + indicator + 3 entities
+    # (Humanoid). Tighter line-heights so the layout actually fits the
+    # band height, which the previous draft did not.
+    MAX_ENTITY_ROWS  = max(len(c[1]) for b in BANDS for c in b[3])
+    BOX_INNER_PAD    = 0.008
+    TITLE_LINE_H     = 0.018 * fontscale
+    INDICATOR_LINE_H = 0.014 * fontscale
+    ENTITY_LINE_H    = 0.014 * fontscale
+    BOX_INNER_H      = (BOX_INNER_PAD * 2
+                        + TITLE_LINE_H
+                        + INDICATOR_LINE_H
+                        + MAX_ENTITY_ROWS * ENTITY_LINE_H)
+    BOX_OUTER_PAD    = 0.006
 
     bands_geom = []  # (band_box_top, band_box_bottom, header_top)
     y_cursor = top_y
@@ -200,8 +232,7 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
         band_bottom   = band_top - band_h
         bands_geom.append((band_top, band_bottom, header_top))
 
-        # Header strip — solid sector colour with DARK NAVY text for
-        # contrast (white was hard to read on green / salmon).
+        # Header strip — solid sector colour with dark-navy text.
         header_rect = FancyBboxPatch(
             (x_left, header_bottom), x_right - x_left, header_h,
             boxstyle="round,pad=0.001,rounding_size=0.007",
@@ -215,7 +246,7 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
                 color=DARK_NAVY, family="Space Grotesk",
                 transform=ax.transAxes, zorder=3)
 
-        # Band body — soft tint background
+        # Band body — soft sector tint background.
         body_rect = FancyBboxPatch(
             (x_left, band_bottom), x_right - x_left, band_top - band_bottom,
             boxstyle="round,pad=0.001,rounding_size=0.007",
@@ -224,13 +255,19 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
         )
         ax.add_patch(body_rect)
 
-        # Columns. Internal padding bumped from 0.008 → 0.014 so text
-        # doesn't squash against the column-box border.
+        # Columns — uniform width and uniform box height across the whole chart.
         n = len(columns)
         side_pad = 0.012
         gap = 0.012
         total = (x_right - x_left) - 2 * side_pad
         col_w = (total - gap * (n - 1)) / n
+
+        # Box outer placement inside the band — centred vertically.
+        box_top    = band_top - BOX_OUTER_PAD
+        box_bottom = box_top - BOX_INNER_H
+        # Anchor to band top with the small outer pad — band heights
+        # are already sized so this comfortably fits.
+
         for ci, col_def in enumerate(columns):
             col_title, entities, *rest = col_def
             kwargs = rest[0] if rest else {}
@@ -246,36 +283,48 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
             if dashed:
                 box_kw["linestyle"] = (0, (3, 2))
             col_box = FancyBboxPatch(
-                (x, band_bottom + 0.012), col_w, (band_top - band_bottom) - 0.024,
-                **box_kw,
+                (x, box_bottom), col_w, BOX_INNER_H, **box_kw,
             )
             ax.add_patch(col_box)
-            # Column title — sits with comfortable headroom from the box top.
-            ax.text(x + col_w / 2, band_top - 0.020, col_title,
+
+            # Inside-box layout. Title is always at the top. Below it,
+            # the entity block (and the private indicator if any) is
+            # vertically CENTRED in the remaining space, so a 1-entity
+            # box doesn't look top-heavy next to a 3-entity box.
+            title_y = box_top - BOX_INNER_PAD
+            ax.text(x + col_w / 2, title_y, col_title,
                     ha="center", va="top",
                     fontsize=8.5 * fontscale, fontweight="bold",
                     color=PALETTE.ink, family="Space Grotesk",
                     transform=ax.transAxes, zorder=3)
-            # Entity lines, taller line-height for breathing room.
-            line_h = 0.020 * fontscale
-            entity_start = band_top - 0.054
-            for ei, ent in enumerate(entities):
-                ax.text(x + col_w / 2,
-                        entity_start - ei * line_h, ent,
+
+            # Reserved height below the title for entities + indicator.
+            below_title_top    = title_y - TITLE_LINE_H
+            below_title_bottom = box_bottom + BOX_INNER_PAD
+            block_total_h      = below_title_top - below_title_bottom
+
+            # Actual content height for THIS box.
+            actual_lines = len(entities) + (1 if private else 0)
+            line_height = ENTITY_LINE_H
+            content_h = actual_lines * line_height
+            # Centre that content vertically inside the reserved block.
+            content_top = below_title_top - (block_total_h - content_h) / 2
+
+            row_y = content_top
+            if private:
+                ax.text(x + col_w / 2, row_y, "• private",
+                        ha="center", va="top",
+                        fontsize=7.0 * fontscale, color=PALETTE.axis,
+                        family="Mulish", style="italic",
+                        transform=ax.transAxes, zorder=3)
+                row_y -= line_height
+            for ent in entities:
+                ax.text(x + col_w / 2, row_y, ent,
                         ha="center", va="top",
                         fontsize=7.5 * fontscale, color=PALETTE.axis,
                         family="Mulish",
                         transform=ax.transAxes, zorder=3)
-            # Private indicator: small italic "private" tag below the
-            # entity list. Mulish doesn't ship the ● BLACK CIRCLE glyph
-            # so we keep it text-only.
-            if private:
-                priv_y = entity_start - len(entities) * line_h - 0.005
-                ax.text(x + col_w / 2, priv_y, "private",
-                        ha="center", va="top",
-                        fontsize=6.8 * fontscale, color=PALETTE.axis,
-                        family="Mulish", style="italic",
-                        transform=ax.transAxes, zorder=3)
+                row_y -= line_height
 
         y_cursor = band_bottom - flow_h
 
@@ -310,74 +359,100 @@ def _draw_dependency_chain(figsize, fontscale=1.0, is_square=False):
             kw["linestyle"] = (0, (3, 2))
         ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), **kw))
 
-    # Right gutter: yellow demand-flow arrows, going UP. Three arrows
-    # at slightly different x positions so they don't fully overlap.
-    # Thickened from 1.4 → 2.0 so they're clearly visible at small
-    # output sizes; arrowheads scaled up to match.
-    right_base = 0.935
-    for src, dst, lbl, kind, offset in FLOWS:
-        if kind != "right-up":
-            continue
-        src_top = bands_geom[src][0]
-        dst_bot = bands_geom[dst][1]
-        gx = right_base + offset
-        arrow(gx, src_top, gx, dst_bot,
-              PALETTE.composite, 2.2, rad=-0.18)
+    # Right gutter: four CLEARLY DISTINCT arrows. Per spec, the
+    # innermost arrow (closest to figure edge) is A; D is outermost.
+    #
+    #   x = 0.965 → Arrow A: Materials → Robotics (yellow, up)
+    #   x = 0.935 → Arrow B: Materials → Space     (yellow, up)
+    #   x = 0.905 → Arrow C: Semis → Space         (yellow, up)
+    #   x = 0.875 → Arrow D: Robotics → Semis      (DARK NAVY, down)
+    arrow_specs = [
+        # (src band idx, dst band idx, x, color, rad)
+        (3, 1, 0.965, PALETTE.composite, -0.18),  # Arrow A
+        (3, 0, 0.935, PALETTE.composite, -0.18),  # Arrow B
+        (2, 0, 0.905, PALETTE.composite, -0.18),  # Arrow C
+        (1, 2, 0.875, DARK_NAVY,         -0.18),  # Arrow D (feedback, DOWN)
+    ]
+    for src, dst, gx, col, rad in arrow_specs:
+        if src > dst:
+            # Going UP: from sender body top up to receiver body bottom.
+            y_start = bands_geom[src][0]
+            y_end   = bands_geom[dst][1]
+        else:
+            # Going DOWN (feedback): from sender body bottom down to
+            # receiver body top.
+            y_start = bands_geom[src][1]
+            y_end   = bands_geom[dst][0]
+        arrow(gx, y_start, gx, y_end, col, 2.2, rad=rad)
 
-    # Left gutter: dark-navy feedback arrow, going DOWN. Made
-    # noticeably thicker so it doesn't disappear in print.
-    left_x = 0.065
-    for src, dst, lbl, kind, _offset in FLOWS:
-        if kind != "left-down":
-            continue
-        src_bot = bands_geom[src][1]
-        dst_top = bands_geom[dst][0]
-        arrow(left_x, src_bot, left_x, dst_top,
-              DARK_NAVY, 1.8, rad=-0.18)
-
-    # Legend strip at the bottom — arrow icons matching the chart.
-    legend_top = bottom_y - 0.012
-    legend_bot = 0.04
+    # Legend at the bottom — clean 2×2 grid, generous spacing.
+    # Two columns separated by a clear horizontal gap; each cell
+    # carries a coloured arrow icon, a bold dark-ink title on the
+    # first line, and an italic grey description on the second line
+    # indented under the title text (NOT under the arrow icon).
+    #
+    # Layout target:
+    #   [→ yellow]  Materials → Robotics             [→ yellow]  Semiconductors → Space
+    #               NdFeB magnets for servo motors               On-board processors, direct-to-device
+    #
+    #   [→ yellow]  Materials → Space                [→ navy]    Robotics → Semiconductors (feedback)
+    #               NdFeB magnets for reaction wheels            Fab automation
+    legend_panel_top = legend_top
+    legend_panel_bot = legend_bottom
     legend_rect = FancyBboxPatch(
-        (x_left, legend_bot), x_right - x_left, legend_top - legend_bot,
+        (x_left, legend_panel_bot), x_right - x_left,
+        legend_panel_top - legend_panel_bot,
         boxstyle="round,pad=0.002,rounding_size=0.006",
         linewidth=0.6, edgecolor=PALETTE.grid, facecolor="#FAFBFC",
         zorder=1, transform=ax.transAxes,
     )
     ax.add_patch(legend_rect)
 
-    legend_entries = [
-        (PALETTE.composite, "Materials → Robotics",      "NdFeB magnets for servo motors"),
-        (PALETTE.composite, "Materials → Space",         "NdFeB magnets for reaction wheels"),
-        (PALETTE.composite, "Semiconductors → Space",    "On-board processors, direct-to-device"),
-        (DARK_NAVY,         "Robotics → Semiconductors", "Fab automation (feedback)"),
+    # 2×2 grid arranged in reading order (left-to-right, top-to-bottom).
+    legend_grid = [
+        # Top row
+        [(PALETTE.composite, "Materials → Robotics",     "NdFeB magnets for servo motors"),
+         (PALETTE.composite, "Semiconductors → Space",   "On-board processors, direct-to-device")],
+        # Bottom row
+        [(PALETTE.composite, "Materials → Space",        "NdFeB magnets for reaction wheels"),
+         (DARK_NAVY,         "Robotics → Semiconductors","Fab automation (feedback)")],
     ]
-    rows_per_col = 2
-    panel_inner_h = legend_top - legend_bot
-    col_w = (x_right - x_left - 0.03) / 2
-    row_h = panel_inner_h / rows_per_col
-    for i, (col, title, desc) in enumerate(legend_entries):
-        c = i // rows_per_col
-        r = i % rows_per_col
-        cx = x_left + 0.015 + c * (col_w + 0.015)
-        cy = legend_top - 0.014 - r * row_h
-        # Arrow icon — coloured marker mirroring the chart arrow
-        ax.text(cx, cy, "→",
-                ha="left", va="center",
-                fontsize=12 * fontscale, fontweight="bold",
-                color=col, family="Space Grotesk",
-                transform=ax.transAxes, zorder=3)
-        # Title in dark ink (was previously coloured, which read faint)
-        ax.text(cx + 0.018, cy, title,
-                ha="left", va="center",
-                fontsize=8.5 * fontscale, fontweight="bold",
-                color=DARK_NAVY, family="Space Grotesk",
-                transform=ax.transAxes, zorder=3)
-        ax.text(cx + 0.018, cy - 0.020 * fontscale, desc,
-                ha="left", va="center",
-                fontsize=7.8 * fontscale, color=PALETTE.axis,
-                family="Mulish", style="italic",
-                transform=ax.transAxes, zorder=3)
+
+    # Inner geometry: padding inside the panel + 40px column gap.
+    inner_pad_x = 0.020
+    inner_pad_y = 0.022
+    col_gap     = 0.030  # ~40px at print scale
+    n_cols = 2
+    avail_w = (x_right - x_left) - 2 * inner_pad_x - col_gap * (n_cols - 1)
+    cell_w  = avail_w / n_cols
+    avail_h = (legend_panel_top - legend_panel_bot) - 2 * inner_pad_y
+    row_h   = avail_h / 2
+    arrow_w = 0.022           # space reserved for the icon
+
+    for r, row in enumerate(legend_grid):
+        for c, (col, title, desc) in enumerate(row):
+            cell_x = x_left + inner_pad_x + c * (cell_w + col_gap)
+            cell_top = legend_panel_top - inner_pad_y - r * row_h
+            # Title row: arrow icon + bold dark-ink title
+            arrow_y = cell_top - 0.018 * fontscale
+            ax.text(cell_x, arrow_y, "→",
+                    ha="left", va="center",
+                    fontsize=12 * fontscale, fontweight="bold",
+                    color=col, family="Space Grotesk",
+                    transform=ax.transAxes, zorder=3)
+            ax.text(cell_x + arrow_w, arrow_y, title,
+                    ha="left", va="center",
+                    fontsize=8.8 * fontscale, fontweight="bold",
+                    color=DARK_NAVY, family="Space Grotesk",
+                    transform=ax.transAxes, zorder=3)
+            # Description row: italic grey, indented under the title
+            # text (so all descriptions left-align cleanly).
+            desc_y = arrow_y - 0.024 * fontscale
+            ax.text(cell_x + arrow_w, desc_y, desc,
+                    ha="left", va="center",
+                    fontsize=8.0 * fontscale, color=PALETTE.axis,
+                    family="Mulish", style="italic",
+                    transform=ax.transAxes, zorder=3)
 
     return fig
 
@@ -609,21 +684,26 @@ def _save_png(fig, path, pixel_size=None):
 
 def main():
     # ─── Chart A ───────────────────────────────────────────────────
-    # Print embed: 2500x1600 → at 300dpi that's 8.33 x 5.33 inches.
-    fig = _draw_dependency_chain((8.33, 5.33), fontscale=1.0)
+    # Print embed bumped to 8.33 x 7.5 in (~2500x2250 at 300dpi). The
+    # earlier 5.33-tall figure compressed every box vertically; with
+    # 7.5 in tall every band has clear headroom for title + 3 entity
+    # rows + indicator slot.
+    fig = _draw_dependency_chain((8.33, 7.5), fontscale=1.0)
     out = OUT_PRINT / "dependency_chain.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor=PALETTE.paper)
     plt.close(fig)
     print(f"Chart A print  → {out}")
 
-    # LinkedIn 1200x630 (landscape)
-    fig = _draw_dependency_chain((8, 4.2), fontscale=0.85)
+    # LinkedIn 1200x630 — wide-landscape constraint forces tighter
+    # boxes. Drop fontscale to 0.78 so the entity rows still fit the
+    # band height at this aspect.
+    fig = _draw_dependency_chain((8, 4.2), fontscale=0.78)
     out = OUT_SOCIAL / "dependency_chain_linkedin.png"
     fig.savefig(out, dpi=150, bbox_inches="tight", facecolor=PALETTE.paper)
     plt.close(fig)
     print(f"Chart A li     → {out}")
 
-    # Square 1080x1080 — recompose with taller vertical (boxes stacked tight).
+    # Square 1080x1080 — taller aspect, cleanest of the three.
     fig = _draw_dependency_chain((7.2, 7.2), fontscale=0.9, is_square=True)
     out = OUT_SOCIAL / "dependency_chain_square.png"
     fig.savefig(out, dpi=150, bbox_inches="tight", facecolor=PALETTE.paper)
