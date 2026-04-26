@@ -1,16 +1,16 @@
 {
-  "calculated_at": "2026-04-24T22:46:02.429332+00:00Z",
+  "calculated_at": "2026-04-26T07:10:38.739155+00:00Z",
   "composite": {
     "name": "Robotnik Composite Index",
-    "value": 2412.04,
-    "daily_change_pct": 3.79,
+    "value": 2407.33,
+    "daily_change_pct": 0.03,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
   },
   "equities_only": {
     "name": "Robotnik Composite Index (Equities Only)",
-    "value": 2412.04,
+    "value": 2407.33,
     "base_date": "2025-03-31",
     "base_value": 1000.0,
     "entities": 233
@@ -18,22 +18,22 @@
   "sub_indices": {
     "semiconductor": {
       "name": "Robotnik Semiconductor Index",
-      "value": 2500.7,
+      "value": 2495.71,
       "entities": 59
     },
     "robotics": {
       "name": "Robotnik Robotics Index",
-      "value": 2000.62,
+      "value": 1994.73,
       "entities": 105
     },
     "space": {
       "name": "Robotnik Space Index",
-      "value": 2422.2,
+      "value": 2429.49,
       "entities": 33
     },
     "materials": {
       "name": "Robotnik Materials Index",
-      "value": 2102.65,
+      "value": 2098.2,
       "entities": 36
     }
   },
@@ -84,29 +84,29 @@
       "ticker": "INTC",
       "name": "Intel",
       "sector": "Semiconductor",
-      "market_cap_usd": 414434197504,
-      "weight_pct": 4.0685
+      "market_cap_usd": 414846025728,
+      "weight_pct": 4.0722
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Semiconductor",
-      "market_cap_usd": 334869331968,
-      "weight_pct": 3.2874
+      "market_cap_usd": 334877917184,
+      "weight_pct": 3.2872
     },
     {
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Semiconductor",
       "market_cap_usd": 330967056384,
-      "weight_pct": 3.2491
+      "weight_pct": 3.2488
     },
     {
       "ticker": "KLAC",
       "name": "KLA Corp",
       "sector": "Semiconductor",
       "market_cap_usd": 254244175872,
-      "weight_pct": 2.4959
+      "weight_pct": 2.4957
     }
   ]
 }

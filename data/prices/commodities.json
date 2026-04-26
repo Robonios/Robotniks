@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-24T22:48:31.675663Z",
+  "fetched_at": "2026-04-26T07:15:40.942752Z",
   "source": "EODHD (FOREX + ETF proxies)",
   "count": 10,
   "commodities": [
@@ -10,19 +10,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 4700.05,
-      "date": "2026-04-24",
-      "change_30d_pct": 0.51,
-      "days": 91,
+      "price": 4708.5413,
+      "date": "2026-04-25",
+      "change_30d_pct": 0.68,
+      "days": 90,
       "series": [
-        {
-          "date": "2026-01-24",
-          "close": 4982.4398
-        },
-        {
-          "date": "2026-01-25",
-          "close": 5039.8401
-        },
         {
           "date": "2026-01-26",
           "close": 5043.5816
@@ -377,7 +369,11 @@
         },
         {
           "date": "2026-04-24",
-          "close": 4700.05
+          "close": 4708.5413
+        },
+        {
+          "date": "2026-04-25",
+          "close": 4708.5413
         }
       ]
     },
@@ -388,19 +384,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 75.325,
+      "price": 75.7142,
       "date": "2026-04-24",
-      "change_30d_pct": 3.18,
-      "days": 86,
+      "change_30d_pct": 3.71,
+      "days": 84,
       "series": [
-        {
-          "date": "2026-01-24",
-          "close": 103.2191
-        },
-        {
-          "date": "2026-01-25",
-          "close": 102.992
-        },
         {
           "date": "2026-01-26",
           "close": 107.5624
@@ -735,7 +723,7 @@
         },
         {
           "date": "2026-04-24",
-          "close": 75.325
+          "close": 75.7142
         }
       ]
     },
@@ -749,12 +737,8 @@
       "price": 2031.54,
       "date": "2026-04-23",
       "change_30d_pct": 6.75,
-      "days": 77,
+      "days": 76,
       "series": [
-        {
-          "date": "2026-01-25",
-          "close": 2776.28
-        },
         {
           "date": "2026-01-26",
           "close": 2762.5
@@ -1068,15 +1052,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 1499.33,
+      "price": 1500.4399,
       "date": "2026-04-24",
-      "change_30d_pct": 1.26,
-      "days": 76,
+      "change_30d_pct": 1.34,
+      "days": 75,
       "series": [
-        {
-          "date": "2026-01-25",
-          "close": 2037.8
-        },
         {
           "date": "2026-01-26",
           "close": 1994.5
@@ -1371,11 +1351,11 @@
         },
         {
           "date": "2026-04-23",
-          "close": 1479.29
+          "close": 1472.09
         },
         {
           "date": "2026-04-24",
-          "close": 1499.33
+          "close": 1500.4399
         }
       ]
     },
