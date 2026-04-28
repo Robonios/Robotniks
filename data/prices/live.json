@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-28T21:13:17.702862Z",
+  "fetched_at": "2026-04-28T23:02:49.315675Z",
   "source": "EODHD Real-Time (15-min delayed)",
   "count": 259,
   "is_live": true,
@@ -2495,9 +2495,9 @@
       "high": 31.18,
       "low": 30.56,
       "volume": 0,
-      "prev_close": 32.71,
-      "change": -2.13,
-      "change_pct": -6.5118,
+      "prev_close": 31,
+      "change": -0.42,
+      "change_pct": -1.3548,
       "timestamp": 1777406100
     },
     "DCO": {

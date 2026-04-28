@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-27T22:55:09.843951+00:00Z",
+  "fetched_at": "2026-04-28T23:02:44.963778+00:00Z",
   "count": 316,
   "equity_days_back": 1825,
   "token_days_back": 365,
@@ -704,7 +704,7 @@
       "name": "Nabtesco Corp",
       "sector": "Robotics",
       "file": "6268_JP.json",
-      "days": 30
+      "days": 31
     },
     "6645 JP": {
       "name": "Omron Corp",
@@ -842,7 +842,7 @@
       "name": "Yokogawa Electric",
       "sector": "Robotics",
       "file": "6841_JP.json",
-      "days": 15
+      "days": 16
     },
     "388720 KS": {
       "name": "Yuil Robotics",
@@ -1328,7 +1328,7 @@
       "name": "Autonoma Network",
       "sector": "Token",
       "file": "ATNM.json",
-      "days": 33
+      "days": 32
     },
     "CODEC": {
       "name": "Codec Flow",
@@ -1394,7 +1394,7 @@
       "name": "MechaOs",
       "sector": "Token",
       "file": "MECHA.json",
-      "days": 14
+      "days": 15
     },
     "EMDR": {
       "name": "Modulr",
@@ -1424,7 +1424,7 @@
       "name": "Opanarchy",
       "sector": "Token",
       "file": "OPAN.json",
-      "days": 15
+      "days": 14
     },
     "OPUS": {
       "name": "Opus Genesis",
@@ -1898,7 +1898,7 @@
       "name": "Intellian Technologies",
       "sector": "Space",
       "file": "189300_KS.json",
-      "days": 31
+      "days": 32
     }
   }
 }
