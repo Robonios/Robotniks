@@ -1,13 +1,21 @@
 # 4Q24 Private Markets Backfill — Summary
 
-**Generated:** 2026-05-01
+**Generated:** 2026-05-01 (revised after follow-up asks)
 **Quarter covered:** Oct 1 – Dec 31, 2024
 **File touched:** [data/funding/rounds.json](rounds.json)
 
-## Headline numbers
+## Post-review changes (revision 2)
 
-- **89 deals** added
-- **$31.32B** aggregate disclosed value
+After your initial sign-off:
+1. **`deal_type` field added** to all 401 rows (enum: `venture` / `government` / `strategic_corporate` / `debt` / `token`). See [§ deal_type breakdown](#deal_type-breakdown) below.
+2. **Phoenix Tailings duplicate resolved.** The pre-existing 2025-04-25 row (placeholder lead = "Multiple", no other_investors, vague `source = "https://techcrunch.com"`, no `date_display` / `month_year`) was deleted. The 2025-05-01 row (named lead Envisioning Partners, full investor list, specific Woburn MA location, real press-release URL, full schema) was kept as canonical. **Total rows: 402 → 401.**
+3. **Subsector consolidation audit log** added below — see [§ Subsector consolidation audit](#subsector-consolidation-audit).
+
+## Headline numbers (revised)
+
+- **89 deals** added in 4Q24 backfill
+- **$31.32B** aggregate disclosed value for 4Q24
+- **401 total rows** in `rounds.json` (after Phoenix dedup)
 
 ### ⚠️ Sense-check vs prompt expectation
 
@@ -23,6 +31,129 @@ You expected $5-15bn. Total came in at **$31.32B** — above expectation but bel
 
 If you want CHIPS awards excluded (treated as fiscal events, not "private market deals"), say the word and I'll filter them — they share the existing `Government investment` enum so the schema is the same either way.
 
+
+## deal_type breakdown
+
+### Across all 401 rows
+
+| deal_type | Rows | Aggregate |
+|---|---|---|
+| `venture` | 370 | $83.97B |
+| `government` | 22 | $28.13B |
+| `debt` | 5 | $1.29B |
+| `strategic_corporate` | 4 | $890.0M |
+
+### 4Q24 only (89 rows)
+
+| deal_type | Rows | Aggregate |
+|---|---|---|
+| `venture` | 70 | $5.15B |
+| `government` | 13 | $24.50B |
+| `strategic_corporate` | 4 | $890.0M |
+| `debt` | 2 | $786.9M |
+
+### Classification rule applied
+
+```python
+def classify(r):
+    if r['round'] == 'Strategic':
+        return 'strategic_corporate'
+    if r['round'] in ('Government investment', 'Government', 'Grant'):
+        return 'government'
+    if r['round'] == 'Debt Financing':
+        return 'debt'
+    return 'venture'  # all VC rounds, IPO, IPO (filed), M&A, Other, Bridge
+```
+
+### Edge cases noted
+
+- **IPO / IPO (filed) / M&A** → classified as `venture`. They are exit events of VC-backed companies and the existing schema treats them as bundled rounds. 5 IPO rows + 1 M&A row affected.
+- **`Other` rounds (12 existing + 8 new in 4Q24)** → classified as `venture` by default. Some have corporate-strategic leads (e.g. ANYbotics led by Qualcomm Ventures, TEKEVER co-led by NATO Innovation Fund). If you want a more granular pass on these, flag the rule and I will rewrite.
+- **`token` deal_type currently has 0 hits.** Reason: the 3 existing `sector=Token` rows (Robot Era, X Square Robot, RobCo) are misclassifications — their `robotnik_notes` clearly describe humanoid / industrial robotics companies, not token raises. Auto-classifying them as `token` would compound the error. See [§ Known data-quality issues](#known-data-quality-issues) below. The `token` enum value is reserved for future real token raises.
+- **Strategic-by-flavor rounds** (e.g. Nimble Robotics Series C led by FedEx) keep `venture` classification. The `Strategic` round value already exists to flag explicit strategic-investment structures; series rounds with corporate participation are not retroactively re-classified.
+
+## Subsector consolidation audit
+
+Before adding 4Q24 rows, 10 existing rows had their `subsector` value re-canonicalised to collapse near-duplicates (per your B answer). The `entity_id` field was NOT changed for any of these — only `subsector`. Spot-check by company / source:
+
+| # | Company | entity_id | Date | Old subsector | New subsector | Source URL |
+|---|---|---|---|---|---|---|
+| 1 | ArkEdge Space | `arkedge-space` | 2025-02-04 | Satellite Comms | Satellite Communications | https://spacenews.com |
+| 2 | CMR Surgical | `cmr-surgical` | 2025-04-02 | Surgical & Medical Robots | Surgical & Medical | globenewswire.com — CMR-Surgical-secures-mo |
+| 3 | CMR Surgical | `cmr-surgical` | 2025-10-20 | Surgical & Medical Robots | Surgical & Medical | (2nd CMR row, same canonical move) |
+| 4 | ForSight Robotics | `forsight-robotics` | 2025-06-24 | Surgical & Medical Robots | Surgical & Medical | businesswire.com — ForSight-Robotics-Secures-$125M |
+| 5 | Geekplus | `geekplus` | 2025-07-09 | Warehouse & Logistics Automation | Warehouse & Logistics | prnewswire.com — geekplus-lists-on-hkex-main-board |
+| 6 | Commcrete | `commcrete` | 2025-09-30 | Satellite Comms | Satellite Communications | https://spacenews.com |
+| 7 | Dexory | `dexory` | 2025-05-15 | Warehouse & Logistics Automation | Warehouse & Logistics | https://techcrunch.com |
+| 8 | Starship Technologies | `starship-technologies` | 2025-10-15 | Warehouse & Logistics Automation | Warehouse & Logistics | businesswire.com — Starship-Technologies-Raises-$50M |
+| 9 | Tutor Intelligence | `tutor-intelligence` | 2025-12-01 | Warehouse & Logistics Automation | Warehouse & Logistics | businesswire.com — Tutor-Intelligence-Raises-34-Mill |
+| 10 | Mytra | `mytra` | 2026-01-14 | Warehouse & Logistics Automation | Warehouse & Logistics | therobotreport.com — mytra-raises-120m-series-c |
+| 11 | Nomagic | `nomagic` | 2026-01-28 | Warehouse & Logistics Automation | Warehouse & Logistics | nomagic.ai/news/series-b-extension |
+| 12 | Dexory | `dexory` | 2025-10-14 | Warehouse & Logistics Automation | Warehouse & Logistics | (2nd Dexory row, same canonical move) |
+
+**Note on Dexory:** the original consolidation touched 2 existing Dexory rows (2025-05-15 + 2025-10-14). My 4Q24 backfill then added a 3rd Dexory row (2024-10-01 Series B) which already used the canonical `Warehouse & Logistics` value — so all 3 Dexory rows are consistent. Same for CMR Surgical (2 existing rows, both renamed).
+
+**Net effect on subsector enum:**
+- Pre-consolidation: 29 distinct subsector values
+- Post-consolidation: 26 distinct subsector values
+- Post-4Q24 backfill: still 26 (no new subsectors introduced)
+
+## Phoenix Tailings duplicate — resolution log
+
+The pre-existing dataset had two Phoenix Tailings rows, both labelled Series B at $76M. They appear to represent the same Series B (first close $43M Dec 2024 + extension $33M Apr 2025 = $76M total). Both rows being recorded at $76M was a duplicate.
+
+### Row deleted (2025-04-25)
+
+```
+company: Phoenix Tailings
+date: 2025-04-25
+lead_investors: "Multiple"          ← placeholder
+other_investors: ""                  ← empty
+location: "USA"                      ← no city/state
+source: "https://techcrunch.com"     ← stub URL, not a specific article
+robotnik_notes: "Green rare earth extraction from mining waste without toxic chemicals."
+(missing date_display, month_year)
+```
+
+### Row kept (2025-05-01) — canonical
+
+```
+company: Phoenix Tailings
+date: 2025-05-01
+date_display: "1-May-25"
+month_year: "May-25"
+lead_investors: "Envisioning Partners"
+other_investors: "Escape Velocity, Builders Vision, Yamaha Motor Ventures, M Power, Presidio (Sumitomo)"
+location: "USA (Woburn, MA)"
+source: "https://www.businesswire.com/news/home/20250430735778/en/Phoenix-Tailings-Closes-on-Additional-33M"
+robotnik_notes: "First US standalone REE refining plant; 500 tons/yr Nd-Pr, Dy, Tb; responds to China export controls"
+```
+
+Both rows had `entity_id = phoenix-tailings`, `quarter = 2Q25`, `amount_m = 76`. Picked the row with named lead, full investor list, specific location, real press-release URL, and full schema.
+
+My Dec 2024 first-close row ($43M) remains dropped — adding it on top of the canonical $76M row would re-create the inflation problem.
+
+## Known data-quality issues (flagged, NOT fixed in this backfill)
+
+Issues spotted while building the `deal_type` classifier — out of scope for the 4Q24 backfill, but worth surfacing for a separate cleanup pass:
+
+### Three `sector=Token` rows are misclassified as Robotics companies
+
+| Company | entity_id | Current sector | Should be | Evidence |
+|---|---|---|---|---|
+| Robot Era | `ROBOT` | Token | Robotics | `robotnik_notes` says "Tsinghua spinout; STAR1 + L7 bipedal humanoids; ERA-42 AI brain; 200+ robots delivered" |
+| X Square Robot | `ROBOT` | Token | Robotics | notes: "AI foundation models for general-purpose robots" |
+| RobCo | `ROBCO` | Token | Robotics | notes: "modular robot cells… competes with Universal Robots" |
+
+Also: Robot Era and X Square Robot **share entity_id `ROBOT`**. Per the entity registry, `ROBOT` belongs to RoboStack — a real DePIN/token project — so neither company should use that ID. Recommended:
+- Robot Era → mint `robot-era` (kebab-case) — applies to BOTH the existing 2025-07-08 row and my new 4Q24 2024-10-15 row (which currently inherits `ROBOT` because the build pipeline reused the existing wrong mapping)
+- X Square Robot → mint `x-square-robot`
+- RobCo → keep `ROBCO` if intentional (their company name is "RobCo" all-caps)
+- Free `ROBOT` to point only at RoboStack
+
+### Effect on `deal_type` distribution
+
+Because I classified by `round` (not by `sector`), all three of these rows currently land as `deal_type = venture` (correct, since their actual deals are Series A/C). When/if the sector misclassification is fixed, the deal_type will already be correct — no re-backfill needed.
 ## Breakdown by sector
 
 | Sector | Deals | Aggregate |
@@ -32,6 +163,129 @@ If you want CHIPS awards excluded (treated as fiscal events, not "private market
 | Materials | 5 | $1.57B |
 | Space | 15 | $937.5M |
 
+
+## deal_type breakdown
+
+### Across all 401 rows
+
+| deal_type | Rows | Aggregate |
+|---|---|---|
+| `venture` | 370 | $83.97B |
+| `government` | 22 | $28.13B |
+| `debt` | 5 | $1.29B |
+| `strategic_corporate` | 4 | $890.0M |
+
+### 4Q24 only (89 rows)
+
+| deal_type | Rows | Aggregate |
+|---|---|---|
+| `venture` | 70 | $5.15B |
+| `government` | 13 | $24.50B |
+| `strategic_corporate` | 4 | $890.0M |
+| `debt` | 2 | $786.9M |
+
+### Classification rule applied
+
+```python
+def classify(r):
+    if r['round'] == 'Strategic':
+        return 'strategic_corporate'
+    if r['round'] in ('Government investment', 'Government', 'Grant'):
+        return 'government'
+    if r['round'] == 'Debt Financing':
+        return 'debt'
+    return 'venture'  # all VC rounds, IPO, IPO (filed), M&A, Other, Bridge
+```
+
+### Edge cases noted
+
+- **IPO / IPO (filed) / M&A** → classified as `venture`. They are exit events of VC-backed companies and the existing schema treats them as bundled rounds. 5 IPO rows + 1 M&A row affected.
+- **`Other` rounds (12 existing + 8 new in 4Q24)** → classified as `venture` by default. Some have corporate-strategic leads (e.g. ANYbotics led by Qualcomm Ventures, TEKEVER co-led by NATO Innovation Fund). If you want a more granular pass on these, flag the rule and I will rewrite.
+- **`token` deal_type currently has 0 hits.** Reason: the 3 existing `sector=Token` rows (Robot Era, X Square Robot, RobCo) are misclassifications — their `robotnik_notes` clearly describe humanoid / industrial robotics companies, not token raises. Auto-classifying them as `token` would compound the error. See [§ Known data-quality issues](#known-data-quality-issues) below. The `token` enum value is reserved for future real token raises.
+- **Strategic-by-flavor rounds** (e.g. Nimble Robotics Series C led by FedEx) keep `venture` classification. The `Strategic` round value already exists to flag explicit strategic-investment structures; series rounds with corporate participation are not retroactively re-classified.
+
+## Subsector consolidation audit
+
+Before adding 4Q24 rows, 10 existing rows had their `subsector` value re-canonicalised to collapse near-duplicates (per your B answer). The `entity_id` field was NOT changed for any of these — only `subsector`. Spot-check by company / source:
+
+| # | Company | entity_id | Date | Old subsector | New subsector | Source URL |
+|---|---|---|---|---|---|---|
+| 1 | ArkEdge Space | `arkedge-space` | 2025-02-04 | Satellite Comms | Satellite Communications | https://spacenews.com |
+| 2 | CMR Surgical | `cmr-surgical` | 2025-04-02 | Surgical & Medical Robots | Surgical & Medical | globenewswire.com — CMR-Surgical-secures-mo |
+| 3 | CMR Surgical | `cmr-surgical` | 2025-10-20 | Surgical & Medical Robots | Surgical & Medical | (2nd CMR row, same canonical move) |
+| 4 | ForSight Robotics | `forsight-robotics` | 2025-06-24 | Surgical & Medical Robots | Surgical & Medical | businesswire.com — ForSight-Robotics-Secures-$125M |
+| 5 | Geekplus | `geekplus` | 2025-07-09 | Warehouse & Logistics Automation | Warehouse & Logistics | prnewswire.com — geekplus-lists-on-hkex-main-board |
+| 6 | Commcrete | `commcrete` | 2025-09-30 | Satellite Comms | Satellite Communications | https://spacenews.com |
+| 7 | Dexory | `dexory` | 2025-05-15 | Warehouse & Logistics Automation | Warehouse & Logistics | https://techcrunch.com |
+| 8 | Starship Technologies | `starship-technologies` | 2025-10-15 | Warehouse & Logistics Automation | Warehouse & Logistics | businesswire.com — Starship-Technologies-Raises-$50M |
+| 9 | Tutor Intelligence | `tutor-intelligence` | 2025-12-01 | Warehouse & Logistics Automation | Warehouse & Logistics | businesswire.com — Tutor-Intelligence-Raises-34-Mill |
+| 10 | Mytra | `mytra` | 2026-01-14 | Warehouse & Logistics Automation | Warehouse & Logistics | therobotreport.com — mytra-raises-120m-series-c |
+| 11 | Nomagic | `nomagic` | 2026-01-28 | Warehouse & Logistics Automation | Warehouse & Logistics | nomagic.ai/news/series-b-extension |
+| 12 | Dexory | `dexory` | 2025-10-14 | Warehouse & Logistics Automation | Warehouse & Logistics | (2nd Dexory row, same canonical move) |
+
+**Note on Dexory:** the original consolidation touched 2 existing Dexory rows (2025-05-15 + 2025-10-14). My 4Q24 backfill then added a 3rd Dexory row (2024-10-01 Series B) which already used the canonical `Warehouse & Logistics` value — so all 3 Dexory rows are consistent. Same for CMR Surgical (2 existing rows, both renamed).
+
+**Net effect on subsector enum:**
+- Pre-consolidation: 29 distinct subsector values
+- Post-consolidation: 26 distinct subsector values
+- Post-4Q24 backfill: still 26 (no new subsectors introduced)
+
+## Phoenix Tailings duplicate — resolution log
+
+The pre-existing dataset had two Phoenix Tailings rows, both labelled Series B at $76M. They appear to represent the same Series B (first close $43M Dec 2024 + extension $33M Apr 2025 = $76M total). Both rows being recorded at $76M was a duplicate.
+
+### Row deleted (2025-04-25)
+
+```
+company: Phoenix Tailings
+date: 2025-04-25
+lead_investors: "Multiple"          ← placeholder
+other_investors: ""                  ← empty
+location: "USA"                      ← no city/state
+source: "https://techcrunch.com"     ← stub URL, not a specific article
+robotnik_notes: "Green rare earth extraction from mining waste without toxic chemicals."
+(missing date_display, month_year)
+```
+
+### Row kept (2025-05-01) — canonical
+
+```
+company: Phoenix Tailings
+date: 2025-05-01
+date_display: "1-May-25"
+month_year: "May-25"
+lead_investors: "Envisioning Partners"
+other_investors: "Escape Velocity, Builders Vision, Yamaha Motor Ventures, M Power, Presidio (Sumitomo)"
+location: "USA (Woburn, MA)"
+source: "https://www.businesswire.com/news/home/20250430735778/en/Phoenix-Tailings-Closes-on-Additional-33M"
+robotnik_notes: "First US standalone REE refining plant; 500 tons/yr Nd-Pr, Dy, Tb; responds to China export controls"
+```
+
+Both rows had `entity_id = phoenix-tailings`, `quarter = 2Q25`, `amount_m = 76`. Picked the row with named lead, full investor list, specific location, real press-release URL, and full schema.
+
+My Dec 2024 first-close row ($43M) remains dropped — adding it on top of the canonical $76M row would re-create the inflation problem.
+
+## Known data-quality issues (flagged, NOT fixed in this backfill)
+
+Issues spotted while building the `deal_type` classifier — out of scope for the 4Q24 backfill, but worth surfacing for a separate cleanup pass:
+
+### Three `sector=Token` rows are misclassified as Robotics companies
+
+| Company | entity_id | Current sector | Should be | Evidence |
+|---|---|---|---|---|
+| Robot Era | `ROBOT` | Token | Robotics | `robotnik_notes` says "Tsinghua spinout; STAR1 + L7 bipedal humanoids; ERA-42 AI brain; 200+ robots delivered" |
+| X Square Robot | `ROBOT` | Token | Robotics | notes: "AI foundation models for general-purpose robots" |
+| RobCo | `ROBCO` | Token | Robotics | notes: "modular robot cells… competes with Universal Robots" |
+
+Also: Robot Era and X Square Robot **share entity_id `ROBOT`**. Per the entity registry, `ROBOT` belongs to RoboStack — a real DePIN/token project — so neither company should use that ID. Recommended:
+- Robot Era → mint `robot-era` (kebab-case) — applies to BOTH the existing 2025-07-08 row and my new 4Q24 2024-10-15 row (which currently inherits `ROBOT` because the build pipeline reused the existing wrong mapping)
+- X Square Robot → mint `x-square-robot`
+- RobCo → keep `ROBCO` if intentional (their company name is "RobCo" all-caps)
+- Free `ROBOT` to point only at RoboStack
+
+### Effect on `deal_type` distribution
+
+Because I classified by `round` (not by `sector`), all three of these rows currently land as `deal_type = venture` (correct, since their actual deals are Series A/C). When/if the sector misclassification is fixed, the deal_type will already be correct — no re-backfill needed.
 ## Breakdown by sector × subsector
 
 ### Semiconductors — 25 deals, $26.34B
