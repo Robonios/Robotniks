@@ -1,9 +1,1082 @@
 {
-  "updated": "2026-04-30 23:01",
-  "fetched_at": "2026-04-30T23:01:53Z",
+  "updated": "2026-05-01 22:57",
+  "fetched_at": "2026-05-01T22:57:11Z",
   "source": "RSS Aggregation",
   "count": 150,
   "items": [
+    {
+      "id": "b1d67ce9f3d1",
+      "title": "Top 10 robotics stories of April 2026",
+      "url": "https://www.therobotreport.com/top-10-robotics-stories-april-2026/",
+      "source": "The Robot Report",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "In April 2026, prominent robotics companies hit technical milestones, raised large funding rounds, and took part in patent disputes. The post Top 10 robotics stories of April 2026 appeared first on The Robot Report.",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "cd9809778356",
+      "title": "Why deformable materials are physical AI\u2019s real manufacturing test",
+      "url": "https://www.therobotreport.com/why-deformable-materials-are-physical-ai-real-manufacturing-test/",
+      "source": "The Robot Report",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "Physical AI can tackle assembly of deformable materials in apparel and beyond -- with the right approach and software, says Createme's CEO. The post Why deformable materials are physical AI&#8217;s real manufacturing test appeared first on The Robot Report.",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "259b73889d28",
+      "title": "Video Friday: Figure, 1X Ramp Up Humanoid Robot Production",
+      "url": "https://spectrum.ieee.org/video-friday-humanoid-robot-production",
+      "source": "IEEE Spectrum Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.ICRA 2026: 1\u20135 June 2026, VIENNARSS 2026: 13\u201317 July 2026, SYDNEYSummer School on Multi-Robot Systems: 29 July\u20134 August 2026, PRAGUEActuate 2026: 18\u201319 August 2026, SAN FRANCISCOEnjoy today\u2019s videos! Figure is now able to produce 55 robots per week, which...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "f52d80972db6",
+      "title": "Robot Talk Episode 154 \u2013 Visual navigation in insects and robots, with Andrew Philippides",
+      "url": "https://robohub.org/robot-talk-episode-154-visual-navigation-in-insects-and-robots-with-andrew-philippides/",
+      "source": "Robohub",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "Claire chatted to Andrew Philippides from the University of Sussex about what we can learn from ants and bees to improve robot navigation. Andrew Philippides is a Professor of Biorobotics at the University of Sussex, where he co-directs the Centre for Computational Neuroscience and Robotics and the be.AI Leverhulme Doctoral centre for Biomimetic Embodied AI. [&#8230;]\u2026",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "db3c61e3ad14",
+      "title": "Chip Industry Week in Review",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-136/",
+      "source": "SemiEngineering",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Google's TPUs now for sale; 2/3nm capacity crunch; IC tool sales to China stopped; memory shortage widens in 2027; mega-earnings; Arm's agentic toolkit; Intel seeds universities; KAIST's liquid cooling for advanced packages; MIT-IBM tool for estimating power; V2X collaboration. The post Chip Industry Week in Review appeared first on Semiconductor Engineering.",
+      "mentioned_entities": [
+        "GOOG",
+        "INTC",
+        "ON"
+      ],
+      "mentioned_tickers": [
+        "GOOG",
+        "INTC",
+        "ON"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "9c239161524d",
+      "title": "How AI Is Transforming the Factory Floor",
+      "url": "https://www.eetimes.com/how-ai-is-transforming-the-factory-floor/",
+      "source": "EE Times",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "This report examines how sensing solutions and edge AI are transforming manufacturing and enabling decision-making in dynamic environments. The post How AI Is Transforming the Factory Floor appeared first on EE Times.",
+      "mentioned_entities": [
+        "EDGE"
+      ],
+      "mentioned_tickers": [
+        "EDGE"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "d7c6df229d41",
+      "title": "How to Build Obsolescence\u2011Resistant Systems in an Era of Rapid Tech Change",
+      "url": "https://www.eetimes.com/how-to-build-obsolescence%e2%80%91resistant-systems-in-an-era-of-rapid-tech-change/",
+      "source": "EE Times",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Proactively manage semiconductor obsolescence with early insights and trusted partners to avoid redesigns and keep your supply chain secure. The post How to Build Obsolescence\u2011Resistant Systems in an Era of Rapid Tech Change appeared first on EE Times.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "19fcfe14f667",
+      "title": "How ICT Ensures Energy Meters Secure Performance",
+      "url": "https://www.eetimes.com/how-ict-ensures-energy-meters-secure-performance/",
+      "source": "EE Times",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Traditional testing fails smart energy meters. SPEA's In-Circuit Testing (ICT) ensures MID compliance, deep PCBA validation, and zero field failures. The post How ICT Ensures Energy Meters Secure Performance appeared first on EE Times.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "cd09b4151c18",
+      "title": "How Bright Is Bright Enough for AR in the Real World?",
+      "url": "https://www.eetimes.com/how-bright-is-bright-enough-for-ar-in-the-real-world/",
+      "source": "EE Times",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Efficiency and daylight visibility are the new benchmarks for AR glasses. The post How Bright Is Bright Enough for AR in the Real World? appeared first on EE Times.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "4beab01b3dc1",
+      "title": "Forsee Power battery system powers new electric fire pump",
+      "url": "https://www.eenewseurope.com/en/forsee-power-battery-system-powers-new-electric-fire-pump/",
+      "source": "eeNews Europe",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Forsee Power is moving beyond traditional vehicle applications with the delivery of its GO 1.6 battery system to Tohatsu. The batteries will be used in a new electric portable fire pump, marking another step in the electrification of industrial equipment. For eeNews Europe readers, this highlights how battery technology is expanding into niche but critical [&#8230;] The post Forsee Power battery system powers new electric fire pump appeared first on eeNews Europe.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "2d8ce3620ea2",
+      "title": "Advantech brings agentic AI to Jetson Thor edge platforms",
+      "url": "https://www.eenewseurope.com/en/advantech-brings-agentic-ai-to-jetson-thor-edge-platforms/",
+      "source": "eeNews Europe",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Advantech has introduced its MIC-AI series based on NVIDIA Jetson Thor, aiming to support agentic AI workloads at the industrial edge. The portfolio includes the MIC-743, MIC-742 and MIC-741 systems, as well as MIB-741 and MIB-742 development boards for NVIDIA Jetson T4000 and T5000 modules. For eeNews Europe readers, the announcement is relevant because agentic [&#8230;] The post Advantech brings agentic AI to Jetson Thor edge platforms appeared first on eeNews Europe.",
+      "mentioned_entities": [
+        "EDGE",
+        "NVDA"
+      ],
+      "mentioned_tickers": [
+        "EDGE",
+        "NVDA"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "5ac6bea155f9",
+      "title": "Spaceflux funding spurs AI-powered space intelligence",
+      "url": "https://www.electronicsweekly.com/news/business/finance/spaceflux-funding-spurs-ai-powered-space-intelligence-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Spaceflux has raised a further \u00a33.5 million in an extension to its seed round, which brings total funding to \u00a39 million for the London-based space intelligence company. The company says ... The post Spaceflux funding spurs AI-powered space intelligence appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "2811bf857b24",
+      "title": "Gadget-in-Extremis: Google\u2019s TPU 8i tensor processor",
+      "url": "https://www.electronicsweekly.com/blogs/gadget-master/gadget-in-extremis/gadget-in-extremis-googles-tpu-8i-tensor-processor-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "At the recent Google Cloud Next \u201926 event, Google unveiled its latest processors for customised AI processing: the TPU 8t and TPU 8i, for AI training and inferencing, respectively. The post Gadget-in-Extremis: Google&#8217;s TPU 8i tensor processor appeared first on Electronics Weekly.",
+      "mentioned_entities": [
+        "GOOG"
+      ],
+      "mentioned_tickers": [
+        "GOOG"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "851226aa7b66",
+      "title": "Blu-Ray \u2013 No Way",
+      "url": "https://www.electronicsweekly.com/blogs/mannerisms/yarns/blu-ray-no-way-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Back in 2002 battle was joined over the format for the blue laser DVD. This is how it was reported: \u2019The first shot in a new standards war was fired ... The post Blu-Ray &#8211; No Way appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "9a5b8ea13c7d",
+      "title": "La Luce Cristallina produces 200mm BaTiO\u2083 wafers at Austin fab",
+      "url": "https://www.electronicsweekly.com/news/business/la-luce-cristallina-produces-200mm-batio%e2%82%83-wafers-at-austin-fab-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Barium titanate (BaTiO\u2083) is gaining interest in the manufacture of modulators or photonics ICs. At Microelectronics US, Caroline Hayes spoke to Chomani Gaspe, material scientist at La Luce Cristallina about ... The post La Luce Cristallina produces 200mm BaTiO\u2083 wafers at Austin fab appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "8c2780994de5",
+      "title": "Microchip expands PQC\u2011ready root of trust controllers",
+      "url": "https://www.electronicsweekly.com/news/products/microchip-expands-pqc%e2%80%91ready-root-of-trust-controllers-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Microchip is expanding its portfolio of Trust Shield devices. The new post\u2011quantum cryptography (PQC)\u2011ready chips are the TS1800 Platform Root of Trust controller and the TS50x secure boot controller. They ... The post Microchip expands PQC\u2011ready root of trust controllers appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a2b533143f47",
+      "title": "Most Read \u2013 IQE funding, AI Startup, TSMC sells Arm",
+      "url": "https://www.electronicsweekly.com/blogs/electro-ramblings/latest-news/most-read-iqe-funding-ai-startup-tsmc-sells-arm-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Considering only those written in the last seven days, the most read stories on our site cover the UK government backing the AI startup Ineffable Intelligence, a novel method for producing 2D material, and TSMC selling its shares in Arm. The post Most Read \u2013 IQE funding, AI Startup, TSMC sells Arm appeared first on Electronics Weekly.",
+      "mentioned_entities": [
+        "TSM"
+      ],
+      "mentioned_tickers": [
+        "TSM"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "8bba3eaf4cf4",
+      "title": "Q1 capex of AWS, MS, Google and Meta tops $700bn",
+      "url": "https://www.electronicsweekly.com/news/business/q1-capex-of-aws-ms-google-and-meta-tops-700bn-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Q1 capex for Google, Amazon, Microsoft and Meta was a combined $130 billion &#8211; most of it spent on building datacentres. Capex forecasts for the year were: Meta $125-145 billion; ... The post Q1 capex of AWS, MS, Google and Meta tops $700bn appeared first on Electronics Weekly.",
+      "mentioned_entities": [
+        "AMZN",
+        "GOOG"
+      ],
+      "mentioned_tickers": [
+        "AMZN",
+        "GOOG"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a94e4a2eda5c",
+      "title": "Apple calendar Q1 revenues up 17%",
+      "url": "https://www.electronicsweekly.com/news/business/apple-calendar-q1-revenues-up-17-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Apple had calendar Q1 sales up 17% YoY at $111.18 billion for a gross margin of 49.27%. The company expects further sales growth of 14-17% in the current quarter. Sales ... The post Apple calendar Q1 revenues up 17% appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "93676d723696",
+      "title": "Burnt by home market, BYD pivots to exports",
+      "url": "https://www.electronicsweekly.com/news/business/byd-pivots-to-exports-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "BYD, China\u2019s biggest EV maker, saw Q1 profits fall 55.4% YoY to $600 million &#8211; the company\u2019s fourth consecutive monthly profits decline. Revenue fell 11.8% to $22 billion. BYD\u2019s Q1 ... The post Burnt by home market, BYD pivots to exports appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a41f1313184d",
+      "title": "Digital isolators with integrated power",
+      "url": "https://www.electronicsweekly.com/news/products/power-supplies/digital-isolators-with-integrated-power-2026-05/",
+      "source": "Electronics Weekly",
+      "date": "2026-05-01",
+      "category": "semi",
+      "summary": "Skyworks has brought out the Si86Px family of digital isolators with integrated power, a compact solution that combines high\u2011performance digital isolation with an integrated isolated dc\u2011dc converter and matched miniature transformer. ... The post Digital isolators with integrated power appeared first on Electronics Weekly.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "d9e638472e4c",
+      "title": "Apple may take \"several months\" to catch up to Mac mini and Studio demand",
+      "url": "https://arstechnica.com/gadgets/2026/05/apple-may-take-several-months-to-catch-up-to-mac-mini-and-studio-demand/",
+      "source": "Ars Technica",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "Chip shortages and demand from AI enthusiasts are both playing a part.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "dbb366493719",
+      "title": "Rocket Report: Falcon Heavy is back; Russia's Soyuz-5 finally debuts",
+      "url": "https://arstechnica.com/space/2026/05/rocket-report-falcon-heavy-is-back-russias-soyuz-5-finally-debuts/",
+      "source": "Ars Technica",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "Two launches this week delivered 61 more satellites to orbit for the Amazon Leo broadband network.",
+      "mentioned_entities": [
+        "AMZN"
+      ],
+      "mentioned_tickers": [
+        "AMZN"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "0e60b0584cf8",
+      "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
+      "url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+      "source": "TechCrunch AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "93a09c15b91a",
+      "title": "Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks",
+      "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+      "source": "TechCrunch AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "The deals come as the DOD has doubled down on diversifying its exposure to AI vendors in the wake of its controversial dispute with Anthropic over usage terms of its AI models.",
+      "mentioned_entities": [
+        "NVDA"
+      ],
+      "mentioned_tickers": [
+        "NVDA"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "66312c160e40",
+      "title": "Manufacturing expands for fourth month, but price increases remain a concern",
+      "url": "https://www.supplychaindive.com/news/manufacturing-expands-for-fourth-month-but-price-increases-remain-a-concer/819095/",
+      "source": "Supply Chain Dive",
+      "date": "2026-05-01",
+      "category": "supply",
+      "summary": "All six of the largest manufacturing industries reported price increases in April, stemming largely from the war in Iran and tariffs, ISM said.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "be2f5c461032",
+      "title": "Software-defined vehicles test auto supply chains: Moody\u2019s",
+      "url": "https://www.supplychaindive.com/news/software-defined-vehicles-test-auto-supply-chains-moodys/818553/",
+      "source": "Supply Chain Dive",
+      "date": "2026-05-01",
+      "category": "supply",
+      "summary": "Vehicles with updatable software platforms can increase input costs and strain supplier relationships, per Andrei Quinn\u2011Barabanov, supply chain industry practice lead.&nbsp;\u2026",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "85be7fbcc77c",
+      "title": "Target launches new kind of supply chain facility",
+      "url": "https://www.supplychaindive.com/news/target-launches-new-kind-of-supply-chain-facility/818848/",
+      "source": "Supply Chain Dive",
+      "date": "2026-05-01",
+      "category": "supply",
+      "summary": "The Houston Receive Center gives the retailer more inventory-holding capacity before sending products to downstream locations.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "e9234ffabc00",
+      "title": "Space Nuclear Execs Cheer the FY27 Budget Proposal",
+      "url": "https://payloadspace.com/space-nuclear-execs-cheer-the-fy27-budget-proposal/",
+      "source": "Payload Space",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "More than just money, NASA is throwing its full weight behind what Administrator Isaacman sees as the agency\u2019s \u201clogical evolution.\u201d The post Space Nuclear Execs Cheer the FY27 Budget Proposal appeared first on Payload.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "c258bda3aa99",
+      "title": "House Subcommittee Approves $24.4B NASA Budget",
+      "url": "https://payloadspace.com/house-subcommittee-approves-24-4b-nasa-budget/",
+      "source": "Payload Space",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "Lawmakers have spent the past week telling NASA that they don\u2019t support the administration\u2019s FY27 budget request for the agency. Now, House appropriators have taken the first legislative step to formally reject the spending plan. The post House Subcommittee Approves $24.4B NASA Budget appeared first on Payload.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "cc822f6aef70",
+      "title": "European Space Firms Raised \u20ac1.4B of Private Capital in 2025",
+      "url": "https://payloadspace.com/european-space-firms-raised-e1-4b-of-private-capital-in-2025/",
+      "source": "Payload Space",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "Private European capital markets are increasingly comfortable backing space-industry upstarts. The post European Space Firms Raised \u20ac1.4B of Private Capital in 2025 appeared first on Payload.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "446339693219",
+      "title": "BioOrbit Raises \u00a39.8M Seed To Manufacture Cancer Drugs in Orbit",
+      "url": "https://payloadspace.com/bioorbit-raises-9-8m-seed-to-manufacture-cancer-drugs-in-orbit/",
+      "source": "Payload Space",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "BioOrbit is attempting to leverage microgravity to reformulate drugs so that they can be self administered by patients instead of requiring medical staff to administer them. The post BioOrbit Raises \u00a39.8M Seed To Manufacture Cancer Drugs in Orbit appeared first on Payload.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "eb1450d794ed",
+      "title": "SpaceX aims for mid-May Starship Flight 12 launch with revised trajectory",
+      "url": "https://www.nasaspaceflight.com/2026/05/spacex-mid-may-starship-flight-12-revised-trajectory/",
+      "source": "NASASpaceflight",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "The return of Starship launches may be just weeks away, with notices for the upcoming&#8230; The post SpaceX aims for mid-May Starship Flight 12 launch with revised trajectory appeared first on NASASpaceFlight.com.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "24c32bb93038",
+      "title": "Drone radar could help spacecraft pinpoint where to drill for water on Mars, scientists say",
+      "url": "https://www.space.com/astronomy/mars/drone-radar-could-help-spacecraft-pinpoint-where-to-drill-for-water-on-mars-scientists-say",
+      "source": "Space.com",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "Drone-mounted radar flown over glaciers on Earth show how the technology can map buried ice in detail, helping future Mars spacecraft choose exactly where to drill.",
+      "mentioned_entities": [
+        "SHOW"
+      ],
+      "mentioned_tickers": [
+        "SHOW"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a2699d2e9ca0",
+      "title": "Is it cake? No, it's a parachute! | Space photo of the day for May 1, 2026",
+      "url": "https://www.space.com/astronomy/mars/is-it-cake-no-its-a-parachute-space-photo-of-the-day-for-may-1-2026",
+      "source": "Space.com",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "In this donut-shaped bag is a massive parachute. Next stop? Mars.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "c6d003974c37",
+      "title": "NASA's Curiosity and Perseverance rovers capture sweeping Mars panoramas (video)",
+      "url": "https://www.space.com/astronomy/mars/nasas-curiosity-and-perseverance-rovers-capture-sweeping-mars-panoramas-video",
+      "source": "Space.com",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "New panoramic views from NASA's Curiosity and Perseverance rovers reveal dramatically different Martian terrains shaped by ancient water and billions of years of geological change.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "52a0b44d45b2",
+      "title": "Week in images: 27 April - 01 May 2026",
+      "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_27_April_-_01_May_2026",
+      "source": "ESA News",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "Week in images: 27 April - 01 May 2026 Discover our week through the lens\u2026",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "690a9a257fa1",
+      "title": "Sentinel-1D goes live: a milestone for Europe\u2019s radar mission",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Sentinel-1D_goes_live_a_milestone_for_Europe_s_radar_mission",
+      "source": "ESA News",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "The Copernicus Sentinel-1D satellite, launched last November, is now fully operational after successfully completing its critical in-orbit commissioning phase.With all four Sentinel-1 satellites having now been deployed, this achievement marks a major milestone for this flagship radar mission \u2013 a journey that began more than a decade ago and that has helped pave the way for the future of Earth observation.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a61b991a7172",
+      "title": "Earth from Space: Netherlands in bloom",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/05/Earth_from_Space_Netherlands_in_bloom",
+      "source": "ESA News",
+      "date": "2026-05-01",
+      "category": "space",
+      "summary": "Image: Captured by the Copernicus Sentinel-2 mission on 21 April 2026, this image shows a double bloom in the Netherlands: an array of vibrant colours in the tulip fields as well as the blue-greenish swirls of phytoplankton in the North Sea.",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "4df314d5d177",
+      "title": "Robot Planning and Situation Handling with Active Perception",
+      "url": "https://arxiv.org/abs/2604.26988",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.26988v1 Announce Type: new Abstract: Current robots are capable of computing plans to accomplish complex tasks. However, real-world environments are inherently open and dynamic, and unforeseen situations frequently arise during plan execution, such as jamming doors and fallen objects on the floor. These situations may result from the robot's own action failures or from external disturbances, such as human activities. Detecting and handling such execution - time situations remains a...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "7acbf7b2d812",
+      "title": "Interaction Forces and Internal Loads in Parallel Manipulators with Actuation Redundancy",
+      "url": "https://arxiv.org/abs/2604.27095",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27095v1 Announce Type: new Abstract: This paper discusses null-space wrench components in parallel manipulators. We examine the adaptation of the two most common characterizations of these components in grasp-like systems, namely, interaction forces and internal loads, to parallel manipulators with actuation redundancy. We identify critical oversights in the existing literature on the subject, resolve ambiguities related to the definitions of interaction forces and internal loads,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "8357f448d82c",
+      "title": "PALCAS: A Priority-Aware Intelligent Lane Change Advisory System for Autonomous Vehicles using Federated Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2604.27118",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27118v1 Announce Type: new Abstract: We present a priority-aware intelligent lane change advisory system based on multi-agent federated reinforcement learning, namely PALCAS, for autonomous vehicles (AVs). While existing lane-change approaches typically focus on single-agent systems or centralized multi-agent systems, we introduce a federated reinforcement learning-based multi-agent lane change system prioritizing lane changing based on vehicle destination urgency. PALCAS...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "71a7289f23ec",
+      "title": "The Field of Safe Motion: Operationalizing Affordances in the Field of Safe Travel Using Reachability Analysis",
+      "url": "https://arxiv.org/abs/2604.27168",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27168v1 Announce Type: new Abstract: We present the Field of Safe Motion (FSM), a quantitative safety model for determining whether a driver maintains a collision-free escape route, or \"out,\" at any given moment by accounting for that driver's physical capabilities and the foreseeable actions of other road users. The Field of Safe Travel (FST) provides a framework for representing the types of sensory information and actions available to drivers. However, the FST has remained...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a1c8019c361d",
+      "title": "Global Sampling-Based Trajectory Optimization for Contact-Rich Manipulation via KernelSOS",
+      "url": "https://arxiv.org/abs/2604.27175",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27175v1 Announce Type: new Abstract: Contact-rich manipulation is challenging due to its high dimensionality, the requirement for long time horizons, and the presence of hybrid contact dynamics. Sampling-based methods have become a popular approach for this class of problems, but without explicit mechanisms for global exploration, they are susceptible to converging to poor local minima. In this paper, we introduce Global-MPPI, a unified trajectory optimization framework that...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "0dea121d488b",
+      "title": "Real-Time GPU-Accelerated Monte Carlo Evaluation of Safety-Critical AEB Systems Under Uncertainty",
+      "url": "https://arxiv.org/abs/2604.27193",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27193v1 Announce Type: new Abstract: Automatic Emergency Braking (AEB) systems represent a safety-critical national interest, with the National Highway Traffic Safety Administration (NHTSA) Federal Motor Vehicle Safety Standard (FMVSS No. 127) requiring AEB in all new light vehicles sold in the United States by September 2029. However, production implementations frequently rely on deterministic stopping-distance or Time-to-Collision (TTC) thresholds that fail to capture uncertainty...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "edfff2b22156",
+      "title": "Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies",
+      "url": "https://arxiv.org/abs/2604.27224",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27224v1 Announce Type: new Abstract: Quadrupedal loco-manipulation is commonly built on visual perception and proprioception. Yet reliable contact-rich manipulation remains difficult: vision and proprioception alone cannot resolve uncertain, evolving interactions with the environment. Tactile sensing offers direct contact observability, but scalable tactile-aware learning framework for quadrupedal loco-manipulation is still underexplored. In this paper, we present a tactile-aware...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "2416716f2bcd",
+      "title": "DOT-Sim: Differentiable Optical Tactile Simulation with Precise Real-to-Sim Physical Calibration",
+      "url": "https://arxiv.org/abs/2604.27367",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27367v1 Announce Type: new Abstract: Simulating optical tactile sensors presents significant challenges due to their high deformability and intricate optical properties. To address these issues and enable a physically accurate simulation, we propose DOT-Sim: Differentiable Optical Tactile Simulation. Unlike prior simulators that rely on simplified models of deformable sensors, DOT-Sim accurately captures the physical behavior of soft sensors by modeling them as elastic materials...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "df8686f5f90d",
+      "title": "An Experimental Modular Instrument With a Haptic Feedback Framework for Robotic Surgery Training",
+      "url": "https://arxiv.org/abs/2604.27385",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27385v1 Announce Type: new Abstract: Robotic-assisted surgery offers significant clinical advantages but largely eliminates direct haptic feedback, increasing the risk of excessive tool-tissue interaction forces. Although recent commercial systems have begun to introduce force feedback, their high cost limits accessibility, particularly for surgical training. This paper presents a modular experimental robotic laparoscopic instrument integrated with a real-time haptic feedback...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "779185044e64",
+      "title": "RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC",
+      "url": "https://arxiv.org/abs/2604.27450",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27450v1 Announce Type: new Abstract: Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "a88193398fa6",
+      "title": "SASI: Leveraging Sub-Action Semantics for Robust Early Action Recognition in Human-Robot Interaction",
+      "url": "https://arxiv.org/abs/2604.27508",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27508v1 Announce Type: new Abstract: Understanding human actions is critical for advancing behavior analysis in human-robot interaction. Particularly in tasks that demand quick and proactive feedback, robots must recognize human actions as early as possible from incomplete observations. \\textit{Sub-actions} offer the semantic and hierarchical cues needed for this, since human actions are inherently structured and can be decomposed into smaller, meaningful units. However, conventional...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "aaf25c0f7e35",
+      "title": "Function-based Parametric Co-Design Optimization of Dexterous Hands",
+      "url": "https://arxiv.org/abs/2604.27557",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27557v1 Announce Type: new Abstract: Despite advances in dexterous hand manipulation, robotic hand design is still largely decoupled from task-driven evaluation and control, limiting systematic optimization. Existing robotic hand co-design approaches are often limited in scope, optimizing a small subset of design parameters. We introduce a comprehensive parametric framework for robotic hand generation that unifies palm structure, finger kinematics, fingertip geometry, and fine-scale...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "e48a99f89899",
+      "title": "Robot Learning from Human Videos: A Survey",
+      "url": "https://arxiv.org/abs/2604.27621",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27621v1 Announce Type: new Abstract: A critical bottleneck hindering further advancement in embodied AI and robotics is the challenge of scaling robot data. To address this, the field of learning robot manipulation skills from human video data has attracted rapidly growing attention in recent years, driven by the abundance of human activity videos and advances in computer vision. This line of research promises to enable robots to acquire skills passively from the vast and readily...",
+      "mentioned_entities": [
+        "ROBOT",
+        "vast"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "37cf6a0c0bd8",
+      "title": "Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?",
+      "url": "https://arxiv.org/abs/2604.27667",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27667v1 Announce Type: new Abstract: Policy optimization in high-dimensional continuous control for robotics remains a challenging problem. Predominant methods are inherently local and often require extensive tuning and carefully chosen initial guesses for good performance, whereas more global and less initialization-sensitive search methods typically incur high rollout costs. We propose TFM-S3, a tabular hybrid local-global method for improving global exploration in robot policy...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "51517d0b322a",
+      "title": "ExoActor: Exocentric Video Generation as Generalizable Interactive Humanoid Control",
+      "url": "https://arxiv.org/abs/2604.27711",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27711v1 Announce Type: new Abstract: Humanoid control systems have made significant progress in recent years, yet modeling fluent interaction-rich behavior between a robot, its surrounding environment, and task-relevant objects remains a fundamental challenge. This difficulty arises from the need to jointly capture spatial context, temporal dynamics, robot actions, and task intent at scale, which is a poor match to conventional supervision. We propose ExoActor, a novel framework that...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "d5b187c59aa8",
+      "title": "Connected Dependability Cage: Run-Time Function and Anomaly Monitoring for the Development and Operation of Safe Automated Vehicles",
+      "url": "https://arxiv.org/abs/2604.27728",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27728v1 Announce Type: new Abstract: The advancement of automated vehicles introduces complex safety challenges, particularly in dynamic and unpredictable environments where AI-enabled perception systems must operate reliably. Ensuring compliance with safety standards such as ISO 26262 and ISO/PAS 21448 (SOTIF) is essential for addressing system malfunctions and mitigating unsafe behavior in unknown scenarios. However, as automation levels increase, vehicles must go beyond...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "5920d44b41ea",
+      "title": "MotuBrain: An Advanced World Action Model for Robot Control",
+      "url": "https://arxiv.org/abs/2604.27792",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27792v1 Announce Type: new Abstract: Vision-Language-Action (VLA) models achieve strong semantic generalization but often lack fine-grained modeling of world dynamics. Recent work explores video generation models as a foundation for world modeling, leading to unified World Action Models (WAMs) that jointly model visual dynamics and actions. We present MotuBrain, a unified multimodal generative model that jointly models video and action under a UniDiffuser formulation with a...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "78c9dc94aafa",
+      "title": "Learning-Based Hierarchical Scene Graph Matching for Robot Localization Leveraging Prior Maps",
+      "url": "https://arxiv.org/abs/2604.27821",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27821v1 Announce Type: new Abstract: Accurate localization is a fundamental requirement for autonomous robots operating in indoor environments. Scene graphs encode the spatial structure of an environment as a hierarchy of semantic entities and their relationships, and can be constructed both online from robot sensor data and offline from architectural priors such as Building Information Models (BIM). Matching these two complementary representations enables drift correction in SLAM by...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "29aea64e5853",
+      "title": "Flying by Inference: Active Inference World Models for Adaptive UAV Swarms",
+      "url": "https://arxiv.org/abs/2604.27935",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27935v1 Announce Type: new Abstract: This paper presents an expert-guided active-inference-inspired framework for adaptive UAV swarm trajectory planning. The proposed method converts multi-UAV trajectory design from a repeated combinatorial optimization problem into a hierarchical probabilistic inference problem. In the offline phase, a genetic-algorithm planner with repulsive-force collision avoidance (GA--RF) generates expert demonstrations, which are abstracted into Mission,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "19cd521a2131",
+      "title": "Dreaming Across Towns: Semantic Rollout and Town-Adversarial Regularization for Zero-Shot Held-Out-Town Fixed-Route Driving in CARLA",
+      "url": "https://arxiv.org/abs/2604.27994",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27994v1 Announce Type: new Abstract: Learned driving agents often degrade when deployed in unseen environments. This paper studies a deliberately bounded instance of that problem in the CARLA simulator: zero-shot transfer of a closed-loop fixed-route driving agent from Town05 and Town06 to unseen Town03 and Town04. The study isolates structural town shift by keeping weather fixed to ClearNoon and removing traffic and pedestrians. We build on a Dreamer-style latent world-model agent...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "f40dc1c451a6",
+      "title": "Framework for Collaborative Operation of Autonomous Delivery Vehicles Within a Marshaling Yard",
+      "url": "https://arxiv.org/abs/2604.28057",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28057v1 Announce Type: new Abstract: As autonomous vehicles slowly deploy into urban roads for limited use cases with significant edge case issues, closed facilities like marshaling yards provide a ripe case for combining lower-level vehicle autonomy with fixed infrastructure to create full autonomy without similar edge case concerns. Within a delivery marshaling yard, electric fleet vehicles complete a set of sequential tasks (charging, inspection, cleaning, and loading) before...",
+      "mentioned_entities": [
+        "EDGE"
+      ],
+      "mentioned_tickers": [
+        "EDGE"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "38560598d40b",
+      "title": "GSDrive: Reinforcing Driving Policies by Multi-mode Trajectory Probing with 3D Gaussian Splatting Environment",
+      "url": "https://arxiv.org/abs/2604.28111",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28111v1 Announce Type: new Abstract: End-to-end (E2E) autonomous driving presents a promising approach for translating perceptual inputs directly into driving actions. However, prohibitive annotation costs and temporal data quality degradation hinder long-term real-world deployment. While combining imitation learning (IL) and reinforcement learning (RL) is a common strategy for policy improvement, conventional RL training relies on delayed, event-based rewards-policies learn only...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "daed1f5e20d8",
+      "title": "FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction",
+      "url": "https://arxiv.org/abs/2604.28115",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28115v1 Announce Type: new Abstract: Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments. We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences. Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage. FreeOcc incrementally...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "1a1a2b378d5e",
+      "title": "Design and Characteristics of a Thin-Film ThermoMesh for the Efficient Embedded Sensing of a Spatio-Temporally Sparse Heat Source",
+      "url": "https://arxiv.org/abs/2604.28148",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28148v1 Announce Type: new Abstract: This work presents ThermoMesh, a passive thin-film thermoelectric mesh sensor designed to detect and characterize spatio-temporally sparse heat sources through conduction-based thermal imaging. The device integrates thermoelectric junctions with linear or nonlinear interlayer resistive elements to perform simultaneous sensing and in-sensor compression. We focus on the single-event (1-sparse) operation and define four performance metrics: range,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "716e211b1e38",
+      "title": "FlexiTac: A Low-Cost, Open-Source, Scalable Tactile Sensing Solution for Robotic Systems",
+      "url": "https://arxiv.org/abs/2604.28156",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28156v1 Announce Type: new Abstract: We present FlexiTac, a low-cost, open-source, and scalable piezoresistive tactile sensing solution designed for robotic end-effectors. FlexiTac is a practical \"plug-in\" module consisting of (i) thin, flexible tactile sensor pads that provide dense tactile signals and (ii) a compact multi-channel readout board that streams synchronized measurements for real-time control and large-scale data collection. FlexiTac pads adopt a sealed three-layer...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "9fc78ac78ab2",
+      "title": "RopeDreamer: A Kinematic Recurrent State Space Model for Dynamics of Flexible Deformable Linear Objects",
+      "url": "https://arxiv.org/abs/2604.28161",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28161v1 Announce Type: new Abstract: The robotic manipulation of Deformable Linear Objects (DLOs) is a fundamental challenge due to the high-dimensional, non-linear dynamics of flexible structures and the complexity of maintaining topological integrity during contact-rich tasks. While recent data-driven methods have utilized Recurrent and Graph Neural Networks for dynamics modeling, they often struggle with self-intersections and non-physical deformations, such as tangling and link...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "91ca6e34d65e",
+      "title": "LaST-R1: Reinforcing Action via Adaptive Physical Latent Reasoning for VLA Models",
+      "url": "https://arxiv.org/abs/2604.28192",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28192v1 Announce Type: new Abstract: Vision-Language-Action (VLA) models have increasingly incorporated reasoning mechanisms for complex robotic manipulation. However, existing approaches share a critical limitation: whether employing explicit linguistic reasoning that suffers from latency and discretization, or utilizing more expressive continuous latent reasoning, they are predominantly confined to static imitation learning that limits adaptability and generalization. While online...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "44e1d7f3ea89",
+      "title": "OmniRobotHome: A Multi-Camera Platform for Real-Time Multiadic Human-Robot Interaction",
+      "url": "https://arxiv.org/abs/2604.28197",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.28197v1 Announce Type: new Abstract: Human-robot collaboration has been studied primarily in dyadic or sequential settings. However, real homes require multiadic collaboration, where multiple humans and robots share a workspace, acting concurrently on interleaved subtasks with tight spatial and temporal coupling. This regime remains underexplored because close-proximity interaction between humans, robots, and objects creates persistent occlusion and rapid state changes, making...",
+      "mentioned_entities": [
+        "ROBOT"
+      ],
+      "mentioned_tickers": [
+        "ROBOT"
+      ],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "e5aba22e5159",
+      "title": "Reconstruction by Generation: 3D Multi-Object Scene Reconstruction from Sparse Observations",
+      "url": "https://arxiv.org/abs/2604.27106",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27106v1 Announce Type: cross Abstract: Accurately reconstructing complex full multi-object scenes from sparse observations remains a core challenge in computer vision and a key step toward scalable and reliable simulation for robotics. In this work, we introduce RecGen, a generative framework for probabilistic joint estimation of object and part shapes, as well as their pose under occlusion and partial visibility from one or multiple RGB-D images. By leveraging compositional...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "343256285b5b",
+      "title": "From Prompt to Physical Actuation: Holistic Threat Modeling of LLM-Enabled Robotic Systems",
+      "url": "https://arxiv.org/abs/2604.27267",
+      "source": "arXiv Robotics",
+      "date": "2026-05-01",
+      "category": "robo",
+      "summary": "arXiv:2604.27267v1 Announce Type: cross Abstract: As large language models are integrated into autonomous robotic systems for task planning and control, compromised inputs or unsafe model outputs can propagate through the planning pipeline to physical-world consequences. Although prior work has studied robotic cybersecurity, adversarial perception attacks, and LLM safety independently, no existing study traces how these threat categories interact and propagate across trust boundaries in a...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "ca60c9945ea0",
+      "title": "End-to-end autonomous scientific discovery on a real optical platform",
+      "url": "https://arxiv.org/abs/2604.27092",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27092v1 Announce Type: new Abstract: Scientific research has long been human-led, driving new knowledge and transformative technologies through the continual revision of questions, methods and claims as evidence accumulates. Although large language model (LLM)-based agents are beginning to move beyond assisting predefined research workflows, none has yet demonstrated end-to-end autonomous discovery in a real physical system that produces a nontrivial result supported by experimental...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "e0f98103a8ab",
+      "title": "Think it, Run it: Autonomous ML pipeline generation via self-healing multi-agent AI",
+      "url": "https://arxiv.org/abs/2604.27096",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27096v1 Announce Type: new Abstract: The purpose of our paper is to develop a unified multi-agent architecture that automates end-to-end machine learning (ML) pipeline generation from datasets and natural-language (NL) goals, improving efficiency, robustness and explainability. A five-agent system is proposed to handle profiling, intent parsing, microservice recommendation, Directed Acyclic Graph (DAG) construction and execution. It integrates code-grounded Retrieval-Augmented...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "4f07e4e2a9e7",
+      "title": "TRUST: A Framework for Decentralized AI Service v.0.1",
+      "url": "https://arxiv.org/abs/2604.27132",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27132v1 Announce Type: new Abstract: Large Reasoning Models (LRMs) and Multi-Agent Systems (MAS) in high-stakes domains demand reliable verification, yet centralized approaches suffer four limitations: (1) Robustness, with single points of failure vulnerable to attacks and bias; (2) Scalability, as reasoning complexity creates bottlenecks; (3) Opacity, as hidden auditing erodes trust; and (4) Privacy, as exposed reasoning traces risk model theft. We introduce TRUST (Transparent,...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "b534d54ca967",
+      "title": "Optimal Stop-Loss and Take-Profit Parameterization for Autonomous Trading Agent Swarm",
+      "url": "https://arxiv.org/abs/2604.27150",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27150v1 Announce Type: new Abstract: Autonomous crypto trading systems often spend most of their design effort on finding entries, while exits are left to fixed rules that are rarely tested in a systematic way. This paper examines whether better stop-loss and take-profit settings can improve the performance of an autonomous trading agent swarm. Using more than 900 historical trades, we replay each trade under many alternative exit policies and compare results against the existing...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "cf46df4c5821",
+      "title": "Step-level Optimization for Efficient Computer-use Agents",
+      "url": "https://arxiv.org/abs/2604.27151",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27151v1 Announce Type: new Abstract: Computer-use agents provide a promising path toward general software automation because they can interact directly with arbitrary graphical user interfaces instead of relying on brittle, application-specific integrations. Despite recent advances in benchmark performance, strong computer-use agents remain expensive and slow in practice, since most systems invoke large multimodal models at nearly every interaction step. We argue that this uniform...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "88e527306632",
+      "title": "Reinforced Agent: Inference-Time Feedback for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2604.27233",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27233v1 Announce Type: new Abstract: Tool-calling agents are evaluated on tool selection, parameter accuracy, and scope recognition, yet LLM trajectory assessments remain inherently post-hoc. Disconnected from the active execution loop, such assessments identify errors that are usually addressed through prompt-tuning or retraining, and fundamentally cannot course-correct the agent in real time. To close this gap, we move evaluation into the execution loop at inference time: a...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "f954cb11d835",
+      "title": "OptimusKG: Unifying biomedical knowledge in a modern multimodal graph",
+      "url": "https://arxiv.org/abs/2604.27269",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27269v1 Announce Type: new Abstract: Biomedical knowledge graphs (KGs) are widely used in the life sciences, yet many are derived from unstructured documents and therefore lack schema-level constrains, whereas graphs assembled from structured resources are difficult to harmonize into a unified representation. We present OptimusKG, a multimodal biomedical labeled property graph (LPG) built from structured and semi-structured resources to preserve factual, type-specific metadata across...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "2f36ea6a8db7",
+      "title": "Mechanized Foundations of Structural Governance: Machine-Checked Proofs for Governed Intelligence",
+      "url": "https://arxiv.org/abs/2604.27289",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27289v1 Announce Type: new Abstract: We present five results in the theory of structural governance for cognitive workflow systems. Three are mechanized in Coq 8.19 using the Interaction Trees library with parameterized coinduction; two are proved on paper with explicit reductions. The Coinductive Safety Predicate (gov_safe) is a coinductive property that captures governance safety for infinite program behaviors, indexed by a boolean permission flag that is provably false for...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "b730b729b3ef",
+      "title": "Machine Collective Intelligence for Explainable Scientific Discovery",
+      "url": "https://arxiv.org/abs/2604.27297",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27297v1 Announce Type: new Abstract: Deriving governing equations from empirical observations is a longstanding challenge in science. Although artificial intelligence (AI) has demonstrated substantial capabilities in function approximation, the discovery of explainable and extrapolatable equations remains a fundamental limitation of modern AI, posing a central bottleneck for AI-driven scientific discovery. Here, we present machine collective intelligence, a unified paradigm that...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "7c88fdb718c4",
+      "title": "METASYMBO: Multi-Agent Language-Guided Metamaterial Discovery via Symbolic Latent Evolution",
+      "url": "https://arxiv.org/abs/2604.27300",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27300v1 Announce Type: new Abstract: Metamaterial discovery seeks microstructured materials whose geometry induces targeted mechanical behavior. Existing inverse-design methods can efficiently generate candidates, but they typically require explicit numerical property targets and are less suitable for early-stage exploration, where researchers often begin with incomplete constraints and qualitative intents expressed in natural language. Large language models can interpret such...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "be843306df92",
+      "title": "Heterogeneous Scientific Foundation Model Collaboration",
+      "url": "https://arxiv.org/abs/2604.27351",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27351v1 Announce Type: new Abstract: Agentic large language model systems have demonstrated strong capabilities. However, their reliance on language as the universal interface fundamentally limits their applicability to many real-world problems, especially in scientific domains where domain-specific foundation models have been developed to address specialized tasks beyond natural language. In this work, we introduce Eywa, a heterogeneous agentic framework designed to extend...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
+    {
+      "id": "29c9cec34928",
+      "title": "Safe Bilevel Delegation (SBD): A Formal Framework for Runtime Delegation Safety in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2604.27358",
+      "source": "arXiv AI",
+      "date": "2026-05-01",
+      "category": "ai",
+      "summary": "arXiv:2604.27358v1 Announce Type: new Abstract: As large language model (LLM) agents are deployed in high-stakes environments, the question of how safely to delegate subtasks to specialized sub-agents becomes critical. Existing work addresses multi-agent architecture selection at design time or provides broad empirical guidelines, but neither provides a runtime mechanism that dynamically adjusts the safety-efficiency trade-off as task context changes during execution. We propose Safe Bilevel...",
+      "mentioned_entities": [],
+      "mentioned_tickers": [],
+      "entity_tagged": "2026-05-01"
+    },
     {
       "id": "43de374a30f6",
       "title": "California lawmakers open the gate for autonomous trucks in the state",
@@ -82,7 +1155,7 @@
       "summary": "KUKA will highlight robotic machine tool automation through a series of integrated demonstrations featuring multiple CNC machine tool OEM partners. These applications will include EMAG, Matsuura and SYIL machines, each paired with a standardized KUKA robotic system to deliver flexible machine-tending solutions that simplify deployment across a range of production environments.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "1eb0c5e99f80",
@@ -94,7 +1167,7 @@
       "summary": "Together with Digi's development tools, gateways, and cloud integration, the Digi XBee Wi-SUN modules and routers simplify the deployment of large-scale wireless networks for smart city, utility, renewable energy, and industrial IoT (IIoT) applications.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "d023916f28e9",
@@ -106,7 +1179,7 @@
       "summary": "New initiative invites broad industry participation across emerging humanoid technology market\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "f466042d23a5",
@@ -118,7 +1191,7 @@
       "summary": "Presented at Brazil's AgriShow, New Report Highlights Maturing Industry with over 600,000 DJI Agricultural Drones Now Deployed in 100+ Countries and Regions.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "455e702e3ab4",
@@ -282,7 +1355,7 @@
       "summary": "The startup has ditched multi-vendor chiplets for a powerful in-house design, promising safety, scalability, and aggressive pricing. The post Athos Scraps Multi-Vendor Roadmap, Plans Chiplet Tape-Out appeared first on EE Times.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "93b3b3eb0e8d",
@@ -294,7 +1367,7 @@
       "summary": "Minor timing errors can make an autonomous system act on a world model that is already out of date. The post Timestamp Drift and Sensor Synchronization: Small Timing Errors, Big Safety Consequences appeared first on EE Times.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "53fda13e2d8f",
@@ -322,7 +1395,7 @@
       "summary": "Rohde &#38; Schwarz has added Pulsar signal simulation to its signal generator portfolio, giving device manufacturers a route to test receivers for Xona\u2019s planned low Earth orbit (LEO) navigation service. The capability is aimed at production and validation environments as the industry prepares for satellite navigation signals beyond conventional GNSS. For eeNews Europe readers, the [&#8230;] The post Rohde &amp; Schwarz adds Pulsar signal simulation for LEO navigation appeared first on eeNews...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "56e7307118fc",
@@ -334,7 +1407,7 @@
       "summary": "UL Solutions is expanding its presence in Europe with a new testing lab in Germany. The company has begun construction of an electromagnetic compatibility and wireless testing facility in Neu-Isenburg. This new site will support larger and more complex connected systems across several industries. For eeNews Europe readers, the move reflects a broader shift toward [&#8230;] The post UL Solutions builds new testing lab in Germany appeared first on eeNews Europe.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "3d6a5b00b340",
@@ -346,7 +1419,7 @@
       "summary": "Quantum networking is moving out of the lab and into real-world infrastructure in the US, as IonQ partners with Florida LambdaRail (FLR) to build a quantum-safe communications backbone across Florida. The initiative, unveiled this week in Miami, marks one of the most advanced efforts in the country to secure fiber networks against future quantum threats. [&#8230;] The post IonQ and Florida LambdaRail roll out US quantum-safe network initiative appeared first on eeNews Europe.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "484db70511a1",
@@ -365,118 +1438,6 @@
       "entity_tagged": "2026-04-30"
     },
     {
-      "id": "93c10b916f4a",
-      "title": "Picture Gallery: Attendees \u2013 Women Leaders In Electronics Awards 2026",
-      "url": "https://www.electronicsweekly.com/news/electronics-weekly-women-leaders-in-electronics-awards/picture-gallery-attendees-women-leaders-in-electronics-awards-2026-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "We hope that it was a grand evening for all who attended the Electronics Weekly Women Leaders In Electronics Awards 2026 in One Moorgate Place. We\u2019ve featured the winners already, ... The post Picture Gallery: Attendees \u2013 Women Leaders In Electronics Awards 2026 appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "8a1e14f81bc2",
-      "title": "BAE Systems introduces NavGuide M-Code GPS receiver",
-      "url": "https://www.electronicsweekly.com/news/products/rf-microwave-optoelectronics/bae-systems-introduces-navguide-m-code-gps-receiver-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "BAE Systems says it has entered production, and begun initial deliveries, of its portable NavGuide M-Code GPS receiver. The use of M-Code provides secure positioning, navigation, and timing (PNT) for vehicle, ... The post BAE Systems introduces NavGuide M-Code GPS receiver appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "e082db11c068",
-      "title": "Fable: The Evolutionist",
-      "url": "https://www.electronicsweekly.com/blogs/mannerisms/fable/fable-the-evolutionist-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "There was once a guy who wrote that it was from the primeval waters that \u201call kinds of animals, plants, and trees are born and develop in time\u2026 each according ... The post Fable: The Evolutionist appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b5acbd65b68f",
-      "title": "What caught your eye? Women Leaders, Samsung Q1, Ensilica contracts",
-      "url": "https://www.electronicsweekly.com/blogs/electro-ramblings/latest-news/what-caught-your-eye-women-leaders-samsung-q1-ensilica-contracts-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "What caught our eye this last week? There's the Electronics Weekly Women Leaders In Electronics awards, Samsung's stellar Q1 results, and Ensilica celebrating two development contracts. The post What caught your eye? Women Leaders, Samsung Q1, Ensilica contracts appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "0e45920f462f",
-      "title": "Binder extends assembly options for M12 connector range",
-      "url": "https://www.electronicsweekly.com/news/products/connectors/binder-extends-assembly-options-for-m12-connector-range-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "Binder, the circular industrial connector specialist, has announced the coupling rings of moulded, shielded M12 connectors will now feature a combination of knurling and hexagonal geometry. The company writes: &#8220;Compared ... The post Binder extends assembly options for M12 connector range appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "048b0416f814",
-      "title": "Spotlight shines on Women Leaders In Electronics Awards 2026 winners",
-      "url": "https://www.electronicsweekly.com/news/spotlight-shines-on-women-leaders-in-electronics-awards-2026-winners-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "Last night saw the Women Leaders In Electronics Awards 2026, the Electronics Weekly event showcasing and celebrating the achievements of women in the electronics industry. The awards were presented in ... The post Spotlight shines on Women Leaders In Electronics Awards 2026 winners appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "ff486df3866e",
-      "title": "Samsung Q1 chip profit hits $36bn on sales of $94bn",
-      "url": "https://www.electronicsweekly.com/news/business/samsung-q1-chip-profit-hits-36bn-on-sales-of-94bn-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "Samsung saw Q1 semiconductor profits jumped 49 times y-o-y to $36bn on revenue of $94bn. The driver was the astonishing demand for HBM as the datacentre building boom continues. &#8220;Our ... The post Samsung Q1 chip profit hits $36bn on sales of $94bn appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "43a70a02a375",
-      "title": "Hua Hong blacklisted for equipment shipments",
-      "url": "https://www.electronicsweekly.com/news/business/hua-hong-blacklisted-for-equipment-shipments-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "Hua Hong, China\u2019s second foundry company, has been prevented from importing US-controlled manufacturing equipment, reports Reuters. The US Department of Commerce is said to have sent letters to a number ... The post Hua Hong blacklisted for equipment shipments appeared first on Electronics Weekly.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "44a964a294ff",
-      "title": "TSMC sells its Arm shares",
-      "url": "https://www.electronicsweekly.com/news/business/tsmc-sells-its-arm-shares-2026-04/",
-      "source": "Electronics Weekly",
-      "date": "2026-04-30",
-      "category": "semi",
-      "summary": "TSMC has sold the last of its shares in Arm. The final sale of 1.1 million shares at $208 each netted $231m. TSMC sold 850,000 Arm shares in 2024 at ... The post TSMC sells its Arm shares appeared first on Electronics Weekly.",
-      "mentioned_entities": [
-        "TSM"
-      ],
-      "mentioned_tickers": [
-        "TSM"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
       "id": "391b0ab801f9",
       "title": "Russia cloaks launch schedule after spaceport falls in Ukraine's sights",
       "url": "https://arstechnica.com/space/2026/04/russian-cloaks-launch-schedule-after-spaceport-falls-in-ukraines-sights/",
@@ -486,11 +1447,11 @@
       "summary": "\"We had serious inbound attempts to the cosmodrome that day.\"\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "06089a85f376",
-      "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+      "title": "Stripe updates Link, a digital wallet that autonomous AI agents can use, too",
       "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/",
       "source": "TechCrunch AI",
       "date": "2026-04-30",
@@ -498,7 +1459,7 @@
       "summary": "Link lets users connect cards, banks, and subscriptions, then authorize AI agents to spend securely via approval flows.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "f3cb86b7bab5",
@@ -510,7 +1471,7 @@
       "summary": "You need infrastructure to build AI and robots, but apparently you also need AI and robots to build infrastructure.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "ecfc70d2143c",
@@ -522,7 +1483,7 @@
       "summary": "By early 2026, the open source project OpenClaw had become a phenomenon. In January, its GitHub star count crossed 100,000 as developer interest surged.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "717e1ca64681",
@@ -588,7 +1549,7 @@
       "summary": "Creative and visualization teams today produce more assets, in more formats, with leaner teams. Generative AI can accelerate that work \u2013 compressing tasks...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "841eec1ad74b",
@@ -632,7 +1593,7 @@
       "summary": "York hopes the combined tech will increase its exposure to \u201chigh-growth adjacent markets,\u201d namely comms and multi-domain military use cases. The post York Space Systems to Acquire ALL.SPACE for $355M appeared first on Payload.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "8f9d7ef4fce5",
@@ -660,7 +1621,7 @@
       "summary": "Russia&#8217;s brand new Soyuz-5 rocket made its first flight on Saturday, lifting off from the&#8230; The post Russia debuts new rocket with maiden Soyuz-5 launch appeared first on NASASpaceFlight.com.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "8d4db37e663e",
@@ -672,7 +1633,7 @@
       "summary": "A doctor who has assisted in mass casualty events, served overseas, and has assisted both&#8230; The post Next NASA ISS astronaut, doctor discusses upcoming mission appeared first on NASASpaceFlight.com.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "06a45b8153f3",
@@ -684,7 +1645,7 @@
       "summary": "Russia launched its Soyuz 5 medium-lift rocket for the first time ever on Thursday (April 30), and things apparently went well.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "354844bdbd52",
@@ -696,7 +1657,7 @@
       "summary": "Artemis 3 slips to late 2027 as Starship and Blue Moon lag, delaying NASA\u2019s lunar return timeline and jeopardizing a 2028 moon landing.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "bae31e5c698f",
@@ -708,7 +1669,7 @@
       "summary": "SpaceX's Falcon Heavy rocket flew for the first time in 18 months Wednesday (April 29), and a sharp-eyed satellite was watching.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "5207e888584a",
@@ -736,7 +1697,7 @@
       "summary": "Video: 00:03:10 What did space deliver for Europe this month? From the Moon to low Earth orbit and beyond, here\u2019s what the European Space Agency has been up to.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "aaa52d1ab131",
@@ -764,7 +1725,7 @@
       "summary": "Image: The great parachute bake-out\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "da846fedbabf",
@@ -776,503 +1737,7 @@
       "summary": "Video: 00:02:02 Watch ESA\u2019s Mars chief engineer Albert&nbsp;Haldemann&nbsp;explain the&nbsp;sterilisation&nbsp;process of one of the parachutes of the&nbsp;ExoMars Rosalind Franklin rover mission and why it matters.&nbsp;&nbsp;Carefully wrapped inside&nbsp;a&nbsp;donut-shaped bag is a 35-m diameter parachute,&nbsp;about to be baked inside a&nbsp;specialised&nbsp;dry-heat&nbsp;steriliser&nbsp;oven.&nbsp;The parachute needs to be at least 10 000 times cleaner than your smartphone.&nbsp;To get rid...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "3168cc5c77c6",
-      "title": "Starry spiral in a familiar neighbourhood",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/04/Starry_spiral_in_a_familiar_neighbourhood",
-      "source": "ESA News",
-      "date": "2026-04-30",
-      "category": "space",
-      "summary": "Image: Starry spiral in a familiar neighbourhood\u2026",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "0c90b3e59755",
-      "title": "FalconApp: Rapid iPhone Deployment of End-to-End Perception via Automatically Labeled Synthetic Data",
-      "url": "https://arxiv.org/abs/2604.25949",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.25949v1 Announce Type: new Abstract: Reliable perception for robotics depends on large-scale labeled data, yet real-world datasets rely on heavy manual annotation and are time-consuming to produce. We present FalconApp, an iPhone app with an end-to-end frontend-backend pipeline that turns a short handheld capture of a rigid object into a perception module for mask detection and 6-DoF pose estimation. Our core contribution is a rapid mobile deployment pipeline paired with a...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "77682437776f",
-      "title": "A Scaled Three-Vehicle Platooning Platform",
-      "url": "https://arxiv.org/abs/2604.25963",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.25963v1 Announce Type: new Abstract: Vehicle platooning has attracted increasing attention as a promising approach to improve traffic efficiency, energy consumption, and roadway safety through coordinated multi-vehicle operation. A key challenge in platooning lies in maintaining stable and accurate path tracking during dynamic maneuvers such as lane changes, where lateral deviations and heading disturbances generated by the lead vehicle may propagate downstream to following vehicles....",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "27503a3e89bf",
-      "title": "Multi-Periodogram Velocity Estimation with Irregular Reference Signals for Robot-Aided ISAC",
-      "url": "https://arxiv.org/abs/2604.25974",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.25974v1 Announce Type: new Abstract: This paper addresses velocity estimation within robot-aided integrated sensing and communications (ISAC), where mobile robots act as sensing nodes but can only opportunistically reuse irregular 5G/6G reference signals (RSs). We show that the velocity profile induced by such irregular time-domain patterns can be decomposed into a periodic-peak component and an amplitude-shaping (weighting) component. Leveraging this structure, we propose a...",
-      "mentioned_entities": [
-        "ROBOT",
-        "SHOW"
-      ],
-      "mentioned_tickers": [
-        "ROBOT",
-        "SHOW"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "fd66a6d9ce26",
-      "title": "FlowS: One-Step Motion Prediction via Local Transport Conditioning",
-      "url": "https://arxiv.org/abs/2604.26065",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26065v1 Announce Type: new Abstract: Generative motion prediction must satisfy three simultaneous requirements for real-world autonomy: high accuracy, diverse multimodal futures, and strictly bounded latency. Diffusion models meet the first two but violate the third, requiring tens to hundreds of denoising steps. We identify a conditioning strategy that resolves this tension: \\textit{single-step integration is accurate when the underlying transport problem is local}. A model that...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "80822180a732",
-      "title": "Lights Out: A Nighttime UAV Localization Framework Using Thermal Imagery and Semantic 3D Maps",
-      "url": "https://arxiv.org/abs/2604.26201",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26201v1 Announce Type: new Abstract: Reliable backup localization for unmanned aerial vehicles (UAVs) operating in GNSS-denied nighttime conditions remains an open challenge due to the severe modality gap between daytime RGB maps and nighttime thermal imagery. This work presents a semantic reprojection framework for map-relative nighttime UAV localization by aligning segmented thermal observations with a globally referenced, semantically labeled 3D map constructed from daytime RGB...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "1deede1207fa",
-      "title": "2D and 3D Grasp Planners for the GET Asymmetrical Gripper",
-      "url": "https://arxiv.org/abs/2604.26212",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26212v1 Announce Type: new Abstract: In this paper, we introduce GET-2D-1.0, a fast grasp planner for the GET asymmetrical gripper that operates from a single-view RGB-D image, using the Ferrari-Canny metric and a novel sampling strategy, and GET-3D-1.0, a mesh-based method using a 3D gripper model and ray-tracing. We evaluate both grasp planners against baselines with physical experiments, which suggest that GET-2D-1.0 can improve over a bounding box baseline by over 40% in lift...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b63124cdebde",
-      "title": "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
-      "url": "https://arxiv.org/abs/2604.26374",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26374v1 Announce Type: new Abstract: In multi-agent systems, should limited resources be concentrated into a few capable agents or distributed among many simpler ones? This work formulates the split over $n$ resource sharing problem where a group of $n$ agents equally shares a common resource (e.g., monetary budget, computational resources, physical size). We present a case study in multi-agent coverage where the area of the disk-shaped footprint of agents scales as $1/n$. A formal...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "4cf3c4c428b0",
-      "title": "Reactive Motion Generation via Phase-varying Neural Potential Functions",
-      "url": "https://arxiv.org/abs/2604.26450",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26450v1 Announce Type: new Abstract: Dynamical systems (DS) methods for Learning-from-Demonstration (LfD) provide stable, continuous policies from few demonstrations. First-order dynamical systems (DS) are effective for many point-to-point and periodic tasks, as long as a unique velocity is defined for each state. For tasks with intersections (e.g., drawing an \"8\"), extensions such as second-order dynamics or phase variables are often used. However, by incorporating velocity,...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "e39a30abae8f",
-      "title": "Alter-Art: Exploring Embodied Artistic Creation through a Robot Avatar",
-      "url": "https://arxiv.org/abs/2604.26473",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26473v1 Announce Type: new Abstract: As with every emerging technology, new tools in the hands of artists reshape the nature of artwork creation. Current frameworks for robotics in arts deploy the robot as an autonomous creator or a collaborator, thus leaving a certain gap between the human artist and the machine. Now, we stand at the dawn of an era where artists can escape physical limitations and reshape their creative identity by inhabiting an alternative body. This new paradigm...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "84a9dde8531b",
-      "title": "HiPAN: Hierarchical Posture-Adaptive Navigation for Quadruped Robots in Unstructured 3D Environments",
-      "url": "https://arxiv.org/abs/2604.26504",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26504v1 Announce Type: new Abstract: Navigating quadruped robots in unstructured 3D environments poses significant challenges, requiring goal-directed motion, effective exploration to escape from local minima, and posture adaptation to traverse narrow, height-constrained spaces. Conventional approaches employ a sequential mapping-planning pipeline but suffer from accumulated perception errors and high computational overhead, restricting their applicability on resource-constrained...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b45d36521797",
-      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
-      "url": "https://arxiv.org/abs/2604.26509",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26509v1 Announce Type: new Abstract: Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "04b8a43b8780",
-      "title": "LLM-Flax : Generalizable Robotic Task Planning via Neuro-Symbolic Approaches with Large Language Models",
-      "url": "https://arxiv.org/abs/2604.26569",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26569v1 Announce Type: new Abstract: Deploying a neuro-symbolic task planner on a new domain today requires significant manual effort: a domain expert must author relaxation and complementary rules, and hundreds of training problems must be solved to supervise a Graph Neural Network (GNN) object scorer. We propose LLM-Flax, a three-stage framework that eliminates all three sources of manual effort using a locally hosted LLM given only a PDDL domain file. Stage 1 automatically...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "31ca407892ed",
-      "title": "STAR-Filter: Efficient Convex Free-Space Approximation via Starshaped Set Filtering in Noisy Environments",
-      "url": "https://arxiv.org/abs/2604.26626",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26626v1 Announce Type: new Abstract: Approximating collision-free space is fundamental to robot planning in complex environments. Convex geometric representations, such as polytopes and ellipsoids, are widely employed due to their structural properties, which can be easily integrated with convex optimization. Iterative optimization-based inflation methods can generate large volume polytopes in cluttered environments, but their efficiency degrades as the obstacle set becomes more...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "e9311016eb97",
-      "title": "ATLAS: An Annotation Tool for Long-horizon Robotic Action Segmentation",
-      "url": "https://arxiv.org/abs/2604.26637",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26637v1 Announce Type: new Abstract: Annotating long-horizon robotic demonstrations with precise temporal action boundaries is crucial for training and evaluating action segmentation and manipulation policy learning methods. Existing annotation tools, however, are often limited: they are designed primarily for vision-only data, do not natively support synchronized visualization of robot-specific time-series signals (e.g., gripper state or force/torque), or require substantial effort...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "09db649d429d",
-      "title": "Atomic-Probe Governance for Skill Updates in Compositional Robot Policies",
-      "url": "https://arxiv.org/abs/2604.26689",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26689v1 Announce Type: new Abstract: Skill libraries in deployed robotic systems are continually updated through fine-tuning, fresh demonstrations, or domain adaptation, yet existing typed-composition methods (BLADE, SymSkill, Generative Skill Chaining) treat the library as frozen at test time and do not analyze how composition outcomes change when a skill is replaced. We introduce a paired-sampling cross-version swap protocol on robosuite manipulation tasks to characterize this...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "f01b0fae3279",
-      "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
-      "url": "https://arxiv.org/abs/2604.26694",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26694v1 Announce Type: new Abstract: We propose X-WAM, a Unified 4D World Model that unifies real-time robotic action execution and high-fidelity 4D world synthesis (video + 3D reconstruction) in a single framework, addressing the critical limitations of prior unified world models (e.g., UWM) that only model 2D pixel-space and fail to balance action efficiency and world modeling quality. To leverage the strong visual priors of pretrained video diffusion models, X-WAM imagines the...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "7f66ff085fd8",
-      "title": "Rule-based High-Level Coaching for Goal-Conditioned Reinforcement Learning in Search-and-Rescue UAV Missions Under Limited-Simulation Training",
-      "url": "https://arxiv.org/abs/2604.26833",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26833v1 Announce Type: new Abstract: This paper presents a hierarchical decision-making framework for unmanned aerial vehicle (UAV) missions motivated by search-and-rescue (SAR) scenarios under limited simulation training. The framework combines a fixed rule-based high-level advisor with an online goal-conditioned low-level reinforcement learning (RL) controller. To stress-test early adaptation, we also consider a strict no-pretraining deployment regime. The high-level advisor is...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "cf6c13c3df2c",
-      "title": "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance",
-      "url": "https://arxiv.org/abs/2604.26839",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26839v1 Announce Type: new Abstract: Assisting humans in open-world outdoor environments requires robots to translate high-level natural-language intentions into safe, long-horizon, and socially compliant navigation behavior. Existing map-based methods rely on costly pre-built HD maps, while learning-based policies are mostly limited to indoor and short-horizon settings. To bridge this gap, we propose Walk with Me, a map-free framework for long-horizon social navigation from...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "e6042a9e9297",
-      "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2604.26848",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26848v1 Announce Type: new Abstract: Robotic manipulation critically requires reasoning about future spatial-temporal interactions, yet existing VLA policies and world-model-enhanced policies do not fully model action-relevant spatial-temporal interaction structure. We propose STARRY, a world-model-enhanced action-generation policy that aligns spatial-temporal prediction with action generation. STARRY jointly denoises future spatial-temporal latents and action sequences, and...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "cc85068ae32e",
-      "title": "Stochastic Entanglement of Deterministic Origami Tentacles For Universal Robotic Gripping",
-      "url": "https://arxiv.org/abs/2604.26897",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26897v1 Announce Type: new Abstract: Origami-inspired robotic grippers have shown promising potential for object manipulation tasks due to their compact volume and mechanical flexibility. However, robust capture of objects with random shapes in dynamic working environments often comes at the cost of additional actuation channels and control complexity. Here, we introduce a tendon-driven origami tentacle gripper capable of universal object gripping by exploiting a synergy between...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "27b8c0c14dd2",
-      "title": "Bi-Level Optimization for Contact and Motion Planning in Rope-Assisted Legged Robots",
-      "url": "https://arxiv.org/abs/2604.26910",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26910v1 Announce Type: new Abstract: This paper presents a planning pipeline framework for locomotion in rope-assisted robots climbing vertical surfaces. The proposed framework is formulated as a bi-level optimization scheme that addresses a mixed-integer problem: selecting feasible terrain regions for landing while simultaneously optimizing the control inputs, namely rope tensions and leg forces, and landing location. The outer level of the optimization is solved using the...",
-      "mentioned_entities": [
-        "vertical-semiconductor"
-      ],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "41f6672a9c49",
-      "title": "FruitProM-V2: Robust Probabilistic Maturity Estimation and Detection of Fruits and Vegetables",
-      "url": "https://arxiv.org/abs/2604.26084",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26084v1 Announce Type: cross Abstract: Accurate fruit maturity identification is essential for determining harvest timing, as incorrect assessment directly affects yield and post-harvest quality. Although ripening is a continuous biological process, vision-based maturity estimation is typically formulated as a multi-class classification task, which imposes sharp boundaries between visually similar stages. To examine this limitation, we perform an annotation reliability study with two...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "3937b0a777aa",
-      "title": "Why Domain Matters: A Preliminary Study of Domain Effects in Underwater Object Detection",
-      "url": "https://arxiv.org/abs/2604.26174",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26174v1 Announce Type: cross Abstract: Domain shift, where deviations between training and deployment data distributions degrade model performance, is a key challenge in underwater environments. Existing benchmarks testing performance for underwater domain shift simulate variability through synthetic style transfer. This fails to capture intrinsic scene factors such as visibility, illumination, scene composition, or acquisition factors, limiting analysis of real-world effects. We...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "f5c0e0be380b",
-      "title": "Persona-Based Process Design for Assistive Human-Robot Workplaces for Persons with Disabilities",
-      "url": "https://arxiv.org/abs/2604.26527",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26527v1 Announce Type: cross Abstract: Human-robot interaction is emerging as an important paradigm for integrating persons with disabilities into the workplace. While these systems can enable individuals to work, their design is mostly personalized, hindering widespread use beyond the individual user. The universal design paradigm is a central pillar of inclusive design, describing usability of systems by all. To incorporate universal design into process design for human-robot...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "d37e75c4c20f",
-      "title": "Benchmarking the Safety of Large Language Models for Robotic Health Attendant Control",
-      "url": "https://arxiv.org/abs/2604.26577",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26577v1 Announce Type: cross Abstract: Large language models (LLMs) are increasingly considered for deployment as the control component of robotic health attendants, yet their safety in this context remains poorly characterized. We introduce a dataset of 270 harmful instructions spanning nine prohibited behavior categories grounded in the American Medical Association Principles of Medical Ethics, and use it to evaluate 72 LLMs in a simulation environment based on the Robotic Health...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "05963fc708fd",
-      "title": "Edge AI for Automotive Vulnerable Road User Safety: Deployable Detection via Knowledge Distillation",
-      "url": "https://arxiv.org/abs/2604.26857",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26857v1 Announce Type: cross Abstract: Deploying accurate object detection for Vulnerable Road User (VRU) safety on edge hardware requires balancing model capacity against computational constraints. Large models achieve high accuracy but fail under INT8 quantization required for edge deployment, while small models sacrifice detection performance. This paper presents a knowledge distillation (KD) framework that trains a compact YOLOv8-S student (11.2M parameters) to mimic a YOLOv8-L...",
-      "mentioned_entities": [
-        "EDGE"
-      ],
-      "mentioned_tickers": [
-        "EDGE"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "55365f5bef46",
-      "title": "Safe Navigation using Neural Radiance Fields via Reachable Sets",
-      "url": "https://arxiv.org/abs/2604.26899",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26899v1 Announce Type: cross Abstract: Safe navigation in cluttered environments is an important challenge for autonomous systems. Robots navigating through obstacle ridden scenarios need to be able to navigate safely in the presence of obstacles, goals, and ego objects of varying geometries. In this work, reachable set representations of the robot's real-time capabilities in the state space can be utilized to capture safe navigation requirements. While neural radiance fields (NeRFs)...",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "16f7afff7304",
-      "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
-      "url": "https://arxiv.org/abs/2604.26946",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2604.26946v1 Announce Type: cross Abstract: Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs). These models can plan a sequence of motions by evaluating the current view at each time step against the task and goal given to the agent. However, current zero-shot Vision-and-Language Navigation (VLN) agents powered by MLLMs still tend to drift off course, halt prematurely, and achieve low overall...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "0b16587f4076",
-      "title": "Neural-Geometric Tunnel Traversal: Localization-free UAV Flight with Tilted LiDARs",
-      "url": "https://arxiv.org/abs/2404.09688",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2404.09688v2 Announce Type: replace Abstract: Navigation of UAVs in challenging environments like tunnels or mines, where it is not possible to use GNSS methods to self-localize, illumination may be uneven or nonexistent, and wall features are likely to be scarce, is a complex task, especially if the navigation has to be done at high speed. In this paper we propose a novel proof-of-concept navigation technique for UAVs based on the use of LiDAR information through the joint use of...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "7ced0a82edb5",
-      "title": "EvolvingAgent: Curriculum Self-evolving Agent with Continual World Model for Long-Horizon Tasks",
-      "url": "https://arxiv.org/abs/2502.05907",
-      "source": "arXiv Robotics",
-      "date": "2026-04-30",
-      "category": "robo",
-      "summary": "arXiv:2502.05907v3 Announce Type: replace Abstract: Completing Long-Horizon (LH) tasks in open-ended worlds is an important yet difficult problem for embodied agents. Existing approaches suffer from two key challenges: (1) they heavily rely on experiences obtained from human-created data or curricula, failing to autonomously update and select multimodal experiences, and (2) they may encounter catastrophic forgetting issues when faced with new tasks, failing to autonomously update world...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "da346c60014d",
-      "title": "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital",
-      "url": "https://arxiv.org/abs/2604.26091",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.26091v1 Announce Type: new Abstract: We study reliability in autonomous language-model agents that translate user mandates into validated tool actions under real capital. The setting is DX Terminal Pro, a 21-day deployment in which 3,505 user-funded agents traded real ETH in a bounded onchain market. Users configured vaults through structured controls and natural-language strategies, but only agents could choose normal buy/sell trades. The system produced 7.5M agent invocations,...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "10e8fc75fba9",
-      "title": "Distill-Belief: Closed-Loop Inverse Source Localization and Characterization in Physical Fields",
-      "url": "https://arxiv.org/abs/2604.26095",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.26095v1 Announce Type: new Abstract: {Closed-loop inverse source localization and characterization (ISLC) requires a mobile agent to select measurements that localize sources and infer latent field parameters under strict time constraints.} {The core challenge lies in the belief-space objective: valid uncertainty estimation requires expensive Bayesian inference, whereas using fast learned belief model leads to reward hacking, in which the policy exploits approximation errors rather...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "0c4c62faf8fc",
-      "title": "Auto-Relational Reasoning",
-      "url": "https://arxiv.org/abs/2604.26507",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.26507v1 Announce Type: new Abstract: Background & Objectives: In the last decade, Machine learning research has grown rapidly, but large models are reaching their soft limits demonstrating diminishing returns and still lack solid reasoning abilities. These limits could be surpassed through synergistic combination of Machine Learning scalability and rigid reasoning. Methods: In this work, we propose a theoretical framework for reasoning through object-relations in an automated manner...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b428bc850154",
-      "title": "Human-in-the-Loop Benchmarking of Heterogeneous LLMs for Automated Competency Assessment in Secondary Level Mathematics",
-      "url": "https://arxiv.org/abs/2604.26607",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.26607v1 Announce Type: new Abstract: As Competency-Based Education (CBE) is gaining traction around the world, the shift from marks-based assessment to qualitative competency mapping is a manual challenge for educators. This paper tackles the bottleneck issue by suggesting a \"Human-in-the-Loop\" benchmarking framework to assess the effectiveness of multiple LLMs in automating secondary-level mathematics assessment. Based on the Grade 10 Optional Mathematics curriculum in Nepal, we...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "af1689a323cf",
-      "title": "Risk Reporting for Developers' Internal AI Model Use",
-      "url": "https://arxiv.org/abs/2604.24966",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.24966v1 Announce Type: cross Abstract: Frontier AI companies first deploy their most advanced models internally, for weeks or months of safety testing, evaluation, and iteration, before a possible public release. For example, Anthropic recently developed a new class of model with advanced cyberoffense-relevant capabilities, Mythos Preview, which was available internally for at least six weeks before it was publicly announced. This internal use creates risks that external deployment...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "2e5d04576825",
-      "title": "LLM Psychosis: A Theoretical and Diagnostic Framework for Reality-Boundary Failures in Large Language Models",
-      "url": "https://arxiv.org/abs/2604.25934",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.25934v1 Announce Type: cross Abstract: The deployment of large language models (LLMs) as interactive agents has exposed a category of behavioral failure that prevailing terminology, principally hallucination, fails to adequately characterize. This paper introduces LLM Psychosis as a structured theoretical framework for pathological breakdowns in model cognition that exhibit functional resemblance to clinically recognized psychotic disorders. Five hallmark features define the...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "bacbaaf2ba8d",
-      "title": "Rethinking KV Cache Eviction via a Unified Information-Theoretic Objective",
-      "url": "https://arxiv.org/abs/2604.25975",
-      "source": "arXiv AI",
-      "date": "2026-04-30",
-      "category": "ai",
-      "summary": "arXiv:2604.25975v1 Announce Type: cross Abstract: Key-value (KV) caching is essential for large language model inference, yet its memory overhead poses a critical bottleneck for long-context generation. Existing eviction policies predominantly rely on empirical heuristics, lacking a rigorous theoretical foundation. This work rethinks KV cache eviction through the lens of the Information Bottleneck principle. Under a linear-Gaussian surrogate of attention, we derive a closed-form mutual...",
-      "mentioned_entities": [
-        "FORM"
-      ],
-      "mentioned_tickers": [
-        "FORM"
-      ],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "515f71c53fa2",
@@ -1350,7 +1815,7 @@
       "summary": "This small drone is using sonar, similar to bats\u2019 echolocation, to navigate through a grove of trees. Image credit: Nitin Sanket. By Nitin Sanket, Worcester Polytechnic Institute To help small aerial robots navigate in the dark and other low-visibility environments, my colleagues and I developed an ultrasound-based perception system inspired by bat echolocation. Current robots [&#8230;]\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "3186ebed7ad6",
@@ -1362,7 +1827,7 @@
       "summary": "The application places baked products, such as burger buns, chocolate chip cookies, biscotti, butter cookies, biscuits, fortune cookies, granola bars, rusks, and shortbreads into trays and packaging containers before sealing.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "bef9fd257bfc",
@@ -1406,7 +1871,7 @@
       "summary": "From understanding and generating the world to taking action, Motubrain tops two global benchmarks and redefines the embodied AI landscape\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "f743f0ddcf6e",
@@ -1418,7 +1883,7 @@
       "summary": "",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "816c2f93b85d",
@@ -1430,7 +1895,7 @@
       "summary": "The EASIII software platform's intuitive environment offers a faster machine initialization, advanced tuning, and optimized machine performance and analysis across all Elmo product lines\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "dce162586de7",
@@ -1442,7 +1907,7 @@
       "summary": "100+ robots in Coco's operating Miami fleet carry brand wraps, turning daily autonomous deliveries into a scaled out-of-home channel surrounding one of the year's biggest cultural moments\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "08aad75c92fd",
@@ -1470,7 +1935,7 @@
       "summary": "DualGear System Enables Two Synchronous Movements with Maximum Performance\u2026",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "230c03f91b93",
@@ -1482,7 +1947,7 @@
       "summary": "",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "107f044e380b",
@@ -1510,19 +1975,7 @@
       "summary": "",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "5398bded440c",
-      "title": "Energy-Efficient Liquid Cooling for Advanced Semiconductor Packaging (KAIST)",
-      "url": "https://semiengineering.com/energy-efficient-liquid-cooling-for-advanced-semiconductor-packaging-kaist/",
-      "source": "SemiEngineering",
-      "date": "2026-04-29",
-      "category": "semi",
-      "summary": "A new technical paper, &#8220;Highly energy-efficient manifold microchannel for cooling electronics with a coefficient of performance over 100,000,&#8221; was published by researchers at KAIST. The study presents a CMOS-compatible manifold microchannel cooler that removes over 2,000 W/cm\u00b2 using single-phase water at only 8 kPa pressure drop, achieving a record COP of 106,000\u2014a significant improvement over... &#187; read more The post Energy-Efficient Liquid Cooling for Advanced Semiconductor...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "1ef654ef5927",
@@ -1534,7 +1987,7 @@
       "summary": "New systems are for evaluation, with commercial systems coming by 2029. The post Lumai Productizes Lens-Based Optical Computer appeared first on EE Times.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "1eff960a9087",
@@ -1546,7 +1999,7 @@
       "summary": "Pressure sensing: A background intelligence signal Pressure sensors convert physical phenomena\u2014such as changes in ambient air pressure or airflow\u2014into signals that electronic systems can process&#160;continuously and&#160;in real time. In&#160;modern&#160;consumer,&#160;industrial,&#160;and IoT devices, this information acts as a continuous feedback input, supporting closed\u2011loop control, sensor fusion, and early detection of abnormal or degrading operating conditions. Rather than relying...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "c7edf61c5122",
@@ -1558,23 +2011,7 @@
       "summary": "AI streamlines verification by targeting repetitive tasks but can't replace expert signoff. The post AI in Design Verification: Where It Works and Where It Doesn&#8217;t appeared first on EE Times.",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "3a4326f4faec",
-      "title": "STMicro Introduces STM32C5 for Cost-Sensitive Smart Devices",
-      "url": "https://www.eetimes.com/stmicro-introduces-stm32c5-for-cost-sensitive-smart-devices/",
-      "source": "EE Times",
-      "date": "2026-04-29",
-      "category": "semi",
-      "summary": "Introducing STM32C5 in India, STMicroelectronics explained how the new series targets cost-sensitive applications with improved performance, memory, and connectivity. The post STMicro Introduces STM32C5 for Cost-Sensitive Smart Devices appeared first on EE Times.",
-      "mentioned_entities": [
-        "STM"
-      ],
-      "mentioned_tickers": [
-        "STM"
-      ],
-      "entity_tagged": "2026-04-29"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "e958f37ce1d2",
@@ -1602,7 +2039,7 @@
       "summary": "EBV Elektronik has introduced MOVE, a robotics development platform designed to connect engineers with embedded technologies, supplier resources and application guidance for next-generation robotic systems. The initiative, developed by EBV Elektronik\u2019s Embedded Solutions team, brings together processors, AI accelerators, sensors, motion control, connectivity, memory, storage, power management and display technologies in one central resource. For [&#8230;] The post Robotics development platform...",
       "mentioned_entities": [],
       "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
+      "entity_tagged": "2026-05-01"
     },
     {
       "id": "927127a262df",
@@ -1618,449 +2055,6 @@
       "mentioned_tickers": [
         "ON"
       ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "0abd45bf115e",
-      "title": "Satellite connected cattle collars expand remote ranching",
-      "url": "https://www.eenewseurope.com/en/satellite-connected-cattle-collars-expand-remote-ranching/",
-      "source": "eeNews Europe",
-      "date": "2026-04-29",
-      "category": "semi",
-      "summary": "Halter is pushing virtual fencing further into the wild with satellite connected cattle collars that link directly to space based networks. The new system removes the need for cellular coverage or on site infrastructure, opening up vast, previously unreachable grazing land. For eeNews Europe readers, this highlights how satellite connectivity and IoT are converging in [&#8230;] The post Satellite connected cattle collars expand remote ranching appeared first on eeNews Europe.",
-      "mentioned_entities": [
-        "VIRTUAL",
-        "vast"
-      ],
-      "mentioned_tickers": [
-        "VIRTUAL"
-      ],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "7ae0e2d3fb93",
-      "title": "SK hynix begins mass production of 192GB AI server memory",
-      "url": "https://www.eenewseurope.com/en/sk-hynix-begins-mass-production-of-192gb-ai-server-memory/",
-      "source": "eeNews Europe",
-      "date": "2026-04-29",
-      "category": "semi",
-      "summary": "SK hynix has started mass production of a 192GB SOCAMM2 memory module, targeting next-generation AI servers and setting the stage for higher-performance, lower-power infrastructure. The new module is built on the company\u2019s 1cnm (sixth-generation 10nm-class) LPDDR5X DRAM process and is designed specifically for AI workloads, including large language model (LLM) training and inference. The development [&#8230;] The post SK hynix begins mass production of 192GB AI server memory appeared first on...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "dcccb92d94d8",
-      "title": "2Trust.AI and Carahsoft partner to scale AI governance for public sector",
-      "url": "https://www.eenewseurope.com/en/2trust-ai-and-carahsoft-partner-to-scale-ai-governance-for-public-sector/",
-      "source": "eeNews Europe",
-      "date": "2026-04-29",
-      "category": "semi",
-      "summary": "2Trust.AI has teamed up with Carahsoft Technology Corp. to bring AI governance and compliance tools to public sector organizations, targeting agencies grappling with stricter regulatory demands. The partnership positions Carahsoft as the distributor of 2Trust.AI\u2019s platform across its extensive reseller network and contract vehicles. For eeNews Europe readers, the move highlights how AI governance is [&#8230;] The post 2Trust.AI and Carahsoft partner to scale AI governance for public sector...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "c2e4efcac0cc",
-      "title": "General Mills faces setback in supply chain sustainability push",
-      "url": "https://www.supplychaindive.com/news/general-mills-faces-setback-in-supply-chain-sustainability-push/818382/",
-      "source": "Supply Chain Dive",
-      "date": "2026-04-29",
-      "category": "supply",
-      "summary": "The food maker said total greenhouse gas emissions fell 14% in fiscal 2025 compared to the 2020 baseline, less than the 19% drop in 2024.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "e7114ee88741",
-      "title": "NVIDIA Sets Conference Call for First-Quarter Financial Results",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-first-quarter-financial-results-6919947",
-      "source": "NVIDIA Newsroom",
-      "date": "2026-04-29",
-      "category": "ai",
-      "summary": "NVIDIA will host a conference call on Wednesday, May 20, at 2 p.m. PT (5 p.m. ET) to discuss its financial results for the first quarter of fiscal year 2027, which ended April 26, 2026.",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "3ea9b02b0083",
-      "title": "Powering AI Factories with NVIDIA Enterprise Reference Architectures",
-      "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-29",
-      "category": "ai",
-      "summary": "The next wave of enterprise productivity is being built on AI factories. As organizations deploy agentic AI systems capable of reasoning, automation, and...",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "6feb035f2b5d",
-      "title": "DPhi\u2019s Second Demo Brings Compute Space to Orbit",
-      "url": "https://payloadspace.com/dphis-second-demo-brings-compute-space-to-orbit/",
-      "source": "Payload Space",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "Swiss startup DPhi Space hosted Liquid AI\u2019s large language model to analyze an EO image\u2014without first transmitting the image to the ground. That was the first public result of DPhi\u2019s second mission, Clustergate-2, which rode to orbit on a Momentus Vigoride 7 sat in March. The transmission, which was announced today, signifies a new age\u2026 The post DPhi\u2019s Second Demo Brings Compute Space to Orbit appeared first on Payload.",
-      "mentioned_entities": [
-        "MNTS"
-      ],
-      "mentioned_tickers": [
-        "MNTS"
-      ],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "f283c67b8a45",
-      "title": "Golden Dome Will Use COTS Parts, Space Execs Say",
-      "url": "https://payloadspace.com/golden-dome-will-use-cots-parts-space-execs-say/",
-      "source": "Payload Space",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "Asked what a Golden Dome satellite bus would have that a commercial satellite bus doesn\u2019t, Apex Space CEO Ian Cinnamon\u2019s answer was simple\u2014\u201dHopefully, nothing.\u201d The post Golden Dome Will Use COTS Parts, Space Execs Say appeared first on Payload.",
-      "mentioned_entities": [
-        "apex"
-      ],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "95211c16538c",
-      "title": "SpaceX launches Falcon Heavy on Wednesday after 18 month hiatus",
-      "url": "https://www.nasaspaceflight.com/2026/04/viasat-3-f3-falcon-heavy/",
-      "source": "NASASpaceflight",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "After a hiatus of more than a year and a half, SpaceX\u2019s Falcon Heavy rocket&#8230; The post SpaceX launches Falcon Heavy on Wednesday after 18 month hiatus appeared first on NASASpaceFlight.com.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "7d6b9cb3f8ac",
-      "title": "Europe's powerful Ariane 6 rocket launches 32 Amazon internet satellites to orbit",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/europe-ariane-6-rocket-launch-32-amazon-leo-satellites-va267",
-      "source": "Space.com",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "Liftoff occurred at 4:57 a.m. EDT on Thursday (April 30).",
-      "mentioned_entities": [
-        "AMZN"
-      ],
-      "mentioned_tickers": [
-        "AMZN"
-      ],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "a3ae9b7334f5",
-      "title": "SpaceX rocket debris could slam into the moon: Here's what you need to know",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/a-stray-spacex-rocket-stage-could-slam-into-the-moon-this-august-amateur-astronomer-says",
-      "source": "Space.com",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "Earth's moon is to be on the receiving end of a spent rocket stage in early August - the leftovers from a SpaceX Falcon 9 launch last year.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "4e7c587a99d3",
-      "title": "Plasma-hot Space Rider tests for belly and flaps",
-      "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Space_Rider/Plasma-hot_Space_Rider_tests_for_belly_and_flaps",
-      "source": "ESA News",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "ee8c6b702605",
-      "title": "Stunning images from Biomass mark its one year in orbit",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass/Stunning_images_from_Biomass_mark_its_one_year_in_orbit",
-      "source": "ESA News",
-      "date": "2026-04-29",
-      "category": "space",
-      "summary": "To mark the first anniversary of the European Space Agency\u2019s Biomass satellite, we present a selection of striking images captured over the past 12 months, revealing Earth\u2019s forests, and much more, in new detail. In just one year, this pioneering mission has begun transforming our understanding of forest dynamics and advancing how scientists monitor the critical role forests play in regulating the global carbon cycle.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "174ecbb14228",
-      "title": "Flex and Teradyne expand partnership to scale physical AI",
-      "url": "https://www.therobotreport.com/flex-teradyne-expand-partnership-scale-physical-ai/",
-      "source": "The Robot Report",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "Flex and Teradyne Robotics expanded their partnership to accelerate physical AI across global manufacturing facilities. The post Flex and Teradyne expand partnership to scale physical AI appeared first on The Robot Report.",
-      "mentioned_entities": [
-        "ROBOT",
-        "TER"
-      ],
-      "mentioned_tickers": [
-        "ROBOT",
-        "TER"
-      ],
-      "entity_tagged": "2026-04-29"
-    },
-    {
-      "id": "ca2ed99e9dff",
-      "title": "Apptronik\u2019s new CPO hire a major step in right direction",
-      "url": "https://www.therobotreport.com/apptroniks-new-cpo-chu-hire-major-step-right-direction/",
-      "source": "The Robot Report",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "Apptronik taps Waymo veteran Daniel Chu as CPO to lead its $935M transition from humanoid R&#038;D to mass-market commercialization. The post Apptronik\u2019s new CPO hire a major step in right direction appeared first on The Robot Report.",
-      "mentioned_entities": [
-        "ROBOT",
-        "apptronik",
-        "waymo"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "26a8c5cbb86c",
-      "title": "Appetronix acquires Cibotica to automate restaurant kitchens",
-      "url": "https://www.therobotreport.com/appetronix-acquires-cibotica-to-automate-restaurant-kitchens/",
-      "source": "The Robot Report",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "Until now, Appetronix has focused on creating standalone fully autonomous restaurants. With Cibotica, it can also retrofit existing kitchens. The post Appetronix acquires Cibotica to automate restaurant kitchens appeared first on The Robot Report.",
-      "mentioned_entities": [
-        "ROBOT"
-      ],
-      "mentioned_tickers": [
-        "ROBOT"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "0c9af657ad1c",
-      "title": "Gradient-based planning for world models at longer horizons",
-      "url": "https://robohub.org/gradient-based-planning-for-world-models-at-longer-horizons/",
-      "source": "Robohub",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "GRASP is a new gradient-based planner for learned dynamics (a \u201cworld model\u201d) that makes long-horizon planning practical by (1) lifting the trajectory into virtual states so optimization is parallel across time, (2) adding stochasticity directly to the state iterates for exploration, and (3) reshaping gradients so actions get clean signals while we avoid brittle \u201cstate-input\u201d gradients through high-dimensional vision models. Large, learned world models are becoming increasingly capable. They can...",
-      "mentioned_entities": [
-        "VIRTUAL"
-      ],
-      "mentioned_tickers": [
-        "VIRTUAL"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "271dad08a0f8",
-      "title": "Hiroshi Fujiwara and Robert Little Selected for 2026 Joseph F. Engelberger Robotics Awards",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/28/hiroshi-fujiwara-and-robert-little-selected-for-2026-joseph-f-engelberger-robotics-awards/26487",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "9ccb467130b2",
-      "title": "Teledyne FLIR Defense Grows Third-Party Payload Integration Program, Adds Emesent Hovermap LiDAR for Unmanned Air, Ground, and Detection Platforms",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/28/teledyne-flir-defense-grows-third-party-payload-integration-program-adds-emesent-hovermap-lidar-for-unmanned-air-ground-and-detection-platforms/26484",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "Newly certified payload works across drones, robots, and radiation detection systems to speed deployment of GPS-denied mapping and fused CBRN visualizations\u2026",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "ca23095071ef",
-      "title": "Faraday Future Strategically Launches Its Embodied AI Developer Platform Purpose-Built for AI Natives, Marking 2026 as the Inaugural Year of EAI Robotics Education",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/28/faraday-future-strategically-launches-its-embodied-ai-developer-platform-purpose-built-for-ai-natives-marking-2026-as-the-inaugural-year-of-eai-robotics-education/26483",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "The platform features six developer tools and four core infrastructure layers, with planned recruitment of three categories of developers spanning K-12 students to professional engineers, pairing every contribution with a comprehensive developer\u2026",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "6f923c6306e0",
-      "title": "Trelleborg Sealing Solutions Opens State-of-the-Art European Service Center",
-      "url": "http://www.RoboticsTomorrow.com/news/2026/04/28/trelleborg-sealing-solutions-opens-state-of-the-art-european-service-center/26482",
-      "source": "Robotics Tomorrow",
-      "date": "2026-04-28",
-      "category": "robo",
-      "summary": "",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "1c1cf0db1752",
-      "title": "Input Capacitor Challenges in High-Density PD and GaN Chargers \u2014 YMIN Capacitor Solutions",
-      "url": "https://www.eetimes.com/input-capacitor-challenges-in-high-density-pd-and-gan-chargers-ymin-capacitor-solutions/",
-      "source": "EE Times",
-      "date": "2026-04-28",
-      "category": "semi",
-      "summary": "High-density PD and GaN chargers push input capacitor limits. YMIN aluminum electrolytic capacitors improve ESR, ripple, and reliability in compact designs. The post Input Capacitor Challenges in High-Density PD and GaN Chargers \u2014 YMIN Capacitor Solutions appeared first on EE Times.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "49cc71a28592",
-      "title": "Tenstorrent Unveils Next-Gen Servers for Fast Tokens, No Disaggregation Needed",
-      "url": "https://www.eetimes.com/tenstorrent-unveils-next-gen-servers-for-fast-tokens-no-disaggregation-needed/",
-      "source": "EE Times",
-      "date": "2026-04-28",
-      "category": "semi",
-      "summary": "\u201cThe world is talking about specialized, specialized, specialized, and that should be terrifying them because as models change, that specialized hardware is not going to work,\u201d said Tenstorrent CEO Jim Keller. The post Tenstorrent Unveils Next-Gen Servers for Fast Tokens, No Disaggregation Needed appeared first on EE Times.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b7b281fe12e6",
-      "title": "OpenAI Prepares AI-First Smartphone for 2028",
-      "url": "https://www.eetimes.com/openai-prepares-ai-first-smartphone-for-2028/",
-      "source": "EE Times",
-      "date": "2026-04-28",
-      "category": "semi",
-      "summary": "OpenAI\u2019s new smartphone reportedly aims to replace apps with AI agents. The post OpenAI Prepares AI-First Smartphone for 2028 appeared first on EE Times.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "a6667f2f9dae",
-      "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
-      "source": "NVIDIA Blog",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "AI agent systems today juggle separate models for vision, speech and language \u2014 losing time and context as they pass data from one model to the other. Unveiled today, NVIDIA Nemotron 3 Nano Omni is an open multimodal model that brings these capabilities together into one system, enabling agents to deliver faster, smarter responses with [&#8230;]\u2026",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "ddf90c7c715a",
-      "title": "Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived",
-      "url": "https://blogs.nvidia.com/blog/manufacturing-simulation-first/",
-      "source": "NVIDIA Blog",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "Manufacturing\u2019s traditional design-build-test cycle rested on a single assumption: Real-world testing was the only reliable test environment.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "b9036bc2e4a7",
-      "title": "IEEE Medal of Honor Recipient Is NVIDIA's CEO Jensen Huang",
-      "url": "https://spectrum.ieee.org/2026-ieee-medal-of-honor",
-      "source": "NVIDIA Newsroom",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "IEEE Spectrum\u2026",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "47b3958d8435",
-      "title": "Scaling Biomolecular Modeling Using Context Parallelism in NVIDIA BioNeMo",
-      "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "For decades, computational biology has operated under a reductionist compromise. To fit complex biological systems into the limited memory of a single GPU,...",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "a50d989808e1",
-      "title": "NVIDIA Nemotron 3 Nano Omni Powers Multimodal Agent Reasoning in a Single Efficient Open Model",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "Agentic systems often reason across screens, documents, audio, video, and text within a single perception\u2011to\u2011action loop. However, they still rely on...",
-      "mentioned_entities": [
-        "NVDA"
-      ],
-      "mentioned_tickers": [
-        "NVDA"
-      ],
-      "entity_tagged": "2026-04-28"
-    },
-    {
-      "id": "2a573cdc2ae8",
-      "title": "24/7 Simulation Loops: How Agentic AI Keeps Subsurface Engineering Moving",
-      "url": "https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/",
-      "source": "NVIDIA Developer",
-      "date": "2026-04-28",
-      "category": "ai",
-      "summary": "The subsurface industry is at a critical point in its digital evolution. For decades, unlocking reservoir potential has relied on experts performing essential...",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "209fe70e6056",
-      "title": "Dems Slam Trump Over NSF Board Cuts",
-      "url": "https://payloadspace.com/dems-slam-trump-over-nsf-board-cuts/",
-      "source": "Payload Space",
-      "date": "2026-04-28",
-      "category": "space",
-      "summary": "\u201cThis is the latest stupid move made by a president who continues to harm science and American innovation,\u201d Rep. Zoe Lofgren (D-CA) said in a statement. The post Dems Slam Trump Over NSF Board Cuts appeared first on Payload.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
-      "entity_tagged": "2026-04-30"
-    },
-    {
-      "id": "4cca638f254d",
-      "title": "Isaacman Continues to Defend Budget Cuts to Congress",
-      "url": "https://payloadspace.com/isaacman-continues-to-defend-budget-cuts-to-congress/",
-      "source": "Payload Space",
-      "date": "2026-04-28",
-      "category": "space",
-      "summary": "The hearing also gave Isaacman a chance to provide more detail on the agency\u2019s top objective: accelerate the US return to the Moon. The post Isaacman Continues to Defend Budget Cuts to Congress appeared first on Payload.",
-      "mentioned_entities": [],
-      "mentioned_tickers": [],
       "entity_tagged": "2026-04-30"
     }
   ]
