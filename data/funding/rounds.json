@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01",
+  "updated": "2026-05-02",
   "count": 401,
   "rounds": [
     {
@@ -1992,7 +1992,7 @@
     },
     {
       "company": "Robot Era",
-      "sector": "Token",
+      "sector": "Robotics",
       "subsector": "Humanoid & Service Robots",
       "round": "Series A",
       "amount_m": 69,
@@ -2010,7 +2010,7 @@
       "total_raised_m": null,
       "public_market_link": null,
       "related_tickers": [],
-      "entity_id": "ROBOT",
+      "entity_id": "robot-era",
       "deal_type": "venture"
     },
     {
@@ -2921,7 +2921,7 @@
     },
     {
       "company": "X Square Robot",
-      "sector": "Token",
+      "sector": "Robotics",
       "subsector": "Humanoid & Service Robots",
       "round": "Series A",
       "amount_m": 140,
@@ -2939,7 +2939,7 @@
       "total_raised_m": null,
       "public_market_link": null,
       "related_tickers": [],
-      "entity_id": "ROBOT",
+      "entity_id": "x-square-robot",
       "deal_type": "venture"
     },
     {
@@ -5561,7 +5561,7 @@
     },
     {
       "company": "RobCo",
-      "sector": "Token",
+      "sector": "Robotics",
       "subsector": "Industrial Robots",
       "round": "Series C",
       "amount_m": 100.0,
@@ -5582,7 +5582,7 @@
         "TER",
         "6954 JP"
       ],
-      "entity_id": "ROBCO",
+      "entity_id": "robco",
       "deal_type": "venture"
     },
     {
@@ -8876,7 +8876,7 @@
       "total_raised_m": null,
       "public_market_link": null,
       "related_tickers": [],
-      "entity_id": "ROBOT",
+      "entity_id": "robot-era",
       "deal_type": "venture"
     },
     {

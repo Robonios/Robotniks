@@ -1,15 +1,41 @@
 # 4Q24 Private Markets Backfill — Summary
 
-**Generated:** 2026-05-01 (revised after follow-up asks)
+**Generated:** 2026-05-01 (revised 2026-05-02 after follow-up asks)
 **Quarter covered:** Oct 1 – Dec 31, 2024
 **File touched:** [data/funding/rounds.json](rounds.json)
 
-## Post-review changes (revision 2)
+## Post-review changes
 
-After your initial sign-off:
+### Revision 2 (2026-05-01)
 1. **`deal_type` field added** to all 401 rows (enum: `venture` / `government` / `strategic_corporate` / `debt` / `token`). See [§ deal_type breakdown](#deal_type-breakdown) below.
 2. **Phoenix Tailings duplicate resolved.** The pre-existing 2025-04-25 row (placeholder lead = "Multiple", no other_investors, vague `source = "https://techcrunch.com"`, no `date_display` / `month_year`) was deleted. The 2025-05-01 row (named lead Envisioning Partners, full investor list, specific Woburn MA location, real press-release URL, full schema) was kept as canonical. **Total rows: 402 → 401.**
 3. **Subsector consolidation audit log** added below — see [§ Subsector consolidation audit](#subsector-consolidation-audit).
+
+### Revision 3 (2026-05-02) — Robot Era / X Square Robot / RobCo cleanup
+
+Pre-existing data-quality issue resolved before starting 3Q24 backfill. 7 mutations across 5 rows:
+
+| Company | Date | Field | Old | New |
+|---|---|---|---|---|
+| Robot Era | 2024-10-15 | entity_id | `ROBOT` | `robot-era` |
+| Robot Era | 2025-07-08 | entity_id | `ROBOT` | `robot-era` |
+| Robot Era | 2025-07-08 | sector | `Token` | `Robotics` |
+| X Square Robot | 2025-09-08 | entity_id | `ROBOT` | `x-square-robot` |
+| X Square Robot | 2025-09-08 | sector | `Token` | `Robotics` |
+| RobCo | 2026-01-28 | entity_id | `ROBCO` | `robco` |
+| RobCo | 2026-01-28 | sector | `Token` | `Robotics` |
+
+**Effect:**
+- `sector=Token` rows: 3 → **0**. The Token enum value remains in the schema, reserved for future genuine token raises.
+- `entity_id=ROBOT` rows: 3 → **0** (freed for RoboStack per the entity registry).
+- `entity_id=ROBCO` rows: 1 → **0** (RobCo's other row already used lowercase `robco`; both RobCo rows now consistent).
+- `entity_id=robot-era` rows: 0 → 2.
+- `entity_id=x-square-robot` rows: 0 → 1.
+- `entity_id=robco` rows: 1 → 2.
+- Sector breakdown after cleanup: Robotics 182, Semiconductors 104, Space 77, Materials 38, Token **0**.
+- Subsector + round + deal_type fields untouched — `deal_type=venture` was already correct for all 5 rows since they're Series A / Series C (round-based classifier, not sector-based).
+
+**Remaining minor collision flagged but not fixed:** `entity_id=neura-robotics` is shared by `'NEURA Robotics'` and `'Neura Robotics'` — same company, different capitalization. Pre-existing data-quality issue, separate from the Token cleanup. Will surface again if it complicates the 3Q24 backfill.
 
 ## Headline numbers (revised)
 
