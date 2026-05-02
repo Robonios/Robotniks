@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-30T23:00:19.260528Z",
+  "fetched_at": "2026-05-01T22:56:24.392026Z",
   "source": "EODHD (FOREX + ETF proxies)",
   "count": 10,
   "commodities": [
@@ -10,15 +10,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 4554.83,
-      "date": "2026-04-30",
-      "change_30d_pct": -4.39,
+      "price": 4618.31,
+      "date": "2026-05-01",
+      "change_30d_pct": -2.78,
       "days": 91,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 4865.3706
-        },
         {
           "date": "2026-01-31",
           "close": 4865.3688
@@ -361,23 +357,27 @@
         },
         {
           "date": "2026-04-26",
-          "close": 4680.08
+          "close": 4680.4729
         },
         {
           "date": "2026-04-27",
-          "close": 4692.02
+          "close": 4692.9502
         },
         {
           "date": "2026-04-28",
-          "close": 4595.78
+          "close": 4595.5691
         },
         {
           "date": "2026-04-29",
-          "close": 4561.86
+          "close": 4561.2708
         },
         {
           "date": "2026-04-30",
-          "close": 4554.83
+          "close": 4627.0236
+        },
+        {
+          "date": "2026-05-01",
+          "close": 4618.31
         }
       ]
     },
@@ -388,15 +388,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 71.8423,
-      "date": "2026-04-29",
-      "change_30d_pct": -1.44,
-      "days": 84,
+      "price": 74.335,
+      "date": "2026-05-01",
+      "change_30d_pct": 0.78,
+      "days": 85,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 86.3351
-        },
         {
           "date": "2026-01-31",
           "close": 85.174
@@ -715,19 +711,27 @@
         },
         {
           "date": "2026-04-26",
-          "close": 74.9026
+          "close": 74.902
         },
         {
           "date": "2026-04-27",
-          "close": 75.9532
+          "close": 75.949
         },
         {
           "date": "2026-04-28",
-          "close": 73.2974
+          "close": 73.297
         },
         {
           "date": "2026-04-29",
-          "close": 71.8423
+          "close": 71.842
+        },
+        {
+          "date": "2026-04-30",
+          "close": 74.353
+        },
+        {
+          "date": "2026-05-01",
+          "close": 74.335
         }
       ]
     },
@@ -738,15 +742,11 @@
       "category": "Precious Metals",
       "unit": "$/oz",
       "note": "",
-      "price": 1961.62,
-      "date": "2026-04-30",
-      "change_30d_pct": -1.08,
+      "price": 1977.46,
+      "date": "2026-05-01",
+      "change_30d_pct": 0.81,
       "days": 78,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 2169.1499
-        },
         {
           "date": "2026-02-01",
           "close": 2080.45
@@ -1053,7 +1053,11 @@
         },
         {
           "date": "2026-04-30",
-          "close": 1961.62
+          "close": 1989.5
+        },
+        {
+          "date": "2026-05-01",
+          "close": 1977.46
         }
       ]
     },
@@ -1067,12 +1071,8 @@
       "price": 1464.3101,
       "date": "2026-04-30",
       "change_30d_pct": -1.66,
-      "days": 76,
+      "days": 75,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 1702.5
-        },
         {
           "date": "2026-02-01",
           "close": 1668.4301
@@ -1382,15 +1382,11 @@
       "category": "Industrial Metals",
       "unit": "ETF",
       "note": "US Copper Index Fund ETF",
-      "price": 36.53,
-      "date": "2026-04-30",
-      "change_30d_pct": 6.1,
+      "price": 36.23,
+      "date": "2026-05-01",
+      "change_30d_pct": 5.5,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 36.43
-        },
         {
           "date": "2026-02-02",
           "close": 35.88
@@ -1638,6 +1634,10 @@
         {
           "date": "2026-04-30",
           "close": 36.53
+        },
+        {
+          "date": "2026-05-01",
+          "close": 36.23
         }
       ]
     },
@@ -1648,15 +1648,11 @@
       "category": "Battery Materials",
       "unit": "ETF",
       "note": "Global X Lithium & Battery Tech ETF",
-      "price": 88.24,
-      "date": "2026-04-30",
-      "change_30d_pct": 18.68,
+      "price": 88.72,
+      "date": "2026-05-01",
+      "change_30d_pct": 19.18,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 69.95
-        },
         {
           "date": "2026-02-02",
           "close": 70.12
@@ -1904,6 +1900,10 @@
         {
           "date": "2026-04-30",
           "close": 88.24
+        },
+        {
+          "date": "2026-05-01",
+          "close": 88.72
         }
       ]
     },
@@ -1914,15 +1914,11 @@
       "category": "Energy",
       "unit": "ETF",
       "note": "US Oil Fund ETF",
-      "price": 147.09,
-      "date": "2026-04-30",
-      "change_30d_pct": 15.59,
+      "price": 142.8,
+      "date": "2026-05-01",
+      "change_30d_pct": 15.08,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 79.52
-        },
         {
           "date": "2026-02-02",
           "close": 75.33
@@ -2170,6 +2166,10 @@
         {
           "date": "2026-04-30",
           "close": 147.09
+        },
+        {
+          "date": "2026-05-01",
+          "close": 142.8
         }
       ]
     },
@@ -2180,15 +2180,11 @@
       "category": "Energy",
       "unit": "ETF",
       "note": "US Natural Gas Fund ETF",
-      "price": 10.6,
-      "date": "2026-04-30",
-      "change_30d_pct": -9.63,
+      "price": 10.71,
+      "date": "2026-05-01",
+      "change_30d_pct": -6.22,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 16.9
-        },
         {
           "date": "2026-02-02",
           "close": 12.7
@@ -2436,6 +2432,10 @@
         {
           "date": "2026-04-30",
           "close": 10.6
+        },
+        {
+          "date": "2026-05-01",
+          "close": 10.71
         }
       ]
     },
@@ -2446,15 +2446,11 @@
       "category": "Critical Minerals",
       "unit": "ETF",
       "note": "VanEck Rare Earth/Strategic Metals ETF",
-      "price": 105.43,
-      "date": "2026-04-30",
-      "change_30d_pct": 19.81,
+      "price": 106.52,
+      "date": "2026-05-01",
+      "change_30d_pct": 20.32,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 85.63
-        },
         {
           "date": "2026-02-02",
           "close": 84.81
@@ -2702,6 +2698,10 @@
         {
           "date": "2026-04-30",
           "close": 105.43
+        },
+        {
+          "date": "2026-05-01",
+          "close": 106.52
         }
       ]
     },
@@ -2712,15 +2712,11 @@
       "category": "Nuclear",
       "unit": "ETF",
       "note": "Global X Uranium ETF",
-      "price": 56.42,
-      "date": "2026-04-30",
-      "change_30d_pct": 16.5,
+      "price": 55.84,
+      "date": "2026-05-01",
+      "change_30d_pct": 13.36,
       "days": 63,
       "series": [
-        {
-          "date": "2026-01-30",
-          "close": 54.99
-        },
         {
           "date": "2026-02-02",
           "close": 53.27
@@ -2968,6 +2964,10 @@
         {
           "date": "2026-04-30",
           "close": 56.42
+        },
+        {
+          "date": "2026-05-01",
+          "close": 55.84
         }
       ]
     }
