@@ -1,10 +1,6 @@
 {
-  "last_run": "2026-05-01T22:53:17.047601+00:00Z",
+  "last_run": "2026-05-03T07:28:33.497926+00:00Z",
   "quarantined_today": [
-    {
-      "ticker": "XRT",
-      "reason": "index-side validation"
-    },
     {
       "ticker": "SHA",
       "reason": "index-side validation"
@@ -173,6 +169,11 @@
     },
     {
       "date": "2026-05-01",
+      "ticker": "SHA",
+      "reason": "index-side validation"
+    },
+    {
+      "date": "2026-05-03",
       "ticker": "SHA",
       "reason": "index-side validation"
     }
