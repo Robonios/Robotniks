@@ -1,80 +1,10 @@
 {
-  "fetched_at": "2026-05-05T18:54:24.846607Z",
+  "fetched_at": "2026-05-05T20:06:06.504139Z",
   "source": "SOXX.US proxy (EODHD 5min intraday)",
   "robotnik_base_close": 2390.54,
   "robotnik_base_date": "2026-05-04",
   "soxx_base_close": 462.06,
   "series_5m": [
-    {
-      "datetime": "2026-04-28 18:55:00",
-      "value": 2283.6,
-      "volume": 40515
-    },
-    {
-      "datetime": "2026-04-28 19:00:00",
-      "value": 2286.03,
-      "volume": 119363
-    },
-    {
-      "datetime": "2026-04-28 19:05:00",
-      "value": 2284.41,
-      "volume": 92652
-    },
-    {
-      "datetime": "2026-04-28 19:10:00",
-      "value": 2280.75,
-      "volume": 99868
-    },
-    {
-      "datetime": "2026-04-28 19:15:00",
-      "value": 2274.5,
-      "volume": 65509
-    },
-    {
-      "datetime": "2026-04-28 19:20:00",
-      "value": 2275.53,
-      "volume": 100287
-    },
-    {
-      "datetime": "2026-04-28 19:25:00",
-      "value": 2275.01,
-      "volume": 77453
-    },
-    {
-      "datetime": "2026-04-28 19:30:00",
-      "value": 2274.96,
-      "volume": 129731
-    },
-    {
-      "datetime": "2026-04-28 19:35:00",
-      "value": 2274.44,
-      "volume": 80484
-    },
-    {
-      "datetime": "2026-04-28 19:40:00",
-      "value": 2274.78,
-      "volume": 85710
-    },
-    {
-      "datetime": "2026-04-28 19:45:00",
-      "value": 2274.68,
-      "volume": 79295
-    },
-    {
-      "datetime": "2026-04-28 19:50:00",
-      "value": 2271.34,
-      "volume": 425554
-    },
-    {
-      "datetime": "2026-04-28 19:55:00",
-      "value": 2269.32,
-      "volume": 356078
-    },
-    {
-      "datetime": "2026-04-28 20:00:00",
-      "value": 2269.74,
-      "volume": null
-    },
     {
       "datetime": "2026-04-29 13:30:00",
       "value": 2298.35,
@@ -1657,21 +1587,6 @@
     }
   ],
   "series_1h": [
-    {
-      "datetime": "2026-04-28 18:00:00",
-      "value": 2283.6,
-      "volume": 40515
-    },
-    {
-      "datetime": "2026-04-28 19:00:00",
-      "value": 2269.32,
-      "volume": 356078
-    },
-    {
-      "datetime": "2026-04-28 20:00:00",
-      "value": 2269.74,
-      "volume": null
-    },
     {
       "datetime": "2026-04-29 13:00:00",
       "value": 2306.42,
