@@ -1,6 +1,6 @@
 # Robotnik Data Quality — Weekly Report
-**Generated:** 26-Apr-2026 23:37 UTC
-**Period:** 19-Apr to 26-Apr-2026
+**Generated:** 03-May-2026 23:42 UTC
+**Period:** 26-Apr to 03-May-2026
 
 ## 🟢 Ready for Reinstatement
 No entities ready for reinstatement.
@@ -15,48 +15,43 @@ No entities quarantined.
 No new candidates this week.
 
 ## 📊 Index-Side Quarantine Events This Week
-- 2026-04-19: **SHA** — index-side validation
-- 2026-04-20: **SHA** — index-side validation
-- 2026-04-21: **SHA** — index-side validation
-- 2026-04-21: **SHA** — index-side validation
-- 2026-04-21: **SHA** — index-side validation
-- 2026-04-21: **SHA** — index-side validation
-- 2026-04-22: **SHA** — index-side validation
-- 2026-04-22: **SHA** — index-side validation
-- 2026-04-23: **SHA** — index-side validation
-- 2026-04-24: **MXL** — index-side validation
-- 2026-04-24: **SHA** — index-side validation
 - 2026-04-26: **SHA** — index-side validation
 - 2026-04-26: **XRT** — index-side validation
+- 2026-04-27: **SHA** — index-side validation
+- 2026-04-27: **XRT** — index-side validation
+- 2026-04-28: **SHA** — index-side validation
+- 2026-04-29: **SHA** — index-side validation
+- 2026-04-30: **XRT** — index-side validation
+- 2026-04-30: **SHA** — index-side validation
+- 2026-05-01: **XRT** — index-side validation
+- 2026-05-01: **SHA** — index-side validation
+- 2026-05-03: **SHA** — index-side validation
 
 ## 📋 Fetcher Rejection Summary (7 days)
 No rejection log found.
 
 ## ⏱ Price History Staleness
-Scanned **332** history files. Newest last-close: **2026-04-26**. Yesterday (UTC): **2026-04-25**. Threshold: **>3 days stale** (aligned with the 24H freshness gate in `calculate_metrics.py`).
-🟠 **22 file(s) stale** beyond threshold. Each of these will show `—` in the 24H column and may degrade the 7D column if the staleness exceeds the 5-day lookback window.
-- **DEUS** (XMAQUINA) — last close `1970-01-01`, **20568d stale** [Token]
-- **SHA** (Schaeffler AG) — last close `2022-03-02`, **1515d stale** [Robotics]
-- **ROBCO** (RobCo Network) — last close `2026-03-01`, **55d stale** [Token]
-- **OPAN** (Opanarchy) — last close `2026-04-06`, **19d stale** [Token]
-- **3401 JP** (Teijin Ltd) — last close `2026-04-07`, **18d stale** [Materials]
-- **4112 JP** (Resonac Holdings) — last close `2026-04-07`, **18d stale** [Materials]
-- **5384 JP** (Fujimi Inc) — last close `2026-04-07`, **18d stale** [Materials]
-- **2802 JP** (Ajinomoto Co) — last close `2026-04-08`, **17d stale** [Materials]
-- **3402 JP** (Toray Industries) — last close `2026-04-08`, **17d stale** [Materials]
-- **3407 JP** (Asahi Kasei) — last close `2026-04-08`, **17d stale** [Materials]
-- **3436 JP** (SUMCO Corp) — last close `2026-04-08`, **17d stale** [Materials]
-- **4005 JP** (Sumitomo Chemical) — last close `2026-04-08`, **17d stale** [Materials]
-- **4043 JP** (Tokuyama Corp) — last close `2026-04-08`, **17d stale** [Materials]
-- **4062 JP** (Ibiden Co) — last close `2026-04-08`, **17d stale** [Materials]
-- **4063 JP** (Shin-Etsu Chemical) — last close `2026-04-08`, **17d stale** [Materials]
-- **4091 JP** (Nippon Sanso Holdings) — last close `2026-04-08`, **17d stale** [Materials]
-- **4188 JP** (Mitsubishi Chemical Group) — last close `2026-04-08`, **17d stale** [Materials]
-- **4208 JP** (UBE Corp) — last close `2026-04-08`, **17d stale** [Materials]
-- **5706 JP** (Mitsui Mining & Smelting) — last close `2026-04-08`, **17d stale** [Materials]
-- **9348 JP** (ispace Inc) — last close `2026-04-08`, **17d stale** [Space]
-- **MECHA** (MechaOs) — last close `2026-04-16`, **9d stale** [Token]
-- **DPTX** (DEEPTICS) — last close `2026-04-21`, **4d stale** [Token]
+Scanned **332** history files. Newest last-close: **2026-05-03**. Yesterday (UTC): **2026-05-02**. Threshold: **>3 days stale** (aligned with the 24H freshness gate in `calculate_metrics.py`).
+🟠 **19 file(s) stale** beyond threshold. Each of these will show `—` in the 24H column and may degrade the 7D column if the staleness exceeds the 5-day lookback window.
+- **DEUS** (XMAQUINA) — last close `1970-01-01`, **20575d stale** [Token]
+- **SHA** (Schaeffler AG) — last close `2022-03-02`, **1522d stale** [Robotics]
+- **ROBCO** (RobCo Network) — last close `2026-03-01`, **62d stale** [Token]
+- **3401 JP** (Teijin Ltd) — last close `2026-04-07`, **25d stale** [Materials]
+- **4112 JP** (Resonac Holdings) — last close `2026-04-07`, **25d stale** [Materials]
+- **5384 JP** (Fujimi Inc) — last close `2026-04-07`, **25d stale** [Materials]
+- **2802 JP** (Ajinomoto Co) — last close `2026-04-08`, **24d stale** [Materials]
+- **3402 JP** (Toray Industries) — last close `2026-04-08`, **24d stale** [Materials]
+- **3407 JP** (Asahi Kasei) — last close `2026-04-08`, **24d stale** [Materials]
+- **3436 JP** (SUMCO Corp) — last close `2026-04-08`, **24d stale** [Materials]
+- **4005 JP** (Sumitomo Chemical) — last close `2026-04-08`, **24d stale** [Materials]
+- **4043 JP** (Tokuyama Corp) — last close `2026-04-08`, **24d stale** [Materials]
+- **4062 JP** (Ibiden Co) — last close `2026-04-08`, **24d stale** [Materials]
+- **4063 JP** (Shin-Etsu Chemical) — last close `2026-04-08`, **24d stale** [Materials]
+- **4091 JP** (Nippon Sanso Holdings) — last close `2026-04-08`, **24d stale** [Materials]
+- **4188 JP** (Mitsubishi Chemical Group) — last close `2026-04-08`, **24d stale** [Materials]
+- **4208 JP** (UBE Corp) — last close `2026-04-08`, **24d stale** [Materials]
+- **5706 JP** (Mitsui Mining & Smelting) — last close `2026-04-08`, **24d stale** [Materials]
+- **9348 JP** (ispace Inc) — last close `2026-04-08`, **24d stale** [Space]
 
 ---
 *Report generated by `scripts/quarantine_health_check.py`*
